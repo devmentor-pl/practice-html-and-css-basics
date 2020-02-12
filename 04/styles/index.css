@@ -1,0 +1,73 @@
+ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+  }
+   
+  ul ul{
+    display:none;
+  }
+   
+  ul li{
+    float:left;
+    font:14px arial;
+    position:relative;
+  }
+   
+  ul li a{
+    text-decoration:none;
+    color:#ffffff;
+    background-color:#000000;
+    padding:10px 12px;
+  }
+   
+  ul li a:hover{
+  background-color:#999999;
+  }
+   
+  /* —– Level 1 —-*/
+  ul li:hover ul{
+    display:block; 
+    position:absolute;
+    width:100px;
+    background-color:#000000;
+    margin-top:10px;
+  }
+   
+  ul li:hover ul li{
+  float:none;
+  padding:10px 0;
+  }
+   
+  ul li:hover ul li:hover{
+    background-color:#999999;
+    position:relative;
+  }
+   
+  ul li:hover ul li a{
+    background-color:transparent;
+  }
+   
+  /* —– Level 2 —-*/
+  ul li:hover ul li ul{
+    display:none;
+  }
+   
+  ul li:hover ul li:hover ul{
+    display:block;
+    position:absolute;
+    left:100px;
+    top:0;
+  }
+   
+  /* —– Level 3 —-*/
+  ul li:hover ul li ul li ul{
+    display:none !important;
+  }
+   
+  ul li:hover ul li ul li:hover ul{
+    display:block !important;
+    position:absolute;
+    left:100px;
+    top:0;
+  }

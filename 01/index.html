@@ -7,6 +7,102 @@
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
 </head>
 <body>
+    <header>
+        <div class="logo">
+            <a href="#">Medium
+                <img src="./logo.png" alt="">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Search</a></li>
+                <li><a href="#news">Bookmarks</a></li>
+                <li class="dropdown">
+                    <a href="#">Your Account</a>
+                    <div class="dropdown-content">
+                        <a href="#">Profile</a>
+                        <a href="#">Reading List</a>
+                        <a href="#">Settings</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <header>
+                <h2 class="headline">Tytul</h2>
+                <p></p>
+                <time pubdate datetime="2020-02-08" title="February 2nd, 2020">08.02.2020</time>
+                <address class="author">By <a rel="author" href="/author/john-doe">John Doe</a></address>
+            </header>
+            <div class="article-content">
+                <figure>
+                    <img src="#" alt="image">
+                    <figcaption>Opis zdjecia.</figcaption>
+                </figure>
+                <table>
+                    <tr>
+                      <td>&nbsp;</td>
+                      <td>Knocky</td>
+                      <td>Flor</td>
+                      <td>Ella</td>
+                      <td>Juan</td>
+                    </tr>
+                    <tr>
+                      <td>Breed</td>
+                      <td>Jack Russell</td>
+                      <td>Poodle</td>
+                      <td>Streetdog</td>
+                      <td>Cocker Spaniel</td>
+                    </tr>
+                    <tr>
+                      <td>Age</td>
+                      <td>16</td>
+                      <td>9</td>
+                      <td>10</td>
+                      <td>5</td>
+                    </tr>
+                    <tr>
+                      <td>Owner</td>
+                      <td>Mother-in-law</td>
+                      <td>Me</td>
+                      <td>Me</td>
+                      <td>Sister-in-law</td>
+                    </tr>
+                    <tr>
+                      <td>Eating Habits</td>
+                      <td>Eats everyone's leftovers</td>
+                      <td>Nibbles at food</td>
+                      <td>Hearty eater</td>
+                      <td>Will eat till he explodes</td>
+                    </tr>
+                  </table>
+            </div>
+            <p></p>
+        </article>
+
+        <div class="comment-form">
+            <h2>Add comments</h2>
+            <form action="/action_page.php" id="usrform">
+                Name: <input type="text" name="usrname">
+                <input type="submit">
+              </form>
+              <br>
+              <textarea rows="4" cols="50" name="comment" form="usrform">
+              Enter text here...</textarea>
+              
+              <p>The text area above is outside the form element, but should still be a part of the form.</p>
+        </div>
+        <div class="comments-list">
+            <h1>30 Comments</h1>
+            <h4>Random</h4>
+            <p>Lorem ipusm tdasdas</p>
+        </div>
+    </main>
+    <footer>
+        <div> &copy; 2020 devmentor.pl</div>
+    </footer>
     
 </body>
 </html>

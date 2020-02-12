@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'source_sans_proregular';
+    src: url('sourcesanspro-regular-webfont.woff2') format('woff2'),
+         url('sourcesanspro-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'source_sans_probold';
+    src: url('sourcesanspro-bold-webfont.woff2') format('woff2'),
+         url('sourcesanspro-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'source_sans_proitalic';
+    src: url('sourcesanspro-it-webfont.woff2') format('woff2'),
+         url('sourcesanspro-it-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.parent {
+    width: 600px;
+    padding: 20px;
+    
+}
+
+.parent--inline-block .child {
+    display: inline-block;  
+}
+
+.child--first {
+    width: 30%;
+    font-family: 'source_sans_proregular' ;
+}
+
+.child--middle {
+    width: 30%;
+    font-family: 'source_sans_probold' ;
+   
+}
+
+.child--last {
+    width: 40%;
+    font-family: 'source_sans_proitalic' ;
+}
+
+.parent--float {
+    float: clear;
+}
+
+.parent--float .child {
+    float: left;
+}
+
+.parent--float .child:first-child,
+.parent--float .child--no-space {
+margin-left: 0;
+}
+
+.parent--flexbox {
+    display: flex;
+}

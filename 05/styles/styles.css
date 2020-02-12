@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.container,
+.grid {
+    max-width: 1370px;
+    margin: 0 auto;
+}
+.col-1-4
+{
+  display: inline-block;
+    
+  width: 20.00%;
+
+}
+
+.col-1-2{
+    display: inline-block;
+    width: 50.00%;
+}
+
+.logo{
+    
+    width: auto;
+    float: left;
+    margin-top: 60px;
+}
+
+.main-nav {
+    float: right;
+    margin-top: 50px;
+}
+
+.main-nav li{
+    display: inline-block;   
+    padding-right: 15px;
+}
+
+.main-nav a {
+    color: #58d5f7;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+
+}
+
+header {
+    background: radial-gradient(rgb(194, 74, 126), rgb(105, 86, 235));
+    height: 93vh;
+    
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1370px;
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.hero-img {
+    float: right;
+    position: absolute;
+    right: 14%;
+    top: 20%;
+    transform: rotate(-6deg);
+    width: 38%;
+    border-radius: 25px;
+    
+}
+
+.hero-btn{
+    background-color: #25F18B;
+    border-radius: 10px;
+    border: 1px solid #25F18B;
+    width: 210px;
+    height: 51px;
+    color: white;
+    margin: 30px auto;
+}
+
+.main-header {
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #ffff;
+    font-size: 36px;
+}
+
+.bottom-header {
+    font-weight: 300;
+    color: #ffff;
+    font-size: 18px;
+}
+
+
+
+.features {
+    height:67vh;
+    background-color: #000000;
+    text-align: center;
+}
+
+.features-mainheader {
+    color: #ffff; 
+    padding-top:70px;
+    font-size: 30px;
+    margin-bottom: 70px;
+}
+
+.feature-header {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+
+.feature-desc{
+    display: block;
+}
+
+.feature-img {
+    background-color: white;
+    border-radius: 50%;
+    height: 5.625em;
+    width: 5.625em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    box-shadow: 4px 14px 28px #393939;
+}
+
+.logos{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    
+}
+
+.white-part {
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 100vh;
+}
+
+.white-part-text-box{
+    color: #333333;
+    max-width: 400px;
+    float: right;
+}
+
+.white-part-header {
+    font-size: 30px;
+    font-weight: 300;
+    
+}
+
+.white-part-paragraph{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    margin: auto;
+    padding-bottom: 40px;
+  
+}
+.imac {
+    position: absolute;
+    top: 180%;
+   
+}
+
+.plans{
+    text-align: center;
+    margin-top: 60px;
+    height: 50vh;
+}
+.pricing-section {
+    text-align: center;
+}
+
+.pricing-header{
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.pricing-bottom-header{
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    color: #808080;
+}
+
+.plan-header {
+    font-size: 18px;
+    font-weight: 300;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.plan-price {
+    font-size: 45px;
+    font-weight: 600;
+    color: #333333;
+}
+
+.plan-sub-header{
+    font-weight: 500;
+    font-size: 12px;
+    color: #333333;
+    margin-bottom: 20px;
+}
+.plan-features {
+    font-size: 14px;
+    font-weight: 400;
+    color: #333333;
+    list-style-type: none;
+}
+
+.pricing-btn{
+    background-color: rgb(121, 121, 207);
+    border-radius: 10px;
+    border: 1px solid  rgb(121, 121, 207);
+    width: 160px;
+    height: 51px;
+    color: white;
+    margin: 30px auto;
+}
+
+.team-section {
+    height: 60vh;
+}
+
+.team-header{
+    font-weight: 300;
+    font-size: 30px;
+    color: #333333;
+    margin-bottom: 100px;
+}
+
+.role-header{
+    font-size: 18px;
+    font-weight: 300;
+    color: #747474;
+    margin-bottom: 10px;
+}
+
+.team-member{
+    font-size: 18px;
+    font-weight: 600;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.team-desc{
+    font-size: 14px;
+    font-weight: 300;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.social-links a {
+    padding: 10px;
+    
+}
+
+footer {
+    background-color:#464646 ;
+   
+}
+
+.footer-content{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+
+.footer-text {
+    font-size: 12px;
+    font-weight: 400;
+    color: #ffff;
+}
+.footer-social-links{
+    float: right;
+}
