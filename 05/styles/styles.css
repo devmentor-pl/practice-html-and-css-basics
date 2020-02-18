@@ -145,7 +145,7 @@ header {
 
 
 .feature-img {
-    background-color: white;
+    background-color: black;
     height: 100px;
     margin: auto;  
 }
@@ -154,6 +154,7 @@ header {
     margin-top: 20px;
     margin-bottom: 20px;
     text-align: center;
+    padding-bottom: 60px;
     
 }
 
@@ -161,14 +162,17 @@ header {
     margin-top: 10px;
     margin-left: 5px;
     margin-right: 5px;
-    height: 100vh;
+    display: flex;
+    padding-bottom: 60px;
+    text-align: center;
 }
 
 .white-part-text-box{
     color: #333333;
-    float: left;
-    padding-top: 70px;
-    padding-left: 100px; 
+    padding-top: 30px;
+    text-align: justify;
+    padding-left: 100px;
+    
 }
 
 
@@ -186,18 +190,21 @@ header {
     line-height: 30px;
     margin: inherit;
     text-align: left;
+    max-width: 400px;
   
 }
 .imac{
-    float: left;
+    max-width: 50%;
+    height: auto;
 }
 
 .plans{
     text-align: center;
     margin-top: 60px;
-    height: 50vh;
+    padding-bottom: 60px;
 }
 .pricing-section {
+    padding-top: 60px;
     text-align: center;
 }
 
@@ -260,7 +267,9 @@ header {
 }
 
 .team-section {
-    height: 60vh;
+    padding-bottom: 130px;
+    padding-top: 60px;
+    text-align: center;
 }
 
 .team-header{
@@ -296,23 +305,21 @@ header {
     
 }
 
-footer {
+.footer {
     background-color:#464646 ;
-   
+    display: flex;
 }
 
 .footer-content{
     padding-top: 20px;
     padding-bottom: 20px;
+    
+   
 }
-
-
-
 .footer-text {
     font-size: 12px;
     font-weight: 400;
     color: #ffff;
+    
 }
-.footer-social-links{
-    float: right;
-}
+
