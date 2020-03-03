@@ -1,0 +1,12 @@
+.nav, .nav__item {
+    outline: 1px solid;
+    margin: 3px; padding: 3px;
+}
+
+.nav{
+    outline-color: red;
+}
+
+.nav__item{
+    outline-color: green;
+}
