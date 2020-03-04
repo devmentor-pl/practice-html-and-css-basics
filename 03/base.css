@@ -1,0 +1,35 @@
+.parent{
+    width: 600px;
+    padding: 20px;
+}
+
+.parent--inline-block .child{
+    display: inline-block;
+    background: red;
+}
+
+
+
+.parent--float{
+    float: left;
+}
+
+.parent--flexbox{
+    display: flex;
+}
+
+.child{
+    
+}
+
+.child--first{
+width: 30%;
+}
+
+.child--middle{
+    width: 30%;
+}
+
+.child--last{
+    width: 40%;
+}
