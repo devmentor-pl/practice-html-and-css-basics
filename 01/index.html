@@ -12,22 +12,47 @@
 
 <body>
     <header>
-        <img class="header__logo" src="images/logo.jpg">
+        <img alt="logo" src="./images/logo.jpg">
         <ul class="nav">
-            <li class="nav__item">1</li>
-            <li class="nav__item">2</li>
-            <li class="nav__item">3</li>
+            <li class="nav__item">
+                <!-- ELEMENT NADRZĘDNY -->
+                Menu rozwija się po najechaniu
+                <ul class="nav__dropdown dropdown" >
+                    <li class="dropdown__item">1 karta</li>
+                    <li class="dropdown__item">2 karta</li>
+                    <li class="dropdown__item">3 karta</li>
+                </ul>
+            </li>
         </ul>
-
-        <!-- tutaj rozwijane menu ma być -->
     </header>
     <main>
         <article>
             <h1>Title</h1>
             <p>content</p>
+            <p>Data publikacji</p>
+            <p>autor</p>
             <!-- data publikacji i autro -->
-            <img>
+            <img alt="ilustracja" src="images/ilustracja.jpg">
             <table>
+                <caption>Nazwa tabeli</caption>
+                <colgroup>
+                    <col span="2" style="background: hotpink;">
+                    <col style="background: indigo;">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th scope="col">jeden</th>
+                        <th scope="col">drugi</th>
+                        <th scope="col">trzeci</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>11111</td>
+                        <td>22222</td>
+                        <td>33333</td>
+                    </tr>
+                </tbody>
 
             </table>
         </article>

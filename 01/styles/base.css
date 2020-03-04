@@ -7,6 +7,37 @@
     outline-color: red;
 }
 
+/* 
+<ul class="nav__dropdown dropdown">
+<li class="dropdown__item">
+www
+</li>
+<li class="dropdown__item">
+app
+</li>
+</ul>
+nav = nav__dropdown dropdown
+nav__item = dropdown__item
+*/
 .nav__item{
+    background: yellowgreen;
+    padding: 0 5px;
+    margin-left: 5px;
     outline-color: green;
+    position: relative;
+}
+
+.nav__item:hover > .nav__dropdown{
+    display: block;
+}
+.nav__dropdown{
+    display: none;
+    position: absolute;
+    
+}
+
+.dropdown__item{
+    border: solid;
+    background: yellow;
+    
 }
