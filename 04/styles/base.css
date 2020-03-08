@@ -1,0 +1,55 @@
+.nav,
+.nav__item,
+.dropdown__item {
+  outline: 1px solid;
+  margin: 3px;
+  padding: 3px;
+}
+
+.nav {
+  outline-color: red;
+  display: flex;
+}
+
+.nav__item {
+  background: yellowgreen;
+  padding: 0 5px;
+  margin-left: 5px;
+  position: relative;
+}
+
+.nav__item:hover > .nav__dropdown {
+  display: block;
+}
+.nav__dropdown {
+  /* display: none; */
+  position: absolute;
+}
+
+.dropdown__item {
+  border: solid;
+  background: yellow;
+}
+
+.dropdownSecond__item {
+  border: solid;
+  background: hotpink;
+  padding: 0 5px;
+  margin-top: -20px;
+  margin-left: 50px;
+  position: relative;
+}
+
+tutaj zaczynam kombinować */ 
+
+.dropdown__item:hover > .nav__dropdownSecond {
+  display: block;
+}
+
+.dropdownSecon__item {
+}
+
+.nav__dropdownSecond {
+  /* display: none; */
+  position: absolute;
+} */ */
