@@ -15,9 +15,13 @@
 }
 
 .parent--flexbox{
+    clear: left;
     display: flex;
 }
 
+.parent--float div{
+    float: left;
+}
 .child{
     
 }
