@@ -2,15 +2,51 @@
   background: #f5f5f5;
 }
 .nav{
-  background: #ffffff;
+  /* background: #ffffff; */
+
+  /* >>>??Jak sprawić żeby tło ograniczało się do obszaru elementu??<<< */
   color: rgb(0, 154, 225);
+  display: flex;
+ 
 }
 .nav__item{
-  background: #ffffff;
+  /* pierwszy kolor służy do testów, zakomitowany jest docelowy */
+  /* background: #ffffff; */
+  
   color: rgb(0, 154, 225);
+  /* border:2px solid black; */
+  background: green;
+
+  display: block;
+  height: 35px;
+  width: 100px;
+  padding: 10px 10px 0 10px;
+  margin-bottom: 0;
+
+}
+
+.dropdown__item{
+  margin-top: 0px;
+  margin-left: -13px;
+  display: inline-block;
+  padding: 10px 0px 10px 10px;
+  width: 170px;
+  height: 35px;
+  background: yellow;
+  /* border: 2px solid black */
+}
+
+.dropdownSecond__item{
+  margin-top: 0px;
+  padding: 10px 10px 0 10px;
+  width: 180px;
+  height: 40px;
+  background: red;
 }
 
 .nav__dropdown{
-  color: #d8e0e5;
-  background: #333333;
+  margin-top: 7px;
 }
+
+.nav__dropdownSecond{
+  padding-left: 160px;

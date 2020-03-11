@@ -20,7 +20,7 @@ nav = nav__dropdown dropdown
 nav__item = dropdown__item
 */
 .nav__item{
-    background: yellowgreen;
+    background: hotpink;
     padding: 0 5px;
     margin-left: 5px;
     outline-color: green;
