@@ -16,37 +16,64 @@
   color: rgb(0, 154, 225);
   /* border:2px solid black; */
   background: green;
-
+  display: flex;
+  justify-content: space-between;
   display: block;
   height: 35px;
-  width: 100px;
+  width: 200px;
   padding: 10px 10px 0 10px;
   margin-bottom: 0;
 
 }
 
 .dropdown__item{
-  margin-top: 0px;
-  margin-left: -13px;
-  display: inline-block;
-  padding: 10px 0px 10px 10px;
+  /* margin-top: 0px;
+  margin-left: -13px; */
+  /* display: inline-block; */
+  /* padding: 10px 0px 10px 10px; */
   width: 170px;
   height: 35px;
   background: yellow;
+  float: left;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px 10px 20px ;
   /* border: 2px solid black */
 }
 
+
+
 .dropdownSecond__item{
-  margin-top: 0px;
-  padding: 10px 10px 0 10px;
-  width: 180px;
-  height: 40px;
+display: none;
+}
+
+.dropdown__item:hover .dropdownSecond__item{
+  display: block;
+  width: 170px;
+  height: 35px;
   background: red;
+  padding: 10px 10px 10px 20px ;
 }
 
 .nav__dropdown{
   margin-top: 7px;
+  
 }
 
 .nav__dropdownSecond{
-  padding-left: 160px;
+ /* padding-left: 160px; */
+ 
+ position: absolute;
+ left: 100%;
+ top: 0;
+} 
+
+.rotation{
+  /* Nie wiem jak to zrobić, jak się dowiem, to usunę display none */
+  display: none;
+  transform:rotate(90deg);
+  box-sizing: content-box;
+  background: seagreen;
+  color: red;
+}
