@@ -1,7 +1,7 @@
 .nav{
     height: 150px;
-    background: red;
     position: relative;
+    margin: 0;
 }
 .nav__logo{
     padding-top: 55px;
@@ -18,5 +18,34 @@
 .nav__item{
     width: 100px;
     float: left;
-    background: yellow;
 }
+
+.nav__list:last-child{
+    clear: both;
+}
+
+.header{
+    width: 100%;
+    padding-bottom: 400px;
+    background: radial-gradient(rgb(194, 74, 126), rgb(105, 86, 235));
+}
+
+.features{
+    background: black;
+}
+
+.header__section{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.header__sectionDescription{
+    padding-top: 60px;
+    margin-left: 247px;
+}
+
+/* .header__sectionImage{
+    margin-right: 1%;
+    width: 80%;
+} */
