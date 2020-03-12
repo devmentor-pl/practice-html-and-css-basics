@@ -2,20 +2,16 @@
   background: #f5f5f5;
 }
 .nav{
-  /* background: #ffffff; */
+background: #ffffff;
 
-  /* >>>??Jak sprawić żeby tło ograniczało się do obszaru elementu??<<< */
   color: rgb(0, 154, 225);
   display: flex;
  
 }
 .nav__item{
-  /* pierwszy kolor służy do testów, zakomitowany jest docelowy */
-  /* background: #ffffff; */
+ background: #ffffff;
   
   color: rgb(0, 154, 225);
-  /* border:2px solid black; */
-  background: green;
   display: flex;
   justify-content: space-between;
   display: block;
@@ -27,20 +23,9 @@
 }
 
 .dropdown__item{
-  /* margin-top: 0px;
-  margin-left: -13px; */
-  /* display: inline-block; */
-  /* padding: 10px 0px 10px 10px; */
-  width: 170px;
-  height: 35px;
-  background: yellow;
-  float: left;
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 10px 10px 20px ;
-  /* border: 2px solid black */
-}
+  display: none;
+  color: white;
+ }
 
 
 
@@ -48,11 +33,23 @@
 display: none;
 }
 
+.nav__item:hover .dropdown__item{
+  width: 170px;
+  height: 35px;
+  background: #000000;
+  float: left;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px 10px 20px ;
+
+}
+
 .dropdown__item:hover .dropdownSecond__item{
   display: block;
   width: 170px;
   height: 35px;
-  background: red;
+  background: #000000;
   padding: 10px 10px 10px 20px ;
 }
 
@@ -62,8 +59,6 @@ display: none;
 }
 
 .nav__dropdownSecond{
- /* padding-left: 160px; */
- 
  position: absolute;
  left: 100%;
  top: 0;
