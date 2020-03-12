@@ -1,0 +1,22 @@
+.nav{
+    height: 150px;
+    background: red;
+    position: relative;
+}
+.nav__logo{
+    padding-top: 55px;
+    margin-left: 247px;
+}
+
+.nav__list{
+    list-style: none;
+    position: absolute;
+    justify-content: stretch;
+    right: 100px;
+}
+
+.nav__item{
+    width: 100px;
+    float: left;
+    background: yellow;
+}
