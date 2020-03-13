@@ -1,0 +1,74 @@
+
+
+@font-face {
+    font-family: 'montserratextrabold';
+    src: url('montserrat-extrabold-webfont.woff2') format('woff2'),
+         url('montserrat-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'montserratregular';
+    src: url('montserrat-regular-webfont.woff2') format('woff2'),
+         url('montserrat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+    body
+{
+    width: 100%;
+    height: 100%;
+    font-family: 'montserratregular' ;
+    box-sizing: border-box;
+     
+}
+
+a
+{
+    font-family:  'montserratregular';
+    text-decoration: none;
+}
+
+.webscope .row, .cell, .container, .txt
+{
+    margin: 5px;
+    padding: 5px;
+
+}
+
+.container /*cały div z header i nav*/
+{
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.cell
+{
+    min-height: 50px;
+}
+
+h2
+{
+    font-family: 'montserratextrabold';
+    color: white;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.webscope .row
+{
+    width: 100%;
+}
+
+h3
+{
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 28px;
+}

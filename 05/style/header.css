@@ -1,0 +1,65 @@
+.header__container
+{
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.header
+{
+    background: radial-gradient(rgb(194, 74, 126), rgb(105, 86, 235));
+}
+
+.header__logo
+{
+    min-width: 100px;
+}
+
+.header__nav
+{
+    min-width: 300px;
+  
+}
+
+nav ul a
+{
+    float: left;
+    display: block;
+    color: white;
+    padding: 10px;
+}
+
+nav ul a:hover
+{
+    background-color: #6f56e5;
+    color: black;
+}
+
+button
+{
+    background-color: #25f18b;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px 5px 5px 5px;
+    padding: 0 7px;
+}
+
+.txt 
+{
+    color: white;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.header__img /* nie umiałem przemieścić obrazka bardziej w lewo chyba jeszcze nie do 
+końca rozumiem co się przemieszcza kiedy robię padding czy margin, dlatego też mam przerwę między header a features*/ 
+{
+    background-image: url('./images/screen.png');
+    width: 470px;
+    height: 320px;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    border: 5px solid white;
+    border-radius: 10px 10px 10px 10px;
+    transform: rotate(354deg);
+}

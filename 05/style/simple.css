@@ -1,0 +1,20 @@
+.simple__row
+{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+.simple__text
+{
+    padding-right: 270px;
+    padding-top: 50px;
+    width: 900px;
+    margin-right: 100px;
+}
+
+.simple__text p
+{
+    margin-left:63px;
+}

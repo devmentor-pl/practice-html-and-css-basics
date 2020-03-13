@@ -18,3 +18,7 @@ Podpowiedzi:
 &nbsp;
 
 > :warning: Jeśli nie posiadasz materiałów do tego zadania to znajdziesz je na stronie [devmentor.pl](https://devmentor.pl/p/html-and-css-basics/)
+
+
+
+

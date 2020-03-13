@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'source_sans_probold';
+    src: url('sourcesanspro-bold-webfont.woff2') format('woff2'),
+         url('sourcesanspro-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'source_sans_proitalic';
+    src: url('sourcesanspro-it-webfont.woff2') format('woff2'),
+         url('sourcesanspro-it-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'source_sans_proregular';
+    src: url('sourcesanspro-regular-webfont.woff2') format('woff2'),
+         url('sourcesanspro-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+.parent
+{
+    width: 600px;
+    padding: 20px;
+}
+
+.parent .child
+{
+    padding: 10px;
+    height: calc(100% / 3); /*dlaczego jeżeli tutaj nie dam calc z wartością 100% tylko
+    436px tyle ile ma sekcja, to układ strony mi się rozjeżdża?*/
+}
+.parent--inline-block .child
+{
+    width: 30%;
+    display: inline-block;
+   
+}
+
+.parent--inline-block .child ~ .child--last
+{
+    width: 40%;
+    display: inline-block;
+}
+
+.parent--float
+{
+    height: calc(436px / 3); /*a tutaj w drugą stronę jak dam wartość 100% to mi się rozjeżdża strona*/
+}
+
+.parent--float .child
+{
+    width: 30%;
+    float: left;
+}
+
+.parent--float .child::after
+{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.parent--float .child + .child--last
+{
+ 
+    width: 40%;
+    float: left;
+}
+
+.parent--float .child:first-child, .child--first--nospace
+{
+    margin: 0;
+}
+
+
+.parent--flexbox 
+{
+    display: flex; 
+}
+
+.parent--flexbox .child
+{
+    width: 30%;
+}
+
+.child--first
+{
+    font-family: 'source_sans_proregular';
+}
+
+.child--middle
+{
+    font-family: 'source_sans_probold'; 
+}
+
+.child--last
+
+{
+    font-family: 'source_sans_proitalic';
+}
+

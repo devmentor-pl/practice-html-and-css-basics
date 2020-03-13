@@ -1,0 +1,106 @@
+.plan__container
+{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    height:400px;
+    background: -moz-linear-gradient(top, #fcfff4 14%, #dfe5d7 51%);
+    background: -webkit-linear-gradient(top, #fcfff4 14%,#dfe5d7 51%);
+    background: linear-gradient(to bottom, #fcfff4 14%,#dfe5d7 51%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#dfe5d7',GradientType=0 );
+}
+
+.plan__container h4
+{
+    text-align: center;
+    font-size: 17px;
+    font-style: italic;
+    padding: 20px 20px;
+}
+.under-title
+{
+    text-align: center;
+    margin-top: 5px;
+}
+.plan__container .dolar
+{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.plan__container .month
+{
+    font-size:11px;
+    text-align: center;
+    font-weight: 200;
+    font-style: initial;
+    padding-bottom: 40px;
+
+}
+
+.plan__container .info
+{
+    font-size: 14px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.plan__basic
+{
+    width:350px;
+    height: 370px;
+}
+
+.plan__agency
+{
+    width:350px;
+    height: 370px;
+}
+
+.plan__pro
+{
+    width:350px;
+    height: 370px;
+}
+
+.plan__basic:hover
+{
+    background-color: white;
+}
+
+.plan__agency:hover
+{
+    background-color: white;
+}
+
+.plan__pro:hover
+{
+    background-color: white;
+}
+
+.plan__button
+{
+    font-size: 16px;
+    font-weight: 500;
+    font-style: inherit;
+    background-color: lightblue;
+    margin-left: 100px;
+    padding: 6px 6px;
+    border-radius: 7px 7px 7px 7px;
+}
+
+.plan__basic .plan__button
+{
+    margin-top: 90px;
+}
+
+.plan__agency .plan__button
+{
+    margin-top: 75px;
+}
+
+.plan__pro .plan__button
+{
+    margin-top: 61px;
+}
