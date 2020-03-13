@@ -4,9 +4,184 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>devmentor.pl - HTML & CSS BASICS - #01</title>
+    <title>wilkticzer.pl - HTML & CSS BASICS - #01</title>
 </head>
 <body>
+
+    <header id="header">
+        <h1>
+            wilkticzer.pl- ucz się wyć!
+        </h1>
+        <p>Nasze Motto, to- <b>Wyj jakby jutra miało nie być!!</b></p>
+        
+        <a href="#">
+        <img src="./logo.jpg" alt="miejsce na logo"></a>
+
+        <nav id="menu">
+            <ol>
+
+                <li>
+                    <a href="#">Pracuj przeponą</a>
+                </li>
+
+                <li>
+                    <a href="#">Znajdź swój własny księżyc</a>
+                </li>
+
+                <li>
+                    <a href="#">Kontakt</a>
+                </li>
+
+            </ol>
+        </nav>
+        
+    </header>
+
+    <main>
+
+        <article class="chapter:1">
+            <head>
+
+                <h2> Pracuj przeponą  </h2>
+                <time datetime="2020-03-08 10:00"> 3 marca 2020 r., godz. 10:00</time>
+                <br> <meta name="author" content="Dawid Wilk"> Dawid Wilk
+            </head>
+
+                <figure>
+
+                    <img src="./hurricane.png" alt="praca przepony">
+                    <figcaption>Twoja przepona musi być silna</figcaption>
+
+                </figure>
+                Wielu z Was zapewne zadaje sobie pytanie, jak dobrze <b>wyć</b>?<br>
+                Otóż <i>odpowiedź</i> nie jest prosta, ale możecie znaleźć ją...
+                <a href="./art1.html" rel="nofollow">tutaj</a>
+            </p>
+
+            <table>
+
+                <caption>Jak poprawnie oddychać</caption>
+                
+                <colgroup>
+                    <col span="3" style="background: pink;">
+                </colgroup>
+               
+                <thead>
+                   
+                    <tr>
+                        <th scope="col">Oddech</th>
+                        <th scope="col">Czas (przytrzymanie)</th>
+                        <th scope="col">Powtórzenia</th>
+                    
+                    </tr>
+                    
+                    <tbody>
+                        <tr>
+                            <td>Płytki</td>
+                            <td>1 minuta</td>
+                            <td>5</td>
+                         </tr>
+
+                        <tr>
+                            <td>Głębszy</td>
+                            <td>45 sekund</td>
+                            <td>4</td>
+                        </tr>
+
+                        <tr>
+                            <td>Głęboki</td>
+                            <td>30 sekund</td>
+                            <td>3</td>
+                        </tr>
+                    
+                    </tbody>
+                </thead>
+
+            </table>
+
+            <section id="komentarze" class="comments">
+
+                <form action="https://example.net/comment.php" method="post" id="dodaj-komentarz">
+                
+                    <h3>Dodaj komentarz</h3>
+
+                        <div>
+                            <label>Nick
+                            <input  name="author">
+                            </label>
+                        </div>
+
+                        <div>
+                            <label>Email
+                            <input  name="email">
+                            </label>
+                        </div>
+                    
+                        <div>
+                            <label for="comment-comment">Komentarz</label>
+                            <textarea name="comment" cols="48" rows="7" required></textarea>
+                        </div>
+
+                        <div>
+                            <button name="submit" type="submit" id="comment-submit">Wyślij</button>
+                        </div>
+                        <input type="hidden" name="comment_post_ID" value="88">
+                </form>
+
+                <h2>Komentarze</h2>
+                
+                <ol>
+                   
+                    <li id="comment-1" property="comment" vocab="/" typeof="Comment">
+                        
+                        <div class="comment-meta">
+                            <a href="#comment-1">
+                                <time datetime="2020-03-08 20:41">08.03.2020, godz. 20:41</time>
+                            </a>
+                            <b property="author" vocab="http://schema.org" typeof="Person"><a href="http://example.net/" property="name url"><img alt="" src="http://avatary.gdziekolwiek.com/Comandeer" height="48" width="48" property="image">Zdzisław</a> skomentował</b>
+                        </div>
+                        
+                        <p property="text">Świetny poradnik, dziekuję!</p>
+                    </li>
+
+                    <li id="comment-2" property="comment" vocab="/" typeof="Comment">
+                        
+                        <div class="comment-meta">
+                            <a href="#comment-2">
+                                <time datetime="2020-03-08 20:08:30" property="dateCreated">08.03.2020, godz. 20:08</time>
+                            </a>
+                            <b property="author" vocab="http://schema.org" typeof="Person"><a href="http://example.net/" property="name url"><img alt="" src="http://example.net/avatary/Anonim" height="48" width="48" property="image">Helga</a> skomentował</b>
+                        </div>
+                        
+                        <p property="text">Totalny bezsens! Nie polecam</p>
+                    </li>
+
+                </ol>
+
+                
+            </section>
+
+        
+            
+        </article>
+
+        <footer>
+
+            <div>&copy; wilkticzer.pl</div>
+            
+            <nav>
+                <ul>
+                    <li><a href="home">Strona główna</a></li>
+                    <li><a href="contact">Kontakt</a></li>
+                </ul>
+
+            
+            </nav>
+        </footer>
+
+    </main>
     
 </body>
-</html>
+
+</html> <!--komentarze trochę podkopiowałem ze źródła, które jest w materiale. Nie wiem czy tak powinno to wyglądać, bo nie do końca 
+rozumiem wszystkie klasy i wartości jakie się tam znalazły-->
