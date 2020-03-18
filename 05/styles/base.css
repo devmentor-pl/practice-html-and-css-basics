@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap');
+
 .features {
   border: 10px solid green;
   color: white;
@@ -9,22 +11,22 @@
   display: flex;
   justify-content: space-around;
   margin: auto;
-  width: 70%;
+  width: 76%;
   max-width: 1550px;
 }
 
 .features__header {
   border: 10px blue solid;
   margin: auto;
-  width: 70%;
+  width: 76%;
   max-width: 1550px;
 }
 
 .features__section {
   border: 10px solid yellow;
 }
-.footer{
-    width: 100%;
+.footer {
+  width: 100%;
 }
 
 .header {
@@ -44,7 +46,7 @@
   display: flex;
   justify-content: space-around;
   margin: auto;
-  width: 70%;
+  width: 76%;
   max-width: 1550px;
 }
 
@@ -59,19 +61,15 @@
 }
 
 .header__sectionImage {
-  border: 10px hotpink solid;
-  width: 70%;
-  /* display: flex; */
-  /* width: 620px; */
-  /* max width: 10px; */
-  padding: 30px 20px 100px 20px;
+  width: 72%;
+  padding: 3% 2% 10% 2%;
 
   background: white;
-  margin-top: 2%;
+  margin-top: 1%;
   margin-right: 50%;
-  margin-left: 28%;
+  margin-left: 16%;
   transform: rotate(-6deg);
-  border-radius: 35px;
+  border-radius: 3.5%;
 }
 
 .info {
@@ -95,33 +93,38 @@
 }
 .logos {
   border: 10px blue solid;
-  width: 70%;
+  width: 76%;
 }
-
 .nav {
   margin: auto;
   display: flex;
   justify-content: space-between;
   border: 10px blue solid;
-  width: 76%;
   height: 150px;
+  width: 76%;
   max-width: 1550px;
 }
-.nav__anchor{
-text-decoration: none;
+.nav__anchor {
+  text-decoration: none;
   color: white;
 }
 
 .nav__item {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
   width: 100px;
   float: left;
 }
 
 .nav__list {
-    padding-top: 1.5%;
+  padding-right: 1%;
+  padding-top: 1%;
   border: 10px solid yellow;
   list-style: none;
-  justify-content: stretch;
+  display: flex;
+  align-content: space-between;
+  flex-wrap: wrap;
+
   /* margin-right: 10%; */
 }
 
@@ -137,7 +140,7 @@ text-decoration: none;
 .pricing__header {
   border: 10px solid blue;
   margin: auto;
-  width: 70%;
+  width: 76%;
   max-width: 1550px;
 }
 
@@ -145,8 +148,7 @@ text-decoration: none;
   border: 10px solid blue;
   max-width: 1550px;
   margin: auto;
-  width: 70%;
-  display: flex;
+  width: 76%;  display: flex;
   justify-content: space-around;
   margin: auto;
 }
@@ -163,15 +165,13 @@ text-decoration: none;
   border: 10px solid blue;
   text-align: center;
   margin: auto;
-  width: 70%;
-}
+  width: 76%;}
 
 .team__subsection {
   border: 10px solid blue;
   max-width: 1550px;
   margin: auto;
-  width: 70%;
-  display: flex;
+  width: 76%;  display: flex;
   justify-content: space-around;
   margin: auto;
 }
