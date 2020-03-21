@@ -4,38 +4,31 @@
 
 &nbsp;
 
-Najwyższy czas zakodować prawdziwą stronę internetową! 
+Nadszedł czas, aby stworzyć podstawowy układ strony. Poniżej przedstawiam jej schemat. 
 
-Będziemy się wzorować na projekcie od chłopaków z [Webscope](https://webscopeapp.com/), który wygląda tak:
-
-![](./assets/demo.png)
+![](./demo.png)
 
 &nbsp;
 
-## Opis projektu
+* **zielone krawędzie** to obszar dostępny dla przeglądarki, czyli element o 100% szerokości, która wyznacza nasze sekcje
+* **niebieskie krawędzie** to maksymalna szerokość naszej strony - powiedzmy, że wynosi 1000px
+* **pomarańczowe prostokąty** to dowolna zawartość
 
-Wszystkie niezbędne grafiki masz przygotowane w katalogu `images`. Znajdziesz tam m. in. [pliki SVG](https://pl.wikipedia.org/wiki/Scalable_Vector_Graphics). Ich podgląd w VS Code możesz wykonać dzięki rozszerzeniu [SVG Viewer](https://marketplace.visualstudio.com/items?itemName=cssho.vscode-svgviewer).
+## Sekcja nr 1
 
-Font, który jest używany w projekcie to [Montserrat](https://fonts.google.com/specimen/Montserrat).
+Uznajmy, że to nasz nagłówek, który z lewej strony posiada logo, z prawej menu. Wykonaj to zadanie w taki sposób, aby elementy wyglądały jak doczepione do lewego i prawego boku.
 
-Tło które widać w górnej części strony to gradient: 
-`background: radial-gradient(rgb(194, 74, 126), rgb(105, 86, 235));`
+## Sekcja nr 2
 
-Proponuję dla wygody użyć rozszerzenie do Chrome o nazwie [PerfectPixel](https://chrome.google.com/webstore/detail/perfectpixel-by-welldonec/dkaagdgjmgdmbnecmcefdhjekcoceebi), który pozwoli Ci osadzić plik poglądowy, przedstawiony wyżej (lokalizacja: `./assets/demo.png`) jako tło dla renderowanej strony, co uławi Ci kodowanie.
+W tym przypadku mamy treść, która jest podzielona na dwie kolumny o tej samej szerokości z niewielkim odstępem jedynie mędzy nimi. Podobnie jak w sekcji poprzedniej elementy mają być przyległe do prawego i lewego boku wyznaczonego przez maksymalną szerokości strony.
 
-Projekt nie musi być wykonany zgodnie z pierowzrorem 1:1. Ważne, aby na pierwszy rzut oka było widać, że jest to dokładne odwzorowanie.
+## Sekcja nr 3
 
-## Propozycja podziału
+W tym przypadku mamy 3 kolumny. W przeciwieństwie do poprzedniej sekcji, tym razem odstępy mają być jednakowe nawet między zawartością, a niebieską krawędzią.
 
-Poniżej zamieszczam propozycję podziału strony na poszczególne grupy, gdzie:
+## Sekcja nr 4
 
-- wiersz (`width: 100%`), kolor zielony
-- wyśrodkowanie (`max-width: 1050px`), kolor niebieski niebieski
-- komórka (wiele elementów w jednej linii), pomarańczowy
-
-Nie musisz się od nich stosować to jedynie moja koncepcja, która ma Ci pomóc utworzyć odpowiednią strukturę.
-
-![](./assets/demo-info.png)
+Ostatni element to nasza stopka, której wysokość ma być nie mniejsza niż 100px. Jej zawartość ma być wyśrodkowana w pionie oraz poziomie.
 
 &nbsp;
 
