@@ -1,0 +1,90 @@
+
+.parent {
+    
+    outline: 1px solid green; /*pomoc przy widoku*/
+    padding: 20px;
+    width: 600px; /*szerokość bezwględna 600px ?? czy 640 z padding ?? jeżli bezwględna  to potrzeba zastosować box-sizing: border-box; ?? */
+    
+}
+
+
+/*parent--inline-block - umieszzcenie elementów 1 linii*/
+.parent--inline-block > .child {
+    background: rgb(180, 25, 25); /*pomoc przy widoku*/
+    display: inline-block;
+    /*width: 30%;*/
+    width: calc(30% - 6px); /*nie umiałem lpiej tego dopracować... elementy inline-block oraz float rozjechały się , flex jest ok ze wzgledu na szerokość po dodaniu  margin-left: 10px; jak to ku** ugryźć...
+    zamiast width:30% użyłem width: calc. odejmowałem 6px dla 30% i 8px dla 40% żeby odjąć brakujace 20 px (odstępy między potomkami)*/
+}
+
+.parent--inline-block > .child:last-child {
+    background: rgb(230, 127, 11);/*pomoc przy widoku*/
+    /*width: 40%;*/
+    width: calc(40% - 8px); /*jak wyżej*/
+}
+
+/*parent--float - umieszzcenie elementów 1 linii*/
+.parent--float > .child {
+    background: rgb(51, 199, 14); /*pomoc przy widoku*/
+    float: left;
+    /*width: 30%;*/
+    width: calc(30% - 6px); /*jak wyżej*/
+}
+.parent--float > .child:last-child {
+    background: rgb(111, 151, 111); /*pomoc przy widoku*/
+    /*width: 40%;*/
+    width: calc(40% - 8px); /*jak wyżej*/
+}
+.parent--float::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/*parent--flexbox - umieszzcenie elementów 1 linii*/
+.parent--flexbox {
+    display: flex;
+}
+.parent--flexbox > .child {
+    background: rgb(78, 13, 230); /*pomoc przy widoku*/
+    width: 30%;
+}
+.parent--flexbox > .child:last-child {
+    background: rgb(9, 198, 231); /*pomoc przy widoku*/
+    width: 40%;
+}
+/* do tego momentu było ok z width: 30%; oraz width: 40%;*/
+
+/*odstęp między potomkami 10px*/
+.child {
+    margin-left: 10px;
+}
+/*likwidacja odstępu 10 px dla elementu first*/
+.child:first-child {
+    margin-left: 0;
+}
+/*po tych selektoirach dot. odstepu inline-block oraz float rozjechały się- za szerokie na jedną linię...korekcja przy uzyciu width: calc....*/
+
+
+/* czcionki- zrobiłem jak potrafiłem, nie wiem czy poprawnie...znasz lepszy sposób ???*/
+@font-face {
+    font-family: Source Sans PRO-regular;    
+    src: url(./source-sans-pro/SourceSansPro-Regular.otf);
+}
+@font-face {
+    font-family: Source Sans PRO-bold;    
+    src: url(./source-sans-pro/SourceSansPro-Bold.otf);
+}
+@font-face {
+    font-family: Source Sans PRO-italic;    
+    src: url(./source-sans-pro/SourceSansPro-It.otf);
+}
+.child--first {
+    font-family: Source Sans PRO-regular;  
+}
+.child--middle {
+    font-family: Source Sans PRO-bold;
+} 
+.child--last {
+    font-family: Source Sans PRO-italic;
+}
