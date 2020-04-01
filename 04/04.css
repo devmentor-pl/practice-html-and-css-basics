@@ -1,117 +1,67 @@
-* {
-    box-sizing: border-box;
-}
 /*wiersz z paskiem MENU*/
-.menu {
+nav > ul {
     display: flex;  
 }
-.menu__item {
+nav ul > li {
     background: rgb(0, 200, 250);
     border-top: 3px solid rgb(0, 200, 250);
     padding: 0 5px;
+    width: 120px;   
     position: relative;
-    width: 120px;    
+    
 }
-.menu__item:hover {
-    border-top: 3px solid rgb(3, 240, 161);
+nav ul > li:hover {
+border-top: 3px solid rgb(3, 240, 161);
 }
+
+nav > ul > li  ul {
+    display: none;
+    position: absolute;
+}
+
+
+nav > ul > li:hover > ul {
+    display: block;
+    left: 0; 
+}
+
+nav > ul > li > ul > li:hover ul {
+    display: block;
+    left: 120px;
+    top: 10px;
+}
+
 /*strzałki -strzałka menu*/
-.menu__item > .menu__arrow  { /*zamiennie  div zamiast .menu_arrow ??*/
+
+nav > ul > li div {
     display: inline-block;
 }
-.menu__arrow > p {
+nav > ul > li > div > p { 
     display: none;
     transform:rotate(90deg);
     padding: 0 10px;
 }
-.menu__item:hover .menu__arrow p {
-    display: block;
-}
-/*menu rozwijane DROPDOWN*/
-.dropdown {
-    display: none;
-    position: absolute;  
-}
-/*stylowanie elementów rozwijanych*/
-.dropdown__item {
-    background: rgb(247, 223, 12);
-    border-top: 3px solid rgb(247, 223, 12);
-    padding: 0 5px;
-    width: 100px;
-}
-.dropdown__item:hover{
-    border-top: 3px solid rgb(3, 240, 161);
-}
-
-/*menu rozwijane -hover*/
-.menu__item:hover .li { /*hover dodać!!!*/
-    display: block;
-}
-.dropdown--lvl1_1:hover .dropdown--lvl2_1 { 
+nav > ul > li:hover > div > p { 
     display: block;
 }
 
+/*strzałki -strzałka dropdown*/
 
-
-
-
-/* pozycja DROPDOWN*/
-.dropdown--lvl1  {  
-    left: 0px; 
-}
-.dropdown--lvl2_1  {
-    left: 100px;
-    top: 20px;
-}    
-
-
-/*
-li.item--lvl1_1:hover li.item--lvl2_2 {
-    display: block
-}
-li.item--lvl1_2:hover li.item--lvl2_2 {
-    display: block
-}
-*/
-
-/*strzałki -strzałka lvl1*/
-.dropdown__item > .dropdown__arrow { /*zamiennie .dropdown__arrow i div ?? */
-    display: inline-block;
-}
-/**/
-.dropdown__arrow > p {
+nav > ul > li > ul > li > div > p { 
     display: none;
     padding: 0 10px;
 }
-.dropdown__item:hover .dropdown__arrow p {     /* kod działa dla również dla .dropdown__item:hover p - ta opcja nawet bardziej czytelna...*/
+nav > ul > li > ul > li:hover div p { 
     display: block;
 }
 
-
-
-
-
-
-
-   
-
-
-/*
-.dropdown--lvl1 > .item--lvl1_1:hover .item--lvl2_1 {
-    display: block;
-}
-.item--lvl1_2:hover .item--lvl2_2 {
-    display: block;
+/*"klik" w dropdown*/
+nav > ul > li > ul > li > ul > li:hover div{
+    display:block;
 }
 
-.item--lvl1:hover > .item--lvl2_1 {
-    display: block;
+/*odnośniki */ 
+a {
+    text-decoration: none;
+    color: black; /*jak zrobić reset koloru lub reset ustawień dla <a> ?*/
 }
-*/
-
-
-
-
-
-
-
