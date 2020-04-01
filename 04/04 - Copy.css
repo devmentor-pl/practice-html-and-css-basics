@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+}
+/*wiersz z paskiem MENU*/
+.menu {
+    display: flex;  
+}
+.menu__item {
+    background: rgb(0, 200, 250);
+    border-top: 3px solid rgb(0, 200, 250);
+    padding: 0 5px;
+    position: relative;
+    width: 120px;    
+}
+.menu__item:hover {
+    border-top: 3px solid rgb(3, 240, 161);
+}
+/*strzałki -strzałka menu
+.menu__item .menu__arrow  { /*zamiennie  div zamiast .menu_arrow ??
+    display: inline-block;
+}
+.menu__arrow > p{
+    display: none;
+    transform:rotate(90deg);
+    padding: 0 10px;
+}
+.menu__item:hover .menu__arrow > p  {
+    display: block;
+}
+*/
+
+
+/*menu rozwijane DROPDOWN*/
+.dropdown {
+    display: none;
+    position: absolute;  
+}
+/*stylowanie elementów rozwijanych*/
+.dropdown__item {
+    background: rgb(247, 223, 12);
+    border-top: 3px solid rgb(247, 223, 12);
+    padding: 0 5px;
+    width: 100px;
+}
+.dropdown__item:hover{
+    border-top: 3px solid rgb(3, 240, 161);
+}
+
+.menu__item:hover .dropdown--lvl1 {
+    display: block;
+    
+}
+.menu__item:hover .dropdown--lvl1:hover .dropdown--lvl2 {
+    display: block;
+    
+}
+
+
+.menu__item .dropdown--lvl1 .dropdown--lvl1_1 {
+    clear: both;
+}
+
+
+.menu__item .dropdown--lvl1 .dropdown--lvl1_1:hover .dropdown--lvl2 {
+    display: block;
+}
+
+/*menu rozwijane -hover
+.menu__item:hover .dropdown--lvl1 { /*hover dodać!!!
+    display: block;
+}
+.dropdown--lvl1_1:hover > .dropdown--lvl2 { 
+    display: flex;
+}
+
+
+*/
+
+
+/* pozycja DROPDOWN*/
+.menu__item .dropdown--lvl1  {  
+    left: 0px; 
+}
+
+.menu__item .dropdown--lvl1 .dropdown--lvl2 .dropdown--lvl2_1  {
+    left: 100px;
+    top: 20px;
+}  
+.menu__item .dropdown--lvl1 .dropdown--lvl2 .dropdown--lvl2_2  {
+    left: 100px;
+    top: 60px;
+}   
+
+/*  
+.dropdown--lvl2_1 {
+    left: 100px;
+    top: 20px;
+}
+.dropdown--lvl2_2 {
+    left: 200px;
+    top: 40px;
+}
+*/
+
+
+/*
+li.item--lvl1_1:hover li.item--lvl2_2 {
+    display: block
+}
+li.item--lvl1_2:hover li.item--lvl2_2 {
+    display: block
+}
+*/
+
+
+
+/*strzałki -strzałka lvl1
+.dropdown__item > .dropdown__arrow { zamiennie .dropdown__arrow i div ?? 
+    display: inline-block;
+}
+*/
+
+/*
+.dropdown__arrow > p {
+    display: none;
+    padding: 0 10px;
+}
+.dropdown__item:hover .dropdown__arrow p {      kod działa dla również dla .dropdown__item:hover p - ta opcja nawet bardziej czytelna...
+    display: block;
+}
+*/
+
+
+
+
+
+
+   
+
+
+/*
+.dropdown--lvl1 > .item--lvl1_1:hover .item--lvl2_1 {
+    display: block;
+}
+.item--lvl1_2:hover .item--lvl2_2 {
+    display: block;
+}
+
+.item--lvl1:hover > .item--lvl2_1 {
+    display: block;
+}
+*/
+
+
+
+
+
+
+
