@@ -1,13 +1,14 @@
 /*Acco*/
 .ac-container {
     max-width: 400px;
+
 }
 
 /* 
 Znacznik label, którego przodkiem jest klasa .ac-container 
 (0, 1, 1)
 */
-?? {
+.ac-container label {
     height: 30px !important;
     line-height: 21px !important;
     font-size: 12px !important;
@@ -34,6 +35,7 @@ Znacznik label, którego przodkiem jest klasa .ac-container
     font-size: 12px;
     height: 30px;
     line-height: 20px;
+    
 }
 
 .ac-container {
@@ -47,7 +49,9 @@ Zmiana koloru tła po najechaniu przez kursor myszy na znacznik label,
 który znajduje się wewnątrze elementu o klasie .ac-container 
 (0, 2, 1)
 */
-?? {
+
+.ac-container label:hover 
+/* .ac-container * label:hover */ {
     background: #fff;
 }
 
@@ -61,10 +65,12 @@ i ten brat musi posiadać przodka o klasie .ac-container
 to samo co w 1) ale z efektem najechania kursorem na label 
 (0, 3, 2)
 */
-??,
-?? {
+
+.ac-container input:checked + label,
+.ac-container input:checked + label:hover {
     background: #f1f2f3;
-    color: #666;
+    /* color: #666; */
+    color: red;
     text-shadow: 0 1px 1px rgba(255,255,255,0.6);
     box-shadow: 0 0 0 1px rgba(155,155,155,0.3),0 2px 2px rgba(0,0,0,0.1);
     height: 30px;
@@ -89,9 +95,11 @@ którego poprzedni brat jest zaznaczonym inputem (jest checkbox-em),
 którego przodek to element o klasie .ac-container
 (0, 3, 3)
 */
-?? {
+
+
+.ac-container input:checked + label:hover::after {
     background-image: url(../images/arrow_up.png);
-}
+} 
 
 .ac-container input {
     display: none;
@@ -126,7 +134,7 @@ Rodzieństwo typu article, dla elementu input, który jest zaznaczony (jest chec
 oraz posiada przodka o klasie .ac-container
 (0, 2, 2)
 */
-?? {
+.ad-container input:checked ~ article {
     -webkit-transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
     -moz-transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
     -o-transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
