@@ -10,47 +10,74 @@
 </head>
 
 <body>
-
+    <!-- Logo and nav -->
     <header>
         <nav>
             <ul>
-                <li><a href="#">Page1</a></li>
-                <li><a href="#">Page2</a></li>
-                <li><a href="#">Page3</a></li>
-                <li><a href="#">Page4</a></li>
-                <li><a href="#">Page5</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
 
         <h1>
-            <a href="http://example.net">That's my blog about web dev problems</a>
+            <a href="#">That's my blog about web dev problems</a>
         </h1>
         <p>Keep going every day forward</p>
     </header>
 
+    <!-- Articles -->
     <main>
         <article>
             <header>
-                <h2> How to became a Web Developer</h2>
+                <h1> How to became a Web Developer</h1>
             </header>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum doloribus cupiditate ullam quibusdam?
-                Repellendus nostrum tenetur, inventore quam distinctio nulla?</p>
-            <a href="#">Read more</a>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique veniam corporis recusandae minima
+                    necessitatibus aliquid atque reprehenderit officia quisquam eius? Perspiciatis quas nihil provident
+                    tempora sint animi iure minus sapiente accusantium obcaecati odio tenetur, amet pariatur sunt,
+                    itaque praesentium quo quia quos saepe omnis? Voluptatem aspernatur quia fugit laborum consequatur.
+                </p>
+                <a href="#">Read more</a>
+                <p class="post-info">Published <time datetime="2011-01-07T20:40:06+00:00">05.04.2020</time> by <a
+                        href="#"><span property="name">Szymon Rojek</span></a>
+                </p>
+            </div>
+
+            <!-- Comments section -->
+            <section class="comments">
+                <h3>Please leave a comment down below:</h3>
+                <ol>
+                    <li>
+                        <div>
+                            <a href="#">
+                                <time datetime="2011-01-07T20:41:06+00:00" property="dateCreated">05.04.2020,
+                                    20:41</time>
+                            </a>
+                            <b><a href="#"><img alt="" src="#" height="48" width="48" property="image">Szymon Rojek</a>
+                                commented</b>
+                        </div>
+                        <p property="text">Great article bro!</p>
+                    </li>
+                    <li>
+                        <div>
+                            <a href="#">
+                                <time datetime="2017-01-08T20:08:30+01:00" property="dateCreated">07.01.2017,
+                                    20:08</time>
+                            </a>
+                            <b><a href="#"><img alt="" src="#" height="48" width="48" property="image">Unknown</a>
+                                commented</b>
+                        </div>
+                        <p property="text">I am really glad that you have written this article!</p>
+                    </li>
+                </ol>
+
+
+            </section>
         </article>
 
-        <article>
-            <header>
-                <h2> 3 Ways to better execute your plan</h2>
-            </header>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum doloribus cupiditate ullam quibusdam?
-                Repellendus nostrum tenetur, inventore quam distinctio nulla?</p>
-            <a href="#">Read more</a>
 
-            <form action="search.php" method="post">
-                <p><input type="text" name="q"><button type="submit" name="submit" value="1">Szukaj</button></p>
-            </form>
-
-        </article>
     </main>
 
     <footer>
