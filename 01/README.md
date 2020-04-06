@@ -6,19 +6,22 @@
 
 Utwórz strukturę HTML w pliku `index.html`, która będzie poprawna semantycznie i będzie posiadała poniższe elementy:
 
-- Nagłówek, który będzie zawierał:
+- Nagłówek tj. `<header>`, który będzie zawierał:
     - logo
     - menu rozwijane
-- Treśc główną, którą będzie:
-    - Artykuł, który posiada:
+- Treśc główną np. `<main>`, którą będzie:
+    - Artykuł tj. `<article>`, który posiada:
         - tytuł
-        -treść
+        - treść
         - datę publikacji
         - autora
         - ilustrację
         - tabelę
     - Formularz do komentowania
-    - Kilka komentarzy
+    - Kilka przykładowych komentarzy, które zawierają
+        - treść komentarza
+        - autora komentarza
+        - datę utworzenia
 - Stopkę z informacją o prawach autorskich
 
 &nbsp;
