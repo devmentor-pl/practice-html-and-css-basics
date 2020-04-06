@@ -78,8 +78,8 @@ to samo co w 1) ale z efektem najechania kursorem na label
     font-size: 13px;
 }
 
-.ac-container label:hover:after,
-.ac-container input:checked + label:hover:after {
+.ac-container label:hover::after,
+.ac-container input:checked + label:hover::after {
     content: '';
     position: absolute;
     width: 24px;

@@ -1,0 +1,64 @@
+
+*{
+  box-sizing: border-box;
+  margin: 0 auto;
+  font-size: 0;
+  padding: 10px 0 10px 0;
+
+}
+.parent {
+  width: 600px;
+  white-space: nowrap; 
+  background-color: royalblue;
+}
+
+/* remove white space between divs */
+
+.child {
+  height: 110px;
+  white-space: normal;
+  font-size: 16px;
+}
+
+
+/* positioning elements using different methods */
+
+.parent--inline-block div {
+  display: inline-block;
+  position: relative;
+  background-color: yellow;
+}
+
+/* middle child was above the others so I've moved it a bit down */
+.child-margin {
+  position: absolute;
+  top: 18px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.child--first {
+  width: 180px;
+}
+  
+.child--middle {
+  width: 180px;
+}  
+
+.child--last {
+  width: 240px;
+}
+
+.parent--float div {
+  float: left;
+  background-color: pink;
+}
+
+.parent--flexbox {
+  display: flex;
+  background-color: green;
+}
+
+
+  
