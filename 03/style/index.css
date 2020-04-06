@@ -53,6 +53,7 @@
 .parent--float div {
   float: left;
   background-color: pink;
+  margin-bottom:20px;
 }
 
 .parent--flexbox {
