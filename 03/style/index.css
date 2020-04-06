@@ -1,67 +1,47 @@
 
 *{
   box-sizing: border-box;
-  margin: 0 auto;
-  font-size: 0;
-  padding: 10px 0 10px 0;
-
 }
+
 .parent {
   width: 600px;
-  white-space: nowrap; 
-  background-color: royalblue;
+  padding: 20px;
 }
 
-/* remove white space between divs */
-
-.child {
-  height: 110px;
-  white-space: normal;
-  font-size: 16px;
-}
-
-
-/* positioning elements using different methods */
-
-.parent--inline-block div {
-  display: inline-block;
-  position: relative;
-  background-color: yellow;
-}
-
-/* middle child was above the others so I've moved it a bit down */
-.child-margin {
-  position: absolute;
-  top: 18px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
+/* child width */
 
 .child--first {
-  width: 180px;
+   width: 30%;
 }
   
 .child--middle {
-  width: 180px;
+  width: 30%;
 }  
 
 .child--last {
-  width: 240px;
+  width: 40%;
+}
+
+/* positioning elements by different methods */
+
+.parent--inline-block div{
+  display: inline-block;
+  background-color: yellow;
 }
 
 .parent--float div {
   float: left;
-  background-color: pink;
-  margin-bottom:20px;
-}
-
+} 
 
 .parent--flexbox {
   display: flex;
-  margin-bottom:20px;
   background-color: green;
 }
-
+ 
 
   
+
+
+
+
+
