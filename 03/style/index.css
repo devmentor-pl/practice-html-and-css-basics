@@ -56,8 +56,10 @@
   margin-bottom:20px;
 }
 
+
 .parent--flexbox {
   display: flex;
+  margin-bottom:20px;
   background-color: green;
 }
 
