@@ -4,15 +4,19 @@
   box-sizing: border-box;
 }
 
-  
-.parent{
+
+.parent {
   width: 600px;
   padding: 20px;
   background-color:blue;
 }
 
- .child {
+ .parent .child {
   height: 80px;
+}
+
+.parent .child--middle {
+  overflow: hidden;
 }
 
 .child--first {
@@ -111,4 +115,16 @@ then I do not have to use margin: 0;
 
 
 
+/* Question:
 
+When I have a padding 20px then text is flowing out of divs.
+
+I have used selector:
+
+.parent .child--middle {
+  overflow: hidden;
+}
+
+Is any better method to solve a problem?
+
+*/
