@@ -177,4 +177,14 @@ I've generated fonts by the https://www.fontsquirrel.com/ - then added separate 
 b)
 Second one is much easier. I have just downloaded a particular fonts from the website https://fonts.google.com/specimen/Source+Sans+Pro ,created a fonts file, and @font-face.
 
+Which method is better in your opinion, maybe you have got different one, more efficient?
+
+
+
+3) Why did you add this link in HTML:
+ <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+
+
+ 4) Also in HTML structure there is an additional class named after-box, why?
+ 
 */
