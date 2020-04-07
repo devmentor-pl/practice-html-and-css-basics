@@ -1,46 +1,113 @@
 
-*{
+
+* {
   box-sizing: border-box;
 }
 
-.parent {
+  
+.parent{
   width: 600px;
   padding: 20px;
+  background-color:blue;
 }
 
-/* child width */
+ .child {
+  height: 80px;
+}
 
 .child--first {
-   width: 30%;
+  width: 30%;
 }
-  
+
 .child--middle {
   width: 30%;
-}  
+}
 
 .child--last {
   width: 40%;
 }
 
-/* positioning elements by different methods */
 
-.parent--inline-block div{
+/* positioning elements by inline-block */
+
+.parent--inline-block {
+  border: 1px solid red;
+  margin-bottom: 40px;
+}
+
+.parent--inline-block .child {
   display: inline-block;
+  vertical-align: top;
+  margin-left: 10px;
   background-color: yellow;
 }
 
-.parent--float div {
+.parent--inline-block .child--first,
+.parent--inline-block .child--middle {
+  width: calc(30% - 10px)
+}
+
+.parent--inline-block .child--first {
+  margin-left: 0;
+}
+
+
+/* positioning elements by float */
+
+.parent--float {
+  border: 1px solid darkorange;
+}
+
+.parent--float .child {
   float: left;
+  margin-right: 10px;
+  border: 1px solid red;
+  background-color: darkorange;
+}
+
+.parent--float .child--last {
+  margin-right: 0;
 } 
+
+.parent--float .child--first,
+.parent--float .child--middle {
+  width: calc(30% - 10px);
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
+/* I think is better just to type selectors:
+
+.parent--float .child--middle,
+.parent--float .child--last {
+  margin-left: 10px;
+}
+
+then I do not have to use margin: 0;
+*/
+
+
+/*  positioning element by flex-box */
 
 .parent--flexbox {
   display: flex;
-  background-color: green;
+  margin-top: 40px;
+  border: 1px solid green;
 }
- 
-
   
+.parent--flexbox .child {
+  margin-left: 10px;
+  background-color:rgb(235, 196, 203);
+}
 
+.parent--flexbox .child--first{
+  margin-left: 0;
+}
 
 
 
