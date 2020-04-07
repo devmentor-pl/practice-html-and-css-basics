@@ -1,0 +1,116 @@
+
+body {
+    font-family:"Montserrat", Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url(./Montsserat/Montserrat-Bold.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url(./Montsserat/Montserrat-Regular.ttf);
+    font-weight: normal; /*regular czy normal ? biały kolor wyrazu (normal)*/
+}
+
+.row, .container, .cell {
+    margin: 5px;
+    outline: 1px solid;
+    padding: 5px;
+}
+.row {
+    outline-color: rgb(40, 214, 5);
+    width: 100%;
+}
+.container {
+    display: flex;
+    max-width: 80%; /*próbowałem w body ale całość się zwęrzyła...*/
+    margin: 0 auto;
+    outline-color: rgb(12, 88, 230);
+}
+.cell {
+    outline-color: rgb(255, 4, 4);
+}
+
+/*HEADER*/ /*HEADER*//*HEADER*//*HEADER*//*HEADER*//*HEADER*//*HEADER*//*HEADER*/
+.header {
+    background: radial-gradient(rgb(194, 74, 126), rgb(105, 86, 235));
+}
+/*CONTAINER 1*/
+.header__container {
+    font-size: 10px;
+    justify-content: space-between;
+}    
+/*header -cell*/
+
+/*.header__logo { after, before - ten sam efekt ??? wystarczy sam content ??? */
+                  /*content: url(./images/logo.svg); - też działa jak kod w html <img.....>  
+}*/
+.header__logo {
+    width: 15%;
+}
+
+.header__nav > ul {
+    display: flex;
+}
+.header__nav li {
+   /* border: 2px solid rgb(105, 86, 235);*/
+    font-weight: bold;
+    margin-top: 7px; /* jak regulować odsunięcie tekstu w pionie? */
+    padding: 0 10px;
+}
+/*CONTAINER 2*/
+.header__article {
+    font-size: 10px;
+}
+.header__article h2 {
+    font-weight: bold; 
+    margin-bottom: 10px;
+   /* outline: 1px solid rgb(4, 255, 201); */ 
+}
+.header__article p {
+    font-weight: normal;
+    margin-bottom: 10px;
+    /*outline: 1px solid rgb(4, 255, 201);*/
+}
+.header__article div {
+    background-color: #25F18B;
+    border: 1px solid #25F18B;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center; /*wyśrodkowanie ??*/
+    
+    /*outline: 1px solid rgb(4, 255, 201);*/
+}
+
+.header__adv {
+    width: 50%; /*zmieniłem tym size img*/
+    transform: rotate(-10deg); /*forma skrócona ok w tym przypadku ?? jaka kolejność rotate i scale czy csale i rotate ?*/ 
+}
+
+/*SECTION 1*/ /*SECTION 1*//*SECTION 1*//*SECTION 1*//*SECTION 1*//*SECTION 1*//*SECTION 1*//*SECTION 1*//*SECTION 1*//*SECTION 1*//*SECTION 1*//*SECTION 1*/
+
+
+
+
+/*SECTION 2*/ /*SECTION 2*//*SECTION 2*//*SECTION 2*//*SECTION 2*//*SECTION 2*//*SECTION 2*//*SECTION 2*//*SECTION 2*//*SECTION 2*//*SECTION 2*//*SECTION 2*/
+
+
+
+
+/*SECTION 3*//*SECTION 3*//*SECTION 3*//*SECTION 3*//*SECTION 3*//*SECTION 3*//*SECTION 3*//*SECTION 3*//*SECTION 3*//*SECTION 3*//*SECTION 3*//*SECTION 3*/
+
+
+
+
+/*SECTION 4*//*SECTION 4*//*SECTION 4*//*SECTION 4*//*SECTION 4*//*SECTION 4*//*SECTION 4*//*SECTION 4*//*SECTION 4*//*SECTION 4*//*SECTION 4*//*SECTION 4*/
+
+
+
+/*SECTION 5*//*SECTION 5*//*SECTION 5*//*SECTION 5*//*SECTION 5*//*SECTION 5*//*SECTION 5*//*SECTION 5*//*SECTION 5*//*SECTION 5*//*SECTION 5*//*SECTION 5*/
+
+
+
+
+/*FOOTER*/ /*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*/
