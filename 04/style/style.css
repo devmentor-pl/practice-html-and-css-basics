@@ -56,3 +56,18 @@ nav {
   color: rgb(80, 156, 167);
 }
 
+.btn {
+  color: white;
+  letter-spacing: 2px;
+  font-size: 14px;
+  padding: 9px 25px;
+  background-color: rgb(80, 156, 167, 1);;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+.btn:hover {
+  background-color: rgb(80, 156, 167, 0.8);;
+}
