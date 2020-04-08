@@ -71,3 +71,7 @@ nav {
 .btn:hover {
   background-color: rgb(80, 156, 167, 0.8);;
 }
+
+.btn:focus {
+  outline: 0;
+}
