@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color:#f6f6f6
+  background-color:#a79f9f;
   height: 100vh;
 }
 
@@ -16,7 +16,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   min-height: 12vh;
- background-color: rgb(245, 234, 234);
+  background-color: rgb(245, 234, 234);
 
   margin-top: 50px;
 }
@@ -35,8 +35,9 @@ nav {
 }
 
 .nav_links li {
-list-style: none;
+  list-style: none;
 }
+
 .nav_links a {
   padding: 20px 10px;
   font-size: 14px;
@@ -48,7 +49,6 @@ list-style: none;
   letter-spacing: 3px;
   border-top: 3px solid transparent;
   transition: all .3s ease;
-
 }
 
 .nav_links a:hover {
@@ -56,18 +56,3 @@ list-style: none;
   color: rgb(80, 156, 167);
 }
 
-button {
-  color: white;
-  letter-spacing: 2px;
-  font-size: 14px;
-  padding: 9px 25px;
-  background-color: rgb(80, 156, 167, 1);;
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: all .3s ease;
-}
-
-button:hover {
-background-color: rgb(80, 156, 167, 0.8);;
-}
