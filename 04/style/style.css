@@ -1,4 +1,5 @@
 
+
 * {
   margin: 0;
   padding: 0;
@@ -6,18 +7,17 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+
 body {
-  background-color:#a79f9f;
-  height: 100vh;
+  background-color: black;
 }
 
-nav {
+#nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-height: 12vh;
+  min-height: 20vh;
   background-color: rgb(245, 234, 234);
-
   margin-top: 50px;
 }
 
@@ -47,12 +47,10 @@ nav {
   text-transform: uppercase;
   color: rgb(165, 81, 42);
   letter-spacing: 3px;
-  border-top: 3px solid transparent;
   transition: all .3s ease;
 }
 
 .nav_links a:hover {
-  border-top: 3px solid rgb(80, 156, 167);
   color: rgb(80, 156, 167);
 }
 
@@ -62,16 +60,47 @@ nav {
   font-size: 14px;
   padding: 9px 25px;
   background-color: rgb(80, 156, 167, 1);;
-  border: none;
   border-radius: 50px;
   cursor: pointer;
   transition: all .3s ease;
 }
 
 .btn:hover {
-  background-color: rgb(80, 156, 167, 0.8);;
+  background-color: rgb(80, 156, 167, 0.8);
 }
 
 .btn:focus {
   outline: 0;
 }
+
+
+/*  */
+
+li {
+  padding: 1rem;
+  position: relative;
+  transition-duration: 0.3s;
+}
+
+
+li:hover {
+  background-color: rgb(80, 156, 167, 1);;
+}
+
+ul li ul {
+background-color: white;
+position: absolute;
+margin-top: 1rem;
+left: 0;
+display: none;
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+
+
