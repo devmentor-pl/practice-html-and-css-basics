@@ -1,13 +1,13 @@
 /*Acco*/
 .ac-container {
     max-width: 400px;
-}
-
-/* 
-Znacznik label, którego przodkiem jest klasa .ac-container 
-(0, 1, 1)
-*/
-?? {
+  }
+  
+  /* 
+  Znacznik label, którego przodkiem jest klasa .ac-container 
+  (0, 1, 1)
+  */
+  .ac-container label {
     height: 30px !important;
     line-height: 21px !important;
     font-size: 12px !important;
@@ -34,35 +34,34 @@ Znacznik label, którego przodkiem jest klasa .ac-container
     font-size: 12px;
     height: 30px;
     line-height: 20px;
-}
-
-.ac-container {
+  }
+  
+  .ac-container {
     width: 100%;
     margin: 10px auto 30px auto;
     text-align: left;
-}
-
-/* 
-Zmiana koloru tła po najechaniu przez kursor myszy na znacznik label, 
-który znajduje się wewnątrze elementu o klasie .ac-container 
-(0, 2, 1)
-*/
-?? {
+  }
+  
+  /* 
+  Zmiana koloru tła po najechaniu przez kursor myszy na znacznik label, 
+  który znajduje się wewnątrze elementu o klasie .ac-container 
+  (0, 2, 1)
+  */
+  .ac-container label:hover {
     background: #fff;
-}
-
-/*
-Te same style CSS dla dwóch selektorów:
-1) 
-znacznik label, którego poprzedni brat jest znaznaczonym inputem (jest checkbox-em), 
-i ten brat musi posiadać przodka o klasie .ac-container 
-(0, 2, 2)
-2) 
-to samo co w 1) ale z efektem najechania kursorem na label 
-(0, 3, 2)
-*/
-??,
-?? {
+  }
+  
+  /*
+  Te same style CSS dla dwóch selektorów:
+  1) 
+  znacznik label, którego poprzedni brat jest znaznaczonym inputem (jest checkbox-em), 
+  i ten brat musi posiadać przodka o klasie .ac-container 
+  (0, 2, 2)
+  2) 
+  to samo co w 1) ale z efektem najechania kursorem na label 
+  (0, 3, 2)
+  */
+  ac-container input:checked + label,.ac-container input:checked + label:hover {
     background: #f1f2f3;
     color: #666;
     text-shadow: 0 1px 1px rgba(255,255,255,0.6);
@@ -70,10 +69,10 @@ to samo co w 1) ale z efektem najechania kursorem na label
     height: 30px;
     line-height: 21px;
     font-size: 13px;
-}
-
-.ac-container label:hover:after,
-.ac-container input:checked + label:hover:after {
+  }
+  
+  .ac-container label:hover:after,
+  .ac-container input:checked + label:hover:after {
     content: '';
     position: absolute;
     width: 24px;
@@ -81,23 +80,23 @@ to samo co w 1) ale z efektem najechania kursorem na label
     right: 13px;
     top: 7px;
     background: transparent url(../images/arrow_down.png) no-repeat center center;
-}
-
-/*
-Pseudo-element jako ostatnie dziecko label, tworzony tylko po najechaniu kursorem myszy na ten element (label),
-którego poprzedni brat jest zaznaczonym inputem (jest checkbox-em),
-którego przodek to element o klasie .ac-container
-(0, 3, 3)
-*/
-?? {
+  }
+  
+  /*
+  Pseudo-element jako ostatnie dziecko label, tworzony tylko po najechaniu kursorem myszy na ten element (label),
+  którego poprzedni brat jest zaznaczonym inputem (jest checkbox-em),
+  którego przodek to element o klasie .ac-container
+  (0, 3, 3)
+  */
+  .ac-container input:checked + label:hover:after {
     background-image: url(../images/arrow_up.png);
-}
-
-.ac-container input {
+  }
+  
+  .ac-container input {
     display: none;
-}
-
-.ac-container article {
+  }
+  
+  .ac-container article {
     background: rgba(255,255,255,0.5);
     margin-top: -1px;
     overflow: hidden;
@@ -109,9 +108,9 @@ którego przodek to element o klasie .ac-container
     -o-transition: height 0.3s ease-in-out,box-shadow 0.6s linear;
     -ms-transition: height 0.3s ease-in-out,box-shadow 0.6s linear;
     transition: height 0.3s ease-in-out,box-shadow 0.6s linear;
-}
-
-.ac-container article p {
+  }
+  
+  .ac-container article p {
     font-style: normal;
     color: #777;
     line-height: 23px;
@@ -119,30 +118,30 @@ którego przodek to element o klasie .ac-container
     padding: 20px;
     text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
     font: normal normal 12px 'Open Sans';
-}
-
-/*
-Rodzieństwo typu article, dla elementu input, który jest zaznaczony (jest checkbo-xem) 
-oraz posiada przodka o klasie .ac-container
-(0, 2, 2)
-*/
-?? {
+  }
+  
+  /*
+  Rodzieństwo typu article, dla elementu input, który jest zaznaczony (jest checkbo-xem) 
+  oraz posiada przodka o klasie .ac-container
+  (0, 2, 2)
+  */
+  .ac-container input:checked ~ article {
     -webkit-transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
     -moz-transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
     -o-transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
     -ms-transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
     transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
     box-shadow: 0 0 0 1px rgba(155,155,155,0.3);
-}
-
-.ac-container input:checked ~ article.ac-small {
+  }
+  
+  .ac-container input:checked ~ article.ac-small {
     height: 140px;
-}
-
-.ac-container input:checked ~ article.ac-medium {
+  }
+  
+  .ac-container input:checked ~ article.ac-medium {
     height: 180px;
-}
-
-.ac-container input:checked ~ article.ac-large {
+  }
+  
+  .ac-container input:checked ~ article.ac-large {
     height: 230px;
-}
+  }
