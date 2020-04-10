@@ -38,47 +38,28 @@ body {
 
 .nav_links li {
   list-style: none;
-  padding: 1rem;
+  padding: 16px
+
 }
 
 .nav_links a {
-  padding: 12px 10px;
+  display: block;
+  color: white;
   font-size: 14px;
   font-weight: bold;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  color: white;
   letter-spacing: 3px;
   transition: all .3s ease;
 }
 
-.nav_links > li > a:hover {
-  color:  rgb(80, 156, 167, 1);
+.nav_links > li {
+  border-top: 4px solid transparent;
 }
 
-
-/* border-top for nav_links */
-
-.nav_links > li:nth-child(1),
-.nav_links > li:nth-child(2) {
-  border-top: solid 5px rgb(252, 81, 133) transparent;
-  transition:  all .3s linear;
-}
-
-.nav_links > li:nth-child(1):hover,
-.nav_links > li:nth-child(2):hover {
-  border-top: solid 5px rgb(252, 81, 133);
-}
-
-
-.nav_links > li:last-child {
-  border-top: 5px solid transparent;
-  transition:  all .3s linear;
-}
-
-.nav_links > li:last-child:hover {
-  border-top: 5px solid rgb(252, 81, 133);
+.nav_links > li:hover {
+  border-top: 4px solid rgb(252, 81, 133);;
 }
 
 
@@ -100,10 +81,6 @@ body {
   background-color: rgb(80, 156, 167, 0.8);
 }
 
-.btn:focus {
-  outline: 0;
-}
-
 
 /*  Drop down menu */
 
@@ -116,44 +93,63 @@ body {
 
 .nav_links li {
   position: relative;
+  transition-duration: 0.3s;
 }
 
-.nav_links li:hover > .dropdown_1,
-.nav_links .dropdown_1:hover {
+.nav_links li:hover > .dropdown,
+.nav_links .dropdown:hover {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
 
-.dropdown_1 li {
+.dropdown li {
   border-top: 2px solid rgb(252, 81, 133);
   transition:  all .3s ease-in;
 }
 
-.dropdown_1 li:hover {
+.dropdown li:hover {
   background-color:  rgb(252, 81, 133);
 }
 
 
 /* dropdown_2 */
 
-.dropdown_1 .dropdown_2 {
+.dropdown .sub_dropdown {
   position: absolute;
   margin-top: 1rem;
   top: -18px;
-  left: 150px;
+  left: 159px;
   display: none;
 }
 
-.dropdown_1 li:hover > .dropdown_2,
-.dropdown_2:hover {
+.dropdown li:hover > .sub_dropdown,
+.sub_dropdown:hover {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
 
-.dropdown_2 li:first-child {
-
+.sub_dropdown li:first-child {
   border: none;
 }
 
+
+/* arrows */
+
+.arrow_dropdown,
+.arrow_sub_dropdown {
+  display: inline-block;
+  color: rgb(252, 81, 133);
+  font-size: 15px;
+  margin-left: 10px;
+}
+
+.arrow_sub_dropdown {
+  transform: rotate(-90deg);
+  color: #fff;
+}
+
+.arrow_sub_dropdown:hover {
+  color: white;
+}
