@@ -1,5 +1,4 @@
 
-
 * {
   margin: 0;
   padding: 0;
@@ -9,20 +8,19 @@
 
 
 body {
-  background-color: black;
+  background-color: rgb(201, 188, 188);
 }
 
-#nav {
+.nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-height: 20vh;
-  background-color: rgb(245, 234, 234);
+  background-color: rgb(62, 67, 119);
   margin-top: 50px;
 }
 
 .logo {
-  color: rgb(165, 81, 42);
+  color: rgb(252, 81, 133);
   text-transform: uppercase;
   letter-spacing: 5px;
   font-size: 20px;
@@ -34,33 +32,53 @@ body {
   width: 40%;
 }
 
+.nav_links > li:nth-child(1),
+.nav_links > li:nth-child(2) {
+  border-top: solid 5px rgb(252, 81, 133) transparent;
+  transition:  all .3s linear;
+}
+
+.nav_links > li:nth-child(1):hover,
+.nav_links > li:nth-child(2):hover {
+  border-top: solid 5px rgb(252, 81, 133);
+}
+
+.nav_links ul {
+  background-color: rgb(62, 67, 119);
+}
+
 .nav_links li {
   list-style: none;
+  padding: 1rem;
 }
 
 .nav_links a {
-  padding: 20px 10px;
+  padding: 12px 10px;
   font-size: 14px;
   font-weight: bold;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  color: rgb(165, 81, 42);
+  color: white;
   letter-spacing: 3px;
   transition: all .3s ease;
 }
 
-.nav_links a:hover {
-  color: rgb(80, 156, 167);
+.nav_links > li > a:hover {
+  color:  rgb(80, 156, 167, 1);
 }
+
+
+/* Contact button */
 
 .btn {
   color: white;
   letter-spacing: 2px;
   font-size: 14px;
-  padding: 9px 25px;
-  background-color: rgb(80, 156, 167, 1);;
+  padding: 9px 18px;
+  background-color: rgb(62, 67, 119);
   border-radius: 50px;
+  border: 1px solid rgb(252, 81, 133);
   cursor: pointer;
   transition: all .3s ease;
 }
@@ -74,33 +92,47 @@ body {
 }
 
 
-/*  */
+/*  Drop down menu */
 
-li {
-  padding: 1rem;
+.nav_links ul {
+  position: absolute;
+  margin-top: 1rem;
+  left: 0;
+  display: none;
+}
+
+.nav_links li {
   position: relative;
   transition-duration: 0.3s;
 }
 
-
-li:hover {
-  background-color: rgb(80, 156, 167, 1);;
-}
-
-ul li ul {
-background-color: white;
-position: absolute;
-margin-top: 1rem;
-left: 0;
-display: none;
-}
-
-ul li:hover > ul,
-ul li ul:hover {
+.nav_links li:hover > .dropdown_1,
+.nav_links .dropdown_1:hover {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
+
+.nav_links > li:last-child {
+  border-top: 5px solid transparent;
+}
+
+.nav_links > li:last-child:hover {
+  border-top: 5px solid rgb(252, 81, 133);
+}
+
+
+.dropdown_1 li {
+  border-top: 2px solid rgb(252, 81, 133);
+  color: white;
+}
+
+.dropdown_1 li:hover {
+  background-color:  rgb(252, 81, 133);
+}
+
+
+
 
 
 
