@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'MyWebFont';
+  src: url('webfont.eot'); /* IE9 Compat Modes */
+  src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+body {
+  background-color: rgb(29, 28, 28);
+  font-family: Source Sans PRO;
+}
+
+.parent {
+  max-width: 600px;
+  padding: 20px;
+}
+
+.parent--inline-block {
+  background-color: rgb(52, 185, 63);
+}
+
+.parent--inline-block .child {
+  display: inline-block;
+  
+}
+
+.parent--inline-block .child--first {
+  background-color: rgb(179, 123, 133);
+  width: calc(30% - 10px);
+  margin-right: 10px;
+}
+.parent--inline-block .child--middle {
+  background-color: rgb(145, 146, 116);
+
+  width: calc(30% - 10px);
+  margin-right: 10px;
+
+}
+.parent--inline-block .child--last {
+  background-color: rgb(100, 93, 161);
+  width: calc(40% - 10px);  
+}
+
+.parent--float {
+  background-color: rgb(172, 189, 19);
+} 
+
+.parent--float .child--first {
+  background-color: rgb(179, 123, 133);
+  float: left;
+  width: calc(30% - 10px);
+  margin-right: 10px;
+
+}
+.parent--float .child--middle {
+  background-color: rgb(145, 146, 116);
+  float: left;
+  width: calc(30% - 10px);
+  margin-right: 10px;
+}
+.parent--float .child--last {
+  background-color: rgb(100, 93, 161);
+  float: left;
+  width: calc(40% - 10px);  
+}
+
+.clear {
+  clear: both;
+}
+
+.parent--flexbox {
+  display: flex;
+  background-color: rgb(190, 209, 22);
+}
+
+.parent--flexbox .child--first {
+  background-color: rgb(179, 123, 133);
+  width: 30%;
+  margin-right: 10px;
+  width: calc(30% - 10px);
+}
+
+.parent--flexbox .child--middle {
+  background-color: rgb(145, 146, 116);
+  width: 30%;
+  margin-right: 10px;
+  width: calc(30% - 10px);
+}
+
+.parent--flexbox .child--last {
+  background-color: rgb(100, 93, 161);
+  width: 40%;
+  width: calc(40% - 10px);
+}
