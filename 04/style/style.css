@@ -5,6 +5,11 @@
   font-family: NunitoSans-Regular;
 }
 
+@font-face {
+  src: url(./fonts/Nunito_Sans/NunitoSans-ExtraBold.ttf);
+  font-family: NunitoSans-ExtraBold;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -20,11 +25,12 @@ body {
   justify-content: space-around;
   align-items: center;
   background-color: rgb(62, 67, 119);
-  font-family:  NunitoSans-Regular, Arial, Helvetica, sans-serif;
+  font-family:  NunitoSans-Regular;
 }
 
 .logo {
   font-size: 20px;
+  font-family: NunitoSans-ExtraBold;
   color: rgb(252, 81, 133);
   letter-spacing: 5px;
   text-transform: uppercase;
@@ -129,6 +135,9 @@ body {
   flex-direction: column;
 }
 
+
+/* Added border top to dropdown and sub drop down menu */
+
 .dropdown li {
   border-top: 2px solid rgb(252, 81, 133);
   transition: background .5s ease-in-out;
@@ -196,3 +205,4 @@ span .arrow_sub_dropdown {
 .dropdown > li:last-child:hover .arrow_sub_dropdown {
   color:#fff;
 }
+
