@@ -1,11 +1,15 @@
 
+
+@font-face {
+  src: url(./fonts/Nunito_Sans/NunitoSans-Regular.ttf);
+  font-family: NunitoSans-Regular;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
 }
-
 
 body {
   background-color: rgb(201, 188, 188);
@@ -16,7 +20,7 @@ body {
   justify-content: space-around;
   align-items: center;
   background-color: rgb(62, 67, 119);
-  margin-top: 50px;
+  font-family:  NunitoSans-Regular, Arial, Helvetica, sans-serif;
 }
 
 .logo {
@@ -85,6 +89,7 @@ body {
 .btn {
   padding: 9px 18px;
   font-size: 14px;
+  font-family: inherit;
   color: white;
   letter-spacing: 2px;
   background-color: rgb(62, 67, 119, 1);
@@ -108,7 +113,7 @@ body {
 .nav_links ul {
   display: none;
   position: absolute;
-  top: 40px; left: 0; right: 0;
+  top: 44px; left: 0; right: 0;
   margin-top: 1rem;
   width: 100%;
 }
@@ -134,12 +139,12 @@ body {
 }
 
 
-/* sub dropdown menu */
+/* Sub dropdown menu */
 
 .dropdown .sub_dropdown {
   display: none;
   position: absolute;
-  top: -18px; left: 159px; right: 0;
+  top: -18px; left: 150px; right: 0;
   margin-top: 1rem;
 } 
 
@@ -182,12 +187,12 @@ span .arrow_sub_dropdown {
   color: rgb(252, 81, 133);
 }
 
+
 /* change the color of the second arrow */
 
 .dropdown > li:last-child .arrow_sub_dropdown {
-  transition: .5s ease-in-out;
+  transition: all .5s ease-in;
 }
 .dropdown > li:last-child:hover .arrow_sub_dropdown {
   color:#fff;
 }
-
