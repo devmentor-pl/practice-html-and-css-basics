@@ -68,10 +68,12 @@ body {
 .parent--float .child--last {
   background-color: rgb(100, 93, 161);
   float: left;
-  width: calc(40% - 10px);  
+  width: 40%;  
 }
 
-.clear {
+.parent--float::after {
+  content: "";
+  display: block;
   clear: both;
 }
 
@@ -84,19 +86,17 @@ body {
   background-color: rgb(179, 123, 133);
   width: 30%;
   margin-right: 10px;
-  width: calc(30% - 10px);
 }
 
 .parent--flexbox .child--middle {
   background-color: rgb(145, 146, 116);
   width: 30%;
   margin-right: 10px;
-  width: calc(30% - 10px);
 }
 
 .parent--flexbox .child--last {
   background-color: rgb(100, 93, 161);
   width: 40%;
-  width: calc(40% - 10px);
+  
 }
 
