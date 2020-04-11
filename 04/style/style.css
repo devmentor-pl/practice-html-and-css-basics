@@ -129,6 +129,9 @@ body {
   flex-direction: column;
 }
 
+
+/* Added border top to dropdown and sub drop down menu */
+
 .dropdown li {
   border-top: 2px solid rgb(252, 81, 133);
   transition: background .5s ease-in-out;
