@@ -53,12 +53,30 @@ body {
   letter-spacing: 3px;
 }
 
+
+/* animation border-top on main navigation links */
+
 .nav_links > li {
-  border-top: 4px solid transparent;
+  position: relative;
+  margin: 0.5em;
+  border-top: solid 5px transparent;
 }
 
-.nav_links > li:hover {
-  border-top: 4px solid rgb(252, 81, 133);
+.nav_links > li:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  border-top: solid 5px transparent;
+  margin: -13px;
+  z-index: 1;
+  transition: transform 0.6s linear;
+  transform: scale(0.97, 0.93);
+}
+
+.nav_links > li:hover::after { 
+  border-top: 5px solid #FC5185;
+  transform: scale(-1,1); 
 }
 
 
@@ -84,13 +102,14 @@ body {
   outline: 0;
 }
 
+
 /*  Dropdown menu */
 
 .nav_links ul {
-  position: absolute;
-  margin-top: 1rem;
-  left: 0;
   display: none;
+  position: absolute;
+  top: 40px; left: 0; right: 0;
+  margin-top: 1rem;
   width: 100%;
 }
 
@@ -118,11 +137,10 @@ body {
 /* sub dropdown menu */
 
 .dropdown .sub_dropdown {
-  position: absolute;
-  margin-top: 1rem;
-  top: -18px;
-  left: 159px;
   display: none;
+  position: absolute;
+  top: -18px; left: 159px; right: 0;
+  margin-top: 1rem;
 } 
 
 .dropdown li:hover > .sub_dropdown,
@@ -138,7 +156,6 @@ body {
 
 
 /* arrows */
-
 
 .arrow_dropdown,
 .arrow_sub_dropdown {
@@ -159,16 +176,13 @@ body {
 
 span .arrow_sub_dropdown {
   background-color: teal;
-  height: 100%;
-  width: 100%;
-  
 }
 
 .arrow_sub_dropdown {
   color: rgb(252, 81, 133);
 }
 
-/* change the color of second arrow */
+/* change the color of the second arrow */
 
 .dropdown > li:last-child .arrow_sub_dropdown {
   transition: .5s ease-in-out;
