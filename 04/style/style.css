@@ -168,6 +168,12 @@ span .arrow_sub_dropdown {
   color: rgb(252, 81, 133);
 }
 
+/* change the color of second arrow */
+
+.dropdown > li:last-child .arrow_sub_dropdown {
+  transition: .5s ease-in-out;
+}
 .dropdown > li:last-child:hover .arrow_sub_dropdown {
   color:#fff;
 }
+
