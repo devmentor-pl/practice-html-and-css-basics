@@ -1,14 +1,26 @@
 
-
-@font-face {
-  src: url(./fonts/Nunito_Sans/NunitoSans-Regular.ttf);
-  font-family: NunitoSans-Regular;
+:root {
+  --redBishop: rgb(252, 81, 133);
+  --lightBlue: rgba(80, 156, 167, 0.4);
+  --darkViolet: rgb(62, 67, 119);
 }
 
+
 @font-face {
+  font-family: 'NunitoSans-Regular';
+  src: url(./fonts/Nunito_Sans/NunitoSans-Regular.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'NunitoSans-ExtraBold';
   src: url(./fonts/Nunito_Sans/NunitoSans-ExtraBold.ttf);
-  font-family: NunitoSans-ExtraBold;
+  font-weight: 700;
+  font-style: normal;
 }
+
 
 * {
   margin: 0;
@@ -16,35 +28,44 @@
   box-sizing: border-box;
 }
 
+
+
 body {
   background-color: rgb(201, 188, 188);
+}
+
+.nav, 
+.btn {
+  font-family:  'NunitoSans-Regular', arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  color: white;
+  background-color: var(--darkViolet);
 }
 
 .nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: rgb(62, 67, 119);
-  font-family:  NunitoSans-Regular;
 }
 
 .logo {
+  font-family: 'NunitoSans-ExtraBold', arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
   font-size: 20px;
-  font-family: NunitoSans-ExtraBold;
-  color: rgb(252, 81, 133);
+  color: var(--redBishop);
   letter-spacing: 5px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .nav_links {
   display: flex;
   justify-content: space-around;
-  width: 40%;
-}
-
-.nav_links ul {
-  background-color: rgb(62, 67, 119);
+  align-items: center;
   list-style: none;
+  cursor: pointer;
 }
 
 .nav_links li {
@@ -54,13 +75,13 @@ body {
 
 .nav_links a {
   display: block;
-  color: white;
   font-size: 14px;
   font-weight: bold;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 3px;
+  color:white;
 }
 
 
@@ -85,7 +106,7 @@ body {
 }
 
 .nav_links > li:hover::after { 
-  border-top: 5px solid #FC5185;
+  border-top: 5px solid var(--redBishop);
   transform: scale(-1,1); 
 }
 
@@ -95,18 +116,15 @@ body {
 .btn {
   padding: 9px 18px;
   font-size: 14px;
-  font-family: inherit;
-  color: white;
   letter-spacing: 2px;
-  background-color: rgb(62, 67, 119, 1);
   border-radius: 50px;
-  border: 1px solid rgb(252, 81, 133);
+  border: 1px solid var(--redBishop);
   cursor: pointer;
   transition: .3s ease-in;
 }
 
 .btn:hover {
-  background-color: rgb(80, 156, 167, 0.4);
+  background-color: var(--lightBlue);
 }
 
 .btn:focus {
@@ -122,11 +140,11 @@ body {
   top: 44px; left: 0; right: 0;
   margin-top: 1rem;
   width: 100%;
+  background-color: var(--darkViolet);
 }
 
 .nav_links li {
   position: relative;
-  transition-duration: 0.3s;
 }
 
 .nav_links li:hover > .dropdown,
@@ -139,12 +157,12 @@ body {
 /* Added border top to dropdown and sub drop down menu */
 
 .dropdown li {
-  border-top: 2px solid rgb(252, 81, 133);
+  border-top: 2px solid var(--redBishop);
   transition: background .5s ease-in-out;
 }
 
 .dropdown li:hover {
-  background-color:  rgb(252, 81, 133);
+  background-color: var(--redBishop);
 }
 
 
@@ -174,26 +192,13 @@ body {
 .arrow_dropdown,
 .arrow_sub_dropdown {
   display: inline-block;
-  color: rgb(252, 81, 133);
+  color: var(--redBishop);
   font-size: 15px;
-  margin-left: 10px;
+  margin-left: 12px;
 }
 
 .arrow_sub_dropdown {
   transform: rotate(-90deg);
-  color: #fff;
-}
-
-.arrow_sub_dropdown:hover {
-  color: white;
-}
-
-span .arrow_sub_dropdown {
-  background-color: teal;
-}
-
-.arrow_sub_dropdown {
-  color: rgb(252, 81, 133);
 }
 
 
@@ -203,6 +208,6 @@ span .arrow_sub_dropdown {
   transition: all .5s ease-in;
 }
 .dropdown > li:last-child:hover .arrow_sub_dropdown {
-  color:#fff;
+  color: white;
 }
 
