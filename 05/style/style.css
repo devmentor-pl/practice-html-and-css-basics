@@ -1,0 +1,140 @@
+
+:root {
+  --redBishop: rgb(252, 81, 133);
+  --lightBlue: rgba(80, 156, 167, 0.4);
+  --darkViolet: rgb(62, 67, 119);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'NunitoSans-Regular';
+  src: url(./fonts/Nunito_Sans/NunitoSans-Regular.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NunitoSans-ExtraBold';
+  src: url(./fonts/Nunito_Sans/NunitoSans-ExtraBold.ttf);
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+body {
+  background-color: rgb(201, 188, 188);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+header {border: 2px solid red}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family:  'NunitoSans-Regular', arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  color: white;
+  background-color: var(--darkViolet);
+  padding-right: 25px;
+}
+
+.logo {
+  padding-left: 25px;
+  font-family: 'NunitoSans-ExtraBold', arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+  color: var(--redBishop);
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.nav_links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  cursor: pointer;
+}
+
+.nav_links li {
+  display: block;
+  padding: 16px;
+}
+
+.nav_links a {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color:white;
+}
+
+
+/* main section one */
+
+main {
+  font-family:  'NunitoSans-Regular', arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  overflow: hidden;
+}
+
+.section_one {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid darkblue;
+  margin: 100px 0 100px 0;
+}
+
+.section_one > div {
+  width: 45%;
+  height: 300px;
+  padding: 16px;
+  background-color: orange;
+  margin: 20px 0 20px 0;
+  overflow: hidden;
+}
+
+/* main section two */
+
+.section_two {
+display: flex;
+justify-content: space-evenly;
+border: 2px solid darkblue;
+}
+
+.section_two > div {
+  width: 30%;
+  height: 300px;
+  padding: 16px;
+  margin: 25px 0 25px 0;
+  background-color: orange;
+  overflow: hidden;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+  background-color: rgb(77, 70, 70);
+  color: white;
+  font-family:  'NunitoSans-Regular', arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: 2px;
+  margin-top: 100px;
+}

@@ -5,6 +5,12 @@
   --darkViolet: rgb(62, 67, 119);
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 
 @font-face {
   font-family: 'NunitoSans-Regular';
@@ -20,14 +26,6 @@
   font-weight: 700;
   font-style: normal;
 }
-
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 
 
 body {
@@ -85,7 +83,7 @@ body {
 }
 
 
-/* animation border-top on main navigation links */
+/* animation border-top in main navigation links */
 
 .nav_links > li {
   position: relative;
