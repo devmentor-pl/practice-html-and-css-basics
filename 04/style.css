@@ -47,7 +47,7 @@ nav ul li:hover  ul  li{
 }
 
 nav ul  li{
-  flex-basis: 15%; 
+  flex-basis: 10%; 
 }
 
 nav ul li a:hover {
@@ -68,7 +68,7 @@ nav ul li a:hover {
   position: absolute;
   top: 50px;
   left: 100%;
-  width: 190px;
+  width: 250px;
 }
 
 nav > ul > li:hover::after {
@@ -78,14 +78,15 @@ nav > ul > li:hover::after {
   margin-top: -50px;
   width: 195px;
   background-color: #1C93FA; 
+  width: 100%;
 }
 
-nav > ul:last-child::after {
+.sub-menu::after {
   content: '>';
   display: inline-block;
   position: absolute;
-  margin-top: 10px;
-  margin-left: -80px;
+  margin-top: -150px;
+  margin-left: 50px;
   transform: rotate(90deg);  
 }
 
@@ -94,15 +95,14 @@ nav > ul:last-child::after {
   display: inline-block;
   position: absolute;
   margin-top: -50px;
-  margin-left: 80px;
+  margin-left: 50px;
 }
 
 .items:hover::before {
   content: '';
-  display: block;
+  display:block;
   height: 3px;
-  position: absolute;
-  width: 195px;
   background-color: #1C93FA; 
+  margin-bottom:-3px;
 }
 
