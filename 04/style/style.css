@@ -1,8 +1,7 @@
 
 :root {
-  --redBishop: rgb(252, 81, 133);
-  --lightBlue: rgba(80, 156, 167, 0.4);
-  --darkViolet: rgb(62, 67, 119);
+  --primaryColor: rgb(62, 67, 119);
+  --secondaryColor: rgb(252, 81, 133);
 }
 
 * {
@@ -54,28 +53,24 @@
 
 
 body {
-  font-family: 'NunitoSans';
+  font-family: 'NunitoSans', Arial, Helvetica, sans-serif;
   font-weight: normal;
   font-style: normal;
-  background-color: rgb(201, 188, 188);
-}
-
-.nav, 
-.btn {
   color: white;
-  background-color: var(--darkViolet);
+  background-color: rgb(201, 188, 188);
 }
 
 .nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  background-color: var(--primaryColor);
 }
 
 .logo {
   font-weight: 700;
   font-size: 20px;
-  color: var(--redBishop);
+  color: var(--secondaryColor);
   letter-spacing: 5px;
   text-transform: uppercase;
   cursor: pointer;
@@ -126,7 +121,7 @@ body {
 }
 
 .nav_links > li:hover::after { 
-  border-top: 5px solid var(--redBishop);
+  border-top: 5px solid var(--secondaryColor);
   transform: scale(-1,1); 
 }
 
@@ -134,18 +129,22 @@ body {
 /* Contact button */
 
 .btn {
-  font-family: inherit;
   padding: 9px 18px;
+  font-family: inherit;
+  font-weight: 600;
   font-size: 13px;
   letter-spacing: 2px;
+  color: inherit;
   border-radius: 50px;
-  border: 1px solid var(--redBishop);
+  border: 1px solid var(--secondaryColor);
+  background-color: var(--primaryColor);
   cursor: pointer;
   transition: .3s ease-in;
 }
 
 .btn:hover {
-  background-color: var(--lightBlue);
+  color: var(--primaryColor);
+  background-color: var(--secondaryColor);
 }
 
 .btn:focus {
@@ -159,9 +158,9 @@ body {
   display: none;
   position: absolute;
   top: 44px; left: 0; right: 0;
-  margin-top: 1rem;
   width: 100%;
-  background-color: var(--darkViolet);
+  margin-top: 1rem;
+  background-color: var(--primaryColor);
 }
 
 .nav_links li {
@@ -179,12 +178,12 @@ body {
 /* Added border top to dropdown and sub drop down menu */
 
 .dropdown li {
-  border-top: 2px solid var(--redBishop);
+  border-top: 2px solid var(--secondaryColor);
   transition: background .5s ease-in-out;
 }
 
 .dropdown li:hover {
-  background-color: var(--redBishop);
+  background-color: var(--secondaryColor);
 }
 
 
@@ -215,7 +214,7 @@ body {
 .arrow_dropdown,
 .arrow_sub_dropdown {
   display: inline-block;
-  color: var(--redBishop);
+  color: var(--secondaryColor);
   font-size: 15px;
   margin-left: 12px;
 }
