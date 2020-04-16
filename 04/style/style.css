@@ -214,9 +214,9 @@ body {
 .arrow_dropdown,
 .arrow_sub_dropdown {
   display: inline-block;
-  color: var(--secondaryColor);
+  margin-left: 10px;
   font-size: 15px;
-  margin-left: 12px;
+  color: var(--secondaryColor);
 }
 
 .arrow_sub_dropdown {
