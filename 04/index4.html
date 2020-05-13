@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/99e6cd3922.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+
+    .nav {
+        height: 30px;
+        background-color: antiquewhite;
+
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+    }
+
+    nav .mainMenu {
+        justify-content: space-around;
+        transition: transform .3s;
+
+    }
+
+    nav .mainMenu li a {
+        font-size: 20px;
+        color: black;
+        text-decoration: none;
+        text-transform: uppercase;
+        line-height: 30px;
+
+    }
+
+
+
+    .fas {
+        font-size: 10px;
+        margin-left: 10px;
+        /*zapytac jak wysrodkowac ikone w stosunku do aboutus i link 2 i dlaczego  po kliknieciu na about us lista jest taka długa( te tło) */
+    }
+
+    nav .subMenu {
+        transition: transform .6s;
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+
+    nav .subMenu,
+    nav .superSubMenu {
+        display: flex;
+        flex-direction: column;
+        display: none;
+        background-color: antiquewhite;
+    }
+
+
+
+    nav .mainMenu li:hover .subMenu,
+    nav .subMenu li:hover .superSubMenu {
+        display: block;
+        transition: transform .3s;
+    }
+
+    .superSubMenu {
+        transform: translate(100%, 0%);
+    }
+</style>
+
+<body>
+    <nav class="nav">
+        <ul class="mainMenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us <i class="fas fa-chevron-down"></i> </a>
+
+gi
+                <ul class="subMenu">
+                    <li><a href="#">link 1</a></li>
+                    <li><a href="#">link 2<i class="fas fa-chevron-right"></i></a>
+                        <ul class="superSubMenu">
+                            <li><a href="#">link 2.1</a></li>
+                            <li><a href="#">link 2.2</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Pricelist</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>
