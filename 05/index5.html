@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/99e6cd3922.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: arial;
+            box-sizing: border-box;
+        }
+
+        section {
+            width: 100%;
+        }
+
+        .nav,
+        .containerOne,
+        .containerTwo,
+        .containerThree,
+        .containerFour {
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+
+        section .nav {
+            position: relative;
+            top: 0;
+            height: 10vh;
+            background-color: #120136;
+
+        }
+
+        .logo {
+            position: absolute;
+            font-size: 6vh;
+            color: white;
+            top: 3vh;
+            left: 0;
+
+        }
+
+        .nav-menu {
+            position: absolute;
+            top: 3vh;
+            right: 0;
+            color: white;
+            font-size: 6vh;
+
+        }
+
+        /*jak wysrodkowac za pomocą line-hight*/
+
+
+
+
+        .containerOne {
+            display: flex;
+            background-color: lightblue;
+            height: 50vh;
+        }
+
+        .contentFirst p,
+        .contentSecond p {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            text-align: justify;
+        }
+
+        .contentFirst,
+        .contentSecond {
+            width: 50%;
+            margin-top: 10vh;
+
+
+        }
+
+        .contentSecond {
+            margin-left: 3vh;
+        }
+
+        .img {
+            display: flex;
+            justify-content: space-around;
+            padding-top: 5vh;
+
+        }
+
+        .containerThree {
+
+            justify-content: center;
+            background-color: lightcoral;
+            height: 60vh;
+        }
+
+
+
+        .imgFirst {
+
+            background-image: url('https://cdn.pixabay.com/photo/2020/04/22/09/59/tree-5077020_960_720.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 20vw;
+            height: 30vh;
+        }
+
+        .imgSecond {
+            background-image: url('https://cdn.pixabay.com/photo/2020/05/06/12/01/compass-5137269_960_720.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 20vw;
+            height: 30vh;
+        }
+
+        .imgThree {
+            background-image: url('https://cdn.pixabay.com/photo/2020/03/14/17/19/flower-4931280_960_720.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 20vw;
+            height: 30vh;
+        }
+
+
+
+
+        footer {
+            position: relative;
+            height: 10vh;
+            background-color: lightgreen;
+
+        }
+
+        footer p {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+
+<body>
+    <section class="first">
+        <nav class="nav">
+            <div class="logo"><i class="fas fa-book"></i> Your Bookcase</div>
+            <div class="nav-menu"><i class="fas fa-bars"></i></div>
+        </nav>
+    </section>
+
+    <section class="second">
+        <div class="containerOne">
+            <div class="contentFirst">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque nihil reiciendis iure qui, aliquid
+                    laborum rem cum, illum sequi alias, tenetur provident quas omnis repudiandae laudantium! Voluptate
+                    accusamus, quod, aperiam incidunt ea quidem autem unde quasi assumenda, deleniti expedita nemo?
+                </p>
+            </div>
+
+
+            <div class="contentSecond">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, consequuntur mollitia. Nobis est
+                    voluptatum earum ea asperiores eos veritatis voluptatibus, facilis corrupti praesentium accusamus,
+                    minus tenetur ab iusto sit doloribus consectetur architecto eius reprehenderit nihil consequuntur,
+                    nostrum eaque in. Nesciunt unde debitis omnis ullam deserunt expedita laudantium nobis, officiis
+                    iure et quia libero praesentium, assumenda fugit pariatur sed, odio quidem.</p>
+            </div>
+
+    </section>
+
+    <section class="three">
+        <div class="containerThree">
+            <div class="img">
+                <div class="imgFirst"></div>
+                <div class="imgSecond"></div>
+                <div class="imgThree"></div>
+            </div>
+
+    </section>
+
+    <section class="four">
+        <div class="containerFour">
+            <footer>
+                <p class="copy"><i class="fas fa-copyright"></i>Yours Bookcase</p>
+            </footer>
+        </div>
+    </section>
+</body>
+
+</html>git
