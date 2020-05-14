@@ -9,45 +9,53 @@
 </head>
 
 <body>
-    <header>
+    <nav>
         <div class="logo"></div>
         <ul class="menu">
             <li class="o nas"></li>
             <li class="portflio"></li>
             <li class="kontakt"></li>
-    </header>
+        </ul>
+    </nav>
+
 
     <main>
         <article>
             <h1 class="title"></h1>>
             <div class="content"></div>
-            <p class="dateOfPublication"></p>
+            <p class="time"></p>
             <p class="author"></p>
             <img src="" class="illustrction" alt="illustraction">
-            <table class="table">
+            <caption>List</caption>
+            <thead class="table">
                 <tr>
-                    <th></th>
-                    <th></th>
-                    <th></th>
+                    <th scope="col">name</th>
+                    <th scope="col">amount</th>
+                    <th scope="col">price</th>
                 </tr>
+            </thead>
+            <tbody>
                 <tr>
-                    <th></th>
-                    <th></th>
-                    <th></th>
+                    <td>ebook</td>
+                    <td>12</td>
+                    <td>50EUR</td>
                 </tr>
-            </table>
+            </tbody>
         </article>
 
         <form>
-            <textarea class="textarea" class="addComment" placeholder="dodaj komentarz">Wpisz swój komentarz:</textarea>
-
-            <input class="text" placeholder="autor:">
-            <input class="data" placeholder="data publikacji">
-
-
-
+            <div class="form">
+                <label for="comment">Dodaj komentarz:</label>
+                <textarea class="textarea" class="addComment"></textarea>
+                <label for=" textAutor">Autor:</label>
+                <input class="text">
+                <label class="data">Data:</label>
+                <input class="data">
+            </div>
         </form>
     </main>
+
+
     <footer>2020 copyright</footer>
 </body>
 
