@@ -39,9 +39,13 @@
 }
 
 
-.parent--inline-block {
+.parent--inline-block .child--first,
+.child--middle,
+.child--last {
+
     display: inline-block;
 }
+
 
 .parent--float .child--first,
 .child--middle,
