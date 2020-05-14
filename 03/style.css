@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+/*pobrałam z fonts google, czy to problem? dużo łatwiej mi i szybciej*/
+
+/*nie potrafie sobie poradzić z inline-block, dlaczego pierwszy child mi wychodiz do góry, próbowałam dac font size na rodzica, próbowałam komentarzem, próbowałam dac margin-left na ostatnie dziecko*/
+
+
+.parent {
+    width: 600px;
+    padding: 20px;
+}
+
+.child {
+    margin-left: 10px;
+    font-style: regular;
+
+}
+
+.child--first {
+    width: calc(30% - 10px);
+    font-weight: bold;
+    margin: 0;
+}
+
+.child--middle {
+    width: calc(30% - 10px);
+
+}
+
+.child--last {
+    width: 40%;
+    font-style: italic;
+}
+
+
+.parent--inline-block {
+    display: inline-block;
+}
+
+.parent--float .child--first,
+.child--middle,
+.child--last {
+    float: left;
+}
+
+.parent--float::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.parent--flexbox {
+    display: flex;
+}

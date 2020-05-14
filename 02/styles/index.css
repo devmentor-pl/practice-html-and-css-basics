@@ -58,10 +58,11 @@ znacznik label, którego poprzedni brat jest znaznaczonym inputem (jest checkbox
 i ten brat musi posiadać przodka o klasie .ac-container 
 (0, 2, 2)
 2) 
-to samo co w 1) ale z efektem najechania kursorem na label  < - tego nie rozumiem co mam zmienic
+to samo co w 1) ale z efektem najechania kursorem na label  
 (0, 3, 2)
 */
-.ac-container input+label {
+.ac-container input+label,
+.ac-container input+label:hover {
     background: #f1f2f3;
     color: #666;
     text-shadow: 0 1px 1px rgba(255, 255, 255, 0.6);
@@ -147,4 +148,4 @@ oraz posiada przodka o klasie .ac-container
 
 .ac-container input:checked~article.ac-large {
     height: 230px;
-}gi
+}
