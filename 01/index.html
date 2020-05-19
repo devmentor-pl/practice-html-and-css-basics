@@ -7,6 +7,82 @@
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
 </head>
 <body>
-    
+    <header class="header">
+      <h2 class="logo">Logo Here</h1>
+      <nav class="menu_dropdown">
+        <ul class="">
+          <li>ONE</li>
+          <li>TWO</li>
+          <li>THREE</li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <article>
+        <h2>Article Title</h1>
+        <p class="article__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <time datetime="17.05.2020">Published on: __.__.____</time>
+        <h4>Author:</h4>
+        <img src="https://fajnelogo.pl/html/public/images/files/SJpOrsedtuA0DfgaP4WwhoEvLB75iFZc92GVlXnYKTxIb18z63kUCqjMNRyQmH/13274/5c4c4e612749b_rabbit.jpg" alt="Rabbit Logo">
+          <br>
+        <table style="border: 2px solid lightseagreen">
+          <colgroup>
+            <col span="1" style="background: powderblue">
+          </colgroup>
+          <!-- BAD PRACTICE: move style to CSS -->
+          <thead>
+            TABLE ONE
+          </thead>
+          <tr>
+            <th>MainRow</th>
+            <td>row2</td>
+            <td>row3</td>
+          </tr>
+          <tr>
+            <th>MainRow</th>
+            <td>row2</td>
+            <td>row3</td>
+          </tr>
+          <tr>
+            <th>MainRow</th>
+            <td>row2</td>
+            <td>row3</td>
+          </tr>
+          <tfoot>
+            Table Foot
+            <!-- why table foot is on top? -->
+          </tfoot>
+        </table>
+        <form action="post">
+          <input type="text" name="name" value="Name" onfocus="this.value=''">
+          <input type="email" name="email" value="E-mail" onfocus="this.value=''">
+          <input type="text" name="comment" maxlength="300" value="Comment" onfocus="this.value=''">
+        </form>
+        <!-- comment examples, delete CSS style later -->
+        <div class="container comments__section">
+            <div style="border: 1px solid black">
+              <h4>Comment 1</h3>
+              <p>text more text more text etc etc etc text more text more text etc etc etc text more text more text etc etc etc</p>
+              <h4>16.05.2020</h3>
+              <h4>Author: Martin</h3>
+            </div>
+            <div style="border: 1px solid black">
+              <h4>Comment 2</h3>
+              <p>text more text more text etc etc etc text more text more text etc etc etc text more text more text etc etc etc</p>
+              <h4>16.05.2020</h3>
+              <h4>Author: Martin</h3>
+            </div>
+            <div style="border: 1px solid black">
+              <h4>Comment 3</h3>
+              <p>text more text more text etc etc etc text more text more text etc etc etc text more text more text etc etc etc</p>
+              <h4>16.05.2020</h3>
+              <h4>Author: Martin</h3>
+            </div>
+        </div>
+      </article>
+      <footer>&copy Martin</footer>
+
+    </main>
 </body>
 </html>
