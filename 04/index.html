@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Navbar Exercise</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <ul class="nav">
+      <li class="nav__item border__bar">Home</li>
+      <li class="nav__item border__bar">Items
+          <ul class="nav__dropdown drop">
+            <li class="dropdown__item dropdown__item--top">Item 1</li>
+            <li class="dropdown__item dropdown__item--top item2">Item 2
+              <ul class="nav__dropdown subdrop">
+                <li class="dropdown__item subdrop--bottom">Item 2.1</li>
+                <li class="dropdown__item subdrop--bottom">Item 2.2</li>
+              </ul>
+            </li>
+          </ul>
+      </li>
+      <li class="nav__item border__bar">Settings</li>
+      <li class="nav__item border__bar">Contact</li>
+    </ul>
+  </body>
+</html>

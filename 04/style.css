@@ -1,0 +1,61 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+li {
+  color: #33A6CF;
+}
+.nav {
+  padding: 5px;
+  display: flex;
+}
+.nav:hover {
+  cursor: pointer;
+}
+.nav__item {
+  /* border: 1px solid seagreen; */
+  width: 120px;
+  height: 50px;
+  padding: 10px;
+  font-size: 15px;
+  text-transform: uppercase;
+  /* position: relative; */
+  text-align: center;
+}
+.border__bar:hover {
+  border-top: 3px solid #33A6CF;
+}
+.nav__dropdown {
+  width: 240px;
+  height: 50px;
+}
+.dropdown__item {
+  font-size: 10px;
+  color: white;
+  text-transform: none;
+  background: #333333;
+  padding: 10px;
+  width: 240px;
+  text-align: left;
+  visibility: hidden;
+}
+.nav__item:hover .dropdown__item--top {
+  visibility: visible;
+}
+.drop {
+  position: absolute;
+  top: 70px;
+  left: 92px;
+}
+.subdrop {
+  position: absolute;
+  top: 30px;
+  left: 240px;
+  visibility: visible;
+}
+
+/* Tutaj mam problem z ustawieniem visibility na "visible" po najechaniu na poprzedni element, tzn. rodzica. Po prostu nie działa i nie widzę dlaczego. */
+.item2:hover .subdrop {
+  visibility: visible;
+}

@@ -1,0 +1,10 @@
+.header__container {
+  display: flex;
+  justify-content: space-between;
+}
+.header__logo {
+  width: 200px;
+}
+.header__nav {
+  width: 400px;
+}

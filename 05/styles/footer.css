@@ -1,0 +1,8 @@
+.footer_container {
+  min-height: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+.footer__cell {
+  width: 200px;
+}

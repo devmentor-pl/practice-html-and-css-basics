@@ -1,0 +1,11 @@
+.content__container {
+  display: flex;
+  justify-content: space-between;
+}
+.content__article {
+  min-height: 400px;
+  width: 48%;
+}
+.container--two {
+  justify-content: space-around;
+}
