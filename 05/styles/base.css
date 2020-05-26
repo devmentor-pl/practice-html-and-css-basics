@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 .row, .cell, .container {
   margin: 5px;
   padding: 5px;

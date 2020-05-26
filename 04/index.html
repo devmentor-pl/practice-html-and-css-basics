@@ -1,26 +1,33 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Navbar Exercise</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Navbar Exercise</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="header__menu">
     <ul class="nav">
-      <li class="nav__item border__bar">Home</li>
-      <li class="nav__item border__bar">Items
-          <ul class="nav__dropdown drop">
-            <li class="dropdown__item dropdown__item--top">Item 1</li>
-            <li class="dropdown__item dropdown__item--top item2">Item 2
-              <ul class="nav__dropdown subdrop">
-                <li class="dropdown__item subdrop--bottom">Item 2.1</li>
-                <li class="dropdown__item subdrop--bottom">Item 2.2</li>
-              </ul>
-            </li>
+      <li class="nav__item border__bar"><a href="#">Home</a></li>
+        <li class="nav__item border__bar">
+          <div class="wrap"><a href="#">ITEMS</a><div class="arrow-down"></div></div>
+      <ul class="nav__dropdown drop">
+        <li class="dropdown__item dropdown__item--top"><a href="#">Item 1</a></li>
+        <li class="dropdown__item dropdown__item--top item2">
+          <div class="wrap"><a href="#">Item 2</a><div class="arrow-right"></div></div>
+          <ul class="nav__dropdown subdrop">
+            <li class="dropdown__item subdrop--bottom"><a href="#">Item 2.1</a></li>
+            <li class="dropdown__item subdrop--bottom"><a href="#">Item 2.2</a>Item 2.2</li>
           </ul>
+        </li>
+      </ul>
       </li>
-      <li class="nav__item border__bar">Settings</li>
-      <li class="nav__item border__bar">Contact</li>
+      <li class="nav__item border__bar"><a href="#">Settings</a></li>
+      <li class="nav__item border__bar"><a href="#">Contact</a></li>
     </ul>
-  </body>
+  </nav>
+</body>
+
 </html>

@@ -23,6 +23,11 @@ li {
   /* position: relative; */
   text-align: center;
 }
+.wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .border__bar:hover {
   border-top: 3px solid #33A6CF;
 }
@@ -58,4 +63,18 @@ li {
 /* Tutaj mam problem z ustawieniem visibility na "visible" po najechaniu na poprzedni element, tzn. rodzica. Po prostu nie działa i nie widzę dlaczego. */
 .item2:hover .subdrop {
   visibility: visible;
+}
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #000;
+}
+.arrow-right {
+  width: 0;
+  height: 0;
+  border-left: 8px solid #fff;
+  border-bottom: 8px solid transparent;
+  border-top: 8px solid transparent;
 }
