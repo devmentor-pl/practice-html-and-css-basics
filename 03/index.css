@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&display=swap');
+.parent {
+    width: 600px;
+    padding: 20px;
+}
+
+.parent--inline-block {
+    display: inline-block;
+}
+
+.parent--float {
+    display: block;
+    float: right;
+}
+
+.parent--flexbox {
+    display: flex;
+}
+
+.child {
+    font-family: "Source Sans PRO";
+    margin: 10px;
+}
+
+.child--first {
+    font-weight: 400;
+    width: 30%;
+}
+
+.child--middle {
+    font-weight: 700;
+    width: 30%;
+}
+
+.child--first {
+    font-style: italic;
+    width: 40%;
+}
