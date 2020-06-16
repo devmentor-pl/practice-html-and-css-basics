@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+hr {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+section {
+    width: 100%;
+}
+
+section nav {
+    padding: 0 50px 0 20px;
+    height: 10vh;
+}
+
+section nav .logo {
+    float: left;
+}
+
+section nav .logo img {
+    width: 100px;
+    height: 100px;
+}
+
+section nav .menu {
+    float: right;
+}
+
+section nav .menu ul {
+    margin-top: 35px;
+    white-space: nowrap;
+    list-style: none;
+}
+
+section nav .menu ul>li {
+    display: inline-block;
+    margin: 5px;
+    vertical-align: middle;
+}
+
+section nav .menu ul>li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+section .wrapper {
+    margin: 50px 0;
+}
+
+section .wrapper .column-2 {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 50px;
+}
+
+section .wrapper .column-2 div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+section .wrapper .column-2 div:last-child {
+    float: right;
+}
+
+section .wrapper .column-2 p {
+    margin: 10px 0;
+}
+
+section .wrapper .column-2 img {
+    width: 100%;
+    height: 500px;
+}
+
+section .wrapper .column-3 {
+    display: grid;
+    grid-gap: 35px;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 50px;
+}
+
+section .wrapper .column-3 p {
+    text-align: justify;
+}
+
+.footer .wrapper {
+    margin: 0;
+}
+
+.footer .wrapper .footer-info {
+    display: block;
+    margin: 0 auto;
+    height: 100px;
+}
+
+.footer .wrapper .footer-info p {
+    text-align: center;
+    padding: 40px 0;
+}
