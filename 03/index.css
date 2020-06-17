@@ -8,8 +8,28 @@
     display: inline-block;
 }
 
+.parent--inline-block .child--first,
+.parent--inline-block .child--middle,
+.parent--inline-block .child--last {
+    margin: 0;
+    display: inline-block;
+    float: left;
+}
+
 .parent--float {
     display: block;
+}
+
+.parent--float .child--first {
+    float: left;
+}
+
+.parent--float .child--middle {
+    margin: auto;
+    width: calc(100% - 70%);
+}
+
+.parent--float .child--last {
     float: right;
 }
 
@@ -19,7 +39,7 @@
 
 .child {
     font-family: "Source Sans PRO";
-    margin: 10px;
+    /* margin: 10px; */
 }
 
 .child--first {
@@ -32,7 +52,7 @@
     width: 30%;
 }
 
-.child--first {
+.child--last {
     font-style: italic;
     width: 40%;
 }

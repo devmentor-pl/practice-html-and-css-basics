@@ -12,41 +12,41 @@ hr {
     margin: 0 auto;
 }
 
-section {
+header {
     width: 100%;
 }
 
-section nav {
+header nav {
     padding: 0 50px 0 20px;
     height: 10vh;
 }
 
-section nav .logo {
+header nav .logo {
     float: left;
 }
 
-section nav .logo img {
+header nav .logo img {
     width: 100px;
     height: 100px;
 }
 
-section nav .menu {
+header nav .menu {
     float: right;
 }
 
-section nav .menu ul {
+header nav .menu ul {
     margin-top: 35px;
     white-space: nowrap;
     list-style: none;
 }
 
-section nav .menu ul>li {
+header nav .menu ul>li {
     display: inline-block;
     margin: 5px;
     vertical-align: middle;
 }
 
-section nav .menu ul>li a {
+header nav .menu ul>li a {
     text-decoration: none;
     color: black;
     font-size: 20px;

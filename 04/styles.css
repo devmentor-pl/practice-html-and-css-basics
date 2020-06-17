@@ -32,6 +32,7 @@ nav a {
     text-decoration: none;
     position: relative;
     display: block;
+    border-top: 2px solid transparent;
 }
 
 nav li:hover>a {
