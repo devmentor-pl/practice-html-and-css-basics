@@ -26,11 +26,12 @@
 
 .parent--float .child--middle {
     margin: 0 auto;
-    width: calc(100% - 70%);
+    float: left;
 }
 
 .parent--float .child--last {
     float: right;
+    width: calc(100% - 60%);
 }
 
 .parent--flexbox {
