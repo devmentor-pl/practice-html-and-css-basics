@@ -7,6 +7,96 @@
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
 </head>
 <body>
+    <header>
+        <div>
+            <a href="#">
+                <img src="img/logo.jpg" alt="Logo">
+            </a>
+            <nav>
+                <ul>
+                 <li>Home</li>
+                    <li>Portfolio
+                        <ul>
+                            <li>Teksty</li>
+                            <li>Obrazy</li>
+                            <li>Muzyka</li>
+                        </ul>
+                    </li>
+                    <li>Kontakt</li>
+                </ul>
+            </nav>  
+        </div>       
+    </header>
+
+    <main>
+        <section>
+            <div>
+                <article>
+                    <h1>Tytuł</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p>autor: Przemysław Hytroś</p>
+                    <p>Data publikacji</p>
+                    <p><img src="img/ilustracja.jpg" alt="ilustracja"></p>
+                    <p>
+                        <table>
+                            <tr>
+                                <td>1</td> <td>2</td> <td>3</td>
+                            </tr>
+                        </table>
+                    </p>
+                </article>
+            </div>
+        </section>
+            
+        <section>
+            <div>
+                <form action="">
+                    <P>
+                        <label for="nickname">Twój nick:</label>
+                        <input type="text" id="nickname" name="nickname">
+                    </P>
+                    <P>
+                        <label for="date">Wpisz dzisiejszą datę</label>
+                        <input type="date" name="dateValue" >
+                    </P>
+                    <p>
+                        <label for="komentarz">Skomentuj:</label>
+                        <textarea id="komentarz"></textarea>
+                    </p>
+                    <p>
+                        <input type="submit" value="wyślij">  
+                    </p>   
+                </form>
+            </div>  
+        </section>
+
+        <section>
+            <p>Komentarze</p>
+            <div>      
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit.</P>
+                <p>autor</p>
+                <p>data</p>
+            </div>
+
+            <div>      
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit.</P>
+                <p>autor</p>
+                <p>data</p>
+            </div>
+
+            <div>      
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit.</P>
+                <p>autor</p>
+                <p>data</p>
+            </div>
+
+        </section>
+            
+    </main>
+
+    <footer>
+        <div>&copy; 2020 Hytroś</div>
+    </footer>
     
 </body>
 </html>
