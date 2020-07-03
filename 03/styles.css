@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('fonts/source-sans-pro/SourceSansPro-Regular.otf');
+     
+}
+
+@font-face {
+    font-family: 'Source Sans Pro2';
+    src: url('fonts/source-sans-pro/SourceSansPro-It.otf');   
+}
+
+@font-face {
+    font-family: 'Source Sans Pro3';
+    src: url('fonts/source-sans-pro/SourceSansPro-Bold.otf'); 
+}
+
+
+.parent {
+    margin: 0 auto;
+    width: 600px;
+    padding: 20px;
+    outline: 3px solid;
+    outline-color: green;
+
+}
+
+.child {
+    outline: 3px solid;
+    outline-color: red;
+
+}
+
+.parent--inline-block .child {
+    display: inline-block;
+}
+
+
+.parent--inline-block .child--first {
+    width: calc(30% - 10px);
+}
+
+.parent--inline-block .child--middle {
+    width: calc(30% - 10px);
+}
+
+.parent--inline-block .child--last {
+    width: calc(40% - 10px);
+}
+
+
+.parent--float .child {
+    float: left;
+}
+
+.parent--float::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+
+.parent--float .child--first {
+    width: 30%;
+}
+
+.parent--float .child--middle {
+    width: calc(30% - 10px);
+}
+
+.parent--float .child--last {
+    width: calc(40% - 10px);
+}
+
+
+.parent--flexbox {
+    display: flex;
+}
+
+.child--middle,
+.child--last {
+    margin-left: 10px;
+}
+
+.parent--flexbox .child--first {
+    width: 30%;
+}
+
+.parent--flexbox .child--middle {
+    width: calc(30% - 10px);
+}
+
+.parent--flexbox .child--last {
+    width: calc(40% - 10px);
+}
+
+.child--first {
+    font-family: 'Source Sans Pro';
+}
+
+.child--middle {
+    font-family: 'Source Sans Pro2';
+}
+
+.child--last {
+    font-family: 'Source Sans Pro3';
+}
+
+
+
+
