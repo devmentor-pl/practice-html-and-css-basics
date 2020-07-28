@@ -1,12 +1,144 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>devmentor.pl - HTML & CSS BASICS - #01</title>
-</head>
-<body>
-    
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>devmentor.pl - HTML & CSS BASICS - #01</title>
+	</head>
+	<body>
+		<header>
+			<h1>Logo</h1>
+			<nav>
+				<label for="toggle-menu">Menu</label>
+				<input type="checkbox" id="toggle-menu" />
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Posts</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<article>
+				<h2>The main title of the article</h2>
+				<p><span>23.05.2020</span> Author Surname</p>
+
+				<img src="../assets/img/logo-icon.png" alt="super small logo image" />
+
+				<h3>Subtitle Number One</h3>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt voluptas
+					ducimus, nihil mollitia fugit tempora dignissimos facere esse at
+					obcaecati enim ipsam quaerat rerum rem quis itaque doloremque! In quam
+					eum fuga hic libero, debitis qui reiciendis aut cumque totam
+					consequuntur, laudantium illum! Distinctio repellat suscipit tenetur
+					ipsam, voluptate deserunt!
+				</p>
+
+				<h3>Subtitle Number Twowho</h3>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt voluptas
+					ducimus, nihil mollitia fugit tempora dignissimos facere esse at
+					obcaecati enim ipsam quaerat rerum rem quis itaque doloremque! In quam
+					eum fuga hic libero, debitis qui reiciendis aut cumque totam
+					consequuntur, laudantium illum! Distinctio repellat suscipit tenetur
+					ipsam, voluptate deserunt! Lorem ipsum dolor sit amet consectetur
+					adipisicing elit. Sunt voluptas ducimus, nihil mollitia fugit tempora
+					dignissimos facere esse at obcaecati enim ipsam quaerat rerum rem quis
+					itaque doloremque! Lorem ipsum dolor sit amet consectetur adipisicing
+					elit. Sunt voluptas ducimus, nihil mollitia fugit tempora dignissimos
+					facere esse at obcaecati enim ipsam quaerat rerum rem quis itaque
+					doloremque!
+				</p>
+
+				<table>
+					<tr>
+						<th>Animal</th>
+						<th>Polish name</th>
+						<th>Sound</th>
+					</tr>
+					<tr>
+						<td>Cat</td>
+						<td>Kot</td>
+						<td>Meow</td>
+					</tr>
+					<tr>
+						<td>Dog</td>
+						<td>Pies</td>
+						<td>Woof</td>
+					</tr>
+					<tr>
+						<td>Hen</td>
+						<td>Kura</td>
+						<td>no-idea</td>
+					</tr>
+				</table>
+				<p>It looks like we have some precious data above!</p>
+
+				<h3>Subtitle Number Three</h3>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt voluptas
+					ducimus, nihil mollitia fugit tempora dignissimos facere esse at
+					obcaecati enim ipsam quaerat rerum rem quis itaque doloremque! In quam
+					eum fuga hic libero, debitis qui reiciendis aut cumque totam
+					consequuntur, laudantium illum! Distinctio repellat suscipit tenetur
+					ipsam, voluptate deserunt! Lorem ipsum dolor sit amet consectetur
+					adipisicing elit. Sunt voluptas ducimus, nihil mollitia fugit tempora
+					dignissimos facere esse at obcaecati enim ipsam quaerat rerum rem quis
+					itaque doloremque! Lorem ipsum dolor sit amet consectetur adipisicing
+					elit. Sunt voluptas ducimus, nihil mollitia fugit tempora dignissimos
+					facere esse at obcaecati enim ipsam quaerat rerum rem quis itaque
+					doloremque!
+				</p>
+
+				<!-- Formularz w article? Toeretycznie możliwe :) -->
+				<section>
+					<h2>Live a comment below!</h2>
+					<form action="#">
+						<div>
+							<label for="name">Your nick-name</label>
+							<input type="text" name="name" id="name" />
+						</div>
+						<div>
+							<label for="comment">Your comment</label>
+							<textarea
+								type="text"
+								name="comment"
+								id="comment"
+								placeholder="It looks awful being just an inline element"
+							></textarea>
+						</div>
+						<input type="submit" value="Submit" />
+					</form>
+				</section>
+
+				<section>
+					<h3>See latest comments</h3>
+
+					<!-- próba zastosowania się do wskazówek z MDN: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article -->
+					<article>
+						<p><span>3.06.2020</span><span> John Robinson</span> said:</p>
+						<p>
+							This is nice to read Lorem ipsum dolor sit amet consectetur
+							adipisicing elit. Sunt voluptas ducimus
+						</p>
+					</article>
+
+					<article>
+						<p><span>6.06.2020</span><span> Mary Ann</span> said:</p>
+						<p>
+							Sunt voluptas ducimus, nihil mollitia fugit tempora dignissimos
+							facere esse at obcaecati enim ipsam quaerat rerum rem quis itaque
+							doloremque! Lorem ipsum dolor sit amet consectetur adipisicing
+							elit. Sunt voluptas ducimus, nihil mollitia.
+						</p>
+					</article>
+				</section>
+			</article>
+		</main>
+
+		<footer>Copywrights &copy;2020</footer>
+	</body>
 </html>

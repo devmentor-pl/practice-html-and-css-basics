@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Ćwiczenie nr 4</title>
+	</head>
+	<body>
+		<!-- Główny pasek menu -->
+		<nav class="navbar">
+			<!-- Elementy głównego menu -->
+			<ul class="navbar__main main">
+				<li class="main__items"><a class="main__link" href="#">Home</a></li>
+
+				<li class="main__items secondary">
+					<a class="main__link link--push-arrow" href="#">Items</a>
+
+					<!-- Elementy 2 poziomu -->
+					<ul class="secondary__items items--dark">
+						<li class="secondary__item">
+							<a class="secondary__link link--light" href="#">Item 1</a>
+						</li>
+
+						<li class="secondary__item third">
+							<a class="secondary__link link--light .link--push-arrow" href="#"
+								>Item 2</a
+							>
+
+							<!-- Elementy 3 poziomu -->
+							<ul class="third__items items--dark">
+								<li class="third__item">
+									<a class="third__link link--light" href="#">Item 2.1</a>
+								</li>
+								<li class="third__item">
+									<a class="third__link link--light" href="#">Item 2.2</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+
+				<li class="main__items"><a class="main__link" href="#">Settings</a></li>
+				<li class="main__items"><a class="main__link" href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</body>
+</html>

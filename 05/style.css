@@ -1,0 +1,149 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	color: #333;
+	width: 100%;
+}
+
+body {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+	font-size: 1.7rem;
+}
+h2 {
+	font-size: 1.3rem;
+}
+
+p {
+	font-size: 1.1rem;
+}
+
+/* HEADER WITH TOP-BAR AND NAVIGATION */
+.top-bar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	background: #f3f3f7;
+	padding: 20px 0 20px 20px;
+}
+
+/* Logo */
+.top-bar .logo {
+	display: flex;
+	align-items: center;
+}
+
+.logo .logo__img {
+	display: inline-block;
+	height: 60px;
+}
+
+.logo .logo__text {
+	color: #222;
+	display: inline-block;
+	padding-left: 10px;
+}
+
+.logo .logo__sub-text {
+	font-size: 1rem;
+	display: block;
+}
+/* --------------------------- */
+
+/* Menu items */
+.menu__items .menu__item {
+	display: inline-block;
+}
+
+.menu__item .menu__link {
+	padding: 15px 20px;
+	color: #333;
+	font-size: 1.3rem;
+}
+
+.menu__items .menu__link:hover {
+	background: #e5e5ee;
+}
+/* --------------------------- */
+
+/* TWO COLUMNS IN SECTION 1 */
+
+.sec-1 {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 30px;
+}
+
+/* Columns sec-1 */
+.sec-1 .sec-1__column {
+	width: 48%;
+}
+
+.sec-1 .sec-1__title {
+	padding-top: 20px;
+}
+
+.sec-1 .sec-1__text {
+	padding-top: 20px;
+}
+
+/* THREE COLUMNS IN SECTION 2 */
+
+.sec-2 {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	margin-top: 70px;
+}
+
+/* Columns sec-2*/
+.sec-2 .sec-2__column {
+	width: 30%;
+	text-align: center;
+}
+
+.sec-2__column .sec-2__icon {
+	width: 40px;
+}
+
+.sec-2__column .sec-2__title,
+.sec-2__column .sec-2__desc {
+	padding-top: 10px;
+}
+
+.footer {
+	min-height: 100px;
+	background: rgb(124, 124, 124);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 70px;
+}
+
+.footer .footer__text {
+	color: #f3f3f7;
+}

@@ -1,0 +1,49 @@
+/* Ok, na tym poległam zupełnie :) */
+
+@font-face {
+	font-family: 'Source Sans PRO';
+	src: url(source-sans-pro/SourceSansPro-Regular.otf) format('opentype'),
+		url(source-sans-pro/SourceSansPro-It.otf) format('opentype'),
+		url(source-sans-pro/SourceSansPro-Bold.otf) format('opentype');
+}
+
+.parent {
+	width: 600px;
+	padding: 20px;
+}
+
+.parent--inline-block {
+	display: inline-block;
+}
+.parent--float {
+	float: right;
+	/* ??? dowolność? */
+}
+.parent--flexbox {
+	display: flex;
+}
+
+.parent .child {
+	display: inline-block;
+	margin: 5px;
+	/* to było podchwytliwe "10px odstępu"? 
+  A może chodziło o:*/
+	/* margin: calc(10px / 2); ?*/
+}
+
+.child--first {
+	width: 30%;
+	color: aquamarine;
+	font-family: 'Source Sans PRO';
+	/* no i nie działa, heh :) */
+}
+
+.child.child--middle {
+	width: 30%;
+	color: blueviolet;
+	font-weight: bold;
+}
+.child.child--last {
+	width: 40%;
+	font-style: italic;
+}
