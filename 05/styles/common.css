@@ -1,0 +1,30 @@
+.row, .container, .cell {
+    border-style: solid;
+    border-width: 3px;
+}
+
+.row {
+    border-color: green;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.container {
+    border-color: blue;
+    min-width: 1000px;
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 5px;    
+}
+
+.container__section12 {
+    justify-content: space-between;
+}
+
+.cell {
+    border-color: orange;
+    background-color: orange;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}

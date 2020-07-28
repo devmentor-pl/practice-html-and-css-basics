@@ -1,0 +1,10 @@
+.container__section4 {
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+}
+
+.cell__section4 {
+    height: 30px;
+    width: 100px;
+}

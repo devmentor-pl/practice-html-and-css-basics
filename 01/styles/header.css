@@ -1,0 +1,36 @@
+.logo {
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.title {
+    margin-left: 60px;
+    display: inline-block;
+}
+
+.menu {
+    width: 300px;
+    margin-left: 70px;
+    margin-top: 20px;
+    display: inline-block;
+    list-style: none;
+    position: relative;
+    background-color: grey;
+    color: white;
+    cursor: pointer;
+}
+
+.menu__dropdown {
+    width: 300px;
+    list-style: none;
+    position: absolute;
+    left: 0;
+    padding-top: 30px;
+    background-color: grey;
+    color: white;
+    display: none;
+}
+
+.menu:hover > .menu__dropdown{
+    display: block;
+}

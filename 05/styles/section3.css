@@ -1,0 +1,8 @@
+.container__section3 {
+    justify-content: space-evenly;
+}
+
+.cell__section3 {
+    height: 200px;
+    width: 30%;
+}

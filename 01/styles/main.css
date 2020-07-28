@@ -1,0 +1,42 @@
+.image {
+    display: inline-block;
+    position: relative;
+    width: 250px;
+    height: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.image--pv {
+    background-image: url("../images/panele-pv.jpg");
+}
+
+.image--tr {
+    background-image: url("../images/turbina wiatrowa.jpeg");
+}
+
+p {
+    display: inline-block;
+    width: 70%;
+}
+
+.p--comment {
+    background-color: lightgrey;
+    font-style: italic;
+}
+
+figcaption {
+    position: absolute;
+    right: 0; bottom: 0; left: 0;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .6);
+    color: rgb(255,255,255);
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+label {
+    display: block;
+}

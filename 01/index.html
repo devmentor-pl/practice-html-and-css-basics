@@ -1,12 +1,124 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/common.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
 </head>
 <body>
-    
+    <header>
+        <div class="logo">
+            <img src="./images/logo-icon.png" alt="LOGO">
+        </div>
+        <div class="title">
+            <h1>ALTERNATYWNE ŹRÓDŁA ENERGII</h1>
+        </div>
+        <ul class="menu">
+            <li>ŹRÓDŁA ENERGII</li>
+            <ul class="menu__dropdown">
+                <li>
+                    PANELE FOTOWOLTAICZNE
+                </li>
+                <li>
+                    TURBINY WIATROWE
+                </li>
+            </ul>
+        </ul>
+    </header>
+
+    <main>
+        <article>
+            <h2>ODNAWIALNE ŹRÓDŁA ENERGII</h2>
+            <i><h4>Autor: Piotr, 2020.07.25</h4></i>
+            <br>
+            <h3>Panele fotowoltaiczne</h3>
+            <p>
+                &emsp;Moduł fotowoltaiczny - układ połączonych szeregowo lub szeregowo-równolegle ogniw słonecznych.
+                Maksymalna wartość generowanego napięcia dla pojedynczego ogniwa krzemowego nie przekracza 0,6 V, 
+                a moc osiąga wartość od 1 do 2 W. Dla zastosowań praktycznych wymagane jest znacznie wyższe napięcie elektryczne, 
+                dlatego właśnie pojedyncze ogniwa łączy się ze sobą tworząc w ten sposób moduły fotowoltaiczne. 
+                W większości modułów fotowoltaicznych materiałem półprzewodnikowym jest krzem w postaci płytek monokrystalicznych lub polikrystalicznych. 
+                W związku z ograniczoną globalną dostępnością krzemu oraz rosnącym popytem na ten surowiec, 
+                zwiększa się produkcja modułów fotowoltaicznych cienkowarstwowych, do produkcji których jest używany krzem amorficzny, 
+                diselenek indowo-miedziowy oraz tellurek kadmu. Technologia cienkowarstwowa charakteryzuje się tym, 
+                że mocno redukuje się zużycie wykorzystanych w niej materiałów, a całość modułu jest zbudowana z jednego ogniwa
+            </p>
+
+            <figure class="image image--pv">
+                <figcaption>Fig1 panele fotowoltaiczne</figcaption>
+            </figure>
+
+
+            <h3>Turbiny wiatrowe</h3>
+            <p>
+                &emsp;Turbina wiatrowa , lub alternatywnie określany jako konwerter energii wiatrowej , jest urządzeniem, 
+                które konwertuje wiatr za energię kinetyczną w energię elektryczną. Turbiny wiatrowe są wytwarzane w szerokim zakresie 
+                względem osi pionowej i poziomej. Najmniejsze turbiny są wykorzystywane do takich zastosowań jak ładowaniu baterii do 
+                zasilania pomocniczego dla łodzi lub przyczep kempingowych lub na znakach drogowych ostrzegawczych moc. Większe turbiny 
+                mogą być wykorzystywane do dokonywania wpłat na wewnętrznym zasilaniem przy sprzedaży niewykorzystanej energii z powrotem 
+                do dostawcy użytkowego za pośrednictwem sieci elektrycznej . Tablice dużych turbin , zwanych farm wiatrowych , 
+                stają się coraz ważniejszym źródłem przerywany energii odnawialnej i są stosowane w wielu państwach jako część 
+                strategii mającej na celu zmniejszyć ich zależność od paliw kopalnych . Jedna ocena twierdził, że od 2009 roku, 
+                wiatr miał „najniższych względem emisji gazów cieplarnianych, najmniej wymaganiom zużycia wody i ... najbardziej korzystne skutki społeczne” 
+                w porównaniu do ogniw fotowoltaicznych, wodna, geotermalna, węgla i gazu.
+            </p>
+
+            <figure class="image image--tr">
+                <figcaption>Fig2 turbina wiatrowa</figcaption>
+            </figure>
+
+            <table>
+                <caption>Udział OZE</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Rok</th>
+                        <th scope="col">Udział [%]</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2018</td>
+                        <td>11.5</td>
+                    </tr>
+                    <tr>
+                        <td>2019</td>
+                        <td>13.0</td>
+                    </tr>
+                    <tr>
+                        <td>2020</td>
+                        <td>13.8</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+        <br>
+        <section>
+            <form action="add_comment_script" method="POST">
+                <label>Twoje imię:
+                    <input name="firstName" />
+                </label>
+                <label>Dodaj komentarz:
+                    <textarea name="comment" id="komentarz" cols="100" rows="5"></textarea>
+                </label>
+                <input type="submit">
+            </form>
+            <p class="p--comment">
+                &emsp;Alternatywne źródła energii powinny być wykorzystywane w wielu
+                obszarach, w których do tąd nie były używane. Pozwoli zmniejszyć to zapotrzebowanie na
+                energię nieodnawialną.<br> Adam, 2020.07.26
+            </p>
+            <p class="p--comment">
+                &emsp;Sezonowe źródła energii powinny być wykorzystywane w kogeneracji z tymi, których
+                działanie jest mniej sezonowe. Powinniśmy również rozwijać technologię magazynowania energii.
+                <br>Ola: 2020.07.27
+            </p>
+        </section>
+    </main>
+
+    <footer>&copy;pn-dev</footer>
 </body>
 </html>

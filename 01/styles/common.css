@@ -1,0 +1,6 @@
+header, main, footer {
+    border-color: gray;
+    border-style: solid;
+    width: 1200px;
+    margin: 0 auto;
+}
