@@ -53,29 +53,46 @@
 					doloremque!
 				</p>
 
-				<table>
-					<tr>
-						<th>Animal</th>
-						<th>Polish name</th>
-						<th>Sound</th>
-					</tr>
-					<tr>
-						<td>Cat</td>
-						<td>Kot</td>
-						<td>Meow</td>
-					</tr>
-					<tr>
-						<td>Dog</td>
-						<td>Pies</td>
-						<td>Woof</td>
-					</tr>
-					<tr>
-						<td>Hen</td>
-						<td>Kura</td>
-						<td>no-idea</td>
-					</tr>
+				<table style="table-layout: auto;">
+					<caption>
+						Animal names and sounds in english and polish
+					</caption>
+					<colgroup>
+						<col spa="5" style="background-color: cornflowerblue;" />
+						<col style="background-color: thistle;" />
+						<col style="background-color: wheat;" />
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">Animal</th>
+							<th scope="col">Polish name</th>
+							<th scope="col">Sound</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Cat</td>
+							<td>Kot</td>
+							<td>Meow</td>
+						</tr>
+						<tr>
+							<td>Dog</td>
+							<td>Pies</td>
+							<td>Woof</td>
+						</tr>
+						<tr>
+							<td>Hen</td>
+							<td>Kura</td>
+							<td>no-idea</td>
+						</tr>
+					</tbody>
+					<!-- Da się rozciągnąć tfoot na całą szerokość tabeli? Stack Overflow radzi colspan="0" oraz styl dla tabeli "table-layout: auto", ale nie bardzo to rozumiem ;) -->
+					<tfoot colspan="0" style="background: gainsboro;">
+						<tr>
+							<td>It looks like we have some precious data above!</td>
+						</tr>
+					</tfoot>
 				</table>
-				<p>It looks like we have some precious data above!</p>
 
 				<h3>Subtitle Number Three</h3>
 				<p>
