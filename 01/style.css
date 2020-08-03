@@ -101,3 +101,15 @@ ul > li:first-child {
     padding-left: 1px;
     border-left: 1px;
 }
+#article_img {
+    width: 30vw;
+    height: 20vw;
+}
+td {
+    border: 1px solid black;
+    padding: 0;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
