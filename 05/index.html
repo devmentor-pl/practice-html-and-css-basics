@@ -8,28 +8,34 @@
 	</head>
 	<body>
 		<header class="top-bar">
-			<a href="#" class="top-bar__logo logo">
-				<img class="logo__img" src="../assets/img/logo-icon.svg" alt="" />
-				<h1 class="logo__text">
-					DevEx 5
-					<span class="logo__sub-text"
-						>completely not a bootstrap-like layout</span
-					>
+			<div class="top-bar__container">
+				<h1 class="top-bar__logo logo">
+					<a href="#" class="logo__link">
+						<img class="logo__img" src="../assets/img/logo-icon.svg" alt="" />
+						<div class="logo__text">
+							<span class="logo__text-top"> DevEx 5</span>
+							<span class="logo__sub-text"
+								>completely not a bootstrap-like layout</span
+							>
+						</div>
+					</a>
 				</h1>
-			</a>
 
-			<nav class="top-bar__menu menu">
-				<ul class="menu__items">
-					<li class="menu__item"><a class="menu__link" href="#">Home</a></li>
-					<li class="menu__item"><a class="menu__link" href="#">Offer</a></li>
-					<li class="menu__item"><a class="menu__link" href="#">About</a></li>
-					<li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
-				</ul>
-			</nav>
+				<nav class="top-bar__menu menu">
+					<ul class="menu__items">
+						<li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+						<li class="menu__item"><a class="menu__link" href="#">Offer</a></li>
+						<li class="menu__item"><a class="menu__link" href="#">About</a></li>
+						<li class="menu__item">
+							<a class="menu__link" href="#">Contact</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
 		</header>
 
 		<main class="main-content">
-			<section class="sec-1">
+			<article class="sec-1">
 				<div class="sec-1__column">
 					<h2 class="sec-1__title">This is the first offer</h2>
 					<p class="sec-1__text">
@@ -61,9 +67,9 @@
 						illo aut?
 					</p>
 				</div>
-			</section>
+			</article>
 
-			<section class="sec-2">
+			<article class="sec-2">
 				<div class="sec-2__column">
 					<img src="../assets/img/logo-icon.svg" alt="" class="sec-2__icon" />
 					<h3 class="sec-2__title">This is why</h3>
@@ -88,11 +94,11 @@
 						vitae asperiores ad commodi! Velit?
 					</p>
 				</div>
-			</section>
+			</article>
 		</main>
 
 		<footer class="footer">
-			<p class="footer__text">Copyrights&copy;2020 - 1000px looks weird</p>
+			<p class="footer__text">Copyrights&copy;2020 - have a nice day</p>
 		</footer>
 	</body>
 </html>
