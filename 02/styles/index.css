@@ -54,7 +54,7 @@ który znajduje się wewnątrze elementu o klasie .ac-container
 /*
 Te same style CSS dla dwóch selektorów:
 1) 
-znacznik label, którego poprzedni brat jest znaznaczonym inputem (jest checkbox-em), 
+znacznik label, którego poprzedni brat jest znaznaczonym inputem (użyj pseudoklasy), 
 i ten brat musi posiadać przodka o klasie .ac-container 
 (0, 2, 2)
 2) 
@@ -85,7 +85,7 @@ to samo co w 1) ale z efektem najechania kursorem na label
 
 /*
 Pseudo-element jako ostatnie dziecko label, tworzony tylko po najechaniu kursorem myszy na ten element (label),
-którego poprzedni brat jest zaznaczonym inputem (jest checkbox-em),
+którego poprzedni brat jest zaznaczonym inputem (użyj pseudoklasy),
 którego przodek to element o klasie .ac-container
 (0, 3, 3)
 */
