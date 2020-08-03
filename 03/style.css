@@ -7,6 +7,12 @@
 		url(source-sans-pro/SourceSansPro-Bold.otf) format('opentype');
 }
 
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
 .parent {
 	width: 600px;
 	padding: 20px;
@@ -15,23 +21,24 @@
 .parent--inline-block {
 	display: inline-block;
 }
+
+.parent--inline-block .child,
+.parent--float .child {
+	display: inline-block;
+}
+
 .parent--float {
-	float: right;
-	/* ??? dowolność? */
+	float: left;
 }
 .parent--flexbox {
 	display: flex;
 }
 
 .parent .child {
-	display: inline-block;
-	margin: 5px;
-	/* to było podchwytliwe "10px odstępu"? 
-  A może chodziło o:*/
-	/* margin: calc(10px / 2); ?*/
+	padding: 5px;
 }
 
-.child--first {
+.child.child--first {
 	width: 30%;
 	color: aquamarine;
 	font-family: 'Source Sans PRO';
@@ -44,6 +51,6 @@
 	font-weight: bold;
 }
 .child.child--last {
-	width: 40%;
+	width: 38%;
 	font-style: italic;
 }
