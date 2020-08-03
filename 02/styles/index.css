@@ -8,7 +8,7 @@ Znacznik label, którego przodkiem jest klasa .ac-container
 (0, 1, 1)
 */
 
-label {
+.ac-container label {
 	height: 30px !important;
 	line-height: 21px !important;
 	font-size: 12px !important;
@@ -44,7 +44,6 @@ label {
 	line-height: 20px;
 }
 
-/* ----------------------- Hm, czemu ta klasa jest powyżej label i ponownie poniżej? */
 .ac-container {
 	width: 100%;
 	margin: 10px auto 30px auto;
@@ -56,11 +55,10 @@ Zmiana koloru tła po najechaniu przez kursor myszy na znacznik label,
 który znajduje się wewnątrze elementu o klasie .ac-container 
 (0, 2, 1)
 */
-label:hover {
+.ac-container label:hover {
 	background: #fff;
 }
 
-/* ---------------------------- type = radio jest checkboxem? */
 /*
 Te same style CSS dla dwóch selektorów:
 1) 
@@ -98,7 +96,6 @@ Pseudo-element jako ostatnie dziecko label, tworzony tylko po najechaniu kursore
 którego poprzedni brat jest zaznaczonym inputem (jest checkbox-em),
 którego przodek to element o klasie .ac-container
 (0, 3, 3)
----------------------------- którego cioci kolegi brata wujek... - tak mi się tylko skojarzyło ;D
 */
 .ac-container input:checked + label:hover:after {
 	background-image: url(../images/arrow_up.png);
@@ -132,10 +129,8 @@ którego przodek to element o klasie .ac-container
 	font: normal normal 12px 'Open Sans';
 }
 
-/* ---------------------------- check-boxem - niżej jest błąd */
-/* ---------------------------- Rodzeństwo* - też błąd */
 /* 
-Rodzieństwo typu article, dla elementu input, który jest zaznaczony (jest checkbo-xem) 
+Rodzieństwo typu article, dla elementu input, który jest zaznaczony (jest checkboxem) 
 oraz posiada przodka o klasie .ac-container
 (0, 2, 2)
 */
