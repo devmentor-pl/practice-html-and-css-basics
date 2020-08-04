@@ -1,10 +1,18 @@
-/* Ok, na tym poległam zupełnie :) */
-
 @font-face {
 	font-family: 'Source Sans PRO';
-	src: url(source-sans-pro/SourceSansPro-Regular.otf) format('opentype'),
-		url(source-sans-pro/SourceSansPro-It.otf) format('opentype'),
-		url(source-sans-pro/SourceSansPro-Bold.otf) format('opentype');
+	src: url(source-sans-pro/SourceSansPro-Regular.otf) format('opentype');
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'Source Sans PRO';
+	src: url(source-sans-pro/SourceSansPro-It.otf) format('opentype');
+	font-weight: normal;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'Source Sans PRO';
+	src: url(source-sans-pro/SourceSansPro-Bold.otf) format('opentype');
+	font-weight: bold;
 }
 
 * {
@@ -16,15 +24,15 @@
 .parent {
 	width: 600px;
 	padding: 20px;
+	font-family: 'Source Sans PRO';
 }
 
-.parent--inline-block {
+.parent--inline-block .child {
 	display: inline-block;
 }
 
-.parent--inline-block .child,
 .parent--float .child {
-	display: inline-block;
+	float: left;
 }
 
 .parent--float {
@@ -35,14 +43,13 @@
 }
 
 .parent .child {
-	padding: 5px;
+	margin-left: 10px;
 }
 
 .child.child--first {
 	width: 30%;
 	color: aquamarine;
-	font-family: 'Source Sans PRO';
-	/* no i nie działa, heh :) */
+	font-weight: normal;
 }
 
 .child.child--middle {
@@ -51,6 +58,6 @@
 	font-weight: bold;
 }
 .child.child--last {
-	width: 38%;
+	width: calc(40% - 20px);
 	font-style: italic;
 }
