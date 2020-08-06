@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+        margin: 0;
+	    padding: 0;
+	    border: 0;
+	    font-size: 100%;
+	    font: inherit;
+        box-sizing: border-box;
+        }
+        body {
+        background-color: rgb(247, 247, 247);
+        }
+        div {
+        list-style-type: none;
+        padding: 0;
+        background-color: white;
+        margin: 10px;
+        margin-top: 0;
+        height: 70px;
+        margin-left: 5%;
+        width: 90%;
+        font-size: 0;
+
+        }
+        ul {
+        margin-left: 5%;
+        width: 90%;
+        font-size: 0;
+        }
+        li {
+        display: inline-block;
+        line-height: 70px;
+        width: 25%;
+        font-size: 16px;
+        text-align: center;
+        padding-left: 2%;
+        border-top: 3px solid white;
+        }
+        li:hover {
+        border-top: 3px solid;
+        }
+        div ul li {
+            display: block;
+            height: 25%;
+
+        }
+        li .submenu {
+            background-color: gray;
+            display:none;
+            border-top: 0px;
+
+                    }
+        li:hover .submenu {
+            display: block;
+            position: absolute;
+            border-top: 0px;
+            left: 22.5%;
+            max-width: 22.5%;
+
+
+        }
+        div ul li {
+            border-top: 3px solid gray;
+            background-color: gray;
+            line-height: 70px;        }
+        div ul {
+                height: 500%;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div>
+            
+                <li>HOME
+
+                </li>
+                <li>ITEMS
+                    <div class="submenu">
+                        <ul>
+                            <li>Item1</li>
+                            <li>Item2</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>SETTINGS</li>
+                <li>CONTACT</li>
+            
+        </div>        
+            
+    </nav>
+</body>
+</html>
