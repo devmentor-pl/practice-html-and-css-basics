@@ -5,6 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS BASICS - #03</title>
+    <style>
+    /* source-sans-pro-regular - latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/source-sans-pro-v13-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'),
+       url('../fonts/source-sans-pro-v13-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/source-sans-pro-v13-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/source-sans-pro-v13-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/source-sans-pro-v13-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/source-sans-pro-v13-latin-regular.svg#SourceSansPro') format('svg'); /* Legacy iOS */
+}
+        * {
+        margin: 0;
+	    padding: 0;
+	    border: 0;
+	    font-size: 100%;
+	    font: inherit;
+        }
+    .parent {
+        width: 600px;
+        padding:20px;
+        overflow: hidden;
+        font-size: 0;
+    }
+    .child.child--first {
+        width: 30%;
+        background-color: gray;
+        font-family: 'Source Sans Pro', sans-serif;
+        }
+    .child.child--middle {
+        width: 30%;
+        background-color: blue;
+        font: bold;
+        font-family: 'Source Sans Pro', sans-serif; 
+    }
+    .child.child--last {
+        width: 40%;
+        background-color: red;
+        font-style: italic;
+        font-family: 'Source Sans Pro', sans-serif;     
+    }
+    .child {
+        display: inline-block;
+        padding:0%;
+        overflow: hidden;
+        font-size: 16px;
+        margin-right: 10px;
+    }
+    .parent--inline-block .child--first {
+        width: calc(30% - 10px)
+    }
+    .parent--inline-block .child--middle {
+        width: calc(30% - 10px)
+    }
+    .parent--inline-block .child--last {
+        width: calc(30% - 10px)
+    }
+    .parent--float .child--first {
+        float: left;
+        width: calc(30% - 10px)
+    }
+    .parent--float .child--middle {
+        float: left;
+        width: calc(30% - 10px)
+    }
+    .parent--float .child--last {
+        float: left;
+        width: calc(30% - 10px)
+    }
+    .parent.parent--flexbox {
+        display: flex;
+    }
+    </style>
 </head>
 <body>
     
