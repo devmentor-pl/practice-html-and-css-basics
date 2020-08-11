@@ -18,10 +18,6 @@ body{
     
 }
 
-.nav:first-child {
-    color: blue;
-}
-
 .nav__item {
     outline: 0px solid;
     outline-color: yellow;
@@ -47,7 +43,7 @@ body{
 
 .nav__dropdown {
     display: none;
-    margin-top: 127px;
+    margin-top: 125px;
     background-color: black;
     outline: 0px solid;
     outline-color: red;
@@ -71,6 +67,35 @@ body{
 
 .nav__link {
     text-decoration: none;
+}
+
+.nav__link::after {
+    content: '>';
+    margin-left: 15px;
+    margin-top: 3px;
+    display: none;
+    color: blue;
+    font-size: 10px;
+    position: absolute;
+    
+}
+
+
+.nav__item:hover > .nav__link::after {
+    display: inline;
+    transform: rotate(90deg);
+}
+
+.dropdown__item > .nav__link::after {
+    content: '>';
+    margin-left: 90px;
+    display: none;
+    color: white;
+    font-size: 10px;
+}
+
+.dropdown__item:hover > .nav__link::after {
+    display: inline;
 }
 
 .nav__dropdown2 {
