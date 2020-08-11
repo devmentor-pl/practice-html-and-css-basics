@@ -5,135 +5,130 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        * {
-        margin: 0;
-	    padding: 0;
-	    border: 0;
-	    font-size: 100%;
-	    font: inherit;
-        box-sizing: border-box;
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
         }
         body {
-        background-color: rgb(247, 247, 247);
+            background-color: #F6F6F6;
+            font-family:Verdana, sans-serif
         }
-        div {
-        list-style-type: none;
-        padding: 0;
-        background-color: white;
-        margin: 10px;
-        margin-top: 0;
-        height: 70px;
-        margin-left: 5%;
-        width: 90%;
-        font-size: 0;
-
+        nav.menu-bar {
+            background-color: white;
+            text-align: center;
+            color: rgb(0, 154, 225);
         }
-        ul {
-        margin-left: 5%;
-        width: 90%;
-        font-size: 0;
+        .menu-bar ul {
+            display: inline-flex;
+            list-style: none;
         }
-        li {
-        display: inline-block;
-        line-height: 70px;
-        width: 25%;
-        font-size: 16px;
-        text-align: center;
-        padding-left: 2%;
-        border-top: 3px solid white;
+        .menu-bar ul li {
+            width: 120px;
+            margin: 0px;
+            padding: 25px;
         }
-        li:hover {
-        border-top: 3px solid;
+        .menu-bar ul .first-li:hover::before {
+            content: "";
+            position: absolute;
+            background-color: rgb(0, 154, 225);
+            height: 3px;
+            width: 120px;
+            top: 0;
         }
-        
-        li .submenu {
-            background-color: gray;
-            display:none;
-            border-top: 0px;
-
-                    }
-        li:hover .submenu {
+        .menu-bar ul li a {
+            text-decoration: none;
+        }
+        .sub-menu1 {
+            display: none;
+        }
+        .menu-bar ul li:hover .sub-menu1 {
             display: block;
             position: absolute;
-            border-top: 0px;
-            left: 22.5%;
-            max-width: 22.5%;
+            margin-top: 25px;
+            margin-left: -15px;
+            background: #333333;
         }
-        div ul li {
-            border-top: 3px solid gray;
-            background-color: gray;
-            line-height: 70px;
-            height: 70px;
+        .menu-bar ul li:hover .sub-menu1 ul {
             display: block;
-                    }
-        div ul:hover li {
-            border-top: 3px solid gray; 
-            line-height: 70px;
-            height: 70px;        }    
-         div li:hover div ul li+li {
-            width: 100%;
+            margin: 10px;
+        }
+        .menu-bar ul li:hover .sub-menu1 ul li {
+            width: 150px;
+            padding: 10px;
+            text-align: left;
+        }
+
+        p {
+            float: right;
+        }
+        .arrow {
+            transform: rotate(90deg);
+            transform-origin: 50% 55%;
+        }
+        .menu-bar ul li:hover .arrow {
+            display: block;
+            float: right;
+            transform: rotate(-90deg);
+        }
+        .sub-menu2 {
+            display: none;
+        }
+        .hover-me:hover .sub-menu2 {
             position: absolute;
-            left: 0%;
+            display: block;
+            margin-top: -39px;
+            margin-left: 145px;
+            background-color: #333333;
+        }
+        .hover-me2:hover .sub-menu3 {
+            position: absolute;
+            display: block;
+            margin-top: -32px;
+            margin-left: 145px;
+            background-color: #333333;
+        }
+        .sub-menu3 {
+            display: none;
+        }
+        .hover-both {
+            color: white;
+
         }
         a {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-        .submenu2 {
-            position: absolute;
-            left: 100%;
-            top: 0;
-            height: 15vh;
-            width: 25vw;
-        }
-        .submenu3 {
-            position: absolute;
-            left: 200%;
-            top: 200%;
-            height: 15vh;
-            width: 25vw;
-        }
-        .listcon {
-            position: relative;
-            width: 100vw;
-            height: 100vh;
-            visibility: hidden;
-        }
-        .item1 {
-            width:10vh;
-            height: 15vh;
+            color: rgb(0, 154, 225);
         }
     </style>
 </head>
 <body>
-    <nav>
-        <div>
-            
-                <li>HOME
-
-                </li>
-                <li><p>ITEMS</p>
-                    <div class="submenu">
-                        <ul>
-                            <li class="item1"><a href="#">Item1</a>
-                                <ul class = "sublist">
-                                    <div class="listcon">
-                                        <li class="submenu2">Item 1.1</li>
-                                        <li class="submenu3">Item 1.2</li>
-                                    </div>
-                                </ul>
-                            </li>
-                            <li><a href="#">Item2</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li>SETTINGS</li>
-                <li>CONTACT</li>
-            
-        </div>        
-            
+    <nav class="menu-bar">
+        <ul>
+            <li class="first-li">HOME</li>
+            <li class="first-li"><a href="#">ITEMS<p class="arrow">></p></a>
+            <div class="sub-menu1">
+                <ul>
+                    <li class="hover-me hover-both"><a class="a-2" href="#"></a>ITEM 1<p>></p>
+                        <div class="sub-menu2">
+                            <ul>
+                                <li><a class="a-2" href="#"></a>ITEM 1.1</li>
+                                <li><a class="a-2" href="#"></a>ITEM 1.2</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="hover-me2 hover-both"><a class="a-2" href="#"></a>ITEM 2<p>></p>
+                        <div class="sub-menu3">
+                            <ul>
+                                <li><a class="a-2" href="#"></a>ITEM 1.1</li>
+                                <li><a class="a-2" href="#"></a>ITEM 1.2</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            </li>
+            <li class="first-li">SETTINGS</li>
+            <li class="first-li">CONTACT</li>
+        </ul>
     </nav>
 </body>
 </html>
