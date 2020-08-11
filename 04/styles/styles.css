@@ -1,0 +1,146 @@
+
+body{
+    background-color: grey;
+}
+.header__container {
+    
+    margin-left: 10px;
+    margin-top: 20px;
+    
+}
+.nav {
+    background-color: white;
+    width: 600px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+       
+    
+}
+
+.nav:first-child {
+    color: blue;
+}
+
+.nav__item {
+    outline: 0px solid;
+    outline-color: yellow;
+    padding: 0px 0px;
+    margin-left: 30px;
+    height: 50px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: black;
+    
+}
+
+.nav__item:hover > .nav__dropdown {
+    display: block;
+}
+
+.nav__item:hover > .nav__link {
+    color: blue;
+}
+
+.nav__dropdown {
+    display: none;
+    margin-top: 127px;
+    background-color: black;
+    outline: 0px solid;
+    outline-color: red;
+    position: absolute;
+    left: 0px;
+    
+}
+
+.dropdown__item {
+    padding: 0px 25px;
+    min-width: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.dropdown__item > .nav__link {
+    color: white;
+}
+
+
+.nav__link {
+    text-decoration: none;
+}
+
+.nav__dropdown2 {
+    margin-top: -20px;
+    background: black;
+    outline: 0px solid;
+    outline-color: red;
+    position: absolute;
+    left: 200px;
+    display: none;
+   
+    
+}
+
+.dropdown__item2 {
+    padding: 0px 25px;
+    min-width: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+.dropdown__item2 > .nav__link {
+    color: white;
+}
+
+
+.dropdown__item:last-child:hover > .nav__dropdown2 {
+    display: block;
+}
+
+.nav__link2 {
+    margin-left: 20px;
+    transform: rotate(90deg);
+    text-decoration: none;
+    display: none;
+    font-size: 10px;
+    color: black;
+}
+.nav__item:hover > .nav__link2 {
+    display: block;
+}
+
+.nav__link3 {
+    margin-left: 85px;
+    text-decoration: none;
+    display: none;
+    font-size: 10px;
+    color: white;
+}
+
+.dropdown__item:hover > .nav__link3 {
+    display: inline;
+}
+
+hr {
+    position: absolute;
+    display: none;
+    width: 100px;
+    border: 2px solid blue;
+    margin-top: -32px;
+    
+    
+}
+
+.nav__item:hover > hr {
+    display: block;
+}
+
+
+
+ 
+
