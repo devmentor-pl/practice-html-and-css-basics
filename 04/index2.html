@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #F6F6F6;
+            font-family:Verdana, sans-serif
+        }
+        nav.menu-bar {
+            background-color: white;
+            text-align: center;
+            color: rgb(0, 154, 225);
+        }
+        .menu-bar ul {
+            display: inline-flex;
+            list-style: none;
+        }
+        .menu-bar ul li {
+            width: 120px;
+            margin: 0px;
+            padding: 25px;
+        }
+        .menu-bar ul .first-li:hover::before {
+            content: "";
+            position: absolute;
+            background-color: rgb(0, 154, 225);
+            height: 3px;
+            width: 120px;
+            top: 0;
+        }
+        .menu-bar ul li a {
+            text-decoration: none;
+        }
+        .sub-menu1 {
+            display: none;
+        }
+        .menu-bar ul li:hover .sub-menu1 {
+            display: block;
+            position: absolute;
+            margin-top: 25px;
+            margin-left: -15px;
+            background: #333333;
+        }
+        .menu-bar ul li:hover .sub-menu1 ul {
+            display: block;
+            margin: 10px;
+        }
+        .menu-bar ul li:hover .sub-menu1 ul li {
+            width: 150px;
+            padding: 10px;
+            text-align: left;
+        }
+
+        p {
+            float: right;
+        }
+        .arrow {
+            transform: rotate(90deg);
+            transform-origin: 50% 55%;
+        }
+        .menu-bar ul li:hover .arrow {
+            display: block;
+            float: right;
+            transform: rotate(-90deg);
+        }
+        .sub-menu2 {
+            display: none;
+        }
+        .hover-me:hover .sub-menu2 {
+            position: absolute;
+            display: block;
+            margin-top: -39px;
+            margin-left: 145px;
+            background-color: #333333;
+        }
+        .hover-me2:hover .sub-menu3 {
+            position: absolute;
+            display: block;
+            margin-top: -32px;
+            margin-left: 145px;
+            background-color: #333333;
+        }
+        .sub-menu3 {
+            display: none;
+        }
+        .hover-both {
+            color: white;
+
+        }
+        a {
+            color: rgb(0, 154, 225);
+        }
+    </style>
+</head>
+<body>
+    <nav class="menu-bar">
+        <ul>
+            <li class="first-li">HOME</li>
+            <li class="first-li"><a href="#">ITEMS<p class="arrow">></p></a>
+            <div class="sub-menu1">
+                <ul>
+                    <li class="hover-me hover-both"><a class="a-2" href="#"></a>ITEM 1<p>></p>
+                        <div class="sub-menu2">
+                            <ul>
+                                <li><a class="a-2" href="#"></a>ITEM 1.1</li>
+                                <li><a class="a-2" href="#"></a>ITEM 1.2</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="hover-me2 hover-both"><a class="a-2" href="#"></a>ITEM 2<p>></p>
+                        <div class="sub-menu3">
+                            <ul>
+                                <li><a class="a-2" href="#"></a>ITEM 1.1</li>
+                                <li><a class="a-2" href="#"></a>ITEM 1.2</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            </li>
+            <li class="first-li">SETTINGS</li>
+            <li class="first-li">CONTACT</li>
+        </ul>
+    </nav>
+</body>
+</html>
