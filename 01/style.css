@@ -200,3 +200,17 @@ a {
     border-top: 1px solid white;
     border-left: 0px;
 }
+footer {
+    position: absolute;
+    width: 100%;
+    background-color: gray;
+    height: 100px;
+    text-align: center;
+}
+p.footer-p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+    
