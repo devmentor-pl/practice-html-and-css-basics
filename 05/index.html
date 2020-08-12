@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container {
+        width: 100%;
+        position: relative;
+    }
+    .blue {
+        width: 1000px;
+    }
+    nav {
+        background-color: blue;
+        height: 15vh;
+        position: absolute;
+        left:calc(50% - 500px)
+            }
+    .logo {
+        background-color: orange;
+        width: 20%;
+        height: 90%;
+        top: 5%;
+        position: absolute;
+    }
+    .menu {
+        position: absolute;
+        width: 50%;
+        background-color: orange;
+        height: 45%;
+        right: 0;
+        top: 5%;
+    }
+    article {
+        position: relative;
+        height: 30vh;
+        background-color: blue;
+        left:calc(50% - 500px);
+        top: 16vh;
+    }
+    section {
+        position: absolute;
+        height: 90%;
+        top:5%;
+        background-color: orange;
+        width: 49%;
+    }
+    section:last-child {
+        right: 0%;
+    }
+    main {
+        height: 20vh;
+        background-color: blue;
+        position: relative;
+        left:calc(50% - 500px);
+        top: 17vh;
+    }
+    .sec-2 {
+        position: absolute;
+        height: 90%;
+        width: 30%;
+
+    }
+    .fst {
+        left: 2.5%;
+    }
+    .sec {
+        left: 35%
+    }
+    .trd {
+        left: 67.5%;
+    }
+    .last {
+        position: absolute;
+        height: 100px;
+        bottom: 0;
+    }
+    footer {
+        height: 100px;
+        position: absolute;
+        bottom: 0px;
+        left:calc(50% - 500px);
+        background-color: blue;
+    }
+    body {
+        height: 100vh;
+    }
+    p {
+        position: absolute;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        text-align: center;
+        line-height: 12px;
+        top:calc(50% - 18px);
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <nav class="blue">
+            <div class="logo"></div>
+            <div class="menu"></div>
+        </nav>
+    </div>
+    <div class="container">
+        <article class="blue">
+            <section></section>
+            <section></section>
+        </article>
+    </div>
+    <div class="container">
+        <main class="blue">
+            <section class="sec-2 fst"></section>
+            <section class="sec-2 sec"></section>
+            <section class="sec-2 trd"></section>
+        </main>
+    </div>
+    <div class="container last">
+        <footer class="blue"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat dolorem neque voluptates libero ducimus at. Praesentium quo cupiditate in error reprehenderit sint illum officia repellat deleniti laudantium. Voluptatum, qui exercitationem!Labore aut omnis unde velit nostrum similique, maiores adipisci iste explicabo earum culpa ipsam enim at necessitatibus dolorem facilis nemo mollitia reiciendis eius aliquam nesciunt voluptates minima asperiores. Vel, numquam.</p></footer>
+    </div>
+</body>
+</html>
