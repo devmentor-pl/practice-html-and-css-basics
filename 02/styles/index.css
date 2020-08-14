@@ -122,7 +122,7 @@ którego przodek to element o klasie .ac-container
 }
 
 /*
-Rodzieństwo typu article, dla elementu input, który jest zaznaczony (jest checkbo-xem) 
+Rodzeństwo o typie article, dla elementu input, który jest zaznaczony (użyj pseudoklasy) 
 oraz posiada przodka o klasie .ac-container
 (0, 2, 2)
 */

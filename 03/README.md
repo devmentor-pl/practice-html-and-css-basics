@@ -21,7 +21,7 @@ Twoim zadaniem jest ostylowanie dostępnej struktury HTML w taki sposób, aby:
     - float
     - flexbox
 
-Postaraj się napisać kod CSS jak najbardziej efektywnie, utrzyzmując możliwie najlepszą prostotę (czytelność).
+Postaraj się napisać kod CSS jak najbardziej efektywnie, utrzymując możliwie największą czytelność.
 
 
 PS. Może użyteczna będzie znajomość funkcji [calc()](https://www.w3schools.com/cssref/func_calc.asp).
