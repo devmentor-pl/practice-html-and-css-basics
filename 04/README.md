@@ -6,7 +6,7 @@
 
 Na każdej stronie znajdziesz mniej lub bardziej rozbudowane menu. 
 
-Dlatego tym razem Twoim zadaniem bedzie wykonanie menu, które możę zawierać 3 poziomy:
+Dlatego tym razem Twoim zadaniem bedzie wykonanie menu, które może zawierać 3 poziomy:
 
 ![](./assets/demo.png)
 
