@@ -1,0 +1,33 @@
+.content1__container {
+    padding-left: 0px;
+    padding-right: 0px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.content1__article {
+    min-height: 200px;
+    min-width: 48%;
+    
+}
+
+.content1__aside {
+    min-height: 200px;
+    min-width: 48%;
+}
+
+
+.content2__container {
+    padding-left: 0px;
+    padding-right: 0px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.content2__left,
+.content2__right,
+.content2__center {
+    min-width: 30%;
+}

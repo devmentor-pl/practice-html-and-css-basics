@@ -1,0 +1,11 @@
+.footer__container {
+    padding-left: 0px;
+    padding-right: 0px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.footer__copyrights {
+    width: 100px;
+}

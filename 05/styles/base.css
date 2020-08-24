@@ -1,0 +1,30 @@
+/* reguły wspólne dla wszystkich elementów */
+.row, .cell, .container {
+    margin: 0px;
+    padding: 5px;
+    outline: 3px solid;
+    
+}
+.row { 
+    outline-color: green;
+    margin-bottom: 10px;
+    
+}
+.container {
+    margin: 0 auto;
+    max-width: 1000px;
+    min-height: 100px;
+    outline-color: blue;
+
+}
+.cell {
+    min-height: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    outline-color: orange;
+}
+
+
+
+
+
