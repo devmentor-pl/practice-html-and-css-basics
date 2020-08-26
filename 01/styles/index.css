@@ -1,6 +1,8 @@
 :root {
   --primary-color: rgb(13, 14, 13);
   --secondary-color: rgb(11, 125, 11);
+  --dropdown-background-color: rgb(237, 237, 237);
+  --table-header-color: #fff;
 }
 
 html {
@@ -38,7 +40,7 @@ body {
 }
 
 .nav__dropdown {
-  background-color: rgb(237, 237, 237);
+  background-color: var(--dropdown-background-color);
   display: none;
   left: 0;
   min-width: 14rem;
@@ -80,4 +82,23 @@ body {
 .main {
   margin: 0 auto;
   max-width: 120rem;
+}
+
+.article__table {
+  width: 100%;
+  border: 1px solid var(--primary-color);
+  border-collapse: collapse;
+  margin-bottom: 4rem;
+}
+
+.article__table th {
+  background-color: var(--secondary-color);
+  color: var(--table-header-color);
+  padding: 1rem;
+  text-align: left;
+}
+
+.article__table tbody td {
+  padding: 1rem;
+  text-align: left;
 }
