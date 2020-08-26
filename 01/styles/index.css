@@ -129,3 +129,21 @@ body {
   font-size: 1.6rem;
   padding: 1rem;
 }
+
+.comments__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.comment__user {
+  margin: 0 0 0.5rem;
+}
+
+.comment__date {
+  font-size: 1.4rem;
+}
+
+.comment__content {
+  margin-bottom: 3rem;
+}
