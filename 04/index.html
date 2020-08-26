@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="/" class="nav__link">Home</a></li>
+        <li class="nav__item">
+          <a href="#" class="nav__link"
+            >Items <span class="arrow-down">></span></a
+          >
+          <ul class="nav__dropdown">
+            <li class="dropdown__item">
+              <a href="#" class="dropdown__link">Item 1</a>
+            </li>
+            <li class="dropdown__item">
+              <a href="#" class="dropdown__link"
+                >Item 2 <span class="arrow-right">></span></a
+              >
+              <ul class="nav__second-level-dropdown">
+                <li class="second-level-dropdown__item">
+                  <a href="#" class="second-level-dropdown__link">Item 2.1</a>
+                </li>
+                <li class="second-level-dropdown__item">
+                  <a href="#" class="second-level-dropdown__link">Item 2.2</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="nav__item"><a href="#" class="nav__link">Settings</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>
