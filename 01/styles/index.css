@@ -147,3 +147,8 @@ body {
 .comment__content {
   margin-bottom: 3rem;
 }
+
+.footer {
+  max-width: 120rem;
+  margin: 2rem auto;
+}
