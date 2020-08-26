@@ -1,12 +1,131 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header class="header">
+      <a href="/">
+        <img src="./images/logo.png" alt="Logo of the page" />
+      </a>
+
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="/">Home</a></li>
+          <li class="nav__item"><a href="/page1">Subpage 1</a></li>
+          <li class="nav__item">
+            More
+            <ul class="nav__dropdown">
+              <li class="dropdown__item">
+                <a href="/page2">Subpage 2</a>
+              </li>
+              <li class="dropdown__item">
+                <a href="/page3">Subpage 3</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <article class="article">
+        <h1>Title of the article</h1>
+        <p>
+          Published
+          <time class="article__date">26.08.2020</time>
+          <span class="article__author">by Author</span>
+        </p>
+        <figure>
+          <img src="./images/article.png" alt="Figure of the article" />
+          <figcaption>The description of the image.</figcaption>
+        </figure>
+        <p>
+          Content of the article. Lorem ipsum dolor sit, amet consectetur
+          adipisicing elit. Laudantium enim ipsa beatae cumque dignissimos
+          voluptates architecto libero cupiditate repudiandae voluptatum error
+          officiis exercitationem, eum recusandae voluptatibus ut a ipsam
+          quibusdam consequuntur esse optio vero? Provident non tempora vel
+          maiores unde sed ratione nesciunt, a repellendus repellat id neque
+          facilis, veniam cum aperiam fuga distinctio at. Delectus neque
+          architecto recusandae dolorem, velit rem harum, temporibus soluta
+          omnis fuga accusantium amet provident. Libero eligendi ratione
+          explicabo nisi recusandae eum architecto enim, quasi quaerat, quae
+          expedita! Possimus provident sequi eum laboriosam placeat, quasi iusto
+          illo architecto, aliquam asperiores voluptas id, facere nesciunt
+          quaerat!
+        </p>
+        <table>
+          <caption>
+            Table title
+          </caption>
+          <thead>
+            <tr>
+              <th>Nr.</th>
+              <th>Column Title</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1.</td>
+              <td>Lorem.</td>
+            </tr>
+            <tr>
+              <td>2.</td>
+              <td>Lorem, ipsum..</td>
+            </tr>
+            <tr>
+              <td>3.</td>
+              <td>Lorem ipsum dolor sit..</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+
+      <form action="" method="POST">
+        <div>
+          <label for="author"
+            >Author
+            <input type="text" name="author" required />
+          </label>
+        </div>
+        <div>
+          <label for="comment"
+            >Comment
+            <textarea name="comment" required></textarea>
+          </label>
+        </div>
+        <div>
+          <input type="submit" value="Send" />
+        </div>
+      </form>
+
+      <section class="comments">
+        <ul class="comments__list">
+          <li class="comments__item">
+            <article class="comment">
+              <h2 class="comment__user">User1 Comment</h2>
+              <time class="comment__date">28.08.2020</time>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Assumenda, voluptate?
+              </p>
+            </article>
+          </li>
+          <li class="comments__item">
+            <article class="comment">
+              <h2 class="comment__user">User2 Comment</h2>
+              <time class="comment__date">27.08.2020</time>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </article>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer"><p>&copy; Bartosz Białecki</p></footer>
+  </body>
 </html>
