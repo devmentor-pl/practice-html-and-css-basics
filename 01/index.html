@@ -5,25 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
+
+    <link rel="stylesheet" href="./styles/index.css" />
   </head>
   <body>
     <header class="header">
       <a href="/">
-        <img src="./images/logo.png" alt="Logo of the page" />
+        <img src="../assets/img/logo-icon.svg" alt="Logo of the page" />
       </a>
 
       <nav class="nav">
         <ul class="nav__list">
-          <li class="nav__item"><a href="/">Home</a></li>
-          <li class="nav__item"><a href="/page1">Subpage 1</a></li>
+          <li class="nav__item"><a href="/" class="nav__link">Home</a></li>
           <li class="nav__item">
-            More
+            <a href="/page1" class="nav__link">Subpage 1</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">More</a>
             <ul class="nav__dropdown">
               <li class="dropdown__item">
-                <a href="/page2">Subpage 2</a>
+                <a href="/page2" class="dropdown__link">Subpage 2</a>
               </li>
               <li class="dropdown__item">
-                <a href="/page3">Subpage 3</a>
+                <a href="/page3" class="dropdown__link">Subpage 3</a>
               </li>
             </ul>
           </li>
@@ -31,7 +35,7 @@
       </nav>
     </header>
 
-    <main>
+    <main class="main">
       <article class="article">
         <h1>Title of the article</h1>
         <p>
