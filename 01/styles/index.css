@@ -102,3 +102,30 @@ body {
   padding: 1rem;
   text-align: left;
 }
+
+.comment-form {
+  margin-bottom: 4rem;
+}
+
+.form__label {
+  display: block;
+}
+
+.form__input {
+  font-size: 1.6rem;
+  min-width: 35rem;
+  padding: 1rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form__comment {
+  height: 15rem;
+}
+
+.form__button {
+  font-size: 1.6rem;
+  padding: 1rem;
+}

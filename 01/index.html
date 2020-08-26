@@ -92,21 +92,30 @@
         </table>
       </article>
 
-      <form action="" method="POST">
-        <div>
-          <label for="author"
-            >Author
-            <input type="text" name="author" required />
-          </label>
+      <form class="comment-form" action="" method="POST">
+        <h2>Write some comment</h2>
+
+        <div class="form-group">
+          <label class="form__label" for="author">Author </label>
+          <input
+            class="form__input"
+            type="text"
+            id="author"
+            name="author"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label class="form__label" for="comment">Comment</label>
+          <textarea
+            class="form__input form__comment"
+            id="comment"
+            name="comment"
+            required
+          ></textarea>
         </div>
         <div>
-          <label for="comment"
-            >Comment
-            <textarea name="comment" required></textarea>
-          </label>
-        </div>
-        <div>
-          <input type="submit" value="Send" />
+          <input class="form__button" type="submit" value="Send" />
         </div>
       </form>
 
@@ -114,7 +123,7 @@
         <ul class="comments__list">
           <li class="comments__item">
             <article class="comment">
-              <h2 class="comment__user">User1 Comment</h2>
+              <h3 class="comment__user">User1 Comment</h3>
               <time class="comment__date">28.08.2020</time>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -124,7 +133,7 @@
           </li>
           <li class="comments__item">
             <article class="comment">
-              <h2 class="comment__user">User2 Comment</h2>
+              <h3 class="comment__user">User2 Comment</h3>
               <time class="comment__date">27.08.2020</time>
               <p>Lorem ipsum dolor sit amet.</p>
             </article>
