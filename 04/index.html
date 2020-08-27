@@ -12,23 +12,21 @@
       <ul class="nav__list">
         <li class="nav__item"><a href="/" class="nav__link">Home</a></li>
         <li class="nav__item">
-          <a href="#" class="nav__link"
-            >Items <span class="arrow-down">></span></a
-          >
+          <a href="#" class="nav__link nav__link--submenu">Items</a>
           <ul class="nav__dropdown">
             <li class="dropdown__item">
               <a href="#" class="dropdown__link">Item 1</a>
             </li>
             <li class="dropdown__item">
-              <a href="#" class="dropdown__link"
-                >Item 2 <span class="arrow-right">></span></a
+              <a href="#" class="dropdown__link dropdown__link--submenu"
+                >Item 2</a
               >
-              <ul class="nav__second-level-dropdown">
-                <li class="second-level-dropdown__item">
-                  <a href="#" class="second-level-dropdown__link">Item 2.1</a>
+              <ul class="nav__dropdown nav__dropdown--second-level">
+                <li class="dropdown__item">
+                  <a href="#" class="dropdown__link">Item 2.1</a>
                 </li>
-                <li class="second-level-dropdown__item">
-                  <a href="#" class="second-level-dropdown__link">Item 2.2</a>
+                <li class="dropdown__item">
+                  <a href="#" class="dropdown__link">Item 2.2</a>
                 </li>
               </ul>
             </li>
