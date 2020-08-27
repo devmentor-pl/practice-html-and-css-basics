@@ -1,0 +1,22 @@
+.first-content__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.first-content__first-column,
+.first-content__second-column {
+  min-height: 300px;
+  width: 49%;
+}
+
+.second-content__container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.second-content__first-column,
+.second-content__second-column,
+.second-content__third-column {
+  min-height: 200px;
+  min-width: 30%;
+}
