@@ -9,27 +9,32 @@ html {
 }
 
 @font-face {
-  font-family: "Source Sans Pro Bold";
-  src: url("sourcesanspro-bold-webfont.woff2") format("woff2"),
-    url("sourcesanspro-bold-webfont.woff") format("woff");
+  font-family: "Source Sans Pro";
+  src: url("../assets/fonts/sourcesanspro-bold-webfont.woff2") format("woff2"),
+    url("../assets/fonts/sourcesanspro-bold-webfont.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Source Sans Pro Italic";
-  src: url("sourcesanspro-it-webfont.woff2") format("woff2"),
-    url("sourcesanspro-it-webfont.woff") format("woff");
+  font-family: "Source Sans Pro";
+  src: url("../assets/fonts/sourcesanspro-it-webfont.woff2") format("woff2"),
+    url("../assets/fonts/sourcesanspro-it-webfont.woff") format("woff");
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
-  font-family: "Source Sans Pro Regular";
-  src: url("sourcesanspro-regular-webfont.woff2") format("woff2"),
-    url("sourcesanspro-regular-webfont.woff") format("woff");
+  font-family: "Source Sans Pro";
+  src: url("../assets/fonts/sourcesanspro-regular-webfont.woff2")
+      format("woff2"),
+    url("../assets/fonts/sourcesanspro-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .parent {
@@ -47,18 +52,15 @@ html {
 }
 
 .child--first {
-  font-family: "Source Sans Pro Regular", sans-serif;
   width: calc(30% - 10px);
 }
 
 .child--middle {
-  font-family: "Source Sans Pro Bold", sans-serif;
   font-weight: bold;
   width: calc(30% - 10px);
 }
 
 .child--last {
-  font-family: "Source Sans Pro Italic", sans-serif;
   font-style: italic;
   width: 40%;
 }
