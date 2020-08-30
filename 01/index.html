@@ -1,12 +1,138 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__main">
+        <img
+          src="../assets/img/logo-icon.png"
+          alt="logo."
+          class="header__logo"
+        />
+      </h1>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">Home</li>
+          <li class="nav__item">Services</li>
+          <li class="nav__item">Blog</li>
+          <li class="nav__item">Contact</li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <article class="article">
+        <h2 class="article__title">AI in the MongoDB?</h2>
+        <p class="article__description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. At, animi
+          quaerat reprehenderit hic sapiente eligendi! Porro quae, non
+          perspiciatis autem obcaecati veritatis accusamus aliquam vitae nihil
+          cumque repudiandae esse expedita.
+        </p>
+        <span class="article__date">Published - 26/10/20 at 8:10</span>
+        <figure class="figure">
+          <img
+            src="../assets/img/logo-icon.png"
+            alt="picture of author."
+            class="figure__picture"
+          />
+          <figcaption class="figure__name">Krzysztof Grudzień</figcaption>
+        </figure>
+        <table class="table">
+          <caption class="table__caption">
+            Developer skills
+          </caption>
+          <thead class="table__thead">
+            <tr class="tr">
+              <th class="th">Name</th>
+              <th class="th">Time</th>
+              <th class="th">Value</th>
+            </tr>
+          </thead>
+          <tbody class="table__tbody">
+            <tr class="tr">
+              <td class="td">React</td>
+              <td class="td">10 weeks</td>
+              <td class="td">Get new Job</td>
+            </tr>
+            <tr class="tr">
+              <td class="td">JS</td>
+              <td class="td">20 weeks</td>
+              <td class="td">Get new Job</td>
+            </tr>
+            <tr class="tr">
+              <td class="td">CSS3</td>
+              <td class="td">2 weeks</td>
+              <td class="td">Improve css skills</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+      <form action="#" class="form">
+        <div>
+          <label class="form__label" for="nick"> Your Nick: </label>
+          <input
+            class="form__input"
+            type="text"
+            name="nick"
+            id="nick"
+            placeholder="Enter your nick"
+          />
+          <label class="form__label" for="text">Your comment</label>
+          <textarea
+            name="text"
+            id="text"
+            cols="30"
+            rows="10"
+            placeholder="Enter your comment"
+          ></textarea>
+        </div>
+        <div>
+          <button type="submit" class="form__button">Send comment</button>
+        </div>
+      </form>
+      <article class="article-output">
+        <h2 class="article-output__title">All comments</h2>
+        <div class="article-output__data">
+          <p class="article-output__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+            similique odit est reiciendis quia fugit. Aspernatur voluptatem
+            ullam deserunt commodi nam sunt recusandae, ratione quis doloremque
+            quo fugit similique qui?
+          </p>
+          <span class="article-output__date">Published - 26/10/20 at 6:10</span>
+          <h3 class="article-output__author">Krzysztof Grudzień</h3>
+        </div>
+        <div class="article-output__data">
+          <p class="article-output__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+            similique odit est reiciendis quia fugit. Aspernatur voluptatem
+            ullam deserunt commodi nam sunt recusandae, ratione quis doloremque
+            quo fugit similique qui?
+          </p>
+          <span class="article-output__date">Published - 26/10/20 at 7:10</span>
+          <h3 class="article-output__author">Krzysztof Grudzień</h3>
+        </div>
+        <div class="article-output__data">
+          <p class="article-output__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+            similique odit est reiciendis quia fugit. Aspernatur voluptatem
+            ullam deserunt commodi nam sunt recusandae, ratione quis doloremque
+            quo fugit similique qui?
+          </p>
+          <span class="article-output__date"
+            >Published - 26/10/20 at 10:10</span
+          >
+          <h3 class="article-output__author">Krzysztof Grudzień</h3>
+        </div>
+      </article>
+    </main>
+    <footer class="footer">
+      <p class="footer__copyrights">All rights reserved</p>
+    </footer>
+  </body>
 </html>
