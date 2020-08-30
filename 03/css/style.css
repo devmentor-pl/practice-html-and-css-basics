@@ -5,6 +5,82 @@
     url("../fonts/SourceCodePro-Regular.otf") format("truetype");
 }
 
+:root {
+  --color-primary: #eff0eb;
+  --color-secondary: #484e4a;
+  --color-tertiary: #c5c1bb;
+  --color-quaternary: #eacb48;
+}
+
+html {
+  font-size: 62.5%;
+}
+
 body {
+  background-color: var(--color-quaternary);
+  color: var(--color-secondary);
+  font-size: 1.6rem;
   font-family: "SourceCodePro", Arial, sans-serif;
+}
+
+.parent {
+  background-color: var(--color-secondary);
+  margin: 100px auto;
+  padding: 20px;
+  width: 600px;
+}
+
+.child {
+  background-color: var(--color-tertiary);
+}
+
+.child--first {
+  width: 30%;
+  margin-right: 10px;
+}
+
+.child--middle {
+  font-weight: 700;
+  margin-right: 10px;
+  width: 30%;
+}
+
+.child--last {
+  font-style: italic;
+  width: calc(40% - 20px);
+}
+
+.parent--inline-block .child--first,
+.parent--inline-block .child--middle,
+.parent--inline-block .child--last {
+  display: inline-block;
+}
+
+.parent--inline-block .child--first {
+  width: 30%;
+  margin: 0;
+}
+.parent--inline-block .child--middle {
+  width: 30%;
+  margin: 0;
+}
+.parent--inline-block .child--last {
+  width: calc(40% - 20px);
+}
+
+.parent--float .child--first,
+.parent--float .child--middle,
+.parent--float .child--last {
+  float: left;
+}
+
+.parent--float::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.parent--flexbox {
+  display: flex;
+  justify-content: space-between;
 }
