@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "SourceCodePro";
+  src: url("../fonts/SourceCodePro-Regular.otf") format("woff2"),
+    url("../fonts/SourceCodePro-Regular.otf") format("woff"),
+    url("../fonts/SourceCodePro-Regular.otf") format("truetype");
+}
+
+body {
+  font-family: "SourceCodePro", Arial, sans-serif;
+}
