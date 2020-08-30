@@ -1,0 +1,17 @@
+:root {
+  --color-primary: #eff0eb;
+  --color-secondary: #484e4a;
+  --color-tertiary: #c5c1bb;
+  --color-quaternary: #eacb48;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--color-quaternary);
+  color: var(--color-primary);
+  font-size: 1.6rem;
+  font-family: Helvetica, Arial, sans-serif;
+}
