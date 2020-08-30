@@ -15,3 +15,46 @@ body {
   font-size: 1.6rem;
   font-family: "Roboto", Helvetica, Arial, sans-serif;
 }
+
+.nav {
+  background-color: var(--color-secondary);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  color: var(--color-primary);
+  height: 80px;
+  margin: 10px auto;
+  width: 95%;
+}
+
+.nav__list {
+  display: flex;
+  height: 100%;
+  text-align: center;
+}
+
+.nav__item {
+  align-items: center;
+  display: flex;
+  font-weight: 300;
+  font-size: 2rem;
+  justify-content: center;
+  position: relative;
+  text-transform: uppercase;
+  width: 200px;
+}
+
+.nav__link--items::before {
+  content: "<";
+  display: block;
+  height: 5px;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: rotate(-90deg);
+  width: 5px;
+}
+
+.nav__link {
+  color: var(--color-primary);
+  text-decoration: none;
+  width: 100%;
+}
