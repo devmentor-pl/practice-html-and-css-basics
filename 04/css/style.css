@@ -13,5 +13,5 @@ body {
   background-color: var(--color-quaternary);
   color: var(--color-primary);
   font-size: 1.6rem;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
 }
