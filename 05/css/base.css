@@ -1,0 +1,20 @@
+:root {
+  --color-primary: #fcfcfc;
+  --color-secondary: #36bbf7;
+  --color-tertiary: #ffc64f;
+
+  --color-white: #ffffff;
+  --color-grey: #444444;
+  --color-grey-light: #aaaaaa;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--color-primary);
+  color: var(--color-grey);
+  font-size: 1.6rem;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+}
