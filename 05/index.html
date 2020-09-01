@@ -3,27 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/style.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/navigation.css" />
+
     <title>Layout page based on the devmentor.pl</title>
   </head>
   <body>
-    <header class="header">
-      <h1 class="logo">
-        <a href="https://devmentor.pl" class="logo__link">
-          <img
-            class="logo__image"
-            src="./assets/img/logo.jpg"
-            alt="logo image."
-            title="devmentor logo"
-          />
-        </a>
-      </h1>
-      <nav class="nav">test</nav>
-    </header>
+    <div class="container">
+      <header class="header">
+        <h1 class="logo">
+          <a href="https://devmentor.pl" class="logo__link">
+            <img
+              class="logo__image"
+              src="./assets/img/logo.jpg"
+              alt="logo image."
+              title="devmentor logo"
+            />
+          </a>
+        </h1>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#" class="nav__link">start</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">oferta</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">porady</a></li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">materiały</a>
+            </li>
+            <li class="nav__item"><a href="#" class="nav__link">webinar</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">podcast</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">o mnie</a></li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">moje konto</a>
+            </li>
+            <li class="nav__item nav__item--cart">
+              <a class="nav__link nav__link--cart" href="#">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i></a
+              ><span class="cart-counter">0</span>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
   </body>
 </html>
