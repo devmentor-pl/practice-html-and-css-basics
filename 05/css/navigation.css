@@ -1,0 +1,40 @@
+.nav {
+  align-self: flex-start;
+  color: var(--color-grey-light);
+  font-size: 1.5rem;
+  margin-top: 30px;
+  width: 730px;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__item--cart {
+  position: relative;
+}
+
+.cart-counter {
+  background-color: var(--color-secondary);
+  border-radius: 50%;
+  color: var(--color-primary);
+  height: 20px;
+  font-size: 1.1rem;
+  line-height: 2rem;
+  left: 15px;
+  position: absolute;
+  top: -10px;
+  text-align: center;
+  width: 20px;
+}
+
+.nav__link {
+  color: var(--color-grey-light);
+  text-decoration: none;
+  transition: color 0.3s linear;
+}
+
+.nav__link:hover {
+  color: var(--color-secondary);
+}

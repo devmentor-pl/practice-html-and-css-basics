@@ -16,5 +16,10 @@ body {
   background-color: var(--color-primary);
   color: var(--color-grey);
   font-size: 1.6rem;
+  font-weight: 400;
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
+}
+
+.container {
+  background-color: var(--color-white);
 }
