@@ -43,3 +43,9 @@ body {
   border-top: solid 1px var(--color-grey-lighter);
   border-bottom: solid 1px var(--color-grey-lighter);
 }
+
+.container--fluid-white {
+  background-color: var(--color-white);
+  border-top: solid 1px var(--color-grey-lighter);
+  border-bottom: solid 1px var(--color-grey-lighter);
+}

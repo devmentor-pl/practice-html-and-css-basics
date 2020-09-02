@@ -1,57 +1,56 @@
-.intro {
+.promotion {
   max-width: 1170px;
   margin: 0 auto;
   padding: 110px 0;
-  text-align: center;
 }
 
-.intro__title {
+.promotion__title {
+  color: var(--color-grey-light);
+  font-size: 1.4rem;
+  padding-bottom: 50px;
+  position: relative;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.promotion__title::before {
+  background-color: var(--color-grey-lighter);
+  top: 30px;
+  content: "";
+  height: 1px;
+  left: 0;
+  position: absolute;
+  width: 50px;
+}
+
+.article-promo {
+  display: flex;
+}
+
+.article-promo__content {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+}
+
+.article-promo__img {
+  padding-right: 10px;
+  width: 49%;
+}
+
+.article-promo__title {
   font-size: 3.4rem;
   font-weight: 400;
   line-height: 1.5rem;
   padding-bottom: 40px;
 }
 
-.intro__description {
+.article-promo__description {
   font-weight: 300;
   line-height: 2.4rem;
-  padding: 8px 50px 80px 50px;
 }
 
-.article {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  font-weight: 300;
-  width: 49%;
-}
-
-.article__title {
-  color: var(--color-grey-light);
-  font-weight: 300;
-  font-size: 1.4rem;
-  line-height: 2.4rem;
-  letter-spacing: 0.3px;
-  padding-bottom: 37px;
-  position: relative;
-  text-transform: uppercase;
-}
-
-.article__title::before {
-  bottom: 25px;
-  background-color: var(--color-grey-lighter);
-  content: "";
-  height: 1px;
-  left: calc(50% - 25px);
-  position: absolute;
-  width: 50px;
-}
-
-.article__description {
-  line-height: 2.4rem;
-}
-
-.article__link {
+.article-promo__link {
   background-color: var(--color-secondary);
   border-radius: 3px;
   box-shadow: 2px 2px 3px var(--color-grey-light);
@@ -59,14 +58,14 @@
   color: var(--color-white);
   display: block;
   font-weight: 400;
-  min-width: 184px;
-  margin-top: 30px;
+  width: 284px;
+  margin-top: 50px;
   padding: 14px 25px 15px;
   text-align: center;
   text-decoration: none;
   transition: opacity 0.3s linear;
 }
 
-.article__link:hover {
+.article-promo__link:hover {
   opacity: 0.8;
 }
