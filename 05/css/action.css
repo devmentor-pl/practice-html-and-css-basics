@@ -1,0 +1,11 @@
+.action {
+  background-color: var(--color-tertiary);
+  color: var(--color-white);
+  padding: 48px 0 52px;
+  text-align: center;
+}
+
+.action__title {
+  font-size: 3rem;
+  font-weight: 400;
+}
