@@ -6,6 +6,7 @@
   --color-white: #ffffff;
   --color-grey: #444444;
   --color-grey-light: #aaaaaa;
+  --color-grey-lighter: #eeeeee;
 }
 
 html {
@@ -13,13 +14,32 @@ html {
 }
 
 body {
-  background-color: var(--color-primary);
+  background-color: var(--color-white);
   color: var(--color-grey);
   font-size: 1.6rem;
   font-weight: 400;
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
 }
 
-.container {
+.container--white {
   background-color: var(--color-white);
+}
+
+.container--primary {
+  background-color: var(--color-primary);
+}
+
+.container {
+  width: 100%;
+}
+
+.container--flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container--fluid {
+  background-color: var(--color-primary);
+  border-top: solid 1px var(--color-grey-lighter);
+  border-bottom: solid 1px var(--color-grey-lighter);
 }
