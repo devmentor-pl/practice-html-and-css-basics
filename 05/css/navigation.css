@@ -9,6 +9,7 @@
 .nav__list {
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
 .nav__item--cart {
@@ -29,12 +30,69 @@
   width: 20px;
 }
 
-.nav__link {
+.nav__link,
+.nav__link--offer,
+.nav__link--advice,
+.nav__link--material {
   color: var(--color-grey-light);
   text-decoration: none;
   transition: color 0.3s linear;
 }
 
-.nav__link:hover {
+.submenu__link,
+.submenu2__link,
+.submenu3__link {
+  color: var(--color-grey-light);
+  display: inline-block;
+  padding: 10px 0;
+  text-decoration: none;
+  transition: color 0.3s linear;
+}
+
+.nav__link:hover,
+.submenu__link:hover,
+.submenu2__link:hover,
+.submenu3__link:hover {
   color: var(--color-secondary);
+}
+
+.nav__item > .submenu,
+.nav__item > .submenu2,
+.nav__item > .submenu3 {
+  background-color: var(--color-white);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  min-width: 300px;
+}
+
+.nav__item {
+  height: 50px;
+}
+
+.nav__item--offer:hover > .submenu {
+  position: absolute;
+  display: block;
+  left: 50px;
+  min-width: 300px;
+  top: 50px;
+}
+
+.nav__item--advice:hover > .submenu2 {
+  position: absolute;
+  display: block;
+  left: 130px;
+  top: 50px;
+}
+
+.nav__item--material:hover > .submenu3 {
+  position: absolute;
+  display: block;
+  left: 210px;
+  top: 50px;
+}
+
+.submenu,
+.submenu2,
+.submenu3 {
+  display: none;
 }
