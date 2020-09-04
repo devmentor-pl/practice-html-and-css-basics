@@ -1,0 +1,156 @@
+.recommend {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 110px 0;
+}
+
+.recommend__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.recommend__subtitle {
+  color: var(--color-grey-light);
+  font-size: 1.45rem;
+  padding-bottom: 50px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.recommend__subtitle::before {
+  background-color: var(--color-grey-lighter);
+  content: "";
+  height: 1px;
+  left: calc(50% - 25px);
+  position: absolute;
+  top: 35px;
+  width: 50px;
+}
+
+.recommend__title,
+.recommend__subtitle {
+  text-align: center;
+}
+
+.recommend__title {
+  font-size: 3rem;
+  font-weight: 400;
+  padding-bottom: 70px;
+}
+
+.card {
+  border: solid 1px var(--color-grey-lighter);
+  background-color: var(--color-white);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 500px;
+  padding: 30px;
+  width: 29%;
+}
+
+.arrow {
+  cursor: pointer;
+  min-height: 500px;
+  width: 20px;
+}
+
+.arrow-left,
+.arrow-right {
+  color: var(--color-grey-light);
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+
+.arrow-left::before {
+  content: "<";
+  font-size: 3rem;
+  height: 20px;
+  left: 0;
+  position: absolute;
+  top: 245px;
+  width: 20px;
+}
+
+.arrow-right::before {
+  content: ">";
+  font-size: 3rem;
+  height: 20px;
+  left: 0;
+  position: absolute;
+  top: 245px;
+  width: 20px;
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+  color: var(--color-secondary);
+}
+
+.card__description {
+  line-height: 3rem;
+}
+
+.card__date {
+  color: var(--color-grey-light);
+  display: inline-block;
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-bottom: 40px;
+}
+
+.author {
+  position: relative;
+  padding-top: 20px;
+}
+
+.author::before {
+  background-color: var(--color-grey-light);
+  content: "";
+  height: 1px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 50px;
+}
+
+.author__avatar {
+  border-radius: 50%;
+  float: left;
+  font-size: 1.4rem;
+  margin-right: 10px;
+}
+
+.author__name {
+  font-weight: 500;
+}
+
+.author__profile {
+  font-weight: 300;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  width: 100%;
+}
+
+.dots__dot {
+  background-color: var(--color-grey-light);
+  border-radius: 50%;
+  cursor: pointer;
+  height: 6px;
+  width: 6px;
+  margin: 6px;
+}
+
+.dots__dot--active {
+  background-color: var(--color-secondary);
+  cursor: pointer;
+}
