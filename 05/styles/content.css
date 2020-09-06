@@ -20,3 +20,15 @@
   min-height: 200px;
   min-width: 30%;
 }
+
+@media (max-width: 799px) {
+  .first-content__container,
+  .second-content__container {
+    display: block;
+  }
+
+  .first-content__first-column,
+  .first-content__second-column {
+    width: 100%;
+  }
+}
