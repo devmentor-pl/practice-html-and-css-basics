@@ -1,12 +1,126 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
 </head>
+
 <body>
-    
+
+    <header>
+        <div class="header__container">
+
+            <img class="header__logo" src="" alt="Logo">
+            <nav class="header__nav">
+                <ul class="list">
+                    <li class="list__item">start</li>
+                    <li class="list__item">portfolio
+                        <ul class="list__dropdown dropdown">
+                            <li class="dropdown__item">projekt 1</li>
+                            <li class="dropdown__item">projekt 2</li>
+                            <li class="dropdown__item">projekt 3</li>
+                        </ul>
+                    </li>
+                    <li class="list__item">o mnie</li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+        <article class="article1">
+
+            <h2 class="article1__title">Trendy we front-endzie</h2>
+
+            <p class="article1__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut asperiores
+                expedita suscipit labore voluptatum cumque impedit accusantium dicta, non molestiae atque nobis porro,
+                accusamus exercitationem. <br>
+            </p>
+
+            <p class="article1__date">29/09/20</p>
+
+            <div class="article1__image--big">
+                <img src="https://cdn.pixabay.com/photo/2020/09/18/19/31/laptop-5582775_1280.jpg" alt="biuro domowe">
+            </div>
+
+            <table class="article__table">
+                <caption>Popularność technologii w 2020 roku</caption>
+                <thead>
+                    <th>Nazwa</th>
+                    <th>Rok wprowadzenia</th>
+                    <th>Ilość użytkowników</th>
+                    <th>Zadowolenie</th>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>1996</td>
+                        <td>5,000,000+</td>
+                        <td>5/5</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>1996</td>
+                        <td>5,000,000+</td>
+                        <td>5/5</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>1996</td>
+                        <td>5,000,000+</td>
+                        <td>5/5</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>1996</td>
+                        <td>5,000,000+</td>
+                        <td>5/5</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+
+        <section class="comment">
+
+            <div class="comment__input">
+                <textarea name="comment" id="comment" cols="60" rows="5"></textarea>
+            </div>
+
+            <div class="comment__list">
+                <div class="comment__list_item">
+                    <p class="comment__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                        magni necessitatibus <strong>provident porro</strong> ipsum sit?</p>
+                    <p class="comment__author">Anna</p>
+                    <p class="comment__date">19/04/19</p>
+                </div>
+
+                <div class="comment__list_item">
+                    <p class="comment__text"><em>Lorem ipsum</em> dolor sit amet consectetur adipisicing elit.
+                        Nulla
+                        magni necessitatibus provident porroipsum sit?</p>
+                    <p class="comment__author">Michał</p>
+                    <p class="comment__date">29/04/19</p>
+                </div>
+
+                <div class="comment__list_item">
+                    <p class="comment__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                        magni necessitatibus provident porro ipsum sit?</p>
+                    <p class="comment__author">Andrzej</p>
+                    <p class="comment__date">08/02/18</p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p class="copyright">&copy; by <strong>Mateusz Sowa</strong> | 2020</p>
+    </footer>
 </body>
+
 </html>
