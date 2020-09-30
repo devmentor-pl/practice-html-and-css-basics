@@ -15,14 +15,16 @@ body {
     width: 1000px;
 }
 
-header {
+.container--header {
+    display: flex;
     align-items: center;
     display: flex;
     flex-wrap: nowrap;
     height: 15vh;
     justify-content: space-between;
-    width: 100%;
+
 }
+
 
 .logo {
     background-color: yellow;
@@ -37,13 +39,13 @@ header {
     width: 350px;
 }
 
-.hero {
+.container--hero {
     align-items: center;
     display: flex;
     flex-wrap: nowrap;
     height: 30vh;
     justify-content: space-between;
-    width: 100%;
+
 }
 
 .hero__item {
@@ -52,13 +54,13 @@ header {
     width: 48%;
 }
 
-.subhero {
+.container--subhero {
     align-items: center;
     display: flex;
     flex-wrap: nowrap;
     height: 30vh;
     justify-content: space-around;
-    width: 100%;
+
 }
 
 .subhero__item {
@@ -67,13 +69,12 @@ header {
     width: 32%;
 }
 
-footer {
+.container--foter {
     align-items: center;
     display: flex;
     flex-wrap: nowrap;
     height: 15vh;
     justify-content: center;
-    width: 100%;
 }
 
 .footer__item {
