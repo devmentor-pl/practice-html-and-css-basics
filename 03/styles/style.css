@@ -2,49 +2,51 @@
     font-family: 'source_sans_probold';
     src: url('../fonts/sourcesanspro-bold-webfont.woff2') format('woff2'),
         url('../fonts/sourcesanspro-bold-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: bold;
 }
 
+.s700 {
+    font-family: 'source_sans_probold', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-style: bold;
+}
 
 @font-face {
     font-family: 'source_sans_proitalic';
     src: url('../fonts/sourcesanspro-it-webfont.woff2') format('woff2'),
         url('../fonts/sourcesanspro-it-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
 
 }
 
+.s400i {
+    font-family: 'source_sans_proitalic', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
 
 @font-face {
     font-family: 'source_sans_proregular';
     src: url('../fonts/sourcesanspro-regular-webfont.woff2') format('woff2'),
         url('../fonts/sourcesanspro-regular-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
 
 }
+
+.s400 {
+    font-family: 'source_sans_proregular';
+    font-weight: 400;
+    font-style: normal;
+}
+
+
 
 .parent {
     padding: 20px;
     width: 600px;
-}
-
-.parent--inline-block .child {
-    display: inline-block;
-    margin: 0;
-    vertical-align: middle;
-}
-
-.parent--float::after {
-    content: '';
-    clear: both;
-    display: block;
-}
-
-.parent--float .child {
-    float: left;
-    padding: 0;
-    margin: 0;
-}
-
-.parent--flexbox {
-    display: flex;
 }
 
 .child {
@@ -54,15 +56,44 @@
 }
 
 .child--first {
-    font-family: 'source_sans_proregular';
     margin-left: 0;
 }
 
-.child--middle {
-    font-family: 'source_sans_probold';
+.child--last {
+    width: 40%;
 }
 
-.child--last {
-    font-family: 'source_sans_proitalic';
-    width: 40%;
+.parent--inline-block .child {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.parent--inline-block .child--middle {
+    width: calc(30% - 10px);
+}
+
+.parent--inline-block .child--last {
+    width: calc(40% - 10px);
+}
+
+.parent--float .child {
+    float: left;
+}
+
+.parent--float::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.parent--float .child--middle {
+    width: calc(30% - 10px);
+}
+
+.parent--float .child--last {
+    width: calc(40% - 10px);
+}
+
+.parent--flexbox {
+    display: flex;
 }
