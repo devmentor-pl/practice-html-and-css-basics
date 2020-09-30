@@ -9,6 +9,11 @@ body {
     background-color: rgb(244, 244, 244);
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .navigation {
     background-color: rgb(255, 255, 255);
     font-family: sans-serif;
