@@ -16,15 +16,15 @@
             <img class="header__logo" src="" alt="Logo">
             <nav class="header__nav">
                 <ul class="list">
-                    <li class="list__item">start</li>
-                    <li class="list__item">portfolio
+                    <li class="list__item"><a href="#">start</a> </li>
+                    <li class="list__item"><a href="#">portfolio</a>
                         <ul class="list__dropdown dropdown">
-                            <li class="dropdown__item">projekt 1</li>
-                            <li class="dropdown__item">projekt 2</li>
-                            <li class="dropdown__item">projekt 3</li>
+                            <li class="dropdown__item"><a href="#">projekt 1</a></li>
+                            <li class="dropdown__item"><a href="#">projekt 2</a> </li>
+                            <li class="dropdown__item"><a href="#">projekt 3</a> </li>
                         </ul>
                     </li>
-                    <li class="list__item">o mnie</li>
+                    <li class="list__item"><a href="#">o mnie</a> </li>
                 </ul>
             </nav>
 
@@ -32,28 +32,29 @@
     </header>
 
     <main>
-        <article class="article1">
+        <article class="article article--first">
 
-            <h2 class="article1__title">Trendy we front-endzie</h2>
+            <h2 class="article__title">Trendy we front-endzie</h2>
 
-            <p class="article1__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut asperiores
+            <p class="article__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+                asperiores
                 expedita suscipit labore voluptatum cumque impedit accusantium dicta, non molestiae atque nobis porro,
                 accusamus exercitationem. <br>
             </p>
 
-            <p class="article1__date">29/09/20</p>
+            <p class="article__date">29/09/20</p>
 
-            <div class="article1__image--big">
+            <div class="article__image article__image--big">
                 <img src="https://cdn.pixabay.com/photo/2020/09/18/19/31/laptop-5582775_1280.jpg" alt="biuro domowe">
             </div>
 
             <table class="article__table">
                 <caption>Popularność technologii w 2020 roku</caption>
                 <thead>
-                    <th>Nazwa</th>
-                    <th>Rok wprowadzenia</th>
-                    <th>Ilość użytkowników</th>
-                    <th>Zadowolenie</th>
+                    <th scope='col'>Nazwa</th>
+                    <th scope='col'>Rok wprowadzenia</th>
+                    <th scope='col'>Ilość użytkowników</th>
+                    <th scope='col'>Zadowolenie</th>
                 </thead>
 
                 <tbody>
@@ -87,32 +88,34 @@
 
         <section class="comment">
 
-            <div class="comment__input">
-                <textarea name="comment" id="comment" cols="60" rows="5"></textarea>
-            </div>
+            <form class="comment__form">
+                <div class="comment__input">
+                    <textarea name="comment" id="comment" cols="60" rows="5"></textarea>
+                </div>
+            </form>
 
             <div class="comment__list">
-                <div class="comment__list_item">
+                <article class="comment__list-item">
                     <p class="comment__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
                         magni necessitatibus <strong>provident porro</strong> ipsum sit?</p>
                     <p class="comment__author">Anna</p>
                     <p class="comment__date">19/04/19</p>
-                </div>
+                </article>
 
-                <div class="comment__list_item">
+                <article class="comment__list-item">
                     <p class="comment__text"><em>Lorem ipsum</em> dolor sit amet consectetur adipisicing elit.
                         Nulla
                         magni necessitatibus provident porroipsum sit?</p>
                     <p class="comment__author">Michał</p>
                     <p class="comment__date">29/04/19</p>
-                </div>
+                </article>
 
-                <div class="comment__list_item">
+                <article class="comment__list-item">
                     <p class="comment__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
                         magni necessitatibus provident porro ipsum sit?</p>
                     <p class="comment__author">Andrzej</p>
                     <p class="comment__date">08/02/18</p>
-                </div>
+                </article>
             </div>
 
         </section>
