@@ -9,20 +9,19 @@
 .s700 {
     font-family: 'source_sans_probold', Arial, Helvetica, sans-serif;
     font-weight: 700;
-    font-style: bold;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: 'source_sans_proitalic';
+    font-family: 'source_sans_proregular';
     src: url('../fonts/sourcesanspro-it-webfont.woff2') format('woff2'),
         url('../fonts/sourcesanspro-it-webfont.woff') format('woff');
     font-weight: 400;
     font-style: italic;
-
 }
 
 .s400i {
-    font-family: 'source_sans_proitalic', Arial, Helvetica, sans-serif;
+    font-family: 'source_sans_proregular';
     font-weight: 400;
     font-style: italic;
 }
