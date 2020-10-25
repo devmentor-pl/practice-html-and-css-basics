@@ -1,0 +1,24 @@
+.content__container {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-around;
+}
+
+.content__article {
+    min-height: 250px;
+    width: 75%;
+}
+
+.content__article:first-child {
+    margin-left: -2px;
+}
+
+.content__article:last-child {
+    margin-right: -2px;
+}
+
+.content__ads {
+    min-height: 200px;
+    width: 75%;
+    margin: 10px;
+}

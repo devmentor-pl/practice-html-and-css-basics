@@ -1,12 +1,121 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
 </head>
+
 <body>
-    
+    <header>
+        <a href="#">
+            <img src="./logo.png" alt="Logo">
+        </a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Regulamin</a>
+                </li>
+                <li>
+                    <a href="#">Polityka prywatności</a>
+                </li>
+                <li>
+                    <a href="#">Kontakt</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h1>Tytuł</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, tempora provident quibusdam qui
+                soluta nam ipsa dicta facere voluptates aut nulla, odit dolorem sequi deserunt est perspiciatis,
+                temporibus deleniti. Dicta.</p>
+            <p>Quam repudiandae error porro esse voluptatibus? A nam est voluptatum perspiciatis! Incidunt alias totam,
+                nam tempore omnis vero dolore pariatur, ut architecto laudantium dolorum quo, tenetur nihil provident
+                qui. Sunt!</p>
+            <p>Ea non saepe ipsum. Harum asperiores ut dolorem laborum quos. Similique ratione odit beatae quos
+                accusamus? Magni, excepturi atque nostrum eos distinctio suscipit consequuntur enim, sed delectus earum
+                ipsam cumque?</p>
+            <hr>
+
+            <p>Dawid <time datetime="2020-10-20 09:00">20 Październik 2020</time></p>
+
+            <figure>
+                <img src="./obrazek.png" alt="Obrazek">
+                <figcaption>Obrazek na stronie</figcaption>
+            </figure>
+
+            <table>
+                <caption>Oceny</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Matematyka</th>
+                        <th scope="col">Chemia</th>
+                        <th scope="col">Informatyka</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>4.5</td>
+                        <td>3.5</td>
+                        <td>5.0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+
+        <form>
+            <h3>Dodaj komentarz</h3>
+            <p>
+                <label>Nick</label>
+                <input type="text" name="author" required>
+            </p>
+            <p>
+                <label>E-mail</label>
+                <input type="email" name="email" required>
+            </p>
+            <p>
+                <label>Komentarz</label>
+                <textarea rows="10" cols="50" required></textarea>
+            </p>
+            <p>
+                <button type="submit">Wyślij</button>
+            </p>
+        </form>
+
+        <section>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem asperiores eaque voluptate at culpa
+                mollitia ut ipsa, vitae facere molestiae consectetur labore. Explicabo perferendis sapiente enim,
+                molestias fugit nemo minus.</p>
+            <p>Dawid <time datetime="2020-10-20 10:00">20 Październik 2020</time></p>
+        </section>
+
+        <section>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem asperiores eaque voluptate at culpa
+                mollitia ut ipsa, vitae facere molestiae consectetur labore. Explicabo perferendis sapiente enim,
+                molestias fugit nemo minus.</p>
+            <p>Paweł <time datetime="2020-10-12 11:00">12 Październik 2020</time></p>
+        </section>
+
+        <section>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem asperiores eaque voluptate at culpa
+                mollitia ut ipsa, vitae facere molestiae consectetur labore. Explicabo perferendis sapiente enim,
+                molestias fugit nemo minus.</p>
+            <p>Franek <time datetime="2020-10-10 12:00">10 Październik 2020</time></p>
+        </section>
+
+    </main>
+
+    <footer>
+        Dawid Pietraszko! &copy; 2020 Dziękuję za wizytę!
+    </footer>
 </body>
+
 </html>
