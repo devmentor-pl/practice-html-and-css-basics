@@ -1,0 +1,48 @@
+/* GLOBAL */
+/*
+* {
+    outline: 2px solid red; 
+}
+*/
+.page {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    max-width: 960px;
+    margin: 0 auto;
+    border-right: 1px solid #d6d7dd;
+    border-left: 1px solid #d6d7dd;
+}
+
+/* HEADER */
+
+.header {
+    height: 100px;
+    border-bottom: 1px solid #d6d7dd;
+}
+.nav__list {
+    display: flex;
+    justify-content: space-around;
+}
+.nav__item {
+    background: rgb(192, 227, 250);
+    padding: 10px 30px;
+    border-radius: 10px;
+    position: relative;
+}
+.nav__dropdown {
+    position: absolute;
+    padding-top: 20px;
+    display: none;
+    left: 0;
+}
+.nav__item:hover > .nav__dropdown {
+    display: block;
+}
+.dropdown__item {
+    padding: 10px; margin: 5px;
+    border-radius: 10px;
+    background: rgba(192, 227, 250, 0.5);
+}
+.nav__item a {
+    text-decoration: none;
+}
