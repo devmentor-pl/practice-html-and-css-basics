@@ -1,23 +1,23 @@
 /* GLOBAL */
-/*
+
 * {
-    outline: 2px solid red; 
+    /* outline: 2px solid red;  */
 }
-*/
+
 .page {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 14px;
-    max-width: 960px;
+    max-width: 1200px;
     margin: 0 auto;
-    border-right: 1px solid #d6d7dd;
-    border-left: 1px solid #d6d7dd;
+    border-right: 2px solid #d6d7dd;
+    border-left: 2px solid #d6d7dd;
 }
 
 /* HEADER */
 
 .header {
     height: 100px;
-    border-bottom: 1px solid #d6d7dd;
+    border-bottom: 2px solid #d6d7dd;
 }
 .nav__list {
     display: flex;
@@ -45,4 +45,28 @@
 }
 .nav__item a {
     text-decoration: none;
+}
+
+/* CONTENT */
+
+.main__article {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    border-right: 2px solid #d6d7dd;
+    border-left: 2px solid #d6d7dd;
+}
+.article__details img {
+    width: 40px;
+}
+.main__table {
+    
+    margin: 0 auto;
+    border: 2px solid rgb(181, 224, 241);
+}
+/* FOOTER */
+
+.footer {
+    height: 150px;
+    border-top: 2px solid #d6d7dd;
 }
