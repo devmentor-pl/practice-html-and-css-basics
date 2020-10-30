@@ -19,18 +19,15 @@
             <ul class="nav__list">
                 <li class="nav__item"><a href="#">Lorem</a></li>
                 <li class="nav__item"><a href="#">Ipsum</a></li>
-                <li class="nav__item">
-                    <a href="#">
-                        Dolor
-                        <ul class="nav__dropdown dropdown">
-                            <li class="dropdown__item"><a href="#">Dolor</a></li>
-                            <li class="dropdown__item"><a href="#">Ipsum</a></li>
-                            <li class="dropdown__item"><a href="#">Lorem</a></li>
-                        </ul>
-                    </a>
+                <li class="nav__item"><a href="#">Amet</a>
                 </li>
                 <li class="nav__item"><a href="#">Sit</a></li>
-                <li class="nav__item"><a href="#">Amet</a></li>
+                <li class="nav__item"><a href="#">Dolor
+                    <ul class="nav__dropdown dropdown">
+                        <li class="dropdown__item"><a href="#">Dolor</a></li>
+                        <li class="dropdown__item"><a href="#">Ipsum</a></li>
+                        <li class="dropdown__item"><a href="#">Lorem</a></li>
+                    </ul></a></li>
             </ul>
         </nav>
     </header>
@@ -40,21 +37,95 @@
     <main class="main">
         <article class="main__article article">
             <h1 class="article__title">Article Title</h1>
-            <p class="article__content">Lorem ipsum dolor sit amet, consectetur 
+            <p class="article__content">
+            Lorem ipsum dolor sit amet, consectetur 
             adipisicing elit. Eum amet vero accusantium 
             ducimus vel cum veritatis libero nostrum 
             eveniet enim quam ratione quidem, at 
-            praesentium quaerat, possimus autem nobis voluptatem!!</p>
+            praesentium quaerat, possimus autem nobis voluptatem!!
+            Lorem ipsum dolor sit amet, consectetur 
+            adipisicing elit. Eum amet vero accusantium 
+            ducimus vel cum veritatis libero nostrum 
+            eveniet enim quam ratione quidem, at 
+            praesentium quaerat, possimus autem nobis voluptatem!!
+            </p>
+
             <div class="article__details">
                 <img src="/assets/img/asteroid.svg" alt="Ilustracja">
                 <p><time datetime="2020-10-29 22:00">2020-10-29 22:00</time></p>
                 <p class="article__author">Michał Wawrzyniak</p>
             </div>
-            <table>
-                
+
+            <table class="article__table table">
+                <thead class="table__head">
+                    <tr>
+                        <th></th>
+                        <th scope="col">Column 1</th>
+                        <th scope="col">Column 2</th>
+                        <th scope="col">Column 3</th>
+                    </tr>
+                </thead>
+                <tbody class="table__body">
+                    <tr>
+                        <td>Row 1</td>
+                        <td>a</td>
+                        <td>b</td>
+                        <td>c</td>
+                    </tr>
+                    <tr>
+                        <td>Row 2</td>
+                        <td>d</td>
+                        <td>e</td>
+                        <td>f</td>
+                    </tr>
+                    <tr>
+                        <td>Row 3</td>
+                        <td>g</td>
+                        <td>h</td>
+                        <td>i</td>
+                    </tr>
+                    <tr>
+                        <td>Row 4</td>
+                        <td>j</td>
+                        <td>k</td>
+                        <td>l</td>
+                    </tr>
+                </tbody>
             </table>
+
         </article>
-        
+
+        <section class="main__comments comments">
+            <div class="comments__header">
+                <h3>Leave your comment below...</h3>
+            </div>
+            <div class="comments__form">
+                <form action="#" method="POST">
+                <label for="author">Your name:</label>
+                <input type="text" name="author">
+                <div>
+                    <textarea placeholder="Write your comment..." rows="4" cols="35"></textarea>
+                </div>
+                <input type="submit" value="Submit">
+                </form>
+            </div>
+        </section>
+
+        <section class="comments__section">
+            <ul class="comments__list">
+                <li class="comments__item">
+                    <h3 class="comments__author">Author 1</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <time datetime="2020-10-30">2020-10-30 22:37</time>
+                </li>
+                <li class="comments__item">
+                    <h3 class="comments__author">Author 2</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <time datetime="2020-10-30">2020-10-30 22:38</time>
+                </li>
+            </ul>
+        </section>
+
     </main>
 
     <!-- FOOTER -->
