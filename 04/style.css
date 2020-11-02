@@ -1,0 +1,92 @@
+/* ---------- GLOBAL ---------- */
+
+/* * {
+    outline: 1px solid blue;
+} */
+
+.page {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 960px;
+    margin: 0 auto;
+    min-height: 500px;
+}
+
+/* ---------- HEADER ---------- */
+
+.header {
+    height: 300px;
+    background-color: rgb(246, 246, 246);
+    padding: 30px;
+    position: relative;
+}
+
+/* ---------- NAV LIST---------- */
+
+.nav__list {
+    display: flex;
+    background-color: white;
+}
+.list__link {
+    position: relative;
+    padding: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    color: rgb(0, 0, 0);
+}
+
+
+/* I couldn't solve the problem with the jumping list items
+ while hovering over them, that's why I used the solution with two borders*/
+
+.list__link {
+    border-top: 2px solid rgb(255, 255, 255);
+}
+.list__link:hover {
+    border-top: 2px solid rgb(0, 154, 225);
+}
+
+.list__item--first .list__link, .list__item--second .list__link {
+    color: rgb(0, 154, 225);
+}
+
+/* ---------- DROPDOWN LIST ---------- */
+
+.list__dropdown {
+    position: absolute;
+    background-color: rgb(51, 51, 51);
+    display: none;
+}
+.list__item--second:hover > .list__dropdown {
+    display: block;
+}
+
+.item__dropdown--second {
+    position: relative;
+}
+
+.item__dropdown a {
+    color: rgb(219, 220, 207);
+    width: 200px;
+    text-align: left;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+}
+.item__dropdown span {
+    position: absolute;
+    right: 0;
+}
+
+/* ---------- DROPDOWN LIST - 2 ---------- */
+
+.list__dropdown-2 {
+    background-color: rgb(51, 51, 51);
+    position: absolute;
+    left: 100%;
+    top: 0;
+    display: none;
+}
+.item__dropdown--second:hover > .list__dropdown-2 {
+    display: block;
+}
