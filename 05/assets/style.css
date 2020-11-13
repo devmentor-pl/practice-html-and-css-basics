@@ -1,0 +1,97 @@
+html {
+    box-sizing: border-box;
+
+}
+
+*,*::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    padding: 0;
+}
+
+.row, .container, .cell {
+    outline: 3px solid;
+}
+
+.row {
+    outline-color: green;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1000px;
+    outline-color: blue;
+}
+
+.cell {
+    min-height: 50px;
+    outline-color: orange;
+}
+
+.main {
+    margin-top: 10px;
+}
+/* Header */
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo {
+    min-width: 200px;
+    background-color: orange;
+    margin: 5px 0;
+}
+
+.header__nav {
+    min-width: 450px;
+    background-color: orange;
+    margin: 5px 0;
+}
+
+/* Main */
+
+.articles__container--first
+ {
+    display: flex;
+    justify-content: space-between;
+}
+
+.articles__container--first > .article {
+    min-height: 400px;
+    min-width: calc(50% - 5px);
+    background-color: orange;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.articles__container--second {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.articles__container--second > .article {
+    width: calc(100% / 3);
+    background-color: orange;
+    margin: 10px;
+    min-height: 300px;
+}
+
+/* Footer */
+
+.footer__container {
+    display: flex;
+    justify-content: center;
+}
+
+.footer__contact {
+    width: 25%;
+    background-color: orange;
+}

@@ -1,12 +1,112 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
 </head>
+
 <body>
-    
+    <!--Header and navbar-->
+    <header class="header">
+        <div class="header__container">
+            <img src="#" alt="Logo devmentor.pl" class="header__logo">
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#main" class="nav__link">Main</a></li>
+                    <li class="nav__item"><a href="#footer" class="nav__link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--Main content-->
+    <main class="main" id="main">
+        <div class="main__container">
+            <article class="article">
+                <h1 class="article__heading">Header 1</h1>
+                <p class="article__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem
+                    assumenda expedita reprehenderit facilis? Sed eum, facere quaerat necessitatibus amet nulla.Lorem
+                    ipsum dolor sit amet, consectetur adipisicing elit. Quaerat et laudantium maiores beatae
+                    praesentium! Vitae in impedit natus a quis?</p>
+                <p class="article__text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab soluta in perferendis ducimus excepturi
+                    nobis dolorem neque non minus distinctio?Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sunt fuga illo molestiae temporibus quaerat veritatis itaque magni id amet accusamus!
+                </p>
+                <figure class="article__media">
+                    <img src="#" alt="Photo representig author">
+                    <figcaption>Photo Mateusz Urbaniak</figcaption>
+                </figure>
+                <table class="table">
+                    <thead>
+                        <caption>The data table</caption>
+                        <tr>
+                            <th>Head of table 1</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Data1</td>
+                            <td>Data2</td>
+                        </tr>
+                        <tr>
+                            <td>Data3</td>
+                            <td>Data4</td>
+                        </tr>
+                        <tr>
+                            <td>Data5</td>
+                            <td>Data6</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <address class="article__author">By: Matteus on day <time datetime="2020-11-12">November 12</time></p>
+                </address>
+            </article>
+
+            <!-- Form for commenting -->
+            <section class="form">
+                <h3 class="form__heading">Add comment</h3>
+                <form class="form_comment">
+                    <div class="form__username">
+                        <label for="username">Username: </label>
+                        <input type="text" name="username" id="username" required placeholder="Matteus">
+                    </div>
+                    <div class="form__comment-text">
+                        <label for="comment">Type comment:</label>
+                        <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Comment text."
+                            required></textarea>
+                    </div>
+                    <input class="btn" type="submit" value="Comment!">
+                </form>
+            </section>
+
+            <!--Comment -->
+            <h3 clss="comments__heading">Comments</h3>
+            <article class="comments">
+                <p class="comments__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet ducimus
+                    aliquid eius alias, adipisci soluta vel error suscipit dicta voluptate. Veritatis consectetur
+                    officiis commodi pariatur excepturi necessitatibus a, delectus molestiae ullam repellendus sunt
+                    quasi nemo ipsam et. Eligendi eaque aliquam voluptatum et ab sint harum rem ipsam eum, nihil sed! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit dolore aut aliquam consequuntur itaque deleniti reiciendis fugiat! Voluptate, dolor quasi.
+                </p>
+                <p clss="comments__author">
+                    <address>By: Matteus on day <time datetime="2020-11-12">November 12</time></address>
+                </p>
+            </article>
+        </div>
+
+        <footer class="footer" id="footer">
+            <h3>Contact</h3>
+            <div class="footer__container">
+                <p class="footer__information">
+                    &copy; by Matteus Urbaniak
+                </p>
+            </div>
+        </footer>
+    </main>
 </body>
+
 </html>

@@ -1,0 +1,53 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.parent {
+    padding: 20px;
+    width: 600px;
+}
+
+.parent--inline-block > div {
+    display: inline-block;
+}
+
+.child:not([class*="--last"]) {
+    margin-right: 10px;
+}
+
+.child--first {
+    font-family: 'source_sans_proregular', sans-serif;
+    width: calc(30% - 10px);
+}
+
+.child--middle {
+    font-family: 'source_sans_probold', sans-serif;
+    width: calc(30% - 10px);
+}
+
+.child--last {
+    font-family: 'source_sans_proitalic', sans-serif;
+    width: calc(40% - 10px);
+}
+
+.parent--float > div {
+    float: left;
+}
+.parent--float::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.parent--flexbox {
+    display: flex;
+}
