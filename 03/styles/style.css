@@ -25,17 +25,20 @@ body {
 }
 
 .child--first {
-    font-family: 'source_sans_proregular', sans-serif;
+    font-family: 'SourceSansPRO', sans-serif;
+    font-style: normal;
     width: calc(30% - 10px);
 }
 
 .child--middle {
-    font-family: 'source_sans_probold', sans-serif;
+    font-family: 'SourceSansPRO', sans-serif;
+    font-weight: bold;
     width: calc(30% - 10px);
 }
 
 .child--last {
-    font-family: 'source_sans_proitalic', sans-serif;
+    font-family: 'SourceSansPRO', sans-serif;
+    font-style: italic;
     width: calc(40% - 10px);
 }
 
