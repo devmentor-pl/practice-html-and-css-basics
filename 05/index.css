@@ -1,0 +1,72 @@
+
+
+.row, .cell, .container {
+    margin: 2px;
+    padding: 2px;
+    outline: 3px solid;
+}
+  
+.row {
+    outline-color: green;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1000px;
+    outline-color: blue
+    ;
+}
+
+.cell {
+    min-height: 50px;
+    outline-color: orange;
+    background-color: orange;
+}
+
+.header__container, .first {
+    padding: 5px 0;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo {
+    width: 15%;
+}
+
+.header__nav {
+    width: 30%;
+}
+
+.content__container {
+    display: flex;
+}
+
+.footer__content {
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__content .cell {
+    width: 30px;
+}
+
+.first .cell {
+    height: 200px;
+    width: 50%;
+}
+
+.second {
+    display: flex;
+    height: 250px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.second .cell {
+    height: 200px;
+    width: 30%;
+}
