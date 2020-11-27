@@ -1,0 +1,107 @@
+
+
+    body {
+        height: 500px;
+        background-color: #F5F5F5;
+    }
+
+   .row, .cell, .container {
+    margin: 0 5px;
+   }
+
+     .container {
+    margin: 0 auto;
+    max-width: 1200px;
+     }
+
+     .cell {
+         min-height: 50px;
+     }
+
+     .header__container {
+         display: flex;
+         background-color: white;
+         margin-top: 30px;
+         
+     }
+
+     .header__nav {
+         width: 60%;
+         margin-left: 100px;
+        
+     }
+
+     .nav {
+         display: flex;
+     }
+
+     .nav__item {
+         position: relative;
+         width: 200px;
+         font-size: 15px;
+         height: 35px;
+         margin: 15px 10px 0 13px ;
+     }
+
+     .nav__dropdown {
+         position: absolute;
+         display: none;
+         background-color: #262626;
+         width: 200px;
+         top: 35px;
+     }
+
+     .nav__item:hover > .nav__dropdown {
+         display: block;
+     }
+
+     .nav__dropdown .second {
+         margin: -50px 187px;
+     }
+
+     header > div > nav > ul > li > ul > li {
+         color: #FFFFD6;
+     }
+
+     header > div > nav > ul > li:hover {
+         color: #4A96DA;
+        
+     }
+     header > div > nav > ul > li:hover::before {
+     content: "";
+     display: block;
+     position: absolute;
+     border: 2px solid #4A96DA;
+     left: -10px;
+     top: -20px;
+     width: 120px;
+     }
+
+
+
+     header > div > nav > ul > li:hover::after {
+         content: '>';
+         display: inline-block;
+         margin-left: 10px;
+         transform: rotate(90deg);
+     }
+
+
+     header > div > nav > ul > li > ul > li:hover {
+         color: #D5D6AE;
+     }
+
+     .second li {
+        color:#FFFFD6;
+    }
+
+    .second li:hover {
+        color: #D5D6AE;
+    }
+
+     header > div > nav > ul > li > ul >li:hover::after {
+        content: '>';
+        display: inline-block;
+        margin-left: 100px;
+        
+    }

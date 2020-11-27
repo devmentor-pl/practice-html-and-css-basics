@@ -1,8 +1,16 @@
 
    /* base.css */
+
+   body {
+       background-color: rgb(238, 234, 234);
+       margin: 0 auto;
+       max-width: 1100px;
+   }
    .row, .cell, .container {
     margin: 5px;
    }
+
+  
 
      .container {
     margin: 0 auto;
@@ -15,6 +23,7 @@
 
      .header__container {
          display: flex;
+         background-color: rgb(228, 224, 224);
          
      }
 
@@ -56,17 +65,57 @@
          max-width: 20%;
          display: block;
          margin: 0 auto;
+         padding: 50px 0;
+     }
+
+     article p {
+         padding-bottom: 15px;
      }
 
      .title {
          text-align: center;
          font-size: 35px;
-         margin-top: 20px;
+         margin: 30px;
      }
      .about-author {
          text-align: center;
-     }
+     } 
 
      .nav__dropdown .second {
          margin: -28px 187px;
      }
+
+     table {
+       border-collapse: collapse;
+         border-spacing: 10px;
+         margin: auto;
+         text-align: center;
+    }
+
+    td {
+        background-color: rgb(170, 170, 170);
+    }
+
+    td, th {
+        border: 3px solid black;
+        padding: 10px;
+    }
+    
+    form {
+        padding: 100px 100px 15px 100px;
+    }
+
+    .comments > div {
+        background-color: rgb(216, 212, 212);
+        margin: 100px 300px 100px 100px;
+    }
+
+    .comments div h3 {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .about-commentator {
+        display: flex;
+        justify-content: space-between;
+    }

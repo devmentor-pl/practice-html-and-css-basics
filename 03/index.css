@@ -1,0 +1,56 @@
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+@font-face {
+	font-family: 'regular';
+	src: url(source-sans-pro/SourceSansPro-Regular.otf);
+}
+
+@font-face {
+	font-family: 'bold';
+	src: url(source-sans-pro/SourceSansPro-Bold.otf);
+}
+
+@font-face {
+	font-family: 'italic';
+	src: url(source-sans-pro/SourceSansPro-It.otf);
+}
+
+
+.parent {
+	width: 600px;
+	padding: 20px;
+}
+.parent--inline-block {
+	display: inline-block;
+}
+
+.parent--inline-block .child {
+	display: inline-block;
+}
+
+.child--first {
+	width: 30%;
+	font-family: 'regular';
+}
+
+.child--middle {
+	width: calc(30% - 10px);
+	font-family: 'italic';
+}
+
+.child--last {
+	width: calc(40% - 10px);
+	font-family: 'bold';
+}
+
+.parent--float .child {
+	float: left;
+}
+
+.parent--flexbox {
+	display: flex;
+}
