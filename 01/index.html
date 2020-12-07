@@ -1,12 +1,133 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>devmentor.pl - HTML & CSS BASICS - #01</title>
+    <title>Document</title>
 </head>
 <body>
-    
+    <header>
+        <!-- logo -->
+        <div class="logo">
+            <img src="./resources/icon.png">
+        </div>
+        <!-- main menu -->
+        <!-- to miało być rozwijane -->
+        <nav id="nav">
+            <ul id="main-menu">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- article -->
+        <article>
+            <!-- title -->
+            <h1>Czekolada Gorzka "Ziarna Świata"</h1>
+
+            <!-- article content -->
+            <div class="article-content">
+                <h3>
+                    Marka Wawel wprowadza do swojego portfolio nową linię gorzkich Czekolad Premium „Ziarna Świata”. Czekolady powstają z jedynie trzech składników i zamknięte są w eleganckich kartonikowych opakowaniach. W nowej linii znajdziemy 4 egzotyczne warianty z ziaren kakaowca pochodzących z regionalnych plantacji w Kamerunie, Wenezueli i Ghanie.
+                </h3>
+
+                <p>
+                    Nowe produkty to odpowiedź na oczekiwania polskich konsumentów, którzy cenią sobie różnorodność i możliwość wyboru różnych wariantów smakowych produktów, a także prosty skład. Nowe czekolady z Wawelu trafiają tu dobrze w gusta kupujących - powstają bowiem wyłącznie z trzech składników: miazgi kakaowej, cukru i tłuszczu kakaowego. Nie zawierają dodatków i emulgatorów. Wysoka, 74% zawartość kakao oznacza pełny, wytrawny smak i pozwala wydobyć subtelne różnice pomiędzy poszczególnymi produktami.
+                </p>
+
+                <p>
+                    Każda z czekolad powstaje w oparciu o ziarno kakaowca z tylko jednego regionu - plantacji w Kamerunie, Ghanie i Wenezueli. Oryginalne pochodzenie oraz zastosowane różne odmiany kakaowca nadają każdemu z produktów indywidualny charakter, smak i aromat. Czekolady pakowane są w eleganckie, matowe kartoniki z orientalnymi wzorami.
+                </p>
+
+                <p>
+                    Czekolady „Ziarna Świata” oferowane są w matowych, kartonikowych opakowaniach z charakterystycznymi motywami nawiązującymi do regionów pochodzenia. Podobna zmiana dotknie także Czekolady Premium – 70% cocoa, 90% cocoa oraz 70% cocoa z dodatkiem skórki pomarańczy, cząstkami miętowymi i drobinkami kawy i kakaowca. Wszystkie ciemne Czekolady Premium dostępne będą w eleganckich kartonikach.
+                </p>
+            </div>
+            
+            <!-- publication date -->
+            <p class="publication-date">Data publikacji 06.12.2020</p>
+            <!-- author -->
+            <span>Ewa Skórska Junior Front-End Developer</span>
+            <!-- image -->
+            <img src="./resources/Czekoaldy-Ziarna-Świata.png">
+            <!-- table -->
+            <table>
+                <caption>Wartość odżywcza na 100 g produktu</caption>
+                <tr>
+                    <th>Wartość energetyczna</th>
+                    <td>2470 kJ/ 596 kcal</td>
+                </tr>
+                <tr>
+                    <th>Tłuszcz</th>
+                    <td>47 g</td>
+                </tr>
+                <tr>
+                    <th>w tym kwasy tłuszczowe nasycone</th>
+                    <td>29 g</td>
+                </tr>
+                <tr>
+                    <th>Węglowodany</th>
+                    <td>28 g</td>
+                </tr>
+                <tr>
+                    <th>w tym cukry</th>
+                    <td>24 g</td>
+                </tr>
+                <tr>
+                    <th>Białko</th>
+                    <td>9,8 g</td>
+                </tr>
+                <tr>
+                    <th>Sól</th>
+                    <td>0,02 g</td>
+                </tr>
+            </table>
+        </article>
+        <form action="./add-comment.php" method="POST">
+            <div>
+                <textarea rows="7" cols="60"></textarea>
+            </div>
+            <div>
+                <!-- placeholder "Twój nick" -->
+                <label for=""><input type="text"></label>
+            </div>
+            <div>
+                <input type="submit">
+            </div>
+        </form>
+        <ul class="comments-list">
+            <li class="comment">
+                <div class="content">Super te nowe czekolady Wedla!</div>
+                <div class="author">Kasia Czubek</div>
+                <div class="date">07.06.2020</div>
+            </li>
+            <li class="comment">
+                <div class="content">Wspaniała kolekcja! Zaraz lecę do sklepu!</div>
+                <div class="autor">Mateusz Wesołowski</div>
+                <div class="date">06.12.2020</div>
+            </li>
+            <li class="comment">
+                <div class="content">Czy ma ktoś do oddania Świerzaki dla mojego bombelka???</div>
+                <div class="autor">Jessica XOXO</div>
+                <div class="date">06.12.2020</div>
+            </li>
+        </ul>
+        <footer>
+            <p>&copy; 2020 ewasko</p>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/">home</a>
+                    </li>
+                    <li>
+                        <a href="/contact">kontakt</a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+    </main>
 </body>
 </html>
