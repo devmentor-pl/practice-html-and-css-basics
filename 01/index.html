@@ -7,19 +7,37 @@
 </head>
 <body>
     <header>
-        <!-- logo -->
-        <div class="logo">
-            <img src="./resources/icon.png">
-        </div>
-        <!-- main menu -->
-        <!-- to miało być rozwijane -->
-        <nav id="nav">
-            <ul id="main-menu">
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-            </ul>
+        <!-- Both menu and logo are elements of navigation and 'ul' (clickable logo) -->
+         <nav id="nav">
+             <ul>
+                 <li>
+                    <!-- logo -->
+                    <a href="#">
+                        <img src="./resources/chocoLOGO.png" alt="chocoLogo">
+                    </a>  
+                </li>
+                <li>
+                    <a href="#">O mnie</a>
+                    <ul><a href="#">Kolekcja</a></ul>
+                    <ul><a href="#">Kontrybutorzy</a></ul>
+                    <ul><a href="#">O mnie</a></ul>
+                </li>
+                <li>
+                    <a href="#">Wydarzenia</a>
+                    <ul><a href="#">Festiwale Czekolady</a></ul>
+                    <ul><a href="#">Spotkania kolekcjonerów</a></ul>
+                    <ul><a href="#">Piszą o nas</a></ul>
+                </li>
+                <li>
+                    <a href="#">Galeria</a>
+                    <ul><a href="#">Milka</a></ul>
+                    <ul><a href="#">Wedel</a></ul>
+                    <ul><a href="#">Lindt</a></ul>
+                </li>
+                <li>
+                    <a href="#">Kontakt</a>
+                </li>
+             </ul>            
         </nav>
     </header>
     <main>
@@ -47,12 +65,20 @@
                 </p>
             </div>
             
-            <!-- publication date -->
-            <p class="publication-date">Data publikacji 06.12.2020</p>
-            <!-- author -->
-            <span>Ewa Skórska Junior Front-End Developer</span>
+            <!-- Serio, nie wiem jak ułożyć tego autora i datę -->
+            <p>
+                <!-- author -->
+                <span>Ewa Skórska Junior Front-End Developer</span>
+                <!-- publication date -->
+                <time datetime="2020-06-12">Data publikacji 06.12.2020</time>
+            </p>
+
             <!-- image -->
-            <img src="./resources/Czekoaldy-Ziarna-Świata.png">
+            <figure>
+                <img src="./resources/Czekoaldy-Ziarna-Świata.png" alt="Cztery czekolady z różnych części świata">
+                <figcaption>Nowa seria czekolad od Wedla "Ziarna Świata"</figcaption>
+            </figure>
+            
             <!-- table -->
             <table>
                 <caption>Wartość odżywcza na 100 g produktu</caption>
@@ -77,47 +103,48 @@
               </table>
         </article>
         <form action="./add-comment.php" method="POST">
-            <div>
-                <textarea rows="7" cols="60"></textarea>
-            </div>
-            <div>
-                <!-- placeholder "Twój nick" -->
-                <label for=""><input type="text"></label>
-            </div>
-            <div>
-                <input type="submit">
-            </div>
+            <h3>Dodaj komentarz</h3>
+            <textarea rows="7" cols="70" placeholder="Komentarz..."></textarea>
+            <p>
+                <label for="comment-author"><input placeholder="Podaj nick" type="text"></label>
+            </p>
+            <p>
+                <button name="submit" type="submit">Opublikuj</button>
+            </p>
         </form>
-        <ul class="comments-list">
-            <li class="comment">
-                <div class="content">Super te nowe czekolady Wedla!</div>
-                <div class="author">Kasia Czubek</div>
-                <div class="date">07.06.2020</div>
-            </li>
-            <li class="comment">
-                <div class="content">Wspaniała kolekcja! Zaraz lecę do sklepu!</div>
-                <div class="autor">Mateusz Wesołowski</div>
-                <div class="date">06.12.2020</div>
-            </li>
-            <li class="comment">
-                <div class="content">Czy ma ktoś do oddania Świerzaki dla mojego bombelka???</div>
-                <div class="autor">Jessica XOXO</div>
-                <div class="date">06.12.2020</div>
-            </li>
-        </ul>
-        <footer>
-            <p>&copy; 2020 ewaskorska</p>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="/">home</a>
-                    </li>
-                    <li>
-                        <a href="/contact">kontakt</a>
-                    </li>
-                </ul>
-            </nav>
-        </footer>
+        <section class="comments-list">
+            <h2>Komentarze</h2>
+            <ol>
+                <li class="comment">
+                    <div class="content">Super te nowe czekolady Wedla!</div>
+                    <div class="author">Kasia Czubek</div>
+                    <time datetime="2020-07-12">07.12.2020</time>
+                </li>
+                <li class="comment">
+                    <div class="content">Wspaniała kolekcja! Zaraz lecę do sklepu!</div>
+                    <div class="author">Mateusz Wesołowski</div>
+                    <time datetime="2020-06-12">06.12.2020</time>
+                </li>
+                <li class="comment">
+                    <div class="content">Czy ma ktoś do oddania Świerzaki dla mojego bombelka???</div>
+                    <div class="author">Jessica XOXO</div>
+                    <time datetime="2020-07-12">06.12.2020</time>
+                </li>
+            </ol>
+        </section>
     </main>
+    <footer>
+        <p>&copy; 2020 ewaskorska</p>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/">home</a>
+                </li>
+                <li>
+                    <a href="/contact">kontakt</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 </html>
