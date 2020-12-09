@@ -1,0 +1,9 @@
+/* Uwaga: kontur różni się od granic !
+ outline moze się nakładać i jest rysowany poza granicą  */
+
+ .menu, .nav, .nav__item, .nav2__item, .nav3__item {
+    outline: 2px solid;
+    margin: 5px; padding: 5px;
+   
+ }
+
