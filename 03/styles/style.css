@@ -1,0 +1,95 @@
+
+
+.parent {
+    width: 600px;
+    padding: 20px;
+
+}
+/* Przykład 1 */
+/* Uwaga! Należy usunąć białe znaki pomiędzy potomnymi elementami blokowymi rodzica */
+.parent--inline-block>.child {
+    font-family: 'source_sans_proregular';
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.parent--inline-block>.child--first {
+    max-width: calc(30% - 5px);
+    margin-right: 5px;  
+}
+
+.parent--inline-block>.child--middle {
+    max-width: calc(30% - 10px);
+    margin: 0 5px;
+}
+
+.parent--inline-block>.child--last {
+    max-width: calc(40% - 5px);
+    margin-left: 5px;
+}
+
+/* _____________________________________________________ */
+/* Przykład 2 */
+
+
+.parent--float>.child {
+    font-family: 'source_sans_probold';
+    float: left;
+}
+.parent--float+.parent {
+    clear: both;
+}
+
+.parent--float>.child--first {
+    max-width: calc(30% - 5px);
+    margin-right: 5px;  
+}
+
+.parent--float>.child--middle {
+    max-width: calc(30% - 10px);
+    margin: 0 5px;
+}
+
+.parent--float>.child--last {
+    max-width: calc(40% - 5px);
+    margin-left: 5px;
+}
+/* Centrowanie zawartości diva poziomo*/
+
+/* W sumie to tu to może być troche żle bo nie powinienem nadawać
+na rodzicu flexa - ale nie wiedziałem jak to wyśrodkować - 
+centrowanie zawartości textowej divów (dzieci rodzica) w poziomie */
+.parent--float {
+    display: flex;
+	align-items: center;
+}
+
+
+
+
+
+/* Przykład 3 */
+
+.parent--flexbox {
+    display: flex;
+	align-items: center;
+}
+
+.parent--flexbox>.child {
+font-family: 'source_sans_proitalic';
+}
+
+.parent--flexbox>.child--first {
+    max-width: 30%;
+    margin-right: 5px;  
+}
+
+.parent--flexbox>.child--middle {
+    max-width: 30%;
+    margin: 0 5px;
+}
+
+.parent--flexbox>.child--last {
+    max-width: 40%;
+    margin-left: 5px;
+}

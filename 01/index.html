@@ -5,8 +5,146 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
+    <link rel="stylesheet" href=".\css\reset.css">    <!--  Chyba bez kropek i ukośnik w drugą stronę? -->
+    <link rel="stylesheet" href=".\css\style.css">
 </head>
 <body>
-    
+    <!--PYTANIE: Kiedy jak i gdzie używamy Backslash a kiedy Slash?
+    Bo jak robie Copy Relative Path to odrazu mi wychodzi z backslashem, 
+    a w sumie adresy witryn są zapisywane ze slashem, więc już nie wiem-->
+    <header class="header__nav">
+        <a href="."> <!--Jak serwer to dam tylko "/" a jak z pliku to "." Czy podać pełny?-->
+            <img src="\practice-html-and-css-basics\01\images\logo2.png" alt="logotyp efremtid.no">
+            <!--tutaj powinna być kropka? <img src=".\practic... bo wtedy niedziała-->
+        </a>
+        <nav>
+            <ul class="nav">  <!--Jeżeli to by była strona one-page to wówczas dalibyśmy #home #services itd.-->
+                <li class="nav__item">
+                    menu
+                    <ul class="nav__dropdown">
+                        <li class="dropdown__item"><a class="a__item" href="/home">Strona Główna</a></li>
+                        <li class="dropdown__item"><a class="a__item" href="/services">Usługi</a></li>
+                        <li class="dropdown__item"><a class="a__item" href="/articles">Artykuły</a></li>
+                        <li class="dropdown__item"><a class="a__item" href="/prices">Cennik</a></li>
+                        <li class="dropdown__item"><a class="a__item" href="/contact">Kontakt</a></li>
+                    </ul>
+                </li>    
+            </ul>
+        </nav> 
+    </header>
+    <main> 
+        <h1>Grupa finansowa efremtid.no</h1>
+        <section>
+            <article>
+                <header class="articel__Header">
+                    <h2>Informacje o naszej firmie</h2>
+                    <p class="articel__Teaser"><em>Początki naszej firmy siegają roku 2005...</em></p>
+                    <p class="articel__Byline"><strong>Prezes Jan Kowalski</strong></p>
+                </header>
+                <p class="articel__Content">
+                    Początki naszej firmy siegają roku 2005. Wtedy Monika założyła firmę Octavia i przez 7 lat zajmowaliśmy się doradztwem i pomocą Polakom zamieszkującym w Norwegii. Szczególnie pomagaliśmy osobom nie posługującym się językiem norweskim i mającym trudności w zawiłościach prawnych. Wykonywaliśmy usługi związane z wypełnianiem wniosków, usługi tłumaczenia i rozwiązywaliśmy problemy urzędowe czy związane z pracą.
+                    Firma Fremtid została założona w 2012 roku wspólnie przez Roberta Biernata i Monikę Flisiewicz. Robert wniósł swoje doświadczenia z wielu przebytych szkoleń księgowych i współpracy w biznesie. Monika pomagała już Polakom w Norwegii od lat. Zdobyła również doświadczenie księgowe praktykując w firmie zajmującej się doradztwem podatkowym. Od 2012 roku firma dociera do coraz większej liczby klientów.
+                </p>
+                <figure>
+                    <img src="\practice-html-and-css-basics\01\images\efakturyno.png" alt="logotyp e-faktury.pl: Program do fakturowania">
+                    <figcaption>
+                        <i>W tym logo zawarte jest całe sedno</i> <!--czy wg nie możńa tego tu dawać bo to do CSS?-->
+                    </figcaption>
+                </figure>
+                <table>
+                    <caption>Wyniki finansowe</caption>
+                    <colgroup> <!--O tym muszę jeszcze poczytać, ale wg używać  tego czy lepiej robić to w css? -->
+                        <col span="2" style="background: yellow;">
+                        <col style="background: orange">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">Cel</th>
+                            <th scope="col">Wynik</th>
+                            <th scope="col">Rezultat</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Ala ma Kota</th>
+                            <td>7</td>
+                            <td>4,569</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Masło Maślane</th>
+                            <td>7</td>
+                            <td>7,223</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Zielone Jabłko</th>
+                            <td>9</td>
+                            <td>6,219</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <p>Opublikowano: <time datetime="2018-07-07T20:00:00">2018-07-07</time> przez Jan Kowaliski</p>
+                    </tfoot>
+                </table>
+            </article>
+        </section>
+
+        <section>
+            <form>
+                <div>
+                    <label for="nickname">Twój nick</label>  
+                    <input type="text" id="nickname" name="nickname" required>     
+                </div>
+                <div>
+                    <label for="user-email">Twój e-mail:</label>
+                    <input type="email" id="user-email" name="user-email" required>    
+                </div>
+                <div>
+    <!--POCZYTAĆ o label-->
+                    <label for="title">Tytuł komentarza</label>
+                    <input type="text" id="title" name="title">    
+                </div>
+                <div>
+                    <label for="content">Treść:</label>
+                    <textarea rows="10" cols="50" id="content" name="content" placeholder="Wpisz tutaj treść komentarza. Bądź miły i uprzejmy!"></textarea>
+                </div>
+                <div><input type="submit" value="dodaj"></div>
+            </form>
+        </section>    
+
+    <!--Co z tą zasadą że h1 może wystąpić tylko jeden raz-->
+           
+        <article>
+            <header>
+                <h1>Wasza opinia jest dla nas ważna!</h1>
+                <p>Tutaj możecie przeczytać opinie naszych klientów:</p>
+            </header>
+                <hgroup>
+                    <header><h2>Sprawdzone rozwiązanie dla pracodawców</h2></header>
+                    <p>Tutaj znajdziesz wszystkie ważne artykuły i narzędzia, które pomogą Ci w zrozumieniu Norwegii, podatków i księgowości. Wybierz odpowiednią pozycję z menu po lewej lub na dole.</p>
+                    <footer>
+                        Napisane przez użytkownik:<address>Adam</address>
+                        <p>Opublikowano:<time datetime="2018-06-07T20:00:00">2018-06-07</time></p>
+                    </footer>
+                </hgroup>
+                <hgroup>
+                    <header><h2>Bardzo się ciesze</h2></header>
+                    <p>Jako nagłówek sekcji możemy wstawić element HGROUP, który zawiera znaczniki H1 i H2. Tytułem sekcji będzie znacznik o najważniejszym poziomie (tutaj H1), a pozostałe zostaną oznaczone jako podtytuły i nie utworzą nowej podsekcji w dokumencie. Ma to niebagatelne znaczenie przy automatycznym tworzeniu</p>
+                    <footer>
+                        Napisane przez użytkownik:<address>Marysia</address>
+                        <p>Opublikowano:<time datetime="2018-05-07T20:00:00">2018-05-07</time></p>
+                    </footer>
+                </hgroup>   
+            <footer>
+                <p><i>Właściciel strony nie odpowiada za treści zamieszczane w komentarzach</i></p>
+            </footer>
+        </article>
+
+    </main>
+
+    <footer>
+        <p>Właścicielem serwisu jest firma Efremtid AS z siedzibą w Gjerdrum, Hellenvegen &copy; Copyright  2020 | Studio Gruby Jolo </p>  
+    </footer>
+       
+
 </body>
 </html>

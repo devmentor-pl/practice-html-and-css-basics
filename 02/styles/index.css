@@ -7,7 +7,7 @@
 Znacznik label, którego przodkiem jest klasa .ac-container 
 (0, 1, 1)
 */
-?? {
+.ac-container label {
     height: 30px !important;
     line-height: 21px !important;
     font-size: 12px !important;
@@ -47,7 +47,7 @@ Zmiana koloru tła po najechaniu przez kursor myszy na znacznik label,
 który znajduje się wewnątrze elementu o klasie .ac-container 
 (0, 2, 1)
 */
-?? {
+.ac-container label:hover {
     background: #fff;
 }
 
@@ -61,8 +61,21 @@ i ten brat musi posiadać przodka o klasie .ac-container
 to samo co w 1) ale z efektem najechania kursorem na label 
 (0, 3, 2)
 */
-??,
-?? {
+
+/*   label:nth-of-type(2)  */
+
+
+
+/*
+Mam pytanie co to wg robi za efekt? Bo jakoś nie kumam
+A drugie to czemu mi coś psuje jak chce użyć takiej kombinacji: 
+.ac-container input + label:only-of-type
+.ac-container input + label:only-of-type:hover  */
+
+
+
+.ac-container input:checked + label:only-of-type,
+.ac-container input:checked + label:only-of-type:hover {
     background: #f1f2f3;
     color: #666;
     text-shadow: 0 1px 1px rgba(255,255,255,0.6);
@@ -84,14 +97,20 @@ to samo co w 1) ale z efektem najechania kursorem na label
 }
 
 /*
+<czyli tak naprawdę wybrać węzeł tekstowy? > 
 Pseudo-element jako ostatnie dziecko label, tworzony tylko po najechaniu kursorem myszy na ten element (label),
 którego poprzedni brat jest zaznaczonym inputem (użyj pseudoklasy),
 którego przodek to element o klasie .ac-container
 (0, 3, 3)
 */
-?? {
+ 
+.ac-container input:checked + label:hover::after {
     background-image: url(../images/arrow_up.png);
 }
+/* aaaa kurde to nie było dla mnie takie oczywistw
+zaznaczony inputem = checked w sensie wybrany 
+Myślałem sobie że chodzi o to iż brat elementu <label> jest 
+"zaznaczony" w znaceniu określony/zdefiniowany poprzez znacznikiem <input>*/
 
 .ac-container input {
     display: none;
@@ -126,7 +145,7 @@ Rodzeństwo o typie article, dla elementu input, który jest zaznaczony (użyj p
 oraz posiada przodka o klasie .ac-container
 (0, 2, 2)
 */
-?? {
+.ac-container input:checked ~ article {
     -webkit-transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
     -moz-transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
     -o-transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
