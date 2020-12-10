@@ -1,0 +1,73 @@
+.paret, .child {
+    outline: 1px solid;
+}
+
+.parent {
+    width: 600px;
+    padding: 20px;
+    outline-color: green;
+}
+
+.parent--flexbox {
+    display: flex;
+    justify-content: center;
+}
+
+.parent--inline-block .child {
+    display: inline-block;
+}
+
+.parent--float::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.child {
+    margin-left: 10px;
+    outline-color: red;
+}
+
+.parent--float .child {
+    float: left;
+}
+
+.child--first {
+    margin-left: 0;
+    font: normal 15px 'sanspro';
+    outline-color: blue;
+    width: 30%
+}
+
+.child--middle {
+    font: bold 15px 'sanspro';
+    outline-color: orange;
+    width: calc(30% - 10px);
+}
+
+.child--last {
+    font: italic 15px 'sanspro';
+    outline-color: purple;
+    width: calc(40% - 10px);
+}
+
+@font-face {
+    font-family: 'sanspro';
+    src: url(../fonts/sourcesanspro-regular-webfont.woff);
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'sanspro';
+    src: url(../fonts/sourcesanspro-bold-webfont.woff);
+    font-style: bold;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'sanspro';
+    src: url(../fonts/sourcesanspro-it-webfont.woff);
+    font-style: italic;
+    font-weight: normal;
+}
