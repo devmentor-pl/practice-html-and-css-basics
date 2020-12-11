@@ -10,25 +10,25 @@
 </head>
 <body>
     <header class="menu">
-        <nav>
-            <ul class="menu__nav nav">
-                <li class="nav__item" id="Home">
-                    <a class="nav__link" href="#">home</a>
+        <nav class="menu_nav">
+            <ul class="nav">
+                <li class="nav__item nav__item--home" id="Home">
+                    <a class="nav__link nav__link--home" href="#">home</a>
                 </li>
-                <li class="nav__item" id="Items">
-                    <a class="nav__link" href="#">items</a>
-                        <ul class="nav__nav2 nav2">
-                            <li class="nav2__item">
-                                <a class="nav2__link" href="#">item 1</a>
+                <li class="nav__item nav__dropdown--menu" id="Items">
+                    <a class="nav__link nav__link--menu" href="#">items<span class="nav__link--arrow">></span></a>
+                        <ul class="nav__dropdown dropdown">
+                            <li class="dropdown__item">
+                                <a class="dropdown__link" href="#">item 1</a>
                             </li>
-                            <li class="nav2__item">
-                                <a class="nav2__link" href="#">item 2</a>
-                                <ul class="nav2__nav3 nav3">
-                                    <li class="nav3__item">
-                                        <a class="nav3__link" href="#">item 1.1</a>
+                            <li class="dropdown__item  dropdown__dualDropdown--menu">
+                                <a class="dropdown__link dropdown__link--menu" href="#">item 2<spa class="dropdown__link--arrow">></span></a>
+                                <ul class="dropdown__dualDropdown dualDropdown">
+                                    <li class="dualDropdown__item">
+                                        <a class="dualDropdown__link" href="#">item 2.1</a>
                                     </li>
-                                    <li class="nav3__item">
-                                        <a class="nav3__link" href="#">item 1.2</a>
+                                    <li class="dualDropdown__item">
+                                        <a class="dualDropdown__link" href="#">item 2.2</a>
                                     </li>
                                 </ul>
                             </li>
