@@ -1,0 +1,22 @@
+.content__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+section .cell {
+    min-height: 200px;
+}
+
+.content__container .cell {
+    min-width: 49.5%;
+}
+
+.newsfeed__container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.newsfeed__news {
+    margin: 5px;
+    min-width: 31%;
+}

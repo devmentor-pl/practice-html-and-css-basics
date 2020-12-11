@@ -1,0 +1,9 @@
+.footer__container {
+    display: flex;
+    justify-content: center;
+}
+
+.footer__copyright {
+    min-width: 10%;
+    min-height: 100px;
+}

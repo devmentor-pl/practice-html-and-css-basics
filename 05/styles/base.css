@@ -1,0 +1,20 @@
+.row, .container {
+    margin: 10px;
+    outline: 3px solid;
+    padding: 5px 0;
+   }
+
+   .row {
+    outline-color: #0ED145;
+   }
+
+   .container {
+    margin: 0 auto;
+    max-width: 1000px;
+    outline-color: #00A8F3;
+   }
+
+   .cell {
+    background-color: #FFCA18;
+   }
+   

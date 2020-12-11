@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo {
+    min-width: 16%;
+}
+
+.header__nav {
+    min-width: 40%;
+    min-height: 50px;
+}
