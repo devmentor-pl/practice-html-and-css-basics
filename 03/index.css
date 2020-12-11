@@ -30,16 +30,15 @@
 .child {
     width: 30%;
     display: inline-block;
-    clear: both;
 }
 
 .child:last-child {
     width: 40%;
 }
 
-.child--middle {
+/*.child--middle {
     margin: 0 10px;
-}
+}*/
 
 section:nth-child(3n+1) {
     display: inline-block;
