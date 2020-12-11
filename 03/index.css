@@ -1,3 +1,27 @@
+@font-face {
+    font-family: 'bold';
+    src: url('fonts/sourcesanspro-bold-webfont.woff2') format('woff2'),
+        url('fonts/sourcesanspro-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'italic';
+    src: url('fonts/sourcesanspro-it-webfont.woff2') format('woff2'),
+        url('fonts/sourcesanspro-it-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'regular';
+    src: url('fonts/sourcesanspro-regular-webfont.woff2') format('woff2'),
+        url('fonts/sourcesanspro-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .parent {
     width: 600px;
     padding: 20px;
@@ -5,8 +29,38 @@
 
 .child {
     width: 30%;
+    display: inline-block;
+    clear: both;
 }
 
 .child:last-child {
     width: 40%;
+}
+
+.child--middle {
+    margin: 0 10px;
+}
+
+section:nth-child(3n+1) {
+    display: inline-block;
+}
+
+section:nth-child(3n+2) {
+    float: left;
+}
+
+section:nth-child(3n+3) {
+    display: flex;
+}
+
+.child--first {
+    font-family: regular;
+}
+
+.child--middle {
+    font-family: bold;
+}
+
+.child--last {
+    font-family: italic;
 }
