@@ -1,0 +1,15 @@
+.main__section {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.section__article {
+    min-height: 400px;
+    width: 50%;
+}
+.section_aside {
+    min-height: 400px;
+    width: 50%;
+}
+
