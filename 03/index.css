@@ -1,24 +1,24 @@
 @font-face {
-    font-family: 'bold';
+    font-family: 'sourcesanspro';
     src: url('fonts/sourcesanspro-bold-webfont.woff2') format('woff2'),
         url('fonts/sourcesanspro-bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+    font-weight: 700;
+    font-style: bold;
 }
 
 @font-face {
-    font-family: 'italic';
+    font-family: 'sourcesanspro';
     src: url('fonts/sourcesanspro-it-webfont.woff2') format('woff2'),
         url('fonts/sourcesanspro-it-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+    font-weight: 400;
+    font-style: italic;
 }
 
 @font-face {
-    font-family: 'regular';
+    font-family: 'sourcesanspro';
     src: url('fonts/sourcesanspro-regular-webfont.woff2') format('woff2'),
         url('fonts/sourcesanspro-regular-webfont.woff') format('woff');
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
 }
 
@@ -27,39 +27,48 @@
     padding: 20px;
 }
 
-.child {
-    width: 30%;
-    display: inline-block;
-}
-
-.child:last-child {
-    width: 40%;
-}
-
-/*.child--middle {
+.parent .child--middle {
     margin: 0 10px;
-}*/
+}
 
-section:nth-child(3n+1) {
+.parent--inline-block .child {
     display: inline-block;
 }
 
-section:nth-child(3n+2) {
-    float: left;
+.child {
+    width: calc(30% - 10px);
 }
 
-section:nth-child(3n+3) {
+.parent--flexbox {
+    width: 40%;
     display: flex;
 }
 
+.parent--float .child {
+    float: left;
+}
+
+.parent--float::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
 .child--first {
-    font-family: regular;
+    font-weight: 400;
 }
 
 .child--middle {
-    font-family: bold;
+    font-weight: 800;
 }
 
 .child--last {
-    font-family: italic;
+    font-style: italic;
+}
+
+
+.child--first,
+.child--middle,
+.child-last {
+    font-family: 'sourcesanspro', Arial, sans-serif;
 }
