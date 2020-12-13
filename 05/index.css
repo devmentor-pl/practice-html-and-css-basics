@@ -1,0 +1,38 @@
+.content {
+    margin: 0 auto;
+    width: 1000px;
+    border: 2px solid blue;
+}
+
+header {
+    display: flex;
+    position: relative;
+}
+
+.main-nav {
+    width: 60%;
+    background-color: yellow;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.main-nav__list {
+    display: flex;
+}
+
+.main-nav__list li {
+    padding: 10px 20px;
+}
+
+.content-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text {
+    width: 49%;
+}
+.text--right {
+    text-align: right;
+}
