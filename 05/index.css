@@ -1,6 +1,7 @@
 .content {
     margin: 0 auto;
     width: 1000px;
+    margin-bottom: 20px;
     border: 2px solid blue;
 }
 
@@ -33,6 +34,36 @@ header {
 .text {
     width: 49%;
 }
+
 .text--right {
     text-align: right;
+}
+
+.content-container {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-item {
+    width: calc(33% - 10px);
+    height: 100px;
+    border: 1px solid green;
+}
+
+footer {
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-item {
+    height: 30px;
+    width: 200px;
+    border: 1px solid purple;
+    top: calc(10% - 15px);
+    //margin-bottom: calc(10% + 15px);
+
+
 }
