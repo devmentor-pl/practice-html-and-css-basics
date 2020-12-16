@@ -61,7 +61,7 @@
 @font-face {
     font-family: 'sanspro';
     src: url(../fonts/sourcesanspro-bold-webfont.woff);
-    font-style: bold;
+    font-style: normal;
     font-weight: bold;
 }
 
