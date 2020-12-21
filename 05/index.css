@@ -7,7 +7,7 @@
 
 header {
     display: flex;
-    position: relative;
+    justify-content: space-between;
 }
 
 .main-nav {
@@ -40,13 +40,14 @@ header {
 }
 
 .content-container {
-    padding: 20px;
+    padding: 20px 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .content-item {
-    width: calc(33% - 10px);
+    /*width: calc(33% - 10px);*/
+    width: 30%;
     height: 100px;
     border: 1px solid green;
 }
@@ -63,7 +64,4 @@ footer {
     width: 200px;
     border: 1px solid purple;
     top: calc(10% - 15px);
-    //margin-bottom: calc(10% + 15px);
-
-
 }
