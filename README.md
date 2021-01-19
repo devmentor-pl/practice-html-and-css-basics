@@ -1,6 +1,4 @@
-# [![](assets/img/logo-readme2.jpg)](https://devmentor.pl) &nbsp; HTML &amp; CSS BASICS
-
-> :speech_balloon: Jeśli oczekujesz informacji zwrotnej do napisanych przez Ciebie rozwiązań w formie komentarzy do kodu tzw. Code Review to zapraszam do :moneybag: [wsparcia mojego konta](https://github.com/sponsors/devmentor-pl).
+> :dart: *Chcę mieć absolutną pewność, że **darmowe materiały**, które publikuję, spełniają Twoje oczekiwania. Dlatego oferuję Ci ebooka o wartości 39 PLN: `Jak zostać programistą? SKUTECZNY PRZEWODNIK` w zamian za [wypełnienie ankiety](https://devmentor.pl/ankieta).*
 
 &nbsp;
 
