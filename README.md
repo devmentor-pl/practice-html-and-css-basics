@@ -29,27 +29,14 @@ Zanim przystąpisz do zadan powineneś przerobić:
 
 ## Jak wykonać zadania?
 
-Po pobraniu plików (o czym za chwilę) należy wykonywać zadania zgodnie z numerami - od najniższego numeru do najwyższego. Zgodnie z ich treścią, którą znajdziesz w pliku README.md w każdym z katalogów. Poziom trudności stopniowo się zwiększa.
+Najpierw zrób tzw. [`fork`](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/fork-a-repo) (prawy, górny róg strony). W ten sposób utworzysz kopię tego repozytorium na Twoim koncie GitHub. 
 
-Mamy dwie ścieżki dla pobrania plików:
+Teraz będziesz mógł wykonywać zadania na swoim repozytorium. Wystarczy, że skopiujesz pliki na swój komputer przy pomocy komendy [`git clone`](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository).
 
-- Chcę od razu przejść do zadań
-- Mam już doświadczenie z GitHub-em i GIT-em
+Zadania rozwiązuj jedno po drugim, ponieważ z każdym kolejnym ich poziom trudności wzrasta.  
 
-### Chcę od razu przejść do zadań
+Pamiętaj o zapisywaniu historii zmian w plikach przy pomocy komend [`git add`](https://github.com/git-guides/git-add) oraz [`git commit`](https://github.com/git-guides/git-commit).
 
-Po prawej stronie znajdziesz przycisk "clone or download" - kliknij go.
+Aby wysłać dane na zdalny serwer, wystarczy komenda [`git push`](https://github.com/git-guides/git-push).
 
-Powinien pojawić się element, w którym znajdziesz opcje "Download ZIP" - ponownie wykonaj klik.
-
-Teraz wystarczy, że rozpakujesz pobrane plik i otworzysz w swoim ulubionym edytorze (proponuję [VSC](https://code.visualstudio.com/)).
-
-### Mam już doświadczenie z GitHub-em i GIT-em
-
-Najwygodniej będzie wykonać `fork` (prawy górny róg strony), co utworzy kopie tego repozytorium na Twoim koncie GitHub i będziesz mógł wykonywać zadania na swoim repozytorium.
-
-Dzieki temu rozwiązaniu będę mógł śledzić postępy Twojej pracy nad zadaniami.
-
-&nbsp;
-
-> Powodzenia! :zap: :zap: :zap: Mateusz Bogolubow, [devmentor.pl](https://devmentor.pl)
+Po wysłaniu plików na GitHuba wykonaj [Pull Request](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork), aby wziąć udział w losowaniu bezpłatnego [Code Review](https://en.wikipedia.org/wiki/Code_review) wykonanych zadań
