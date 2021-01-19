@@ -2,6 +2,8 @@
 
 &nbsp;
 
+# HTML i CSS: Podstawy
+
 Podstawowa znajomość HTML oraz CSS jest niezbędna do rozpoczecia przygody z programowaniem w JavaScript dlatego zawsze polecam rozpoczecie nauki od podstaw tych dwóch wcześniej wspomnianych technologii.
 
 Zanim przystąpisz do zadan powineneś przerobić:
