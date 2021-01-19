@@ -19,6 +19,10 @@ Zanim przystąpisz do zadan powineneś przerobić:
 
 &nbsp;
 
+> :fire: *Raz w tygodniu wykonuję **bezpłatny [Code Review](https://en.wikipedia.org/wiki/Code_review)** wybranej losowo osobie, która nie współpracuje ze mną w ramach [mentoringu](https://devmentor.pl/mentoring-javascript/). Zrób [Pull Request](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork) i weź udział w losowaniu. Życzę Ci efektywnej nauki programowania! Pozdrawiam, [Mateusz Bogolubow](https://www.linkedin.com/in/mateusz-bogolubow/).*
+
+&nbsp;
+
 **Zadania:** :point_right: [:one:](./01) &nbsp; [:two:](./02) &nbsp; [:three:](./03) &nbsp; [:four:](./04) &nbsp; [:five:](./05) :triangular_flag_on_post:
 
 &nbsp;
