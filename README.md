@@ -27,10 +27,6 @@ Zanim przystąpisz do zadan powineneś przerobić:
 
 &nbsp;
 
-> :warning: Jeśli potrzebujesz materiałów do zadań to znajdziesz je na stronie :books:[devmentor.pl](https://devmentor.pl/p/html-and-css-basics/)
-
-> :white_check_mark: Wykonanie każdego z zadań bez problemów będzie oznaczać, że jesteś gotowy, aby przejść do następnych zagadnień :arrow_right:
-
 ## Jak wykonać zadania?
 
 Po pobraniu plików (o czym za chwilę) należy wykonywać zadania zgodnie z numerami - od najniższego numeru do najwyższego. Zgodnie z ich treścią, którą znajdziesz w pliku README.md w każdym z katalogów. Poziom trudności stopniowo się zwiększa.
