@@ -36,6 +36,7 @@
 }
 
 .nav__item {
+    position: relative;
     margin-right: 25px;
 }
 
@@ -56,10 +57,31 @@
 
 .nav__link:hover {
     color: #878788;
-    font-size: 17px;
 }
 
 .nav__link--favoritism {
     background-color: #C2C2CE;
     border: 1px solid #999999;
+}
+
+.nav__dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style: none;
+}
+
+.dropdown__item {
+    margin-top: 5px;
+}
+
+.dropdown__link {
+    display: none;
+    width: 200%;
+    text-align: center;
+    background-color: #C2C2CE;
+}
+
+.nav__item:hover .dropdown__link {
+    display: block;
 }
