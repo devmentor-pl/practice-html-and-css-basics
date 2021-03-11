@@ -40,9 +40,6 @@
     display: inline-block;
 }
 
-
-.parent:nth-child(2) {}
-
 .parent:nth-child(2)>* {
     float: left;
 }
