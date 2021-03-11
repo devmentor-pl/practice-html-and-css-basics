@@ -90,7 +90,7 @@ którego poprzedni brat jest zaznaczonym inputem (użyj pseudoklasy),
 którego przodek to element o klasie .ac-container
 (0, 3, 3)
 */
-?? {
+.ac-container input:checked+label:hover::after {
     background-image: url(../images/arrow_up.png);
 }
 
@@ -127,7 +127,7 @@ Rodzeństwo o typie article, dla elementu input, który jest zaznaczony (użyj p
 oraz posiada przodka o klasie .ac-container
 (0, 2, 2)
 */
-?? {
+.ac-container input:checked~article {
     -webkit-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
     -moz-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
     -o-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
