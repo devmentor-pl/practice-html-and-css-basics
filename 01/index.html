@@ -60,9 +60,14 @@
             <aricle class="main__article">
                 <div class="article__leftSite">
                     <h1 class="article__title">Laptop or pc</h1>
-                    <p class="article__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, quod
+                    <p class="article__paragraph">lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
+                        quod Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam quo tenetur quod rem
+                        recusandae laborum fuga quasi at alias cumque dicta iusto provident sequi ipsam, numquam,
+                        expedita, explicabo corporis est.
                         hic facere nam expedita in sapiente sunt possimus unde, aliquam delectus eaque laborum tempora
-                        iste ad quae rerum consectetur culpa?</p>
+                        iste ad quae rerum consectetur culpa?Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Enim commodi rerum tempore ipsum. Molestias ut aperiam, ducimus expedita adipisci modi assumenda
+                        nihil odit recusandae velit inventore ad deleniti officiis nesciunt.</p>
                     <time class="article__date article__author--no-bottomPadding" datetime="2021-03-11 16:00">11 marca
                         2021, godz. 16:00</time>
                     <p class="article__author article__author--no-topPadding">Author</p>
@@ -100,15 +105,53 @@
                 </div>
             </aricle>
             <aside class=" main__aside">
-                <form action=""></form>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem facere
-                    perspiciatis aut voluptatibus
-                    veniam maiores nisi, quidem, nesciunt deserunt iusto expedita numquam dolor
-                    accusantium reiciendis
-                    ad beatae ratione, magni porro.</p>
+                <div class="aside__form form--border-radius">
+                    <h2 class='form__title'>Comment the article</h2>
+                    <form class="form__content">
+                        <div><label for="name">First and Last Name</label></div>
+                        <div><input type="text" name="name" id="name" class="form__field form--border-radius"></div>
+                        <div><label for="message">Message Content</label></div>
+                        <div><textarea name="message" id="message" class="form__field form--border-radius"></textarea>
+                        </div>
+                        <div><button class="form__button form--border-radius">Send</button></div>
+                    </form>
+                </div>
+                <div class="aside__comments">
+                    <div class="aside__comment">
+                        <p class="comment__author">John<span>,</span><time class="comment__time"
+                                datetime="2021-03-11 16:00">11 marca 2021, godz. 16:00</time></p>
+                        <p class="comment__content">Definitely in favor of a laptop, mobility and convenience rules.
+                        </p>
+                        <div class="comment__replay">
+                            <p class="comment__author">AmericanJanusz<span>,</span><time class="comment__time"
+                                    datetime="2021-03-11 16:00">11 marca 2021, godz. 16:05</time></p>
+                            <p class="comment__content">LOL, what are you saying homie, only pc...
+                            </p>
+                        </div>
+                    </div>
+                    <div class="aside__comment">
+                        <p class="comment__author">Rafał<span>,</span><time class="comment__time"
+                                datetime="2021-03-11 16:00">11 marca 2021, godz. 17:00</time></p>
+                        <p class="comment__content">It's good to have both.
+                        </p>
+                    </div>
+                    <div class="aside__comment">
+                        <p class="comment__author">Karolina<span>,</span><time class="comment__time"
+                                datetime="2021-03-11 16:00">11 marca 2021, godz. 18:00</time></p>
+                        <p class="comment__content">Everyone has their own tastes.
+                        </p>
+                    </div>
+                </div>
             </aside>
         </div>
     </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__copyright">
+                <p class="footer__paragraph">&copy; 2021 Kajetan Kisielewski. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

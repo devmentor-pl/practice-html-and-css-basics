@@ -82,24 +82,23 @@
     display: block;
 }
 
-
 .main {
     box-shadow: 0 -5px 5px -5px black;
     background-color: #FCFCFC;
+    padding: 80px 0;
 }
 
 .main__container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .main__article {
-    background-color: royalblue;
     display: flex;
-    flex-basis: 50%;
+    justify-content: flex-start;
+    flex-basis: 55%;
     padding: 100px 20px;
 }
 
@@ -114,7 +113,16 @@
 .article__paragraph,
 .article__date,
 .article__author {
-    padding: 15px 30px 15px 0;
+    padding: 15px 50px 15px 0;
+}
+
+.article__title {
+    text-transform: uppercase;
+}
+
+.article__date,
+.article__author {
+    font-weight: bold;
 }
 
 
@@ -129,6 +137,7 @@
 .article__rightSite {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     flex-basis: 40%;
 }
 
@@ -162,6 +171,99 @@
 }
 
 .main__aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     flex-basis: 40%;
-    background-color: rgb(197, 87, 87);
+}
+
+.aside__form {
+    flex-basis: 40%;
+    padding: 10px 20px;
+    border: 1px solid black;
+    background-color: rgb(194, 194, 206);
+}
+
+.form__title {
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.form__field {
+    border: 1px solid rgb(0, 0, 0);
+    margin: 5px 0;
+    padding: 5px 0;
+}
+
+.form--border-radius {
+    border-radius: 10px;
+}
+
+textarea.form__field {
+    min-width: 300px;
+    max-width: 300px;
+    min-height: 100px;
+    max-height: 100px;
+}
+
+.form__button {
+    cursor: pointer;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 0, 0);
+    line-height: 32px;
+    font-size: 15px;
+    padding: 0 30px;
+}
+
+.aside__comments {
+    flex-basis: 40%;
+    overflow-x: hidden;
+}
+
+.aside__comment {
+    border: 1px solid black;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    background-color: rgb(194, 194, 206);
+}
+
+.aside__comment:nth-child(1) {
+    position: relative;
+}
+
+.comment__author {
+    margin-bottom: 5px;
+}
+
+.comment__time {
+    margin-left: 2px;
+}
+
+.comment__content {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.comment__replay {
+    position: relative;
+    top: 0;
+    left: 10%;
+    margin-top: 10px;
+}
+
+.footer {
+    background-color: rgb(194, 194, 206);
+    box-shadow: 0 5px 5px 5px black;
+}
+
+.footer__container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer__copyright {
+    padding: 20px;
+}
+
+.footer__paragraph {
+    font-family: Arial, Helvetica, sans-serif;
 }
