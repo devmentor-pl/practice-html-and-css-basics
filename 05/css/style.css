@@ -7,24 +7,24 @@
 .row,
 .cell,
 .container {
-    margin: 5px 0 10px 0;
-    outline: 3px solid;
+    margin: 10px 0 20px 0;
 }
 
 .row {
     padding: 5px;
-    outline-color: green;
+    outline: 3px solid green;
 }
 
 .container {
     margin: 0 auto;
     max-width: 1000px;
-    outline-color: blue;
+    outline: 3px solid blue;
 }
 
 .cell {
     min-height: 50px;
     outline-color: orange;
+    background-color: orange;
 }
 
 .header__container {
@@ -34,10 +34,51 @@
 
 .header__logo {
     flex-basis: 20%;
-    background-color: orange;
 }
 
 .header__nav {
     flex-basis: 40%;
-    background-color: orange;
+}
+
+.section__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section__item1,
+.section__item2 {
+    flex-basis: 49%;
+    height: 25vh;
+}
+
+.section__second .section__container {
+    justify-content: space-between;
+}
+
+.section__second .section__item1 {
+    margin-left: 1%;
+}
+
+.section__second .section__item3 {
+    margin-right: 1%;
+}
+
+.section__second .section__item1,
+.section__second .section__item2,
+.section__second .section__item3 {
+    flex-basis: 32%;
+    height: 25vh;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 15px;
+}
+
+.footer__item {
+    width: 20%;
+    min-height: 50px;
+    margin: 0;
 }
