@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'dejavu';
+    src: url('../fonts/dejavuserif_regular_macroman/DejaVuSerif-webfont.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'dejavu';
+    src: url('../fonts/dejavuserif_bold_macroman/DejaVuSerif-Bold-webfont.woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'dejavu';
+    src: url('../fonts/dejavuserif_italic_macroman/');
+    font-weight: normal;
+    font-style: italic;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parent {
+    width: 600px;
+    padding: 20px;
+}
+
+.parent:nth-child(1) {
+    font-size: 0;
+}
+
+.parent:nth-child(1)>* {
+    font-size: 16px;
+    display: inline-block;
+}
+
+.parent:nth-child(2)>* {
+    float: left;
+}
+
+.parent:nth-child(2)::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.parent:nth-child(3) {
+    display: flex;
+}
+
+
+.child:nth-child(1) {
+    width: 30%;
+    font-family: 'dejavu';
+    font-style: normal;
+    font-weight: 400;
+}
+
+.child:nth-child(2) {
+    width: 30%;
+    padding: 0 10px;
+    font-family: 'dejavu';
+    font-style: normal;
+    font-weight: 700;
+}
+
+.child:nth-child(3) {
+    width: 40%;
+    font-family: 'dejavu';
+    font-style: italic;
+    font-weight: 400;
+}
