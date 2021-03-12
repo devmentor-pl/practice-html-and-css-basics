@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.row,
+.cell,
+.container {
+    margin: 5px 0 10px 0;
+    outline: 3px solid;
+}
+
+.row {
+    padding: 5px;
+    outline-color: green;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1000px;
+    outline-color: blue;
+}
+
+.cell {
+    min-height: 50px;
+    outline-color: orange;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo {
+    flex-basis: 20%;
+    background-color: orange;
+}
+
+.header__nav {
+    flex-basis: 40%;
+    background-color: orange;
+}
