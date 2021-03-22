@@ -5,8 +5,220 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
+
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/content.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+
 </head>
 <body>
-    
+
+    <header class="header row">
+        <div class="header__container container">
+            <h1 class="header__logo cell">
+                <a>
+                    <img id='main_logo' src="./images/logo_abc.jpg" alt = "logo">
+                </a>
+            </h1>
+            <nav class="header__nav cell">
+                <ul>
+                    <li><a href="#">Strona główna</a></li>
+                    <li><a href="#">Krzyżówki</a>
+                        <ul>
+                            <li><a href="https://cdpn.io/KawczynskiRadoslaw/debug/BaQXeqb">Panorama No 1</a></li>
+                            <li><a href="https://cdpn.io/KawczynskiRadoslaw/debug/poNMmMg">Panorama No 2</a></li>
+                            <li><a href="https://cdpn.io/KawczynskiRadoslaw/debug/PobMrYg">Panorama No 3</a></li>
+                            <li><a href="https://cdpn.io/KawczynskiRadoslaw/debug/QWGeXwb">Panorama No 4</a></li>
+                            <li><a href="https://cdpn.io/KawczynskiRadoslaw/debug/MWbNMYj">Panorama No 5</a></li>
+                            <li><a href="https://cdpn.io/KawczynskiRadoslaw/debug/LYbwKEm">Panorama No 6</a></li>
+                            <li><a href="https://cdpn.io/KawczynskiRadoslaw/debug/PobMrwv">Panorama No 7</a></li>
+                            <li><a href="https://cdpn.io/KawczynskiRadoslaw/debug/bGBXPdG">Panorama No 8</a></li>
+                            <li><a href="https://cdpn.io/KawczynskiRadoslaw/debug/MWbNMwb">Panorama No 9</a></li>
+                            <li><a href="https://cdpn.io/KawczynskiRadoslaw/debug/zYogVGd">Panorama No 10</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Słownik</a>
+                        <ul>
+                            <li><a href="#">HTML</a>
+                                <ul>
+                                    <li><a href="#">HTML 01</a></li>
+                                    <li><a href="#">HTML 02</a></li>
+                                    <li><a href="#">HTML 03</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">CSS</a>
+                                <ul>
+                                    <li><a href="#">CSS 01</a></li>
+                                    <li><a href="#">CSS 02</a></li>
+                                    <li><a href="#">CSS 03</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">JS</a>
+                                <ul>
+                                    <li><a href="#">JS 01</a></li>
+                                    <li><a href="#">JS 02</a></li>
+                                    <li><a href="#">JS 03</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Gry</a>
+                        <ul>
+                            <li><a href="https://cdpn.io/KawczynskiRadoslaw/debug/MWbdmPv">Mastermind</a></li>
+                            <li><a href="#">Saper</a></li>
+                            <li><a href="#">Okręty</a></li>
+                            <li><a href="https://codepen.io/KawczynskiRadoslaw/full/KKNQPwy">Sudoku</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="content row">
+        <div class="content__container container">
+            <article class="content__article cell">
+                <header>
+                    <h1 class="headline">Podręcznik krzyżówkowicza</h1>
+                    <div class="byline">
+                        <address class="author"> <a rel="author" href="#">Radosław Kawczyński</a></address> 
+                        <time pubdate datetime="2021-03-22" title="March 22th, 2021">22/03/2021</time>
+                    </div>
+                </header>
+            
+                <div class="article-content">
+                    <p>Poniższa tabelka i wykres prezentują procentowy udział poszczególnych liter w próbce liczącej ponad 30 milionów segmentów (około 25 milionów słów ortograficznych). W korpusie zdarzały się również wystąpienia liter z innych alfabetów, były one jednak znacznie rzadsze niż najrzadsze litery w tabelce poniżej. Na przykład kolejna co do częstości litera, é, wystąpiła 1939 razy, w porównaniu do 22429 wystąpień litery x czy 81474 wystąpień litery ź.</p>
+                    <p>Warto przy okazji zauważyć, że niektóre znaki interpunkcyjne występują w tekstach polskich częściej niż wiele liter. Na przykład najczęstszy polski znak przestankowy, przecinek, występuje częściej niż litera b.</p>
+                </div>
+
+                <div class="article__ilustrations">
+                    <div class="article__ilustration">
+                        <h5>Częstość liter w polskim alfabecie</h5>
+                        <table>
+                            <!-- <caption>Częstość liter w polskim alfabecie</caption> -->
+                            <colgroup>
+                                <col span="2" style="background: yellow">
+                                <col span="2" style="background: orange">
+                                <col span="2" style="background: yellow">
+                                <col span="2" style="background: orange">
+                                <col span="2" style="background: yellow">
+                            </colgroup>
+                            <thead>
+                                <!-- <tr>
+                                    <th scope="col">Nazwa</th>
+                                </tr> -->
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>A</td>
+                                    <td>8.91%</td>
+                                    <td>W</td>
+                                    <td>4.65%</td>
+                                    <td>P</td>
+                                    <td>3.13%</td>
+                                    <td>G</td>
+                                    <td>1.42%</td>
+                                    <td>Ć</td>
+                                    <td>0.40%</td>
+                                </tr>
+                                <tr>
+                                    <td>I</td>
+                                    <td>8.21%</td>
+                                    <td>S</td>
+                                    <td>4.32%</td>
+                                    <td>M</td>
+                                    <td>2.80%</td>
+                                    <td>Ę</td>
+                                    <td>1.11%</td>
+                                    <td>F</td>
+                                    <td>0.30%</td>
+                                </tr>
+                                <tr>
+                                    <td>O</td>
+                                    <td>7.75%</td>
+                                    <td>T</td>
+                                    <td>3.98%</td>
+                                    <td>U</td>
+                                    <td>2.50%</td>
+                                    <td>H</td>
+                                    <td>1.08%</td>
+                                    <td>Ń</td>
+                                    <td>0.20%</td>
+                                </tr>
+                                <tr>
+                                    <td>E</td>
+                                    <td>7.66%</td>
+                                    <td>C</td>
+                                    <td>3.96%</td>
+                                    <td>J</td>
+                                    <td>2.28%</td>
+                                    <td>Ą</td>
+                                    <td>0.99%</td>
+                                    <td>Q</td>
+                                    <td>0.14%</td>
+                                </tr>
+                                <tr>
+                                    <td>Z</td>
+                                    <td>5.64%</td>
+                                    <td>Y</td>
+                                    <td>3.76%</td>
+                                    <td>L</td>
+                                    <td>2.10%</td>
+                                    <td>Ó</td>
+                                    <td>0.85%</td>
+                                    <td>Ź</td>
+                                    <td>0.08%</td>
+                                </tr>
+                                <tr>
+                                    <td>N</td>
+                                    <td>5.52%</td>
+                                    <td>K</td>
+                                    <td>3.51%</td>
+                                    <td>Ł</td>
+                                    <td>1.82%</td>
+                                    <td>Ż</td>
+                                    <td>0.83%</td>
+                                    <td>V</td>
+                                    <td>0.04%</td>
+                                </tr>
+                                <tr>
+                                    <td>R</td>
+                                    <td>4.69%</td>
+                                    <td>D</td>
+                                    <td>3.25%</td>
+                                    <td>B</td>
+                                    <td>1.47%</td>
+                                    <td>Ś</td>
+                                    <td>0.66%</td>
+                                    <td>X</td>
+                                    <td>0.02%</td>
+                                </tr>                 
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="article__ilustration">
+                        <h5>Wykres częstości liter polskiego alfabetu</h5>
+                        <a>
+                            <img src="./images/wykres_litery.png" alt = "wykres">
+                        </a>
+                    </div>
+                </div>
+
+            </article>
+            <aside class="content__ads cell"></aside>
+        </div>
+    </section>
+
+    <footer class="footer row">
+        <div class="footer__container container">
+            <section class="footer__copyrights cell"></section>
+            <section class="footer__logo cell"></section>
+            <section class="footer__sponsor cell"></section>
+        </div>
+    </footer>
+
 </body>
 </html>
