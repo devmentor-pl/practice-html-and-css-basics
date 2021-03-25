@@ -1,0 +1,53 @@
+
+@font-face {
+    font-family: "Source Sans PRO";
+    src: url("https://www.fontsquirrel.com/fonts/source-sans-pro");
+}
+
+.parent {
+    width: 600px;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.parent--inline-block {
+    display: inline-block;
+    flex-direction: row;
+    background-color: red;
+}
+
+.parent--float {
+    float: left;
+    flex-direction: row;
+    background-color: red;
+}
+
+.parent--flexbox {
+    display: flexbox;
+    flex-direction: row;
+    background-color: red;
+}
+
+section > div:first-child {
+    float: left;
+    width: calc(3px * (600 - 20) / 10);
+    margin: 0px 5px 0px 0px;
+    font-style: normal;
+    background-color: yellow;
+}
+
+section > div:nth-child(2) {
+    float: left;
+    width: calc(3px * (600 - 20) / 10);
+    margin: 0px 5px 0px 5px;
+    font-style: bold;
+    background-color: green;
+}
+
+section > div:last-child {
+    float: left;
+    width: calc(4px * (600 - 20) / 10);
+    margin: 0px 0px 0px 5px;
+    font-style: italic;
+    background-color: indigo;
+}
