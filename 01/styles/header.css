@@ -13,7 +13,7 @@
      min-width: 400px;
 }
 
-img#main_logo {
+img.header_img-logo {
      width: 30%;
      height: auto;
 }
@@ -25,12 +25,12 @@ img#main_logo {
      justify-content: space-evenly;
 }
 
-ul {
+.ul-header__menu {
      list-style: none;
      float: left;
 }
 
-ul > li {
+.ul-header__menu > li {
      margin: 0;
      padding: 0;
      float: left; 
@@ -38,19 +38,19 @@ ul > li {
      height: 30px;
 }
 
-ul > li > a {
+.ul-header__menu > li > a {
      padding: 10px; 
      color: #444;
      text-decoration: none;
 }
 
-ul > li > a:hover, 
-ul > li:hover > a {
+.ul-header__menu > li > a:hover, 
+.ul-header__menu > li:hover > a {
      color: green;
      text-decoration: underline;
 }
 
-ul > li ul {
+.ul-header__menu > li .ul-header__menu {
      padding: 0;
      position: absolute; 
      display: none; 
@@ -61,38 +61,35 @@ ul > li ul {
      background-color: #fcfcfc;
      border: 1px solid #ccc;
 }
- 
-ul li:hover > ul {
+
+.ul-header__menu li:hover > .ul-header__menu {
      display: block;
 }
- 
-ul > li ul ul {
+
+.ul-header__menu > li .ul-header__menu .ul-header__menu {
      left: 200px; 
      top: -1px;
 }
- 
-ul > li ul li {
+
+.ul-header__menu > li .ul-header__menu li {
      margin: 0; 
      padding: 0;
      position: relative; 
      float: none; 
      height: auto;
 }
- 
-ul > li ul li a {
+
+.ul-header__menu > li .ul-header__menu li a {
      padding: 10px 20px; 
      color: #505050; 
      text-decoration: none;
      display: block;
 }
- 
-ul > li ul li a:hover,
-ul > li ul li:hover > a {
+
+.ul-header__menu > li .ul-header__menu li a:hover,
+.ul-header__menu > li .ul-header__menu li:hover > a {
      text-decoration: none;
      color: black;
      background-color: yellowgreen;
 }
 
-.test + li {
-     background: red;
-}
