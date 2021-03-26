@@ -49,7 +49,7 @@ section > div:nth-child(2) {
     float: left;
     width: calc(3px * (600 - 20) / 10);
     margin: 0px 5px 0px 5px;
-    font-style: bold;
+    font-weight: bold;
     background-color: green;
 }
 
