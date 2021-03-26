@@ -1,0 +1,57 @@
+.parent {
+    width: 600px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+.child--first~.child--last {
+    word-spacing: 10px;
+}
+
+@font-face {
+    font-family: 'sourcesanspro';
+    src: url('sourcesanspro-black-webfont.woff2') format('woff2'),
+        url('sourcesanspro-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.child--first {
+    font-family: 'sourcesanspro';
+    font-weight: normal;
+    width: 30%;
+}
+
+.child--middle {
+    font-family: 'sourcesanspro';
+    font-weight: bold;
+    width: 30%;
+}
+
+.child--last {
+    font-family: 'sourcesanspro';
+    font-style: italic;
+    width: 40%;
+}
+
+section.parent--inline-block {
+    display: inline-block;
+    background-color: antiquewhite;
+    color: rgb(136, 111, 158);
+}
+
+section.parent--float {
+    float: inherit;
+    clear: both;
+    background-color: rgb(126, 31, 86);
+    color: rgb(204, 175, 155);
+}
+
+section.parent--flexbox {
+    display: flex;
+    justify-content: space-around;
+    background-color: rosybrown;
+    color: rgb(124, 26, 46);
+}
