@@ -48,7 +48,7 @@
     flex-direction: row;
     justify-content: space-evenly;
     margin: 5px 5px 5px 5px;
-    padding: 5px 0px 5px 0px;
+    padding: 5px 5px 5px 5px;
     outline: 3px solid blue;
 }
 
@@ -93,7 +93,7 @@
 #section__content_3 {
     outline: 3px solid orange;
     background-color: orange;
-    margin: 5px 10px 5px 20px;
+    margin: 5px 10px 5px 10px;
     width: 33%;
     height: 150px;
 }
@@ -109,9 +109,9 @@
 #section__content_5 {
     outline: 3px solid orange;
     background-color: orange;
-    margin: 10px 20px 10px 10px;
+    margin: 5px 10px 5px 10px;
     width: 33%;
-    height: 140px;
+    height: 150px;
 }
 
 #footer__content_1 {
