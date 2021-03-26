@@ -1,14 +1,11 @@
 
 @font-face {
-    font-family: 'Source Sans PRO';
-    src: url('webfont.eot'); /* IE9 Compat Modes */
-    src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('/source-sans-pro/SourceSansPro-Black.otf') format('woff2'), /* Super Modern Browsers */
-         url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
-         url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
-         url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
-         font-weight: 400;
-         font-style: italic;
+    font-family: "Source Sans PRO";
+    src: url(https://www.fontsquirrel.com/fonts/source-sans-pro);
+}
+
+body {
+    font-family: "Source Sans PRO", sans-serif;
 }
 
 .parent {
