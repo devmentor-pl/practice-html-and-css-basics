@@ -1,62 +1,77 @@
 
 @font-face {
-    font-family: "Source Sans PRO";
-    src: url(https://www.fontsquirrel.com/fonts/source-sans-pro);
+    font-family: "Source Sans Regular";
+    src: url(./source-sans-pro/SourceSansPro-Regular.otf) format("opentype");
+    font-weight: normal;
 }
 
-body {
-    font-family: "Source Sans PRO", sans-serif;
+@font-face {
+    font-family: "Source Sans Italic";
+    src: url(./source-sans-pro/SourceSansPro-It.otf) format("opentype");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Source Sans Bold";
+    src: url(./source-sans-pro/SourceSansPro-Bold.otf) format("opentype");
+    font-weight: bold;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 .parent {
     width: 600px;
     padding: 20px;
-    border: 1px solid black;
+    border: 0.1px solid black;
 }
 
-.parent--inline-block {
-    display: inline-block;
-    flex-direction: row;
-    background-color: red;
-}
-
-.parent--float {
-    float: left;
-    flex-direction: row;
-    background-color: orange;
-}
-
-/* https://stackoverflow.com/questions/16280040/css3-flexbox-display-box-vs-flexbox-vs-flex */
-.parent--flexbox {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: row;
-    background-color: orangered;
-}
-
-section > div:first-child {
-    float: left;
-    width: calc(3px * (600 - 20) / 10);
+.child--first {
+    font-family: "Source Sans Regular";
+    width: calc(3px * (600 - 40) / 10);
     margin: 0px 5px 0px 0px;
-    font-style: normal;
+    border: 0.1px solid black;
     background-color: yellow;
 }
 
-section > div:nth-child(2) {
-    float: left;
-    width: calc(3px * (600 - 20) / 10);
+.child--middle {
+    font-family: "Source Sans Bold";
+    width: calc(3px * (600 - 40) / 10);
     margin: 0px 5px 0px 5px;
-    font-weight: bold;
-    background-color: green;
+    border: 0.1px solid black;
+    background-color: lightblue;
 }
 
-section > div:last-child {
-    float: left;
-    width: calc(4px * (600 - 20) / 10);
+.child--last {
+    font-family: "Source Sans Italic";
+    width: calc(4px * (600 - 40) / 10);
     margin: 0px 0px 0px 5px;
-    font-style: italic;
-    background-color: indigo;
+    border: 0.1px solid black;
+    background-color: orangered;
+}
+
+.parent--inline-block .child--first,
+.parent--inline-block .child--middle,
+.parent--inline-block .child--last {
+    display: inline-block;
+}
+
+.parent--float .child--first,
+.parent--float .child--middle,
+.parent--float .child--last {
+    float: left;
+}
+
+.parent--float::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.parent--flexbox {
+    display: flex;
 }
