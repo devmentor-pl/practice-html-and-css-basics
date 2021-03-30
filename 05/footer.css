@@ -1,0 +1,17 @@
+/* footer.css */
+.footer__container {
+    margin: 0 auto;
+    max-width: 1000px;
+    color: #ebecf1;
+    min-height: 100px;
+    padding-top: 30px;
+
+
+}
+
+.footer__copyrights,
+.footer__logo {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
