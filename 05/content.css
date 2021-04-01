@@ -23,7 +23,7 @@
 
 }
 
-.content1__container {
+.content__content {
     display: flex;
     justify-content: space-evenly;
     background-color: #eeeeee;
@@ -32,9 +32,7 @@
     height: 750px;
 }
 
-
-
-.content1__article {
+.content__note {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
