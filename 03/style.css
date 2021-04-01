@@ -2,6 +2,7 @@
     width: 600px;
     padding: 20px;
     box-sizing: border-box;
+    font-family: 'sourcesanspro';
 }
 
 
@@ -17,21 +18,20 @@
     font-style: normal;
 }
 
-
 .child--first {
-    font-family: 'sourcesanspro';
     font-weight: normal;
+    font-style: normal;
     width: 30%;
 }
 
 .child--middle {
-    font-family: 'sourcesanspro';
+    font-weight: normal;
     font-weight: bold;
     width: 30%;
 }
 
 .child--last {
-    font-family: 'sourcesanspro';
+    font-weight: normal;
     font-style: italic;
     width: 40%;
 }
@@ -43,7 +43,7 @@ section.parent--inline-block {
 }
 
 section.parent--float {
-    float: inherit;
+    float: left - inherit;
     clear: both;
     background-color: rgb(126, 31, 86);
     color: rgb(204, 175, 155);
@@ -51,7 +51,7 @@ section.parent--float {
 
 section.parent--flexbox {
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
     background-color: rosybrown;
     color: rgb(124, 26, 46);
 }
