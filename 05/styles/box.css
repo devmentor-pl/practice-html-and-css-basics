@@ -1,0 +1,9 @@
+.box__container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box__article {
+    min-height: 300px;
+    width: 200px;
+}

@@ -1,0 +1,9 @@
+.content__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content__article {
+    min-height: 400px;
+    width: 450px;
+}
