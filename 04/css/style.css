@@ -23,6 +23,7 @@ a{
   padding: 1rem;
   font-weight: bold;
   display: block;
+  letter-spacing: 0.075rem;
 }
 /* primary nav */
 .nav{
