@@ -58,8 +58,7 @@ a{
   display: none;
 }
 .dropdown__link{
-  padding: 1rem;
-  outline: 1px solid black;
+  padding: 1rem
 }
 .arrow{
   padding-left: 8rem;
