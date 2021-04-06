@@ -1,0 +1,34 @@
+/* section */
+section {
+  width: 100%;
+  height: 40%;
+  outline: 3px solid red;
+  min-height: 400px;
+}
+/* section ONE */
+.one{
+  padding: 0.5rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+.one__item{
+  background-color: yellow;
+  flex-basis: 49.5%;
+   
+}
+/* section TWO */
+.two{
+  display: flex;
+  justify-content: space-around;
+}
+.two__item{
+  background-color: yellow;
+  width: 100%;
+  margin: 1rem 0.5rem;
+}
+.two__item:nth-child(1){
+  margin-left: 1rem;
+}
+.two__item:nth-child(3){
+  margin-right: 1rem;
+}

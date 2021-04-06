@@ -1,0 +1,18 @@
+/* header */
+header{
+  width: 100%;
+  height: 10%;
+  min-height: 80px;
+  padding: 0.5rem 0;
+  outline: 3px solid blue;
+  display: flex;
+  justify-content: space-between;
+}
+.logo{
+  flex-basis: 20%;
+  background-color: yellow;
+}
+nav{
+  flex-basis: 40%;
+  background-color: yellow;
+}

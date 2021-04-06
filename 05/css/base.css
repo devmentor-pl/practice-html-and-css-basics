@@ -1,0 +1,13 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.l-wrap{
+  width: 1000px;
+  /* height: 100vh; */
+  margin: 0 auto;
+}
+.row{
+  margin: 0.5rem 0;
+}
