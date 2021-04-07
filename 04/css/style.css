@@ -46,9 +46,12 @@ a{
 .item__link--dropdown::after{
   content: "";
   display: inline-block;
+  width: 10px;
+  height: 10px;
   margin: 0 0.5rem;
-  border: 10px solid transparent;
-  border-top-color: #007580;
+  border-bottom: 3px solid #007580;
+  border-left: 3px solid #007580;
+  transform: rotate(-45deg);
 }
 
 /* primary dropdown */
@@ -68,10 +71,14 @@ a{
 .dropdown__link--dropdown::after{
   content: "";
   position: absolute;
-  left: 90%;
   display: inline-block;
-  border: 10px solid transparent;
-  border-left-color: white; 
+  width: 10px;
+  height: 10px;
+  margin: 0 0.5rem;
+  border-top: 3px solid #fed049;
+  border-right: 3px solid #fed049;
+  transform: rotate(45deg);
+  left: 80%;
 }
 
 
