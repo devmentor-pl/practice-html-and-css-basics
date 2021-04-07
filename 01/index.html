@@ -29,14 +29,15 @@
 
             <figure>
                 <img src="#" alt="Miejsce na zdjęcie">
+                <figcaption>Opis obrazka</figcaption>
             </figure>
             <table class="table">
                 <caption>Tabela</caption>
                 <thead>
                     <tr>
-                        <th>HTML</th>
-                        <th>CSS</th>
-                        <th>JS</th>
+                        <th scope="col">HTML</th>
+                        <th scope="col">CSS</th>
+                        <th scope="col">JS</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -55,8 +56,9 @@
         </article>    
         <form action="" class="form">
             <div class="form__item">
-                <h3 class="t3 form__item">Podziel się z nami opinią</h3>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <label for="form__comment">Podziel się z nami opinią</label>
+                <br>
+                <textarea name="" id="form__comment" cols="30" rows="10"></textarea>
             </div>
             <div class="form__item">
                 <button>Send</button>  
@@ -68,6 +70,7 @@
                 <p class="s1 item__element">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto molestiae sed vitae alias minima adipisci a ab pariatur optio earum?</p>
                 <address rel="author">Grzegorz Publicysta</address>
                 <time pubtime datetime="2021-02-10">marzec 2021</time>
+                
                 <hr>
             </article>
             <article class="comments__item">
