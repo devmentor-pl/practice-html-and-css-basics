@@ -21,14 +21,14 @@ section {
   display: flex;
   justify-content: space-around;
 }
-.two__item{
+.two__item, .two__item--left, .two__item--right{
   background-color: yellow;
   width: 100%;
   margin: 1rem 0.5rem;
 }
-.two__item:nth-child(1){
+.two__item--left{
   margin-left: 1rem;
 }
-.two__item:nth-child(3){
+.two__item--right{
   margin-right: 1rem;
 }

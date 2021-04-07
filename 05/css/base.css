@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 .l-wrap{
-  width: 1000px;
+  max-width: 1000px;
   /* height: 100vh; */
   margin: 0 auto;
 }
