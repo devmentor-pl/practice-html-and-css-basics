@@ -1,0 +1,78 @@
+@font-face{
+    font-family: 'Source Sans Pro';
+    src: url('/practice-html-and-css-basics/03/assets/fonts/SourceSansPro-Regular.otf') format('opentype');
+}
+/* general rules */
+*{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+:root{
+    --width: 600px;
+    --padding: 20px;
+    --margin-inner: 10px;
+    --width-calcAlfa: calc((600px - 40px - 20px) * 0.3); /* width - padding x2 - margin x2*/
+    --width-calcBeta: calc((600px - 40px - 20px) * 0.4); /* width - padding x2 - margin x2*/
+}
+.parent{
+    width: var(--width);
+    padding: var(--padding);
+    box-sizing: border-box;
+}
+.child--middle{
+    font-weight: bold;
+}
+.child--last{
+    font-style: italic;
+}
+
+/* inline-block */
+.parent--inline-block .child--first,
+.parent--inline-block .child--middle{
+    display: inline-block;
+    width: var(--width-calcAlfa);
+    
+}
+.parent--inline-block .child--middle{
+    margin: 0 var(--margin-inner);
+}
+.parent--inline-block .child--last{
+    display: inline-block;
+    width: var(--width-calcBeta);
+}
+
+/* float */
+.parent--float::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.parent--float .child--first,
+.parent--float .child--middle{
+    float: left;
+    width: var(--width-calcAlfa);
+}
+.parent--float .child--middle{
+    margin: 0 var(--margin-inner);
+}
+.parent--float .child--last{
+    float: left;
+    width: var(--width-calcBeta);
+}
+
+/* flexbox */
+.parent--flexbox{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.parent--flexbox .child--first, 
+.parent--flexbox .child--middle {
+    flex-basis: 30%;
+}
+.parent--flexbox .child--middle{
+    margin: 0 var(--margin-inner);
+}
+ .parent--flexbox > .child--last {
+    flex-basis: 40%;
+}
