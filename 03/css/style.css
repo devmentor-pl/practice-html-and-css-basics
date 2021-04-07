@@ -1,14 +1,21 @@
 @font-face{
     font-family: 'Source Sans Pro';
-    src: url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+    src: url('/practice-html-and-css-basics/03/assets/fonts/SourceSansPro-Regular.otf') format('opentype');
 }
 /* general rules */
 *{
     font-family: 'Source Sans Pro', sans-serif;
 }
+:root{
+    --width: 600px;
+    --padding: 20px;
+    --margin-inner: 10px;
+    --width-calcAlfa: calc((600px - 40px - 20px) * 0.3); /* width - padding x2 - margin x2*/
+    --width-calcBeta: calc((600px - 40px - 20px) * 0.4); /* width - padding x2 - margin x2*/
+}
 .parent{
-    width: 600px;
-    padding: 20px;
+    width: var(--width);
+    padding: var(--padding);
     box-sizing: border-box;
 }
 .child--middle{
@@ -22,15 +29,15 @@
 .parent--inline-block .child--first,
 .parent--inline-block .child--middle{
     display: inline-block;
-    width: calc(540px*0.3);
+    width: var(--width-calcAlfa);
     
 }
 .parent--inline-block .child--middle{
-    margin: 0 10px;
+    margin: 0 var(--margin-inner);
 }
 .parent--inline-block .child--last{
     display: inline-block;
-    width: calc(540px*0.4);
+    width: var(--width-calcBeta);
 }
 
 /* float */
@@ -43,14 +50,14 @@
 .parent--float .child--first,
 .parent--float .child--middle{
     float: left;
-    width: calc(540px*0.3);
+    width: var(--width-calcAlfa);
 }
 .parent--float .child--middle{
-    margin: 0 10px;
+    margin: 0 var(--margin-inner);
 }
 .parent--float .child--last{
-    float:left;
-    width: calc(540px*0.4);
+    float: left;
+    width: var(--width-calcBeta);
 }
 
 /* flexbox */
@@ -64,7 +71,7 @@
     flex-basis: 30%;
 }
 .parent--flexbox .child--middle{
-    margin: 0 10px;
+    margin: 0 var(--margin-inner);
 }
  .parent--flexbox > .child--last {
     flex-basis: 40%;
