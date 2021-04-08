@@ -37,14 +37,15 @@
 }
 
 section.parent--inline-block {
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
     background-color: antiquewhite;
     color: rgb(136, 111, 158);
 }
 
 section.parent--float {
-    float: left - inherit;
-    clear: both;
+    display: flex;
+    flex-direction: row;
     background-color: rgb(126, 31, 86);
     color: rgb(204, 175, 155);
 }
