@@ -32,7 +32,7 @@
 
 .child--first {
     font-family: "Source Sans Regular";
-    width: calc(3px * (600 - 40) / 10);
+    width: calc(535px * 0.3);
     margin: 0px 5px 0px 0px;
     border: 0.1px solid black;
     background-color: yellow;
@@ -40,7 +40,7 @@
 
 .child--middle {
     font-family: "Source Sans Bold";
-    width: calc(3px * (600 - 40) / 10);
+    width: calc(535px * 0.3);
     margin: 0px 5px 0px 5px;
     border: 0.1px solid black;
     background-color: lightblue;
@@ -48,7 +48,7 @@
 
 .child--last {
     font-family: "Source Sans Italic";
-    width: calc(4px * (600 - 40) / 10);
+    width: calc(535px * 0.4);
     margin: 0px 0px 0px 5px;
     border: 0.1px solid black;
     background-color: orangered;
@@ -58,6 +58,7 @@
 .parent--inline-block .child--middle,
 .parent--inline-block .child--last {
     display: inline-block;
+    vertical-align: top;
 }
 
 .parent--float .child--first,
@@ -74,4 +75,6 @@
 
 .parent--flexbox {
     display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
