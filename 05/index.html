@@ -7,17 +7,25 @@
     <title>Layout</title>
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/base.css">
-    <link rel="stylesheet" href="./styles/header.css">
-    <link rel="stylesheet" href="./styles/content.css">
-    <link rel="stylesheet" href="./styles/box.css">
-    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/mobile.css">
+    <link rel="stylesheet" media="(min-width: 800px)"
+        href="./styles/desktop.css">
+    
 </head>
 <body>
 
     <header class="header row">
         <div class="header__container container">
             <div class="header__logo cell"></div>
-            <nav class="header__nav cell"></nav>
+            <label class="header__nav-menu-icon" for="header__nav-menu">&#9776;</label>
+            <input type="checkbox" id="header__nav-menu">
+
+            <nav class="header__nav cell">
+                <ul class="header__nav-menu">
+                    <li class="header__nav-menu-li">1</li>
+                    <li class="header__nav-menu-li">2</li>
+                    <li class="header__nav-menu-li">3</li>
+                </ul>
         </div>
     </header>
 
