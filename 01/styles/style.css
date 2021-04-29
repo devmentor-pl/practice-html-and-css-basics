@@ -207,17 +207,25 @@ html {
 }
 
 .image-box__title {
+    margin-top: 10px;
     font-style: italic;
 }
 
 /* ----Article-table---- */
 
 .article__table {
-    margin: 0 auto;
+    width: 400px;
+    margin: 20px auto;
     border: 2px solid var(--color-dark);
 }
 
+.table___title {
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
 .table__header {
+    padding: 5px 10px;
     background-color: var(--color-dark);
     color: white;
 }
@@ -226,6 +234,9 @@ html {
     background-color: #fff;
 }
 
+.table__col {
+    padding: 5px 20px;
+}
 
 /* -----Form----- */
 
@@ -242,7 +253,6 @@ html {
 .comment__label {
     display: block;
     margin: 20px;
-
 }
 
 .comment__input {
