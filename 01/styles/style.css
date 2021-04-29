@@ -64,13 +64,11 @@ html {
 .nav {
     display: flex;
     justify-content: space-between;
-    height: 50px;
     font-size: 16px;
 }
 
 .nav__item {
     width: 160px;
-    height: 50px;
     background-color: var(--color-light);
     /*by nie było przypisywania przy :hover border dla pozostałym .nav__item */
     border: 2px solid var(--color-dark);
@@ -90,6 +88,7 @@ html {
 
 .nav__item:hover {
     transform: scale(1.1);
+    position: relative;
     background-color: var(--color-dark);
     border: 2px solid var(--color-light);
     color: var(--color-light)
@@ -104,6 +103,9 @@ html {
 
 .nav__dropdown {
     display: none;
+    position: absolute;
+    top: 100%;
+    width: 100%;
 }
 
 .nav__item:hover>.nav__dropdown {
