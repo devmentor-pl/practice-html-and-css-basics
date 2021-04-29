@@ -1,12 +1,136 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+
 </head>
+
 <body>
-    
+    <header class="header">
+        <div class="header__container container">
+            <div class="header__logo">
+                <figure class="logo">
+                    <img src="images/carrot-logo.png" alt="carrot's image" class="logo__image">
+                    <figcaption class="logo__title">Gardenshop</figcaption>
+                </figure>
+            </div>
+            <nav class="header__nav">
+                <ul class="nav">
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">O nas</a>
+                    </li>
+                    <li class="nav__item">Sklep
+                        <ul class="nav__dropdown dropdown">
+                            <li class="dropdown__item">Warzywa
+                                <ul class="nav__dropdown-level2 dropdown-level2">
+                                    <li class="dropdown-level2__item"><a href="#"
+                                            class="dropdown-level2__link">Liściowe</a></li>
+                                    <li class="dropdown-level2__item"><a href="#"
+                                            class="dropdown-level2__link">Kapustne</a></li>
+                                    <li class="dropdown-level2__item"><a href="#"
+                                            class="dropdown-level2__link">Cebulowe</a></li>
+                                    <li class="dropdown-level2__item"><a href="#"
+                                            class="dropdown-level2__link">Korzeniowe</a></li>
+                                    <li class="dropdown-level2__item"><a href="#"
+                                            class="dropdown-level2__link">Strączkowe</a></li>
+                                    <li class="dropdown-level2__item"><a href="#"
+                                            class="dropdown-level2__link">Pozostałe</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown__item">Owoce
+                                <ul class="nav__dropdown-level2 dropdown-level2">
+                                    <li class="dropdown-level2__item"><a href="#"
+                                            class="dropdown-level2__link">Cytrusowe</a></li>
+                                    <li class="dropdown-level2__item"><a href="#"
+                                            class="dropdown-level2__link">Jagodowe</a></li>
+                                    <li class="dropdown-level2__item"><a href="#"
+                                            class="dropdown-level2__link">Egzotyczne</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown__item">Nasiona
+                                <ul class="nav__dropdown-level2 dropdown-level2">
+                                    <li class="dropdown-level2__item"><a href="#"
+                                            class="dropdown-level2__link">Owoców</a>
+                                    </li>
+                                    <li class="dropdown-level2__item"><a href="#"
+                                            class="dropdown-level2__link">Warzyw</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">Porady
+                        <ul class="nav__dropdown dropdown">
+                            <li class="dropdown__item"><a href="#" class="dropdown__link">Sadzenie</a></li>
+                            <li class="dropdown__item"><a href="#" class="dropdown__link">Podlewanie</a></li>
+                            <li class="dropdown__item"><a href="#" class="dropdown__link">Nasiona</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Kontakt</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main__container container">
+            <article class="main__article article">
+                <h1 class="article__title">Kim jesteśmy???</h1>
+                <div class="article__container container">
+                    <p class="article__content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt,
+                        nostrum. Corporis, obcaecati!
+                        Dolores animi magnam ad assumenda nobis reiciendis, ducimus officia cumque odio cupiditate
+                        voluptates nisi impedit illo quis! Cupiditate accusantium reprehenderit quisquam ea aperiam
+                        expedita exercitationem. Dolor corporis expedita, odit rerum accusamus libero animi distinctio
+                        quam quo consequuntur reprehenderit dicta et quis dolorem quod mollitia nam vitae ab. Dolore
+                        doloremque reprehenderit voluptates est, obcaecati sequi! Corrupti consequatur iure corporis qui
+                        perferendis, mollitia consequuntur explicabo fugiat? Consequuntur quidem officia, voluptatum est
+                        necessitatibus fugiat ipsum dolores fugit illum architecto at voluptatem sed dolor quo voluptate
+                        libero nulla labore placeat? Natus, delectus!</p>
+                    <figure class="article__image-box image-box">
+                        <img class="image-box__image" src="images/hand-865294_1280.jpg"
+                            alt="men's hand with plant in garden ">
+                        <figurecaption class="image-box__name"></figurecaption>
+                    </figure>
+                    <p class="article__content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque eum
+                        voluptates quisquam
+                        laboriosam culpa exercitationem iste quod aliquam laborum illo ad ex, facere necessitatibus
+                        perferendis nostrum adipisci autem porro! Ipsam sequi aliquam rem, autem cupiditate dolores
+                        perferendis quis doloribus magni dolorum molestias inventore officiis quas neque harum fuga.
+                        Aliquid, tempora!</p>
+                    <table class="article__table"></table>
+                    <p class="article__content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque eum
+                        voluptates quisquam
+                        laboriosam culpa exercitationem iste quod aliquam laborum illo ad ex, facere necessitatibus
+                        perferendis nostrum adipisci autem porro! Ipsam sequi aliquam rem, autem cupiditate dolores
+                        perferendis quis doloribus magni dolorum molestias inventore officiis quas neque harum fuga.
+                        Aliquid, tempora!</p>
+                    <figure class="article__image-box image-box">
+                        <img class="image-box__image" src="" alt="">
+                        <figurecaption class="image-box__name"></figurecaption>
+                    </figure>
+                </div>
+                <time class="article__data"></time>
+                <p class="article__author"></p>
+            </article>
+            <form action="" class="comment"></form>
+            <article class="opinion"></article>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__container container">
+            <p>&copy Krystyna Nowak</p>
+        </div>
+    </footer>
 </body>
+
 </html>
