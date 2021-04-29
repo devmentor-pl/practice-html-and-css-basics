@@ -86,7 +86,8 @@
             <article class="main__article article">
                 <header class="article__header">
                     <h1 class="article__title">Kim jesteśmy i dlaczego kochamy to co robimy?</h1>
-                    <p class="article__author">Krystyna Nowak <time datetime="2020-11-06" class="article__time"></time>
+                    <p class="article__author">Małgorzata Kowacka<time datetime="2021-04-29" class="article__time">29
+                            kwietnia 2021 r.</time>
                     </p>
                 </header>
                 <div class="article__content">
@@ -107,7 +108,7 @@
                     <figure class="article__image-box image-box">
                         <img class="image-box__image" src="images/hand-865294_1280.jpg"
                             alt="men's hand with plant in garden ">
-                        <figcaption class="image-box__name">My w czasie wiosennych porządków</figcaption>
+                        <figcaption class="image-box__title">My w czasie wiosennych porządków</figcaption>
                     </figure>
                     <p class="article__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque eum
                         voluptates quisquam
@@ -115,7 +116,28 @@
                         perferendis nostrum adipisci autem porro! Ipsam sequi aliquam rem, autem cupiditate dolores
                         perferendis quis doloribus magni dolorum molestias inventore officiis quas neque harum fuga.
                         Aliquid, tempora!</p>
-                    <table class="article__table"></table>
+                    <table class="article__table table">
+                        <caption>Uprawnienia</caption>
+                        <thead class="table__header">
+                            <tr>
+                                <th>Imię i Nazwisko</th>
+                                <th>Nazwa szkolenia</th>
+                                <th>Kontakt</th>
+                            </tr>
+                        </thead>
+                        <tbody class='table__body'>
+                            <tr>
+                                <td>Imię i Nazwisko</td>
+                                <td>Nazwa szkolenia</td>
+                                <td>Kontakt</td>
+                            </tr>
+                            <tr>
+                                <td>Imię i Nazwisko</td>
+                                <td>Nazwa szkolenia</td>
+                                <td>Kontakt</td>
+                            </tr>
+                        </tbody>
+                    </table>
                     <p class="article__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque eum
                         voluptates quisquam
                         laboriosam culpa exercitationem iste quod aliquam laborum illo ad ex, facere necessitatibus
@@ -124,13 +146,43 @@
                         Aliquid, tempora!</p>
                 </div>
             </article>
-            <form action="" class="comment"></form>
-            <article class="opinion"></article>
+            <form action="" class="main__comments comment">
+                <h2 class="comment__title">Dodaj komentarz o stronie:</h2>
+                <label class="comment__label">Nazwa użytkownika:<input class="comment__input" type="text"
+                        placeholder="Nickname"></label>
+                <label class="comment__label">Komentarz:<textarea class="comment__input" name="opinion" cols="60"
+                        rows="10"></textarea></label>
+                <button class="comment__btn">Wyślij</button>
+            </form>
+            <article class="main__opinion-block">
+                <h2 class="main__opinion-title">Komentarze: </h2>
+                <section class="opinion">
+                    <p class="opinion__name">Anna<time datetime="2021-04-29" class="opinion__time">29
+                            kwietnia 2021 r. godz. 17:30 </time></p>
+                    <blockquote class="opinion__quote">Super fajna strona!</blockquote>
+                </section>
+                <section class="opinion">
+                    <p class="opinion__name">Kojot<time datetime="2021-04-29" class="opinion__time">29
+                            kwietnia 2021 r. godz. 17:30 </time></p>
+                    <blockquote class="opinion__quote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum nam
+                        iure provident, explicabo magni atque nemo debitis! Blanditiis, consectetur repellendus.!
+                    </blockquote>
+                </section>
+                <section class="opinion">
+                    <p class="opinion__name">NoName<time datetime="2021-04-29" class="opinion__time">29
+                            kwietnia 2021 r. godz. 17:30 </time></p>
+                    <blockquote class="opinion__quote">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Repudiandae enim expedita officia molestiae esse vitae similique ad unde quam vero ex labore
+                        quod architecto debitis obcaecati aliquam, numquam veniam beatae dolorum voluptates quas?
+                        Similique rerum explicabo praesentium libero iusto aperiam harum quod, sunt, repudiandae
+                        reprehenderit corporis aliquam eos sed cum.</blockquote>
+                </section>
+            </article>
         </div>
     </main>
     <footer class="footer">
         <div class="footer__container container">
-            <p>&copy Krystyna Nowak</p>
+            <p>&copy Małgorzata Kowacka</p>
         </div>
     </footer>
 </body>

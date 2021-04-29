@@ -1,16 +1,11 @@
 html {
     font-family: "Roboto", sans-serif;
+    font-size: 12px;
 }
 
 :root {
     --color-light: #BFCBA8;
     --color-dark: #464F41;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
 }
 
 .container {
@@ -30,8 +25,6 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-
-    /* color: var(--color-light); */
 }
 
 /* -----logo----- */
@@ -72,13 +65,14 @@ body {
     display: flex;
     justify-content: space-between;
     height: 50px;
+    font-size: 16px;
 }
 
 .nav__item {
     width: 160px;
     height: 50px;
     background-color: var(--color-light);
-    /*by nie było przypisywania border przy :hover pozostałym .nav__item */
+    /*by nie było przypisywania przy :hover border dla pozostałym .nav__item */
     border: 2px solid var(--color-dark);
     color: var(--color-dark);
     font-weight: 700;
@@ -156,16 +150,25 @@ body {
 /* -----MAIN----- */
 
 .main {
-    flex-grow: 1;
     background-color: var(--color-light);
 }
 
-/* -----Article----- */
-
-.article__header,
-.article__content {
-    margin-top: 40px;
+.main__article,
+.main__comments,
+.main__opinion-block {
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
+
+.main__article {
+    border-bottom: 2px solid var(--color-dark);
+}
+
+.main__opinion-block {
+    border-top: 2px solid var(--color-dark)
+}
+
+/* -----Article----- */
 
 .article__header {
     color: rgb(160, 111, 20);
@@ -181,7 +184,14 @@ body {
     font-size: 20px;
 }
 
-.article__content {
+.article__time {
+    margin-left: 30px;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.article__text {
+    margin-top: 20px;
     line-height: 150%;
     text-indent: 40px;
     text-align: justify;
@@ -190,16 +200,93 @@ body {
 .article__image-box {
     margin-top: 20px;
     text-align: center;
-    font-style: italic;
 }
 
 .image-box__image {
-    width: 700px;
+    width: 600px;
+}
+
+.image-box__title {
+    font-style: italic;
+}
+
+/* ----Article-table---- */
+
+.article__table {
+    margin: 0 auto;
+    border: 2px solid var(--color-dark);
+}
+
+.table__header {
+    background-color: var(--color-dark);
+    color: white;
+}
+
+.table__body {
+    background-color: #fff;
+}
+
+
+/* -----Form----- */
+
+.main__comments {
+    width: max-content;
+    margin: 0 auto;
+}
+
+.comment__title {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.comment__label {
+    display: block;
+    margin: 20px;
+
+}
+
+.comment__input {
+    margin: 0 20px;
+}
+
+.comment__btn {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 40px;
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    border: 2px solid orangered;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+/* -----Opinion-block----- */
+
+.main__opinion-title {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.opinion__name {
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.opinion__time {
+    margin-left: 20px;
+    font-size: 12px;
+}
+
+.opinion__quote {
+    margin-top: 10px;
+    font-style: italic;
 }
 
 /* -----FOOTER----- */
 
 .footer {
+    padding: 10px 0;
     background-color: var(--color-dark);
     color: var(--color-light);
 }
