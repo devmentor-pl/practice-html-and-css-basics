@@ -6,21 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu wielopoziomowe</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 
-<body>
+<body class="page">
     <div class="page-container">
         <nav>
             <ul class="page__nav nav">
                 <li class="nav__item">Home</li>
-                <li class="nav__item">Items
+                <li class="nav__item">Items <i class="fas fa-chevron-down"></i>
                     <ul class="nav__dropdown dropdown">
                         <li class="dropdown__item">Item 1</li>
-                        <li class="dropdown__item">Item 2
-                            <ul class="nav__dropdown-level2">
-                                <li class="dropdown-level2__item">Item 2.1</li>
-                                <li class="dropdown-level2__item">Item 2.2</li>
-                            </ul>
+                        <li class="dropdown__item">Item 2 <i class="fas fa-chevron-right"></i>
+                                <ul class="nav__dropdown-level2 dropdown-level2">
+                                    <li class="dropdown-level2__item">Item 2.1</li>
+                                    <li class="dropdown-level2__item">Item 2.2</li>
+                                </ul>
                         </li>
                     </ul>
                 </li>
