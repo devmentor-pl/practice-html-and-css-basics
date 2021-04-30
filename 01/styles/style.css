@@ -9,9 +9,8 @@ html {
 }
 
 .container {
-    max-width: 1280px;
     margin: 0 auto;
-    /* outline: blue 2px solid; */
+    max-width: 1280px;
 }
 
 /* -----HEADER----- */
@@ -21,9 +20,9 @@ html {
 }
 
 .header__container {
+    align-items: center;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 10px;
 }
 
@@ -69,9 +68,9 @@ html {
 
 .nav__item {
     width: 160px;
-    background-color: var(--color-light);
     /*by nie było przypisywania przy :hover border dla pozostałym .nav__item */
     border: 2px solid var(--color-dark);
+    background-color: var(--color-light);
     color: var(--color-dark);
     font-weight: 700;
     line-height: 50px;
@@ -87,11 +86,11 @@ html {
 }
 
 .nav__item:hover {
-    transform: scale(1.1);
     position: relative;
-    background-color: var(--color-dark);
     border: 2px solid var(--color-light);
-    color: var(--color-light)
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    transform: scale(1.1);
 }
 
 .nav__item:hover>.nav__link {
@@ -102,9 +101,9 @@ html {
 /* -----nav-dropdown---- */
 
 .nav__dropdown {
-    display: none;
     position: absolute;
     top: 100%;
+    display: none;
     width: 100%;
 }
 
@@ -113,8 +112,8 @@ html {
 }
 
 .dropdown__item {
-    background-color: var(--color-dark);
     border: 2px solid var(--color-dark);
+    background-color: var(--color-dark);
 }
 
 .dropdown__link,
@@ -133,11 +132,11 @@ html {
 /* -----dropdown-level2---- */
 
 .nav__dropdown-level2 {
-    display: none;
     position: absolute;
-    width: 160px;
     top: 0;
     left: 100%;
+    display: none;
+    width: 160px;
     background-color: var(--color-dark);
 }
 
@@ -216,8 +215,8 @@ html {
 /* ----Article-table---- */
 
 .article__table {
-    width: 400px;
     margin: 20px auto;
+    width: 400px;
     border: 2px solid var(--color-dark);
 }
 
@@ -243,8 +242,8 @@ html {
 /* -----Form----- */
 
 .main__comments {
-    width: max-content;
     margin: 0 auto;
+    width: max-content;
 }
 
 .comment__title {
@@ -265,9 +264,9 @@ html {
     display: block;
     margin: 20px auto 0;
     padding: 10px 40px;
+    border: 2px solid orangered;
     background-color: var(--color-dark);
     color: var(--color-light);
-    border: 2px solid orangered;
     font-size: 16px;
     text-transform: uppercase;
     font-weight: 700;
