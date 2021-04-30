@@ -1,0 +1,96 @@
+.page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.page__header,
+.page__article1,
+.page__article2,
+.page__footer {
+    margin: 5px;
+    padding: 10px;
+    outline: green 2px solid;
+}
+
+.page__header,
+.page__footer {
+    height: 150px;
+}
+
+.page__article1,
+.page__article2 {
+    flex-grow: 1;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 5px 0;
+    max-width: 1000px;
+    height: 100%;
+    outline: 2px solid blue;
+}
+
+.column {
+    background-color: orange;
+}
+
+/* ----Header----- */
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo {
+    min-width: 200px;
+}
+
+.header__nav {
+    min-width: 400px;
+}
+
+/* -----Article1---- */
+
+.article1__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.article1__column1,
+.article1__column2 {
+    width: 49%;
+}
+
+/* -----Article2---- */
+
+.article2__container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.article2__column1,
+.article2__column2,
+.article2__column3 {
+    width: 32%;
+}
+
+/* -----Footer----- */
+
+.footer__container {
+    display: flex;
+}
+
+.footer__contact {
+    margin: auto;
+    width: 200px;
+    min-height: 100px;
+}
+
+/* ----- wersja bez Flex -----*/
+
+/* .footer__contact {
+    width: 200px;
+    min-height: 100px;
+    margin: 0 auto;
+} */
