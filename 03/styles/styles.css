@@ -1,0 +1,21 @@
+* {
+    font-family: "Source Sans PRO";
+}
+
+
+@font-face {
+    font-family: "Source Sans PRO";
+    src: url('/01/') format('woff2');
+}
+
+
+
+.parent {
+    width: 600px;
+    padding: 20px;
+    font-family: font-family: "Source Sans PRO";
+    "SourceSans";
+}
+
+
+.child {}
