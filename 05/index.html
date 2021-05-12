@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            width: 100%;
+            font-family: sans-serif;
+        }
+
+        .wrapper {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav {
+            background: slategray
+        }
+
+        nav>ul {
+            display: flex;
+        }
+
+        nav>ul li {
+            list-style: none;
+        }
+
+        nav>ul a {
+            display: block;
+            margin: 10px;
+            padding: 20px;
+            text-decoration: none;
+            color: whitesmoke
+        }
+
+        .main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .section {
+            padding: 20px 0;
+        }
+
+        .section-two,
+        .section-three,
+        .footer {
+            display: flex;
+            width: 100%;
+        }
+
+        .section-two {
+            justify-content: space-between;
+        }
+
+        .section-two__column {
+            flex-basis: 49%;
+            width: 400px;
+            height: 400px;
+        }
+
+        .blue {
+            background: royalblue;
+        }
+
+        .red {
+            background: tomato;
+        }
+
+        .section-three {
+            justify-content: space-around;
+        }
+
+        .section-three__column {
+            width: 300px;
+            height: 250px;
+        }
+
+        .pink {
+            background: salmon;
+        }
+
+        .purple {
+            background: slateblue;
+        }
+
+        .green {
+            background: olivedrab;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100px;
+            color: #eee;
+            background: #555;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header wrapper">
+        <div class="logo"><span>JESTEM LOGO</span></div>
+        <nav>
+            <ul>
+                <li><a href="#">Jeden</a></li>
+                <li><a href="#">Dwa</a></li>
+                <li><a href="#">Trzy</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main wrapper">
+        <section class="section-two section">
+            <div class="section-two__column blue"></div>
+            <div class="section-two__column red"></div>
+        </section>
+        <section class="section-three section">
+            <div class="section-three__column pink"></div>
+            <div class="section-three__column purple"></div>
+            <div class="section-three__column green"></div>
+        </section>
+    </main>
+    <footer class="footer wrapper">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum deserunt, assumenda, earum iste quaerat esse
+        soluta voluptatum eligendi ullam inventore iure provident quibusdam harum, laborum sed similique
+        asperiores.
+        Atque, consectetur!
+    </footer>
+</body>
+
+</html>
