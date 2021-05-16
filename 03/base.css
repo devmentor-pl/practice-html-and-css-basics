@@ -1,0 +1,55 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+.parent {
+    outline: 2px solid;
+}
+
+.child {
+    outline: 2px red;
+}
+
+
+/*inline block*/
+
+.parent--inline-block {
+    
+}
+
+.parent--inline-block > .child--first {
+    display: inline-block;
+}
+
+/*Flex*/\
+
+.parent--flexbox {
+    width: 600px;
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: ;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.parent--flexbox  .child--first {
+    outline: 2px blue solid;
+    height: 100px;
+    width: 200px;
+}
+
+.parent--flexbox  .child--middle {
+    outline: 2px red solid;
+    height: 100px;
+    width: 200px;
+}
+
+.parent--flexbox  .child--last {
+    outline: 2px green solid; 
+    height: 100px;
+    width: 200px;
+}
+
