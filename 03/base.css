@@ -3,53 +3,79 @@
     padding: 0;
     box-sizing: border-box; 
 }
+/*wspolne*/
 
 .parent {
     outline: 2px solid;
+    padding: 20px;
+    margin: 20px;
+    max-width: 600px;
+    height: 150px;
 }
 
 .child {
-    outline: 2px red;
-}
-
-
-/*inline block*/
-
-.parent--inline-block {
     
 }
 
-.parent--inline-block > .child--first {
+
+
+/*inline block*/
+.parent--inline-block {
+    text-align: center;
+    
+    
+}
+
+.parent--inline-block .child {
     display: inline-block;
+    width: 30%; 
+    border: 1px solid pink; 
+
+}
+
+.parent--inline-block :last-child {
+    width: 40%;
+}
+
+
+
+/*float*/
+
+.parent--float .child {
+    border: 1px solid black;
+    width: 30%;
+    float: left;
+    text-align: center;
+}
+
+.parent--float .child--last{
+    width: 40%;
 }
 
 /*Flex*/
 
 .parent--flexbox {
-    width: 600px;
     display:flex;
     justify-content: space-between;
     align-items: flex-start;
-    flex-direction: ;
-    padding: 10px;
-    flex-wrap: wrap;
+      
 }
 
 .parent--flexbox  .child--first {
+    margin-right: 10px;
     outline: 2px blue solid;
-    height: 100px;
-    width: 200px;
+    width: 30%;
+    ;
 }
 
 .parent--flexbox  .child--middle {
+    margin-right: 10px;
     outline: 2px red solid;
-    height: 100px;
-    width: 200px;
+   width: 30%;
 }
 
 .parent--flexbox  .child--last {
     outline: 2px green solid; 
-    height: 100px;
-    width: 200px;
+    width: 40%;
 }
 
