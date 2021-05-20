@@ -1,7 +1,31 @@
+/* #1 Regular Weight */
+@font-face {
+	font-family: "Source Sans Pro";
+	font-style: normal;
+	font-weight: normal;
+	src: url("./fonts/SourceSansPro-Regular.otf");
+}
+
+/* #2 Italic Style */
+@font-face {
+	font-family: "Source Sans Pro";
+	font-style: italic;
+	font-weight: normal;
+	src: url("C:\Users\krawc\Downloads\source-sans-pro\SourceSansPro-It.otf]");
+}
+
+/* #3 Bold Weight */
+@font-face {
+	font-family: "Source Sans Pro";
+	font-style: normal;
+	font-weight: bold;
+	src: url("C:\Users\krawc\Downloads\source-sans-pro\SourceSansPro-Bold.otf");
+}
 * {
     margin: 0 auto;
     padding: 0;
-    box-sizing: border-box; 
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro';
 }
 /*wspolne*/
 
@@ -14,68 +38,64 @@
 }
 
 .child {
-    
+    height: 100px;
+    text-align: center;
 }
-
-
 
 /*inline block*/
-.parent--inline-block {
-    text-align: center;
-    
-    
-}
 
-.parent--inline-block .child {
+.parent--inline-block .child--first,
+.parent--inline-block .child--middle {
     display: inline-block;
     width: 30%; 
-    border: 1px solid pink; 
+    border: 1px solid pink;
+    margin-right: 10px; 
 
 }
 
-.parent--inline-block :last-child {
-    width: 40%;
+.parent--inline-block .child--last {
+    display: inline-block;
+    border: 1px solid pink;
+    width: calc(40% - 20px);
 }
-
-
 
 /*float*/
 
-.parent--float .child {
+.parent--float .child--first, .parent--float .child--middle {
     border: 1px solid black;
-    width: 30%;
+    width: calc(30% - 10px);
     float: left;
-    text-align: center;
+    margin-right: 10px;
+    
 }
 
 .parent--float .child--last{
+    border: 1px solid black;
     width: 40%;
+    float: left;
 }
 
 /*Flex*/
 
 .parent--flexbox {
     display:flex;
-    justify-content: space-between;
-    align-items: flex-start;
-      
+    justify-content: space-between;    
 }
 
 .parent--flexbox  .child--first {
     margin-right: 10px;
-    outline: 2px blue solid;
+    border: 1px blue solid;
     width: 30%;
-    ;
 }
 
 .parent--flexbox  .child--middle {
     margin-right: 10px;
-    outline: 2px red solid;
-   width: 30%;
+    border: 1px red solid;
+    width: 30%;
 }
 
 .parent--flexbox  .child--last {
-    outline: 2px green solid; 
+    border: 1px green solid; 
     width: 40%;
 }
 

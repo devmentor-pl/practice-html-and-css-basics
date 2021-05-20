@@ -1,0 +1,54 @@
+:root {
+    --item:rgb(51, 51, 51);
+}
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 1000px;
+}
+
+body {
+    background-color: rgb(247, 247, 247);
+}
+
+.menu {
+    margin-top: 20px;
+    background: #fff;
+    text-align: center;
+}
+
+.header__menu {
+    display: inline-flex;
+    list-style: none;
+}
+
+.menu__item {
+    text-align: center;
+    width: 120px;
+    padding: 25px; 
+}
+
+.menu__item:hover {
+    border-top: 2px solid royalblue;
+    color: royalblue;
+}
+
+.menu__item a {
+    text-decoration: none;
+    
+}
+.dropdown__menu  {
+    display: none;
+    width: 240px;
+    position: absolute;
+    margin-top: 20px;
+    padding: 15px;     
+}
+
+.menu__item:hover .dropdown__menu {
+    display: block;
+    margin: 10px;
+    padding: 15px;
+}
