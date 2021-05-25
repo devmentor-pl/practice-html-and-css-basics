@@ -26,15 +26,30 @@ body {
 }
 .dropdown {
     background-color: var(--drop-color);
+    display: block;
     width: 220px;
     position: absolute;
-    margin-top: 25px; 
+    margin-top: 25px;
+    display: none; 
 }
+
+.nav__item:hover .dropdown {
+    display: block;
+}
+
 .dropdown__item {
-    
     padding: 20px;
     color: #FFFFFF;
 }
+
+.right__dropdown {
+    display: none;
+}
+
+.dropdown__item:hover .right__dropdown {
+    display: block;
+}
+
 .dropdown__link {
     display: inline-block;
     text-decoration: none;
