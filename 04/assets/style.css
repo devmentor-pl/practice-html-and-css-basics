@@ -1,0 +1,44 @@
+:root {
+    --back-color: #F5F9F9;
+    --nav-color: #FFFFFF;
+    --drop-color: #333333;
+    --spec-color: #009AE1;
+}
+body {
+    background-color: var(--back-color);
+}
+.nav {
+   background-color: var(--nav-color);
+   display: flex;
+   padding: 10px;
+   color:black
+}
+.nav__item {
+    padding: 15px;
+    position: relative;
+    width: 120px;
+}
+.nav__link {
+    display: inline-block;
+    text-decoration: none;
+    width: 100%; 
+    height: 100%;
+}
+.dropdown {
+    background-color: var(--drop-color);
+    width: 220px;
+    position: absolute;
+    margin-top: 25px; 
+}
+.dropdown__item {
+    
+    padding: 20px;
+    color: #FFFFFF;
+}
+.dropdown__link {
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+}
+
