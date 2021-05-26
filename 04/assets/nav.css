@@ -91,6 +91,18 @@ a:hover {
     color:white;
 }
 
+.point::after {
+    content: ">";
+    display: inline-block;
+    transform: rotate(90deg);
+}
+
+.point1::after {
+    content: ">";
+    display: inline-block;
+    color: white;
+}
+
 
 
 
