@@ -11,7 +11,7 @@
 	font-family: "Source Sans Pro";
 	font-style: italic;
 	font-weight: normal;
-	src: url("C:\Users\krawc\Downloads\source-sans-pro\SourceSansPro-It.otf]");
+	src: url("./fonts/SourceSansPro-It.otf");
 }
 
 /* #3 Bold Weight */
@@ -19,7 +19,7 @@
 	font-family: "Source Sans Pro";
 	font-style: normal;
 	font-weight: bold;
-	src: url("C:\Users\krawc\Downloads\source-sans-pro\SourceSansPro-Bold.otf");
+	src: url("./fonts/SourceSansPro-Bold.otf");
 }
 * {
     margin: 0 auto;
@@ -42,6 +42,24 @@
     text-align: center;
 }
 
+.child--first {
+    font-family: "Source Sans Pro";
+	font-style: normal;
+	font-weight: normal;
+}
+
+.child--middle {
+    font-family: "Source Sans Pro";
+	font-style: normal;
+	font-weight: bold;
+}
+
+.child--last {
+    font-family: "Source Sans Pro";
+	font-style: italic;
+	font-weight: normal;
+}
+
 /*inline block*/
 
 .parent--inline-block .child--first,
@@ -50,6 +68,7 @@
     width: 30%; 
     border: 1px solid pink;
     margin-right: 10px; 
+    vertical-align: center;
 
 }
 
