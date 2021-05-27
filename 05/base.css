@@ -1,0 +1,61 @@
+.container, .cell {
+    margin: 5px 0;
+    padding: 5px 2px;
+    outline: 2px solid;
+}
+
+.container {
+    margin: 10px auto;
+    max-width: 1000px;
+    outline-color: royalblue;
+}
+
+.cell {
+    min-width: 100px;
+    background-color: orange;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 40px;
+    min-width: 120px;
+}
+
+.header__nav {
+    min-width: 460px;
+}
+
+.content__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content__article {
+    width: 450px;
+    height: 340px;
+}
+
+.content__container2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.content__article2 {
+    width: 30%;
+    height: 200px;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    width: 100px;
+    height: 30px;
+}
