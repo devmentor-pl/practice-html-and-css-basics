@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
 </head>
 <body>
-    
+
     <header>
         <nav>
-            <img src="/logo.png" alt="Logo">
+            <img src="./img/logo.png" alt="Logo">
             <ul>
                 <li><a href="#">Strona Główna</a></li>
                 <li><a href="#">O mnie</a></li>
@@ -20,14 +21,103 @@
                         <li><a href="#">Lawki</a></li>
                         <li><a href="#">Krzesła</a></li>
                     </ul>
+                <li><a href="#">Kontakt</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <article>
+            <h1>Lorem, ipsum dolor.</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate molestias officia error fugit earum, unde omnis voluptas velit mollitia dolores quaerat nulla dolorem culpa alias corporis aut similique doloribus ipsam labore commodi. Aliquam quod vero natus qui iusto quae, dolore rem voluptate voluptatum veniam perspiciatis beatae delectus ea in numquam!</p>
+            <h2>Lorem, ipsum.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem et mollitia itaque iure quas odit velit doloremque porro laboriosam sunt, corrupti aspernatur. Placeat dolor modi impedit tempore nisi deserunt mollitia fugiat optio quis, quam facere in aut consequuntur provident vel. Veniam omnis harum aperiam, quisquam, repudiandae aliquid architecto necessitatibus accusantium quia consequatur expedita mollitia eligendi. Voluptatem totam ipsam dolore animi?</p>
+            
+            <figure>
+                <img src="./img/gallery1.jpg" alt="Pani z pieskiem">
+                <figcaption>Mieszkanka Iranu urywająca się przed rządem</figcaption>
+            </figure>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui corporis totam impedit ullam aut aperiam ipsa, magnam vel quam quaerat facere atque, consequatur, officia maxime. Vero odio rerum consequuntur consectetur sequi dicta voluptates illo ipsum optio facere eum, corporis culpa neque alias, in repellat, maiores inventore ex? Nam, mollitia veritatis quidem officiis velit perspiciatis rerum molestiae dolor culpa! Deleniti voluptates voluptatibus eos, alias incidunt porro eum explicabo dolore qui repellendus libero? Iste voluptatibus temporibus aut quam ad nam pariatur ipsam similique laboriosam sint, aliquid dolorum commodi soluta? Odio omnis cumque quam? Repudiandae, ratione dolor sequi reprehenderit nemo magnam molestiae architecto.</p>
+            <table>
+                <caption>Populacja w wybrancyh regionach 3 państw</caption>
+               <thead>
+                    <tr>
+                        <th>Panstwo</th>
+                        <th>Region</th>
+                        <th>Populacja</th>
+                    </tr>
+                </thead>
+                    <tbody>
+                        <tr>
+                            <td>Iran</td>
+                            <td>Tebriz</td>
+                            <td>190,000</td>
+                        </tr>
+                        <tr>
+                            <td>Mozambik</td>
+                            <td>Cabo</td>
+                            <td>132,000</td>
+                        </tr>
+                        <tr>
+                            <td>Egipt</td>
+                            <td>Hurghada</td>
+                            <td>1095,000</td>
+                        </tr>
+                    </tbody>
+            </table>
+            <h3>Lorem ipsum dolor sit.</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio repellat, neque eius quod enim ullam, fugit obcaecati excepturi quidem dolore provident debitis. Corrupti consequatur repellendus necessitatibus, hic nostrum exercitationem nam tempore voluptatum fugit nisi ex, minima dolorem recusandae quis similique! Recusandae eius dignissimos dolor quisquam explicabo repellendus natus sunt expedita asperiores tenetur eum vel nam, iusto eaque earum quia ratione quos ipsa dolores hic? Facere reiciendis quaerat ducimus. Atque unde animi molestias omnis, iure optio asperiores quasi, provident nam sapiente quibusdam sit tenetur exercitationem repellat obcaecati esse est ab perspiciatis adipisci? Totam molestias tempore sit velit, magni obcaecati neque magnam.</p>
+            <div>
+                <p>Autor:<strong>Marek Kontur</strong></p>
+                <p>Data publikacji: 2/12/1990</p>
 
+            </div>
         </article>
+
+        <section>
+            <div>
+                <h3>Zostaw komentarz:</h3>
+            </div>
+            <form>
+                <div>
+                    <label for="imie">Imię:</label>
+                    <input type="text" id="imie" name="imie">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div>
+                    <label for="komentarz">Twój komentarz:</label>
+                    <textarea name="komentarz" id="komentarz" cols="30" rows="10"></textarea>
+                </div>
+                <button>Wyślij</button>
+            </form>
+        </section>
+        <hr>
+        <section>
+            <div>
+                <h3>Ostatnie komentarze:</h3>
+                <div>
+                    <strong>Piotrek | 21/12/1995</strong>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, sapiente?</p>
+                </div>
+
+                <div>
+                    <strong>Marek | 12/12/1995</strong>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, sapiente?</p>
+                </div>
+
+                <div>
+                    <strong>Krzysiek | 5/12/1995</strong>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, sapiente?</p>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer>
+        <div>&copy poznajkraje.pl</div>
+    </footer>
+
 </body>
 </html>
