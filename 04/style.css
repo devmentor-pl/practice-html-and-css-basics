@@ -10,11 +10,16 @@ body {
 .nav {
    background-color: var(--nav-color);
    display: flex;
+   justify-content: center;
 }
 .nav__item {
     padding: 15px;
     position: relative;
     width: 120px;
+    text-align: center;
+}
+.nav__item:hover {
+    border-top:2px solid var(--spec-color);
 }
 .nav__link {
     display: inline-block;
@@ -22,6 +27,9 @@ body {
     width: 100%; 
     height: 100%;
     color:black;
+}
+.nav__link:hover{
+    color: var(--spec-color);
 }
 .dropdown {
     background-color: var(--drop-color);
@@ -31,34 +39,42 @@ body {
     top: 100%;
     display: none; 
 }
-
 .nav__item:hover .dropdown {
     display: block;
 }
-
 .dropdown__item {
     padding: 20px;
     color: #FFFFFF;
+    position: relative;
 }
-
 .right__dropdown {
     display: none;
     left: 100%;
+    top: 0;
     position: absolute;
     background:var(--drop-color);
     min-width: 160px;
 }
-
 .dropdown__item:hover .right__dropdown {
     display: block;
    
 }
-
 .dropdown__link {
     display: inline-block;
     text-decoration: none;
     width: 100%;
     height: 100%;
     color: white;
+}
+.point::after {
+    content: '>';
+    position: absolute;
+    transform: rotate(90deg);
+    right: 10px;
+}
+
+.point1::after {
+    content: '>';
+    position: absolute;
 }
 

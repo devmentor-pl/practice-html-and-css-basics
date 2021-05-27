@@ -43,19 +43,16 @@
 }
 
 .child--first {
-    font-family: "Source Sans Pro";
 	font-style: normal;
 	font-weight: normal;
 }
 
 .child--middle {
-    font-family: "Source Sans Pro";
 	font-style: normal;
 	font-weight: bold;
 }
 
 .child--last {
-    font-family: "Source Sans Pro";
 	font-style: italic;
 	font-weight: normal;
 }
