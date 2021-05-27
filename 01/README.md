@@ -11,12 +11,12 @@ Utwórz strukturę HTML w pliku `index.html`, która będzie poprawna semantyczn
     - menu wielopoziomowe
 - Treśc główną np. `<main>`, którą będzie:
     - Artykuł tj. `<article>`, który posiada:
-        - tytuł 
-        - treść 
-        - datę publikacji 
-        - autora 
-        - ilustrację 
-        - tabelę 
+        - tytuł
+        - treść
+        - datę publikacji
+        - autora
+        - ilustrację
+        - tabelę
     - Formularz do komentowania
     - Kilka przykładowych komentarzy, które zawierają
         - treść komentarza
