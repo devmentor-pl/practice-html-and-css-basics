@@ -17,7 +17,7 @@ Twoim zadaniem jest ostylowanie dostępnej struktury HTML w taki sposób, aby:
         - element `.child--middle` styl `bold`,
         - element `.child--last` styl `italic`
 - każdy kolejny `.parent` ma być pozycjonowana innym sposobem tj.
-    - inline-block
+    - inline-block 
     - float
     - flexbox
 
