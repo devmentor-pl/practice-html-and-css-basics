@@ -7,21 +7,21 @@
 
 @font-face {
     font-family: "SourceSansPRO";
-    src: url(../fonts/SourceSansPro-Regular.otf);
+    src: url(../fonts/SourceSansPro-Regular.woff2);
     font-style: normal;
     font-weight: normal;
 }
 
 @font-face {
     font-family:"SourceSansPRO";
-    src: url(../fonts/SourceSansPro-Bold.otf);
+    src: url(../fonts/SourceSansPro-Bold.woff2);
     font-style: normal;
     font-weight: bold;
 }
 
 @font-face {
     font-family: "SourceSansPro";
-    src: url(../fonts/SourceSansPro-It.otf);
+    src: url(../fonts/SourceSansPro-It.woff2);
     font-style: italic;
     font-weight: normal;
 }
@@ -47,7 +47,6 @@
     width:40%;
     font: italic normal 16px "SourceSansPro", sans-serif;
 }
-
 
 .parent--inline-block .child{
     display: inline-block;
