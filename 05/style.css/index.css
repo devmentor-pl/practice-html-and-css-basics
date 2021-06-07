@@ -1,0 +1,178 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size:62,5%;
+    --header1:2.5rem;
+    --header2:2rem;
+    --header3:1.7rem;
+    --header4:1.5rem;
+    --linkmenu:1.5rem;
+    --button:1.2rem;
+
+}
+
+@font-face {
+    font-family: "Vibes";
+    src: url(/05/fonts/GreatVibes-Regular.ttf);
+}
+
+/* Sekcja nr1 */
+
+.nav{
+    min-height:10vh;
+    width:80vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap:wrap;
+    margin:2rem auto;
+    cursor: pointer;
+}
+
+.nav h1{
+    font-family: "Vibes";
+    font-size: var(--header1);
+    color:rgb(0, 0, 0);
+}
+
+.nav h1:hover{
+    transform: scale(1.1);
+}
+
+.logo a,
+.nav__item a{
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+}
+
+.nav__list{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__list li {
+    list-style: none;
+    font-size: var(--linkmenu);
+    text-transform: uppercase;
+    padding:0.8rem;
+}
+
+.nav__list li:hover{
+    border-bottom:2px solid rgb(0, 0, 0);
+}
+
+/* Sekcja nr2 */
+.intro{
+    min-height:50vh;
+    width:80vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:2rem auto;
+}
+
+.intro__left{
+    width:39vw;
+    height:45vh;
+    background-image: url(../images/img1.jpg);
+    background-size: cover;
+}
+
+.intro__right{
+    width:39vw;
+    height:45vh;
+    background-image: url(../images/img2.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+/* Sekcja nr3 */
+.offer{
+    min-height:50vh;
+    width:80vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid black;
+    margin:2rem auto;
+}
+
+.offer__box{
+    width:300px;
+    height:500px;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.offer__box h2{
+    font-size: var(--header3);
+    align-self: flex-start;
+    padding:1rem 0;
+}
+
+/* Button ddoany aby poćwiczyć before i after */
+
+button{
+    height:3rem;
+    width:100%;
+    margin:0.7rem;
+    text-decoration: none;
+    border:none;
+    border-radius: 5px;
+    background-color: rgb(44, 43, 43);
+    color: rgb(255, 255, 255);
+    font-size: var(--button);
+    letter-spacing: 2.5px;
+    position:relative;
+    overflow: hidden;
+}
+
+button:before{
+    content:"";
+    position:absolute;
+    top:-100%;
+    left:0;
+    width:100%;
+    height:50%;
+    transition:all 700ms;
+    background: linear-gradient(to right, #dae2f8, #d6a4a4); 
+}
+
+button:hover::before{
+    top:100%;
+}
+
+/* Sekcja nr4 */
+
+.container{
+    min-height: 100px;
+    width:80vw;
+    background-color: rgb(44, 43, 43);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+}
+
+.container li{
+    list-style: none;
+    padding:1rem;
+    transition: all .5s ease-in;
+}
+
+.container li:hover{
+    transform: scale(1.3);
+}
+
+
+.container__item a{
+    text-decoration: none;
+}
+
