@@ -6,22 +6,22 @@
 }
 
 @font-face {
-    font-family: "SourceSansPRO Regular";
-    src: url(/03/fonts/SourceSansPro-Regular.otf);
+    font-family: "SourceSansPRO";
+    src: url(../fonts/SourceSansPro-Regular.otf);
     font-style: normal;
     font-weight: normal;
 }
 
 @font-face {
-    font-family:"SourceSansPRO Bold";
-    src: url(/03/fonts/SourceSansPro-Bold.otf);
+    font-family:"SourceSansPRO";
+    src: url(../fonts/SourceSansPro-Bold.otf);
     font-style: normal;
     font-weight: bold;
 }
 
 @font-face {
-    font-family: "SourceSansPro Italic";
-    src: url(/03/fonts/SourceSansPro-It.otf);
+    font-family: "SourceSansPro";
+    src: url(../fonts/SourceSansPro-It.otf);
     font-style: italic;
     font-weight: normal;
 }
@@ -34,18 +34,18 @@
 
 .child:nth-child(1){
     width:30%;
-    font-family: "SourceSansPRO Regular", sans-serif;
+    font: normal normal 16px "SourceSansPRO", sans-serif;
 }
 
 .child:nth-child(2){
     width:calc(30% - 20px);
-    font-family: "SourceSansPRO Bold", sans-serif;
+    font: normal bold 16px "SourceSansPRO", sans-serif;
     margin:0 10px;
 }
 
 .child:nth-child(3){
     width:40%;
-    font-family: "SourceSansPro Italic", sans-serif;
+    font: italic normal 16px "SourceSansPro", sans-serif;
 }
 
 
