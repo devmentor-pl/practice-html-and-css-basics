@@ -6,16 +6,22 @@
 }
 
 html{
+    --bg-body:rgba(241, 238, 238, 0.877);
+    --bg-nav:rgb(255, 255, 255);
     --bg-border:rgb(12, 144, 206);
-}
-body{
-    background-color: rgba(241, 238, 238, 0.877);
+    --bg-dropdown-item:rgba(0, 0, 0, 0.8);
+    --link-level1:rgb(12, 144, 206);
+    --link-level2:rgb(255, 255, 255);
 }
 
-.nav{
+body {
+    background-color: var(--bg-body);
+}
+
+.nav {
     min-height:10vh;
     cursor: pointer;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--bg-nav);
 }
 
 .nav__list {
@@ -26,48 +32,40 @@ body{
     margin:2rem 2rem;
 }
 
-.nav__list li {
+.nav__item,
+.dropdown__item {
     list-style: none;
     padding: 0.8rem;
     border:2px solid transparent;
 }
 
-/* Jak już używamy BEM to zawsze powinniśmy stylować po klasie (z wyłączeniem reset.css)s */
-
-/*  komentarz dla mnie: Zwróć uwagę, że jak najedziesz na oferta to menu skacze. 
-    Jest to spowodowane tym, że border dodatkowo rozpycha to menu. 
-    Nie jest to pożądany efekt. 
-    Możesz border utworzyć zawsze z kolorem "transparent", a na :hover nadawać kolor ;) */
-
-.nav__list .nav__item:hover{
+.nav__list .nav__item:hover {
     border-top:2px solid var(--bg-border);
 }
 
-.nav__list li a{
+.nav__item--link {
     text-decoration: none;
+    color:var(--link-level1);
 }
 
-.nav__item a {
-    color:rgb(12, 144, 206);
+.dropdown__item--link {
+    text-decoration: none;
+    color:var(--link-level2);
 }
 
-.dropdown__item a{
-    color:rgb(255, 255, 255);
-}
-
-.arrow1{
+.arrow1 {
     display:inline-block;
     margin:0.8rem;
     transform: rotate(90deg);
 }
 
-.arrow2{
+.arrow2 {
     margin:0.8rem;
 }
 
 /* 2th level menu */
 
-.nav__item{
+.nav__item {
     text-transform: uppercase;
     position: relative;
 }
@@ -83,10 +81,14 @@ body{
     display:block;
 }
 
+.nav__item:hover .nav__dropdown--level3 {
+    display: none;
+}
+
 /* 3th level menu */
 .dropdown__item {
     position:relative;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: var(--bg-dropdown-item);
 }
 
 .nav__dropdown--level3 {
@@ -100,8 +102,3 @@ body{
     display:block
 }
 
-/* Komentarz dla mnie
-Dodawanie do klas liczb, nie jest najlepszym pomysłem.
-Lepiej by było zrobić coś takiego: nav__dropdown nav__dropdown--level3.
-Mimo, że level3 zawiera liczbę, ale wiadomo, że to dotyczy szczególnego przypadku dot. poziomu.
-Teraz nav__dropdown zawiera ogólne style, a nav__dropdown--level3 szczególne. */
