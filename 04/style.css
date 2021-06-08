@@ -1,0 +1,128 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #f6f6f6;
+}
+
+nav {
+  margin: 1rem auto;
+  width: 80%;
+  height: 50px;
+  background-color: white;
+  color: #333333;
+  font-family: "Arial";
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.menu__item {
+  width: 105px;
+  text-transform: uppercase;
+  padding: 1rem;
+  border-top: 2px solid transparent;
+  display: flex;
+  align-items: center;
+
+  position: relative;
+}
+
+.menu__arrow {
+  margin-left: 0.8rem;
+  margin-top: 0.1rem;
+  align-self: flex-start;
+  /*transform: rotate(90deg);*/
+}
+
+.menu__item:hover {
+  border-top: 2px solid orangered;
+  border-radius: 2px;
+  color: orangered;
+}
+
+.menu__item:hover .menu__arrow {
+  transform: scale(1.2);
+}
+
+.menu__item:hover .menu__dropdown {
+  display: inline-block;
+}
+
+.menu__dropdown {
+  list-style: none;
+  text-transform: none;
+  width: 200px;
+  position: absolute;
+  left: 0;
+  top: 47px;
+  padding: 1rem 0.5rem 1rem 1rem;
+  background-color: #333333;
+  display: none;
+}
+
+.dropdown__item {
+  color: #bec7d3;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: relative;
+}
+
+.dropdown__item:hover {
+  color: white;
+}
+
+.dropdown__item:hover .dropdown__arrow {
+  display: inline-block;
+}
+
+.dropdown__item:hover .dropdown__nested {
+  color: #bec7d3;
+  display: inline-block;
+}
+
+.dropdown__item:not(:last-child) {
+  margin-bottom: 0.7rem;
+}
+
+.dropdown__arrow {
+  width: 0.7rem;
+  height: 0.7rem;
+  transform: rotate(270deg);
+  display: none;
+}
+
+.dropdown__nested {
+  background-color: #333333;
+  list-style: none;
+  text-transform: none;
+  width: 200px;
+  position: absolute;
+  left: 208px;
+  top: -16px;
+  padding: 1rem 0.5rem 1rem 1rem;
+  display: none;
+}
+
+.nested__item {
+  background-color: #333333;
+}
+
+.nested__item:hover {
+  color: white;
+}
+
+.nested__item:not(:last-child) {
+  margin-bottom: 0.7rem;
+}
