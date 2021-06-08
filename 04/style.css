@@ -115,6 +115,11 @@ nav {
   display: none;
 }
 
+/*helps with dissapearing .menu__dropdown while hovering on dropdown__nested*/
+.dropdown__nested:hover .menu__dropdown {
+  display: inline-block;
+}
+
 .nested__item {
   background-color: #333333;
 }
