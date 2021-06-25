@@ -4,9 +4,130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>devmentor.pl - HTML & CSS BASICS - #01</title>
+    <title>devmentor.pl - HTML & CSS BASICS - #01 Kwiaciarnia Bukiecik</title>
 </head>
-<body>
+<header>
+<a href="/">
+<img src="KwiaciarniaLOGO.jpg" alt="Logo "width="25%" height="25%"> </a>
+
+</header>
+<nav>
+    <ul>
+        <li>Lista przedmiotów</li>
+        <li>Przykładowe aranżace </li>
+        <li>Cennik</li>
+        <li>O mnie</li>
+        <li>Kontakt</li>
+    </ul>
+</nav>
+<main>
+    <article>
+        <h1>
+            Wypożyczenie dekoracji ślubnych 
+        </h1>
+    <p>
+        Oferuję wypożyczenie dekoracji ślubnych w styly rustykalnym. 
+        <br>
+        W skład wypożyczenia wchodzą następujące elemanty:
+        <ul>
+            <li> Lampiony </li>
+            <li>Napis dekoracyjny</li>
+            <li> Numerki na stoły</li>
+        </ul>
+    </p>
+    <p>
+        
+        Autor Maria Jakubas-Małek
+        Data publikacji 20.06.2018
+    </p>
+    <table>
+        <caption> Lampiony </caption>
+        <colgroup>
+        <col span="1" style ="background:green; ">
+        <col style="background-color: violet;">
+        <col style="background-color: blueviolet;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th scope="col">Nazwa</th>
+                <th scope="col">Ilość</th>
+                <th scope="col">Cena</th>
+           </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Z mchem </td>
+                <td> 12 </td>
+                <td> 10 zł </td>
+            </tr>
+            <tr>
+                <td> Zestaw </td>
+                <td> 2  </td>
+                <td> 100 zł</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th scope="col"> suma </th>
+            <th scope="col"> </th>
+            <th scope="col"> 110 </th>
+        </tfoot>
+    </table>
     
-</body>
+    <div>
+        <img src="Lampiony.jpg" alt="Zestaw Lampionów" width="25%" height="25%">
+    </div>
+
+    
+    <time class="comment__date">\
+        2021-06-25
+
+    </time>
+</main>
+
+<body>
+    <form>
+        <h3> Zostaw komentarz</h3>
+        <div>
+            <label>
+                Komentarz <input name=" Komentarz "/>
+           
+                    </div>
+                    <div>
+                                                 <label>
+                                Autor <input name=" imię i nazwisko "/>
+                           
+                                    </div>
+                                    <div>
+                                        <label>
+                                            data <input name=" wpisz datę  "/>
+                                       
+                                                </div>
+                                                
+                                    <div>
+                        <input type="submit"/>
+                    </div>
+    <article>
+        <h2>
+            Komentarz 1
+                    </h2>
+                    <p>
+                        Polecam bardzo profesjonalne podejście <br>
+                        Iga Kowalczyk <br>
+                        14.06.2020
+                    </p>
+                    <h2>
+                        Komentarz 2
+                                </h2>
+                                <p>
+                                    Piękne dekoracje super  <br>
+                                    Anna Sztos <br>
+                                    05.05.2019
+                                </p>
+
+    </article>
+    <footer>
+        <div>&copy; Maria Jakubas-Małek / Wedding designer 
+
+        </div>
+    </footer>
 </html>
