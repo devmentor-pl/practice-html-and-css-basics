@@ -1,30 +1,132 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
 </head>
+
 <body>
     <header class="header">
-        <div class="header__container">
-            <h1 class="header__logo"><img class="header__img" src="#" alt="#"></h1>
-            <nav class="header__menu">
-                <ul class="header__menu-list">
-                    <li class="header__menu-item"><a href="#" class="header__menu-link">Lorem</a></li>
-                    <li class="header__menu-item"><a href="#" class="header__menu-link">Lorem</a>
-                        <ul class="header__dropdown">
-                            <li class="dropdown__item"><a href="#" class="dropdown__link">Lorem.</a></li>
-                            <li class="dropdown__item"><a href="#" class="dropdown__link">Ab!</a></li>
-                            <li class="dropdown__item"><a href="#" class="dropdown__link">Qui.</a></li>
-                        </ul>
-                    </li>
-                    <li class="header__menu-item"><a href="#" class="header__menu-link">Lorem</a></li>
-                    <li class="header__menu-item"><a href="#" class="header__menu-link">Lorem</a></li>
-                </ul>
-            </nav>
-        </div>
+        <h1 class="header__logo"><img class="header__img" src="#" alt=""></h1>
+        <nav class="header__menu">
+            <ul class="header__menu-list">
+                <li class="header__menu-item"><a href="#" class="header__menu-link">Lorem</a></li>
+                <li class="header__menu-item"><a href="#" class="header__menu-link">Lorem</a>
+                    <ul class="header__dropdown">
+                        <li class="dropdown__item"><a href="#" class="dropdown__link">Lorem.</a></li>
+                        <li class="dropdown__item"><a href="#" class="dropdown__link">Ab!</a></li>
+                        <li class="dropdown__item"><a href="#" class="dropdown__link">Qui.</a></li>
+                    </ul>
+                </li>
+                <li class="header__menu-item"><a href="#" class="header__menu-link">Lorem</a></li>
+                <li class="header__menu-item"><a href="#" class="header__menu-link">Lorem</a></li>
+            </ul>
+        </nav>
     </header>
+    <main class="main">
+        <article class="main__article" id="article">
+            <header class="article__header">
+                <h2 class="article__title">Lorem, ipsum.</h2>
+                <p class="article__info">
+                    Opublikowano <time class="article__date" datetime="2021-07-06T17:00">06.07.2021</time> przez <a
+                        href="#" class="article__author" rel="author">Autora.</a>
+                </p>
+            </header>
+            <div class="article__content">
+                <figure class="article__picture">
+                    <img class="article__img" src="#" alt="">
+                    <figcaption class="article__img-description">Lorem, ipsum dolor.</figcaption>
+                </figure>
+                <p class="article__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+                    voluptatem sunt consequuntur? Consectetur dolorum qui laboriosam quisquam maxime, esse unde eligendi
+                    magni provident rem. Repellendus ad ipsam consequuntur enim! Ex voluptates, expedita reprehenderit
+                    quo perferendis corporis eius consectetur nobis nesciunt consequatur maxime ab exercitationem natus!
+                </p>
+                <table class="article__table">
+                    <caption class="table__title">Lorem, ipsum dolor.</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Lorem.</th>
+                            <th scope="col">Lorem.</th>
+                            <th scope="col">Lorem.</th>
+                            <th scope="col">Lorem.</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lorem, ipsum.</td>
+                            <td>Necessitatibus, in?</td>
+                            <td>Animi, perspiciatis.</td>
+                            <td>Veniam, consectetur.</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem, ipsum.</td>
+                            <td>Necessitatibus, in?</td>
+                            <td>Animi, perspiciatis.</td>
+                            <td>Veniam, consectetur.</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem, ipsum.</td>
+                            <td>Necessitatibus, in?</td>
+                            <td>Animi, perspiciatis.</td>
+                            <td>Veniam, consectetur.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <section class="article__comments" id="comments">
+                <h3 class="article__subtitle">Lorem.</h3>
+                <ol class="comments">
+                    <li class="comments__item">
+                        <p class="comments__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
+                            asperiores.</p>
+                        <div class="comments__container">
+                            Skomentował<time class="comments__date" datetime="2021-07-06T17:00"> 06.07.2021 </time>
+                            <a href="#" class="comments__author">Autor.</a>
+                        </div>
+                    </li>
+                    <li class="comments__item">
+                        <p class="comments__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore,
+                            fugiat!</p>
+                        <div class="comments__container">
+                            Skomentował<time class="comments__date" datetime="2021-07-06T17:00"> 06.07.2021 </time>
+                            <a href="#" class="comments__author">Autor.</a>
+                        </div>
+                    </li>
+                    <li class="comments__item">
+                        <p class="comments__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, error.
+                        </p>
+                        <div class="comments__container">
+                            Skomentował<time class="comments__date" datetime="2021-07-06T17:00"> 06.07.2021 </time>
+                            <a href="#" class="comments__author">Autor.</a>
+                        </div>
+                    </li>
+                </ol>
+                <form class="article__form" action="#" method="#" id="form">
+                    <h3 class="article__subtitle">Lorem, ipsum.</h3>
+                    <p class="form_warpper">
+                        <label for="name" class="form__label">Lorem.</label>
+                        <input type="text" class="form__input" name="name" id="name" required>
+                    </p>
+                    <p class="form_wrapper">
+                        <label for="email" class="form__label">Lorem.</label>
+                        <input type="email" class="form__input" name="email" id="email" required>
+                    </p>
+                    <p class="form_wrapper">
+                        <label for="comment" class="form__label">Lorem.</label>
+                        <textarea class="form__input" name="comment" id="comment" cols="48" rows="6"
+                            required></textarea>
+                    </p>
+                    <p class="form__wrapper">
+                        <button name="submit" id="submit">Lorem</button>
+                    </p>
+                </form>
+            </section>
+        </article>
+    </main>
 </body>
+
 </html>
