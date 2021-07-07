@@ -6,3 +6,63 @@ html {
     box-sizing: inherit;
 }
 
+@font-face {
+    font-family: 'Source Sans PRO';
+    font-style: normal;
+    font-weight: normal;
+    src: url(../fonts/SourceSansPro-Regular.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Source Sans PRO';
+    font-style: normal;
+    font-weight: bold;
+    src: url(../fonts/SourceSansPro-Bold.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Source Sans PRO';
+    font-style: italic;
+    font-weight: normal;
+    src: url(../fonts/SourceSansPro-Italic.woff2) format('woff2');
+}
+
+.parent {
+    padding: 20px;
+    width: 600px;
+}
+
+.child--first {
+    font: 16px 'Source Sans PRO', sans-serif;
+    width: calc(0.3 * (100% - 20px));
+}
+
+.child--middle {
+    font: bold 16px 'Source Sans PRO', sans-serif;
+    margin: 0 10px;
+    width: calc(0.3 * (100% - 20px));
+}
+
+.child--last {
+    font: italic 16px 'Source Sans PRO', sans-serif;
+    width: calc(0.4 * (100% - 20px));
+}
+
+.parent--inline-block div {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.parent--float div {
+    float: left;
+}
+
+.parent--float::after {
+    clear: both;
+    content: '';
+    display: block;
+}
+
+.parent--flexbox {
+    display: flex;
+}
