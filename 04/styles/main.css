@@ -33,7 +33,7 @@ a {
 }
 
 .menu__item::before {
-    background-color: var(--color-alfa);
+    background: var(--color-alfa);
     content: '';
     height: 3px;
     left: 50%;
@@ -61,7 +61,7 @@ a {
 
 .menu__dropdown,
 .menu__dropdown-second {
-    background-color: var(--color-gamma);
+    background: var(--color-gamma);
     display: none;
     left: 0;
     margin-top: 20px;
