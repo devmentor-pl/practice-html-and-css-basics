@@ -1,12 +1,161 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">Logo</a>
+    </header>
+    <nav>
+      <ul class="nav">
+        <li class="nav__item">
+          <a class="nav__link" href="#">Strona główna</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">Kontakt</a>
+          <ul class="nav__dropdown dropdown">
+            <li class="dropdown__item">
+              <a href="#" class="dropdown__link">Formularz</a>
+            </li>
+            <li class="dropdown__item">
+              <a href="#" class="dropdown__link">Facebook</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">Artykuły</a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <article class="article">
+        <h1 class="article__title">Tytuł artykułu</h1>
+        <h4 class="article__author">Lorem Ipsum</h4>
+        <h5 class="article__date">14.01.2020</h5>
+        <div class="article__content">
+          <p class="article__paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+            corporis labore amet quis quo laboriosam atque magni, deleniti
+            numquam ullam, expedita saepe delectus molestias enim possimus!
+            Aliquam voluptatibus accusantium modi.
+          </p>
+          <img
+            src="https://cdn.pixabay.com/photo/2021/07/01/16/36/strawberries-6379817_960_720.jpg"
+            alt="strawberries"
+            class="article__img"
+          />
+          <p class="article__paragraph">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat
+            totam laboriosam, magnam cupiditate odit tenetur eius, molestias
+            excepturi, sunt esse qui! Minus omnis, pariatur a praesentium
+            quisquam cum dolorem obcaecati iusto molestias rerum libero animi
+            possimus aliquid illum suscipit labore vitae voluptas earum, quis
+            laboriosam beatae dignissimos nemo. Eaque, expedita accusantium
+            pariatur voluptate cupiditate autem odit voluptatibus neque, illum
+            quia obcaecati quas repellat illo non minus optio repellendus, earum
+            mollitia unde. Doloribus, dignissimos! Illo molestias, harum iste
+            fuga est aut eius saepe temporibus, facere quisquam, ut amet.
+            Ducimus impedit ratione laudantium nam cumque, est accusamus
+            recusandae, quae, illum ut autem?
+          </p>
+          <table class="article__table">
+            <caption>
+              Uczestnicy
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Imię</th>
+                <th scope="col">Nazwisko</th>
+                <th scope="col">Wiek</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Jan</td>
+                <td>Kowalski</td>
+                <td>32</td>
+              </tr>
+              <tr>
+                <td>Andrzej</td>
+                <td>Nowak</td>
+                <td>23</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <form class="article__comment-form">
+          <h3>Skomentuj</h3>
+          <div>
+            <label
+              >Nick
+              <input name="nickname" type="text" />
+            </label>
+          </div>
+
+          <div>
+            <label
+              >Adres e-mail
+              <input type="email" />
+            </label>
+          </div>
+
+          <div>
+            <label
+              >Twój komentarz
+              <textarea name="" id="" cols="30" rows="10"></textarea>
+            </label>
+          </div>
+        </form>
+
+        <section class="article__comments">
+          <h3 class="article__comments-title">Komentarze</h3>
+          <div class="article__comment">
+            <h5 class="article__comment-author">adrian1999</h5>
+            <h6 class="article__comment-date">23.01.2020</h6>
+            <p class="article__comment-content">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Voluptatem iste assumenda repellat incidunt ad laboriosam quod
+              suscipit, placeat dolores voluptas.
+            </p>
+          </div>
+
+          <div class="article__comment">
+            <h5 class="article__comment-author">chudy2115</h5>
+            <h6 class="article__comment-date">22.01.2020</h6>
+            <p class="article__comment-content">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Inventore, nobis.
+            </p>
+          </div>
+
+          <div class="article__comment">
+            <h5 class="article__comment-author">strawberries_fan</h5>
+            <h6 class="article__comment-date">22.01.2020</h6>
+            <p class="article__comment-content">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore
+              quaerat iste ut at ex, deserunt quidem molestias ducimus obcaecati
+              commodi sapiente totam vero corrupti eaque ipsa iusto expedita,
+              deleniti illo autem. Sed, laudantium vero porro minus, quod
+              tenetur iusto assumenda debitis sint maxime praesentium ab iste
+              provident velit. Cumque non, nostrum ipsam voluptas repudiandae
+              iure ipsa quo quidem deleniti nulla expedita eaque? Veniam iure
+              magnam eius! Non fuga explicabo expedita quibusdam molestias
+              perferendis esse est voluptatum voluptates molestiae odio dolore
+              qui eligendi voluptas perspiciatis at dignissimos sint praesentium
+              aspernatur saepe unde, fugiat obcaecati impedit vel? Recusandae,
+              sint? Consequatur, nemo praesentium.
+            </p>
+          </div>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <p class="footer__content">&copy; blogotruskawkach.pl 2020</p>
+    </footer>
+  </body>
 </html>

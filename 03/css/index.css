@@ -1,0 +1,36 @@
+.parent {
+  width: 600px;
+  padding: 20px;
+}
+
+.child {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  margin: 10px 0;
+}
+
+.child--first {
+  width: 30%;
+}
+
+.child--middle {
+  font-weight: bold;
+  width: 30%;
+}
+
+.child--last {
+  font-style: italic;
+  width: 40%;
+}
+
+.parent--inline-block .child {
+  display: inline-block;
+}
+
+.parent--float .child {
+  float: left;
+}
+
+.parent--flexbox {
+  display: flex;
+}
