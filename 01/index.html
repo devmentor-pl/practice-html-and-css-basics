@@ -9,28 +9,29 @@
   <body>
     <header>
       <a href="#" class="logo">Logo</a>
+
+      <nav>
+        <ul class="nav">
+          <li class="nav__item">
+            <a class="nav__link" href="#">Strona główna</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Kontakt</a>
+            <ul class="nav__dropdown dropdown">
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">Formularz</a>
+              </li>
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">Facebook</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Artykuły</a>
+          </li>
+        </ul>
+      </nav>
     </header>
-    <nav>
-      <ul class="nav">
-        <li class="nav__item">
-          <a class="nav__link" href="#">Strona główna</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#">Kontakt</a>
-          <ul class="nav__dropdown dropdown">
-            <li class="dropdown__item">
-              <a href="#" class="dropdown__link">Formularz</a>
-            </li>
-            <li class="dropdown__item">
-              <a href="#" class="dropdown__link">Facebook</a>
-            </li>
-          </ul>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#">Artykuły</a>
-        </li>
-      </ul>
-    </nav>
     <main>
       <article class="article">
         <h1 class="article__title">Tytuł artykułu</h1>
@@ -43,11 +44,14 @@
             numquam ullam, expedita saepe delectus molestias enim possimus!
             Aliquam voluptatibus accusantium modi.
           </p>
-          <img
-            src="https://cdn.pixabay.com/photo/2021/07/01/16/36/strawberries-6379817_960_720.jpg"
-            alt="strawberries"
-            class="article__img"
-          />
+          <figure>
+            <img
+              src="https://cdn.pixabay.com/photo/2021/07/01/16/36/strawberries-6379817_960_720.jpg"
+              alt="strawberries"
+              class="article__img"
+            />
+            <figcaption>Strawberries</figcaption>
+          </figure>
           <p class="article__paragraph">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat
             totam laboriosam, magnam cupiditate odit tenetur eius, molestias

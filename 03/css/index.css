@@ -1,5 +1,5 @@
 .parent {
-  width: 600px;
+  width: 650px;
   padding: 20px;
 }
 
@@ -16,11 +16,12 @@
 .child--middle {
   font-weight: bold;
   width: 30%;
+  margin: 0 10px;
 }
 
 .child--last {
   font-style: italic;
-  width: 40%;
+  width: calc(40% - 20px);
 }
 
 .parent--inline-block .child {
