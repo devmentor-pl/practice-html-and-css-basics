@@ -8,7 +8,7 @@
 Znacznik label, którego przodkiem jest klasa .ac-container 
 (0, 1, 1)
 */
-.ac-1, label
+.ac-container label
 {
     height: 30px !important;
     line-height: 21px !important;
@@ -64,7 +64,8 @@ i ten brat musi posiadać przodka o klasie .ac-container
 to samo co w 1) ale z efektem najechania kursorem na label 
 (0, 3, 2)
 */
-.ac-container label::before ~input 
+.ac-container input:checked + label,
+.ac-container input:checked + label:hover
   {
     background: #f1f2f3;
     color: #666;
@@ -92,7 +93,8 @@ którego poprzedni brat jest zaznaczonym inputem (użyj pseudoklasy),
 którego przodek to element o klasie .ac-container
 (0, 3, 3)
 */
-.ac-container label::after ~input {
+.ac-container label::after:hover + input:checked
+ {
     background-image: url(../images/arrow_up.png);
 }
 
