@@ -1,0 +1,17 @@
+.header__container {
+   
+    display: flex;
+    justify-content:space-between;
+    
+   }
+   .header__logo {
+    min-width: 200px;
+    background-color: orange;
+    margin: 10px 0px 18px 0px;
+   }
+   .header__nav {
+    width: 45%;
+    background-color: orange;
+    margin: 10px 0px 18px 0px;
+   }
+   

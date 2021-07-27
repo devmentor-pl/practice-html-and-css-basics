@@ -1,0 +1,22 @@
+.nav, .nav__item {
+    outline: 1px solid;
+    margin: 3px; padding: 3px;
+   }
+   .nav {
+    outline-color: red;
+    background: rgb(0, 200, 250);
+    padding: 10px;
+   }
+   .nav__item {
+    background: rgb(220, 220, 220);
+    padding: 0 5px;
+    margin-left: 5px;
+    outline-color: green;
+   }
+   .nav__item:first-child,
+   .nav__item--no-space {
+    margin-left: 0;
+   }
+   
+   
+   
