@@ -4,25 +4,25 @@
 
 # `#01` HTML i CSS: Podstawy
 
-Utwórz strukturę HTML w pliku `index.html`, która będzie poprawna semantycznie i będzie posiadała poniższe elementy:
+W pliku `index.html` utwórz strukturę HTML, która będzie poprawna semantycznie i będzie posiadała poniższe elementy:
 
-- Nagłówek tj. `<header>`, który będzie zawierał:
-    - logo
-    - menu wielopoziomowe
-- Treśc główną np. `<main>`, którą będzie:
-    - Artykuł tj. `<article>`, który posiada:
-        - tytuł
-        - treść
-        - datę publikacji
-        - autora
-        - ilustrację
-        - tabelę
-    - Formularz do komentowania
-    - Kilka przykładowych komentarzy, które zawierają
-        - treść komentarza
-        - autora komentarza
-        - datę utworzenia
-- Stopkę z informacją o prawach autorskich
+- Nagłówek, tj. `<header>`, który będzie zawierał:
+    - logo,
+    - menu wielopoziomowe.
+- Treść główną, np. `<main>`, którą będzie:
+    - artykuł, tj. `<article>`, który posiada:
+        - tytuł,
+        - treść,
+        - datę publikacji,
+        - autora,
+        - ilustrację,
+        - tabelę.
+    - formularz do komentowania,
+    - kilka przykładowych komentarzy, które zawierają:
+        - treść komentarza,
+        - autora komentarza,
+        - datę utworzenia.
+- Stopkę z informacją o prawach autorskich.
 
 &nbsp;
 > :arrow_left: ~~*poprzednie zadanie*~~ | [*następne zadanie*](./../02) :arrow_right:
