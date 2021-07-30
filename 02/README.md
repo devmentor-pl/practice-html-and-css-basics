@@ -4,7 +4,7 @@
 
 # `#02` HTML i CSS: Podstawy
 
-Znalazłeś w sieci bardzo fajny efekt rozsuwanego menu (ang. accordion menu) autorstwa `@anzjoy (Anz Joy)`, który działa bez wykorzystania JavaScript! Niestety okazało się, że brakuje części selektorów.
+Znalazłeś w sieci bardzo fajne rozsuwane menu (ang. accordion menu) autorstwa `@anzjoy (Anz Joy)`, które działa bez wykorzystania JavaScriptu. Niestety okazało się, że w kodzie brakuje części selektorów.
 
 Na szczęście ktoś zostawił komentarze, które pozwolą Ci uzupełnić brakujące elementy w pliku `./styles/index.css`.
 Dodatkowo w nawiasach masz też informacje na temat specyficzności danego selektora.
