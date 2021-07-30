@@ -4,18 +4,18 @@
 
 # HTML i CSS: Podstawy
 
-Podstawowa znajomość HTML oraz CSS jest niezbędna do rozpoczecia przygody z programowaniem w JavaScript dlatego zawsze polecam rozpoczecie nauki od podstaw tych dwóch wcześniej wspomnianych technologii.
+Znajomość HTML-a i CSS-a jest niezbędna do rozpoczecia przygody z programowaniem w języku JavaScript, dlatego zawsze najpierw polecam naukę podstaw tych dwóch technologii.
 
-Zanim przystąpisz do zadan powinieneś przerobić:
+Zanim przystąpisz do zadań, powinieneś przerobić:
 
-- Podstawowe znaczniki HTML oraz problematykę semantyki w HTML
-- Podstawowe selektory i specyficzność w CSS
-- Pozycjonowania elementów przy pomocy:
-    - inline-block
-    - float
-    - flexbox
-    - position: relative & absolute
-- Tworzenie układu strony
+- podstawowe znaczniki HTML oraz temat semantyki w HTML,
+- podstawowe selektory i specyficzność w CSS,
+- pozycjonowanie elementów przy pomocy:
+    - inline-block,
+    - float,
+    - flexbox,
+    - position: relative & absolute,
+- tworzenie układu strony.
 
 &nbsp;
 
