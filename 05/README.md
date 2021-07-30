@@ -4,31 +4,31 @@
 
 # `#05` HTML i CSS: Podstawy
 
-Nadszedł czas, aby stworzyć podstawowy układ strony. Poniżej przedstawiam jej schemat. 
+Nadszedł czas, aby stworzyć podstawowy układ strony. Poniżej przedstawiam jej schemat: 
 
 ![](./demo.png)
 
 &nbsp;
 
-* **zielone krawędzie** to obszar dostępny dla przeglądarki, czyli element o 100% szerokości, która wyznacza nasze sekcje
-* **niebieskie krawędzie** to maksymalna szerokość naszej strony - powiedzmy, że wynosi 1000px
-* **pomarańczowe prostokąty** to dowolna zawartość
+* **zielone krawędzie** to kontenery, które wypełniają całą szerokość okna przeglądarki (mają 100% szerokości),
+* **niebieskie krawędzie** to maksymalna szerokość zawartości naszej strony. Przyjmijmy, że wynosi 1000px,
+* **pomarańczowe prostokąty** to dowolna zawartość sekcji.
 
 ## Sekcja nr 1
 
-Uznajmy, że to nasz nagłówek, który z lewej strony posiada logo, z prawej menu. Wykonaj to zadanie w taki sposób, aby elementy wyglądały jak doczepione do lewego i prawego boku.
+Uznajmy, że to nasz nagłówek, który z lewej strony posiada logo, a z prawej – menu. Wykonaj to zadanie w taki sposób, aby elementy wyglądały jak doczepione do lewego i prawego boku.
 
 ## Sekcja nr 2
 
-W tym przypadku mamy treść, która jest podzielona na dwie kolumny o tej samej szerokości z niewielkim odstępem jedynie mędzy nimi. Podobnie jak w sekcji poprzedniej elementy mają być przyległe do prawego i lewego boku wyznaczonego przez maksymalną szerokości strony.
+W tym przypadku mamy treść, która jest podzielona na dwie kolumny o tej samej szerokości. Kolumny dzieli niewielki odstęp. Podobnie jak w poprzedniej sekcji elementy mają przylegać do prawego i lewego boku wyznaczonego przez maksymalną szerokości strony (niebieskie krawędzie).
 
 ## Sekcja nr 3
 
-W tym przypadku mamy 3 kolumny. W przeciwieństwie do poprzedniej sekcji, tym razem odstępy mają być jednakowe nawet między zawartością, a niebieską krawędzią.
+W tej sekcji mamy 3 kolumny. Tym razem odstępy mają być jednakowe nawet między zawartością a niebieską krawędzią.
 
 ## Sekcja nr 4
 
-Ostatni element to nasza stopka, której wysokość ma być nie mniejsza niż 100px. Jej zawartość ma być wyśrodkowana w pionie oraz poziomie.
+Ostatni element to stopka, której wysokość ma być nie mniejsza niż 100px. Jej zawartość ma być wyśrodkowana w pionie oraz w poziomie.
 
 &nbsp;
 > :arrow_left: [*poprzednie zadanie*](./../04) | ~~*następne zadanie*~~ :arrow_right:
