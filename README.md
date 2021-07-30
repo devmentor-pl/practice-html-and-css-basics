@@ -4,7 +4,7 @@
 
 # HTML i CSS: Podstawy
 
-Znajomość HTML-a i CSS-a jest niezbędna do rozpoczecia przygody z programowaniem w języku JavaScript, dlatego zawsze najpierw polecam naukę podstaw tych dwóch technologii.
+Znajomość HTML-a i CSS-a jest niezbędna do rozpoczęcia przygody z programowaniem w języku JavaScript, dlatego zawsze najpierw polecam naukę podstaw tych dwóch technologii.
 
 Zanim przystąpisz do zadań, powinieneś przerobić:
 
