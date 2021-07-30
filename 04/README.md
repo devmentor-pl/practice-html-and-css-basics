@@ -4,15 +4,15 @@
 
 # `#04` HTML i CSS: Podstawy
 
-Na każdej stronie znajdziesz mniej lub bardziej rozbudowane menu. 
+Na stronach internetowych znajdziesz różne menu – mniej lub bardziej rozbudowane. 
 
-Dlatego tym razem Twoim zadaniem bedzie wykonanie menu, które może zawierać 3 poziomy:
+Tym razem Twoim zadaniem bedzie wykonanie menu, które zawiera 3 poziomy:
 
 ![](./assets/demo.png)
 
 Podpowiedzi:
-- kolorystykę możesz pobrać za pomocą dodatku do Chrome tj. [ColorZilla](https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp)
-- strzałki można uzyskać przy pomocy znaku większości i/lub mniejszości - odpowiednio odwrócony przy pomocy [transform: rotate()](https://www.w3schools.com/cssref/playit.asp?filename=playcss_transform_rotate)
+- kolory menu możesz pobrać za pomocą dodatku do przeglądarki Chrome: [ColorZilla](https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp),
+- strzałki uzyskasz przy pomocy znaku większości/mniejszości odpowiednio odwróconym przy pomocy [transform: rotate()](https://www.w3schools.com/cssref/playit.asp?filename=playcss_transform_rotate).
 
 
 &nbsp;
