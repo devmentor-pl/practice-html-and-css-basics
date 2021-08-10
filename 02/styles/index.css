@@ -93,7 +93,7 @@ którego poprzedni brat jest zaznaczonym inputem (użyj pseudoklasy),
 którego przodek to element o klasie .ac-container
 (0, 3, 3)
 */
-.ac-container label::after:hover + input:checked
+.ac-container input:checked + label::after:hover 
  {
     background-image: url(../images/arrow_up.png);
 }
