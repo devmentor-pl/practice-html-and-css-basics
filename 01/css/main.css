@@ -4,12 +4,13 @@
 }
 
 img {
-    width: 20%;
+    width: 30%;
 }
 
 .nav {
     background: var(--color-beta);
     display: flex;
+    justify-content: center;
     padding: 10px;
     text-transform: uppercase;
 }
@@ -17,20 +18,12 @@ img {
 .nav__item {
     position: relative;
     padding: 0 5px;
-    margin-left: 5px;
     cursor: pointer;
-}
-
-.nav__item--no-space {
-    margin-left: 0;
 }
 
 .nav__link {
     display: inline-block;
     color: var(--color-alfa);
-    height: 100%;
-    text-decoration: none;
-    width: 100%; 
     text-align: center;
 }
 
@@ -43,20 +36,15 @@ img {
     padding-top: 20px;
     position: absolute;
     left: 120px;
-    top: 40px;
+    top: 70px;
 }
 
 .dropdown__item {
     background: var(--color-beta);
     border-bottom: 3px solid var(--color-alfa);
     padding: 5px 20px;
-    min-width: 120px;
 }
 
 .dropdown__link {
-    display: inline-block;
-    /* color: var(--color-alfa); */
-    height: 100%;
     text-decoration: none;
-    width: 100%;
 }
