@@ -1,0 +1,44 @@
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.parent {
+	width: 600px;
+	padding: 20px;
+}
+
+.parent--flexbox {
+	display: flex;
+	justify-content: center;
+}
+
+.parent--float > .child {
+	float: left;
+}
+
+.parent--inline-block {
+	display: inline-block;
+}
+
+.parent--inline-block,
+.parent--flexbox > .child {
+	width: 30%;
+}
+
+.parent--float > .child {
+	width: 40%;
+}
+
+.child--first {
+	margin-right: 5px;
+}
+
+.child--middle {
+	margin: 0 5px;
+	font-weight: bold;
+}
+
+.child--last {
+	margin-left: 5px;
+	font-style: italic;
+}
