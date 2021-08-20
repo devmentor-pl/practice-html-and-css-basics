@@ -48,3 +48,14 @@ img {
 .dropdown__link {
     text-decoration: none;
 }
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+th, td {
+    border: 1px solid black;
+}
