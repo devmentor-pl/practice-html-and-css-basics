@@ -19,9 +19,14 @@ li ul {
 ul li a {
 	display: block;
 	padding: 1em;
+	width: 120px;
 	text-decoration: none;
 	white-space: nowrap;
 	color: #fff;
+}
+
+.fas {
+	margin-left: 15px;
 }
 
 .nav-menu li a:hover {
@@ -38,7 +43,7 @@ li:hover li a:hover {
 	background: #333;
 }
 
-ul ul ul {
+.nav-menu .nav-menu-2nd .nav-menu-3rd {
 	left: 100%;
 	top: 0;
 }
