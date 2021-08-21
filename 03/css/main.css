@@ -12,7 +12,8 @@ body {
 	padding: 20px;
 }
 
-.parent--flexbox {
+.parent--flexbox, 
+.parent--inline-block {
 	display: flex;
 	justify-content: center;
 }
@@ -21,18 +22,17 @@ body {
 	float: left;
 }
 
-.parent--inline-block {
-	display: inline-block;
-}
-
 .parent--inline-block,
-.parent--flexbox > .child {
+.parent--flexbox,
+.parent--float > .child {
 	width: 30%;
 }
 
-.parent--float > .child {
-	width: 40%;
-}
+/* Nie działa - dlaczego ?*/
+/* .parent--inline-block > .child {
+	display: inline-block; 
+	margin: auto;
+} */
 
 .child--first {
 	margin-right: 5px;
