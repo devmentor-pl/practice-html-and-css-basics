@@ -18,7 +18,7 @@ Wybacz, nie umiałem tym sposobem :)
 }
 
 .parent--inline-block .child--last {
-    width: calc(37% - 0px); /* wiem, że szerokość nie jest zachowana, ale w innym razie ucieka na dół ostatni */
+    width: calc(37% - 0px); /* wiem, że szerokość nie jest zachowana, ale w innym razie ucieka na dół ostatni przez narzucony margin */
 }
 
 .parent--float .child{
