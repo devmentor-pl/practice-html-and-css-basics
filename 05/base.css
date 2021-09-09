@@ -1,0 +1,83 @@
+.element__height {
+    height: 5em;
+}
+.row {
+    width: 100%;
+    outline: 3px solid green;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    align-items: center;
+}
+.header__main {
+    width:85%;  /* Dlaczego nie działa max-wdith?*/
+    display: flex;
+    justify-content: space-between;
+    height: 90%; 
+    outline: 3px solid blue;
+}
+.header__logo {
+    border:1px solid;
+    height: 100%;
+    width: 20%;
+    background-color: orange;    
+}
+.navigation {
+    border: 1px solid;
+    height: 100%;
+    width: 40%;
+    background-color: orange;
+}
+.section__container {
+    height: 30em;
+}
+.section__main {
+    height: 94%;
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    outline: 3px solid blue;
+    justify-content: space-between;
+    align-items: center;
+}
+.section__style {
+    height: 95%;
+    width: 49.5%;
+    background-color: orange;
+}
+
+.second__section{
+    height: 94%;
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    outline: 3px solid blue;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.section__element {
+    width: calc(94%/3);
+    min-height: 95%;
+    background-color: orange;
+}
+
+.footer__main {
+    width:85%;
+    display: flex;
+    justify-content: center; 
+    outline: 3px solid blue;
+    height: 5em;
+    align-items: center;
+}
+
+.footer__height {
+    min-height: 100px;
+}
+
+.foot {
+    background-color: orange;
+    width: 15%;
+    height: 3em; /* dlaczego przy min-height nie dzialaja procenty?*/
+}
