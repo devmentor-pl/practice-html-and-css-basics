@@ -1,11 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&display=swap');
-
-/*@font-face {
-    font-family: Source Sans PRO, sans-serif;
-    src: url(https://www.fontsquirrel.com/fonts/source-sans-pro);
-}
-Wybacz, nie umiałem tym sposobem :)
+/*@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&display=swap');
 */
+
+@font-face {
+    font-family: Source Sans PRO, sans-serif;
+    src: url(./fonts/SourceSansPro-Black.ttf);
+    src: url(./fonts/SourceSansPro-BlackItalic.ttf);
+    src: url(./fonts/SourceSansPro-Bold.ttf);
+    src: url(./fonts/SourceSansPro-BoldItalic.ttf);
+    src: url(./fonts/SourceSansPro-ExtraLight.ttf);
+    src: url(./fonts/SourceSansPro-ExtraLightItalic.ttf);
+    src: url(./fonts/SourceSansPro-Italic.ttf);
+    src: url(./fonts/SourceSansPro-Light.ttf);
+    src: url(./fonts/SourceSansPro-LightItalic.ttf);
+    src: url(./fonts/SourceSansPro-Regular.ttf);
+    src: url(./fonts/SourceSansPro-SemiBold.ttf);
+    src: url(./fonts/SourceSansPro-SemiBoldItalic.ttf);
+}
+
 
 .parent {
     min-width: 600px;
@@ -18,7 +29,7 @@ Wybacz, nie umiałem tym sposobem :)
 }
 
 .parent--inline-block .child--last {
-    width: calc(37% - 0px); /* wiem, że szerokość nie jest zachowana, ale w innym razie ucieka na dół ostatni przez narzucony margin */
+    width: calc(30% - 20px);
 }
 
 .parent--float .child{
@@ -26,7 +37,7 @@ Wybacz, nie umiałem tym sposobem :)
 }
 
 .parent--float .child--last {
-    width: calc(37% - 0px); /* tu to samo */
+    width: calc(30% - 20px); 
 }
 
 .parent--flexbox {
