@@ -1,8 +1,10 @@
 .element__height {
     height: 5em;
 }
-.row {
-    width: 100%;
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
     outline: 3px solid green;
     margin: 0 auto;
     display: flex;
