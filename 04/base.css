@@ -28,7 +28,7 @@ body {
 }
 
 .nav__item:hover:before {
-    content: '';
+    content: "";
     height: 3px;
     position: absolute;
     left: 0;
@@ -38,7 +38,7 @@ body {
 }
 
 .nav__item:hover:after {
-    content: '>';
+    content: ">";
     color:var(--color-alfa);
     transform:rotate(90deg);
     display: inline-block;
@@ -86,7 +86,7 @@ body {
 }
 
 .nav__dropdown .dropdown__item:hover:after {
-    content: '>';
+    content: ">";
     color: #f6f6f6;
     display: inline-block;
     position: absolute;
