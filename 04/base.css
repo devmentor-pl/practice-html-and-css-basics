@@ -37,15 +37,18 @@ body {
     background-color: var(--color-alfa);
 }
 
-.nav__item:hover:after {
+.dropdown:after {
     content: ">";
-    color:var(--color-alfa);
     transform:rotate(90deg);
     display: inline-block;
     position:absolute;
     margin-left: 15px;
     font-size: 13px;
     font-weight: 900;
+}
+
+.dropdown:hover:after {
+    color:var(--color-alfa);
 }
 
 .nav__item:hover > a{
@@ -102,6 +105,7 @@ body {
     display: none;
     left: 100%;
     top: 0;
+    min-width: 113%;
 }
 
 .dropdown__item:hover .dropdown__item--inside {
