@@ -3,18 +3,9 @@
 
 @font-face {
     font-family: Source Sans PRO, sans-serif;
-    src: url(./fonts/SourceSansPro-Black.ttf);
-    src: url(./fonts/SourceSansPro-BlackItalic.ttf);
-    src: url(./fonts/SourceSansPro-Bold.ttf);
-    src: url(./fonts/SourceSansPro-BoldItalic.ttf);
-    src: url(./fonts/SourceSansPro-ExtraLight.ttf);
-    src: url(./fonts/SourceSansPro-ExtraLightItalic.ttf);
-    src: url(./fonts/SourceSansPro-Italic.ttf);
-    src: url(./fonts/SourceSansPro-Light.ttf);
-    src: url(./fonts/SourceSansPro-LightItalic.ttf);
-    src: url(./fonts/SourceSansPro-Regular.ttf);
-    src: url(./fonts/SourceSansPro-SemiBold.ttf);
-    src: url(./fonts/SourceSansPro-SemiBoldItalic.ttf);
+    src: url(./fonts/sourcesanspro-bold-webfont.woff);
+    src: url(./fonts/sourcesanspro-light-webfont.woff);
+    src: url(./fonts/sourcesanspro-regular-webfont.woff);
 }
 
 
