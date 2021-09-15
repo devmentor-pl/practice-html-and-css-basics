@@ -1,11 +1,23 @@
-/*@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&display=swap");
-*/
-
 @font-face {
-    font-family: Source Sans PRO, sans-serif;
+    /* font-family: Source Sans PRO, sans-serif;
     src: url(./fonts/sourcesanspro-bold-webfont.woff);
     src: url(./fonts/sourcesanspro-light-webfont.woff);
-    src: url(./fonts/sourcesanspro-regular-webfont.woff);
+    src: url(./fonts/sourcesanspro-regular-webfont.woff); */
+
+
+    font-family: 'Source Sans PRO'; /* ta sama nazwa */
+           src: url('./fonts/sourcesanspro-regular-webfont.woff') format('woff'), /* różne rozszerzenia */
+                url('./fonts/sourcesanspro-regular-webfont.woff2') format('woff2');
+    font-weight: normal; /* ale tutaj inaczej */
+    font-style: normal;
+}
+
+@font-face { /* każdy format importowany osobno */
+    font-family: 'Source Sans PRO'; /* ta sama nazwa */
+           src: url('./fonts/sourcesanspro-bold-webfont.woff') format('woff'), /* różne rozszerzenia */
+                url('./fonts/sourcesanspro-bold-webfont.woff2') format('woff2');
+    font-weight: bold; /* ale tutaj inaczej */
+    font-style: normal;
 }
 
 
