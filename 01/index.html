@@ -7,6 +7,84 @@
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
 </head>
 <body>
-    
+    <header>
+    <a href="#" class="logo">Logo</a>
+    <nav>
+        <ul class="nav">
+            <li class="nav_item">
+                <a class="nav_link" href="#">Home</a>
+            <li class="nav_item">
+                <a class="nav_link" href="#">O nas</a>
+            </li>
+            <ul class="nav__dropdown dropdown">
+                <li class="dropdown__item">
+                <a class="nav_dropdown dropdown_link" href="#">App</a>  
+                </li>
+                <li class="dropdown__item">
+                <a class="nav_dropdown dropdown_link" href="#">Social Media</a>  
+                </li>
+            </ul>
+            <li class="nav_item">
+                <a class="nav_link" href="#">Kontakt</a>
+            </li>
+            </ul>
+    </nav>
+    <main>
+        <article class="article">
+            <h1 class="article_title">To jest naglowek</h1>
+            <h4 class="article_author">To jest autor</h4>
+            <h5 class="article_date">To jest data</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias cumque praesentium eligendi distinctio dignissimos excepturi consequatur provident, 
+            ducimus culpa quasi?</p>
+            <figure class="article_figure">
+                <img src="#" alt= "opis zdjecia">
+                <figcaption>Zdjecie do artykulu</figcaption>
+            </figure>
+            <table class="article_table">
+                <caption>Tytul tabeli</caption>
+                <thead>
+                    <tr>
+                    <th scope="col">Wiek</th>
+                    <th scope="col">Waga</th>
+                    <th scope="col">Wzrost</th> 
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>43</td>
+                        <td>50</td>
+                        <td>155</td>
+                    </tr>
+                    <tr>
+                        <td>22</td>
+                        <td>60</td>
+                        <td>175</td>
+                    </tr>
+                    </tbody>
+            </table>
+            <form class="article_comments-form">
+                <div>
+                    <label>Twoj nick</label>
+                    <input name="nick" type="text">
+                </div>
+                <div>
+                    <label>Twoj komentarz</label>
+                    <input name="comment" type="text">
+                </div>
+            </form>
+            <div class="article_comments_sections">
+                <h3>Wasze komentarze</h3>
+                <ul class= "article_comments_list">
+                    <li>komentarz1</li>
+                    <li>komentarz2</li>
+                    <li>komentarz3</li>
+                </ul>
+
+            </div>
+        </article>
+    </main>
+    <footer>
+        <p class="footer_text">Prawa autorskie</p>
+    </footer>
 </body>
 </html>
