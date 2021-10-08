@@ -1,12 +1,117 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <!-- Document contains only HTML structure, without CSS -->
+    <!-- header -->
+    <header>
+      <div class="logo">
+        <a href="#" class="logo-url">Logo</a>
+      </div>
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__list--item">
+            <a href="#" class="list--item-url">Home</a>
+          </li>
+          <li class="menu__list--item">
+            <a href="#" class="list--item-url">About us</a>
+          </li>
+          <li class="menu__list--item">
+            <a href="#" class="list--item-url">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- main -->
+    <main>
+      <article class="article-wrapper">
+        <h2 class="article__title">Title</h2>
+        <p class="article__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eius,
+          ab quasi deleniti iusto delectus aut, sed autem itaque illo
+          repudiandae! Rerum eum nam nobis. A, neque porro! Optio, impedit!
+        </p>
+        <p class="article__text--date">08/10/2021</p>
+        <p class="article__text--author">Rafał Kazik</p>
+        <img
+          src="./img/Example.jpeg"
+          class="article__img"
+          alt="example image"
+          width="200px"
+          height="80px"
+        />
+        <table class="article__table">
+          <caption class="table__caption">
+            Table
+          </caption>
+          <thead class="table__header">
+            <tr>
+              <th class="table__th">One</th>
+              <th class="table__th">Two</th>
+              <th class="table__th">Three</th>
+            </tr>
+          </thead>
+          <tbody class="table__body">
+            <td class="table__td">A</td>
+            <td class="table__td">B</td>
+            <td class="table__td">C</td>
+          </tbody>
+        </table>
+      </article>
+      <form action="#">
+        <label class="form__label" for="">What's your name?</label>
+        <input type="text" class="form__input" placeholder="Your first name" />
+        <label class="form__label" for="">What's your e-mail adress?</label>
+        <input type="text" class="form__input" placeholder="Your e-mail" />
+        <label class="form__label" for="">Your description:</label>
+        <textarea
+          name=""
+          class="form__textarea"
+          cols="100"
+          rows="10"
+          placeholder="Describe yourself"
+        ></textarea>
+        <input type="submit" value="Send information" />
+      </form>
+      <section class="comments">
+        <article class="comments__article">
+          <p class="comments__article--text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa
+            maxime aspernatur, obcaecati eligendi nisi cumque adipisci nulla
+            maiores. Culpa explicabo, ducimus quos possimus porro hic voluptatem
+            aspernatur necessitatibus officiis commodi.
+          </p>
+          <p class="comments__article--author">John Smith</p>
+          <p class="comments__article--date">08/10/2021</p>
+        </article>
+        <article class="comments__article">
+          <p class="comments__article--text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa
+            maxime aspernatur, obcaecati eligendi nisi cumque adipisci nulla
+            maiores. Culpa explicabo, ducimus quos possimus porro hic voluptatem
+            aspernatur necessitatibus officiis commodi.
+          </p>
+          <p class="comments__article--author">John Smith</p>
+          <p class="comments__article--date">08/10/2021</p>
+        </article>
+        <article class="comments__article">
+          <p class="comments__article--text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa
+            maxime aspernatur, obcaecati eligendi nisi cumque adipisci nulla
+            maiores. Culpa explicabo, ducimus quos possimus porro hic voluptatem
+            aspernatur necessitatibus officiis commodi.
+          </p>
+          <p class="comments__article--author">John Smith</p>
+          <p class="comments__article--date">08/10/2021</p>
+        </article>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer><p class="footer__text">rafalkazik &copy;</p></footer>
+  </body>
 </html>
