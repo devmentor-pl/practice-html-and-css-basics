@@ -1,0 +1,14 @@
+.parent {
+    width: 600px;
+    padding: 20px;
+}
+
+.child {
+    width: 30%;
+    margin-bottom: 10px;
+}
+
+.child--last {
+    width: 40%;
+    margin-bottom: none;
+}
