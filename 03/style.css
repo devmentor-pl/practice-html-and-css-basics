@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'SourceSansPro';
+    src: url('sourcesanspro-regular.woff') format('woff');
+}
+
+.parent {
+    font-family: 'SourceSansPro';
+    margin: 0 auto;
+    padding: 20px;
+    width: 600px;
+}
+
+.child--first {
+    vertical-align: top;
+    width: calc(30% - 10px);
+}
+
+.child--middle {
+    font-weight: bold;
+    vertical-align: top;
+    width: calc(30% - 10px);
+}
+
+.child--last {
+    font-style: italic;
+    vertical-align: top;
+    width: 40%;
+}
+
+
+
+.parent--inline-block>.child {
+    display: inline-block;
+}
+
+.parent--inline-block>.child--first {
+    margin-right: 10px;
+}
+
+.parent--inline-block>.child--middle { 
+    margin-right: 10px;
+}
+
+
+.parent--flexbox {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.parent--float>.child{
+    float: left;
+}
+
+.parent--float>.child--first {
+    margin-right: 10px;
+}
+
+.parent--float>.child--middle{
+    margin-right: 10px;
+}
