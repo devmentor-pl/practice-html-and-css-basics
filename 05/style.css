@@ -1,0 +1,66 @@
+header,
+section,
+article,
+footer {
+    outline: solid rgb(97, 218, 107);
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.nav__container,
+.section__container,
+.article__container,
+.footer__container {
+    display: flex;
+    margin: 0 auto;
+    width: 1000px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    outline: solid blue;
+}
+
+.nav__container,
+.section__container {
+    justify-content: space-between;
+}
+
+.article__container {
+    justify-content: space-evenly;
+}
+
+.nav {
+    width: 100px;
+}
+
+.section {
+    width: 48%;
+}
+
+.article {
+    width: 30%;
+}
+
+.footer__container {
+    min-height: 100px;
+    justify-content: center;
+}
+
+.nav,
+.section,
+.article {
+    background-color: rgb(255, 202, 24);
+    height: 80px;
+}
+
+.nav,
+.section,
+.article {
+    background-color: rgb(255, 202, 24);
+
+}
+
+.footer {
+    background-color: rgb(255, 202, 24);
+    width: 200px;
+
+}

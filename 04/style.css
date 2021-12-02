@@ -2,71 +2,109 @@ body {
     background-color: rgb(246, 246, 246);
 }
 
-ul.nav {
-    margin: 10px 0px 10px 20px;
+.nav__container {
+    margin-left: 5px;
+    margin-top: 10px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     display: flex;
     background-color: rgb(255, 255, 255);
 }
 
-li.nav__item {
-    padding: 30px;
-}
-
-
-.nav__item:hover {
+.home {
+    padding: 20px;
     color: rgb(0, 154, 225);
-    border-top: solid rgb(0, 154, 225);
 }
 
-.dropdown {
+.nav__button {
     position: relative;
+    padding: 20px;
+}
+
+.level {
+    position: absolute;
+    padding: 20px;
+    width: 250px;
+    background-color: black;
+    color: white;
 
 }
 
-.dropdown__item {
-    background-color: black;
-    color: white;
+.level1 {
     display: none;
-    position: absolute;
-    top: 30px;
-    left: -30px;
-    padding: 5px 100px 5px 30px;
-    white-space: nowrap;
-
+    top: 100%;
+    left: 0;
 }
 
-.dropdown__item2 {
-    background-color: black;
-    color: white;
-    position: absolute;
-    top: 60px;
-    left: -30px;
-    padding: 5px 100px 5px 30px;
-    white-space: nowrap;
+.level2 {
+    display: none;
+    top: 200%;
+    left: 0;
 }
 
-.dropdown__sublist__item1 {
-    background-color: black;
+li {
+    display: none;
     position: absolute;
     top: 0;
     left: 100%;
-    white-space: nowrap;
-    outline: solid red;
-    padding: 5px 100px 5px 30px;
+    padding: 20px;
 }
 
-.dropdown__sublist__item2 {
-    background-color: black;
-    position: absolute;
+
+.li2 {
     top: 100%;
-    left: 100%;
-    white-space: nowrap;
-    outline: solid red;
-    padding: 5px 100px 5px 30px;
 }
 
-.items:hover .dropdown__item {
-    display: block;
+.nav__button:hover {
+    border-top: solid rgb(0, 154, 225);
+}
 
+.nav__button:hover::after {
+    display: inline-block;
+    margin-left: 10px;
+    content: '>';
+    transform: rotate(90deg);
+    color: rgb(0, 154, 225);
+}
+
+.nav__button:hover {
+    color: rgb(0, 154, 225);
+    padding-right: 0;
+}
+
+.nav__button:hover>.level1 {
+    display: block;
+}
+
+.nav__button:hover>.level2 {
+    display: block;
+}
+
+.level1:hover::after {
+    display: inline-block;
+    content: '>';
+    padding-left: 90px;
+    color: white;
+}
+
+.level2:hover::after {
+    display: inline-block;
+    content: '>';
+    padding-left: 90px;
+    color: white;
+}
+
+.level1:hover>.li1 {
+    display: block;
+}
+
+.level1:hover>.li2 {
+    display: block;
+}
+
+.level2:hover>.li1 {
+    display: block;
+}
+
+.level2:hover>.li2 {
+    display: block;
 }
