@@ -1,13 +1,19 @@
-header,
-section,
-article,
-footer {
-    outline: solid rgb(97, 218, 107);
+:root {
+    --row-border-color: solid rgb(97, 218, 107);
+    --container-border-color: solid blue;
+    --item-background-color: rgb(255, 202, 24);
+  }
+  
+.navigation,
+.section,
+.article,
+.footer {
+    outline: var(--row-border-color);
     margin-top: 10px;
     padding: 5px;
 }
 
-.nav__container,
+.navigation__container,
 .section__container,
 .article__container,
 .footer__container {
@@ -16,10 +22,10 @@ footer {
     width: 1000px;
     padding-top: 10px;
     padding-bottom: 10px;
-    outline: solid blue;
+    outline: var(--container-border-color);
 }
 
-.nav__container,
+.navigation__container,
 .section__container {
     justify-content: space-between;
 }
@@ -28,15 +34,15 @@ footer {
     justify-content: space-evenly;
 }
 
-.nav {
+.navigation__item {
     width: 100px;
 }
 
-.section {
+.section__item {
     width: 48%;
 }
 
-.article {
+.article__item {
     width: 30%;
 }
 
@@ -45,22 +51,20 @@ footer {
     justify-content: center;
 }
 
-.nav,
-.section,
-.article {
-    background-color: rgb(255, 202, 24);
+.navigation__item ,
+.section__item,
+.article__item {
+    background-color: var(--item-background-color);
     height: 80px;
 }
 
-.nav,
-.section,
-.article {
-    background-color: rgb(255, 202, 24);
-
+.navigation__item ,
+.section__item,
+.article__item {
+    background-color: var(--item-background-color);
 }
 
-.footer {
-    background-color: rgb(255, 202, 24);
+.footer__item {
+    background-color: var(--item-background-color);
     width: 200px;
-
 }
