@@ -1,24 +1,27 @@
 
 
 
-.nav, .nav__item {
+.nav__item {
     outline: 1px solid green;
-    margin: 3px; padding: 3px;
+    padding: 0 5px;
+    position: relative;
 }
 
 .nav {
-    outline-color: red;
     background: rgb(0,200,250);
     padding: 10px;
     display: flex;
 }
 
 
-.nav__drawdown {
+.nav__dropdown  {
     position: absolute;
-    padding-top: 20px;
     left: 0;
-    text-decoration: none;
+    padding-top: 20px;
+}
+
+.dropdown__item {
+    list-style: none;
 }
 
 .nav__item {
@@ -26,6 +29,7 @@
     padding: 0 5px;
     margin-left: 5px;
     outline-color: green;
+    list-style: none;
 }
 
 
