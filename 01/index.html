@@ -5,8 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header class="header">
+        <nav>
+            <ul class="nav">
+                <li class="nav__item nav__item--no-space"> 
+                    Strona Główna 
+                </li>
+                <li class="nav__item">
+                    Kontakt
+                    <ul class="nav__dropdown dropdown">
+                        <li class="dropdown_item">
+                            www
+                        </li>
+                        <li class="dropdown__item">
+                            app
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav__item"> Oferta </li>
+            </ul>
+    </header>
+    <main class="main">
+        <article class="main__article">
+            <h1 class="main__article__title"> Lorem, ipsum dolor.</h1>
+            <p class="main__article__content"> 
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, voluptatibus.
+            </p>
+            <p class="main__article__publication__date">
+                20/19/05r
+            </p>
+            <p class="main__article__author">
+                 Jean-Claude Van Damme 
+            </p>
+            <img src="images/z23748974ICR,Jean-Claude-Van-Damme-w-filmie--Krwawy-Sport-.jpeg" alt="Jean-Claude" width="200px">
+        <table>
+            <caption> Groceries </caption>
+                <tr class="table__main"> 
+                    <th>Item Name</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Aisle Number</th>
+                </tr>
+                <tr class="table__item__milk">
+                    <td>Milk</td>
+                    <td>3USD</td>
+                    <td>4</td>
+                    <td>A3</td>
+                </tr>
+                <tr class="table__item__apples">
+                    <td>Apples</td>
+                    <td>2USD</td>
+                    <td>5</td>
+                    <td>C2</td>
+                </tr>
+                <tr class="table__item__bread">
+                    <td>Whole Wheat Bread</td>
+                    <td>5USD</td>
+                    <td>2</td>
+                    <td>D1</td>
+                </tr>
+                <tr class="table__item__carrots">
+                    <td>Carrots</td>
+                    <td>1.5USD</td>
+                    <td>6</td>
+                    <td>A5</td>
+                </tr>
+        <form>
+            <div>
+                <label>Imię
+                    <input name="firstname" />
+                </label>
+            </div>
+            <div>
+                <label>Nazwisko
+                    <input name="lastName" />
+                </label>
+            </div>
+            <div><input type="submit" /></div>
+        </form>
+
+
+
+
+
+                
+        
     
 </body>
 </html>

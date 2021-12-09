@@ -1,0 +1,53 @@
+
+
+
+.nav, .nav__item {
+    outline: 1px solid green;
+    margin: 3px; padding: 3px;
+}
+
+.nav {
+    outline-color: red;
+    background: rgb(0,200,250);
+    padding: 10px;
+    display: flex;
+}
+
+
+.nav__drawdown {
+    position: absolute;
+    padding-top: 20px;
+    left: 0;
+    text-decoration: none;
+}
+
+.nav__item {
+    background: rgb(220,220,220);
+    padding: 0 5px;
+    margin-left: 5px;
+    outline-color: green;
+}
+
+
+table {
+    border-collapse: collapse;
+}
+
+
+table th {
+    text-align: center;
+    border: 2px solid grey;
+    color: #FFF;
+    background-color: green;
+    padding: 10px;
+}
+
+table td {
+    padding: 10px;
+    text-align: center;
+    border: 2px solid grey;
+}
+
+table tr:nth-child(even) td {
+    background-color: #e7edf0;
+}
