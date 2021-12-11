@@ -1,9 +1,14 @@
 
+.header__container {
+    display: flex;
+}
 
-
+img {
+    width: 70px;
+    height: 70px;
+}
 .nav__item {
     outline: 1px solid green;
-    padding: 0 5px;
     position: relative;
 }
 
@@ -15,13 +20,23 @@
 
 
 .nav__dropdown  {
+    display: none;
     position: absolute;
     left: 0;
-    padding-top: 20px;
+    padding-left: 0;
 }
+    
+.nav__item:hover > .nav__dropdown {
+    display: block;
+}
+
 
 .dropdown__item {
     list-style: none;
+    padding: 0 12px;
+    background-color: rgb(0,200,250);
+    text-align: left;
+    min-width: 70px;
 }
 
 .nav__item {
@@ -55,3 +70,11 @@ table td {
 table tr:nth-child(even) td {
     background-color: #e7edf0;
 }
+
+.comments {
+    display: flex;    
+    margin: 50px;
+    
+}
+
+

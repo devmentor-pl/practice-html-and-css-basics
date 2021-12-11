@@ -9,24 +9,31 @@
 </head>
 <body>
     <header class="header">
-        <nav>
-            <ul class="nav">
-                <li class="nav__item"> 
-                    Strona Główna 
-                </li>
-                <li class="nav__item">
-                    Kontakt
-                    <ul class="nav__dropdown dropdown">
-                        <li class="dropdown__item">
-                            www
-                        </li>
-                        <li class="dropdown__item">
-                            app
-                        </li>
-                    </ul>
-                </li>
-                <li class="nav__item"> Oferta </li>
-            </ul>
+        <div class="header__container">
+            <div class="header__nav">
+                <ul class="nav">
+                    <li class="nav__item"> 
+                        Strona Główna 
+                    </li>
+                    <li class="nav__item">
+                        Kontakt
+                        <ul class="nav__dropdown dropdown">
+                            <li class="dropdown__item">
+                                www
+                            </li>
+                            <li class="dropdown__item">
+                                app
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav__item"> 
+                        Oferta 
+                    </li>
+                </ul>
+            </div>
+        <div class="header__logo">
+            <img src="images/luxury-phoenix-logo-concept-best-phoenix-bird-logo-design-400-170269072.jpeg">
+        </div>
     </header>
     <main class="main">
         <article class="main__article">
@@ -42,50 +49,87 @@
             </p>
             <img src="images/z23748974ICR,Jean-Claude-Van-Damme-w-filmie--Krwawy-Sport-.jpeg" alt="Jean-Claude" width="200px">
         <table>
-            <caption> Groceries </caption>
-                <tr class="table__main"> 
-                    <th>Item Name</th>
-                    <th>Price</th>
-                    <th>Quantity</th>
-                    <th>Aisle Number</th>
-                </tr>
-                <tr class="table__item__milk">
-                    <td>Milk</td>
-                    <td>3USD</td>
-                    <td>4</td>
-                    <td>A3</td>
-                </tr>
-                <tr class="table__item__apples">
-                    <td>Apples</td>
-                    <td>2USD</td>
-                    <td>5</td>
-                    <td>C2</td>
-                </tr>
-                <tr class="table__item__bread">
-                    <td>Whole Wheat Bread</td>
-                    <td>5USD</td>
-                    <td>2</td>
-                    <td>D1</td>
-                </tr>
-                <tr class="table__item__carrots">
-                    <td>Carrots</td>
-                    <td>1.5USD</td>
-                    <td>6</td>
-                    <td>A5</td>
-                </tr>
+        <caption> Groceries </caption>
+            <tr class="table__main"> 
+                <th>Item Name</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Aisle Number</th>
+            </tr>
+            <tr class="table__item__milk">
+                <td>Milk</td>
+                <td>3USD</td>
+                <td>4</td>
+                <td>A3</td>
+            </tr>
+            <tr class="table__item__apples">
+                <td>Apples</td>
+                <td>2USD</td>
+                <td>5</td>
+                <td>C2</td>
+            </tr>
+            <tr class="table__item__bread">
+                <td>Whole Wheat Bread</td>
+                <td>5USD</td>
+                <td>2</td>
+                <td>D1</td>
+            </tr>
+            <tr class="table__item__carrots">
+                <td>Carrots</td>
+                <td>1.5USD</td>
+                <td>6</td>
+                <td>A5</td>
+            </tr>
+        </table>
         <form>
             <div>
-                <label>Imię
-                    <input name="firstname" />
-                </label>
+                <label> Share your opinion! <label>
             </div>
             <div>
-                <label>Nazwisko
-                    <input name="lastName" />
-                </label>
+                <textarea></textarea>
             </div>
-            <div><input type="submit" /></div>
+            <div>
+                <input type="submit">
+            </div>
         </form>
+        <section class="comments container">
+            <div class="first comment">
+                <p> The experience was fantastic. I will recommend this place to all
+                    my friends! </p>
+                <p> <strong> Dariusz K. </strong> <p>
+                <p> 17/02/03 </p>
+            </div>
+            <div class="second comment">
+                <p> The experience was fantastic. I will recommend this place to all
+                my friends! </p>
+                <p> <strong> Dariusz K. </strong> <p>
+                <p> 17/02/03 </p>
+            </div>
+            <div class="third comment">
+                <p> The experience was fantastic. I will recommend this place to all
+                my friends! </p>
+                <p> <strong> Dariusz K. </strong> <p>
+                <p> 17/02/03 </p>
+            </div>
+        </section>
+        <footer>
+            <div>&copy; 2021 tomaszcividino.pl </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/">home</a>
+                    </li>
+                    <li>
+                        <a href="/contact">kontakt</a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+
+
+
+
+    
 
 
 
