@@ -68,6 +68,7 @@ div {
     display: flex;
     justify-content: center;
     border: 5px solid blue;
+    min-height: 100px;
 }
 
 .footer__element {
