@@ -9,36 +9,57 @@
     <title>Document</title>
 </head>
 <body>
-    <nav class="navigation">
-       <ul class="navigation__list">
+    <nav>
+       <ul class="navigation">
             <li class="navigation__button">HOME</li>
-            <li class="navigation__button navigation__button--item">ITEMS
-                <ul class="navigation__dropdown navigation__dropdown--1">Item 1
-                    <li class="navigation__dropdown navigation__dropdown--level11">Items 1.1</li>
-                    <li class="navigation__dropdown navigation__dropdown--level12">Items 1.2</li>
+            <li class="navigation__button navigation__button--dropdown ">ITEMS
+                <ul class="dropdown__list">
+                    <li class="dropdown__item dropdown__item--A">Items 1
+                        <ul class="dropdown__list dropdown__list--A">
+                            <li class="dropdown__item">Items 1.1</li>
+                            <li class="dropdown__item">Items 1.2</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown__item dropdown__item--B">Items 2
+                        <ul class="dropdown__list dropdown__list--B">
+                            <li class="dropdown__item">Items 2.1</li>
+                            <li class="dropdown__item">Items 2.2</li>
+                        </ul>
+                    </li>
                 </ul>
-                <ul class="navigation__dropdown navigation__dropdown--2">Item 2
-                    <li class="navigation__dropdown navigation__dropdown--level21">Items 2.1</li>
-                    <li class="navigation__dropdown navigation__dropdown--level22">Items 2.2</li>
+            </li>
+            <li class="navigation__button navigation__button--dropdown ">SETTINGS
+                <ul class="dropdown__list">
+                    <li class="dropdown__item dropdown__item--A">Settings 1
+                        <ul class="dropdown__list dropdown__list--A">
+                            <li class="dropdown__item">Settings 1.1</li>
+                            <li class="dropdown__item">Settings 1.2</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown__item dropdown__item--B">Settings 2
+                        <ul class="dropdown__list dropdown__list--B">
+                            <li class="dropdown__item">Settings 2.1</li>
+                            <li class="dropdown__item">Settings 2.2</li>
+                        </ul>
+                    </li>
                 </ul>
-            <li class="navigation__button navigation__button--item">SETTINGS
-                <ul class="navigation__dropdown navigation__dropdown--1">Setting 1
-                    <li class="navigation__dropdown navigation__dropdown--level11">Setting 1.1</li>
-                    <li class="navigation__dropdown navigation__dropdown--level12">Setting 1.2</li>
+            </li>
+            <li class="navigation__button navigation__button--dropdown ">CONTACT
+                <ul class="dropdown__list">
+                    <li class="dropdown__item dropdown__item--A">Contact 1
+                        <ul class="dropdown__list dropdown__list--A">
+                            <li class="dropdown__item">Contact 1.1</li>
+                            <li class="dropdown__item">Contact 1.2</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown__item dropdown__item--B">Contact 2
+                        <ul class="dropdown__list dropdown__list--B">
+                            <li class="dropdown__item">Contact 2.1</li>
+                            <li class="dropdown__item">Contact 2.2</li>
+                        </ul>
+                    </li>
                 </ul>
-                <ul class="navigation__dropdown navigation__dropdown--2">Setting 2
-                    <li class="navigation__dropdown navigation__dropdown--level21">Setting 2.1</li>
-                    <li class="navigation__dropdown navigation__dropdown--level22">Setting 2.2</li>
-                </ul>
-            <li class="navigation__button navigation__button--item">CONTACT
-                <ul class="navigation__dropdown navigation__dropdown--1">Contact 1
-                    <li class="navigation__dropdown navigation__dropdown--level11">Contact 1.1</li>
-                    <li class="navigation__dropdown navigation__dropdown--level12">Contact 1.2</li>
-                </ul>
-                <ul class="navigation__dropdown navigation__dropdown--2">Contact 2
-                    <li class="navigation__dropdown navigation__dropdown--level21">Contact 2.1</li>
-                    <li class="navigation__dropdown navigation__dropdown--level22">Contact 2.2</li>
-                </ul>
+            </li>
         </ul>
     </nav>
 </body>
