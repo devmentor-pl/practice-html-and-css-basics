@@ -1,27 +1,9 @@
 
 @font-face {
-    font-family: "Source Sans PRO Regular";
+    font-family: "Source Sans";
     src: url(../03/fonts//sourcesanspro-regular-webfont.woff);
     src: url(../03/fonts/sourcesanspro-regular-webfont.woff2);
-    font-style: normal;
-    font-weight: normal;
-  }
-  
-  @font-face {
-    font-family: "Source Sans Pro Bold";
-    src: url(../03/fonts/sourcesanspro-bold-webfont.woff);
-    src: url(../03/fonts/sourcesanspro-bold-webfont.woff2);
-    font-style: normal;
-    font-weight: normal;
-  }
-  
-  @font-face {
-    font-family: "Source Sans PRO Italic";
-    src: url(../03/fonts/sourcesanspro-it-webfont.woff);
-    src: url(../03/fonts/sourcesanspro-regular-webfont.woff2);
-    font-style: normal;
-    font-weight: normal;
-  }
+}
 
 .parent {
     width: 600px;
@@ -47,17 +29,19 @@
 }
 
 .child {
-    width: calc(30% - 20px);
+    width: calc(30% - 7px);
 }
 
 .child--first {
-    font-family: "Source Sans PRO Regular";
+    font-family: "Source Sans";
   }
 
   .child--middle {
-    font-family: "Source Sans Pro Bold";
+    font-family: "Source Sans";
+    font-weight: bold;
   }
 
   .child--last {
-    font-family: "Source Sans PRO Italic";
+    font-family: "Source Sans";
+    font-style:italic;
   }
