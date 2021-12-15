@@ -7,7 +7,7 @@
 Znacznik label, którego przodkiem jest klasa .ac-container 
 (0, 1, 1)
 */
-label {
+.ac-container label {
     height: 30px !important;
     line-height: 21px !important;
     font-size: 12px !important;
@@ -74,8 +74,8 @@ to samo co w 1) ale z efektem najechania kursorem na label
     font-size: 13px;
 }
 
-.ac-container label:hover::before,
-.ac-container input:checked + label:hover::before {
+.ac-container label:hover::before
+/* .ac-container input:checked + label:hover::before { */ {
     content: '';
     position: absolute;
     width: 30px;
