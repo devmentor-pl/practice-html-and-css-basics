@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="header">
+    <nav class="header">
         <div class="header__container">
             <div class="header__nav">
                 <ul class="nav">
@@ -16,7 +16,7 @@
                         Strona Główna 
                     </li>
                     <li class="nav__item">
-                        Kontakt
+                        <a href="">Kontakt</a>
                         <ul class="nav__dropdown dropdown">
                             <li class="dropdown__item">
                                 www
@@ -42,75 +42,79 @@
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, voluptatibus.
             </p>
             <p class="main__article__publication__date">
-                20/19/05r
+                <time> 20/19/05r </time>
             </p>
             <p class="main__article__author">
                  Jean-Claude Van Damme 
             </p>
             <img src="images/z23748974ICR,Jean-Claude-Van-Damme-w-filmie--Krwawy-Sport-.jpeg" alt="Jean-Claude" width="200px">
-        <table>
-        <caption> Groceries </caption>
-            <tr class="table__main"> 
-                <th>Item Name</th>
-                <th>Price</th>
-                <th>Quantity</th>
-                <th>Aisle Number</th>
-            </tr>
-            <tr class="table__item__milk">
-                <td>Milk</td>
-                <td>3USD</td>
-                <td>4</td>
-                <td>A3</td>
-            </tr>
-            <tr class="table__item__apples">
-                <td>Apples</td>
-                <td>2USD</td>
-                <td>5</td>
-                <td>C2</td>
-            </tr>
-            <tr class="table__item__bread">
-                <td>Whole Wheat Bread</td>
-                <td>5USD</td>
-                <td>2</td>
-                <td>D1</td>
-            </tr>
-            <tr class="table__item__carrots">
-                <td>Carrots</td>
-                <td>1.5USD</td>
-                <td>6</td>
-                <td>A5</td>
-            </tr>
+        <table class="table">
+            <caption> Groceries </caption>
+            <thead>
+                <tr class="table__main">
+                    <th>Item Name</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Aisle Number</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="table__item__milk">
+                    <td>Milk</td>
+                    <td>3USD</td>
+                    <td>4</td>
+                    <td>A3</td>
+                </tr>
+                <tr class="table__item__apples">
+                    <td>Apples</td>
+                    <td>2USD</td>
+                    <td>5</td>
+                    <td>C2</td>
+                </tr>
+                <tr class="table__item__bread">
+                    <td>Whole Wheat Bread</td>
+                    <td>5USD</td>
+                    <td>2</td>
+                    <td>D1</td>
+                </tr>
+                <tr class="table__item__carrots">
+                    <td>Carrots</td>
+                    <td>1.5USD</td>
+                    <td>6</td>
+                    <td>A5</td>
+                </tr>
+            </tbody>
         </table>
         <form>
-            <div>
-                <label> Share your opinion! <label>
+            <div class="opinion">
+                <label rel="opinion"> Share your opinion! <label>
             </div>
             <div>
                 <textarea></textarea>
             </div>
             <div>
-                <input type="submit">
+                <input type="submit" name="opinion">
             </div>
         </form>
         <section class="comments container">
-            <div class="first comment">
+            <article class="first comment">
                 <p> The experience was fantastic. I will recommend this place to all
                     my friends! </p>
-                <p> <strong> Dariusz K. </strong> <p>
+                <p>article <strong> Dariusz K. </strong> <p>
                 <p> 17/02/03 </p>
-            </div>
-            <div class="second comment">
+            </article>
+            <article class="second comment">
                 <p> The experience was fantastic. I will recommend this place to all
                 my friends! </p>
                 <p> <strong> Dariusz K. </strong> <p>
                 <p> 17/02/03 </p>
-            </div>
-            <div class="third comment">
+            </article>
+            <article class="third comment">
                 <p> The experience was fantastic. I will recommend this place to all
                 my friends! </p>
                 <p> <strong> Dariusz K. </strong> <p>
                 <p> 17/02/03 </p>
-            </div>
+            </article>
         </section>
         <footer>
             <div>&copy; 2021 tomaszcividino.pl </div>

@@ -1,8 +1,4 @@
 
-.header__container {
-    display: flex;
-}
-
 img {
     width: 70px;
     height: 70px;
@@ -48,12 +44,12 @@ img {
 }
 
 
-table {
+.table {
     border-collapse: collapse;
 }
 
 
-table th {
+.table th {
     text-align: center;
     border: 2px solid grey;
     color: #FFF;
@@ -61,13 +57,13 @@ table th {
     padding: 10px;
 }
 
-table td {
+.table td {
     padding: 10px;
     text-align: center;
     border: 2px solid grey;
 }
 
-table tr:nth-child(even) td {
+.table tr:nth-child(even) td {
     background-color: #e7edf0;
 }
 
