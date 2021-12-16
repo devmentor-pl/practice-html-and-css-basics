@@ -1,17 +1,23 @@
 @font-face {
     font-family: 'SourceSansPro';
+    font-style: normal;
+    font-weight: normal;
     src: url('sourcesanspro-regular.woff') format('woff');
 }
 
-/* @font-face {
-    font-family: 'SourceSansBold';
+@font-face {
+    font-family: 'SourceSansPro';
+    font-style: normal;
+    font-weight: bold;
     src: url('sourcesanspro-bold.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'SourceSansIt';
+    font-family: 'SourceSansPro';
+    font-style: italic;
+    font-weight: normal;
     src: url('sourcesanspro-it.woff') format('woff');
-} */
+}
 
 .parent {
     font-family: 'SourceSansPro';
@@ -26,7 +32,6 @@
 }
 
 .child--middle {
-    /* font-family: 'SourceSansBold'; */
     font-family: 'SourceSansPro';
     font-weight: 700;
     vertical-align: top;
@@ -34,7 +39,6 @@
 }
 
 .child--last {
-    /* font-family: 'SourceSansIt'; */
     font-family: 'SourceSansPro';
     font-style: italic;
     vertical-align: top;
