@@ -1,0 +1,103 @@
+/* CSS */
+body {
+	font-family: sans-serif;
+	background-color: #f7f7f7;
+}
+
+/* nav */
+
+.nav {
+	background-color: #ffffff;
+	height: 80px;
+	display: flex;
+	margin-top: 50px;
+}
+
+ul {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.nav__item {
+	padding: 30px;
+}
+
+.nav__item:hover{
+	border-top: 2px solid #009ae1;
+}
+
+a:hover {
+    color:#009ae1;
+}
+
+a {
+	text-decoration: none;
+	font-size: 18px;
+	color: #333333;
+    padding: 20px;
+    padding-left: 0;
+}
+
+.blue {
+	color: #009ae1;
+}
+
+/* CSS dropdown__menu */
+
+.dropdown__menu,
+.dropdown__menu1 {
+	display: block;
+	position: absolute;
+	background-color: #333333;
+	margin-top: 30px;
+	width: 150px;
+	padding: 5px;
+	margin-left: -10px;
+}
+
+.drop__item {
+	padding: 10px;
+}
+
+.drop__item a {
+	color: white;
+}
+
+/* CSS dropdown__menu1 */
+.dropdown__menu1 {
+	background-color: #333333;
+	margin-top: -30px;
+	width: 150px;
+	padding: 5px;
+	margin-left: 135px;
+}
+
+/* arrows */
+.arrow::after {
+    content: '>';
+    position: absolute;
+    margin-left: 10px;
+    margin-top: -3px;
+    transform: rotate(90deg);
+}
+
+.arrow2::after {
+    content: '>';
+    position: absolute;
+    margin-left: 65px;
+}
+
+/* hover effects */
+
+.dropdown__menu,.dropdown__menu1{
+    display: none;
+}
+
+.nav__item:hover .dropdown__menu{
+    display: block;
+}
+
+.dropdown__menu:hover .dropdown__menu1{
+    display: block;
+}

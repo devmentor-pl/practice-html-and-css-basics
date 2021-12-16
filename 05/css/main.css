@@ -1,0 +1,95 @@
+/* Część 1 zadania */
+
+.container,.max-width,.content {
+    margin: 10px;
+    padding: 5px;
+    outline: 3px solid;
+}
+
+.container {
+    outline-color: green;
+    display: flex;
+    justify-content: space-around;
+}
+
+.max-width {
+	width: 1000px;
+	outline-color: blue;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 0;
+    padding-right: 0;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.content {
+outline-color: orange;
+}
+
+.logo {
+    width: 100px;
+    height: 40px;
+    background-color: orange;
+    margin-left: 0;
+    
+}
+
+/* Część 2 zadania */
+
+.menu {
+    width: 400px;
+    height: 40px;
+    background-color: orange;
+    margin-right: 0;
+}
+
+
+
+
+.article {
+    width: 490px;
+    height: 150px;
+    background-color: orange;
+    margin-left: 0;
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 0;
+   
+}
+
+.max-width-article {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Część 3 zadania */
+
+.columns {
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-evenly;
+}
+
+.column{
+    height: 250px;
+    width: 300px;
+    background-color: orange;
+}
+
+/* Część 4 zadania */
+
+
+.footer{
+    display: flex;
+    justify-content: center;
+
+}
+.footer-content {
+    min-width: 100px;
+    background-color: orange;
+}
+
+
+
+
