@@ -1,0 +1,57 @@
+@font-face {
+    font-family: "SourceSansPro-Regular";
+    src: url('fonts/SourceSansPro-Regular.otf') format('OpenType');
+}
+
+@font-face {
+    font-family: "SourceSansPro-Bold";
+    src: url('fonts/SourceSansPro-Bold.otf') format('OpenType');
+}
+
+@font-face {
+    font-family: "SourceSansPro-It";
+    src: url('fonts/SourceSansPro-It.otf') format('OpenType');
+}
+
+.parent {
+    width: 600px;
+    padding: 20px;
+}
+
+.child--first {
+    font-family: "SourceSansPro-Regular";
+    
+}
+
+.child--middle {
+    font-family: "SourceSansPro-Bold";
+    
+}
+
+.child--first, .child--middle {
+    width: calc(0.3 * (100% - 40px));
+}
+
+.child--last {
+    font-family: "SourceSansPro-It";
+    width: calc(0.4 * (100% - 40px));
+}
+
+.parent--inline-block .child {
+    display: inline-block;
+    /*padding: 0 5px;*/
+    vertical-align: top;
+}
+
+.parent--float .child {
+    float: left;
+}
+
+   
+.parent--flexbox {
+    display: flex;
+    clear: both;
+}
+
+
+
