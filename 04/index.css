@@ -1,3 +1,7 @@
+/*W tym zadaniu pomimo wielu prób nie udało mi się wstawić strzałek w sugerowany sposób - odwrócony znak ">" - 
+przy pomocy funkcji transform nie obraca się :( Użyłam strzałek z zadania 02. */
+
+
 body {
     background: rgb(224, 224, 224);
 }
@@ -35,7 +39,6 @@ ul {
     display: none;
 }
 
-
 .nav__item_level2, .nav__item_level3 {
     background: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
@@ -53,6 +56,17 @@ ul {
     padding-left: 10px;
     
 }*/
+
+.nav__item_level1:hover::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 5px;
+    top: 30px;
+    background: transparent url(../02/images/arrow_down.png) no-repeat center center;
+}
+
 
 .nav__item_level1:hover > .nav__level2 {
     display: block;
