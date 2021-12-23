@@ -50,7 +50,7 @@ ul {
     color: rgb(0, 0, 255);
 }
 
-.nav__item_level1:hover::after {
+.nav__item_level1::after {
     content: ">";
     transform: rotate(90deg);
     padding-left: 10px;
@@ -60,6 +60,18 @@ ul {
     right: 5px;
     top: 30px;
 }
+
+
+/*.nav__item_level1:hover::after {
+    content: ">";
+    transform: rotate(90deg);
+    padding-left: 10px;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 5px;
+    top: 30px;
+}*/
 
 /*.nav__item_level1:hover::after {
     content: '';
