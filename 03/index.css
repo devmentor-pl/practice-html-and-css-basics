@@ -37,14 +37,14 @@
 }
 
 .child--first, .child--middle {
-    width: calc(0.3 * (100% - 40px));
+    width: calc(0.3 * (100% - 20px));
 }
 
 .child--last, Arial, Helvetica, sans-serif {
     font-family: "SourceSansPro";
     font-weight: 400;
     font-style: italic;
-    width: calc(0.4 * (100% - 40px));
+    width: calc(0.4 * (100% - 20px));
 }
 
 .parent--inline-block .child {
