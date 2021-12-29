@@ -1,6 +1,6 @@
 .header__container {
     display: flex;
-    padding: 1px 0px 5px 0px;
+    padding: 1px 0 5px 0;
     justify-content: space-between;
 }
 
