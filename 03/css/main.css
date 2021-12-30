@@ -1,0 +1,80 @@
+/* main CSS*/
+.parent {
+	width: 600px;
+	padding: 20px;
+	background-color: chocolate;
+}
+
+.child--first,
+.child--middle {
+	margin: 10px;
+	width: 30%;
+	outline: 1px solid;
+	background-color: crimson;
+}
+.child--last {
+	margin: 10px 0 10px 10px;
+	width: 40%;
+	outline: 1px solid;
+	background-color: crimson;
+}
+
+.parent--float {
+	background-color: darkmagenta;
+}
+
+@font-face {
+	font-family: 'Source Sans PRO';
+	src: url(../fonts/sourcesanspro-regular-webfont.woff);
+	src: url(../fonts/sourcesanspro-regular-webfont.woff2);
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Source Sans PRO';
+	src: url(../fonts/sourcesanspro-boldit-webfont.woff);
+	src: url(../fonts/sourcesanspro-boldit-webfont.woff2);
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Source Sans PRO';
+	src: url(../fonts/sourcesanspro-it-webfont.woff);
+	src: url(../fonts/sourcesanspro-it-webfont.woff2);
+	font-style: italic;
+	font-weight: normal;
+}
+
+.child {
+	font-family: 'Source Sans PRO';
+	width: calc(30% - 20px);
+}
+
+.child--middle {
+	font-weight: bold;
+}
+
+.child--last {
+	font-style: italic;
+}
+
+
+.parent--inline-block .child {
+	display: inline-block;
+}
+
+.parent--float .child {
+	float: left;
+}
+
+.parent--float::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.parent--flexbox {
+	display: flex;
+}

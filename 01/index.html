@@ -1,12 +1,87 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
 </head>
+
 <body>
-    
+    <header class="header">
+        <img src="logo source" alt="logo description" class="header__logo">
+        <nav class="navigation">
+            <ul class="header__nav">
+                <li class="nav__item">start</li>
+                <li class="nav__item">o nas
+                    <ul class="nav__dropdown">
+                        <li class="dropdown__item">Lorem, ipsum dolor.</li>
+                        <li class="dropdown__item">Lorem ipsum dolor sit amet.</li>
+                    </ul>
+                </li>
+                <li class="nav__item">więcej
+                    <ul class="nav__dropdown">
+                        <li class="dropdown__item">Lorem ipsum dolor sit.</li>
+                        <li class="dropdown__item">Lorem, ipsum dolor.</li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main class="main">
+        <article class="article">
+            <title class="article__title">tytuł artykułu</title>
+            <p class="article__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus dolorum modi
+                amet! Possimus tempore accusamus laborum ipsa praesentium, pariatur esse?</p>
+            <time datetime="2021-12-12" class="pubdate">Niedziela, 12 Grudzień</time>
+            <a href="/" rel="author">Article author</a>
+            <img src="image source" alt="image description" class="article__image">
+            <table class="article__table">
+                <caption class="table__caption">tabela wyników wyświetleń artykułu</caption>
+                <thead>
+                    <tr>
+                        <th>Ilość odsłon</th>
+                        <th>Ilość udostępnień</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>100</td>
+                        <td>10</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+
+        <form action="" class="form">
+            <label for="" class="label__form">treść komentarza:</label>
+            <textarea name="" id="" cols="30" rows="10">obszar dodania komentarza</textarea>
+        </form>
+
+        <section class="section__comments">
+            <p class="section__comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sint deleniti
+                laborum sit. In omnis a quas quisquam culpa cumque.</p>
+            <a rel="author">Adam Kowalski</a>
+            <time class="comment__time">7:59</time>
+
+            <p class="section__comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sint deleniti
+                laborum sit. In omnis a quas quisquam culpa cumque.</p>
+            <a rel="author">Janusz Budek</a>
+            <time class="comment__time">14:14</time>
+
+            <p class="section__comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sint deleniti
+                laborum sit. In omnis a quas quisquam culpa cumque.</p>
+            <a rel="author">Jan Janeczko</a>
+            <time class="comment__time">14:24</time>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__content">&copy; Patryk Grabowski 2021</p>
+    </footer>
+
 </body>
 </html>

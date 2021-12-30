@@ -1,0 +1,102 @@
+/* Common CSS */
+
+.row,
+.container,
+.content {
+	outline: 5px solid;
+	margin: 15px;
+	padding: 5px;
+}
+.row {
+	outline-color: green;
+}
+.container {
+	outline-color: blue;
+	width: 1000px;
+}
+.content {
+	outline-color: orange;
+}
+
+/* CSS section 1*/
+
+.header {
+	display: flex;
+	justify-content: center;
+}
+
+.header__container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo {
+	width: 200px;
+	height: 50px;
+	margin-left: -3px;
+}
+
+.menu {
+	width: 600px;
+	margin-right: -3px;
+}
+
+.logo,
+.menu {
+	background-color: orange;
+}
+
+/* CSS section 2*/
+
+.section {
+	display: flex;
+	justify-content: center;
+}
+
+.section__container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.text {
+	background-color: orange;
+	width: 490px;
+	height: 250px;
+	margin-right: -3px;
+	margin-left: -3px;
+}
+
+/* CSS section 3 */
+
+.section__column {
+	display: flex;
+	justify-content: center;
+}
+
+.column__container {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.column {
+	width: 300px;
+	height: 200px;
+	background-color: orange;
+}
+
+/* CSS section 4 */
+.footer {
+	display: flex;
+	justify-content: center;
+}
+
+.footer__container {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+.footer__content {
+	min-width: 100px;
+	background-color: orange;
+}
