@@ -45,12 +45,11 @@
     font-family: "SourceSansPro";
     font-weight: 400;
     font-style: italic;
-    width: calc(0.4 * (100% - 20px));
+    width: 40%;
 }
 
 .parent--inline-block .child {
     display: inline-block;
-    /*padding: 0 5px;*/
     vertical-align: top;
 }
 
