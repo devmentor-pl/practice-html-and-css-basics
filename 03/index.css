@@ -37,7 +37,8 @@
 }
 
 .child--first, .child--middle {
-    width: calc(0.3 * (100% - 20px));
+    width: calc(30% - 10px);
+    margin-right: 10px;
 }
 
 .child--last, Arial, Helvetica, sans-serif {
@@ -55,6 +56,12 @@
 
 .parent--float .child {
     float: left;
+}
+
+.parent--float::after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
    
