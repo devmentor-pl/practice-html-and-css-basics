@@ -1,0 +1,15 @@
+.header__container {
+    display: flex;
+    padding: 1px 0 5px 0;
+    justify-content: space-between;
+}
+
+.header__logo {
+    width: 150px;
+    margin-left: 0;
+}
+
+.header__nav {
+    width: 400px;
+    margin-right: 0;
+}

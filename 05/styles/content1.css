@@ -1,0 +1,12 @@
+.content1__container {
+    display: flex;
+    height: 200px;
+    padding: 5px 0px 5px 0px;
+    justify-content: space-between;
+}
+
+.content1__column1, .content1__column2 {
+    width: 495px;
+    margin: 5px 0px 5px 0px;
+
+}
