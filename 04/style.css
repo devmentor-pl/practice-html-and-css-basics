@@ -26,8 +26,8 @@ header {
     /* border: solid 1px black; */
 }
 
-.nav__item {
-    /* position: relative; */
+.nav__item,
+.nav__item--open {
     padding: 20px 0px;
     margin: 0 10px;
     text-align: center;
@@ -37,7 +37,20 @@ header {
     height: 60px;
 }
 
-.nav__item:hover {
+.nav__item--open:after,
+.nav-submenu__item--open:after {
+    float: right;
+    content: ' ➤';
+}
+
+.nav__item--open:after {
+    transform: rotate(90deg);
+}
+
+/* jedna strzałeczka, a tak się namęczyłem */
+
+.nav__item:hover,
+.nav__item--open:hover {
     color: #009AE1;
     border-top: 3px solid #009AE1;
     padding-top: 17px;
@@ -45,7 +58,8 @@ header {
 
 
 
-.nav__item:hover .nav__submenu {
+.nav__item:hover .nav__submenu,
+.nav__item--open:hover .nav__submenu {
     visibility: visible;
 
 }
@@ -93,9 +107,4 @@ li.submenu-submenu__item:hover {
     color: white;
 }
 
-#pointer {
-    float: right;
-    /* transform: rotate(90deg); */
-
-
-}
+/* nie moge zrobic push? */
