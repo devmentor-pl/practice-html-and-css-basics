@@ -1,14 +1,51 @@
+@font-face {
+    font-family: 'Source Sans Pro', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&display=swap');
+}
+
 .parent {
     width: 600px;
     padding: 20px;
 }
 
+.parent--inline-block {
+    display: inline-block;
+}
+
+/* ten zawsze będzie wychodził na prawo.. nie wiem czy tak ma być? */
+
+.parent--float {
+    float: left;
+}
+
+.parent--flexbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+
+}
+
 .child {
-    width: 30%;
-    margin-bottom: 10px;
+    float: left;
+    font-family: 'Source Sans Pro', sans-serif;
+    width: calc(30% - 20px);
+    margin-right: 10px;
 }
 
 .child--last {
+    display: flex;
+    flex-direction: row;
     width: 40%;
-    margin-bottom: none;
+    margin-right: none;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.child--first {
+    font-weight: 400;
+}
+
+.child--middle {
+    font-weight: 700;
 }
