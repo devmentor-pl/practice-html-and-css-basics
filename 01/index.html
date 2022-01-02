@@ -9,50 +9,87 @@
 <body>
     <header>
         <div class="logo">
-        <h1>LOGO STRONY</h1>
+            <h1>LOGO STRONY</h1>
         </div>
         <nav class="menu">
-            <!-- tutaj lista -->
+            <li>Strona główna</li>
+            <li>O mnie</li>
+            <li>Zdjęcia
+                <ul>Natura
+                    <ul>Zwierzęta</ul>
+                    <ul>Rośliny</ul>
+                    <ul>Architektura</ul>
+                </ul>
+                <ul>Pojazdy
+                    <ul>Samochody</ul>
+                    <ul>Motocykle</ul>
+
+                </ul>
+            </li>
+            <li>Artykuły</li>
+            
         </nav>
     </header>
     <main>
         <article>
-            <img src="img/05.jpg" width="10%" height="10%">
+            <img src="img/05.jpg" width="10%" height="10%" alt="cat-family">
             <h3>Najlepsze zdjęcia</h3>
-            <span class="author"><i>Dawid Tchórz</i> || 24.11.2021</span>
+            <span class="author"><i>Dawid Tchórz</i> || <time datetime="24-11-2021">24 listopada</time></span>
             
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad hic saepe perferendis eos cumque dolorem suscipit, voluptatibus quam reiciendis sit, unde sapiente culpa. Eaque corporis ullam beatae quos eum neque deserunt nostrum modi totam ex repellat distinctio, possimus, ratione libero eos aperiam mollitia nam atque earum. Facere neque officia excepturi blanditiis exercitationem voluptatibus, voluptates debitis corrupti quod laboriosam, ratione libero! A blanditiis numquam facere distinctio odio, sequi aspernatur perspiciatis corporis neque aut sit, nobis velit qui soluta? Nisi magnam obcaecati sit in, enim temporibus, quae alias minus delectus vero voluptatibus corporis eum. Obcaecati necessitatibus vel tenetur modi, sapiente atque! Magnam.</p>
             <table>
                 <thead>
-                    <tr><th>Kateogoria<th>Nazwisko</th><th>Ocena</th></th></tr>
+                    <tr>
+                        <th>Kateogoria
+                            <th>Nazwisko</th>
+                            <th>Ocena</th>
+                        </th>
+                    </tr>
                 </thead>
                 <tbody>
-                    <tr><th>Natura</th><td>Nowak</td><td>8</td></tr>
-                    <tr><th>Portret</th><td>Mazur</td><td>6</td></tr>
-                    <tr><th>Zdjęcia nocą</th><td>Kopeć</td><td>7</td></tr>
-                    <tr><th>W ruchu</th><td>Kowal</td><td>4</td></tr>
+                    <tr>
+                        <th>Natura</th>
+                        <td>Nowak</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <th>Portret</th>
+                        <td>Mazur</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <th>Zdjęcia nocą</th>
+                        <td>Kopeć</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <th>W ruchu</th>
+                        <td>Kowal</td>
+                        <td>4</td>
+                    </tr>
                 </tbody>
             </table>
         </article>
+        <br>
         <form>
-            <div><label for="komentarz">Dodaj komentarz:</label></div>
-            <textarea name="komentarz" rows="4" cols="80"></textarea>
+            <div><label for="comment">Dodaj komentarz:</label></div>
+            <textarea name="comment" rows="4" cols="80"></textarea>
         </form>
         <h3 class="comment">Komentarze:</h3>
-        <div class="comment_cell">
-            <span class="commment_author">Marcin||20.10.2020</span>
+        <li class="comment__cell">
+            <ul class="commment_author">Marcin||20.10.2020</ul>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, iusto? Assumenda reprehenderit distinctio optio blanditiis consectetur in facere vel itaque fugit amet perspiciatis doloremque error, veritatis aliquid eum beatae neque! Reiciendis, pariatur libero quae minus similique odit eum explicabo ex aspernatur atque adipisci voluptas veniam delectus magnam provident nostrum ducimus.</p>
             </div>
-        <div class="comment_cell">
-            <span class="commment_author">Adam||10.12.2001</span>
+        <li class="comment__cell">
+            <ul class="commment_author">Adam||10.12.2001</ul>
             <p>Quam iste rerum repellendus ratione provident accusantium in nihil consectetur? Corporis deserunt recusandae perspiciatis! Deleniti sit quasi pariatur iste nisi assumenda et recusandae exercitationem, repellat neque iusto unde aperiam suscipit ducimus excepturi autem fuga corrupti totam? Blanditiis aspernatur libero sint eveniet quis sit provident omnis vel obcaecati.</p>
             </div>
-        <div class="comment_cell">
-            <span class="commment_author">Zbyszek||5.10.2021</span>
+        <li class="comment_cell">
+            <ul class="commment_author">Zbyszek||5.10.2021</ul>
             <p>Blanditiis consectetur in facere vel itaque fugit amet perspiciatis doloremque error, veritatis aliquid eum beatae neque! Reiciendis, pariatur libero quae minus similique odit eum explicabo ex aspernatur atque adipisci voluptas veniam delectus magnam provident nostrum ducimus.</p>
             </div>
 
     </main>
-    <footer>Copyright by &copy Dawid. All rights reserved.</footer>
+    <footer>Copyright by &copy; Dawid. All rights reserved.</footer>
 </body>
 </html>
