@@ -1,21 +1,31 @@
 @font-face {
     font-family: 'Source Sans Pro', sans-serif;
-    src: url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&display=swap');
+    src: url('Source_Sans_Pro/SourceSansPro-Regular.ttf');
 }
+
 
 .parent {
     width: 600px;
     padding: 20px;
 }
 
-.parent--inline-block {
+.parent--inline-block .child {
     display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
 }
 
-/* ten zawsze będzie wychodził na prawo.. nie wiem czy tak ma być? */
 
-.parent--float {
+
+.parent--float .child {
     float: left;
+}
+
+.parent--float::after {
+    content: '';
+    display: block;
+    clear: both;
 }
 
 .parent--flexbox {
@@ -27,17 +37,14 @@
 }
 
 .child {
-    float: left;
     font-family: 'Source Sans Pro', sans-serif;
-    width: calc(30% - 20px);
+    width: 170px;
     margin-right: 10px;
 }
 
 .child--last {
-    display: flex;
-    flex-direction: row;
-    width: 40%;
-    margin-right: none;
+    width: 240px;
+    margin-right: 0;
     font-weight: 400;
     font-style: italic;
 }
