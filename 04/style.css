@@ -1,0 +1,110 @@
+* {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #F5F5F5;
+}
+
+header {
+    position: fixed;
+    width: 100vh;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px 20px;
+    background-color: white;
+
+
+    /* border: solid 1px black; */
+}
+
+.nav__item,
+.nav__item--open {
+    padding: 20px 0px;
+    margin: 0 10px;
+    text-align: center;
+    cursor: pointer;
+    min-width: 100px;
+    text-transform: uppercase;
+    height: 60px;
+}
+
+.nav__item--open:after,
+.nav-submenu__item--open:after {
+    float: right;
+    content: ' ➤';
+}
+
+.nav__item--open:after {
+    transform: rotate(90deg);
+}
+
+/* jedna strzałeczka, a tak się namęczyłem */
+
+.nav__item:hover,
+.nav__item--open:hover {
+    color: #009AE1;
+    border-top: 3px solid #009AE1;
+    padding-top: 17px;
+}
+
+
+
+.nav__item:hover .nav__submenu,
+.nav__item--open:hover .nav__submenu {
+    visibility: visible;
+
+}
+
+.nav__submenu {
+    position: absolute;
+    top: 70px;
+    text-align: left;
+    text-transform: none;
+    background-color: #333333;
+    color: #CFD4C4;
+    min-width: 200px;
+    visibility: hidden;
+
+
+}
+
+.nav__submenu li {
+    min-height: 40px;
+    padding: 10px;
+}
+
+.nav__submenu li:hover {
+    color: white;
+}
+
+.nav__submenu li:hover .nav-submenu__submenu {
+    color: #CFD4C4;
+    visibility: visible;
+}
+
+
+
+.nav-submenu__submenu {
+    min-height: 40px;
+    min-width: 200px;
+    position: absolute;
+    left: 200px;
+    top: 40px;
+    background-color: #333333;
+    visibility: hidden;
+}
+
+li.submenu-submenu__item:hover {
+    color: white;
+}
+
+/* nie moge zrobic push? */
