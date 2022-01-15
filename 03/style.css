@@ -1,0 +1,74 @@
+
+.parent 
+{    
+    padding: 20px;
+    width: 600px;
+ }
+
+    section > div 
+{
+    margin: 10px;
+}
+.child--first
+{    
+    text-indent: 20px;
+    font-style:normal; 
+    width: 30%;
+    color:lime;
+}
+.child--middle
+{
+    width: 30% ;
+    color:tomato;
+    font-style: bold; 
+        }
+.child--last
+{
+    width: 20% ;
+    color:palevioletred;
+    font-style: italic; 
+}
+
+.parent--inline-block
+{
+    background-color: aqua;
+         
+}
+.parent--inline-block .child--first, .parent--inline-block  .child--middle
+{
+    display: inline-block;
+       
+}
+.parent--inline-block > *:last-child
+{
+    display: inline-block;
+    background-color: brown;
+    
+}
+
+
+.parent--flexbox
+  {
+    background-color: red;
+    display: flex;
+    flex-direction:row ;
+    clear: both;
+  } 
+
+   
+.parent--float .child--first
+{
+    float: left;
+    background-color: deeppink;   
+    
+}
+.parent--float .child--middle
+{
+    float: left;
+    background-color: green  
+}
+
+.parent--float > *:last-child
+{
+    float: left;
+    background-color: aqua;}  
