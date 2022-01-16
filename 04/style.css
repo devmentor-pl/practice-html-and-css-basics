@@ -1,0 +1,134 @@
+:root {
+  --color-background: #f6f6f6;
+  --color-dark: #333333;
+  --color-menu: orangered;
+  --color-grey-light: #bec7d3;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  background-color: var(--color-background);
+}
+
+nav {
+  margin: 1rem auto;
+  width: 80%;
+  height: 50px;
+  background-color: white;
+  color: var(--color-dark);
+  font-family: "Arial";
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.menu__item {
+  width: 105px;
+  text-transform: uppercase;
+  padding: 1rem;
+  border-top: 2px solid transparent;
+  display: flex;
+  align-items: center;
+
+  position: relative;
+}
+
+.menu__item::after {
+  content: url(./images/icon-arrow-down.svg);
+  margin-left: 0.8rem;
+}
+
+.menu__item:hover {
+  border-top: 2px solid var(--color-menu);
+  border-radius: 2px;
+  color: var(--color-menu);
+}
+
+.menu__item:hover .menu__dropdown {
+  display: inline-block;
+}
+
+.menu__dropdown {
+  list-style: none;
+  text-transform: none;
+  width: 200px;
+  position: absolute;
+  left: 0;
+  top: 47px;
+  padding: 1rem 0.5rem 1rem 1rem;
+  background-color: var(--color-dark);
+  display: none;
+}
+
+.dropdown__item {
+  color: var(--color-grey-light);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: relative;
+}
+
+.dropdown__item:hover {
+  color: white;
+}
+
+.dropdown__item:hover .dropdown__arrow {
+  display: inline-block;
+}
+
+.dropdown__item:hover .dropdown__nested {
+  color: var(--color-grey-light);
+  display: inline-block;
+}
+
+.dropdown__item:not(:last-child) {
+  margin-bottom: 0.7rem;
+}
+
+.dropdown__arrow {
+  width: 0.7rem;
+  height: 0.7rem;
+  transform: rotate(270deg);
+  display: none;
+}
+
+.dropdown__nested {
+  background-color: var(--color-dark);
+  list-style: none;
+  text-transform: none;
+  width: 200px;
+  position: absolute;
+  left: 208px;
+  top: -16px;
+  padding: 1rem 0.5rem 1rem 1rem;
+  display: none;
+}
+
+/*helps with disapearing .menu__dropdown while hovering on dropdown__nested*/
+.dropdown__nested:hover .menu__dropdown {
+  display: inline-block;
+}
+
+.nested__item {
+  background-color: var(--color-dark);
+}
+
+.nested__item:hover {
+  color: white;
+}
+
+.nested__item:not(:last-child) {
+  margin-bottom: 0.7rem;
+}
