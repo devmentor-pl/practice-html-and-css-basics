@@ -4,9 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
 </head>
 <body>
+    <header class="header__container">
+        <a href="#">
+            <img src="logo.png">
+        </a>
+        <nav class="header__menu">
+            <ul>
+                <li class="menu__item">Home
+                    <ul class="dropdown__menu">
+                        <li><a href="#">Krótki opis</a></li>
+                        <li><a href="#">Jak</a></li>
+                        <li><a href="#">Dlaczego</a></li>
+                        <li><a href="#">Z kim</a></li>
+                    </ul>
+                </li>
+                <li class="menu__item">
+                    <a href="#">Aktualnośći</a>
+                </li>
+                <li class="menu__item">Kontakt
+                    <ul class="dropdown__menu">
+                        <li class="dropdown__item">Telefon</li>
+                        <li class="dropdown__item">Email</li>
+                        <li class="dropdown__item">Social media
+                            <ul>
+                                <li class="dropdown__item">FB</li>
+                                <li class="dropdown__item">Tw</li>
+                                <li class="dropdown__item">Insta</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main__container">
+        <article class="article">
+            <h1 class="article__title">Tytuł Artykułu</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit aperiam est, sequi necessitatibus dignissimos optio quaerat doloremque sed! Maxime placeat voluptatibus accusantium molestias, tempore dolor possimus vel accusamus necessitatibus excepturi.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit aperiam est, sequi necessitatibus dignissimos optio quaerat doloremque sed! Maxime placeat voluptatibus accusantium molestias, tempore dolor possimus vel accusamus necessitatibus excepturi.<hr>
+            <p>Author details</p><time datetime="21-11-99 10:45"></time>
+
+            <img src="#.png" alt="zielone kawasaki h2r">
+
+            <table border="4" cellspacing="5" cellpadding="2">
+                <caption>Tabela postępu</caption>
+                <thead>
+                <tr>
+                    <th>Miesiąc</th>
+                    <th>Rok</th>
+                    <th>Progres</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Luty</td>
+                    <td>2021</td>
+                    <td>5%</td>
+                </tr>
+                <tr>
+                    <td>Maj</td>
+                    <td>2021</td>
+                    <td>10%</td>
+                </tr>
+                </tbody>
+            </table>    
+        </article>
+        <section>
+            <div class="form__container">
+                <form>
+                    <label for="imie" name="Imię">Twoje imię</label>
+                    <input type="text" id="imie" name="imie">
+                    <label for="nazwisko" name="Nazwisko">Twoje nazwisko</label>
+                    <input type="text" id="nazwisko" name="nazwisko">
+                    <label for="content">Wpisz komentarz</label>
+                    <textarea rows="15" cols="50" id="content" name="content"></textarea>
+                    <input type="submit" value="Dodaj komentarz">
+                </form>
+            </div>
+        <article>
+            <div class="coment__section">
+                <h2 class="coment__title">Przykładowe komentarze</h2>
+                <p class="coment__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum mollitia numquam repellat culpa minima sunt minus deleniti, non ex similique reprehenderit odit reiciendis corporis consectetur voluptatum iure fuga aperiam quod.<p class="coment__details">Jurek <time datetime="2001-02-14 22:00">Valentines day</time></p></p>
+        
+                <p class="coment__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta facere voluptate provident dolore ipsam voluptatum consequuntur quis. Quo dolorem possimus cum, et laborum, neque ad amet veritatis praesentium <p class="coment__details">Krysia <time datetime="2008-02-14 20:00">Krysia</time></p></p>    
+            </div>
+        </article>
+        </section>
+    </main>
+    <footer id="footer">
+        <div>Copyright &copy;Michal K 2021</div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </footer>
     
 </body>
 </html>
