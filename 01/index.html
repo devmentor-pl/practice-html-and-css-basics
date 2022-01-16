@@ -1,12 +1,130 @@
 <!DOCTYPE html>
-<html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>devmentor.pl - HTML & CSS BASICS - #01</title>
-</head>
-<body>
-    
-</body>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>devmentor.pl - HTML & CSS BASICS - #01</title>
+		<link rel="stylesheet" href="./css/reset.css" />
+		<link rel="stylesheet" href="./css/main.css" />
+	</head>
+	<body>
+		<header class="header">
+			<nav>
+				<ul class="nav">
+					<li class="nav__item">
+						<a class="nav__link" href="#">
+							<img src="./img/eth_logo.png" alt="ethereum logo" />
+						</a>
+						<ul class="nav__dropdown dropdown">
+							<li class="dropdown__item">
+								<a class="dropdown__link" href="#">about us</a>
+							</li>
+							<li class="dropdown__item">
+								<a class="dropdown__link" href="#">portfolio</a>
+							</li>
+							<li class="dropdown__item">
+								<a class="dropdown__link" href="#">team</a>
+							</li>
+							<li class="dropdown__item">
+								<a class="dropdown__link" href="#">contact</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<section>
+				<article>
+					<h2>Title of the article</h2>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+						asperiores modi velit animi quod officia! Incidunt vero cum
+						asperiores quod.
+					</p>
+					<figure>
+						<img
+							src="./img/network_h1_sp.jpg"
+							alt="City with decentralized network"
+						/>
+						<figcaption>Smart city with decentralized network</figcaption>
+					</figure>
+					<p>
+						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur
+						illum ipsa inventore consectetur maxime, minus repellendus natus
+						dolores magni. Laboriosam!
+					</p>
+					<h5>
+						<time datetime="2021-08-21">21st August, 2021</time> Jakub Pawłowski
+					</h5>
+					<table>
+						<thead>
+							<tr>
+								<th>List of countries</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Switzerland</td>
+							</tr>
+							<tr>
+								<td>Germany</td>
+							</tr>
+							<tr>
+								<td>Norway</td>
+							</tr>
+						</tbody>
+					</table>
+				</article>
+			</section>
+			<section>
+				<form>
+					<div>
+						<label>Name</label>
+						<input name="firstName" />
+					</div>
+					<div>
+						<label>Surname</label>
+						<input name="lastName" />
+					</div>
+					<div>
+						<input type="submit" value="Submit" />
+					</div>
+				</form>
+			</section>
+			<section>
+				<article>
+					<h3>First comment</h3>
+					<h5><time datetime="20:00">20:00</time> Gal Anonim</h5>
+					<p>
+						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod ea ut
+						odit assumenda necessitatibus. Ipsam, minus. Sint officiis
+						voluptates minus!
+					</p>
+					<h3>Second comment</h3>
+					<h5><time datetime="20:15:35">20:15:35</time> Gal Anonim</h5>
+					<p>
+						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime
+						distinctio cumque adipisci maiores autem consectetur rerum unde in
+						itaque voluptas.
+					</p>
+					<h3>Third comment</h3>
+					<h5><time datetime="21:06:15">21:06:15</time> Gal Anonim</h5>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, eos.
+						Soluta iure eius consectetur animi! Repudiandae, laboriosam.
+						Corrupti, quidem sed!
+					</p>
+				</article>
+			</section>
+			<footer>
+				<div>
+					<!-- Tutaj również powiniem skorzystać z tagu 'time' ? -->
+					<p>&copy; <time datetime="2021">2021</time> Jakub Pawłowski</p>
+				</div>
+			</footer>
+		</main>
+	</body>
 </html>

@@ -1,0 +1,49 @@
+@font-face {
+	font-family: 'Source Sans Pro';
+	src: url(../font/SourceSansPro-Regular.otf);
+}
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.parent {
+	width: 600px;
+	padding: 20px;
+}
+
+.parent--flexbox, 
+.parent--inline-block {
+	display: flex;
+	justify-content: center;
+}
+
+.parent--float > .child {
+	float: left;
+}
+
+.parent--inline-block,
+.parent--flexbox,
+.parent--float > .child {
+	width: 30%;
+}
+
+/* Nie działa - dlaczego ?*/
+/* .parent--inline-block > .child {
+	display: inline-block; 
+	margin: auto;
+} */
+
+.child--first {
+	margin-right: 5px;
+}
+
+.child--middle {
+	margin: 0 5px;
+	font-weight: bold;
+}
+
+.child--last {
+	margin-left: 5px;
+	font-style: italic;
+}

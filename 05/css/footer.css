@@ -1,0 +1,8 @@
+.footer__container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer__copyrights {
+    width: 15%;
+}
