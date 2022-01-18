@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./index.css">
+    <title>Menu</title>
+</head>
+<body>
+    <ul class="nav">
+        <li class="nav__item">HOME</li>
+        <li id="arrow" class="nav__item">ITEMS
+            <ul class="nav__dropdown dropdown">
+                <li class="dropdown__item">
+                    ITEM 1
+                </li>
+                <li id="arrow2" class="dropdown__item">
+                    ITEM 2
+                    <ul class="nav__dropdown dropdown__again">
+                        <li class="dropdown__again__item">
+                            ITEM 2.1
+                        </li>
+                        <li class="dropdown__again__item">
+                            ITEM 2.1
+                        </li>
+                    </ul>
+                </li>
+            </li>
+            </ul>
+        <li class="nav__item">SETTINGS</li>
+        <li class="nav__item">CONTACT</li>
+    </ul>
+</body>
+</html>
