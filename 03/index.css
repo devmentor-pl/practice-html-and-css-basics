@@ -26,31 +26,31 @@ font-family: 'Source Sans PRO';
 }
 
 .child--first {
-    width: calc(30% - 18px); 
-    /* (100% - 60px) * 0,3       60px=[padding + margin] */
+     width: calc(30% - 10px);
     font-style: normal;
     margin-right: 10px;
 }
 
 .child--middle {
-    width: calc(30% - 18px);
+    width: calc(30% - 10px);
     font-weight: bold;
     margin-right: 10px;
 }
 
 .child--last {
-    width: calc(40% - 24px);
+     width: 40%; 
     font-style: italic;
 }
 
- parent--inline-block, .child  {
+ .parent--inline-block .child  {
     display: inline-block;
 }
 
- parent--float {
+ .parent--float .child {
     float: left;
 }
 
- parent--flexbox {
+ .parent--flexbox {
     display: flex;
 }
+
