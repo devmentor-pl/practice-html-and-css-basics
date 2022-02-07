@@ -5,17 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS BASICS - #03</title>
+    <link rel="stylesheet" href="./style/reset.css">
 </head>
+
+<style>
+
+.parent {
+    padding: 20px;
+    width: 600px;    
+}
+
+.parent--inline-block > .child {    
+    display: inline-block;           
+}
+
+.parent--float > .child{
+    float: left;
+}
+.parent--float::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.parent--flexbox {
+    display: flex;    
+}
+
+.child--first{       
+    font-family: 'Source Sans PRO';
+    font-style: normal;
+    font-weight: normal;    
+    margin-right: 10px;
+    width: calc((100% - 20px) * 0.3);
+}
+
+.child--middle{
+    font-family: 'Source Sans PRO';
+    font-weight: bold;
+    margin-right: 10px;
+    width: calc((100% - 20px) * 0.3);
+}
+
+.child--last{
+    font-family: 'Source Sans PRO';
+    font-style: italic;
+    width: calc((100% - 20px) * 0.4);
+}
+
+@font-face {
+    font-family: 'Source Sans PRO';
+    src: url('./fonts/SourceSansPro-Regular.otf');
+    font-weight: normal;
+    font-style: normal;        
+}
+@font-face {
+    font-family: 'Source Sans PRO';
+    src: url('./fonts/SourceSansPro-Bold.otf');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Source Sans PRO';
+    src: url('./fonts/SourceSansPro-It.otf');
+    font-weight: normal;
+    font-style: italic;
+}
+
+</style>
+
 <body>
     
     <section class="parent parent--inline-block">
         <div class="child child--first">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, asperiores.</div>
-        <div class="child child--middle">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis praesentium in possimus!</div>
-        <div class="child child--last">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, iure?</div>
-    </section>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, asperiores.</div><!--
+            --><div class="child child--middle">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis praesentium in possimus!</div><!--
+            --><div class="child child--last">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, iure?</div><!--
+            --></section>
 
     <section class="parent parent--float">
         <div class="child child--first">
