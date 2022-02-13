@@ -1,0 +1,14 @@
+/** @format */
+
+.child {
+  width: calc((30% + 20px) - 40px);
+  margin: 10px;
+  font-style: normal;
+}
+.child--middle {
+  font-weight: normal;
+}
+.child--last {
+  width: calc((40% + 20px) - 40px);
+  font-style: italic;
+}
