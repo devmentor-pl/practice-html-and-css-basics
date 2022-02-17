@@ -1,0 +1,44 @@
+div.container {
+    border: 3px solid rgb(19, 223, 19);
+    margin-top: 5px;
+    padding: 10px;
+}
+
+.header, .main {
+    align-items: center;
+    border: 3px solid blue;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.nav {
+    background: burlywood;
+    display: flex;
+}
+
+.nav__item {
+    margin: 20px;
+}
+
+.aside {
+    align-items: center;
+    border: 3px solid blue;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.footer {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 100px;
+}
+
+p {
+    background: burlywood;
+    margin: 0 10px;
+}
