@@ -1,0 +1,69 @@
+section.parent {
+    width: 600px;
+    padding: 20px;;
+}
+
+section.parent--inline-block .child {
+    display: inline-block;
+}
+
+.child--first, .child--middle {
+    width: calc(30% - 10px);
+    margin-right: 10px;
+}
+
+.child--last {
+    width: 40%; 
+}
+
+
+section.parent--float::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+section.parent--float .child {
+    float: left;
+}
+
+
+section.parent--flexbox {
+    display: flex;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url(./fonts/SourceSansPro-Bold.otf) format('opentype') ;
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url(fonts/SourceSansPro-Regular.otf) format('opentype') ;
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url(fonts/SourceSansPro-It.otf) format('opentype') ;
+    font-style: normal;
+    font-weight: italic;
+}
+
+.child--first {
+    font-family: 'Source Sans Pro';
+    font-weight: normal;
+}
+
+.child--middle {
+    font-family: 'Source Sans Pro';
+    font-weight: bold;
+}
+
+.child--last {
+    font-family: 'Source Sans Pro';
+    font-style: italic;
+}
