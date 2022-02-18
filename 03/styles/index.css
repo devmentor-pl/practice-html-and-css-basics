@@ -8,7 +8,8 @@ section.parent--inline-block .child {
 }
 
 .child--first, .child--middle {
-    width: 30%;
+    width: calc(30% - 10px);
+    margin-right: 10px;
 }
 
 .child--last {
@@ -42,7 +43,7 @@ section.parent--flexbox {
     font-family: 'Source Sans Pro';
     src: url(fonts/SourceSansPro-Regular.otf) format('opentype') ;
     font-style: normal;
-    font-weight: regular;
+    font-weight: normal;
 }
 
 @font-face {
@@ -54,7 +55,7 @@ section.parent--flexbox {
 
 .child--first {
     font-family: 'Source Sans Pro';
-    font-weight: regular;
+    font-weight: normal;
 }
 
 .child--middle {
@@ -64,5 +65,5 @@ section.parent--flexbox {
 
 .child--last {
     font-family: 'Source Sans Pro';
-    font-weight: italic;
+    font-style: italic;
 }
