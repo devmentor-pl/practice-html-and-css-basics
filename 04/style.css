@@ -1,0 +1,113 @@
+/** @format */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
+  font-family: "Courier New", Courier, monospace;
+}
+body {
+  background-color: rgb(245, 245, 245);
+}
+
+.header {
+  width: 100%;
+  height: 5vh;
+  background-color: white;
+}
+.header__nav {
+  width: 20%;
+  height: 100%;
+  background-color: white;
+}
+.header__list {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: rgb(51, 51, 51);
+}
+.header__item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: 100%;
+  padding: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+.header__arrrow-down {
+  transform: rotate(90deg) scale(0.8);
+}
+.header__item::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 2px;
+  visibility: hidden;
+  background-color: rgb(0, 154, 225);
+}
+.header__item:hover::before {
+  visibility: visible;
+}
+.header__item:hover {
+  color: rgb(0, 154, 225);
+}
+.header__item:hover .header__list-second {
+  visibility: visible;
+}
+
+.header__list-second {
+  visibility: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  width: 200%;
+  background-color: rgb(51, 51, 51);
+  color: white;
+}
+.header__item-second {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 15px;
+  color: rgb(221, 210, 194);
+  text-align: left;
+}
+.header__item-second:hover .header__list-third {
+  visibility: visible;
+}
+.header__item-second:hover,
+.header__item-third:hover {
+  color: white;
+}
+.header__list-third {
+  visibility: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  width: 100%;
+  background-color: rgb(51, 51, 51);
+  color: white;
+}
+.header__item-third {
+  width: 100%;
+  padding: 15px;
+  color: rgb(221, 210, 194);
+  text-align: left;
+}

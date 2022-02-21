@@ -1,0 +1,7 @@
+/** @format */
+
+.parent {
+  outline: 1px solid black;
+  width: 600px;
+  padding: 20px;
+}

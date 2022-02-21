@@ -1,0 +1,17 @@
+/** @format */
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0 5px 0;
+}
+.main__article {
+  width: 49.5%;
+  height: 300px;
+  margin: 0;
+}
