@@ -6,7 +6,7 @@
 
 &nbsp;
 
-# `#01` HTML i CSS: Podstawy
+# `#02` HTML i CSS: Podstawy
 
 W pliku `index.html` utwórz strukturę HTML, która będzie poprawna semantycznie i będzie posiadała poniższe elementy:
 
