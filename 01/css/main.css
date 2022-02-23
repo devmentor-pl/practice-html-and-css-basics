@@ -1,0 +1,111 @@
+.main {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.main__container {
+    justify-content: center;
+    margin:0 auto;
+    max-width:1150px;
+    padding-top:3rem;
+}
+.main__article {
+    font-size:1rem;
+}
+.article__title {
+    font-size:2rem;
+    font-weight:bold;
+    color:rgb(22, 48, 77)
+}
+.article__content {
+    background-color: #eee;
+    font-size:1.5rem;
+    padding:2rem;
+    margin:0.5rem 0 0.5rem 0;
+    text-align:justify;
+    text-indent:2rem;
+    color:#494949;
+    }
+.article__data {
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        padding:2rem;
+        }
+.article__table {
+    display:flex;
+    justify-content: center;
+    padding:2rem;
+    }
+.table > caption {
+    padding:1rem;
+    background-color: #3E83EE;
+}
+.table {
+    font-size:1.3rem;
+}
+.table th, .table td {
+    padding:1rem; 
+    text-align:center;
+    border-right:1px solid #eee;
+    border-bottom:1px solid #eee;
+}
+.article__date, .article__author {
+    color:rgb(135, 140, 146);
+    font-weight:bold;
+}
+.article__footer {
+    display:flex;
+    justify-content: space-between;
+}
+.form__comment label, .form__comment input, .form__comment textarea{
+display: block;
+width:100%;
+padding:0.5rem;
+}
+.form__comment__button {
+    display:flex;
+    justify-content: center;
+}
+.form__comment__button > input {
+    background: #3E83EE;
+    border:none;
+    border-radius:5px;
+    color: #2b2a2a;
+    cursor:pointer;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:1.5rem;
+    padding: 10px 25px;
+    position: relative;
+    transition: color 0.5s ease-out;
+    width:auto;
+}
+.form__comment__button > input:hover {
+    color: #fff;
+}
+.comments__header {
+    font-size:2rem;
+    font-weight:bold;
+    color:#000;
+    background-color: #eee;
+    padding:1rem;
+}
+.comment {
+    margin-top:2rem;
+}
+.comment__header {
+    display:flex;
+    justify-content: space-between;
+    color:rgb(49, 49, 49);
+    font-weight:bold;
+    font-size:1.5rem;
+}
+.comment__content {
+    background-color: rgb(248, 248, 248);
+    font-family: 'Times New Roman', Times, serif;
+    font-size:1.5rem;
+    font-style: italic;
+    padding:2rem;
+    margin:0.5rem 0 0.5rem 0;
+    text-align:justify;
+    text-indent:2rem;
+    color:#6e6d6d;
+}
