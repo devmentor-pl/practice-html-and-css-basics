@@ -1,4 +1,4 @@
-# `#01` LINK DO ROZWIĄZANIA
+# LINK DO ROZWIĄZANIA:
 # https://alonevoice.github.io/practice-html-and-css-basics/01/
 
 
@@ -6,7 +6,7 @@
 
 &nbsp;
 
-# `#02` HTML i CSS: Podstawy
+# `#01` HTML i CSS: Podstawy
 
 W pliku `index.html` utwórz strukturę HTML, która będzie poprawna semantycznie i będzie posiadała poniższe elementy:
 
