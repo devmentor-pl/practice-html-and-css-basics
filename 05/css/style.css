@@ -1,0 +1,50 @@
+.header, .one, .two, .footer {
+    border:5px solid #0ed145;
+    margin: 0.5rem auto;
+}
+.header__container, .one__container, .two__container, .footer__container {
+    border:5px solid #00a8f3;
+    display:flex;
+    margin: 0.5rem auto;
+    padding: 0.5rem 0;
+    max-width:1000px;
+}
+.header__container {
+    justify-content: space-between;
+}
+.one__container {
+    justify-content: space-between;
+}
+.two__container {
+    justify-content:space-evenly;
+}
+.footer__container {
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+}
+.header__logo {
+    background-color: #ffca18;
+    height:50px;
+    width:20%;
+}
+.header__nav {
+    background-color: #ffca18;
+    height:50px;
+    width:45%;
+}
+.one__content {
+    background-color: #ffca18;
+    height:240px;
+    width: calc(50% - 2px);
+}
+.two__content {
+    background-color: #ffca18;
+    height:240px;
+    width: 32%;
+}
+.footer__content {
+    background-color: #ffca18;
+    height:35px;
+    width: 100px;
+}
