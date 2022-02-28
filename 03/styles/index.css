@@ -1,0 +1,71 @@
+@font-face {
+    font-family: "Source Sans PRO Regular";
+    src: url(../fonts/SourceSansPro-Regular.otf) format("opentype");
+    font-style: normal;
+}
+@font-face {
+    font-family: "Source Sans PRO Bold";
+    src: url(../fonts/SourceSansPro-Bold.otf) format("opentype");
+    font-style: normal;
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Source Sans PRO Italic";
+    src: url(../fonts/SourceSansPro-It.otf) format("opentype");
+    font-style: italic;
+}
+
+body {
+    margin: 0;
+}
+.parent {
+    width: 600px;
+    padding: 20px;
+}
+
+/* inline-block */
+.parent--inline-block .child {
+    display: inline-block;
+    vertical-align: text-top;
+}
+
+/* float */
+.parent--float .child {
+    float: left;
+}
+.parent--float::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* flexbox */
+.parent--flexbox {
+    display: flex;
+}
+
+/* Rest styles */
+.parent .child:first-child {
+    width: calc(30% - 10px);
+}
+.parent .child:nth-child(2) {
+    width: calc(30% - 10px);
+}
+.parent .child:nth-child(3) {
+    width: calc(40% - 10px);
+}
+
+.child--first {
+    margin-right: 10px;
+    font-family: "Source Sans Pro Regular";
+    font-style: normal;
+}
+.child--middle {
+    margin-right: 10px;
+    font-family: "Source Sans PRO Bold";
+    font-weight: bold;
+}
+.child--last {
+    font-family: "Source Sans Pro Italic";
+    font-style: italic;
+}
