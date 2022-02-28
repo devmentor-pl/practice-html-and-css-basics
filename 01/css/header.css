@@ -38,8 +38,8 @@
     display: block;
 }
 .nav__dropdown::after {
-    border-top-color: #2b2a2a;
     border: 10px solid transparent;
+    border-top-color: #2b2a2a;
     content: '';
     display: inline-block;
     margin-left: 5px;
