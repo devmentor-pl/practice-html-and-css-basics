@@ -6,8 +6,8 @@
     border:5px solid #00a8f3;
     display:flex;
     margin: 0.5rem auto;
-    padding: 0.5rem 0;
     max-width:1000px;
+    padding: 0.5rem 0;
 }
 .header__container {
     justify-content: space-between;
@@ -19,8 +19,8 @@
     justify-content:space-evenly;
 }
 .footer__container {
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     min-height: 100px;
 }
 .header__logo {

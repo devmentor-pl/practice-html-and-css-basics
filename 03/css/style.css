@@ -13,28 +13,28 @@
     float:left;
 }
 .parent--float::after {
+    clear: both;
     content: '';
     display: block;
-    clear: both;
 }
 .parent--flexbox {
     display:flex;
 }
 .child--first {
-    width:calc(540px*0.3);
-    margin-right:10px;
     font-family:'Source Sans PRO';
+    margin-right:10px;
+    width:calc((100% - 20px)*0.3);
 }
 .child--middle {
-    width:calc(540px*0.3);
-    margin-right:10px;
     font-family:'Source Sans PRO';
     font-weight: bold;
+    margin-right:10px;
+    width:calc((100% - 20px)*0.3);
 }
 .child--last {
-    width:calc(540px*0.4);
     font-family:'Source Sans PRO';
     font-style:italic;
+    width:calc((100% - 20px)*0.4);
 }
 .parent--inline-block .child {
     display:inline-block;
