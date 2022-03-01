@@ -1,8 +1,7 @@
 .parent{
     width: 600px;
     padding: 20px;
-    display: flex;
-    
+      
 }
 .child--first{
     width: 30%;
