@@ -50,6 +50,4 @@
 .parent--flexbox {
     display: flex;
 }
-.parent--flexbox .child{
-    float:left;
-}
+
