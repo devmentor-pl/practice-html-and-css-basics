@@ -15,6 +15,10 @@
     font-style: italic;
 }
 
+:root {
+    --margin-right: 10px
+}
+
 body {
     margin: 0;
 }
@@ -24,13 +28,13 @@ body {
 }
 
 /* inline-block */
-.parent--inline-block {
-    border: 1px solid red;
-}
 .parent--inline-block .child {
     display: inline-block;
     vertical-align: text-top;
-    background-color: lightblue;
+}
+.parent.parent--inline-block .child:not(:last-child) {
+    margin-right: calc(var(--margin-right) - 4px); /* Using inline-block I subtracted 4px additional spacing caused by applied specific html structure */
+    /* finally spacing between elements will be 10px because 4px is added after margin independently */
 }
 
 /* float */
@@ -50,23 +54,22 @@ body {
 
 /* Rest styles */
 .parent .child:first-child {
-    /* I prefer do this instead of adding empty comment in index.html file */
-    width: calc(30% - 14px); /* -4px added because of inline-block elements */
+    width: calc(30% - var(--margin-right));
 }
 .parent .child:nth-child(2) {
-    width: calc(30% - 14px); /* -4px added because of inline-block elements */
+    width: calc(30% - var(--margin-right));
 }
 .parent .child:nth-child(3) {
-    width: calc(40% - 0px);
+    width: 40%;
 }
 
 .child--first {
-    margin-right: 10px;
+    margin-right: var(--margin-right);
     font-family: "Source Sans Pro Regular";
     font-style: normal;
 }
 .child--middle {
-    margin-right: 10px;
+    margin-right: var(--margin-right);
     font-family: "Source Sans PRO Bold";
     font-weight: bold;
 }
