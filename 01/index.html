@@ -1,12 +1,139 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
 </head>
+
 <body>
-    
+    <header class="header">
+        <div class="header__logo"></div>
+        <nav class="nav">
+            <ul class="nav__menu">
+                <li class="nav__item">
+                    <a href="#" class="nav__item">
+                         Start
+                        <ul class="nav__dropdown">
+                            <li class="nav__dropdown-item">Section 1</li>
+                            <li class="nav__dropdown-item">Section 2</li>
+                            <li class="nav__dropdown-item">Section 3</li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__item">
+                        About
+                        <ul class="nav__dropdown">
+                            <li class="nav__dropdown-item">Company</li>
+                            <li class="nav__dropdown-item">Items</li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__item">
+                        Contact
+                        <ul class="nav__dropdown">
+                            <li class="nav__dropdown-item">E-mail</li>
+                            <li class="nav__dropdown-item">Facebook</li>
+                            <li class="nav__dropdown-item">Instagram</li>
+                        </ul>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <article class="article">
+            <div class="article__main">
+                <h1 class="article__heading">Heading</h1>
+                <img src="./photo.jpg" alt="Image" class="article__img" />
+                <table class="article__table">
+                    <caption>
+                        Table
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Title 1</th>
+                            <th scope="col">Title 2</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="#" class="article__item">Item</a></td>
+                            <td><a href="#" class="article__item">Item</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#" class="article__item">Item</a></td>
+                            <td><a href="#" class="article__item">Item</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="article__desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+                    quia, minus labore aspernatur inventore doloremque iure dicta
+                    consequatur voluptatem error molestiae sint quos, porro quibusdam
+                    maiores? Quas modi aut, eum, molestias laudantium quasi possimus non
+                    a quod eius deleniti, quisquam impedit! Expedita corporis accusamus
+                    provident, nihil quae ex. Ullam aliquam molestias saepe sint ea
+                    eligendi voluptatibus. Suscipit consectetur quia fuga quas,
+                    accusamus delectus, explicabo ipsum eaque tenetur, labore
+                    repudiandae libero animi! Debitis, atque ea minus delectus ullam
+                    sunt dolores doloribus.
+                </p>
+                <p class="article__footer">
+                    Created on <time datetime="2022-03-02">January 6th</time> by
+                    <em>Author</em>
+                </p>
+            </div>
+            <div class="comments-section">
+                <form action="/action_page.php" class="add-comment">
+                    <label for="comment" class="add-comment__label">Comment article:</label>
+                    <br />
+                    <textarea id="comment" name="comment" rows="6" cols="60" class="add-comment__text">
+                    </textarea>
+                    <br /><br />
+                    <input type="submit" value="Submit" class="add-comment__btn" />
+                </form>
+                <div class="comments">
+                    <div class="comments__comment">
+                        <p class="comments__content">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae, aliquid debitis?
+                        </p>
+                        <p class="comments__author">
+                            Created on <time datetime="2022-03-02">March 3th</time> by
+                            <em>Comment's Author</em>
+                        </p>
+                    </div>
+                    <div class="comments__comment">
+                        <p class="comments__content">
+                           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, debitis ullam!
+                        </p>
+                        <p class="comments__author">
+                            Created on <time datetime="2022-03-02">March 3th</time> by
+                            <em>Comment's Author</em>
+                        </p>
+                    </div>
+                    <div class="comments__comment">
+                        <p class="comments__content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, sed ipsum.
+                        </p>
+                        <p class="comments__author">
+                            Created on <time datetime="2022-03-02">March 3th</time> by
+                            <em>Comment's Author</em>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+
+    <footer>
+        <p class="company"> &copy; 2022 | Lukas-Logo</p>
+    </footer>
 </body>
+
 </html>
