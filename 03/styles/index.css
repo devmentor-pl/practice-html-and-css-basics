@@ -24,9 +24,13 @@ body {
 }
 
 /* inline-block */
+.parent--inline-block {
+    border: 1px solid red;
+}
 .parent--inline-block .child {
     display: inline-block;
     vertical-align: text-top;
+    background-color: lightblue;
 }
 
 /* float */
@@ -46,13 +50,14 @@ body {
 
 /* Rest styles */
 .parent .child:first-child {
-    width: calc(30% - 10px);
+    /* I prefer do this instead of adding empty comment in index.html file */
+    width: calc(30% - 14px); /* -4px added because of inline-block elements */
 }
 .parent .child:nth-child(2) {
-    width: calc(30% - 10px);
+    width: calc(30% - 14px); /* -4px added because of inline-block elements */
 }
 .parent .child:nth-child(3) {
-    width: calc(40% - 10px);
+    width: calc(40% - 0px);
 }
 
 .child--first {
