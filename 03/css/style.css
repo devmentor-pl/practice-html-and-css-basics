@@ -1,6 +1,28 @@
+@font-face {
+    font-family: "SourceSansPro";
+    src: url(./../fonts/SourceSansPro-Regular.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SourceSansPro";
+    src: url(./../fonts/SourceSansPro-Bold.otf) format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SourceSansPro";
+    src: url(./../fonts/SourceSansPro-It.otf) format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
 .parent {
     width: 600px;
     padding: 20px;
+    font-family: "SourceSansPro", "Arial", sans-serif;
 }
 
 .parent--inline-block .child {
