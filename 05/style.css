@@ -1,0 +1,69 @@
+.green_container{
+    border: 4px solid green;
+    margin: 3px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+.blue{
+    border: 3px solid blue;
+    margin: 2px;
+    display: flex;
+    width: 1000px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.header{
+    justify-content: space-between;
+}
+
+.logo, .menu{
+    background-color: rgb(255, 255, 110);
+    margin: 20px;
+    height: 100px;
+}
+  
+.logo{
+    margin-left: 0;
+    width: 200px;   
+}
+.menu{
+    margin-right: 0;
+    width: 400px;
+}
+.article{
+    background-color: rgb(255, 255, 110);
+    width: 450px;
+    height: 300px;
+    margin: 20px;
+}
+.main1{
+    justify-content: space-between;
+}
+.first_article{
+    margin-left: 0   
+}
+
+.second_article{
+    margin-right: 0;
+}
+.main2{
+    justify-content: center;
+}
+.section{
+    background-color: rgb(255, 255, 110);
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+}
+.footer{
+    justify-content: center;
+}
+.aside{
+    background-color: rgb(255, 255, 110);
+    min-height: 100px;
+    width: 200px;
+    margin: 20px;
+}
+
