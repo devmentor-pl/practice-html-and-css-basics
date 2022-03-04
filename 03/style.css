@@ -1,0 +1,84 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.child--first {
+    background-color: #e67e22;
+    font-weight: 400;
+}
+
+.child--middle {
+    background-color: #2ecc71;
+    font-weight: bold;
+}
+
+.child--last {
+    background-color: #3498db;
+    font-style: italic;
+}
+
+.parent--inline-block,
+.parent--float,
+.parent--flexbox {
+    width: 600px;
+    padding: 20px;
+    outline: 1px solid red;
+    overflow: auto;
+    margin-bottom: 10px;
+}
+
+.child {
+    height: 100px;
+}
+
+.parent--inline-block .child {
+    display: inline-block;
+}
+
+.child--first,
+.child--middle {
+    width: calc(30% - 10px);
+    margin-right: 10px;
+}
+
+.child--last {
+    width: 40%;
+    font-style: italic;
+}
+
+.parent--float .child {
+    float: left;
+}
+
+.child--first,
+.child--middle {
+    width: calc(30% - 10px);
+    margin-right: 10px;
+}
+
+.child--last {
+    width: 40%;
+    font-style: italic;
+}
+
+.parent--flexbox .child {
+    float: left;
+}
+
+.child--first,
+.child--middle {
+    width: calc(30% - 10px);
+    margin-right: 10px;
+    /* float: left; */
+}
+
+.child--last {
+    width: 40%;
+    font-style: italic;
+}
