@@ -7,6 +7,91 @@
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
 </head>
 <body>
-    
+    <header class="header row">
+        <div class="header_container container">
+            <h1 class="header__logo cell"></h1>
+            <nav class="header__nav cell"></nav>
+        </div>
+    </header>
+    <main>
+        <article>
+            <h1>Tytuł</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, voluptatibus. Similique possimus fugiat a sint, sunt tempore eos aspernatur debitis dolorum reiciendis cumque aperiam sed hic odit, fuga culpa nostrum.</p>
+            <time class="comment date">
+               2022-05-03 18:41:20
+            </time>
+            <p>Beata Ptak</p>
+        </article>
+        <img src="./images/pexels-humphrey-muleba-1612856.jpg"
+        width= "200" />
+        <table>
+            <caption>Rasy piesków </caption>
+            <colgroup>
+            <col span="3" style="background-color: plum;">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th scope="col">Rasa</th>
+                    <th scope="col">Wielkość</th>
+                    <th scope="col">Waga</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Labrador Retriever</td>
+                    <td>Duzy</td>
+                    <td>30kg</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <form>
+        <div>
+            <label>Imię
+                <input name="firstName">
+            </label>
+            <label>Nazwisko
+                <input name="lastName">
+            </label>
+        </div>
+        <div><input type="text"></div>
+        <div><input type="submit"></div>
+        <div><input type="date"></div>
+        <h3>Komentarze</h3>
+        <form>
+            <div>
+                <label>Imię 
+                    <input name="firstName" value="Beata">
+                </label>
+                <label>Nazwisko
+                    <input name="lastName" value="Ptak">
+                </label>
+            </div>
+            <div><input type="text" value="Lorem ipsum dolor"></div>
+            <div><input type="date"></div>
+            <div>
+                <label>Imię 
+                    <input name="firstName" value="Aleksandra">
+                </label>
+                <label>Nazwisko
+                    <input name="lastName" value="Cedro">
+                </label>
+            </div>
+            <div><input type="text" value="Lorem ipsum dolor"></div>
+            <div><input type="date"></div>
+            <div>
+                <label>Imię 
+                    <input name="firstName" value="Tomasz">
+                </label>
+                <label>Nazwisko
+                    <input name="lastName" value="Gunia">
+                </label>
+            </div>
+            <div><input type="text" value="Lorem ipsum dolor"></div>
+            <div><input type="date"></div>
+    </form>
+    <footer>
+        <div>&copy; 2022 beataptak</div>
+    </footer>
 </body>
 </html>
