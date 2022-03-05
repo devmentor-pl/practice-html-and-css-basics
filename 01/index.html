@@ -9,58 +9,65 @@
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
 </head>
 <body>
-    <header title="Logo">
-        <a href="">
-            <img src="./logo.png" alt="Logo strony">
-        </a>
-        <nav>
-            <ul>
-                <li>
-                    <a href="">Home</a>
-                </li>
+<header>
+    <div id="logo">
+        <a href="./index.html"><img src="./logo.png" alt="Web's logo" /></a>
+    </div>
 
-                <li>
-                    <a href="">O nas</a>
-                </li>
+    <div id="nav">
+        <ul>
+            <a href=""><li>O Nas</li></a>
+            <a href="./#art"><li>Articles</li></a>
+            <a href=""><li>Oferta</li></a>
+            <a href=""><li>Kontakt</li></a>
+        </ul>
+    </div>
+</header>
 
-                <li>
-                    <a href="">Kontakt</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
+<main>
+    <div id="art">
         <article>
-            <h2>To jest treść artykułu #1.</h2>
-            <p>
-                Sit est ex sint et cillum dolore et veniam. Laborum incididunt eu dolor ex ex eiusmod fugiat. Aliquip culpa cupidatat in laboris. Ipsum esse esse cupidatat cupidatat nisi dolore nulla commodo fugiat.
-                <a href="">czytaj więcej</a>
-            </p>
+            <h2>Tytuł artykułu</h2>
+            <h4>05/03/2022 | Rafał Kochanecki</h4>
+            <img src="./illustration1.jpg" alt="Img article">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero veritatis
+            iste cupiditate aut rem in. Corporis illum, corrupti quaerat repellat dolores
+            eligendi, enim repellendus dicta ratione rem neque voluptatum vitae!</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero veritatis
+            iste cupiditate aut rem in. Corporis illum, corrupti quaerat repellat dolores
+            eligendi, enim repellendus dicta ratione rem neque voluptatum vitae!</p>
         </article>
+    </div>
 
-        <article>
-            <h2>To jest treść artykułu #1.</h2>
-            <p>
-                Reprehenderit cupidatat aliqua exercitation et amet ea nostrud do nulla. Ad adipisicing veniam non adipisicing sint excepteur non dolor aliqua laboris reprehenderit consequat ad. Cillum occaecat eiusmod dolor ipsum ad minim eiusmod excepteur ullamco duis sint magna adipisicing officia. Qui culpa dolore qui minim pariatur anim enim adipisicing ea voluptate ea elit.
-                <a href="">czytaj więcej</a>
-            </p>
-        </article>
-    </main>
+    <div>
+        <form action="">
+            <div>
+                <input type="text" placeholder="Email adress" />
+                <input type="text" placeholder="Full name" />
+            </div>
+            <div>
+                <textarea name="" id="" cols="46" rows="10" placeholder="Dodaj komentarz..."></textarea>
+            </div>
+            <div>
+                <button>Wyślij</button>
+            </div>
+        </form>
+    </div>
 
-    <footer>
-        <div>&copy; 2020 devmentor.pl</div>
-        <nav>
-            <ul>
-                <li>
-                    <a href="/">home</a>
-                </li>
+    <div>
+        <h6>05/03/2022 | Rafał Kochanecki</h6>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, delectus?
+        Illum natus neque, ad libero odit id a, veritatis magnam voluptates labore vel
+        voluptatibus quaerat doloremque alias, dolorem saepe hic!</p>
+    </div>
+</main>
 
-                <li>
-                    <a href="/contact">kontakt</a>
-                </li>
-            </ul>
-        </nav>
-    </footer>
+<footer>
+    <div id="footer">
+        &copy; 2022 devmentor.pl
+    </div>
+</footer>
+
 </body>
 </html>
