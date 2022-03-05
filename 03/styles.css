@@ -5,6 +5,7 @@
 .child--first,
 .child--middle {
     width: calc(30% - 10px);
+    margin-right: 10px;
 }
 
 .child--last {
