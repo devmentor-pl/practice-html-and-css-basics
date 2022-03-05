@@ -20,7 +20,6 @@ ul {
 
 .nav {
     display: flex;
-  
 }
 
 .nav__item {
@@ -29,7 +28,6 @@ ul {
     padding: 10px 40px;
     position: relative;
     text-align: center;
-    
 }
 
 .nav__item:hover {
