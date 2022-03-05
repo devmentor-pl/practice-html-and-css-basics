@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'SourceSansPro';
+    src: url(fonts/SourceSansPro-ExtraLight.otf);
+}
+
 .parent {
     width: 600px;
     padding: 20px;
@@ -8,6 +13,21 @@
     margin-right: 10px;
 }
 
+.child {
+    font-family: SourceSansPro;
+}
+
 .child--last {
     width: 40%;
+    font-style: italic;
 }
+
+.child--first {
+    font-style: normal;
+    
+}
+
+.child--middle {
+    font-weight: bold;
+}
+
