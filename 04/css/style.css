@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body {
+    background-color: #F7F7F7;
+}
+
+nav {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    margin: 10px 10px 0 10px;
+    position: fixed;
+    text-transform: uppercase;
+    width: calc(100% - 20px);
+}
+
+nav,
+ul {
+    background-color: white;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav__item {
+    border-top: solid 4px white;
+    flex-basis: 25%;
+    padding: 10px 40px;
+    position: relative;
+    text-align: center;
+}
+
+.nav__item:hover {
+    border-top: solid 4px #648bc2;
+}
+
+.down__arrow {
+    color: #000000;
+    margin: 0 0 0 10px;
+    position: absolute;
+    transform: rotate(90deg);
+}
+
+.right__arrow {
+    position: absolute;
+    right: 5px;
+}
+
+.nav__item:first-of-type,
+.nav__item:hover,
+.nav__item:hover .down__arrow {
+    color: #4577bd;
+}
+
+.nav__second__dropdown {
+    margin-left: calc(-40px + 100%);
+    margin-top: -35px;
+}
+
+.nav__first__dropdown {
+    margin-left: -40px;
+}
+
+.nav__first__dropdown,
+.nav__second__dropdown {
+    display: none;
+    position: absolute;
+    width: 100%;
+}
+
+.first__dropdown__item,
+.second__dropdown__item {
+    background-color: #51575E;
+    color: whitesmoke;
+    padding: 10px 40px;
+    text-transform: capitalize;
+}
+
+.first__dropdown__item:first-of-type {
+    margin-top: 10px;
+}
+
+.dropdown:hover.first__dropdown__item .nav__second__dropdown,
+.dropdown:hover .nav__first__dropdown {
+    display: block;
+}
