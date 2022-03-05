@@ -1,0 +1,35 @@
+.header__container,
+.content__container,
+.products__container,
+.footer__container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.header {
+    width: 100vw;
+    background: rgb(212, 196, 196);
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    min-height: 100px;
+}
+
+.header__logo {
+    background-color: rgb(255, 255, 255);
+    min-width: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.header__nav {
+    background: rgb(128, 96, 96);
+    min-width: 300px;
+}
+
+.header__logo,
+.header__nav {
+    margin: 10px 0;
+}
