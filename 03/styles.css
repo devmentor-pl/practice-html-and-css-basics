@@ -1,6 +1,8 @@
 @font-face {
     font-family: 'SourceSansPro';
     src: url(fonts/SourceSansPro-ExtraLight.otf);
+    font-style: normal;
+    font-weight: 100;
 }
 
 .parent {
@@ -24,10 +26,24 @@
 
 .child--first {
     font-style: normal;
-    
 }
 
 .child--middle {
     font-weight: bold;
+}
+
+.parent--inline-block .child{
+    display: inline-block;
+    background-color: red;
+}
+
+.parent--float .child{
+    float: left;
+    background-color: aqua;
+}
+
+.parent--flexbox {
+    display: flex;
+    background-color: green;
 }
 
