@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url(./SourceSansPro-Bold.otf);
+}
+
+.parent {
+    width: 600px;
+    padding: 20px;
+
+
+}
+
+.parent--inline--block {
+    display: inline-block;
+}
+
+
+
+.parent--flexbox {
+    display: flex;
+
+}
+
+
+.child {
+    margin-right: 10px;
+    font-family: Source Sans Pro;
+    display: inline-block;
+   
+
+
+}
+
+.child--first {
+    width: calc(30% - 20px);
+    font-style: normal;
+
+}
+
+.child--middle {
+    width: calc(30% - 20px);
+    font-weight: bold;
+
+}
+
+.child--last {
+    width: calc(40% - 20px);
+    font-style: italic;
+
+}

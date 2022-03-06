@@ -1,0 +1,13 @@
+.footer__container {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+}
+
+.footer__logo {
+    background-color: beige;
+    height: 50px;
+    width: 25%;
+}
