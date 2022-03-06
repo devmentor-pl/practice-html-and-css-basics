@@ -60,7 +60,7 @@
     float: left;
 }
 
-.parent--inline-block::after {
+.parent--float:after {
     content: '';
     display: block;
     clear: both;
