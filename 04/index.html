@@ -8,5 +8,24 @@
         <link rel="stylesheet" href="./reset.css" />
         <link rel="stylesheet" href="./style.css" />
     </head>
-    <body></body>
+    <body>
+        <ul class="nav">
+            <li class="nav__item">HOME</li>
+            <li class="nav__item">
+                ITEMS
+                <ul class="nav__dropdown">
+                    <li class="dropdown__item">Item 1</li>
+                    <li class="dropdown__item">
+                        Item 2
+                        <ul class="nav__dropdown2">
+                            <li class="dropdown2__item">Item 2.1</li>
+                            <li class="dropdown2__item">Item 2.2</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav__item">SETTINGS</li>
+            <li class="nav__item">CONTACT</li>
+        </ul>
+    </body>
 </html>
