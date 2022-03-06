@@ -12,13 +12,18 @@ body {
 .nav__item:hover > .nav__dropdown {
     display: block;
 }
-
+.nav__dropdown--item:hover > .nav__dropdown2 {
+    display: inline-block;
+}
 .nav__dropdown, .nav__dropdown2 {
     display: none;
     color: white;
+    position: absolute;
     background-color: rgb(51, 51, 51);
 }
 
 .nav__item {
     padding: 10px;
+    position: relative;
+    margin-right: 20px;
 }
