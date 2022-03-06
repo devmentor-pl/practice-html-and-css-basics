@@ -1,0 +1,50 @@
+.nav, .nav__item {
+    outline: 1px solid;
+    margin: 120px;
+    padding: 10px;
+
+}
+.nav {
+    outline-color: lightgray;
+    background: lightgray;
+    padding: 15px;
+    display: flex;
+    margin: 10px;
+    border: whitesmoke;
+    box-sizing: border-box;
+}
+.nav__item {
+    background-color: whitesmoke;
+    padding: 0 5px;
+    margin-left: 5px;
+    margin-top: 10px;
+    outline-color: whitesmoke;
+    position: relative;
+}
+.nav__item--no-space {
+    margin-left: 5px;
+}
+.nav__dropdown {
+    position: absolute;
+    background-color: gray;
+    left: 10;
+    display: none;
+}
+.nav__dropdown2 {
+    position: absolute;
+    background-color: gray;
+    left: 10;
+    display: none;
+}
+.dropdown__item {
+    background-color: gray;
+    border-bottom: 3px solid lightslategrey;
+    padding: 5px 20px;
+    min-width: 80px;
+}
+.nav__item:hover > .nav__dropdown {
+    display: block;
+}
+.nav__dropdown:hover > .nav__dropdown2 {
+    display: block;
+}
