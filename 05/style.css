@@ -4,37 +4,38 @@
     width: 100%;
     display: flex;
     justify-content: center;
-
+    
 }
+
 .blue{
     border: 3px solid blue;
-    margin: 2px;
     display: flex;
-    width: 1000px;
-    box-sizing: border-box;
-    overflow: hidden;
+    flex-basis: 1000px;
+    margin: 5px;
+   
 }
 .header{
     justify-content: space-between;
+    
 }
-
-.logo, .menu{
+.navbar{
     background-color: rgb(255, 255, 110);
-    margin: 20px;
+    margin: 10px;
     height: 100px;
+    
 }
-  
 .logo{
+    flex-basis: 25%;  
     margin-left: 0;
-    width: 200px;   
 }
 .menu{
-    margin-right: 0;
-    width: 400px;
+    flex-basis: 50%;
+    margin-right: 0;   
 }
+
 .article{
     background-color: rgb(255, 255, 110);
-    width: 450px;
+    flex-basis: 45%;
     height: 300px;
     margin: 20px;
 }
@@ -49,11 +50,11 @@
     margin-right: 0;
 }
 .main2{
-    justify-content: center;
+    justify-content: space-around;
 }
 .section{
     background-color: rgb(255, 255, 110);
-    width: 300px;
+    flex-basis: 30%;
     height: 300px;
     margin: 10px;
 }
@@ -63,7 +64,7 @@
 .aside{
     background-color: rgb(255, 255, 110);
     min-height: 100px;
-    width: 200px;
+    flex-basis: 200px;
     margin: 20px;
 }
 
