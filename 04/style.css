@@ -1,3 +1,10 @@
 body {
     background-color: rgb(246, 246, 246);
 }
+
+.nav {
+    display: flex;
+    background-color: white;
+    padding: 20px;
+    margin: 30px 0 0 20px;
+}
