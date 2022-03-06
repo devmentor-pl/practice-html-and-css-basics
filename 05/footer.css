@@ -1,7 +1,7 @@
 .footer__container {
     background-color: black;
     display: flex;
-    justify-content: space-between;
+  justify-content: center;
 }
 
 .footer__logo {
@@ -10,8 +10,3 @@
     width: 25%;
 }
 
-.footer__copyrights {
-    background-color: rgb(194, 194, 29);
-    height: 50px;
-    width: 25%;
-}
