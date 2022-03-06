@@ -11,7 +11,6 @@
     font-family: 'SourceSansPro', sans-serif;
 }
 
-
 .child--first {
     font-style: normal;
     margin-right: 10px;
@@ -24,21 +23,17 @@
 
 .child--last {
     font-style: italic;
-
 }
-
 
 /* INLINE-BLOCK */
 
 .parent--inline-block .child--first {
-
     width: calc(30% - 10px);
     display: inline-block;
     margin-right: 10px;
 }
 
 .parent--inline-block .child--middle {
-
     width: calc(30% - 10px);
     display: inline-block;
 }
@@ -48,17 +43,14 @@
     display: inline-block;
 }
 
-
 /* FLOAT */
 
 .parent--float .child--first {
-
     width: calc(30% - 10px);
     float: left;
 }
 
 .parent--float .child--middle {
-
     width: calc(30% - 10px);
     float: left;
 }
