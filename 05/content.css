@@ -1,0 +1,21 @@
+.content__container {
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.content__article {
+    background-color: blue;
+    width: 70%;
+    height: 500px;
+
+}
+
+.content__adds {
+    background-color: blueviolet;
+    width: 15%;
+    height: 200px;
+
+}
