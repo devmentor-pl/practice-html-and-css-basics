@@ -1,50 +1,70 @@
-.nav, .nav__item {
-    outline: 1px solid;
-    margin: 120px;
-    padding: 10px;
-
+body {
+    background-color:gainsboro;
 }
 .nav {
-    outline-color: lightgray;
-    background: lightgray;
-    padding: 15px;
-    display: flex;
-    margin: 10px;
-    border: whitesmoke;
+    margin:5px;
+    max-width:1150px;
+}
+.nav__menu {
+    background-color: white;
     box-sizing: border-box;
+    display:flex;
 }
 .nav__item {
-    background-color: whitesmoke;
-    padding: 0 5px;
-    margin-left: 5px;
-    margin-top: 10px;
-    outline-color: whitesmoke;
+    border-bottom:5px solid white;
+    border-top:5px solid white;
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+    padding:40px;
+}
+.nav__item:hover {
+    border-top:5px solid lightskyblue;
+    color:lightskyblue;
+    cursor:pointer;
+}
+.nav__item--dropdown::after {
+    content: '>';
+    display: inline-block;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight:bold;
+    margin-left:5px;
+    transform:rotate(90deg);
+}
+.other__items::after {
+    content: '>';
+    display: inline-block;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight:bold;
+    margin-left:160px;
+}
+.nav__dropdown__item {
+    background-color: grey;
+    display:none;
+    margin-left:-40px;
+    margin-top:37px;
+    position:absolute;
+}
+.dropdown__another {
+    background-color: grey;
+    display:none;
+    margin-left:268px;
+    margin-top:-46px;
+    position:absolute;
+}
+.nav__item:hover > .nav__dropdown__item {
+    display: block;
+}
+.other__items:hover > .dropdown__another {
+    display: block;
+}
+.dropdown__item, .dropdown__another__item {
+    box-sizing: border-box;
+    color: white;
+    margin:1px;
+    padding:10px;
     position: relative;
+    width: 280px;
 }
-.nav__item--no-space {
-    margin-left: 5px;
-}
-.nav__dropdown {
-    position: absolute;
-    background-color: gray;
-    left: 10;
-    display: none;
-}
-.nav__dropdown2 {
-    position: absolute;
-    background-color: gray;
-    left: 10;
-    display: none;
-}
-.dropdown__item {
-    background-color: gray;
-    border-bottom: 3px solid lightslategrey;
-    padding: 5px 20px;
-    min-width: 80px;
-}
-.nav__item:hover > .nav__dropdown {
-    display: block;
-}
-.nav__dropdown:hover > .nav__dropdown2 {
-    display: block;
+.dropdown__item:hover, .dropdown__another__item:hover {
+    color: white;
 }

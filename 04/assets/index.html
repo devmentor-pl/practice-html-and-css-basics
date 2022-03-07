@@ -8,35 +8,37 @@
     <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-    <ul class="nav">
-        <li class="nav__item nav__item--no-space">
-            Home
-        </li>
-        <li class="nav__item">
-            Items
-            <ul class="nav__dropdown dropdown">
-                <li class="dropdown__item">
-                    Item 1
-                </li>
-                <li class="dropdown__item">
-                    Item 2
-                </li>
-                <ul class="nav__dropdown2">
+    <nav class="nav">
+        <ul class="nav__menu">
+            <li class="nav__item nav__item-no-space">
+                HOME
+            </li>
+            <li class="nav__item nav__dropdown">
+                ITEMS
+                <ul class="nav__dropdown__item">
                     <li class="dropdown__item">
-                       Item 2.1 
+                        Item 1
                     </li>
-                    <li class="dropdown__item">
-                        Item 2.2
+                    <li class="dropdown__item other__items">
+                        Item 2
+                        <ul class="dropdown__another">
+                            <li class="dropdown__another__item">
+                                Item 2.1
+                            </li>
+                            <li class="dropdown__another__item">
+                                Item 2.2
+                            </li>
+                        </ul>
                     </li>
-                </ul>
-            </ul>
-        </li>
-        <li class="nav__item">
-            Settings
-        </li>
-        <li class="nav__item">
-            Contact
-        </li>
-    </ul>
+                 </ul>
+            </li>
+            <li class="nav__item">
+                SETTINGS
+            </li>
+            <li class="nav__item">
+                CONTACT
+            </li>
+        </ul>   
+    </nav>   
 </body>
 </html>

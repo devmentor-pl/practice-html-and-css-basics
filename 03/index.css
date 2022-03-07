@@ -24,9 +24,8 @@
     width: calc(40%-10px);
     font-style: italic;
 }
-
 .parent--float {
-float: none;
+float: left;
 }
 
 
