@@ -1,0 +1,9 @@
+/* footer.css */
+.footer__container {
+    display:flex;
+    justify-content: center;
+}
+
+.footer__copyrights {
+    width: 20%;
+}

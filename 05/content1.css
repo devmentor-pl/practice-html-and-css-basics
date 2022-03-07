@@ -1,0 +1,13 @@
+.content1__container {
+    display: flex;
+    justify-content: space-between;
+    min-height: 300px;
+}
+
+.content1__article1 {
+    min-width: 49%;
+}
+
+.content1__article2 {
+    min-width: 49%;
+}

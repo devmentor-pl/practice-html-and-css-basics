@@ -1,12 +1,82 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>devmentor.pl - HTML & CSS BASICS - #01</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>devmentor.pl - HTML & CSS BASICS - #01</title>
+    </head>
+    <body>
+        <header>
+            <img src="./images/logo.png" alt="Logo" />
+            <ul>
+                <li>Lista dań</li>
+                <ul>
+                    <li>Śniadanie</li>
+                    <ul>
+                        <li>bułka</li>
+                        <li>jajecznica</li>
+                    </ul>
+                    <li>Obiad</li>
+                    <li>Kolacja</li>
+                </ul>
+                <li>Lista drinków</li>
+                <ul>
+                    <li>Alkoholowe</li>
+                    <li>Bezalkoholowe</li>
+                </ul>
+            </ul>
+        </header>
+        <hr />
+        <main>
+            <article>
+                <h1>Nowy artykuł</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                    explicabo repellat sit possimus sunt corrupti expedita error
+                    quam excepturi ut inventore veniam dolore et ipsum
+                    asperiores perferendis modi, cumque accusantium.
+                </p>
+                <span itemprop="author">Michał Antczak</span> opublikowane:
+                <time itemprop="datePublished" ></time>Marzec 2022</time>
+                <img src="./images/article_photo.jpg" alt="Photo to article">
+                <table>
+                    <caption>Tabela</caption>
+                    <thead>
+                        <tr>
+                            <th>Element1</th>
+                            <th>Element2</th>
+                            <th>Element3</th>
+                            <th>Element4</th>
+                        </tr>
+                    </thead>
+                </table>
+            </article>
+            <hr>
+            <form>
+                <div>
+                    <h2>Pozostaw komentarz</h2>
+                    <label>email <input type="email"></label>
+                    <label>treść <input type="text"></label>
+                </div>
+            </form>
+            <hr>
+            <div>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, voluptatibus.
+                </p>
+                <span itemprop="author">Komentator1</span> opublikowane:
+                <time itemprop="datePublished" ></time>Marzec 2022</time>
+            </div>
+            <div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam sit nostrum eligendi, dicta assumenda veniam corporis perferendis rerum nobis consequatur.
+                </p>
+                <span itemprop="author">Komentator2</span> opublikowane:
+                <time itemprop="datePublished" ></time>Styczeń 2021</time>
+            </div>
+        </main>
+        <hr>
+        <footer>&copy; 2022 Michał Antczak</footer>
+    </body>
 </html>
