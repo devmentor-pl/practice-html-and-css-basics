@@ -1,6 +1,7 @@
 .content1__container {
     display: flex;
     justify-content: space-between;
+    min-height: 300px;
 }
 
 .content1__article1 {
