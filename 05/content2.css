@@ -1,0 +1,16 @@
+.content2__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content2__article1 {
+    min-width: calc(100%/3);
+}
+
+.content2__article2 {
+    min-width: calc(100%/3);
+}
+
+.content2__article3 {
+    min-width: calc(100%/3);
+}
