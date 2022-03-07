@@ -15,7 +15,6 @@
 }
 
 .cell {
-    /* min-width: 50px; */
     min-height: 100px;
     outline-color: orange;
     background-color: orange;
