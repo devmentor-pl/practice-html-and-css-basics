@@ -1,0 +1,31 @@
+.parent {
+    width: 600px;
+    padding: 20px;
+}
+.parent--inline-block {
+    display: inline-block;
+}
+.parent--flexbox {
+    display: flex;
+}
+.child {
+    display: inline-block;
+    margin-right: 10px;
+}
+.child--first {
+    width: calc (30%-10px);
+    font-style: regular;
+}
+.child--middle {
+    width: calc(30%-10px);
+    font-style: bold;
+}
+.child--last {
+    width: calc(40%-10px);
+    font-style: italic;
+}
+.parent--float {
+float: left;
+}
+
+
