@@ -1,0 +1,41 @@
+#nav ul{
+margin:0;
+padding:0;
+list-style:none;
+    }
+  #nav ul li{
+margin:0;
+padding:10px 20px;
+position:relative;
+height:20px;
+line-height:20px;
+background-color:#EEE;
+     }
+    #nav > ul > li {
+float: left;
+height:30px;
+line-height:30px;
+background-color:#CCC;
+    }
+    #nav li > ul{
+visibility:hidden;
+width:200px;
+position: absolute;
+top:0px;
+left:200px;
+border-left:1px solid #000;
+    }
+    #nav > ul > li > ul{
+top:50px;
+left:0;
+    }
+    #nav li:hover{
+background-color:#999;
+    }
+    #nav li:hover > ul{
+visibility:visible;
+    }
+    .span:hover{
+        transform: translate(40deg);
+        color: #000;
+    }

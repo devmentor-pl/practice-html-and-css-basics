@@ -1,0 +1,47 @@
+@import url(https://www.fontsquirrel.com/fonts/source-sans-pro);
+.clearfix{
+    content: "";
+    display: block;
+    clear: both;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.parent{
+    min-width: 600px;
+    border: 2px solid black;
+    font-family:'source-sans-pro', sans-serif;
+}
+.parent--inline-block>.child{
+    display: inline-block;
+}
+.parent--float>.child {
+    float: left;
+    background-color: antiquewhite;
+    display: flow-root;
+}
+.parent--flexbox{
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+}
+.child{
+    padding: 20px;
+    width: calc(0.3*600px);
+    border:2px solid green;
+    font-style: normal;
+}
+.child--middle{
+    margin-left: 10px;
+    font-style: italic;
+}
+.child--last{
+    width: calc(0.4*600px);
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+
+
