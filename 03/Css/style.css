@@ -12,9 +12,9 @@
  }
 
  .parent--float{
-      float: initial;
+     float: left;
  }
- 
+
  .parent--flexbox{
       display: flex;
 
