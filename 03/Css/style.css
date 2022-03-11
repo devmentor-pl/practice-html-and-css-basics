@@ -1,0 +1,16 @@
+ .parent {
+       width: 600px;
+       padding: 20x;
+ }
+
+ .child--first {
+       width: 30%;
+ }
+
+ .child--middle {
+       width: 30%;
+ }
+
+ .child--last {
+       width: 40%;
+ }
