@@ -14,6 +14,9 @@ body {
 
 .menu__item:hover{
       border-top-color:  rgb(68, 93, 253);
-      
-      
+}
+
+.menu__element{
+      color: rgb(42, 43, 46);
+      text-decoration: none;
 }
