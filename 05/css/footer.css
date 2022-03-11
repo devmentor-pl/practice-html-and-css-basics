@@ -1,0 +1,13 @@
+/* footer */
+footer{
+  width: 100%;
+  min-height: 100px;
+  padding: 1rem;
+  outline: 3px solid lightgrey;
+  display: flex;
+  justify-content: center;
+}
+.footer__content{
+  width: 20%;
+  background-color: yellow;
+}

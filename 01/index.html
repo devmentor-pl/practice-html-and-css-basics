@@ -7,6 +7,83 @@
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
 </head>
 <body>
-    
+    <header>
+        <div class="logo">
+            <img src="" alt="logo">
+        </div>
+        <nav class="nav">
+            <ul class='nav__item'>
+                <li class="item__element">Home</li>
+                <li class="item__element">Blog</li>
+                <li class="item__element">Polecamy</li>
+                <li class="item__element">Kontakt</li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <article class="main__item">
+            <h1 class="item__title">Tytuł</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis nulla quia voluptas ratione ex praesentium at accusamus eligendi in, repellat enim nisi libero commodi necessitatibus, magni sapiente maxime, ipsam officia alias incidunt saepe vel similique. Architecto sequi quisquam odit magni quo ex nisi beatae blanditiis unde quasi, labore id eveniet ullam quae dolor voluptas quibusdam? Repellendus debitis vitae architecto odit, quidem vero beatae doloribus sit libero exercitationem aliquid quo pariatur qui itaque numquam necessitatibus esse consequatur modi praesentium harum recusandae? Nemo excepturi velit, enim placeat unde ipsum, dolor asperiores eaque harum maxime illum ullam expedita et quasi ut laborum. Accusantium.</p>
+            <p><time pubdate datetime="2021-04-07">kwiecień 2021</time></p>
+            <address rel="author">John Kowalski</address>
+
+            <figure>
+                <img src="#" alt="Miejsce na zdjęcie">
+                <figcaption>Opis obrazka</figcaption>
+            </figure>
+            <table class="table">
+                <caption>Tabela</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">HTML</th>
+                        <th scope="col">CSS</th>
+                        <th scope="col">JS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table__row">
+                        <td class="row__item">5</td>
+                        <td class="row__item">3</td>
+                        <td class="row__item">ECMA6</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td class="row__item">Basic</td>
+                        <td class="row__item">Basic</td>
+                        <td class="row__item">Basic</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>    
+        <form action="" class="form">
+            <div class="form__item">
+                <label for="form__comment">Podziel się z nami opinią</label>
+                <br>
+                <textarea name="" id="form__comment" cols="30" rows="10"></textarea>
+            </div>
+            <div class="form__item">
+                <button>Send</button>  
+            </div>
+        </form>
+        
+        <section class="comments">
+            <article class="comments__item">
+                <p class="s1 item__element">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto molestiae sed vitae alias minima adipisci a ab pariatur optio earum?</p>
+                <address rel="author">Grzegorz Publicysta</address>
+                <time pubtime datetime="2021-02-10">marzec 2021</time>
+                
+                <hr>
+            </article>
+            <article class="comments__item">
+                <p class="s1 item__element">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus incidunt vero dolore provident veritatis maxime facere temporibus sequi minima, eveniet accusamus nobis dolorem quisquam itaque repudiandae architecto ullam quo amet!</p>
+                <address rel="author">Karol Kowalski</address>
+                <time pubtime datetime="2021-02-10">luty 2021</time>
+                
+                <hr>       
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>&copy Krzysiek Swol</p>
+    </footer>
 </body>
 </html>

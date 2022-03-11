@@ -1,0 +1,119 @@
+@font-face {
+  font-family: 'Raleway';
+  src: url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav{
+  margin-top: 1rem;
+  background-color: #fed049;
+}
+ul{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  padding: 1rem;
+  font-weight: bold;
+  display: block;
+  letter-spacing: 0.075rem;
+}
+/* primary nav */
+.nav{
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav__item{
+  flex-basis: 15%;
+  position: relative;
+  text-align: center;
+}
+.item__link{
+  text-transform: uppercase;
+}
+.item__link--dropdown{
+  display: flex;
+  justify-content: center;
+}
+.item__link--dropdown::after{
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 0.5rem;
+  border-bottom: 3px solid #007580;
+  border-left: 3px solid #007580;
+  transform: rotate(-45deg);
+}
+
+/* primary dropdown */
+.dropdown--primary{
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 150%;
+  background-color: #007580;
+  text-align: left;
+  display: none;
+}
+.dropdown__link,
+.dropdown__link--dropdown{
+  padding: 1rem
+}
+.dropdown__link--dropdown::after{
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 0.5rem;
+  border-top: 3px solid #fed049;
+  border-right: 3px solid #fed049;
+  transform: rotate(45deg);
+  left: 80%;
+}
+
+
+
+
+/* secondary dropdown */
+.dropdown--secondary{
+  position: absolute;
+  top: 66%;
+  left: 100%;
+  width: 120%;
+  background-color: #282846;
+  display: none;
+}
+
+
+/* hover actions */
+.item__link:hover,
+.item__link--dropdown:hover{
+  color: #007580;
+  box-shadow: 0 0.2rem inset #007580;
+}
+
+.item__link--dropdown:hover + .dropdown--primary,
+.dropdown--primary:hover{
+ display:block;
+}
+.dropdown__link:hover,
+.dropdown__link--dropdown:hover,
+.dropdown--secondary__link:hover{
+  color:#fed049;
+}
+.dropdown__link--dropdown:hover + .dropdown--secondary,
+.dropdown--secondary:hover {
+  display: block;
+}
+
+
