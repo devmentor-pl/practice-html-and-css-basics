@@ -3,14 +3,22 @@
        padding: 20x;
  }
 
+ .parent--inline-block .child{
+       display: inline-block;
+       outline: 1px solid red;
+ }
+
  .child--first {
-       width: 30%;
+      width: calc(26% - 10px);
+       margin: 10px;
  }
 
  .child--middle {
-       width: 30%;
+      width: calc(30% - 10px);
+       margin-right:10px;
  }
 
  .child--last {
        width: 40%;
  }
+
