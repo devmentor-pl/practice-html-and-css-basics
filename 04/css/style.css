@@ -1,0 +1,19 @@
+body {
+      background-color:rgb(237, 239, 243)
+}
+
+.menu {
+      background-color: white;
+      display: flex;
+}
+
+.menu__item{
+      padding: 20px 30px;
+      border-top: 5px solid transparent;
+}
+
+.menu__item:hover{
+      border-top-color:  rgb(68, 93, 253);
+      
+      
+}
