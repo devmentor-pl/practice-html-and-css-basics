@@ -5,17 +5,28 @@
 
  .parent--inline-block .child{
        display: inline-block;
-       outline: 1px solid red;
  }
 
+ .parent--inline-block{
+       display: inline-block;
+ }
+
+ .parent--float{
+      float: initial;
+ }
+ 
+ .parent--flexbox{
+      display: flex;
+
+ }    
  .child--first {
-      width: calc(26% - 10px);
-       margin: 10px;
+      width: calc(25% - 10px);
+       margin-left: 10px;
  }
 
  .child--middle {
       width: calc(30% - 10px);
-       margin-right:10px;
+       margin:10px;
  }
 
  .child--last {
