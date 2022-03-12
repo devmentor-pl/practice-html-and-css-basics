@@ -61,18 +61,25 @@
                 </tbody>
             </table>
         </article>
-        <div>
+        <section>
             <h3>Wpisz swój komenatrz</h3>
             <form action="">
-                <label for="name">Imię</label>
-                <input type="text" id="name" placeholder="Imię">
-                <label for="nazwisko">Nazwisko</label>
-                <input type="text" id="nazwisko" placeholder="Nazwisko">
-                <label for="msg">Twój komenatrz</label>
-                <textarea id="msg" cols="30" rows="10" placeholder="Twój komentarz tutaj"></textarea>
+                <div>
+                    <label for="name">Imię</label>
+                    <input type="text" name="name" id="name" placeholder="Imię">
+                </div>
+                <div>
+                    <label for="nazwisko">Nazwisko</label>
+                    <input type="text" name="nazwisko" id="nazwisko" placeholder="Nazwisko">
+                </div>
+                <div>
+                    <label for="msg">Twój komenatrz</label>
+                    <textarea name="content" id="msg" cols="30" rows="10" placeholder="Twój komentarz tutaj"></textarea>
+                </div>
+                
                 <input type="submit" value="Wyślij">
             </form>
-        </div>
+        </section>
         <div>
             <section id="comments">
                 <h2>Komentarze</h2>
