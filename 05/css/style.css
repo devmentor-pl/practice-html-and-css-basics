@@ -1,0 +1,16 @@
+.first{
+      border:6px solid green;
+}
+
+.second{
+      border:6px solid blue;
+      max-width: 1000px;
+      margin:auto  
+}
+
+.third{
+background-color: orange;
+min-height: 80px;
+margin-top: 0;
+}
+
