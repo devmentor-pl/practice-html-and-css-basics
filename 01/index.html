@@ -1,12 +1,136 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>devmentor.pl - HTML & CSS BASICS - #01</title>
+    <meta
+        http-equiv="X-UA-Compatible"
+        content="IE=edge"
+    >
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <title>Document</title>
+    <link
+        rel="stylesheet"
+        href="./css/styles.css"
+    >
 </head>
+
+
 <body>
-    
+    <header class="header">
+        <div>
+            <figure><img
+                    src="../05/demo.png"
+                    alt="rysunek z ćwieczenia 5"
+                    class="logo"
+                ></figure>
+        </div>
+        <div>
+            <ul>
+                <li>1
+                </li>
+                <li>2</li>
+                <li>3
+                    <ul>
+                        <li>3.1</li>
+                        <li>3.2</li>
+                    </ul>
+                </li>
+                <li>4</li>
+            </ul>
+        </div>
+    </header>
+    <main class="main">
+        <article>
+            <div>
+                <h1>Title</h1>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur id, laboriosam molestias
+                    consequuntur repudiandae vel nesciunt eveniet facere libero ipsa alias eligendi incidunt perferendis
+                    sit
+                    quisquam amet mollitia eaque adipisci!</p>
+            </div>
+            <div>
+                Date
+            </div>
+            <div>
+                Author
+            </div>
+            <div>
+                <img
+                    src="../05/demo.png"
+                    alt="rysunek z ćwieczenia 5"
+                    class="logo"
+                >
+            </div>
+            <div>
+                <table>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                    </tr>
+                </table>
+            </div>
+        </article>
+
+        <div class="comments">
+            <form
+                class="comment-form"
+                action=""
+                method="POST"
+            >
+                <div class="comment-form__email">
+                    <input
+                        class="comment-form__input"
+                        name="email"
+                        type="email"
+                    >
+                </div>
+                <div class="comment-form__text">
+                    <textarea
+                        class="comment-form__input"
+                        name="message"
+                        rows="4"
+                        placeholder="Message"
+                    >
+                </textarea>
+                </div>
+                <div>
+                    <button class="comment-form__submit">
+                        Send
+                    </button>
+                </div>
+            </form>
+            <div>
+                <h3>Comment section</h3>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, natus tempore magnam sapiente dolor
+                    minima sunt tenetur sequi impedit facilis sit ab itaque unde cumque culpa facere sint quisquam
+                    totam?</p>
+            </div>
+            <div>Author: </div>
+            <div>date </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div>
+            <p> Made by Krzysztof Stępień</p>
+        </div>
+    </footer>
 </body>
+
 </html>
