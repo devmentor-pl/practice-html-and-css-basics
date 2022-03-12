@@ -25,6 +25,18 @@ body {
       position: relative;
 }
 
+.menu__level::after{
+content:'>';
+position: absolute;
+right:10px ;
+top: 18px;
+transform:rotate(90deg);
+}
+
+.menu__level:hover > .level{
+      display: block;
+}
+
 .level{
       position: absolute;
       background-color: rgb(67, 63, 63);
@@ -37,8 +49,21 @@ body {
       padding: 10px 15px;
 
 }
-.level__item--below{
+.level__item--second--level{
 position: relative;
+}
+
+.level__item--second--level:hover > .level-second{
+display:block
+
+}
+
+.level__item--second--level::after{
+      content:'>';
+      position: absolute;
+      color: white;
+      right:10px ;
+      top: 10px;
 }
 
 .level__element{
@@ -51,7 +76,8 @@ position: relative;
       background-color: rgb(67, 63, 63);
       left: 100%;
       min-width: 215px;
-      top:0
+      top:0;
+      display: none;
 }
 
 .level-second__item{
