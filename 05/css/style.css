@@ -1,0 +1,51 @@
+.html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.section {
+    border: 5px solid #1BD34F;
+}
+
+.nav__section {
+    height: 50px;
+    margin: 0 1px;
+}
+
+.container {
+    
+}
+
+.Logo {
+    
+}
+
+.Menu {
+    
+}
+
+.left-side {
+    
+}
+
+.right-side {
+    
+}
+
+.left-item {
+    
+}
+
+.middle-item {
+    
+}
+
+.right-item {
+    
+}
+
+.copyright {
+    
+}
