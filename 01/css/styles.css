@@ -1,0 +1,11 @@
+.body {
+    position: absolute;
+    ;
+}
+.header {
+    display: flex;
+}
+.logo {
+    width: 100px;
+    height: 100px;
+}
