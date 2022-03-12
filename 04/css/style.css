@@ -11,10 +11,6 @@ body {
       display: flex;      
 }
 
-.menu__item--color{
-      color: ;
-}
-
 .menu__item {
       padding: 20px 30px;
       border-top: 5px solid transparent;
