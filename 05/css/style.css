@@ -14,7 +14,7 @@
 
 .nav__section {
     display: flex;
-    height: 50px;
+    height: 6vh;
     margin: 1px;
 }
 
@@ -24,7 +24,7 @@
     align-items: center;
     width: 85%;
     margin: 0 auto 1px;
-    padding: 1px 0 3px;
+    padding: 2px 0 5px;
     border: 5px solid #00A8F3;
 }
 
@@ -44,65 +44,73 @@
 /* MAIN */
 
 .first__section__container {
+    height: 33vh;
     margin: 7px auto 12px;
+    padding: 12px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .left-side {
     width: 50%;
-    height: 155px;
-    margin: 7px 0;
+    height: 100%;
     background-color: #FFCA18;
 }
 
 .right-side {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     width: 50%;
-    height: 155px;
+    height: 100%;
     background-color: #FFCA18;
-    margin: 7px 0 7px 5px;
+    margin-left: 7px;
 }
 
 .second__section__container {
+    height: 33vh;
     margin: 12px auto;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .left-item {
-    height: 240px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    height: 100%;
     width: 33%;
+    margin-left: 15px;
     background-color: #FFCA18;
-    margin: 15px;
 }
 
 .middle-item {
-    height: 240px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    height: 100%;
     width: 34%;
     background-color: #FFCA18;
-    margin: 15px 0;
+    margin-left: 15px;
 }
 
 .right-item {
-    height: 240px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    height: 100%;
     width: 33%;
     background-color: #FFCA18;
-    margin: 15px;
+    margin: 0 15px;
 }
 
 /* END OF MAIN */
 /* FOOTER */
 
-.copyright {
+.footer__container {
+    margin: 2px auto 2px;
+    padding: 7px;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.copyright {
+    height: 100%;
+    width: 10%;
+    background-color: #FFCA18;
 }
 
 /* END OF FOOTER */
