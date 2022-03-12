@@ -1,6 +1,5 @@
 body {
-      background-color: rgb(237, 239, 243);
-      
+      background-color: rgb(237, 239, 243);    
 }
 
 .menu {
@@ -22,23 +21,44 @@ body {
       text-decoration: none;
 }
 
-.level__item{
-      padding: 10px 15px;
-}
-
 .menu__level {
       position: relative;
 }
 
 .level{
       position: absolute;
-      background-color: rgb(38, 35, 35);
+      background-color: rgb(67, 63, 63);
       top: 100%;
       left: 0;
-      min-width: 175px;
+      min-width: 215px;
+      display: none;
+}
+.level__item{
+      padding: 10px 15px;
+
+}
+.level__item--below{
+position: relative;
 }
 
 .level__element{
+      color: white;
+      text-decoration: none;
+}
+
+.level-second{
+      position: absolute;
+      background-color: rgb(67, 63, 63);
+      left: 100%;
+      min-width: 215px;
+      top:0
+}
+
+.level-second__item{
+      padding: 10px 15px;
+}
+
+.level-second__element{
       color: white;
       text-decoration: none;
 }
