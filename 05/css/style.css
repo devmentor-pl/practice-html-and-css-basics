@@ -2,6 +2,11 @@
       border:6px solid green;
 }
 
+.first--header .second{
+      display: flex;
+      justify-content: space-between;
+}
+
 .second{
       border:6px solid blue;
       max-width: 1000px;
@@ -14,3 +19,11 @@ min-height: 80px;
 margin-top: 0;
 }
 
+.third--item{
+      width: 260px;
+      margin-bottom: 0;
+}
+
+.third--nav{
+      width: 400px;
+}
