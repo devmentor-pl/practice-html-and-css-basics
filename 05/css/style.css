@@ -116,3 +116,39 @@
 }
 
 /* END OF STAGE THIRD */
+
+/* STAGE FOURTH */
+
+.form--header .form__second{
+      display: flex;
+      justify-content: center;
+ 
+}
+
+.form{
+      border: 6px solid green;
+      margin-top: 5px;
+      height: 60px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+}
+
+.form__second{
+      border: 6px solid blue;
+      max-width: 1000px;
+      margin: auto;
+      height: 50px;
+}
+
+.sixth{
+      background-color: orange;
+      min-height: 20px;
+      margin-top: 0;
+}
+
+.sixth--item{
+      width: 150px;
+      margin: 5px 0 5px 0;
+}
+
+/* END OF STAGE FOURTH */
