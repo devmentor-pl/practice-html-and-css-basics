@@ -1,12 +1,163 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <meta
+        http-equiv="X-UA-Compatible"
+        content="ie=edge"
+    >
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
 </head>
+
 <body>
-    
+    <header>
+        <h1>
+            Hello html! <img
+                src="./images/hello.svg"
+                alt="logo"
+                width="40px"
+            >
+        </h1>
+        <nav>
+            <ul>
+                <li> <a href="#level-element">level-1</a>
+                    <ul>
+                        <li> <a href="#stage-element">Stage-1</a></li>
+                        <li> <a href="#stage-element">Stage-2</a></li>
+                        <li> <a href="#stage-element">Stage-3</a></li>
+                    </ul>
+                </li>
+                <li> <a href="level-element">level-2</a></li>
+                <li> <a href="level-element">level-3</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+
+            <article>
+                <h2>First steps in html</h2>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta corporis quod, explicabo mollitia
+                    accusamus
+                    recusandae provident consequatur, maiores sunt, ut similique. Ipsam quis quam adipisci natus esse
+                    exercitationem
+                    reprehenderit fuga.
+                </p>
+
+                <figure>
+                    <img
+                        src="https://images.pexels.com/photos/434645/pexels-photo-434645.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                        alt="ilustration"
+                        width="30%"
+                    />
+                    <figurecaption>ilustration</figurecaption>
+                </figure>
+                <details>
+                    <time datetime="10/03/2022">date of publication:<br />
+                        10/03/2022</time>
+                    <p>Author: Kamil Świstak</p>
+                </details>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="2">The table</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>The table body</td>
+                            <td>with two columns</td>
+                        </tr>
+                        <tr>
+                            <td>The table body</td>
+                            <td>with two columns</td>
+                        </tr>
+                        <tr>
+                            <td>The table body</td>
+                            <td>with two columns</td>
+                        </tr>
+                        <tr>
+                            <td>The table body</td>
+                            <td>with two columns</td>
+                        </tr>
+                    </tbody>
+                </table>
+        </section>
+
+        <section>
+            <br />
+            <div>
+                <div>
+                    <input
+                        class="contact-form__input contact-form__input--fullwidth contact-form__input--transparent"
+                        name="name"
+                        type="text"
+                        placeholder="Full name"
+                    />
+                </div>
+            </div>
+            <div>
+                <textarea
+                    class="contact-form__input contact-form__input--fullwidth contact-form__input--transparent"
+                    name="Add comment"
+                    placeholder="Add comment"
+                    rows="4"
+                ></textarea>
+            </div>
+            <div>
+                <button class="contact-form__submit contact-form__input--fullwidth">
+                    Add</button>
+            </div>
+            <article>
+
+                <ul>
+                    <li>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, qui voluptatum ipsa
+                            voluptatibus ut quisquam voluptatem molestiae, sint corrupti consequatur error, sit labore
+                            quia illo corporis ducimus non facilis? Nostrum!
+                        </p>
+                        <h3>Author: Jan Kowalski<br />
+                            <time datetime="10/03/2022">date: 10/03/2022</time><br />
+                        </h3>
+                    </li>
+                    <li>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, qui voluptatum ipsa
+                            voluptatibus ut quisquam voluptatem molestiae, sint corrupti consequatur error, sit labore
+                            quia illo corporis ducimus non facilis? Nostrum!
+                        </p>
+                        <h3> Author: Adam Kowalski<br />
+                            <time datetime="10/03/2022">date: 10/03/2022</time><br />
+                        </h3>
+                    </li>
+                    <li>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, qui voluptatum ipsa
+                            voluptatibus ut quisquam voluptatem molestiae, sint corrupti consequatur error, sit labore
+                            quia illo corporis ducimus non facilis? Nostrum!
+                        </p>
+                        <h3>Author: Paweł Kowalski<br />
+                            <time datetime="10/03/2022">date: 10/03/2022</time><br />
+                        </h3>
+                    </li>
+                </ul>
+
+            </article>
+        </section>
+</main>
+<footer>
+    <p>
+        all rights reserved &copy;
+    </p>
+</footer>
 </body>
+
 </html>
