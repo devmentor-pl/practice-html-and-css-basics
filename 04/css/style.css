@@ -1,0 +1,42 @@
+.nav {
+    display: flex;
+    padding: 10px;
+    
+}
+.nav__item {
+    padding: 0 5px;
+    margin-left: 5px;
+    position: relative;
+}
+.nav__dropdown{
+    display: none;
+    padding-top: 10px;
+    position: absolute;
+    left: 5px;
+}
+.dropdown__item {
+    padding: 5px 20px;
+    min-width: 120px;
+}
+
+.nav__item:hover > .nav__dropdown {
+    display: block;
+}
+
+.nav__item-l2{
+    position: relative;
+}
+
+
+.nav__dropdown-l2{
+    display: none;
+    padding-top: 10px;
+    position: absolute;
+    left: 100%;
+    bottom: 0;
+    height: 50%;
+}
+
+.nav__item-l2:hover > .nav__dropdown-l2 {
+    display: block;
+}
