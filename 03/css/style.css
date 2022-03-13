@@ -3,6 +3,7 @@
     padding: 20px;
 }
 
+
 .parent--inline-block .child {
     display: inline-block;
 }
