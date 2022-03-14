@@ -1,8 +1,28 @@
 @font-face {
-	font-family: 'Source Sans PRO';
-	src: url(source-sans-pro/SourceSansPro-Bold.otf) format('opentype');
-	font-style: normal;
-	font-weight: bold;
+    font-family: 'source_sans_probold';
+    src: url('./fs-fonts/sourcesanspro-bold-webfont.woff2') format('woff2'),
+         url('./fs-fonts/sourcesanspro-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'source_sans_proreg';
+    src: url('./fs-fonts/sourcesanspro-regular-webfont.woff2') format('woff2'),
+         url('./fs-fonts/sourcesanspro-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'source_sans_proit';
+    src: url('./fs-fonts/sourcesanspro-it-webfont.woff2') format('woff2'),
+         url('./fs-fonts/sourcesanspro-it-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 *{
@@ -40,12 +60,13 @@
 
 .child--first{
     width: calc(30% - 10px);
+    font-family: 'source_sans_proreg';
 }
 .child--middle{
     width: calc(30% - 10px);
-    font-weight: bold;
+    font-family: 'source_sans_probold';
 }
 .child--last{
     width: 40%;
-    font-style: italic;
+    font-family: 'source_sans_proit';
 }
