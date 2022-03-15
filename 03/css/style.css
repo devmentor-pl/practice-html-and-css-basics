@@ -1,0 +1,113 @@
+@font-face {
+    font-family: 'source_sans_pro';
+    src: url('./../fonts/fs/sourcesanspro-bold-webfont.woff2') format('woff2'), url('./../fonts/fs/sourcesanspro-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'source_sans_pro';
+    src: url('./../fonts/fs/sourcesanspro-regular-webfont.woff2') format('woff2'), url('./../fonts/fs/sourcesanspro-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'source_sans_pro';
+    src: url('./../fonts/fs/sourcesanspro-it-webfont.woff2') format('woff2'), url('./../fonts/fs/sourcesanspro-it-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+
+/* fonts */
+
+.parent {
+    font-family: 'source_sans_pro';
+}
+
+.parent--inline-block {
+    font-weight: bold;
+}
+
+.parent--float {
+    font-weight: normal;
+}
+
+.parent--flexbox {
+    font-style: italic;
+}
+
+
+/* common colors */
+
+.child {
+    outline: 1px solid green;
+}
+
+.child--first {
+    background-color: orange;
+}
+
+.child--middle {
+    background-color: lightgreen;
+}
+
+.child--last {
+    background-color: teal;
+}
+
+.parent {
+    width: 600px;
+    padding: 20px;
+    outline: 1px solid red;
+}
+
+
+/* inline-block */
+
+.parent--inline-block .child {
+    display: inline-block;
+}
+
+
+/* add margin 10px */
+
+.child--first,
+.child--middle {
+    /* width: 30%; */
+    width: calc(30% - 10px);
+    margin-right: 10px;
+}
+
+.child--last {
+    width: 40%;
+}
+
+
+/* parent--float */
+
+.parent--float .child {
+    float: left;
+}
+
+
+/* brak hight */
+
+.parent--float {
+    /* background-color: yellow; */
+}
+
+.parent--float {
+    /* overflow: hidden; */
+}
+
+.parent--float::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.parent--flexbox {
+    display: flex;
+}
