@@ -55,3 +55,12 @@ body {
     width: 31%;
     min-height: 200px;
 }
+
+.green--footer .blue {
+    display: flex;
+    justify-content: center;
+}
+
+.green--footer .orange{
+    width: 100px;
+}
