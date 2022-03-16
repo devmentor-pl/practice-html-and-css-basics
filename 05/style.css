@@ -1,3 +1,57 @@
 body {
-    background-color: cornflowerblue;
+    background-color: #f4f4f4;
+}
+
+.green {
+    border: 5px solid green;
+    margin: 10px;
+}
+
+.green--header .blue{
+    display: flex;
+    justify-content: space-between;
+}
+
+.green--main .orange {
+    min-height: 300px;
+}
+
+.blue {
+    border: 5px solid blue;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 5px 0;
+}
+
+.orange {
+    background-color: orange;
+    min-height: 50px;
+}
+
+.orange--logo {
+    margin: 0;
+    width: 160px;
+}
+
+.orange--nav {
+    width: 300px;
+}
+
+.green--main .blue {
+    display: flex;
+    justify-content: space-between;
+}
+
+.green--main .orange {
+    width: 49%;
+}
+
+.green--section .blue {
+    display: flex;
+    justify-content: space-around;
+}
+
+.green--section .orange {
+    width: 31%;
+    min-height: 200px;
 }
