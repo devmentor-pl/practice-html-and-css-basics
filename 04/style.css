@@ -1,0 +1,12 @@
+.menu {
+    background-color:rgb(222, 238, 238);
+    display:flex;
+    margin: 10px;
+}
+.menu_item {
+    padding: 15px 100px;
+    border-top: 5px solid transparent;
+}
+ .menu_item:hover {
+    border-top-color:blue;
+}
