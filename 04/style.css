@@ -1,0 +1,18 @@
+body {
+    background-color: #F5F5F5;
+}
+
+.menu {
+    background-color: #fff;
+    display: flex;
+    margin: 20px;
+}
+
+.menu__item {
+    padding: 10px 20px;
+    border-top: 3px solid transparent;
+}
+
+.menu__item:hover {
+    border-top-color: #4CB6E7;
+}
