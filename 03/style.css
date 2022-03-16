@@ -34,17 +34,17 @@
 }
 
 .child--first {
-	width: calc(0.3 * (100% - 20px));
+	width: calc(30% - 10px);
 	font-family: 'source_sans_proregular', sans-serif;
 	margin-right: 10px;
 }
 .child--middle {
-	width: calc(0.3 * (100% - 20px));
+	width: calc(30% - 10px);
 	font-family: 'source_sans_probold', sans-serif;
 	margin-right: 10px;
 }
 .child--last {
-	width: calc(0.4 * (100% - 40px));
+	width: 40%;
 	font-family: 'source_sans_proitalic', sans-serif;
 }
 
