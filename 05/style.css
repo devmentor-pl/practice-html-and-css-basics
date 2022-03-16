@@ -5,6 +5,7 @@ body {
 .green {
     border: 5px solid green;
     margin: 10px;
+    padding: 5px 0;
 }
 
 .green--header .blue{
@@ -62,5 +63,5 @@ body {
 }
 
 .green--footer .orange{
-    width: 100px;
+    min-width: 100px;
 }
