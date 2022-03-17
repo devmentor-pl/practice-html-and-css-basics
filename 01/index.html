@@ -1,16 +1,140 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <meta
+        http-equiv="X-UA-Compatible"
+        content="ie=edge"
+    >
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
 </head>
+
 <body>
-    
+    <!-- header -->
     <header>
-
+        </div>
+        <h1>
+            <img
+                src="./img/logo.jpg"
+                alt="logo"
+            >
+        </h1>
+        <!-- multilevel menu -->
+        <nav>
+            <ul>
+                <li><a href="Menu">Menu</a></li>
+                <li><a href="Information">Information</a>
+                    <ul>
+                        <li><a href="Information 1">Information 1</a></li>
+                        <li><a href="Information 2">Information 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="About">About</a></li>
+                <li><a href="Contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
+    <!-- main -->
+    <main>
+        <!-- article -->
+        <article>
+            <h2>
+                ARTICLE TITLE
+            </h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut reiciendis voluptate minus minima id aliquam
+                aspernatur saepe, cupiditate, voluptas architecto impedit. Quia, vel. Corporis ducimus eos dolorum unde
+                magnam quidem.</p>
+            <figure>
+                <img
+                    src="./img/article photo.jpg"
+                    alt="article photo"
+                >
+                <figcaption>Motorcycle</figcaption>
+            </figure>
+            <footer>
+                <p>Author: <a href="https://www.pexels.com/pl-pl/@photosbymishra">Sourav Mishra</a> Publication date:
+                    <time datetime="2021-10-10">2021-10-10</time>
+                </p>
+            </footer>
+            <!-- table -->
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="4">TABLE</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <td>First</td>
+                    <td>Second</td>
+                    <td>Third</td>
+                    <td>Fourth</td>
+                </tbody>
+            </table>
+        </article>
+        <!-- form -->
+        <section>
+            <h3>FORM</h3>
+            <form action="">
+                <div>
+                    <label for="username">Enter your username</label>
+                    <input
+                        type="text"
+                        name="username"
+                        id="userame"
+                        required
+                    >
+                </div>
+                <div>
+                    <textarea
+                        name="comment"
+                        id="comment"
+                        cols="30"
+                        rows="10"
+                        required
+                    >Leave your comment</textarea>
+                </div>
+                <div>
+                    <input
+                        type="submit"
+                        value="Send"
+                    >
+                </div>
+            </form>
 
+            <ul>
+                <li>
+                    <h3> <a rel="user">Ted</a>, <time datetime="2021-10-10">2021-10-10</time></h3>
+                    <p>Great!</p>
+                </li>
+                <li>
+                    <h3> <a rel="user">Mat</a>, <time datetime="2021-10-10">2021-10-10</time></h3>
+                    <p>Nice</p>
+                </li>
+                <li>
+                    <h3> <a rel="user">Stef</a>, <time datetime="2021-10-10">2021-10-10</time></h3>
+                    <p>wow!</p>
+                </li>
+                <li>
+                    <h3> <a rel="user">Andy07</a>, <time datetime="2021-10-10">2021-10-10</time></h3>
+                    <p>the BEST!</p>
+                </li>
+            </ul>
+
+        </section>
+    </main>
+    <footer>
+        <div>
+            <h4>Copyrights</h4>
+        </div>
+        <div>
+            <p> &copy; Made by bazanadrian</p>
+        </div>
+    </footer>
 </body>
+
 </html>
