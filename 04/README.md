@@ -19,3 +19,19 @@ Podpowiedzi:
 > :arrow_left: [*poprzednie zadanie*](./../03) | [*następne zadanie*](./../05) :arrow_right:
 
 > :no_entry: *Jeśli nie posiadasz materiałów do tego zadania, znajdziesz je na stronie [devmentor.pl](https://devmentor.pl/p/html-and-css-basics/)*
+
+                        <ul>
+                            <li><a class="nav--second" href="Item 2.1">Item 2.1</a></li>
+                            <li><a class="nav--second" href="Item 2.2">Item 2.2</a></li>
+                        </ul>
+                        <ul>
+                    <li><a
+                            class="nav--second"
+                            href="ITEM 1"
+                        >Item 1</a></li>
+                    <li><a
+                            class="nav--second"
+                            href="ITEM 2"
+                        >Item 2</a>
+                    </li>
+                </ul>
