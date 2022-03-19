@@ -1,19 +1,28 @@
 /* COMMON */
-html, body {
-    margin: 0;padding: 0;
+
+html,
+body {
+    margin: 0;
+    padding: 0;
 }
+
 .main {
     padding: 10px;
 }
+
+
 /* END COMMON */
 
+
 /* GENERAL */
+
 .frame {
     width: 100%;
     border: 2px solid lightgreen;
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
 .frame__section {
     border: 2px solid #0681d3;
     min-height: 100px;
@@ -21,67 +30,84 @@ html, body {
     margin: 5px auto;
     padding: 5px 0 5px 0;
 }
+
 .frame__section--color {
     background-color: #f9ca24;
 }
+
+
 /* END GENERAL */
 
+
 /* SECTION 1 */
+
 .section-1 {
     display: flex;
     justify-content: space-between;
 }
+
 .logo {
     width: 100px;
 }
+
 .menu {
     width: 200px;
     margin-left: 5px;
-
 }
+
+
 /* END SECTION 1 */
 
+
 /* SECTION 2 */
+
 .section-2 {
     display: flex;
     justify-content: space-between;
 }
+
 .panel-left {
     height: 200px;
     width: calc(50% - 2px)
 }
+
 .panel-right {
     height: 200px;
     width: calc(50% - 2px)
 }
+
+
 /* END SECTION 2 */
 
+
 /* SECTION 3 */
+
 .section-3 {
     display: flex;
     justify-content: space-evenly;
 }
+
 .content {
     width: 32%;
     min-height: 200px;
-    
 }
+
+
 /* END SECTION 3 */
 
+
 /* SECTION 4 */
+
 .section-4 {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .footer {
     min-height: 100px;
     width: 100px;
 }
+
+
 /* END SECTION 4 */
-
-
-
-
-
-
