@@ -5,11 +5,6 @@
 	font-weight: bold;
 }
 
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
 .parent {
 	width: 600px;
 	padding: 20px;
