@@ -1,0 +1,63 @@
+@font-face {
+	font-family: 'Source_Sans_Pro_Regular';
+	src: url(../fonts/SourceSansPro-Regular.otf) format('opentype');
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'Source_Sans_Pro_Bold';
+	src: url(../fonts/SourceSansPro-Bold.otf) format('opentype');
+	font-style: normal;
+	font-weight: bold;
+}
+@font-face {
+	font-family: 'Source_Sans_Pro_It';
+	src: url(../fonts/SourceSansPro-It.otf) format('opentype');
+	font-style: normal;
+	font-weight: italic;
+}
+
+.parent {
+    padding: 20px;
+    width: 600px;
+}
+
+.parent--inline-block{
+    font-family: 'Source_Sans_Pro_Regular';
+}
+.parent--float{
+    
+font-family: 'Source_Sans_Pro_Bold';
+}
+.parent--flexbox{
+    
+font-family: 'Source_Sans_Pro_It';
+}
+
+.parent--inline-block .child{
+    display: inline-block;
+}
+
+.parent--float::after{
+
+content: "";
+display: block;
+clear: both;}
+
+.parent--float .child{
+float: left;
+}
+
+.parent--flexbox{
+    display: flex;
+}
+
+.child--first, .child--middle {
+    width: calc(30% - 10px);
+    margin-right: 10px;
+
+}
+
+.child--last {
+    width: 40%;
+}
