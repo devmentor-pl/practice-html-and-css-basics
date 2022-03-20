@@ -1,0 +1,111 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/*NAVBAR*/
+.nav {
+    width: 100%;
+    border: 5px solid green;
+    display: flex;
+    justify-content: center;
+}
+
+.nav__bar {
+    width: 1000px;
+    border: 2px solid blue;
+    display: flex;
+    justify-content: center;
+}
+
+.nav__bar--logo {
+    display: flex;
+    background-color: orange;
+    border: 2px solid black;
+    width: 150px;
+    height: 50px;
+    margin-right: 600px;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__bar--menu {
+    display: flex;
+    justify-items: center;
+    background-color: orange;
+    border: 2px solid black;
+    width: 300px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+/*END OF NAVBAR*/
+
+/*CENTRAL*/
+.central, .central-second{
+    width: 100%;
+    height: 450px;
+    border: 5px solid green;
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+}
+.central__section,.central-second__section{
+    width: 1000px;
+    border: 2px solid blue;
+    display: flex;
+    justify-content: space-around;
+    height: 400px;
+    margin-top: 20px;
+}
+
+.central__section-item1, .central__section-item2{
+    background-color: orange;
+    border: 2px solid black;
+    width: 480px;
+    height: 80%;
+    margin-top: 35px;
+    text-align: center;
+}
+
+.central-second__section-item1, .central-second__section-item2, .central-second__section-item3{
+    background-color: orange;
+    border: 2px solid black;
+    width: 480px;
+    height: 80%;
+    margin-top: 35px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+/*END OF CENTRAL*/
+
+/*FOOTER*/
+.footer{
+    width: 100%;
+    border: 5px solid green;
+    margin-top: 20px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__end{
+    width: 1000px;
+    border: 2px solid blue;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    height: 30px;
+}
+
+.footer__end--item{
+    background-color: orange;
+    border: 2px solid black;
+    width: 85px;
+    height: 20px;
+    margin-top: 0.25rem;
+}
+
+/*END OF FOOTER*/
