@@ -1,0 +1,69 @@
+.row {
+    outline: 2px solid green;
+    padding: 0.2px 0.2px
+}
+.container {
+    outline: 2px solid blue;
+    max-width: 1000px;
+    margin: 10px auto;
+}
+.cell {
+   background-color: yellow;
+   margin: 5px 0;
+}
+
+/* HEADER */
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    min-height: 70px;
+}
+.header__nav-logo {
+    min-width: 25%;
+}
+.header__nav-menu {
+    min-width: 45%;
+}
+
+/* END OF HEADER */
+
+/* MAIN */
+
+
+.main__hero{
+    min-width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+.main__hero .cell {
+    min-height: 200px;
+    min-width: 49%;
+}
+
+.main__about {
+    min-width: 250px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.main__about .cell {
+    min-height: 250px;
+    min-width: 31%;
+}
+
+/* END OF MAIN */
+
+/* FOOTER */
+
+
+
+/* END OF FOOTER */
+
+.footer__copyright{
+  
+    display: flex;
+    justify-content: center;
+}
+.footer__copyright .cell{
+    min-height: 40px;
+    min-width: 15%;
+}

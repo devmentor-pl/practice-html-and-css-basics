@@ -1,6 +1,35 @@
+
+@font-face {
+    font-family: 'source_sans_probold';
+    src: url('./../fonts/fs/sourcesanspro-bold-webfont.woff2') format('woff2'),
+         url('./../fonts/fs/sourcesanspro-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'source_sans_proitalic';
+    src: url('./../fonts/fs/sourcesanspro-it-webfont.woff2') format('woff2'),
+         url('./../fonts/fs/sourcesanspro-it-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'source_sans_proregular';
+    src: url('./../fonts/fs/sourcesanspro-regular-webfont.woff2') format('woff2'),
+         url('./../fonts/fs/sourcesanspro-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 .parent {
     width: 600px; 
     padding: 20px;
+}
+.parent--inline-block {
+    font-family: 'source_sans_proregular';
 }
 
 .parent--inline-block .child {
@@ -10,6 +39,7 @@
 }
 
 .parent--float{
+    font-family: 'source_sans_probold' ;
     
 }
 .parent--float::after{
@@ -23,6 +53,7 @@
 
 .parent--flexbox{
     display: flex;
+    font-family: 'source_sans_proitalic';
 }
 
 .child {

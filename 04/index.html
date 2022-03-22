@@ -23,35 +23,75 @@
 </head>
 
 <body>
-    <nav>
+    <nav class="nav-main">
         <ul class="nav">
             <li class="nav__item">
-                START
+                <a
+                    class="link"
+                    href=""
+                >
+                    START
+                </a>
             </li>
-            <li class="nav__item">
-                ITEMS
+            <li class="nav__item nav__item--dropdown">
+                <a
+                    class="link"
+                    href=""
+                >
+                    ITEMS
+                </a>
                 <ul class="nav__dropdown">
-                    <li class="dropdown_item">
-                        Item 1
+                    <li class="dropdown__item">
+                        <a
+                            class="link link--l1"
+                            href=""
+                        >
+                            Item 1
+                        </a>
                     </li>
-                    <li class="dropdown_item">
-                        Item 2
-                        <ul class="nav__dropdown-l2">
-                            <li class="dropdown_item-l2">
-                                Item 2.1
+                    <li class="dropdown__item dropdown__item--children">
+                        <a
+                            class="link link--l1"
+                            href=""
+                        >
+                            Item 2
+                        </a>
+                        <ul class="nav__dropdown nav__dropdown--l2">
+                            <li class="dropdown__item--l2">
+                                <a
+                                    class="link link--l2"
+                                    href=""
+                                >
+                                    Item 2.1
+                                </a>
                             </li>
-                            <li class="dropdown_item-l2">
-                                Item 2.2
+                            <li class="dropdown__item--l2">
+                                <a
+                                    class="link link--l2"
+                                    href=""
+                                >
+                                    Item 2.2
+                                </a>
                             </li>
                         </ul>
                     </li>
                 </ul>
             </li>
             <li class="nav__item">
-                SETTINGS
+                <a
+                    class="link"
+                    href=""
+                >
+                    SETTINGS
+                </a>
             </li>
             <li class="nav__item">
-                CONTACT
+                <a
+                    class="link"
+                    href=""
+                >
+                    CONTACT
+                </a>
             </li>
         </ul>
     </nav>
