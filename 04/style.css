@@ -99,7 +99,7 @@ body {
 	display: none;
 	min-width: 200px;
 	position: absolute;
-	top: 0;
+	top: 100%;
 	left: 200px;
 	background-color: var(--color-dark);
 
