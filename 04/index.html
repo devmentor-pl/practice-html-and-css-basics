@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dropdown menu with CSS</title>
+</head>
+
+<body>
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__item">
+                <a href="#" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item nav__dropdown">
+                <a href="" class="nav__link">Items</a>
+                <ul class="dropdown">
+                    <li class="dropdown__item">
+                        <a href="" class="dropdown__link">Item 1</a>
+                    </li>
+                    <li class="dropdown__item menu__dropdown-2">
+                        <a href="" class="dropdown__link">Item 2</a>
+                        <ul class="dropdown-2">
+                            <li class="dropdown-2__item">
+                                <a href="" class="dropdown-2__link">Item 2.1</a>
+                            </li>
+                            <li class="dropdown-2__item">
+                                <a href="" class="dropdown-2__link">Item 2.2</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav__item">
+                <a href="" class="nav__link">Settings</a>
+            </li>
+            <li class="nav__item">
+                <a href="" class="nav__link">Contact</a>
+            </li>
+        </ul>
+    </nav>
+</body>
+
+</html>
