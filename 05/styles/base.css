@@ -1,0 +1,25 @@
+.row, .container, .column, .cell {
+    margin: 5px;
+    padding: 5px;
+    outline: 3px solid;
+}
+
+.row {
+    outline-color: olivedrab;
+    max-width: 100%;
+    margin: 10px;
+}
+
+.container {
+    margin: 0 auto;
+    outline-color: rebeccapurple;
+    max-width: 1000px;
+}
+
+.column {
+    outline-color: maroon;
+}
+
+.cell {
+    outline-color: #C65D7B;
+}
