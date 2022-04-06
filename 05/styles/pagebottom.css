@@ -1,0 +1,19 @@
+.pagebottom__container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.pagebottom__article--1 {
+    height: 100px;
+    width: 50%;
+}
+
+.pagebottom__article--2 {
+    height: 100px;
+    width: 50%;
+}
+
+.pagebottom__article--3 {
+    height: 100px;
+    width: 50%;
+}

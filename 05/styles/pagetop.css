@@ -1,0 +1,16 @@
+.pagetop__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pagetop__article--1 {
+    width: 50%;
+    min-height: 200px;
+    margin-left: -5px;
+}
+
+.pagetop__article--2 {
+    width: 50%;
+    min-height: 200px;
+    margin-right: -5px;
+}
