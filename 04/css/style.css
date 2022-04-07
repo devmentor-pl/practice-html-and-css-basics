@@ -1,0 +1,19 @@
+body {
+    background-color: rgb(238, 238, 238);
+}
+
+.menu {
+    background-color: white;
+    display: flex;
+    margin: 10px;
+}
+
+.menu__item {
+padding: 10px 20px;
+border-top: 2px solid transparent;
+
+}
+
+.menu__item:hover {
+    border-top-color: blue ;
+}
