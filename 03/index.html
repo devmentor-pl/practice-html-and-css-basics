@@ -8,28 +8,42 @@
 
     <title>devmentor.pl - HTML & CSS BASICS - #03</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
         .parent {
             width: 600px;
             padding: 20px;
+
 
         }
 
         @font-face {
             font-family: 'Source Sans PRO';
             src: url(source-sans-pro/SourceSansPro-Bold.otf) format('opentype');
-            /* src: url(source-sans-pro/SourceSansPro-Regular.otf) format('opentype'); */
+            /* src: url(source-sans-pro/SourceSansPro-Regular.otf) format('opentype');
+            src: url(source-sans-pro/SourceSansPro-It.otf) format('opentype'); */
             font-style: normal;
             font-weight: bold;
         }
 
+        @font-face {
+            font-family: 'Source Sans PRO';
+            src: url(source-sans-pro/SourceSansPro-Regular.otf) format('opentype');
+            font-style: normal;
+            font-weight: normal;
+        }
+
         .child--first {
             font-family: 'Source Sans PRO';
-            font-style: normal;
+            font-weight: normal;
         }
 
         .child--middle {
             font-family: 'Source Sans PRO';
-            font-style: bold;
+            font-weight: bold;
         }
 
         .child--last {
@@ -47,11 +61,9 @@
         }
 
         .child:last-child {
-            width: calc(600px -60%);
+            width: calc(40% - 20px);
             margin: 0 !important;
         }
-
-
 
         .parent--float .child {
             float: left;
@@ -67,7 +79,6 @@
         .parent--flexbox {
             display: flex;
             gap: 10px;
-
         }
     </style>
 </head>
@@ -77,8 +88,10 @@
     <section class="parent parent--inline-block">
         <div class="child child--first">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, asperiores.</div>
+        <!---->
         <div class="child child--middle">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis praesentium in possimus!</div>
+        <!---->
         <div class="child child--last">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, iure?</div>
     </section>
