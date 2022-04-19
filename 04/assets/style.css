@@ -37,7 +37,7 @@ html:root {
   margin-left: 3rem;
 }
 
-.list-item-two {
+.list_option--items {
   position: relative;
   cursor: pointer;
   height: 10rem;
@@ -46,7 +46,7 @@ html:root {
   /* color: hsl(200, 70%, 50%); */
 }
 
-.list-item-two::after {
+.list_option--items::after {
   content: ">";
   transform: rotate(90deg) translate(-10%);
   margin-left: 1rem;
@@ -54,15 +54,15 @@ html:root {
   color: hsl(200, 70%, 50%);
 }
 
-.list-item-two:hover {
+.list_option--items:hover {
   border-top: 0.4rem solid hsl(200, 70%, 50%);
 }
 
-.list-item-two:hover > .list-second {
+.list_option--items:hover > .list-second {
   display: block;
 }
 
-.list-it:first-child {
+.list-opt:first-child {
   color: hsl(200, 70%, 50%);
 }
 
@@ -76,18 +76,25 @@ html:root {
   left: -2rem;
 }
 
-.sd-list_one,
-.sd-list_two,
-.th-list_one,
-.th-list_two {
+.sd-list,
+.th-list {
   padding: 0.8rem;
 }
 
-.sd-list_two {
+.list-second_option--two {
   position: relative;
 }
 
-.list-third {
+.list-second_option--two::after {
+  content: ">";
+  position: relative;
+  left: 11rem;
+  font-weight: bold;
+  color: white;
+}
+
+.list-second_option--two:hover > .list-third {
+  display: block;
   list-style-type: none;
   position: absolute;
   top: 0;
@@ -96,6 +103,15 @@ html:root {
   width: 20rem;
 }
 
+.list-third {
+  display: none;
+  list-style-type: none;
+  position: absolute;
+  top: 0;
+  left: 20rem;
+  background-color: grey;
+  width: 20rem;
+}
 .item-color {
   color: hsl(200, 70%, 50%);
 }

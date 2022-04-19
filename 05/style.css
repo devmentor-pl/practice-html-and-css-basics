@@ -43,13 +43,13 @@ html:root {
   height: 5rem;
 }
 
-.item-one {
+.article_item--logo {
   width: 30%;
   height: 4rem;
   background-color: orange;
 }
 
-.item-two {
+.article_item--menu {
   width: 40%;
   height: 4rem;
   background-color: orange;
@@ -60,13 +60,13 @@ html:root {
   height: 18rem;
 }
 
-.item-second {
+.article-second {
   height: 16rem;
   width: 49%;
   background-color: orange;
 }
 
-.item-third {
+.article-third {
   background-color: orange;
   width: 33%;
   height: 16rem;
@@ -77,7 +77,7 @@ html:root {
   justify-content: center;
 }
 
-.item-fh-one {
+.article-four_footer {
   height: 3rem;
   width: 10%;
   background-color: orange;
