@@ -37,7 +37,7 @@ html:root {
   margin-left: 3rem;
 }
 
-.list_option--items {
+.list-opt--items {
   position: relative;
   cursor: pointer;
   height: 10rem;
@@ -46,7 +46,7 @@ html:root {
   /* color: hsl(200, 70%, 50%); */
 }
 
-.list_option--items::after {
+.list-opt--items::after {
   content: ">";
   transform: rotate(90deg) translate(-10%);
   margin-left: 1rem;
@@ -54,11 +54,11 @@ html:root {
   color: hsl(200, 70%, 50%);
 }
 
-.list_option--items:hover {
+.list-opt--items:hover {
   border-top: 0.4rem solid hsl(200, 70%, 50%);
 }
 
-.list_option--items:hover > .list-second {
+.list-opt--items:hover > .list-second {
   display: block;
 }
 
