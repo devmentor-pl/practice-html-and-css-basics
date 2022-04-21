@@ -1,0 +1,117 @@
+html:root {
+  font-size: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  background-color: hsl(0, 19%, 88%);
+  height: 50rem;
+  width: 90%;
+  margin: 3rem auto;
+}
+
+.nav {
+  height: 10rem;
+  width: 80rem;
+  font-size: 2rem;
+  background-color: #fff;
+  display: flex;
+}
+
+.nav:first-child {
+  margin-left: 2rem;
+}
+
+.list {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+}
+
+.list:first-child {
+  margin-left: 3rem;
+}
+
+.list-opt--items {
+  position: relative;
+  cursor: pointer;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  /* color: hsl(200, 70%, 50%); */
+}
+
+.list-opt--items::after {
+  content: ">";
+  transform: rotate(90deg) translate(-10%);
+  margin-left: 1rem;
+  font-weight: bold;
+  color: hsl(200, 70%, 50%);
+}
+
+.list-opt--items:hover {
+  border-top: 0.4rem solid hsl(200, 70%, 50%);
+}
+
+.list-opt--items:hover > .list-second {
+  display: block;
+}
+
+.list-opt:first-child {
+  color: hsl(200, 70%, 50%);
+}
+
+.list-second {
+  list-style-type: none;
+  display: none;
+  background-color: grey;
+  width: 20rem;
+  position: absolute;
+  top: 9.8rem;
+  left: -2rem;
+}
+
+.list-second__option,
+.list-third__option {
+  padding: 0.8rem;
+}
+
+.list-second__option--two {
+  position: relative;
+}
+
+.list-second__option--two::after {
+  content: ">";
+  position: relative;
+  left: 11rem;
+  font-weight: bold;
+  color: white;
+}
+
+.list-second__option--two:hover > .list-third {
+  display: block;
+  list-style-type: none;
+  position: absolute;
+  top: 0;
+  left: 20rem;
+  background-color: grey;
+  width: 20rem;
+}
+
+.list-third {
+  display: none;
+  list-style-type: none;
+  position: absolute;
+  top: 0;
+  left: 20rem;
+  background-color: grey;
+  width: 20rem;
+}
+.item-color {
+  color: hsl(200, 70%, 50%);
+}

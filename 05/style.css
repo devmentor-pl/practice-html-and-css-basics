@@ -1,0 +1,84 @@
+html:root {
+  font-size: 10px;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 70rem;
+}
+
+.section {
+  width: 100%;
+  border: 0.2rem solid green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-one {
+  height: 7rem;
+}
+
+.section-two,
+.section-three {
+  height: 20rem;
+}
+
+.section-four {
+  height: 12rem;
+}
+
+.article {
+  width: 1000px;
+  border: 0.2rem solid blue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.article-one {
+  height: 5rem;
+}
+
+.article_item--logo {
+  width: 30%;
+  height: 4rem;
+  background-color: orange;
+}
+
+.article_item--menu {
+  width: 40%;
+  height: 4rem;
+  background-color: orange;
+}
+
+.article-two,
+.article-three {
+  height: 18rem;
+}
+
+.article-second {
+  height: 16rem;
+  width: 49%;
+  background-color: orange;
+}
+
+.article-third {
+  background-color: orange;
+  width: 33%;
+  height: 16rem;
+}
+
+.article-four {
+  height: 10rem;
+  justify-content: center;
+}
+
+.article-four_footer {
+  height: 3rem;
+  width: 10%;
+  background-color: orange;
+}
