@@ -76,16 +76,16 @@ html:root {
   left: -2rem;
 }
 
-.sd-list,
-.th-list {
+.list-second__option,
+.list-third__option {
   padding: 0.8rem;
 }
 
-.list-second_option--two {
+.list-second__option--two {
   position: relative;
 }
 
-.list-second_option--two::after {
+.list-second__option--two::after {
   content: ">";
   position: relative;
   left: 11rem;
@@ -93,7 +93,7 @@ html:root {
   color: white;
 }
 
-.list-second_option--two:hover > .list-third {
+.list-second__option--two:hover > .list-third {
   display: block;
   list-style-type: none;
   position: absolute;
