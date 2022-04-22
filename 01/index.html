@@ -1,12 +1,134 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <meta
+        http-equiv="X-UA-Compatible"
+        content="ie=edge"
+    >
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
 </head>
+
 <body>
-    
+    <header>
+        <h1><img
+                src="./img/logo.jpg"
+                alt="logo"
+            ></h1>
+        <nav>
+            <ul>
+                <li><a href="aa">home</a> </li>
+                <li><a href="aa">o mnie</a></li>
+                <li>
+                    <a href="aa">oferta</a>
+                    <ul>
+                        <li><a href="ss">kursy online</a></li>
+                        <li><a href="ss">kursy stacjonarne</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="aa">kontakt</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h1>Tytuł</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio distinctio praesentium minus?</p>
+            <figure>
+                <img
+                    src="./img/foto1.jpg"
+                    alt="foto1"
+                >
+                <figcaption>Foto</figcaption>
+            </figure>
+            <footer>
+                <p>Autor artykułu: <a rel="author">Sebastian K.</a>
+                    data publikacji: <time datetime="31.03.2022">dzisiaj</time>
+                </p>
+            </footer>
+            <table>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                </tr>
+            </table>
+        </article>
+    </main>
+    <section>
+        <form
+            action=""
+            method=""
+        >
+            <div>
+                <input
+                    type="text"
+                    name="name"
+                    placeholder="Wpisz imię"
+                />
+            </div>
+            <div>
+                <textarea
+                    name="content"
+                    cols="30"
+                    rows="10"
+                    placeholder="Komentarz"
+                ></textarea>
+            </div>
+            <div>
+                <input
+                    type="submit"
+                    value="Dodaj komentarz"
+                />
+            </div>
+        </form>
+
+        <ul>
+            <li>
+                <h3>
+                    <a rel="author">Marta</a>
+                    <time datetime="31.03.2022">31.03.2022</time>
+                </h3>
+                <p>Przykładowy komentarz 1</p>
+            </li>
+            <li>
+                <h3>
+                    <a rel="author">Krzysiek</a>
+                    <time datetime="30.03.2022">31.03.2022</time>
+                </h3>
+                <p>Przykładowy komentarz 2</p>
+            </li>
+            <li>
+                <h3>
+                    <a rel="author">Darek</a>
+                    <time datetime="29.03.2022">31.03.2022</time>
+                </h3>
+                <p>Przykładowy komentarz 3</p>
+            </li>
+        </ul>
+    </section>
+    <footer>
+        <p>
+           &copy; 2020 Akademia Samouka.pl
+        </p>
+    </footer>
 </body>
+
 </html>

@@ -1,0 +1,63 @@
+body {
+    background: white;
+}
+
+.container {
+    border: 4px solid green;
+    margin: 5px;
+}
+
+.container--header .maxwidth {
+display: flex;
+justify-content: space-between;
+}
+
+.maxwidth {
+    border: 4px solid blue;
+    max-width: 994px;
+    margin: 5px auto;
+}
+
+.section {
+    background-color: orange;
+    min-height: 50px;
+    margin: 5px 0;
+}
+
+.section--logo {
+    width: 200px;
+}
+
+.section--nav {
+    width: 300px;
+}
+
+.container--main .maxwidth {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container--main .section {
+    width:49%;
+}
+
+.container--main .section {
+    min-height: 300px;
+}
+
+.container--section .maxwidth {
+    display: flex;
+    justify-content: space-between;
+}
+.container--section .section {
+    width: 30%;
+    min-height: 200px;
+}
+
+.container--footer .maxwidth {
+    display: flex;
+    justify-content: center;
+}
+.container--footer .section {
+ width: 100px;
+}
