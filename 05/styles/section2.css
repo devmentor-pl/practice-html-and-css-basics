@@ -1,0 +1,13 @@
+.content__container2 {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content__article3,
+.content__article4,
+.content__article5 {
+    background-color: #FFCA18;
+    flex-basis: 32%;
+    min-height: 300px;
+}
