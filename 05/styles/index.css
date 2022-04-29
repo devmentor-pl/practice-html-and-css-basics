@@ -1,0 +1,41 @@
+/* base.css */
+.row,
+.cell,
+.container {
+    margin: 5px;
+    padding: 5px;
+    outline: 5px solid;
+}
+
+.row {
+    outline-color: rgb(59, 207, 59);
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1000px;
+    outline-color: rgb(48, 90, 229);
+}
+
+.cell {
+    min-height: 50px;
+    outline-color: orange;
+}
+
+/* header.css */
+.header__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo {
+    margin-left: 0;
+    min-width: 200px;
+    background-color: orange;
+}
+
+.header__nav {
+    margin-right: 0;
+    min-width: 400px;
+    background-color: orange;
+}

@@ -6,27 +6,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/index.css">
 </head>
 
 <body>
     <header>
         <nav>
-            <ul class="menu">
-                <li class="first-line-item"><a href="#" class="first-line-item-link">HOME</a></li>
-                <li id="ITEMS" class="first-line-item"><a href="#" class="first-line-item-link">ITEMS</a>
-                    <ul class="dropdown-list">
-                        <li class="dropdown-item"><a href="#" class="dropdown-item-link"></a>Item 1</li>
-                        <li class="dropdown-item"><a href="#" class="dropdown-item-link"></a>Item 2</li>
-                        <ul class="dropdown-list2">
-                            <li class="dropdown-item2"><a href="#" class="dropdown2-item-link"></a>Item 2.1</li>
-                            <li class="dropdown-item22"><a href="#" class="dropdown22-item-link"></a>Item 2.2</li>
-                        </ul>
+            <ul class="nav">
+                <li class="nav__item nav__item--no-space">
+                    <a class="nav__link" href="#">HOME</a>
                 </li>
-            </ul>
-            <li class="first-line-item"><a href="#" class="first-line-item-link">SETTINGS</a></li>
-            <li class="first-line-item"><a href="#" class="first-line-item-link">CONTACT</a></li>
-
+                <li class="nav__item klasa-do-arrow">
+                    <a class="nav__link" href="#">ITEMS</a>
+                    <ul class="nav__dropdown dropdown">
+                        <li class="dropdown__item">
+                            <a class="dropdown__link" href="#">Item 1</a>
+                        </li>
+                        <li class="dropdown__item dropdown2-to-display">
+                            <a class="dropdown__link" href="#">Item 2</a>
+                            <ul class="dropdown2">
+                                <li class="dropdown2__item">
+                                    <a class="dropdown2__link" href="#">Item 2.1</a>
+                                </li>
+                                <li class="dropdown2__item">
+                                    <a class="dropdown2__link" href="#">Item 2.2</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#">SETTINGS</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#">CONTACT</a>
+                </li>
             </ul>
         </nav>
     </header>
