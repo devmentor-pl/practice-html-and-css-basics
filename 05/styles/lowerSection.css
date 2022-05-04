@@ -1,12 +1,12 @@
-.content__container2 {
+.content__lower_container {
     align-items: flex-start;
     display: flex;
     justify-content: space-between;
 }
 
-.content__article3,
-.content__article4,
-.content__article5 {
+.content__article_lower_left,
+.content__article_lower_middle,
+.content__article_lower_right {
     background-color: #FFCA18;
     flex-basis: 32%;
     min-height: 300px;
