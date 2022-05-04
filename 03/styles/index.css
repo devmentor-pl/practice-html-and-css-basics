@@ -11,14 +11,22 @@
     font-style: italic;
 }
 
+.child {
+    display: inline-block;
+    margin-right: 10px;
+}
+
 .child--first {
     font-style: normal;
+    width: calc(30%-10px);
 }
 
 .child--middle {
     font-weight: bold;
+    width: calc(30%-10px);
 }
 
 .child--last {
     font-style: italic;
+    width: calc(40%-10px);
 }
