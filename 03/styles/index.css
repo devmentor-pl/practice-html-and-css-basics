@@ -3,6 +3,28 @@
     padding: 20px;
 }
 
+.parent--inline-block .child {
+    display: inline-block;
+    /* outline: 1px solid red; */
+}
+
+.parent--float::after {
+    content: '';
+    display: block;
+    clear: both;
+    /* outline: 1px solid blue; */
+
+}
+
+.parent--float .child {
+    float: left;
+    /* outline: 1px solid red; */
+}
+
+.parent--flexbox {
+    display: flex;
+}
+
 @font-face {
     font-family: "Source Sans Pro";
     src: url("source-sans-pro/SourceSansPro-Regular.otf") format("otf");
@@ -24,19 +46,16 @@
     font-style: normal;
 }
 
-.child {
-    display: inline-block;
-    margin-right: 10px;
-}
-
 .child--first {
     font-style: normal;
     width: calc(30%-10px);
+    margin-right: 10px;
 }
 
 .child--middle {
     font-weight: bold;
     width: calc(30%-10px);
+    margin-right: 10px;
 }
 
 .child--last {
