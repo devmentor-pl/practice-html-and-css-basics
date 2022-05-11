@@ -48,17 +48,17 @@
 
 .child--first {
     font-style: normal;
-    width: calc(30%-10px);
+    width: calc(30% - 10px);
     margin-right: 10px;
 }
 
 .child--middle {
     font-weight: bold;
-    width: calc(30%-10px);
+    width: calc(30% - 10px);
     margin-right: 10px;
 }
 
 .child--last {
     font-style: italic;
-    width: calc(40%-10px);
+    width: calc(40%);
 }
