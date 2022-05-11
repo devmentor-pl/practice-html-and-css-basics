@@ -1,0 +1,13 @@
+.footer__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+}
+
+.footer__logo {
+    background-color: #FFCA18;
+    width: 12%;
+    height: 17%;
+    min-height: 55px;
+}
