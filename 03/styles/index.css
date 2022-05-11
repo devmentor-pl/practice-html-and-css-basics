@@ -5,20 +5,17 @@
 
 .parent--inline-block .child {
     display: inline-block;
-    /* outline: 1px solid red; */
+    margin-top: 0px;
 }
 
 .parent--float::after {
     content: '';
     display: block;
     clear: both;
-    /* outline: 1px solid blue; */
-
 }
 
 .parent--float .child {
     float: left;
-    /* outline: 1px solid red; */
 }
 
 .parent--flexbox {
@@ -60,5 +57,5 @@
 
 .child--last {
     font-style: italic;
-    width: calc(40%);
+    width: 40%;
 }
