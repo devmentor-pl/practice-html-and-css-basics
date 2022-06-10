@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding 0;
+}
+.logo {
+    padding-left: 43%;
+}
+/* Main Photo */
+.main_photo {
+    justify-content: flex-start;
+}
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    position: sticky;
+    top: 0;
+}
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+.navbar ul li {
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.navbar ul li a {
+    text-decoration: none;
+    padding: 8px 20px;
+    transition: all .5e ease;
+    color: aqua;
+}
+.navbar ul li a:hover {
+   background-color: white;
+   color: black;
+   box-shadow: 0 0 10px;
+}
+
+/* Table */
+caption {
+    background-color: lightgray;
+}
+thead {
+    background-color: gray;
+}
+tbody {
+    background-color: lightgray;
+}
+/* Komentarze - container */
+.container1 {
+    width: auto;
+    height: 100px;
+    background-color: lightgray;
+    margin: 20px;
+    padding: 10px;
+    position: relative;
+    border-radius: 15px;
+}
+.container2 {
+    width: auto;
+    height: 100px;
+    background-color: lightgray;
+    margin: 20px;
+    padding: 10px;
+    position: relative;
+    border-radius: 15px;
+}
+.container3 {
+    width: auto;
+    height: 100px;
+    background-color: lightgray;
+    margin: 20px;
+    padding: 10px;
+    position: relative;
+    border-radius: 15px;
+}
+/* Footer */
+footer {
+    background-color: black;
+    height: auto;
+    width: 100vw;
+    color: aqua;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer content p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom {
+    background-color: black;
+    width: 100vw;
+    text-align: center;
+}
+.footer-bottom p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span {
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
