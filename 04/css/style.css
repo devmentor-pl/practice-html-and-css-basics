@@ -6,7 +6,6 @@
 	font-weight: lighter;
 	font-style: normal;
 }
-
 body {
 	background-color: var(--bg-color);
 	font-family: "Source Sans PRO";
@@ -29,7 +28,6 @@ body {
 .nav__item:hover,
 a {
 	border-color: var(--primary-color);
-	
 }
 .nav__item:hover > .nav__dropdown {
 	display: block;
@@ -40,7 +38,6 @@ a {
 .text-up {
 	text-transform: uppercase;
 }
-
 .nav__link {
 	display: inline-block;
 	height: 100%;
@@ -53,7 +50,6 @@ a {
 .nav__link:hover {
 	color: var(--primary-color);
 }
-
 .nav__dropdown {
 	position: absolute;
 	padding-top: 68px;
@@ -71,13 +67,11 @@ a {
 .dropdown__item:hover {
 	background-color: gray;
 }
-
 .dropdown__item a {
 	color: white;
 	font-size: 22px;
 	margin-right: 31px;
 }
-
 .arrow {
 	position: absolute;
 	right: -37%;
