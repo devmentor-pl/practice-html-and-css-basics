@@ -1,0 +1,42 @@
+@import url(./_fonts.css);
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.parent {
+	width: 600px;
+	padding: 20px;
+}
+
+.parent--inline-block .child {
+	display: inline-block;
+}
+.parent--float .child {
+	float: left;
+}
+.parent--flexbox {
+	display: flex;
+	margin-top: 100px;
+}
+
+.child:nth-child(1) {
+	width: 30%;
+	font-family: "Source Sans PRO";
+	font-weight: normal;
+	font-style: normal;
+}
+.child:nth-child(2) {
+	width: calc(30% - 10px);
+	padding: 0 10px;
+	font-family: "Sour~~ce Sans PRO";
+	font-weight: bold;
+}
+.child:nth-child(3) {
+	width: 40%;
+	font-family: "Source Sans PRO";
+	font-weight: normal;
+	font-style: italic;
+}
