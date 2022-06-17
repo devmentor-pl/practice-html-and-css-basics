@@ -7,7 +7,7 @@
 Znacznik label, którego przodkiem jest klasa .ac-container 
 (0, 1, 1)
 */
-label {
+.ac-container label {
 	height: 30px !important;
 	line-height: 21px !important;
 	font-size: 12px !important;
@@ -54,7 +54,7 @@ Zmiana koloru tła po najechaniu przez kursor myszy na znacznik label,
 który znajduje się wewnątrze elementu o klasie .ac-container 
 (0, 2, 1)
 */
-label:hover {
+.ac-container label:hover {
 	background: #fff;
 }
 

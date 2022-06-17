@@ -31,7 +31,7 @@
 .child:nth-child(2) {
 	width: calc(30% - 10px);
 	padding: 0 10px;
-	font-family: "Sour~~ce Sans PRO";
+	font-family: "Source Sans PRO";
 	font-weight: bold;
 }
 .child:nth-child(3) {
