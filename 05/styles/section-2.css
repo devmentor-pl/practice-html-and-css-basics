@@ -1,0 +1,11 @@
+
+
+.content__row--2 {
+	display: flex;
+	justify-content: space-around;
+}
+
+.content__article--2 {
+	min-height: 250px;
+	min-width: 300px;
+}

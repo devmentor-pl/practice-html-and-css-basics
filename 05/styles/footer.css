@@ -1,0 +1,13 @@
+.footer {
+	min-height: 100px;
+}
+.footer__row {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-width: 100%;
+}
+.footer__copyrights {
+	min-width: 300px;
+	min-height: 100px;
+}
