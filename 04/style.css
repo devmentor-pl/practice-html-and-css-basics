@@ -1,0 +1,42 @@
+.dropdownMenu ul {
+     display: inline-flex;
+     text-align: center;
+     list-style:none;
+    
+}
+
+.dropdownMenu ul li{
+    width:200px;
+    margin:10px;
+    padding:10px;
+}
+
+.dropdownMenu ul li a{
+    text-decoration: none;
+    color:grey;
+    font-size:30px;
+    
+}
+
+.dropItem{
+    text-decoration: none;
+    color:grey;
+    font-size:30px;
+    display:block;
+}
+
+.dropSubitem{
+    text-decoration: none;
+    color:grey;
+    font-size:30px;
+}
+
+
+
+
+
+
+
+
+
+

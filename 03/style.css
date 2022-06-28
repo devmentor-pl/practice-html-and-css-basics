@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('03/open-sans-fontfacekit/OpenSans-Bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.parentone{
+    width:600px;
+    padding:20px;
+    display: inline-block;
+    
+}
+
+.parenttwo{
+    width:600px;
+    padding:20px;
+    float:none;
+}
+
+.parentthree{
+    width:600px;
+    padding:20px;
+    display:flex;
+}
+
+.parentone>div{
+    width:30%;
+    
+}
+
+.parenttwo>div{
+    width:30%;
+}
+
+.parentthree>div{
+    width:40%;
+    
+}
+
+.childOneOne{
+    padding:10px;
+    font-family:'open_sansbold';
+    
+   
+}
+
+.childOneTwo{
+    padding:10px;
+    font-weight: bold;
+}
+
+.childThreeOne{
+    padding:10px;
+    font-style: italic;
+    
+}
+
+.childTwoOne{
+    padding:10px;
+    
+}
+
+.childTwoTwo{
+    padding:10px;
+    font-weight: bold;
+}
+
+.childTwoThree{
+    padding:10px;
+    font-style: italic;
+
+}
+
+.childThreeOne{
+    padding:10px;
+}
+
+.childThreeTwo{
+    padding:10px;
+    font-weight: bold;
+}
+
+.childThreeThree{
+    padding:10px;
+    font-style: italic;
+}
+
