@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'open_sansbold';
-    src: url('03/open-sans-fontfacekit/OpenSans-Bold-webfont.woff') format('woff');
+    src: url('open-sans-fontfacekit/OpenSans-Bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -42,48 +42,59 @@
 .childOneOne{
     padding:10px;
     font-family:'open_sansbold';
-    
-   
+    font-style: normal;
 }
 
 .childOneTwo{
     padding:10px;
     font-weight: bold;
+    font-family:'open_sansbold';
 }
 
 .childThreeOne{
     padding:10px;
     font-style: italic;
+    font-family:'open_sansbold';
     
 }
 
 .childTwoOne{
     padding:10px;
+    font-family:'open_sansbold';
+    font-style: normal;
     
 }
 
 .childTwoTwo{
     padding:10px;
     font-weight: bold;
+    font-family:'open_sansbold';
 }
 
 .childTwoThree{
     padding:10px;
     font-style: italic;
+    font-family:'open_sansbold';
+    
 
 }
 
 .childThreeOne{
     padding:10px;
+    font-family:'open_sansbold';
+    font-style: normal;
+    
 }
 
 .childThreeTwo{
     padding:10px;
-    font-weight: bold;
+    font-style: bold;
+    font-family:'open_sansbold';
 }
 
 .childThreeThree{
     padding:10px;
     font-style: italic;
+    font-family:'open_sansbold';
 }
 
