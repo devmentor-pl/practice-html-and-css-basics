@@ -1,45 +1,45 @@
 
 
-body {
+body{
     font-family:'open_sans';
 }
 
 
 
-.parent {
+.parent{
     width:600px;
     padding:20px;
     display:flex;
 }
 
-.child--first,.child--middle {
+.child--first,.child--middle{
     margin:10px;
     width:calc(30% - 20px) ;
     outline:2px solid green;
 }
 
-.child--last {
+.child--last{
     margin:10px;
     width:calc(40% - 20px);
     outline:2px solid blue;
 }
 
 
-@font-face {
+@font-face{
     font-family: 'open_sans';
     src:url('open-sansfontfacekit/OpenSans-Regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
-@font-face {
+@font-face{
     font-family: 'open_sans';
     src: url('OpenSans-Bold-webfont.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
 
-@font-face {
+@font-face{
     font-family: 'open_sansitalic';
     src:url('OpenSans-Italic-webfont.woff') format('woff');
     font-weight: italic;
@@ -47,26 +47,26 @@ body {
 
 }
 
-.child--middle {
+.child--middle{
     font-weight: bold;
 
 }
 
-.child--last {
+.child--last{
     font-style: italic;
 }
 
-.parent > .parent--inline-block.child--first {
+.parent > .parent--inline-block.child--first{
     display:inline-block;
     
 }
 
-.parent > .parent--float.child--middle {
+.parent > .parent--float.child--middle{
     float:left;
     
 }
 
-.parent > .parent--flexbox.child--last {
+.parent > .parent--flexbox.child--last{
     display:flex;
 }
 
