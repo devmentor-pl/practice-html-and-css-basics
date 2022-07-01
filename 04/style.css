@@ -8,7 +8,7 @@
 }
 
 .sub-menu {
-    list-style-type: none;
+    display: none;
     
     
 }
@@ -33,7 +33,6 @@ li {
 .item-link {
     position:relative;
     right:40px;
-    display:none;
     max-width: 100px;
     margin:0 ;
 
@@ -45,7 +44,7 @@ li {
     right:40px;
     bottom:66px;
     max-width: 100px;
-    display:none;
+    
 }
 
 .arrow-item {
@@ -56,7 +55,7 @@ li {
     right:500px;
     top:2px;
     font-weight: bold;
-    display: none;
+    
 }
 
 a:hover {
