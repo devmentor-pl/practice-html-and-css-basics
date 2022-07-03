@@ -57,6 +57,17 @@ nav ul li ul li a:hover{
     background-color: #296b6b;
 }
 
+.sub_item {
+    display:none;
+}
+
+.sub_item:hover >.sub_menu {
+    display:block;
+}
+
+ 
+
+
 
 
 
