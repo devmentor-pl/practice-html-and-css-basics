@@ -1,0 +1,69 @@
+body{
+    font-family:'open_sans';
+}
+
+
+
+.parent{
+    width:600px;
+    padding:20px;
+    display:flex;
+}
+
+.child--first,.child--middle{
+    margin:10px;
+    width:calc(30% - 20px) ;
+    outline:2px solid green;
+}
+
+.child--last{
+    margin:10px;
+    width:calc(40% - 20px);
+    outline:2px solid blue;
+}
+
+
+@font-face{
+    font-family: 'open_sans';
+    src:url('open-sansfontfacekit/OpenSans-Regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'open_sans';
+    src: url('OpenSans-Bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'open_sansitalic';
+    src:url('OpenSans-Italic-webfont.woff') format('woff');
+    font-weight: italic;
+    font-style: normal;
+
+}
+
+.child--middle{
+    font-weight: bold;
+
+}
+
+.child--last{
+    font-style: italic;
+}
+
+.parent > .parent--inline-block.child--first{
+    display:inline-block;
+    
+}
+
+.parent > .parent--float.child--middle{
+    float:left;
+    
+}
+
+.parent > .parent--flexbox.child--last{
+    display:flex;
+}
