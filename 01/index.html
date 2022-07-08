@@ -1,12 +1,132 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header__container">
+        <h1 class="header__logo">LOGO</h1>
+        <nav class="header__nav">
+          <ul class="header__menu list">
+            <li class="list__item">
+              List Item 1
+              <ul lass="list__item__list">
+                <li class="list__item">List Item 1.1</li>
+                <li class="list__item">List Item 1.2</li>
+              </ul>
+            </li>
+            <li class="list__item">List Item 2</li>
+            <li class="list__item">List Item 3</li>
+            <li class="list__item">List Item 4</li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- MAIN -->
+    <main>
+      <!-- ARTICLE -->
+      <article class="article">
+        <h2 class="article__tittle">Tytuł artykułu</h2>
+        <p class="article__p">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+          reprehenderit error voluptate expedita nemo modi eum soluta neque?
+          Ullam dignissimos quaerat, itaque distinctio cum impedit quos
+          cupiditate ipsum facilis expedita!
+        </p>
+        <div>
+          <time class="article__date">Data</time>
+          <i class="article__author"> Autor</i>
+        </div>
+        <figure class="article__img">
+          <img src="#" alt="Opis obrazka" />
+        </figure>
+        <table class="table">
+          <caption class="table__caption">
+            Nagłówek tabeli
+          </caption>
+          <colgroup>
+            <col />
+            <col />
+          </colgroup>
+          <thead class="table__thead">
+            <tr>
+              <th>Nagłówek kolumny nr 1</th>
+              <th>Nagłówek kolumny nr 2</th>
+              <th>Nagłówek kolumny nr 3</th>
+              <th>Nagłówek kolumny nr 4</th>
+            </tr>
+          </thead>
+          <tbody class="table__tbody">
+            <tr>
+              <td>Komórka tabeli</td>
+              <td>Komórka tabeli</td>
+              <td>Komórka tabeli</td>
+              <td>Komórka tabeli</td>
+            </tr>
+            <tr>
+              <td>Komórka tabeli</td>
+              <td>Komórka tabeli</td>
+              <td>Komórka tabeli</td>
+              <td>Komórka tabeli</td>
+            </tr>
+            <tr>
+              <td>Komórka tabeli</td>
+              <td>Komórka tabeli</td>
+              <td>Komórka tabeli</td>
+              <td>Komórka tabeli</td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </article>
+      <!-- FORM -->
+      <form class="form">
+        <div class="form__container">
+          <label class="form__label"
+            >Skomentuj
+            <input />
+          </label>
+        </div>
+        <div class="form__submit"><input type="submit" /></div>
+      </form>
+      <!-- COMMENTS -->
+      <article class="comments">
+        <div class="comments__cointainer"> 
+        <p class="comments__p">Treść komentarza 1</p>
+        <h5 class="comment__user">
+        Autor komentarza 1
+        </h5>
+        <time class="comment__date">
+        Data 1
+        </time>
+      </div>
+      <div> 
+        <p class="comments__p">Treść komentarza 2</p>
+        <h5 class="comment__user">
+        Autor komentarza 2
+        </h5>
+        <time class="comment__date">
+        Data 2
+        </time>
+      </div>
+      <div> 
+        <p class="comments__p">Treść komentarza 3</p>
+        <h5 class="comment__user">
+        Autor komentarza 3
+        </h5>
+        <time class="comment__date">
+        Data 3
+        </time>
+      </div>
+    </main>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div lass="footer__copyrights">&copy; ZG</div>
+      </div>
+  </body>
 </html>

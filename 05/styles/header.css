@@ -1,0 +1,12 @@
+.header__containe__row {
+  display: flex;
+  justify-content: space-between;
+}
+.header__content {
+  height: 50px;
+  width: 100px;
+  margin: 10px 0px;
+}
+.header__content:last-child {
+  width: 200px;
+}

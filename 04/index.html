@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zadanie 4 - rozwijane menu</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <ul class="nav">
+      <li class="nav__item">
+        <a class="nav__link nav__link--color" href="#">HOME</a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link nav__link__arrow" href="#">ITEMS</a>
+
+        <!-- FIRST DROPDOWN LIST -->
+        <ul class="nav__dropdown__first dropdown">
+          <li class="dropdown__item">
+            <a class="dropdown__link" href="#">Item 1</a>
+          </li>
+          <li class="dropdown__item item__list--start">
+            <a class="dropdown__link arrow" href="#">Item 2</a>
+            <!-- SECOND DROPDOWN LIST -->
+            <ul class="nav__dropdown__second dropdown">
+              <li class="dropdown__item__second">
+                <a class="dropdown__link" href="#">Item 2.1</a>
+              </li>
+              <li class="dropdown__item__second">
+                <a class="dropdown__link" href="#">Item 2.2</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link" href="#">SETTINGS</a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link" href="#">CONTACT</a>
+      </li>
+    </ul>
+  </body>
+</html>
