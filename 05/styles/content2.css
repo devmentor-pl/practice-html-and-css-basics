@@ -1,0 +1,9 @@
+.content2__container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.content2__article {
+    min-height: 200px;
+    width: 33%;
+}

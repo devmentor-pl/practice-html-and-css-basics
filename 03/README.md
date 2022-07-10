@@ -12,7 +12,7 @@ Twoim zadaniem jest ostylowanie struktury HTML w taki sposób, aby:
 - elementy `.child` posiadały:
     - odpowiednie szerokości: `30%`, `30%`, `40%` dostępnej przestrzeni (mają być ustawione w jednej linii),
     - odstęp między rodzeństwem, który będzie wynosił `10px` (czyli między `.child--first` a `.child--middle` oraz `.child--middle` a `.child--last`).
-    - treść pisaną fontem [Source Sans PRO](https://www.fontsquirrel.com/fonts/source-sans-pro) (importowanym przez @font-face*):
+    - treść pisaną fontem [Source Sans PRO](https://www.fontsquirrel.com/fonts/source-sans-pro) (importowanym przez @font-face*): 
         - element `.child--first` – styl `regular`,
         - element `.child--middle` – styl `bold`,
         - element `.child--last` – styl `italic`,

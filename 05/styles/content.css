@@ -1,0 +1,10 @@
+.content__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content__article {
+    min-height: 200px;
+    width: 50%;
+}
+

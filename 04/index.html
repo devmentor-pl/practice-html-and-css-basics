@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>menu wielopoziomowe</title>
+
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    
+        <ul class="nav">
+
+            <li class="nav__item">
+                <a href="#" class="nav__link">HOME</a>
+            </li>
+
+            <li class="nav__item">
+                <a href="#" class="nav__link">ITEMS &gt;</a>
+                
+                    <ul class="nav__dropdown dropdown">
+                       
+                        <li class="dropdown__item">
+                            <a href="#">Item 1</a>
+                        </li>
+
+                        <li class="dropdown__item">
+                            <a href="#">Item 2 &gt;</a>
+                                <ul class="nav__dropdown2 dropdown2">
+
+                                    <li class="dropdown2__item">
+                                        <a href="#">Item 2.1</a>
+                                    </li>
+
+                                    <li class="dropdown2__item">
+                                        <a href="#">Item 2.2</a>
+                                    </li>
+                                </ul>
+                        </li>
+                    </ul>
+            </li>
+
+            <li class="nav__item">
+                <a href="#" class="nav__link">SETTINGS</a>
+            </li>
+
+            <li class="nav__item">
+                <a href="#" class="nav__link">CONTACT</a>
+            </li>
+        </ul>
+
+
+        
+
+        
+</body>
