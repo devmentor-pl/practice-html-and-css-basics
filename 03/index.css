@@ -1,14 +1,14 @@
 @font-face {
     font-family: 'source-sans-pro';
     src: url(source-sans-pro/SourceSansPro-Regular.otf);
-    font-style: normal;
+    
     
 }
 
 @font-face {
     font-family: 'source-sans-pro';
     src: url(source-sans-pro/SourceSansPro-Bold.otf);
-    font-style: bold;
+    font-weight: bold;
 }
 
 @font-face {
@@ -30,14 +30,14 @@
 .child--first {
     width: calc(30% - 10px);
     margin-right: 10px;
-    font-family: source-sans-pro;
-    font-style: normal;
+    font-family: 'source-sans-pro';
+    
 }
 
 .child--middle {
     width: 30%; 
-    font-family: source-sans-pro;
-    font-style: bold;   
+    font-family: 'source-sans-pro';
+    font-weight: bold;   
 }
 
 .child--last {
@@ -59,4 +59,8 @@
 
 .parent--flexbox {
     display: flex;
+}
+
+.clear {
+    clear: both ;
 }
