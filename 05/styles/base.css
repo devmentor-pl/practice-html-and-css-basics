@@ -1,0 +1,14 @@
+.container {
+  border: 3px solid #97cba9;
+  margin: 20px;
+  max-width: 100%;
+  padding: 10px 40px;
+}
+.row {
+  border: 3px solid #5585b5;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+.content {
+  background-color: #fdb44b;
+}

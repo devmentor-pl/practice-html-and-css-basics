@@ -1,0 +1,18 @@
+.section__container--first.row {
+  display: flex;
+  justify-content: space-between;
+}
+.container__content--first {
+  height: 200px;
+  width: 49%;
+  margin: 10px 0px;
+}
+.section__container--second.row {
+  display: flex;
+  justify-content: space-evenly;
+}
+.container__content--second {
+  height: 200px;
+  width: 30%;
+  margin: 10px 0px;
+}
