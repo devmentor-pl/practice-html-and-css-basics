@@ -1,17 +1,17 @@
-.section__container__first.row {
+.section__container--first.row {
   display: flex;
   justify-content: space-between;
 }
-.section__container__first__content {
+.container__content--first {
   height: 200px;
   width: 49%;
   margin: 10px 0px;
 }
-.section__container__second.row {
+.section__container--second.row {
   display: flex;
   justify-content: space-evenly;
 }
-.section__container__second__content {
+.container__content--second {
   height: 200px;
   width: 30%;
   margin: 10px 0px;

@@ -13,16 +13,17 @@
         <h1 class="header__logo">LOGO</h1>
         <nav class="header__nav">
           <ul class="header__menu list">
-            <li class="list__item">
-              List Item 1
+            <li class="list__item"><a href="#">
+              List Item 1</a>
               <ul lass="list__item__list">
-                <li class="list__item">List Item 1.1</li>
-                <li class="list__item">List Item 1.2</li>
+                <li class="list__item"><a href="#">List Item 1.1</a></li>
+                <li class="list__item"><a href="#">List Item 1.2</a></li>
               </ul>
             </li>
-            <li class="list__item">List Item 2</li>
-            <li class="list__item">List Item 3</li>
-            <li class="list__item">List Item 4</li>
+            <a href=""></a>
+            <li class="list__item"><a href="#">List Item 2</a></li>
+            <li class="list__item"><a href="#">List Item 3</a></li>
+            <li class="list__item"><a href="#">List Item 4</a></li>
           </ul>
         </nav>
       </div>
@@ -39,11 +40,12 @@
           cupiditate ipsum facilis expedita!
         </p>
         <div>
-          <time class="article__date">Data</time>
-          <i class="article__author"> Autor</i>
+          <time datetime="2022" class="article__date">Data</time>
+          <i rel="author" class="article__author"> Autor</i>
         </div>
         <figure class="article__img">
           <img src="#" alt="Opis obrazka" />
+          <figcaption>Obraz 1</figcaption>
         </figure>
         <table class="table">
           <caption class="table__caption">
@@ -105,7 +107,7 @@
         Data 1
         </time>
       </div>
-      <div> 
+      <div class="comments__cointainer"> 
         <p class="comments__p">Treść komentarza 2</p>
         <h5 class="comment__user">
         Autor komentarza 2
@@ -114,7 +116,7 @@
         Data 2
         </time>
       </div>
-      <div> 
+      <div class="comments__cointainer"> 
         <p class="comments__p">Treść komentarza 3</p>
         <h5 class="comment__user">
         Autor komentarza 3
@@ -123,6 +125,7 @@
         Data 3
         </time>
       </div>
+      </article>
     </main>
     <!-- FOOTER -->
     <footer class="footer">
