@@ -1,0 +1,113 @@
+:root {
+    --color-alfa: #F6F6F6;
+    --color-beta: #FFFFFF;
+    --color-gamma: #6FC2EB;
+    --color-delta: #A7B5BB;
+    --color-epsilon: #333333;
+}
+@font-face{
+    font-family: 'Montserrat regular';
+    src: url(../fonts/Montserrat-Regular.otf) format('opentype');
+    font-style: normal;
+    font-weight: normal;
+}
+a {
+    text-decoration: none;
+    font-family: 'Montserrat regular';
+
+}
+.header {
+    background-color: var(--color-alfa);
+    height: 200px; 
+    padding: 20px 0;
+}
+.header__menu {
+    margin: 20px 10px;  
+}
+.menu {
+    background: var(--color-beta);
+    display: flex;
+    
+}
+.menu__item{
+    padding: 25px;
+    position: relative;
+    min-width: 100px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.menu__item a{
+    color: var(--color-gamma);
+}
+
+
+.menu__item:hover {
+    border-top: 3px solid var(--color-gamma);
+    margin-top: -3px;
+}
+
+
+.menu__item:hover:after {
+    content: '>';
+    position: absolute;
+    right: 10px;
+    color: var(--color-gamma);
+    display: inline-block;
+    transform:rotate(90deg);
+    font-family: 'Montserrat regular';
+    
+}
+.menu__dropdown{
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    background-color: var(--color-epsilon);
+    left: 0;
+    min-width: 150px;
+    padding: 10px 0;
+    top: 100%;  
+}
+
+.menu__item:hover > .menu__dropdown {
+    display: block;
+    margin-top: 0;
+}
+
+.dropdown__item:hover > .menu__dropdown{
+    display: block;
+    transform: translateY(-50%) translateX(150px);  
+}
+.dropdown__item {
+    text-transform: capitalize;
+    text-align: left;
+    padding: 10px 20px; 
+}
+.dropdown__item a{
+    color: var(--color-delta); 
+}
+.dropdown__item:hover a{
+    color: var(--color-beta);
+}
+
+ .dropdown__item:hover:after {
+    content: '>';
+    position: absolute;
+    right: 15px;
+    color:  var(--color-beta);  
+    display: inline-block;
+    font-size: 0.75em;
+}
+
+:not(.menu__item) > .menu__dropdown > .dropdown__item a {
+    color: var(--color-delta);
+}
+
+:not(.menu__item) > .menu__dropdown > .dropdown__item:hover a{
+    color: var(--color-beta);
+} 
+
+:not(.menu__item) > .menu__dropdown > .dropdown__item:hover:after {
+    content: '';
+}
+
