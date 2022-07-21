@@ -7,13 +7,13 @@
     font-weight: bold;
 }
 @font-face{
-    font-family: 'Source Sans PRO italic';
+    font-family: 'Source Sans PRO';
     src: url(../fonts/SourceSansPro-It.otf) format('opentype');
-    font-style: normal;
-    font-weight: italic;
+    font-style: italic;
+    font-weight: normal;
 }
 @font-face{
-    font-family: 'Source Sans PRO normal';
+    font-family: 'Source Sans PRO';
     src: url(../fonts/SourceSansPro-Regular.otf) format('opentype');
     font-style: normal;
     font-weight: normal;
@@ -27,8 +27,7 @@
 .child--middle{
     margin-right: 10px;
     width: 30%;
-    font-family: 'Source Sans PRO regular';
-    font-weight: normal;
+    font-family: 'Source Sans PRO';
 }
 .child--middle{
     font-family: 'Source Sans PRO';
@@ -36,8 +35,8 @@
 }
 .child--last {
     width: 40%;
-    font-family: 'Source Sans PRO italic';
-    font-weight: italic;
+    font-family: 'Source Sans PRO';
+    font-style: italic;
 }
 
 /* inline-block */
@@ -57,15 +56,15 @@
     width: calc(30% - 20px/3);
 }
 .parent--float .child--last{
-    width: calc(40% - 20px/3);
+    width: calc(40% - 20px/3);  
 }
 
 /* flexbox */
 
 .parent--flexbox {
     display: flex;
-}
 
+}
 
 
 
