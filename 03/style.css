@@ -1,5 +1,5 @@
 .container {
-  width: 800;
+  width: 800px;
 }
 section {
   width: 560px;
@@ -18,13 +18,21 @@ section {
 .parent--inline-block .child--last {
   display: inline-block;
   width: 40%;
-  position: absolute;
+  /*position: absolute;*/
   vertical-align: top;
 }
+/*
 .parent--float {
   float: left;
   margin-left: 10px;
+}*/
+
+.parent--float::after {
+  content: "";
+  display: block;
+  clear: both;
 }
+
 .child--first,
 .child--middle {
   float: left;
@@ -53,29 +61,28 @@ section {
 /*Fonts*/
 @font-face {
   font-family: "SourceSans";
-  src: url("./Source_Sans_PRO/sourcesanspro-regular-webfont.woff") format(woff);
+  src: url("./Source_Sans_PRO/sourcesanspro-regular-webfont.woff")
+    format("woff");
   font-weight: normal;
-  font-style: normal;
 }
 @font-face {
   font-family: "SourceSans";
-  src: url("./Source_Sans_PRO/sourcesanspro-bold-webfont.woff") format(woff);
+  src: url("./Source_Sans_PRO/sourcesanspro-bold-webfont.woff") format("woff");
   font-weight: bold;
-  font-style: bold;
 }
 @font-face {
   font-family: "SourceSans";
-  src: url("./Source_Sans_PRO/sourcesanspro-it-webfont.woff") format(woff);
+  src: url("./Source_Sans_PRO/sourcesanspro-it-webfont.woff") format("woff");
   font-weight: lighter;
   font-style: italic;
 }
 .child--first {
   font-family: "SourceSans";
-  font-style: normal;
+  font-weight: normal;
 }
 .child--middle {
   font-family: "SourceSans";
-  font-style: bold;
+  font-weight: bold;
 }
 .child--last {
   font-family: "SourceSans";
