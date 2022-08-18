@@ -11,7 +11,7 @@ section {
 .parent--inline-block .child--first,
 .parent--inline-block .child--middle {
   display: inline-block;
-  width: 30%;
+  width: calc(30% - 10px);
   margin-left: 10px;
   vertical-align: top;
 }
@@ -33,12 +33,12 @@ section {
   clear: both;
 }
 
-.child--first,
-.child--middle {
+.parent--float .child--first,
+.parent--float .child--middle {
   float: left;
   width: 30%;
 }
-.child--last {
+.parent--float .child--last {
   float: left;
   width: 40%;
   position: relative;
@@ -47,8 +47,8 @@ section {
   display: flex;
   gap: 10px;
 }
-.child--first,
-.child--middle {
+.parent--flexbox .child--first,
+.parent--flexbox .child--middle {
   display: flex;
   flex-direction: row;
   width: 30%;
@@ -73,7 +73,7 @@ section {
 @font-face {
   font-family: "SourceSans";
   src: url("./Source_Sans_PRO/sourcesanspro-it-webfont.woff") format("woff");
-  font-weight: lighter;
+  font-weight: normal;
   font-style: italic;
 }
 .child--first {

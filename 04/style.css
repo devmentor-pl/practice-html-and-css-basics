@@ -47,6 +47,12 @@ a:hover {
 .dropdown_anchor_2 {
   position: relative;
 }
+.dropdown_anchor_1::after{
+  content:">";
+  transform: rotate(90deg);
+  display: inline-block;
+
+}
 .dropdown_anchor_1:hover .menu_dropdown_1,
 .dropdown_anchor_2:hover .menu_dropdown_2 {
   display: block;
