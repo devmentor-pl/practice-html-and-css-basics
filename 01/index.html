@@ -1,12 +1,211 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <meta
+        http-equiv="X-UA-Compatible"
+        content="ie=edge"
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+        rel="stylesheet"
+    >
+    <link
+        rel="stylesheet"
+        href="./css/style.css"
+    />
+
+    <script
+        src="https://kit.fontawesome.com/e6dada8901.js"
+        crossorigin="anonymous"
+    ></script>
+
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
 </head>
+
 <body>
-    
+    <header
+        class="nav"
+        id="nav"
+    >
+        <div class="nav__container container">
+            <ul
+                class="nav_menu"
+                id="menu"
+            >
+                <li class="nav__item"></i><a href="#">Books</a>
+                    <ul class="nav__links">
+                        <li class="nav__item"><a href="#">For Kids<span class="expand">»</span></a>
+                            <ul class="nav__links">
+                                <li><a href="#">Fantasy</a></li>
+                                <li><a href="#">Disney</a></li>
+                                <li><a href="#">Education</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">History</a></li>
+                        <li><a href="#">Learning</a></li>
+                        <li><a href="#">Crime & Thriller</a></li>
+                        <li><a href="#">Health</a></li>
+                        <li><a href="#">Romance</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav__item"><a href="#">Films</a>
+                    <ul class="nav__links">
+                        <li class="nav__item"><a href="#">Bestsellers<span class="expand">»</span></a>
+                            <ul class="nav__links">
+                                <li><a
+                                        href="#"
+                                        nowrap
+                                    >Kids</a></li>
+                                <li><a
+                                        href="#"
+                                        nowrap
+                                    >Adults</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Romance</a></li>
+                        <li><a href="#">Crime & Thriller</a></li>
+                        <li><a href="#">Science Fiction</a></li>
+                        <li><a href="#">Fantasy</a></li>
+                        <li><a href="#">Horrors</a></li>
+                    </ul>
+                </li>
+                <li class="nav__item"><a href="#">Music</a>
+                    <ul class="nav__links">
+                        <li><a href="#">POP</a></li>
+                        <li><a href="#">Rock</a>
+                        <li><a href="#">Classic</a></li>
+                        <li><a href="#">Alternative</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <img>
+    </header>
+
+    <main>
+
+        <article class="container article__container">
+            <h1>Best Book of All Time</h1>
+
+            <div>
+                <div class="article__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus nihil alias ut? Eos
+                    assumenda, mollitia iusto enim minima quo consectetur nesciunt alias, placeat itaque vero
+                    dignissimos doloribus maxime veniam tempora.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Necessitatibus nihil alias ut? Eos assumenda, mollitia iusto enim minima quo consectetur nesciunt
+                    alias, placeat itaque vero dignissimos doloribus maxime veniam tempora.Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Necessitatibus nihil alias ut?
+                    Eos assumenda, mollitia iusto enim minima quo consectetur nesciunt alias, placeat itaque vero
+                    dignissimos doloribus maxime veniam tempora.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Necessitatibus nihil alias ut? Eos assumenda, mollitia iusto enim minima quo consectetur nesciunt
+                    alias, placeat itaque vero dignissimos doloribus maxime veniam tempora.</div>
+                <time datetime="2021-12-20">November 11th, 2022</time>
+                <img>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name of Author</th>
+                            <th>Book ID</th>
+                            <th>Premiere</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Joanna Doe</td>
+                            <td>000272772</td>
+                            <td>January 2023</td>
+                        </tr>
+                        <tr>
+                            <td>Alex Moore</td>
+                            <td>052867729</td>
+                            <td>August 2023</td>
+                        </tr>
+                        <tr>
+                            <td>Maxine White</td>
+                            <td>067863369</td>
+                            <td>Soon</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </article>
+
+        <section class="container">
+            <div class="comment_form_container">
+                <form class="form__container">
+                    <form
+                        action="/form/submit"
+                        method="POST"
+                    >
+                        <textarea class="form__comment--textarea"> Type your comment here.</textarea>
+                        <br>
+                        <input
+                            type="submit"
+                            name="submit"
+                            value="Send"
+                        >
+                    </form>
+            </div>
+            <div class="comments__box">
+
+                <div class="comment">
+                    <div class="comment__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam vitae, alias maxime voluptatum
+                        iusto voluptate ex beatae cupiditate! Tempora odit pariatur corporis id delectus aspernatur
+                        aliquam eaque modi voluptates autem?
+                    </div>
+                    <p class="comment__author">
+                        John Doe
+                    </p>
+                    <p class="comment__date">2022-10-11</p>
+                    </p>
+                </div>
+
+                <div class="comment">
+                    <div class="comment__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam vitae, alias maxime voluptatum
+                        iusto voluptate ex beatae cupiditate! Tempora odit pariatur corporis id delectus aspernatur
+                        aliquam eaque modi voluptates autem?
+                    </div>
+                    <p class="comment__author">
+                        John Doe
+                    </p>
+                    <p class="comment__date">2022-10-11</p>
+                    </p>
+                </div>
+
+                <div class="comment">
+                    <div class="comment__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam vitae, alias maxime voluptatum
+                        iusto voluptate ex beatae cupiditate! Tempora odit pariatur corporis id delectus aspernatur
+                        aliquam eaque modi voluptates autem?
+                    </div>
+                    <p class="comment__author">
+                        John Doe
+                    </p>
+                    <p class="comment__date">2022-10-11</p>
+                    </p>
+                </div>
+
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem eum at accusamus eveniet sunt, molestiae adipisci ipsa totam repellendus, non ratione, natus sapiente quod. Sed odit enim labore quos molestias.</p>
+    </footer>
+
 </body>
+
 </html>
