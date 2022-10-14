@@ -1,7 +1,7 @@
 html, body {
     margin: 0;
     padding: 0;
-    font-family: Lato, sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
     color: #666;
 }
 
@@ -18,9 +18,10 @@ a {
 .nav {
     width: 100%;
     height: 3rem;
-    background-color: #203440;
+    background-color: rgba(0, 0, 0, 0.2);
     position: fixed;
     top: 0;
+    z-index: 100;
 }
 
 .nav_menu {
@@ -61,10 +62,8 @@ a {
 }
 
 .nav__links li {
-	background-color: #203440;
+  background-color: rgba(0, 0, 0, 0.815);
 	line-height: 2.5rem;
-	border-bottom: #CCC 1px solid;
-	border-right: #CCC 1px solid;
 	width: 100%;
 }
 
@@ -83,11 +82,11 @@ ul ul ul {
 }
 
 li:hover {
-	background-color: #2b4657;
+	background-color: #17262f;
 }
 
 .nav__item li:hover {
-	background-color: #2b4657;
+	background-color: #17262f;
 }
 
 .expand {
@@ -96,6 +95,43 @@ li:hover {
 	margin-right: 5px;
 }
 
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+  background-image: url(../img/hero.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+}
+
+.hero::before{
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:0;
+  z-index: 1;
+}
+
+
+.hero__info {
+  color: #fff;
+  text-align: center;
+  z-index: 2;
+}
+
+
+.hero__header {
+  font-size: 2rem;
+}
+/* END OF HERO */
 
 
 .article__container {
@@ -137,3 +173,29 @@ table {
     padding: 1rem;
     font-size: 0.75rem;
   }
+
+/* START BUTTON */
+
+.cta-button {
+    min-width: 200px;
+    background-color: #618356;
+    color: #fff;
+    border: none;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    transition: background-color 0.5s ease-in-out;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.cta-button:hover {
+    background-color: #557537;
+}
+
+.cta-button--big {
+    font-size: 1.75rem;
+    padding: 1rem;
+    min-width: 250px;
+}
+
+/* END OF BUTTON */
