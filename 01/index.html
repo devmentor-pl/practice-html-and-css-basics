@@ -11,6 +11,12 @@
         http-equiv="X-UA-Compatible"
         content="ie=edge"
     >
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous"
+    >
 
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap"
@@ -34,64 +40,68 @@
 </head>
 
 <body>
-    <header
-        class="nav"
-        id="nav"
-    >
-        <div class="nav__container container">
-            <ul
-                class="nav_menu"
-                id="menu"
-            >
-                <li class="nav__item"></i><a href="#">Books</a>
-                    <ul class="nav__links">
-                        <li class="nav__item"><a href="#">For Kids<span class="expand">»</span></a>
-                            <ul class="nav__links">
-                                <li><a href="#">Fantasy</a></li>
-                                <li><a href="#">Disney</a></li>
-                                <li><a href="#">Education</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">History</a></li>
-                        <li><a href="#">Learning</a></li>
-                        <li><a href="#">Crime & Thriller</a></li>
-                        <li><a href="#">Health</a></li>
-                        <li><a href="#">Romance</a></li>
-                    </ul>
-                </li>
+    <header class="header__contaier">
+        <header
+            class="nav"
+            id="nav"
+        >
+            <div class="nav__container">
+                <header class="header__logo">
+                    <img src="./img/logo.png">
+                </header>
+                <ul
+                    class="nav_menu"
+                    id="menu"
+                >
+                    <li class="nav__item"></i><a href="#">Books</a>
+                        <ul class="nav__links">
+                            <li class="nav__item"><a href="#">For Kids<span class="expand">»</span></a>
+                                <ul class="nav__links">
+                                    <li><a href="#">Fantasy</a></li>
+                                    <li><a href="#">Disney</a></li>
+                                    <li><a href="#">Education</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">History</a></li>
+                            <li><a href="#">Learning</a></li>
+                            <li><a href="#">Crime & Thriller</a></li>
+                            <li><a href="#">Health</a></li>
+                            <li><a href="#">Romance</a></li>
+                        </ul>
+                    </li>
 
-                <li class="nav__item"><a href="#">Films</a>
-                    <ul class="nav__links">
-                        <li class="nav__item"><a href="#">Bestsellers<span class="expand">»</span></a>
-                            <ul class="nav__links">
-                                <li><a
-                                        href="#"
-                                        nowrap
-                                    >Kids</a></li>
-                                <li><a
-                                        href="#"
-                                        nowrap
-                                    >Adults</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Romance</a></li>
-                        <li><a href="#">Crime & Thriller</a></li>
-                        <li><a href="#">Science Fiction</a></li>
-                        <li><a href="#">Fantasy</a></li>
-                        <li><a href="#">Horrors</a></li>
-                    </ul>
-                </li>
-                <li class="nav__item"><a href="#">Music</a>
-                    <ul class="nav__links">
-                        <li><a href="#">POP</a></li>
-                        <li><a href="#">Rock</a>
-                        <li><a href="#">Classic</a></li>
-                        <li><a href="#">Alternative</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-        <img>
+                    <li class="nav__item"><a href="#">Films</a>
+                        <ul class="nav__links">
+                            <li class="nav__item"><a href="#">Bestsellers<span class="expand">»</span></a>
+                                <ul class="nav__links">
+                                    <li><a
+                                            href="#"
+                                            nowrap
+                                        >Kids</a></li>
+                                    <li><a
+                                            href="#"
+                                            nowrap
+                                        >Adults</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Romance</a></li>
+                            <li><a href="#">Crime & Thriller</a></li>
+                            <li><a href="#">Science Fiction</a></li>
+                            <li><a href="#">Fantasy</a></li>
+                            <li><a href="#">Horrors</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item"><a href="#">Music</a>
+                        <ul class="nav__links">
+                            <li><a href="#">POP</a></li>
+                            <li><a href="#">Rock</a>
+                            <li><a href="#">Classic</a></li>
+                            <li><a href="#">Alternative</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </header>
     </header>
 
     <main>
@@ -109,80 +119,112 @@
             </div>
         </section>
 
-        <article class="container article__container">
-            <h1>Best Book of All Time</h1>
-
-            <div>
-                <div class="article__text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus nihil alias ut? Eos
-                    assumenda, mollitia iusto enim minima quo consectetur nesciunt alias, placeat itaque vero
-                    dignissimos doloribus maxime veniam tempora.Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Necessitatibus nihil alias ut? Eos assumenda, mollitia iusto enim minima quo consectetur nesciunt
-                    alias, placeat itaque vero dignissimos doloribus maxime veniam tempora.Lorem ipsum dolor sit amet
-                    consectetur adipisicing elit. Necessitatibus nihil alias ut?
-                    Eos assumenda, mollitia iusto enim minima quo consectetur nesciunt alias, placeat itaque vero
-                    dignissimos doloribus maxime veniam tempora.Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Necessitatibus nihil alias ut? Eos assumenda, mollitia iusto enim minima quo consectetur nesciunt
-                    alias, placeat itaque vero dignissimos doloribus maxime veniam tempora.</div>
+        <article class="article__container">
+            <div class="article__time">
                 <time datetime="2021-12-20">November 11th, 2022</time>
-                <img>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Name of Author</th>
-                            <th>Book ID</th>
-                            <th>Premiere</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Joanna Doe</td>
-                            <td>000272772</td>
-                            <td>January 2023</td>
-                        </tr>
-                        <tr>
-                            <td>Alex Moore</td>
-                            <td>052867729</td>
-                            <td>August 2023</td>
-                        </tr>
-                        <tr>
-                            <td>Maxine White</td>
-                            <td>067863369</td>
-                            <td>Soon</td>
-                        </tr>
-                    </tbody>
-                </table>
             </div>
+            <h1>Best Books for Kids of All Time</h1>
+
+            <div class="article__text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus nihil alias ut? Eos
+                    assumenda, mollitia iusto enim minima quo consectetur nesciunt alias, placeat itaque vero
+                    dignissimos doloribus maxime veniam tempora.Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit.
+                    Necessitatibus nihil alias ut? Eos assumenda, mollitia iusto enim minima quo consectetur
+                    nesciunt
+                    alias, placeat itaque vero dignissimos doloribus maxime veniam tempora.Lorem ipsum dolor sit
+                    amet
+                    consectetur adipisicing elit. Necessitatibus nihil alias ut?</p>
+                <p>Eos assumenda, mollitia iusto enim minima quo consectetur nesciunt alias, placeat itaque vero
+                    dignissimos doloribus maxime veniam tempora.Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit.
+                    Necessitatibus nihil alias ut? Eos assumenda, mollitia iusto enim minima quo consectetur
+                    nesciunt
+                    alias, placeat itaque vero dignissimos doloribus maxime veniam tempora.</p>
+            </div>
+            <div class="article__img">
+            </div>
+            </div>
+            <div class="article__author">
+                <p>Jack Black</p>
+            </div>
+            <div class="table__header">
+                <h3>Soon in our store!</h3>
+            </div>
+
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>Name of Author</th>
+                        <th>Book ID</th>
+                        <th>Premiere</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Joanna Doe</td>
+                        <td>000272772</td>
+                        <td>January 2023</td>
+                    </tr>
+                    <tr>
+                        <td>Alex Moore</td>
+                        <td>052867729</td>
+                        <td>August 2023</td>
+                    </tr>
+                    <tr>
+                        <td>Maxine White</td>
+                        <td>067863369</td>
+                        <td>Soon</td>
+                    </tr>
+                </tbody>
+            </table>
 
         </article>
 
-        <section class="container">
-            <div class="comment_form_container">
+        <section class="comment__container">
+            <div class="comment__form_container container">
                 <form class="form__container">
+                    <h3>Have you read book from our article? Type your comment below!</h3>
                     <form
                         action="/form/submit"
                         method="POST"
                     >
-                        <textarea class="form__comment--textarea"> Type your comment here.</textarea>
+                        <textarea
+                            placeholder=" Type your comment please :) "
+                            class="form__comment--textarea"
+                            cols="30"
+                            rows="5"
+                        ></textarea>
                         <br>
-                        <input
-                            type="submit"
-                            name="submit"
-                            value="Send"
-                        >
+                        <div>
+                            <button class="form__comment__submit cta-button">Send</button>
+                        </div>
                     </form>
             </div>
             <div class="comments__box">
 
+                <div class="comments-arrow ">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+
                 <div class="comment">
                     <div class="comment__text">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam vitae, alias maxime voluptatum
                         iusto voluptate ex beatae cupiditate! Tempora odit pariatur corporis id delectus aspernatur
                         aliquam eaque modi voluptates autem?
                     </div>
-                    <p class="comment__author">
-                        John Doe
-                    </p>
+                    <figure class="comment__figure">
+                        <img
+                            class="comment__avatar"
+                            src="./img/avatar01.jpg"
+                            alt="avatar"
+                        >
+                        <figcaption>
+                            <p class="comment__name">
+                                Larry Crawford
+                            </p>
+                        </figcaption>
+                    </figure>
                     <p class="comment__date">2022-10-11</p>
                     </p>
                 </div>
@@ -193,9 +235,18 @@
                         iusto voluptate ex beatae cupiditate! Tempora odit pariatur corporis id delectus aspernatur
                         aliquam eaque modi voluptates autem?
                     </div>
-                    <p class="comment__author">
-                        John Doe
-                    </p>
+                    <figure class="comment__figure">
+                        <img
+                            class="comment__avatar"
+                            src="./img/avatar02.jpg"
+                            alt="avatar"
+                        >
+                        <figcaption>
+                            <p class="comment__name">
+                                Camila Shelton
+                            </p>
+                        </figcaption>
+                    </figure>
                     <p class="comment__date">2022-10-11</p>
                     </p>
                 </div>
@@ -206,11 +257,24 @@
                         iusto voluptate ex beatae cupiditate! Tempora odit pariatur corporis id delectus aspernatur
                         aliquam eaque modi voluptates autem?
                     </div>
-                    <p class="comment__author">
-                        John Doe
-                    </p>
+                    <figure class="comment__figure">
+                        <img
+                            class="comment__avatar"
+                            src="./img/avatar03.jpg"
+                            alt="avatar"
+                        >
+                        <figcaption>
+                            <p class="comment__name">
+                                Nina Willis
+                            </p>
+                        </figcaption>
+                    </figure>
                     <p class="comment__date">2022-10-11</p>
                     </p>
+                </div>
+
+                <div class="comments-arrow">
+                    <i class="fas fa-chevron-right"></i>
                 </div>
 
 
@@ -220,8 +284,16 @@
     </main>
 
     <footer class="footer">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem eum at accusamus eveniet sunt, molestiae
-            adipisci ipsa totam repellendus, non ratione, natus sapiente quod. Sed odit enim labore quos molestias.</p>
+        <div
+            class="copyright"
+            id="copyright"
+        >
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem eum at accusamus eveniet sunt, molestiae
+                adipisci ipsa totam repellendus, non ratione, natus sapiente quod. Sed odit enim labore quos molestias.
+            </p>
+            <p>&copy; Copyright 2022 Beata B.
+            </p>
+        </div>
     </footer>
 
 </body>

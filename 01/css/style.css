@@ -1,6 +1,7 @@
 html, body {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Nunito Sans', sans-serif;
     color: #666;
 }
@@ -11,17 +12,40 @@ html, body {
 }
 
 a {
-    color: #b84207;
+    color: #522d37;
     text-decoration: none;
+}
+
+h1 {
+  font-size: 2.25rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h1, h2, h3 {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 100;
 }
 
 .nav {
     width: 100%;
-    height: 3rem;
-    background-color: rgba(0, 0, 0, 0.2);
+    height: 4.5rem;
     position: fixed;
     top: 0;
     z-index: 100;
+    background-color: #020209
+}
+
+.nav__container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .nav_menu {
@@ -62,9 +86,10 @@ a {
 }
 
 .nav__links li {
-  background-color: rgba(0, 0, 0, 0.815);
+  background-color: #020209;
 	line-height: 2.5rem;
 	width: 100%;
+  font-size: 1rem;
 }
 
 
@@ -82,11 +107,11 @@ ul ul ul {
 }
 
 li:hover {
-	background-color: #17262f;
+	background-color: #101014;
 }
 
 .nav__item li:hover {
-	background-color: #17262f;
+	background-color: #101014;
 }
 
 .expand {
@@ -98,11 +123,11 @@ li:hover {
 
 .hero {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   width: 100%;
-  height: 400px;
-  background-image: url(../img/hero.jpg);
+  height: 100vh;
+  background-image: url(../img/hero-2.jpg);
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -110,9 +135,13 @@ li:hover {
   z-index: 0;
 }
 
+.hero h1 {
+  margin: 0;
+}
+
 .hero::before{
   content: "";
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
   width: 100%;
   height: 100%;
   position: absolute;
@@ -125,22 +154,56 @@ li:hover {
   color: #fff;
   text-align: center;
   z-index: 2;
+  padding-left: 4.5rem;
+  flex-basis: 50%;
 }
 
 
 .hero__header {
-  font-size: 2rem;
+  font-size: 3rem;
+  font-family: 'Goudy Bookletter 1911', serif;
+  font-weight: 100;
 }
+
+.hero__subheader {
+  padding-bottom: 1rem;
+}
+
+
+.header__logo img {
+  width: 60%;
+  padding-left: 1rem;
+}
+
 /* END OF HERO */
 
 
 .article__container {
-    padding-top: 5rem;
+    padding-top: 3rem;
+    margin: 0 auto;
+    max-width: 1024px;
 }
 
 .article__text {
     padding: 1rem 0;
 }
+
+.article__time, .article__author {
+  padding: 1rem 0rem;
+}
+
+.article__author {
+  font-size: 1.25rem;
+}
+
+.article__img {
+  height: 300px;
+  background-image: url(/01/img/kids-books.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 
 table {
     border-collapse: collapse;
@@ -160,15 +223,54 @@ table {
 .form__comment--textarea {
     min-height: 150px;
     min-width: 50%;
+    border: 1px solid rgb(135, 135, 135);
+    outline: none;
   }
 
 
   .comments__box {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #576955;
+    color: #fff;
   }
 
+  .comment {
+    padding: 2em 1rem;
+  }
+
+  .comment__text {
+    display: flex;
+  }
+
+
+  .comments-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 10%;
+    font-size: 1.5rem;
+  }
+
+  .comment__avatar {
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    box-shadow: rgba(0, 0, 0, 0.9) 0px 5px 15px;
+  }
+
+  .comment__figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
   .footer {
-    background-color: #203440;
+    background-color: #010108;
     color: #fff;
     padding: 1rem;
     font-size: 0.75rem;
@@ -178,7 +280,8 @@ table {
 
 .cta-button {
     min-width: 200px;
-    background-color: #618356;
+    background-color: #3d4f3d;
+    border-radius: 30px;
     color: #fff;
     border: none;
     font-size: 1.5rem;
@@ -189,7 +292,7 @@ table {
 }
 
 .cta-button:hover {
-    background-color: #557537;
+    background-color: #576955;
 }
 
 .cta-button--big {
