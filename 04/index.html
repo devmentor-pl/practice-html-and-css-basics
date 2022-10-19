@@ -23,28 +23,41 @@
 </head>
 
 <body>
-    <header class="header__contaier">
-        <header
-            class="nav"
-            id="nav"
-        >
-            <div class="nav__container">
-                <li class="nav__item"></i><a href="#">HOME</a>
-                    <ul class="nav__links">
-                        <li class="nav__link"><a href="#">Item 1</a></li>
-                        <li class="nav__link"><a href="#">Item 2</a></li>
-                    </ul>
-                </li>
-                <ul class="nav__links--second-level">
-                    <li class="nav__link"><a href="#">Item 2.1</a></li>
-                    <li class="nav__link"><a href="#">Item 2.2</a></li>
-                </ul>
-                <li class="nav__item"></i><a href="#">ITEMS</a></li>
-                <li class="nav__item"></i><a href="#">SETTINGS</a></li>
-                <li class="nav__item"></i><a href="#">CONTACT</a></li>
+        <header>
+
+            <nav class="nav">
+                <ul class="nav__container">
+                    <li class="nav__item">
+                        <a href="#" class="nav__item">HOME
+                        </a>
+                    </li>
+                    <li class="nav__item nav__dropdown">
+                        <a href="#" class="nav__item">ITEMS</a>
+                        <ul class="dropdown">
+                            <li class="dropdown__item">
+                                <a href="#" class="dropdown__link--1">Item 1</a>
+                            </li>
+                            <li class="dropdown__item">
+                                <a href="#" class="dropdown__link--1">Item 2</a>
+
+                                <ul>
+                                    <li class="dropdown__item--lvl2">
+                                        <a href="#" class="dropdown__link--2">Item 2.1</a>
+                                    </li>
+                                    <li class="dropdown__item--lvl2">
+                                        <a href="#" class="dropdown__link--2">Item 2.2</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li class="nav__item">
+                        <a href="#" class="nav__item">SETTINGS</a>
+                        <a href="#" class="nav__item">CONTACT</a>
+                    </li>
+            </ul>
             </div>
         </header>
-    </header>
+
 </body>
 
 </html>
