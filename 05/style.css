@@ -56,3 +56,12 @@ body {
 .green--section .orange {
     width: 30%;
 }
+
+.green--footer .orange {
+    width: 150px;
+}
+
+.green--footer .blue {
+    display: flex;
+    justify-content: center;
+}
