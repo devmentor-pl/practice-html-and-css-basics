@@ -4,6 +4,8 @@ body {
 
 .green {
     border: 3px solid green;
+    margin: 10px;
+    padding: 5px;
 }
 
 .green--header .blue {
@@ -12,11 +14,15 @@ body {
     align-items: center;
 }
 
+.green--main .orange {
+    min-height: 200px;
+}
+
 .blue {
     border: 3px solid blue;
     max-width: 1000px;
     margin: 0 auto;
-    padding: 0.25rem;
+    padding: 5px 0;
 }
 
 .orange {
@@ -31,4 +37,22 @@ body {
 .orange--nav {
     width: 300px;
     height: 50px;
+}
+
+.green--main .blue {
+    display: flex;
+    justify-content: space-between;
+}
+
+.green--main .orange {
+    width: 45%;
+}
+
+.green--section .blue {
+    display: flex;
+    justify-content: space-around;
+}
+
+.green--section .orange {
+    width: 30%;
 }
