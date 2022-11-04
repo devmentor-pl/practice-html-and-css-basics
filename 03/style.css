@@ -1,0 +1,90 @@
+.container {
+  width: 800px;
+}
+section {
+  width: 560px;
+  padding: 20px;
+}
+.parent--inline-block {
+  display: inline-block;
+}
+.parent--inline-block .child--first,
+.parent--inline-block .child--middle {
+  display: inline-block;
+  width: calc(30% - 10px);
+  margin-left: 10px;
+  vertical-align: top;
+}
+.parent--inline-block .child--last {
+  display: inline-block;
+  width: 40%;
+  /*position: absolute;*/
+  vertical-align: top;
+}
+/*
+.parent--float {
+  float: left;
+  margin-left: 10px;
+}*/
+
+.parent--float::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.parent--float .child--first,
+.parent--float .child--middle {
+  float: left;
+  width: 30%;
+}
+.parent--float .child--last {
+  float: left;
+  width: 40%;
+  position: relative;
+}
+.parent--flexbox {
+  display: flex;
+  gap: 10px;
+}
+.parent--flexbox .child--first,
+.parent--flexbox .child--middle {
+  display: flex;
+  flex-direction: row;
+  width: 30%;
+}
+.child--last {
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+}
+/*Fonts*/
+@font-face {
+  font-family: "SourceSans";
+  src: url("./Source_Sans_PRO/sourcesanspro-regular-webfont.woff")
+    format("woff");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "SourceSans";
+  src: url("./Source_Sans_PRO/sourcesanspro-bold-webfont.woff") format("woff");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "SourceSans";
+  src: url("./Source_Sans_PRO/sourcesanspro-it-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+.child--first {
+  font-family: "SourceSans";
+  font-weight: normal;
+}
+.child--middle {
+  font-family: "SourceSans";
+  font-weight: bold;
+}
+.child--last {
+  font-family: "SourceSans";
+  font-style: italic;
+}

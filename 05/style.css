@@ -1,0 +1,40 @@
+.body {
+  background-color: rgb(189, 153, 110);
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+  align-content: space-around;
+  justify-content: space-between;
+}
+.main {
+  display: flex;
+  justify-content: space-between;
+  text-align: justify;
+  gap: 20px;
+}
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.box_1,
+.box_2,
+.box_3 {
+  width: 220px;
+  height: 120px;
+  padding: 10px, 10px;
+  text-align: justify;
+}
+.footer {
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
