@@ -45,7 +45,7 @@ body {
 }
 
 .child--last {
-	width: calc(40% - 10px);
+	width: 40%;
 	font-style: italic;
 }
 
