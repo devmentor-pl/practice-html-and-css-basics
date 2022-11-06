@@ -1,12 +1,100 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
 </head>
+
 <body>
-    
+    <header>
+        <div>
+            <a href="#"><img src="" alt="Logo firmy">Nazwa firmy</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">lorem</a></li>
+                <li><a href="#">lorem</a></li>
+                <li><a href="#">lorem</a>
+                    <ul>
+                        <li><a href="#">lorem</a></li>
+                        <li><a href="#">lorem</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">lorem</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h1>Lorem, ipsum dolor.</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus quibusdam voluptas eaque beatae libero
+                expedita similique facilis architecto nesciunt qui.</p>
+            <p>Data publikacji: 04.11.2022</p>
+            <p>Jan Kowalski</p>
+            <figure>
+                <img src="" alt="jakiś obrazek">
+                <figcaption>Lorem, ipsum dolor.</figcaption>
+            </figure>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Lorem, ipsum.</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lorem.</td>
+                        <td>Lorem.</td>
+                        <td>Lorem.</td>
+                    </tr>
+                    <tr>
+                        <td>Lorem.</td>
+                        <td>Lorem.</td>
+                        <td>Lorem.</td>
+                    </tr>
+                    <tr>
+                        <td>Lorem.</td>
+                        <td>Lorem.</td>
+                        <td>Lorem.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+        <section>
+            <h2>Komentarze</h2>
+            <div>
+                <form>
+                    <div>
+                        <label for="name">Imie i nazwisko komentującego:</label>
+                        <input type="text" id="name">
+                        <label for="msg">Komentarz:</label>
+                        <textarea id="msg" cols="30" rows="5"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div>
+                <p><span>Anna Kowalska</span> napisał/-a:</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>01-01-2022</p>
+            </div>
+            <div>
+                <p><span>Jan Kowalski</span> napisał/-a:</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>10-02-2022</p>
+            </div>
+            <div>
+                <p><span>Anna Kowalska</span> napisał/-a:</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>20-03-2022</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy 2022 Mateusz Matwiejczuk</p>
+    </footer>
 </body>
+
 </html>
