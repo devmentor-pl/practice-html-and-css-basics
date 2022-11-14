@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+    color: black;
+    list-style: none;
+}
+body {
+    width: 100vw;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+}
+.navigation {
+    position: fixed;
+    top: 2%;
+    width: 95%;
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+}
+.menu {
+    display: flex;
+}
+.menu__element:nth-child(2):hover .sub-menu {
+    display: block;
+}
+.menu__element:nth-child(2)::after {
+    display: inline-block;
+    content: ">";
+    transform: rotate(90deg);
+    margin-left: -10%;
+}
+.menu a {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    height: 100%;
+    padding: 20px;
+}
+.menu__element {
+    position: relative;
+    display: block;
+}
+.menu li {  
+    text-transform: uppercase;
+}
+.sub-menu {
+    position: absolute;
+    width: 220%;
+    background-color: #333333;
+    display: none;
+}
+.sub-menu li {
+    text-transform: lowercase;
+}
+.sub-menu:hover .sub-sub-menu {
+    display: block;
+}
+.sub-sub-menu {
+    position: absolute;
+    top: 55%;
+    left: 100%;
+    width: 100%;
+    background-color: #333333;
+    display: none;
+}
+.sub-menu a {
+    color: white;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
+.sub-menu__element:last-child > a::after {
+    margin-left: 70%;
+    display: inline-block;
+    content: ">";
+    color: white;
+}
+/* .menu > a:hover,
+.menu > a:focus,
+.menu > a:hover {
+    color: #009ae1;
+    border-top: 2px solid #009ae1;
+} */
+.menu__element > a:focus,
+.menu__element > a:hover
+{
+    color: #009ae1;
+    border-top: 2px solid #009ae1;
+}
