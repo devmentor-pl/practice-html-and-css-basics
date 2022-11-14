@@ -24,7 +24,7 @@ header,
     align-items: center;
     margin: 10px 0;
 }
-footer {
+.footer {
     min-height: 100px;
 }
 .footer__wrapper {
