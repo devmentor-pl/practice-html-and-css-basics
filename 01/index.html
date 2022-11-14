@@ -9,11 +9,14 @@
 <body>
     <header>
         <div class="logo">logo</div>
-        <ul class="menu">
-            <li class="menu__element">O mnie</li>
-            <li class="menu__element">Oferta</li>
-            <li class="menu__element">Kontakt</li>
-        </ul>
+        <nav class="navigation">
+            <ul class="menu">
+                <li class="menu__element">O mnie</li>
+                <li class="menu__element">Oferta</li>
+                <li class="menu__element">Kontakt</li>
+            </ul>
+        </nav>
+
     </header>
 
     <main>
@@ -22,34 +25,42 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio voluptatibus reprehenderit temporibus nesciunt eos enim tempore! Tempora quis, fugit libero eligendi laborum necessitatibus, laboriosam pariatur ullam porro dolore deserunt. Aspernatur?</p>
             <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com">
             <table>
-                <tr>
-                   <td>1</td> <td>2</td> <td>3</td>
-                </tr>
-                <tr>
-                   <td>4</td> <td>5</td> <td>6</td>
-                </tr>
-                <tr>
-                   <td>7</td> <td>8</td> <td>9</td>
-                </tr>
-             </table>
+                <table>
+                    <thead>
+                      <tr>
+                        <th>category 1</th>
+                        <th>category 2</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>item</td>
+                        <td>item</td>
+                      </tr>
+                      <tr>
+                        <td>item</td>
+                        <td>item</td>
+                      </tr>
+                    </tbody>
+                </table>
             <time datetime="2022-11-09 23:10">09 listopada 2022, godz. 23.10</time>
         </article><br>
 
-        <span class="Comments">
+        <article class="Comments">
             <i>Komentarz `</i><br>
             <time datetime="2022-11-09 23:10">09 listopada 2022, godz. 23.10</time>
-            <p>Jan Kowalski</p>
-        </span><br>
-        <span class="Comments">
+            <link rel="author">Miłosz Szmulewicz</li>
+        </article><br>
+        <article class="Comments">
             <i>Komentarz 2</i><br>
             <time datetime="2022-11-09 23:10">09 listopada 2022, godz. 23.10</time>
-            <p>Adam Nowak</p>
-        </span><br>
-        <span class="Comments">
+            <link rel="author">Miłosz Szmulewicz</li>
+        </article><br>
+        <article class="Comments">
             <i>Komentarz 3</i><br>
             <time datetime="2022-11-09 23:10">09 listopada 2022, godz. 23.10</time>
-            <p>Jan Kowalski</p>
-        </span><br>
+            <link rel="author">Miłosz Szmulewicz</li>
+        </article><br>
 
         <form action="" class="comment-form">
             <textarea name="" id="" cols="30" rows="10">Zostaw komentarz...</textarea><br>
