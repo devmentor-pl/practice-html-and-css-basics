@@ -1,0 +1,99 @@
+:root {
+    --main-color: hsl(199, 79%, 67%);
+    --background-light: hsl(0, 0%, 100%);
+    --background-dark: hsl(0, 0%, 30%);
+}
+
+body {
+    background-color: hsl(0, 0%, 96%);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 14px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.navigation {
+    background-color: var(--background-light);
+}
+
+.navigation__list {
+    column-gap: 10px;
+    display: flex;
+}
+
+.navigation__item {
+    padding: 10px 20px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.navigation__item--main {
+    color: var(--main-color);
+}
+
+.navigation__item--sub {
+    color: var(--background-light);
+    font-weight: 200;
+    text-transform: none;
+}
+
+.navigation__item--expandable {
+    position: relative;
+}
+
+.navigation__list--sub {
+    background-color: var(--background-dark);
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 36px;
+    width: 115px;
+}
+
+.navigation__item--expandable:hover > .navigation__list--sub {
+    display: flex;
+}
+
+.navigation__item--sub.navigation__item--expandable > .navigation__list--sub {
+    right: -115px;
+    top: 5px;
+}
+
+.navigation__item--expandable:after {
+    bottom: 50%;
+    content: ">";
+    display: block;
+    font-size: 0.5rem;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 5px;
+    transform: translateY(50%);
+}
+
+.navigation__item--expandable:hover:after {
+    bottom: 50%;
+    rotate: 90deg;
+    transform-origin: 2px 10px;
+}
+
+.navigation__list > .navigation__item:hover:before {
+    background-color: var(--main-color);
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    right: 0px;
+    top: 0;
+}
+
+.navigation__list--sub .navigation__item:before {
+    display: none;
+}
+
+.navigation__list--sub .navigation__item--expandable:hover:after {
+    rotate: 0deg;
+}

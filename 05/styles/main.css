@@ -1,0 +1,32 @@
+.section {
+    column-gap: 10px;
+    display: flex;
+}
+
+.section__item {
+    flex-basis: 50%;
+}
+
+.section__item figcaption {
+    text-align: center;
+}
+
+.section__review {
+    flex-basis: 33%;
+    padding: 10px;
+}
+
+.section__review {
+    border-radius: 10px;
+    text-align: center;
+}
+
+.section__avatar {
+    margin: 0 auto 10px;
+    max-width: 100px;
+}
+
+.section__avatar img {
+    border-radius: 50%;
+    outline: 3px solid hsl(36, 100%, 90%);
+}

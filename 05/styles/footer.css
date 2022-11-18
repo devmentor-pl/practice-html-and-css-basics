@@ -1,0 +1,9 @@
+footer {
+    text-align: center;
+}
+
+footer .wrapper {
+    display: grid;
+    min-height: 100px;
+    place-content: center;
+}

@@ -1,12 +1,116 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>devmentor.pl - HTML & CSS BASICS - #01</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>devmentor.pl - HTML & CSS BASICS - #01</title>
+    </head>
+
+    <body>
+        <header>
+            <a href="/">
+                <picture>
+                    <source srcset="./assets/images/logo.webp" />
+                    <img src="./assets/images/logo.png" alt="logo" />
+                </picture>
+            </a>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="/about">O nas</a>
+                        <ul>
+                            <li>
+                                <a href="/projects">Projekty</a>
+                            </li>
+                            <li>
+                                <a href="/company">Firma</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./contact-us">Kontakt</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <article>
+                <header>
+                    <h2>Title</h2>
+                </header>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Quos eum, architecto tempora ad veritatis dolores vel
+                    exercitationem rem! Inventore, totam. Vitae voluptas
+                    voluptatum similique perspiciatis est molestias commodi
+                    quaerat illo, facere in quam exercitationem, atque omnis!
+                    Ipsa impedit veritatis inventore nemo illum necessitatibus,
+                    omnis aliquam, maxime quisquam deserunt itaque ex.
+                </p>
+                <time pubdate datetime="2022-11-14" title="14 listopada 2022"
+                    >8/28/22</time
+                >
+                <address rel="author">Autor</address>
+                <figure>
+                    <img src="./assets/images/image.jpg" alt="ilustracja" />
+                    <figcaption>
+                        Zdjęcie dodane przez Pixabay:
+                        https://www.pexels.com/pl-pl/zdjecie/szare-kosci-do-nauki-na-stole-301920/
+                    </figcaption>
+                </figure>
+                <table>
+                    <caption>
+                        Tabela
+                    </caption>
+                    <colgroup>
+                        <col style="background: cadetblue" />
+                        <col style="background: red" />
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">Nazwa</th>
+                            <th scope="col">Ocena</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Artykuł 1</td>
+                            <td>2</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+            <form action="">
+                <label for="comment">
+                    Komentarz
+                    <textarea
+                        rows="5"
+                        cols="40"
+                        id="comment"
+                        name="comment"
+                    ></textarea>
+                </label>
+                <input type="submit" value="Wyślij komentarz!" />
+            </form>
+            <section>
+                <article>
+                    <p>Treść komentarza 1: Lorem ipsum dolor sit amet.</p>
+                    <address rel="author">Autor</address>
+                    <time pubdate datetime="2022-11-16">11/16/2022</time>
+                </article>
+                <article>
+                    <p>Treść komentarza 2: Lorem ipsum dolor sit amet.</p>
+                    <address rel="author">Autor</address>
+                    <time pubdate datetime="2022-11-16">11/16/2022</time>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <p>Copyright &#169; Devmentor & Mateusz Sowa | 2022</p>
+        </footer>
+    </body>
 </html>
