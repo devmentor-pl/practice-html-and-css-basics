@@ -15,7 +15,12 @@
             <nav class="header__nav">
                 <ul class="nav__list">
                     <li class="nav__item"><a href="#" class="nav__link"></a></li>
-                    <li class="nav__item"><a href="#" class="nav__link"></a></li>
+                    <li class="nav__item"><a href="#" class="nav__link"></a>
+                        <ul class="nav__dropdown">
+                            <li class="dropdown__item"></li>
+                            <li class="dropdown__item"></li>
+                        </ul>
+                    </li>
                     <li class="nav__item"><a href="#" class="nav__link"></a></li>
                     <li class="nav__item"><a href="#" class="nav__link"></a></li>
                 </ul>
@@ -24,38 +29,81 @@
     </header>
 
     <main class="content">
-        <div class="content__container"></div>
-        <article class="content__article">
-            <h1 class="article__title"></h1>
-            <p class="article__content"></p>
-            <time class="article__date"></time>
-            <address class="article__author"></address>
-            <figure class="article__illustration"></figure>
-            <table class="article__table">
-                <caption class="table__caption"></caption>
-                <thead class="table__header">
-                    <tr class="table__thead-row">
-                        <th class="thead-row__title"></th>
-                        <th class="thead-row__title"></th>
-                    </tr>
-                </thead>
-                <tbody class="table__body">
-                    <tr class="table__body-row">
-                        <td class="table__col"></td>
-                        <td class="table__col"></td>
-                    </tr>
-                    <tr class="table__tbody-row">
-                        <td class="table__col"></td>
-                        <td class="table__col"></td>
-                    </tr>
-                    <tr class="table__tbody-row">
-                        <td class="table__col"></td>
-                        <td class="table__col"></td>
-                    </tr>
-                </tbody>
-            </table>
-        </article>
+        <div class="content__container">
+            <article class="content__article">
+                <h1 class="article__title"></h1>
+                <p class="article__content"></p>
+                <time class="article__date"></time>
+                <address class="article__author"></address>
+                <figure class="article__illustration"></figure>
+                <table class="article__table">
+                    <caption class="table__caption"></caption>
+                    <thead class="table__header">
+                        <tr class="table__thead-row">
+                            <th class="thead-row__title"></th>
+                            <th class="thead-row__title"></th>
+                        </tr>
+                    </thead>
+                    <tbody class="table__body">
+                        <tr class="table__body-row">
+                            <td class="table__col"></td>
+                            <td class="table__col"></td>
+                        </tr>
+                        <tr class="table__tbody-row">
+                            <td class="table__col"></td>
+                            <td class="table__col"></td>
+                        </tr>
+                        <tr class="table__tbody-row">
+                            <td class="table__col"></td>
+                            <td class="table__col"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+            <div class="content__comment-form-container">
+                <form action="" class="content__comment-form">
+                    <div>
+                        <label for="name">Twoje imię:
+                            <input type="text" name="name" class="comment-form__input" required>
+                        </label>
+
+                    </div>
+                    <div>
+                        <label for="comment">Treść komentarza:
+                            <textarea name="comment" id="" cols="30" rows="10"></textarea>
+                        </label>
+                    </div>
+                    <div>
+                        <input type="submit" value="Wyślij">
+                    </div>
+                </form>
+            </div>
+            <div class="content__comments-container">
+                <div class="comment">
+                    <p class="comment__content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda
+                        tempora nostrum quod incidunt deleniti, maxime eligendi, sequi culpa dolor omnis deserunt
+                        officia quia facilis commodi modi repellendus fugit impedit esse!</p>
+                    <address class="comment__author">John Doe</address>
+                    <time class="comment__date">07.12.2022 15:30</time>
+                </div>
+                <div class="comment">
+                    <p class="comment__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, maxime.
+                    </p>
+                    <address class="comment__author">John Doe</address>
+                    <time class="comment__date">07.12.2022 15:30</time>
+                </div>
+                <div class="comment">
+                    <p class="comment__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+                        excepturi cupiditate autem quod exercitationem fuga facere sed numquam. Nisi deleniti sed
+                        eligendi dolor saepe quo neque vitae quod. Temporibus modi laboriosam, provident pariatur
+                        corporis reiciendis est eaque sit id fuga.</p>
+                    <address class="comment__author">John Doe</address>
+                    <time class="comment__date">07.12.2022 15:30</time>
+                </div>
+            </div>
+        </div>
     </main>
+
 </body>
 
 </html>
