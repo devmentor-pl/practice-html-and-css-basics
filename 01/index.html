@@ -1,12 +1,121 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <meta
+        http-equiv="X-UA-Compatible"
+        content="ie=edge"
+    >
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
 </head>
+
 <body>
-    
+    <header class="header">
+        <div class="header__container">
+            <div class="header__icon__container">
+                <i
+                    class="header__icon"
+                    </i
+                >
+                    <nav class="header__nav">
+                        <ul class="header__nav__list">
+                            <li class="header__nav__item">home</li>
+                            <li class="header__nav__item">gallery</li>
+                            <li class="header__nav__item">contact</li>
+                        </ul>
+                    </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <article class="article">
+            <h1 class="article__title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+
+            <p class="article__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa asperiores
+                cupiditate adipisci amet sed eum reprehenderit quaerat minus ipsam a ipsa dicta eligendi doloremque,
+                rerum vitae deleniti placeat voluptatibus nam!
+                Commodi similique expedita ad et fugit, aliquam temporibus necessitatibus nostrum! Harum quasi
+                necessitatibus non quam officiis praesentium eveniet ullam aspernatur possimus, dolore voluptatem
+                quibusdam eaque veniam laboriosam, molestias dolorum autem?
+                Velit, quae quod! Sit consequuntur id modi? Numquam dolor praesentium iure ipsum! Recusandae voluptatem
+                minima cupiditate atque facilis omnis, libero odit architecto quisquam obcaecati fugit doloribus esse
+                beatae eius laudantium?</p>
+
+            <time>
+                2022-12-7 12:00"
+            </time>
+
+            <h4 class="article__author">D.Rasińska-Kowalczyk</h4>
+            <div class="article__img__box">
+
+                <img
+                    src="#"
+                    class="article__img"
+                    alt="img"
+                />
+            </div>
+
+            <table class="table">
+                <caption class="table__title">Lorem, ipsum dolor.</caption>
+                <thead>
+                    <tr>
+                        <th>Lorem</th>
+                        <th>Ipsum</th>
+                        <th>Dolor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>lorem</td>
+                        <td>lorem</td>
+                    </tr>
+                    <tr>
+                        <td>lorem</td>
+                        <td>lorem</td>
+                    </tr>
+                    <tr>
+                        <td>lorem</td>
+                        <td>lorem</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+    </main>
+
+    <form class="form">
+        <div class="form__comment-area">
+            <label for="comment">Leave your comment
+                <textarea
+                    name="comment"
+                    id="comment"
+                    cols="30"
+                    rows="10"
+                    placeholder="what do you think"
+                ></textarea>
+            </label>
+        </div>
+        <div class="form__name">
+            <label for="name">Your name
+                <input
+                    type="text"
+                    placeholder="Your name"
+                />
+            </label>
+        </div>
+        <div class="form__submit">
+            <input
+                type="submit"
+                value="submit"
+            />
+        </div>
+    </form>
+
 </body>
+
 </html>
