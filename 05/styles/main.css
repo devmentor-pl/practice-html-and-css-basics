@@ -1,0 +1,25 @@
+.section__container {
+    display: flex;
+}
+
+.section__container.section--first {
+    gap: 2em;
+    justify-content: space-between;
+}
+
+.section__container.section--second {
+    justify-content: space-evenly;
+}
+
+.section__article {
+    background-color: orange;
+    min-height: 200px;
+}
+
+.section--first .section__article {
+    flex-basis: 50%;
+}
+
+.section--second .section__article {
+    flex-basis: 25%;
+}

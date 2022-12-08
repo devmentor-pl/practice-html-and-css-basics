@@ -1,0 +1,11 @@
+.footer__container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 100px;
+}
+
+.footer__content {
+    background-color: orange;
+    width: 200px;
+}

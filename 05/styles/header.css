@@ -1,0 +1,14 @@
+.header__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo {
+    background-color: orange;
+    width: 20%;
+}
+
+.header__nav {
+    background-color: orange;
+    width: 40%;
+}
