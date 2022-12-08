@@ -14,21 +14,41 @@
     <title>devmentor.pl - HTML & CSS BASICS - #03</title>
     <link
         rel="stylesheet"
-        href="./style/reset.css"
+        href="./styles/reset.css"
     >
     <link
         rel="stylesheet"
-        href="./style/style.css"
+        href="./styles/style.css"
     >
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li>HOME</li>
-            <li>ITEMS</li>
-            <li>SETTINGS</li>
-            <li>CONTACT</li>
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__item ">
+                <a
+                    class="nav__item--home"
+                    href="#"
+                >HOME</a>
+            </li>
+            <li class="nav__item nav__item__dropdown">
+                <a href="#">ITEMS</a>
+                <ul class="nav__list--down">
+                    <li class="nav__item--down">Item 1</li>
+                    <li class="nav__item--down down">Item 2
+                        <ul class="nav__list--down down">
+                            <li class="nav__item--down">Item 2.1</li>
+                            <li class="nav__item--down">Item 2.2</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav__item">
+                <a href="#">SETTINGS</a>
+            </li>
+            <li class="nav__item">
+                <a href="#">CONTACT</a>
+            </li>
         </ul>
     </nav>
 
