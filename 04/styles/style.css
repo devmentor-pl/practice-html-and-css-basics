@@ -38,7 +38,7 @@ a {
     content: ">";
     rotate: 90deg;
     position: absolute;
-    display: inline-block;
+    visibility: hidden;
     font-size: 0.8rem;
     right: -8px;
     transform: translateY(50%);
@@ -46,6 +46,7 @@ a {
 
 .nav__item__dropdown:hover::after {
     color:rgba(99, 191, 244);
+    visibility: visible;
 }
 
 .nav__item__dropdown::before {
