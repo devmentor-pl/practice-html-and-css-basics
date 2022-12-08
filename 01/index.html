@@ -32,7 +32,7 @@
       <article>
         <h1>Tytuł artykułu</h1>
         <p>Autor: Ariadna</p>
-        <p>Data: 06-12-2022</p>
+        <time>2022-12-08</time>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque
           architecto quia ea reiciendis rerum labore voluptatibus impedit
@@ -64,56 +64,57 @@
             </tr>
           </tbody>
         </table>
+
+        <form method="post">
+          <div>
+            <label>
+              Komentarz:
+              <textarea
+                name="comment"
+                id=""
+                cols="30"
+                rows="5"
+                placeholder="wpisz swój komentarz"
+              ></textarea>
+            </label>
+            <label>
+              Autor:
+              <input type="text" placeholder="wpisz swoje imię" />
+            </label>
+            <label>
+              Data:
+              <input type="date" placeholder="wpisz datę data" />
+            </label>
+          </div>
+          <div>
+            <input type="submit" />
+          </div>
+        </form>
+        <ul class="comments">
+          <li class="comment">
+            <p class="comment__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+              odit quia sit eveniet. Magnam, suscipit necessitatibus natus
+              minima alias inventore! Veniam quas molestiae temporibus dolor vel
+              suscipit sint repellendus qui! Fugit aspernatur cum a aut corporis
+              obcaecati nesciunt libero recusandae deserunt ducimus nihil ex,
+            </p>
+            <p class="comment__author">Jan Kowalski</p>
+            <time class="comment__date">06-12-2022</time>
+          </li>
+          <li>
+            <p class="comment__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+              odit quia sit eveniet. Magnam, suscipit necessitatibus natus
+              minima alias inventore! Veniam quas molestiae temporibus dolor vel
+              suscipit sint repellendus qui! Fugit aspernatur cum a aut corporis
+              obcaecati nesciunt libero recusandae deserunt ducimus nihil ex,
+            </p>
+            <p class="comment__author">Kazimierz Nowak</p>
+            <time class="comment__date">06-12-2022</time>
+          </li>
+        </ul>
       </article>
-      <form method="post">
-        <div>
-          <label>
-            Komentarz:
-            <textarea
-              name="comment"
-              id=""
-              cols="30"
-              rows="5"
-              placeholder="wpisz swój komentarz"
-            ></textarea>
-          </label>
-          <label>
-            Autor:
-            <input type="text" placeholder="wpisz swoje imię" />
-          </label>
-          <label>
-            Data:
-            <input type="date" placeholder="wpisz datę data" />
-          </label>
-        </div>
-        <div>
-          <input type="submit" />
-        </div>
-      </form>
-      <section class="comments">
-        <div class="comment">
-          <p class="comment__text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-            odit quia sit eveniet. Magnam, suscipit necessitatibus natus minima
-            alias inventore! Veniam quas molestiae temporibus dolor vel suscipit
-            sint repellendus qui! Fugit aspernatur cum a aut corporis obcaecati
-            nesciunt libero recusandae deserunt ducimus nihil ex,
-          </p>
-          <p class="comment__author">Jan Kowalski</p>
-          <p class="comment__date">06-12-2022</p>
-        </div>
-        <div class="comment">
-          <p class="comment__text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-            odit quia sit eveniet. Magnam, suscipit necessitatibus natus minima
-            alias inventore! Veniam quas molestiae temporibus dolor vel suscipit
-            sint repellendus qui! Fugit aspernatur cum a aut corporis obcaecati
-            nesciunt libero recusandae deserunt ducimus nihil ex,
-          </p>
-          <p class="comment__author">Kazimierz Nowak</p>
-          <p class="comment__date">06-12-2022</p>
-        </div>
-      </section>
     </main>
     <footer>
       <p>Wszelkie prawa zastrzeżone &copy;2022</p>
