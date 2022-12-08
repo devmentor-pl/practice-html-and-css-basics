@@ -56,6 +56,10 @@ body {
     width: 100%;
 }
 
+.nav__link.active {
+    color: var(--activeMenuItem);
+}
+
 .nav__link:focus-within, .nav__link:hover{
     color: var(--activeMenuItem);
     box-shadow: inset 0 5px 0 0 var(--activeMenuItem);
