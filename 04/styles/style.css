@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* colors */
+    --background: #F5F5F5;
+    --fontDark: #000;
+    --fontLight: #FFF;
+    --menuBackground: #FFF;
+    --activeMenuItem: #009AE1;
+    --dropdownBackground: #333;
+}
+
