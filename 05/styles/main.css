@@ -2,12 +2,12 @@
     display: flex;
 }
 
-.section__container.section--first {
+.section__container--first {
     gap: 2em;
     justify-content: space-between;
 }
 
-.section__container.section--second {
+.section__container--second {
     justify-content: space-evenly;
 }
 
@@ -16,10 +16,10 @@
     min-height: 200px;
 }
 
-.section--first .section__article {
+.section__container--first .section__article {
     flex-basis: 50%;
 }
 
-.section--second .section__article {
+.section__container--second .section__article {
     flex-basis: 25%;
 }
