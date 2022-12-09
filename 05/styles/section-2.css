@@ -1,0 +1,9 @@
+.content__container--second {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.content__column--second {
+	width: 30%;
+	min-height: 150px;
+}
