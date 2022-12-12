@@ -63,7 +63,7 @@ a {
 
 .nav__list--down {
 	position: absolute;
-	top: 62px;
+	top: 100%;
 	background-color: black;
 	color: rgba(246, 246, 246);
 	font-size: 14px;
