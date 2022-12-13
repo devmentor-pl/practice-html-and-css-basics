@@ -12,3 +12,29 @@
     background-color: orange;
     width: 40%;
 }
+
+/* Media querries */
+@media (max-width: 800px) {
+    
+    .header__container {
+        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+        ". logo nav";
+        justify-items: center;
+    }
+    
+    .header__logo {
+        background-color: orange;
+        grid-area: logo;
+        width: 100%;
+    }
+    
+    .header__nav {
+        background-color: orange;
+        grid-area: nav;
+        justify-self: end;
+        width: 40%;
+    }
+}

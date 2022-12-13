@@ -13,7 +13,7 @@
 
 .section__article {
     background-color: orange;
-    min-height: 200px;
+    min-height: 150px;
 }
 
 .section__container--first .section__article {
@@ -23,3 +23,13 @@
 .section__container--second .section__article {
     flex-basis: 25%;
 }
+
+/* Media querries */
+@media (max-width: 800px) {
+
+.section__container {
+    flex-direction: column;
+ gap: 2em;   
+}
+}
+
