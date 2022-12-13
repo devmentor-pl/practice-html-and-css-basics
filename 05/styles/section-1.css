@@ -1,0 +1,9 @@
+.content__container--first {
+	display: flex;
+	justify-content: space-between;
+}
+
+.content__column--first {
+	width: 48%;
+	min-height: 150px;
+}
