@@ -10,76 +10,101 @@
 </head>
 <body>
 <header>
-    <div>
+    <figure>
         <a href="./index.html"><img src="" alt="Web's logo" /></a>
-    </div>
+    </figure>
 
-    <div id="nav">
+    <nav>
         <ul>
-            <a href=""><li>O Nas</li></a>
-            <a href=""><li>Articles</li></a>
-            <a href=""><li>Oferta</li></a>
-            <a href=""><li>Kontakt</li></a>
-        </ul>
-    </div>
+            <a href="">
+                <li>O Nas</li>
+            </a>
+            <a href="">
+                <li>Articles</li>
+            </a>
+            <a href="">
+                <li>Oferta</li>
+            </a>
+            <a href="">
+                <li>Kontakt</li>
+            </a>
+            </ul>
+    </nav>
 </header>
 
 <main>
-    <div>
-        <article>
+    <article>
+        <header>
             <h2>Tytuł artykułu</h2>
-            <h4>05/03/2022 | Rafał Kochanecki</h4>
+            <time>
+                <h4>05/03/2022</h4>
+            </time>
+            <h4>Rafał Kochanecki</h4>
+            </header>
+            
+            <figure>
             <img src="" alt="Img article">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero veritatis
+        </figure>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero veritatis
             iste cupiditate aut rem in. Corporis illum, corrupti quaerat repellat dolores
             eligendi, enim repellendus dicta ratione rem neque voluptatum vitae!</p>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero veritatis
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero veritatis
             iste cupiditate aut rem in. Corporis illum, corrupti quaerat repellat dolores
             eligendi, enim repellendus dicta ratione rem neque voluptatum vitae!</p>
-        </article>
-    </div>
-
-    <div>
+        
         <table>
             <thead>
                 <tr>
-                    <th>#1</th>
-                    <th>#2</th>
-                    <th>#3</th>
+                    <th scope="col">#1</th>
+                    <th scope="col">#2</th>
+                    <th scope="col">#3</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
+                    <td scope="row">1</td>
+                    <td scope="row">2</td>
+                    <td scope="row">3</td>
                 </tr>
             </tbody>
         </table>
-    </div>
+    </article>
 
-    <div>
+    <section>
         <form action="">
             <div>
-                <input type="text" placeholder="Email adress" />
-                <input type="text" placeholder="Full name" />
+                <div>
+                    <label for="email">Podaj adres email:</label>
+                    <input type="text" id='email' placeholder="Email adress" />
+                </div>
+                <div>
+                    <label for="name">Podaj imię i nazwisko:</label>
+                    <input type="text" id='name' placeholder="Full name" />
+                    </div>
             </div>
             <div>
-                <textarea name="" id="" cols="46" rows="10" placeholder="Dodaj komentarz..."></textarea>
-            </div>
-            <div>
-                <button>Wyślij</button>
-            </div>
+                <label for="comment">Dodaj komentarz:</label>
+                <textarea name="" id="comment" cols="46" rows="10" placeholder="Dodaj komentarz..."></textarea>
+                </div>
+            <button type="submit">Wyślij</button>
         </form>
-    </div>
+    </section>
+    
+    <article>
+        <header>
+            <h2>Tytuł artykułu</h2>
+            <time>
+                <h4>05/03/2022</h4>
+            </time>
+            <h4>Rafał Kochanecki</h4>
+        </header>
 
-    <div>
-        <h6>05/03/2022 | Rafał Kochanecki</h6>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, delectus?
         Illum natus neque, ad libero odit id a, veritatis magnam voluptates labore vel
         voluptatibus quaerat doloremque alias, dolorem saepe hic!</p>
-    </div>
+    </article>
 </main>
 
 <footer>

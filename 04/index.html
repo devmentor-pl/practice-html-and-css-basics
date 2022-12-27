@@ -8,27 +8,28 @@
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <ul class="nav">
+<nav class="nav">
+    <ul class="nav__list">
         <li class="nav__item">
             <a href="" class="nav__link">HOME</a>
         </li>
-        <li class="nav__item">
+        <li class="nav__item nav__drop">
             <a href="" class="nav__link">ITEMS</a>
-            <p>></p>
-            <ul class="nav__drop">
-                <li class="nav__drop__item">
-                    <a href="" class="nav__drop__link">Item 1</a>
-                    <p>></p>
+            <span>></span>
+            <ul class="drop__list">
+                <li class="drop__item">
+                    <a href="" class="drop__link">Item 1</a>
+                    <span>></span>
                 </li>
-                <li class="nav__drop__item">
-                    <a href="" class="nav__drop__link">Item 2</a>
-                    <p>></p>
-                    <ul class="nav__drop__drop">
-                        <li class="nav__drop__drop__item">
-                            <a href="" class="nav__drop__link">Item 2.1</a>
+                <li class="drop__item drop__drop">
+                    <a href="" class="drop__link">Item 2</a>
+                    <span>></span>
+                    <ul class="drop__drop__list">
+                        <li class="drop__drop__item">
+                            <a href="" class="drop__drop__link">Item 2.1</a>
                         </li>
-                        <li class="nav__drop__drop__item">
-                            <a href="" class="nav__drop__link">Item 2.2</a>
+                        <li class="drop__drop__item">
+                            <a href="" class="drop__drop__link">Item 2.2</a>
                         </li>
                     </ul>
                 </li>
@@ -41,5 +42,6 @@
             <a href="" class="nav__link">CONTACT</a>
         </li>
     </ul>
+</nav>
 </body>
 </html>

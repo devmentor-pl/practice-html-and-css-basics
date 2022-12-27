@@ -1,75 +1,71 @@
-.row, .cell, .container {
-    margin: 5px;
-    padding: 5px;
-    outline: 2px solid;
+:root {
+    --containerBorderColor: green;
+    --wrapperBorderColor: blue;
+    --conentColor: orange;
 }
 
-.row {
-    outline-color: green;
-}
-
-.cell {
-    min-height: 50px;
-    outline-color: orange;
+html,
+body {
+    margin: 0;
+    padding: 0;
 }
 
 .container {
-    margin: 0 auto;
-    max-width: 1200px;
-    outline-color: blue;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 3px;
+        border: 3px solid var(--containerBorderColor);
 }
 
-.header__container {
+.wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+        margin: 3px;
     width: 1000px;
+        border: 3px solid var(--wrapperBorderColor);
 }
 
-.header__logo {
-    min-width: 200px;
-    height: 100px;
+.content {
+    margin: 3px 0;
+    background-color: var(--conentColor);
 }
 
-.header__nav {
-    min-width: 700px;
-    height: 100px;
+.header_logo {
+    width: 150px;
+    height: 50px;
 }
 
-.content__container {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    width: 1000px;
+.header_nav {
+    width: 350px;
+    height: 50px;
 }
 
-.content__article {
-    min-height: 400px;
-    width: 49.5%;
+.content_article {
+    width: calc(50% - 3px);
+    height: 475px;
 }
 
-.content__ads {
-    min-height: 400px;
-    width: 49.5%;
+.content_aside {
+    width: calc(50% - 3px);
+    height: 475px;
 }
 
-.content__container2 {
-    display: flex;
-    justify-content: space-around;
-    width: 1000px;
+.testimonials {
+    justify-content: space-evenly;
 }
 
-.content__article2 {
-    min-height: 400px;
-    width: 30%;
+.testimonials_article {
+    width: 310px;
+    height: 250px;
 }
 
-.footer__container {
-    display: flex;
+.footer {
     justify-content: center;
-    width: 1000px;
-    min-height: 100px;
 }
 
-.footer__copyrights {
-    width: 10%;
+.footer_section {
+    width: 100px;
+    height: 50px;
 }
