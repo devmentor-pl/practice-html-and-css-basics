@@ -43,9 +43,9 @@
 
     <main class="main">
         <div class="main__container container">
-            <h1 class="main__title">Tytuł strony</h1>
+            <h1 class="main__title">Tytuł strony głównej</h1>
             <article class="article">
-                <h2 class="article__title">Tytuł artykułu 1</h2>
+                <h2 class="article__title">Tytuł artykułu</h2>
                 <p class="article__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quidem. Ipsa
                     nobis totam cupiditate quam
                     esse, temporibus sequi quis aliquid ad iusto ea veniam sunt aliquam sapiente consequuntur, fugit
@@ -53,7 +53,10 @@
                 </p>
                 <p class="article__date">Data publikacji: <time datetime="2022-12-29">29 grudnia 2022</time></p>
                 <p class="article__author">Jan Kowalski</p>
-                <img class="article__img" src="" alt="obrazek artykułu">
+                <figure class="article__img">
+                    <img src="" alt="ilustracja artykułu">
+                    <figcaption>Opis ilustracji</figcaption>
+                </figure>
 
                 <table class="table">
                     <thead class="table__title">
@@ -77,23 +80,24 @@
             </article>
 
             <form class="form">
+                <h3 class="form__title">Formularz do komentowania</h3>
                 <div class="form__item">
-                    <label class="form__title" for="name">Imię</label>
-                    <input class="form__input" type="text" name="name">
+                    <label class="form__label" for="name">Imię</label>
+                    <input class="form__input" type="text" name="name" id="name">
                 </div>
                 <div class="form__item">
-                    <label class="form__title" for="email">Email:</label>
-                    <input class="form__input" type="email" name="email">
+                    <label class="form__label" for="email">Email:</label>
+                    <input class="form__input" type="email" name="email" id="email">
                 </div>
                 <div class="form__item">
-                    <label for="message"></label>
-                    <textarea class="form__textarea" name="message" id="" cols="30" rows="10"
+                    <label class="form__label" for="message"></label>
+                    <textarea class="form__textarea" name="message" id="message" cols="30" rows="10"
                         placeholder="Wprowadź treść wiadomości"></textarea>
                 </div>
-                <button class="form__btn">Wyślij</button>
+                <input class="form__btn" type="submit" value="Prześlij">
             </form>
 
-            <div class="comments">
+            <section class="comments">
                 <h3 class="comments__title">Komentarze</h3>
                 <div class="comment">
                     <p class="comment__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos,
@@ -115,7 +119,7 @@
                         <time class="comment__date" datetime="2022-12-28">2022-12-28</time>
                     </p>
                 </div>
-            </div>
+            </section>
         </div>
     </main>
 
