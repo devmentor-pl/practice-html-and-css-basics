@@ -41,16 +41,41 @@
         </div>
     </header>
 
-    <main>
-        <h1>Lorem, ipsum dolor.</h1>
-        <article>
-            <h2>Tytuł artykułu 1</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quidem. Ipsa nobis totam cupiditate quam
-                esse, temporibus sequi quis aliquid ad iusto ea veniam sunt aliquam sapiente consequuntur, fugit
-                molestias.
-            </p>
-            <p>Data publikacji: <time datetime="2022-12-29">29 grudnia 2022</time></p>
-        </article>
+    <main class="main">
+        <div class="main__container container">
+            <h1 class="main__title">Tytuł strony</h1>
+            <article class="article">
+                <h2 class="article__title">Tytuł artykułu 1</h2>
+                <p class="article__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quidem. Ipsa
+                    nobis totam cupiditate quam
+                    esse, temporibus sequi quis aliquid ad iusto ea veniam sunt aliquam sapiente consequuntur, fugit
+                    molestias.
+                </p>
+                <p class="article__date">Data publikacji: <time datetime="2022-12-29">29 grudnia 2022</time></p>
+                <p class="article__author">Jan Kowalski</p>
+                <img class="article__img" src="" alt="obrazek artykułu">
+
+                <table class="table">
+                    <thead class="table__title">
+                        <tr>
+                            <th colspan="3">Nagłówek tabeli</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table__body">
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </div>
     </main>
 </body>
 
