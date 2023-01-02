@@ -7,7 +7,7 @@
 
 body {
 	font-family: 'Montserrat', sans-serif;
-	background-color: rgb(246, 246, 246);
+	background-color: rgb(240, 240, 240);
 }
 
 .nav {
@@ -19,7 +19,7 @@ body {
 	display: flex;
 	justify-content: center;
 	height: 80px;
-	background-color: rgb(255, 255, 255);
+	background-color: var(--color-secondary);
 	min-width: 700px;
 }
 
@@ -93,4 +93,13 @@ body {
 .nav__item:hover > .nav__dropdown,
 .dropdown__item:hover > .nav__dropdown--2 {
 	display: flex;
+}
+
+.nav__link:hover::after {
+	content: '';
+	position: absolute;
+	bottom: 50px;
+	display: block;
+	width: 100%;
+	border: 1px solid var(--color-hover);
 }
