@@ -16,15 +16,15 @@ body {
   margin: 0 auto;
 }
 
-.nav__list__primary {
+.nav__list--primary {
   display: flex;
   position: relative;
   margin: 25px;
   background-color: white;
 }
 
-.nav__item__primary a,
-.subnav__item a {
+.nav__item--primary .nav__link,
+.subnav__item .nav__link {
   text-decoration: none;
   color: #333333;
   display: inline-block;
@@ -32,20 +32,20 @@ body {
   font-size: 22px;
 }
 
-.subnav__item a {
+.subnav__item .nav__link {
   color: #d8dddd;
   font-size: 20px;
 }
 
-.nav__item__primary a:hover {
+.nav__item--primary .nav__link:hover {
   color: #009ae1;
 }
 
-.subnav__item a:hover {
+.subnav__item .nav__link:hover {
   color: white;
 }
 
-.nav__item__primary:hover::before {
+.nav__item--primary:hover::before {
   content: "";
   border: 2px solid #009ae1;
   width: 100%;
@@ -54,25 +54,25 @@ body {
   left: 0;
 }
 
-.nav__item__primary {
+.nav__item--primary {
   position: relative;
 }
 
-.nav_arrow__primary {
+.nav_arrow--primary {
   display: inline-block;
   margin-left: 5px;
   transform: rotate(90deg);
 }
 
-.nav__list__secondary,
-.nav__list__third {
+.nav__list--secondary,
+.nav__list--third {
   position: absolute;
   background-color: #333333;
   color: #d8dddd;
   display: none;
 }
 
-.nav__list__secondary {
+.nav__list--secondary {
   width: 200%;
   left: 0;
 }
@@ -81,11 +81,21 @@ body {
   position: relative;
 }
 
-.nav__item__primary--active:hover .nav__list__secondary {
+.nav__item--primary--active:hover .nav__list--secondary {
   display: block;
 }
 
-.subnav__item__arrow {
+.nav__link--arrow::after{
+  content: ">";
+  display: inline-block;
+  margin-left: 5px;
+  transform: rotate(90deg);
+}
+
+
+
+.subnav__item--arrow {
+  content: ">";
   position: absolute;
   font-size: 15px;
   padding-bottom: 10px;
@@ -94,20 +104,22 @@ body {
   right: 0;
 }
 
-.nav__list__third {
+.nav__list--third {
   width: 100%;
   left: 100%;
   top: 0;
 }
 
-.nav__item--active:hover .nav__list__third {
+.nav__item--active:hover .nav__list--third {
   display: block;
 }
 
-.subnav__item a {
+.subnav__item .nav__link {
   padding: 10px;
 }
 
 .subnav__item:hover {
   color: white;
 }
+
+

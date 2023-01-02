@@ -10,24 +10,38 @@
   </head>
   <body>
     <nav class="nav">
-      <ul class="nav__list__primary">
-        <li class="nav__item__primary"><a href="#">HOME</a></li>
-        <li class="nav__item__primary nav__item__primary--active">
-          <a href="#">ITEMS <span class="nav_arrow__primary"> > </span></a>
-          <ul class="nav__list__secondary">
-            <li class="subnav__item"><a href="#">Item 1</a></li>
+      <ul class="nav__list nav__list--primary">
+        <li class="nav__item nav__item--primary">
+          <a href="#" class="nav__link">HOME</a>
+        </li>
+        <li class="nav__item nav__item--primary nav__item--primary--active">
+          <a href="#" class="nav__link nav__link--arrow"
+            >ITEMS</a
+          >
+          <ul class="nav__list--secondary">
+            <li class="subnav__item">
+              <a href="#" class="nav__link">Item 1</a>
+            </li>
             <li class="subnav__item nav__item--active">
-              <a href="#">Item 2</a>
-              <span class="subnav__item__arrow subnav__item">></span>
-              <ul class="nav__list__third">
-                <li class="subnav__item"><a href="#">Item 2.1</a></li>
-                <li class="subnav__item"><a href="#">Item 2.2</a></li>
+              <a href="#" class="nav__link">Item 2</a>
+              <span class="subnav__item subnav__item--arrow">></span>
+              <ul class="nav__list--third">
+                <li class="subnav__item">
+                  <a href="#" class="nav__link">Item 2.1</a>
+                </li>
+                <li class="subnav__item">
+                  <a href="#" class="nav__link">Item 2.2</a>
+                </li>
               </ul>
             </li>
           </ul>
         </li>
-        <li class="nav__item__primary"><a href="#">SETTINGS</a></li>
-        <li class="nav__item__primary"><a href="#">CONTACT</a></li>
+        <li class="nav__item--primary">
+          <a href="#" class="nav__link">SETTINGS</a>
+        </li>
+        <li class="nav__item--primary">
+          <a href="#" class="nav__link">CONTACT</a>
+        </li>
       </ul>
     </nav>
   </body>
