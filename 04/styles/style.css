@@ -1,0 +1,66 @@
+:root {
+	--color-primary: rgb(9, 9, 9);
+	--color-secondary: rgb(107, 190, 237);
+	--color-third: rgb(51, 51, 51);
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	background-color: rgb(246, 246, 246);
+}
+
+.nav {
+	position: relative;
+	top: 20px;
+}
+
+.nav__list {
+	display: flex;
+	justify-content: flex-start;
+	height: 80px;
+	background-color: rgb(255, 255, 255);
+	align-items: center;
+}
+
+.nav__item > .nav__link {
+	text-transform: uppercase;
+}
+
+.nav__item {
+	position: relative;
+	margin: 30px;
+}
+
+.nav__dropdown {
+	width: 200px;
+	position: absolute;
+
+	left: -30px;
+	background-color: white;
+}
+
+.dropdown__link {
+	color: white;
+	margin-top: 30px;
+	padding: 0 30px;
+}
+
+.nav__link,
+.dropdown__link {
+	text-decoration: none;
+	color: var(--color-primary);
+	transition: color 0.3s;
+}
+
+.nav__link:hover,
+.dropdown__link:hover {
+	color: var(--color-secondary);
+}
+
+.nav__dropdown {
+	display: none;
+}
+
+.nav__item:hover > .nav__dropdown {
+	display: block;
+}
