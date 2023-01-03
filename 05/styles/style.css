@@ -1,0 +1,59 @@
+.row,
+.cell,
+.container {
+	margin: 5px;
+	padding: 5px;
+	outline: 3px solid;
+}
+
+.row {
+	outline-color: green;
+}
+
+.cell {
+	min-height: 50px;
+	background-color: orange;
+	outline-color: orange;
+}
+
+.container {
+	max-width: 1000px;
+	margin: 0 auto;
+	outline-color: royalblue;
+
+	display: flex;
+	justify-content: space-between;
+	padding: 7px 0;
+}
+
+.header__logo {
+	min-width: 100px;
+}
+
+.header__nav {
+	min-width: 250px;
+}
+
+.content__article {
+	min-width: 48%;
+	min-height: 300px;
+}
+
+.card__container {
+	justify-content: space-evenly;
+}
+
+.card__item {
+	min-width: 30%;
+	min-height: 300px;
+}
+
+.footer__container {
+	min-height: 100px;
+	align-items: center;
+	justify-content: center;
+}
+
+.footer__text {
+	min-width: 150px;
+}
