@@ -11,8 +11,7 @@ body {
 }
 
 .nav {
-	position: relative;
-	top: 20px;
+	margin-top: 20px;
 }
 
 .nav__list {
@@ -56,14 +55,14 @@ body {
 }
 
 .nav__dropdown--2 {
-	height: 200px;
-	left: 250px;
-	top: 50px;
+	height: 125%;
+	left: 100%;
+	top: 40%;
 }
 
 .nav__dropdown .fa-chevron-right {
 	position: relative;
-	left: 125px;
+	left: 50%;
 }
 
 .dropdown__link,
