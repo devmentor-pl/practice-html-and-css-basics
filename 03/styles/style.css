@@ -1,10 +1,22 @@
 @font-face {
 	font-family: 'Source Sans PRO';
 	src: url(source-sans-pro/SourceSansPro-Bold.otf) format('opentype');
+	font-style: normal;
+	font-weight: normal;
 }
 
-body {
+@font-face {
 	font-family: 'Source Sans PRO';
+	src: url(source-sans-pro/SourceSansPro-Bold.otf) format('opentype');
+	font-style: normal;
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'Source Sans PRO';
+	src: url(source-sans-pro/SourceSansPro-Bold.otf) format('opentype');
+	font-style: italic;
+	font-weight: normal;
 }
 
 .parent {
@@ -18,18 +30,22 @@ body {
 }
 
 .child--first {
+	font-family: 'Source Sans PRO';
+	font-style: normal;
 	width: calc(30% - 20px / 3);
 }
 
 .child--middle {
-	width: calc(30% - 20px / 3);
+	font-family: 'Source Sans PRO';
 	font-weight: bold;
+	width: calc(30% - 20px / 3);
 	margin: 0 10px;
 }
 
 .child--last {
-	width: calc(40% - 20px / 3);
+	font-family: 'Source Sans PRO';
 	font-style: italic;
+	width: calc(40% - 20px / 3);
 }
 
 .parent--inline-block .child {
