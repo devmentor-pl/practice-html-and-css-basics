@@ -1,6 +1,7 @@
 @font-face {
 	font-family: 'source_sans_pro';
-	src: url('../fonts/webfont/sourcesanspro-regular-webfont.woff2') format('woff2'),
+	src: url('../fonts/webfont/sourcesanspro-regular-webfont.woff2')
+			format('woff2'),
 		url('../fonts/webfont/sourcesanspro-regular-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
@@ -23,6 +24,7 @@
 }
 
 .parent {
+	font-family: 'source_sans_pro';
 	width: 600px;
 	padding: 20px;
 	outline: 1px solid black;
@@ -33,22 +35,19 @@
 }
 
 .child--first {
-	font-family: 'source_sans_pro';
-	font-style: normal;
 	width: calc(30% - 20px / 3);
+	font-style: normal;
 }
 
 .child--middle {
-	font-family: 'source_sans_pro';
-	font-weight: bold;
 	width: calc(30% - 20px / 3);
 	margin: 0 10px;
+	font-weight: bold;
 }
 
 .child--last {
-	font-family: 'source_sans_pro';
-	font-style: italic;
 	width: calc(40% - 20px / 3);
+	font-style: italic;
 }
 
 .parent--inline-block .child {
