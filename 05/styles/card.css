@@ -1,0 +1,10 @@
+.card__container {
+	display: flex;
+	justify-content: space-evenly;
+	padding: 7px 0;
+}
+
+.card__item {
+	min-width: 30%;
+	min-height: 300px;
+}
