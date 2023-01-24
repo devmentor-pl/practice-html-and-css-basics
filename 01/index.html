@@ -20,7 +20,7 @@
                 <ul>
                     <li><a href="#text">About as</a></li>
                     <li><a href="#image1">Look around</a></li>
-                    <li><a href="#table1">Article's table</a></li>
+                    <li><a href="#table1">Schedule</a></li>
                 </ul>
                 <li><a href="#form">Leave a feedback</a></li>
                 <li><a href="#comments">Opinions</a></li>
@@ -28,6 +28,8 @@
             </ol>
         </nav>
     </header>
+
+    <hr>
 
     <main>
         <article>
@@ -56,7 +58,7 @@
             </p>
 
             <pre>
-            Autor: Sebastian Wapnski
+            Autor: Sebastian Wapinski
             Publicity date: last week
             </pre>
 
@@ -66,26 +68,75 @@
             </figure>
 
             <table id="table1">
-                <caption></caption>
+                <caption>Schedule</caption>
                 <colgroup>
-
+                    <col span="1" style="background-color: darkgrey;">
                 </colgroup>
+                <tr>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>Aerobic</td>
+                    <td>35$</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Baily</td>
+                    <td>Zumba</td>
+                    <td rowspan="2">50$</td>
+                </tr>
+                <tr>
+                    <td>Samba</td>
+                </tr>
             </table>
+
+            <hr>
 
         </article>
 
-        <form action="someaction.php" id="form">
-
+        <h2>Maybe You Want Support Us With A Comment</h2>
+        <form action="/someaction.php" id="form">
+            <label for="fname">Nickname:</label><br>
+            <input type="text" name="forname" id="fname"><br>
+            <label for="femail">Email:</label><br>
+            <input type="text" name="foremail" id="email"><br>
+            <label for="fmessage">Leave a comment</label><br>
+            <textarea name="textarea1" id="fmessage" cols="30" rows=20"></textarea><br>
+            <input type="submit" value="Submit">
         </form>
 
-        <section id="comments">
+        <hr>
 
+        <section id="comments">
+            <h2>Comment Section</h2>
+            <article>
+                <figure>
+                    <figcaption>Romanian123 15.01.2019</figcaption>
+                </figure>
+                <p>The best gym in my neighborhood</p>
+            </article>
+            <article>
+                <figure>
+                    <figcaption>MuscleMan 14.06.2019</figcaption>
+                </figure>
+                <p>My muscles like this place</p>
+            </article>
+            <article>
+                <figure>
+                    <figcaption>BigBoss 28.05.2023</figcaption>
+                </figure>
+                <p>5 stars *****</p>
+            </article>
         </section>
 
     </main>
 
-    <footer id="footer">
+    <hr>
 
+    <footer id="footer">
+        <p>&copy;All rights reserved</p>
     </footer>
 
 </body>
