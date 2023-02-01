@@ -1,12 +1,100 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
 </head>
+
 <body>
-    
+    <header>
+        <nav class="nav">
+            <img src="" alt="logo" class="nav__logo">
+            <ul class="nav__item">
+                <li class="nav__items"><a href="" class="nav__link">Home</a></li>
+                <li class="nav__items"><a href="" class="nav__link">Courses</a>
+                    <ul class="submenu submenu__item ">
+                        <li class="sumbenu__items"><a href="" class="submenu__link">Web Design</a></li>
+                        <li class="sumbenu__items"><a href="" class="submenu__link">Js</a></li>
+                        <li class="sumbenu__items"><a href="" class="submenu__link">HTML&CSS</a></li>
+                    </ul>
+                </li>
+                <li class="nav__items"><a href="" class="nav__link">About</a></li>
+                <li class="nav__items"><a href="" class="nav__link">Price</a></li>
+                <li class="nav__items"><a href="" class="nav__link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h1 class="article__title">Beginner’s Guide: How to Learn Web Designing at Home</h1>
+            <p class="article__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nihil ducimus
+                eos rem quae non, expedita, facilis, reiciendis incidunt adipisci alias nemo repudiandae quod
+                perspiciatis quisquam est soluta et nam. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Asperiores officia veritatis aperiam amet, aliquam dolorem nemo facilis ut dignissimos quasi odit. Non
+                obcaecati temporibus alias nobis. Hic quae sunt eligendi.</p>
+
+            <figure class="article__imagebox imagebox">
+                <img src="https://miro.medium.com/v2/resize:fit:720/0*4DpFVUP_VfkhzSIL" alt="" class="imagebox__img">
+                <figcaption class="imagebox__caption">Web design</figcaption>
+            </figure>
+            <p class="article__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nihil ducimus
+                eos rem quae non, expedita, facilis, reiciendis incidunt adipisci alias nemo repudiandae quod
+                perspiciatis quisquam est soluta et nam. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Asperiores officia veritatis aperiam amet, aliquam dolorem nemo facilis ut dignissimos quasi odit. Non
+                obcaecati temporibus alias nobis. Hic quae sunt eligendi.
+            </p>
+
+            <ul class="article__meta">
+                <li class="article__auth">Wioleta Lip</li>
+                <li class="article__date"><time datetime="2023-01-01">2023-01-01</time></li>
+
+            </ul>
+        </article>
+    </main>
+    <section class="comments">
+        <form action="" class="comments__form">
+            <div>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Name">
+            </div>
+            <div>
+                <label for="content">Your message</label>
+                <textarea name="content" id="content" cols="30" rows="10" placeholder="Text"></textarea>
+            </div>
+            <input type="submit" value="SEND MESSAGE">
+        </form>
+
+        <ul class="comments__items">
+            <li class="comments__item">
+                <h3 class="comments__title"><a rel="author">Ann, <time datetime="2023-01-02">2023-01-02</time></a></h3>
+                <p class="comments__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis itaque, vitae
+                    nisi ratione incidunt autem sed! Reiciendis officia expedita, reprehenderit obcaecati beatae ab
+                    tempore doloribus illo ea ut mollitia rerum!</p>
+            </li>
+            <li class="comments__item">
+                <h3 class="comments__title"><a rel="author">Peter, <time datetime="2023-01-02">2023-01-02</time></a></h3>
+                <p class="comments__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis itaque, vitae
+                    nisi ratione incidunt autem sed! Reiciendis officia expedita, reprehenderit obcaecati beatae ab
+                    tempore doloribus illo ea ut mollitia rerum!</p>
+            </li>
+            <li class="comments__item">
+                <h3 class="comments__title"><a rel="author">Rov, <time datetime="2023-01-02">2023-01-02</time></a></h3>
+                <p class="comments__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis itaque, vitae
+                    nisi ratione incidunt autem sed! Reiciendis officia expedita, reprehenderit obcaecati beatae ab
+                    tempore doloribus illo ea ut mollitia rerum!</p>
+            </li>
+
+        </ul>
+
+    </section>
+
+<footer>
+    <p>&copy; Wioleta Lip</p>
+</footer>
+
 </body>
+
 </html>
