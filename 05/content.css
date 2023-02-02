@@ -2,7 +2,12 @@
     max-width: 100%;
 }
 
-.content__container-one, .content__container-two {
+.content__container-one {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content__container-two {
     display: flex;
     justify-content: space-around;
 }
