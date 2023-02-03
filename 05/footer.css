@@ -1,0 +1,14 @@
+.footer__row {
+    max-width: 100%;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__info {
+    min-height: 100px;
+    min-width: 200px;
+}
