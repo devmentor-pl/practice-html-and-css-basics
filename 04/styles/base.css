@@ -46,3 +46,15 @@ body {
     left: 100%;
     line-height: 30px;
 }
+
+.menu__item--active::after {
+    content: ">";
+    position: absolute;
+    transform: rotate(90deg);
+    margin-left: 10%;
+}
+
+.drp-menu__item--active::after {
+    content: ">";
+    margin-left: 60%;
+}
