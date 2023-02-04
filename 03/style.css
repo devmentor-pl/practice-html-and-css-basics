@@ -1,0 +1,53 @@
+.parent {
+  width: 600px;
+  padding: 20px;
+  margin-bottom: 5px;
+}
+
+.parent--inline-block {
+  outline: 1px solid black;
+}
+.parent--inline-block .child {
+  display: inline-block;
+}
+
+.child--first,
+.child--middle {
+  width: calc(30% - 10px);
+  margin-right: 10px;
+}
+
+.child--last {
+  width: 40%;
+}
+
+.parent--float .child {
+  float: left;
+}
+
+.parent--float {
+  outline: 1px solid blue;
+  background-color: aqua;
+}
+
+.parent--float::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.parent--flexbox {
+  outline: 1px solid black;
+  display: flex;
+}
+
+.child--first {
+  background-color: red;
+}
+
+.child--middle {
+  background-color: blue;
+}
+.child--last {
+  background-color: yellow;
+}
