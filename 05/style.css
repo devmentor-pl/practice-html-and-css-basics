@@ -1,0 +1,84 @@
+/* Default styles */
+
+:root {
+    --cell-color: orange;
+    --container-color: royalblue;
+    --row-color: rgb(2, 155, 51);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.cell {
+    background-color: var(--cell-color)
+}
+
+.container {
+    border: 2px solid var(--container-color);
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+div {
+    align-items: center;
+    display: flex;
+}
+
+.row {
+    border: 2px solid var(--row-color);
+    width: 100%;
+}
+
+/* Main styles */
+
+footer div {
+    min-height: 100px;
+    justify-content: center;
+}
+
+footer p {
+    height: 50px;
+    width: 200px;
+}
+
+header div {
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+header h1,
+header nav {
+    height: 40px;
+}
+
+header h1 {
+    width: 150px;
+}
+
+header nav {
+    flex-grow: 1;
+    max-width: 500px;
+}
+
+section:first-of-type article {
+    height: 95%;
+    width: 50%;
+}
+
+section div {
+    gap: 5px;
+    height: 270px;
+}
+
+section:last-of-type article {
+    height: calc(100% - 10px);
+    width: calc((100%/3));
+}
+
+section:last-of-type div {
+    justify-content: space-around;
+    padding: 0 5px;
+}

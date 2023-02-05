@@ -1,12 +1,133 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
 </head>
+
 <body>
-    
+    <header>
+        <h1>Logo tekstowe</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Strona Główna</a></li>
+                <li><a href="#">O mnie</a></li>
+                <li>
+                    <a href="#">Współpraca</a>
+                    <ul>
+                        <li>Frontend</li>
+                        <li>Backend</li>
+                        <li>Fullstack</li>
+                    </ul>
+                </li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <header>
+                <h2>Tytuł</h2>
+                <p>Jan Kowalski, 04.02.2023 r.</p>
+            </header>
+            <img src="./image.jpg" alt="" style="max-height: 500px">
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis doloremque excepturi iusto
+                assumenda cum, dicta sapiente architecto ipsa est quidem exercitationem vel nesciunt, corporis id quae
+                voluptas tempora suscipit at.
+            </p>
+            <table style="border: 1px solid black;">
+                <caption>Indeks jakości powietrza</caption>
+                <colgroup>
+                    <col style="background: yellow;">
+
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>Indeks jakości powietrza</th>
+                        <th>PM10 <span>[&#181g/m<sup>3</sup>]</span> </th>
+                        <th>PM2,5 <span>[&#181g/m<sup>3</sup>]</span></th>
+                        <th>O<sub>3</sub> <span>[&#181g/m<sup>3</sup>]</span></th>
+                        <th>NO<sub>2</sub> <span>[&#181g/m<sup>3</sup>]</span></th>
+                        <th>SO<sub>2</sub> <span>[&#181g/m<sup>3</sup>]</span></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Bardzo dobry</td>
+                        <td>0 - 20</td>
+                        <td>0 - 13</td>
+                        <td>0 - 70</td>
+                        <td>0 - 40</td>
+                        <td>0 - 50</td>
+                    </tr>
+                    <tr>
+                        <td>Dobry</td>
+                        <td>20,1 - 50</td>
+                        <td>13,1 - 35</td>
+                        <td>70,1 - 120</td>
+                        <td>40,1 - 100</td>
+                        <td>50,1 - 100</td>
+                    </tr>
+                    <tr>
+                        <td>Umiarkowany</td>
+                        <td>50,1 - 80</td>
+                        <td>35,1 - 55</td>
+                        <td>120,1 - 150</td>
+                        <td>100,1 - 150</td>
+                        <td>100,1 - 200</td>
+                    </tr>
+                    <tr>
+                        <td>Dostateczny</td>
+                        <td>80,1 - 110</td>
+                        <td>55,1 - 75</td>
+                        <td>150,1 - 180</td>
+                        <td>150,1 - 230</td>
+                        <td>201,1 - 350</td>
+                    </tr>
+                    <tr>
+                        <td>Zły</td>
+                        <td>110,1 - 150</td>
+                        <td>75,1 - 110</td>
+                        <td>180,1 - 240</td>
+                        <td>230,1 - 400</td>
+                        <td>350,1 - 500</td>
+                    </tr>
+                    <tr>
+                        <td>Brak indeksu</td>
+                        <td>to tylko Śląsk ☠️</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+        <form action="">
+            <label>
+                <textarea name="comment" id="comment" placeholder="Napisz komentarz"></textarea>
+                <input type="submit">
+            </label>
+        </form>
+        <section>
+            <h3>Najnowsze Komentarze</h3>
+            <div>
+                <p>kochom Ślunsk</p>
+                <p>Górnik Karol, 04.02.23</p>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit ament.</p>
+                <p>Jan Kowalski, 04.02.23</p>
+            </div>
+            <div>
+                <p>Sprzedam Poloneza. Info na priv.</p>
+                <p>Sebastian, 03.02.23</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>piotrmazurek.io © 2023</p>   
+    </footer>
 </body>
+
 </html>
