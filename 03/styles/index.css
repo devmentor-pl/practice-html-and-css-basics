@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.parent {
+  width: 600px;
+  padding: 20px;
+  /* background-color: blueviolet; */
+}
+
+.parent--inline-block .child {
+    display: inline-block;
+    margin-left: 0;
+    padding-left: 10px;
+    vertical-align: top;
+}
+
+.parent--inline-block .child--first {
+  padding-left: 0;
+}
+
+.parent--float::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.parent--float .child {
+  float: left;
+  margin-left: 0;
+  padding-left: 10px;
+}
+
+.parent--float .child--first {
+  padding-left: 0;
+}
+
+.parent--flexbox {
+  display: flex;
+}
+
+.child { 
+  margin-left: 10px;
+}
+
+.child--first {
+  margin-left: 0;
+  width: 30%;
+}
+
+.child--middle {
+  width: 30%;
+}
+
+.child--last {
+  width: 40%;
+}
