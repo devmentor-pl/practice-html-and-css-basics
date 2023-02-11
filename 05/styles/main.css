@@ -1,0 +1,17 @@
+.main__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__article {
+    width: 50%;
+    height: 150px;
+}
+
+.main__article--left {
+    margin-left: 0;
+}
+
+.main__article--right {
+    margin-right: 0;
+}
