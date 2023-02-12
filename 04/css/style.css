@@ -3,29 +3,83 @@ body{
     padding:0px;
     background-color: bisque;
 }
-a{
-    text-decoration: none;
-    color: black;
-}
-.nav{
-    
+
+.menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 .nav__list{
     background-color: white;
-    list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
     margin-top: 10px;
-    
+}
+.menu__link{
+    text-decoration: none;
+    color: black;
 }
 .menu__item{
     padding: 20px 20px;
     justify-content: center;
     align-items: center;
     border-top: 3px solid transparent;
-
 }
 .menu__item:hover{
     border-top-color: lightblue;
+}
+.menu__dropdown{
+    position: relative;
+
+}
+.menu__dropdown::after{
+    content:">";
+    position: absolute;
+    right: 5px;
+    top:20px;
+    transform: rotate(90deg);
+
+}
+.menu__dropdown:hover > .dropdown{
+    display: block;
+}
+
+.dropdown{
+    position: absolute;
+    background-color: grey;
+    top:100%;
+    left:0px; 
+    display: none;
+    min-width: 140px;
+}
+.dropdown__link{
+    text-decoration: none;
+    color: white;
+}
+.dropdown__item{
+    padding: 10px 20px;
+}
+.dropdown--lv2{
+    position: absolute;
+    background-color: grey;
+    top:50%;
+    left:100%;
+    display: none;
+    min-width: 140px;
+}
+.menu__dropdown__item--lv2{
+    position: relative;
+    padding: 10px 20px;
+}
+.menu__dropdown__item--lv2::after{
+    content:">";
+    position: absolute;
+    right: 10px;
+    top:10px;
+    color: white;
+
+}
+.menu__dropdown__item--lv2:hover > .menu__dropdown--lv2{
+    display: block;
 }
