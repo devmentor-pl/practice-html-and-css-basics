@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +7,101 @@
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
 </head>
 <body>
-    
+    <header title="menu">
+        <nav>
+            <a href="index.html">
+                <img src='https://upload.wikimedia.org/wikipedia/commons/1/18/Creative-Tail-rocket.svg' />
+            </a>
+            <ul>
+                <li>About</li>
+                <li>Prices</li>
+                <li>Contacts</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article title='Space tour'>
+            <h1>Space voyage is the future!</h1>
+            <p>By <strong>Andrzej Duda</strong> on January 23, 2023</p>
+            <p>
+            During the time that has passed since the launching of the first artificial satellite in 1957,
+            astronauts have traveled to the moon, probes have explored the solar system, and instruments in space 
+            have discovered thousands of planets around other stars.
+            </p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Apollo_15_launch.jpg/330px-Apollo_15_launch.jpg">
+            <p>
+            On June 7, 2019, NASA announced that starting in 2020, the organization aims to start allowing private 
+            astronauts to go on the International Space Station, with the use of the SpaceX Crew Dragon spacecraft 
+            and the Boeing Starliner spacecraft for public astronauts, which is planned to be priced at 35,000 USD 
+            per day for one astronaut, and an estimated 50 million USD for the ride there and back.
+            </p>
+            <table>
+                <caption><u>Prices</u></caption>
+                <thead span="2" style="background: lightblue">
+                    <tr>
+                        <th scope="col">Year</th>
+                        <th scope="col">Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2022</td>
+                        <td>40000<b>$</b></td>
+                    </tr>
+                    <tr>
+                        <td>2023</td>
+                        <td>55000<b>$</b></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>
+            Work also continues towards developing suborbital space tourism vehicles. This is being done by aerospace 
+            companies like Blue Origin and Virgin Galactic. SpaceX announced in 2018 that they are planning on sending
+            space tourists, including Yusaku Maezawa, on a free-return trajectory around the Moon on the Starship.
+            </p>
+        </article>
+        <br>
+
+        <form action="./comments.php" method="POST">
+            <div id="comments-field">
+                <textarea rows="10" cols="50"></textarea>
+            </div>
+            <input type="submit" value="Add comment!">
+        </form>
+
+        <section title="Comments">
+            <h3>Comments</h3>
+            <article>
+                <p>
+                I'll pay millions for it!
+                </p>
+                <p>
+                Tom, 12.01.2022
+                </p>     
+            </article>
+            <article>
+                <p>
+                Cant wait!
+                </p>
+                <p>
+                Sara, 05.06.2022
+                </p>     
+            </article>
+            <article>
+                <p>
+                Boring...
+                </p>
+                <p>
+                Alan, 12.02.2022
+                </p>     
+            </article>
+        </section>
+    </main>
+    <br>
+
+    <footer>
+        Copyrigt &copy; 2023, Yedrula Corporation. All rights reserved
+    </footer>
 </body>
 </html>

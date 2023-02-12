@@ -1,0 +1,17 @@
+.header__container{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.header .cell {
+    min-height: 50px;
+}
+
+.header__logo {
+    min-width: 200px;
+}
+
+.header__navbar {
+    min-width: 400px;
+}
