@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Source Sans PRO';
+    src: url(fonts/SourceSansPro/SourceSansPro-Regular.otf) format('opentype');
+    src: url(fonts/SourceSansPro/SourceSansPro-Bold.otf) format('opentype');
+    src: url(fonts/SourceSansPro/SourceSansPro-It.otf) format('opentype');
+}
+
+html {
+    font-family: Source Sans PRO, sans-serif;
+    font-weight: bold;
+}
+
+:root {
+    --firstChildWidth: 30%; 
+    --childMiddleWidth: 30%;
+    --middleMargin: 10px;
+} 
+
+.parent {
+    width: 600px;
+    padding: 20px;
+}
+.child--first, .child--middle {
+    width: 30%;
+} 
+.child--last {
+    font-weight: normal;
+    font-style: italic;
+    width: calc(100% - (var(--firstChildWidth) + var(--childMiddleWidth) + var(--middleMargin) * 2));
+}
+
+.child--middle {
+    margin: 0 10px;
+}
+
+.child--first {
+    font-weight: normal;
+}
+
+.parent--inline-block > div {
+    display: inline-block;
+    font-size: 16px;
+}
+
+.parent--inline-block {
+    font-size: 0;
+}
+
+/* .child--middle, .child--last {
+    float: right;
+} */
+
+.child--first {
+    float: left;
+}
+
+.parent--float::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.parent--flexbox {
+    display: flex;
+
+}
+
+.parent > div {
+    border: 2px solid blue;
+}
