@@ -56,7 +56,7 @@ html {
     float: right;
 } */
 
-.child--first {
+.parent--float .child--first, .parent--float .child--middle, .parent--float .child--last {
     float: left;
 }
 
