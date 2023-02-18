@@ -10,8 +10,6 @@
 }
 
 
-
-
 @font-face {
     font-family: 'source_sans_proitalic';
     src: url('./fonts/sourcesanspro-it-webfont.woff2') format('woff2'),
@@ -20,8 +18,6 @@
     font-style: normal;
 
 }
-
-
 
 
 @font-face {
@@ -33,12 +29,21 @@
 
 }
 
+*{
+
+    box-sizing: border-box;
+}
+
 .parent{
     width: 600px;
     padding: 20px;
+    background-color:bisque;
+    margin-bottom: 20px;
+    
 }
 .parent--inline-block .child{
     display: inline-block;
+    background-color: aqua;
 }
 
 .child--first,
@@ -62,6 +67,7 @@
 
 .parent--float .child{
     float: left;
+    background-color: aqua;
 }
 
 .parent--float::after{
