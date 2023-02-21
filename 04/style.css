@@ -44,6 +44,15 @@ body {
   display: block;
 }
 
+.menu__dropdown::after {
+  content: ">";
+  position: absolute;
+  top: 27%;
+  left: 85%;
+  transform: rotate(90deg);
+  font-size: 12px;
+}
+
 .dropdown {
   background-color: #444;
   position: absolute;
@@ -68,6 +77,15 @@ body {
 
 .menu__dropdown-two:hover > .dropdown-two {
   display: block;
+}
+
+.menu__dropdown-two::after {
+  content: ">";
+  color: #fff;
+  position: absolute;
+  top: 27%;
+  left: 85%;
+  font-size: 12px;
 }
 
 .dropdown-two {
