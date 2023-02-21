@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>devmentor.pl - HTML & CSS BASICS - #01</title>
+</head>
+<body>
+    
+    <header class="header">
+        <h1 class="header__logo"><img src="#" alt="logo"></h1>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#">About</a> </li>
+                <li class="nav__item">
+                    <a href="#">Projects</a>
+                    <ul class="nav__dropdown">
+                        <li class="dropdown__item">
+                            <a href="#">2020</a></li>
+                        <li class="dropdown__item">
+                            <a href="#">2021</a></li>
+                        <li class="dropdown__item">
+                            <a href="#">2022</a></li>
+                    </ul>
+                </li>
+                <li class="nav__item">Contact</li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="main">
+        <article class="article">
+            <h2 class="article__title">Our new project</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat aspernatur animi libero accusamus fugiat blanditiis consectetur veritatis hic, incidunt nihil?</p>
+            <figure>
+                <img class="article_img" src="#" alt="article image">
+                <figcaption>Article image</figcaption>
+            </figure>
+            <table class="article__table">
+                <caption class="table__caption">Table name</caption>
+                <thead class="table__head">
+                    <tr>
+                        <th>One</th>
+                        <th>Two</th>
+                        <th>Three</th>
+                    </tr>
+                </thead>
+                <tbody class="table__body">
+                    <tr>
+                        <td>Black</td>
+                        <td>Red</td>
+                        <td>White</td>
+                    </tr>
+                </tbody>
+            </table>
+            <footer>
+                <p class="article__author">
+                    <a rel="author">Dawid</a>, data publikacji: <time class="article__date" datetime="2023-02-19">February 19</time>
+                 </p>
+            </footer>
+        </article>
+    
+        <section>
+            <form action="" class="form">
+                <div class="form__container">
+                    <label for="name">Imię"
+                        <input type="text" class="username" id="name" placeholder="Imię">
+                    </label>
+                </div>
+                <div class="form__container">
+                    <label for="content">Komentarz:
+                        <textarea name="content" id="conten"t" cols="30" rows="10"></textarea>
+                    </label>
+                </div>
+                <div class="form__container">
+                    <input type="submit" value="Dodaj komentarz">
+                </div>
+            </form>
+        </section>
+    
+        <ul class="comment">
+            <li class="comment_item">
+                <h2><a rel="author">Peter</a>, data publikacji: <time class="article__date" datetime="2023-02-19">February 19</time></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, blanditiis?</p>
+            </li>
+            <li class="comment_item">
+                <h2><a rel="author">Diana</a>, data publikacji: <time class="article__date" datetime="2023-02-19">February 19</time></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, blanditiis?</p>
+            </li>
+            <li class="comment_item">
+                <h2><a rel="author">Michael</a>, data publikacji: <time class="article__date" datetime="2023-02-19">February 19</time></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, blanditiis?</p>
+            </li>
+        </ul>
+
+    </main>
+    
+    <footer class="footer">
+        <p class="copyright">&copy; Dawid Iwanicki</p>
+    </footer>
+
+</body>
+</html>
