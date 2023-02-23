@@ -1,12 +1,148 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>devmentor.pl - HTML & CSS BASICS - #01</title>
-</head>
-<body>
-    
-</body>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>devmentor.pl - HTML & CSS BASICS - #01</title>
+    </head>
+
+    <body>
+        <header>
+            <img src="logo.jpg" alt="logo">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a>
+                        <ul>
+                            <li><a href="#company">Company</a></li>
+                            <li><a href="#team">Team</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#services">Services</a>
+                        <ul>
+                            <li><a href="#web-development">Web Development</a></li>
+                            <li><a href="#mobile-development">Mobile Development</a></li>
+                            <li><a href="#design">Design</a>
+                                <ul>
+                                    <li><a href="#graphic-design">Graphic Design</a></li>
+                                    <li><a href="#ui-ux-design">UI/UX Design</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <article>
+                <h1>Lorem ipsum dolor sit amet.</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi doloribus vitae quas eligendi
+                    neque.<br>
+                    Aliquam, officiis soluta. Modi totam doloremque, omnis est non recusandae, sequi molestias libero
+                    praesentium itaque, voluptatibus possimus. <br>
+                    Ducimus, ea beatae dolore nihil pariatur corporis ad rem,
+                    delectus temporibus omnis eligendi sint minima sed labore alias vel.</p>
+                <img src="image.jpg" alt="Article Image">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium at rem similique veritatis
+                    porro aliquam voluptatibus animi dolorum ipsum recusandae..</p>
+                <p>
+                    Posted on
+                    <time datetime="2023-01-02 21:40">Feb. 1</time>
+                    by Martin.
+                </p>
+                <section>
+                    <h2>Design Contact</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Day</th>
+                                <th>Graphic Design</th>
+                                <th>UI/UX Design</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Mon-Thu</td>
+                                <td>9-17</td>
+                                <td>closed</td>
+
+                            </tr>
+                            <tr>
+                                <td>Fri</td>
+                                <td>closed</td>
+                                <td>e-mail</td>
+                            </tr>
+                            <tr>
+                                <td>Sat-Sun</td>
+                                <td>chatbot</td>
+                                <td>9-17</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </article>
+
+
+            <article>
+                <h3>Send comments:</h3>
+                <form action="" method="get">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+
+                    <label for="comments">Comments:</label>
+                    <textarea id="comments" name="comments"></textarea>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </article>
+            <hr>
+            <article>
+                <h3>Comments</h3>
+                <section>
+                    <h4>Lorem, ipsum.</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est voluptatem </p>
+                    <p>
+                        Posted on
+                        <time datetime="2023-01-02 21:40">Feb. 1</time>
+                        by XYZ.
+                    </p>
+                </section>
+                <section>
+                    <h4>Lorem, ipsum.</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est voluptatem id sit, porro soluta
+                        accusamus beatae
+                        illum exercitationem.</p>
+                    <p>
+                        Posted on
+                        <time datetime="2023-01-02 21:45">Feb. 1</time>
+                        by Deo.
+                    </p>
+                </section>
+                <section>
+                    <h4>Lorem, ipsum.</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est voluptatem id sit, porro soluta
+                        accusamus beatae
+                        illum exercitationem.</p>
+                    <p>
+                        Posted on
+                        <time datetime="2023-01-02 21:50">Feb. 1</time>
+                        by ABC.
+                    </p>
+                </section>
+            </article>
+
+        </main>
+
+        <footer>
+            <p>Copyright &copy; 2023 Mart.in </p>
+        </footer>
+
+    </body>
+
 </html>

@@ -1,0 +1,84 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.blue {
+  border: 1px solid blue;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.green {
+  outline: 1px solid green;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.menu-bar__nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-bar__logo {
+  width: 200px;
+  height: 50px;
+  margin: 5px 0;
+}
+
+.menu-bar__menu-list {
+  width: 300px;
+  height: 50px;
+  margin: 5px 0;
+}
+
+.main__item {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.main-section {
+  width: 500px;
+  height: 200px;
+  margin: 10px 0;
+}
+
+.aside__item {
+  display: flex;
+  justify-content: space-around;
+}
+
+.aside-section {
+  width: 300px;
+  height: 150px;
+  margin: 10px;
+}
+
+.footer__section {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-info {
+  width: 170px;
+  height: 100px;
+  margin: 10px 0;
+}
+
+header,
+main,
+aside {
+  margin-bottom: 10px;
+  padding: 5px 0;
+}
+
+footer {
+  padding: 5px 0;
+}
