@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/normalize.css">
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
     <title>Task 04</title>
   </head>
 
@@ -16,17 +16,36 @@
         <li class="menu__item">
           <a href="" class="menu__link">HOME</a>
         </li>
-        <li class="menu__item">
+
+        <li class="menu__item menu__dropdown">
           <a href="" class="menu__link">ITEMS</a>
-          <ul class="nav-sub__list sub__menu">
-            <li class="nav-sub__item">
-              <a href="" class="nav-sub__item-link">item 1</a>
+
+          <ul class="dropdown">
+            <li class="dropdown__item">
+              <a href="" class="dropdown__link">Item 1</a>
             </li>
-            <li class="nav-sub__item">
-              <a href="" class="nav-sub__item-link">item 2</a>
+
+            <li class="dropdown__item dropdown__item-sub">
+              <a href="" class="dropdown__link">Item 2</a>
+
+              <ul class="dropdown-sub">
+
+                <li class="dropdown-sub__item">
+                  <a href="" class="dropdown-sub__link">Item 2.1</a>
+                </li>
+                <li class="dropdown-sub__item">
+                  <a href="" class="dropdown-sub__link">Item 2.2</a>
+                </li>
+              </ul>
+
+
+
+
             </li>
           </ul>
         </li>
+
+
         <li class="menu__item">
           <a href="" class="menu__link">SETTINGS</a>
         </li>
@@ -34,7 +53,6 @@
           <a href="" class="menu__link">CONTACT</a>
         </li>
       </ul>
-
     </nav>
   </body>
 
