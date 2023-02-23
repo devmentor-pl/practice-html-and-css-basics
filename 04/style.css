@@ -25,6 +25,14 @@ body {
   position: relative;
 }
 
+.menu__dropdown::after {
+  content: '>';
+  position: absolute;
+  right: 3px;
+  top: 20px;
+  transform: rotate(90deg);
+}
+
 .menu__dropdown:hover > .dropdown {
   display: block;
 }
@@ -52,6 +60,14 @@ body {
 
 .dropdown__item-sub:hover > .dropdown-sub {
   display: block;
+}
+
+.dropdown__item-sub::after {
+  content: '>';
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: #fff;
 }
 
 .dropdown-sub {
