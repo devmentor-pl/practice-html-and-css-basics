@@ -25,12 +25,16 @@ body {
   position: relative;
 }
 
+.menu__dropdown:hover > .dropdown {
+  display: block;
+}
 .dropdown {
   position: absolute;
   background-color: #444;
   top: 100%;
   left: 0;
   min-width: 240px;
+  display: none;
 }
 
 .dropdown__item {
@@ -46,11 +50,18 @@ body {
   position: relative;
 }
 
+.dropdown__item-sub:hover > .dropdown-sub {
+  display: block;
+}
+
 .dropdown-sub {
   background-color: #444;
   position: absolute;
   top: 0;
   left: 100%;
-  min-width: 120px;
+  min-width: 140px;
+  display: none;
+}
+.dropdown-sub__item {
   padding: 10px 20px;
 }
