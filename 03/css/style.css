@@ -1,0 +1,49 @@
+.parent {
+    width: 600px;
+    padding: 20px;
+    font-family: 'source_sans';
+}
+
+.child {
+    background-color: aqua;
+}
+
+.child--first {
+    font-weight: normal;
+}
+
+.child--middle {
+    font-weight: bold;
+}
+
+.child--first, .child--middle {
+    width: calc(30% - 10px);
+    margin-right: 10px;
+}
+
+.child--last {
+    width: 40%;
+    font-style: italic;
+}
+
+.parent--inline-block {
+    display: table;
+}
+
+.parent--inline-block .child {
+    display:inline-block;
+}
+
+.parent--float .child {
+    float: left;
+}
+
+.parent--float::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.parent--flexbox {
+    display: flex;
+}
