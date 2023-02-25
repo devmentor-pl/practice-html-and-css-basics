@@ -47,7 +47,7 @@ Zmiana koloru tła po najechaniu przez kursor myszy na znacznik label,
 który znajduje się wewnątrze elementu o klasie .ac-container 
 (0, 2, 1)
 */
-?? {
+.ac-container label:hover {
     background: #fff;
 }
 
