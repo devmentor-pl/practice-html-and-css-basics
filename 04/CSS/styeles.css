@@ -1,0 +1,24 @@
+body {
+    background: #f4f4f4;
+}
+
+.menu {
+    display: flex;
+    justify-content: start;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: #fff;
+   color: #011936;
+}
+
+.menu__item {
+    padding: 10px 20px;
+    border-top: 5px solid transparent;
+}
+
+.menu__item:hover {
+    border-top-color:#0095ff;
+}
+
+
+color: #0095ff;
