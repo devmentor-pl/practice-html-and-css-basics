@@ -7,18 +7,15 @@
 .parent {
   width: 600px;
   padding: 20px;
-  /* background-color: blueviolet; */
 }
 
 .parent--inline-block .child {
     display: inline-block;
-    margin-left: 0;
-    padding-left: 10px;
     vertical-align: top;
 }
 
-.parent--inline-block .child--first {
-  padding-left: 0;
+.parent--float .child {
+  float: left;
 }
 
 .parent--float::after {
@@ -27,31 +24,15 @@
   clear: both;
 }
 
-.parent--float .child {
-  float: left;
-  margin-left: 0;
-  padding-left: 10px;
-}
-
-.parent--float .child--first {
-  padding-left: 0;
-}
 
 .parent--flexbox {
   display: flex;
 }
 
-.child { 
-  margin-left: 10px;
-}
 
-.child--first {
-  margin-left: 0;
-  width: 30%;
-}
-
-.child--middle {
-  width: 30%;
+.child--first, .child--middle {
+  margin-right: 10px;
+  width: calc(30% - 10px);
 }
 
 .child--last {
