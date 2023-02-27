@@ -31,3 +31,15 @@
     width: 40%;
 }
 
+@font-face {
+    font-family: 'Source Sans PRO' ;
+    src: url(source-sans-pro/SourceSansPro-Bold.otf) 
+    format('opentype');
+    font-style: normal;
+    font-weight: bold;
+}
+
+div{
+    font-family: "Source Sans Pro";
+    font-weight: bold;
+}
