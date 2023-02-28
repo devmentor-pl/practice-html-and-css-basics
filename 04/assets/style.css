@@ -1,0 +1,23 @@
+body{
+    background-color: grey;
+}
+
+.list{
+    background-color: white;
+    display: flex;
+    margin: 15px;
+    }
+
+.list__item{
+    padding: 20px 20px;
+    border-top: 3px solid transparent;
+}
+
+.list__item:hover{
+    border-top-color: blue;
+}
+
+.list__item{
+    color: black;
+    text-decoration: none;
+}
