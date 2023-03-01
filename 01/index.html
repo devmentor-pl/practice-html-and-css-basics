@@ -1,12 +1,113 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
 </head>
+
 <body>
-    
+    <header class="header">
+        <div class="img_items">
+            <figure class="img_item">
+                <img src="./logo.png" alt="Cars">
+            </figure>
+            <figcaption>Cars</figcaption>
+        </div>
+        <nav class="nav">
+            <ul class="nav_items">
+                <li class="nav_item nav__item--no-space">
+                    <a class="nav_link" href="#">Home</a>
+                </li>
+                <li class="nav_item nav-item">
+                    <a class="nav_link" href="#">Experience</a>
+                    <ul class="nav_dropdown dropdown">
+                        <li class="dropdown_item">
+                            <a class="dropdown_link" href="#">Projects</a>
+                        </li>
+                        <li class="dropdown_item menu_dropdown_right">
+                            <a class="dropdown_link" href="#">Course</a>
+                            <ul class="dropdown_right">
+                                <li class="dropdown_right_item">
+                                    <a class="dropdown_link" href="#">Projects</a>
+                                </li>
+                                <li class="dropdown_right_item">
+                                    <a class="dropdown_link" href="#">Mobile</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav_item">
+                    <a class="nav_link" href="#">Education</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <article class="article">
+            <div class="article_items">
+                <h1 class="title">Tytuł</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eligendi rerum, expedita obcaecati aut
+                    odio minima dolore quis possimus laborum dolorum quo, dolorem labore. Quia, odit. Ad atque sint
+                    tempora</p>
+                <time class="time">02.02.2023</time>
+                <p class="name_surname">Wojciech Podleśny</p>
+                <img src="https://cdn.pixabay.com/photo/2023/01/08/18/42/road-7705906_960_720.jpg" alt="Animals">
+                <table class="table_items">
+                    <caption>Lista zakupów</caption>
+                    <colgroup>
+                        <col spa="2" style="background: white;">
+                        <col style="background: white;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">Nazwa</th>
+                            <th scope="col">Ilość</th>
+                            <th scope="col">Cena</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Książki</td>
+                            <td>1</td>
+                            <td>70 PLN</td>
+                        </tr>
+                        tr>
+                        <td>Słuchawki</td>
+                        <td>2</td>
+                        <td>140 PLN</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                <form action="form">
+                    <label for="name">First name</label>
+                    <input type="text" name="" id="#">
+
+                    <label for="Last Name">First name</label>
+                    <input type="text" name="" id="#">
+                    <div>
+                        <input type="submit">
+                    </div>
+                    <div>
+                        <textarea name="" cols="30" rows="10"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="comments">
+                <p class="comments">It's my first comment</p>
+                <p class="author">Wojciech Podleśny</p>
+                <time class="time">02.02.2022</time>
+            </div>
+        </article>
+        <div>
+            <footer class="footer">&copy;Wojciech Podleśny 2023</footer>
+        </div>
 </body>
+
 </html>
