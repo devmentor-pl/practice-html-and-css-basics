@@ -13,10 +13,14 @@ html {
   height: 100vh;
 }
 
+.nav {
+  overflow: hidden;
+}
+
 .nav__list {
   display: flex;
-  gap: 20px;
-  padding: 10px;
+  gap: 30px;
+  padding: 20px;
   margin-top: 20px;
   background-color: var(--nav-bg);
   font-size: 20px;
@@ -29,9 +33,11 @@ html {
 }
 
 .dropdown {
+  display: none;
   color: var(--secondary-text);
   background-color: var(--dropdown-color);
   padding: 5px 100px 5px 10px;
+  overflow: hidden;
 }
 
 .dropdown__item:hover,
@@ -57,6 +63,7 @@ html {
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 3px;
+  vertical-align: 6px;
 }
 
 .right {
