@@ -101,3 +101,8 @@ html {
   top: 4px;
   /* transition: right 0.3s ease; */
 }
+
+.nav__item:hover .down,
+.dropdown__item:hover .right {
+  border-color: var(--hover-color);
+}
