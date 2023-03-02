@@ -1,12 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <header>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <!-- <a href="/" class="nav__link">Home</a> -->
+                    Home
+                </li>
+                <li class="nav__item">
+                    <!-- <a href="" class="nav__link">Items</a> -->
+                    Items <span class="arrow nav-arrow">></span>
+                    <ul class="nav__dropdown dropdown">
+                        <li class="dropdown__item">Item 1</li>
+                        <li class="dropdown__item">
+                            Item 2 <span class="arrow dropdown-arrow">></span>
+                            <ul>
+                                <li class="-item">Item 2.1</li>
+                                <li class="-item">Item 2.2</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav__item">
+                    <!-- <a href="" class="nav__link">Settings</a> -->
+                    Settings
+                </li>
+                <li class="nav__item">
+                    <!-- <a href="" class="nav__link">Contact</a> -->
+                    Contact
+                </li>
+            </ul>
+        </nav>
+    </header>
 </body>
+
 </html>
