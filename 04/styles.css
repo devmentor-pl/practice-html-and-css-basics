@@ -1,0 +1,20 @@
+:root {
+  --primary-text: #000;
+  --secondary-text: #8e9396;
+  --bg-color: #f7f7f7;
+  --hover-color: #009ae1;
+  --dropdown-color: #333333;
+  --nav-bg: #fff;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--primary-text);
+}
+
+.nav__list {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  background-color: var(--nav-bg);
+}
