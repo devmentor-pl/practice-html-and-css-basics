@@ -40,6 +40,10 @@ html {
   overflow: hidden;
 }
 
+.dropdown:hover {
+  display: block;
+}
+
 .dropdown__item:hover,
 .dropdown2__item:hover {
   color: var(--nav-bg);
@@ -49,13 +53,18 @@ html {
   color: var(--secondary-text);
 }
 
-.nav__item:hover::before {
-  width: 100%;
+.nav__item::before {
+  width: 0%;
   display: block;
   height: 4px;
   content: "";
   background-color: var(--hover-color);
   border-radius: 2px;
+  transition: width 0.8s ease;
+}
+
+.nav__item:hover::before {
+  width: 100%;
 }
 
 .arrow {
