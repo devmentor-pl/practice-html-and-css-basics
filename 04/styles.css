@@ -17,4 +17,47 @@ body {
   gap: 20px;
   padding: 10px;
   background-color: var(--nav-bg);
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.nav__item:hover {
+  cursor: pointer;
+  color: var(--hover-color);
+}
+
+.dropdown {
+  color: var(--secondary-text);
+  background-color: var(--dropdown-color);
+  padding: 5px 100px 5px 10px;
+}
+
+.dropdown__item:hover,
+.dropdown2__item:hover {
+  color: var(--nav-bg);
+}
+
+.dropdown2__list {
+  color: var(--secondary-text);
+}
+
+.nav__item::before {
+  width: 100%;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
 }
