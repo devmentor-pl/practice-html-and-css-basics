@@ -1,21 +1,23 @@
 :root {
   --primary-text: #000;
   --secondary-text: #8e9396;
-  --bg-color: #f7f7f7;
+  --bg-color: #c7c7c7;
   --hover-color: #009ae1;
   --dropdown-color: #333333;
   --nav-bg: #fff;
 }
 
-body {
+html {
   background-color: var(--bg-color);
   color: var(--primary-text);
+  height: 100vh;
 }
 
 .nav__list {
   display: flex;
   gap: 20px;
   padding: 10px;
+  margin-top: 20px;
   background-color: var(--nav-bg);
   font-size: 20px;
   text-transform: uppercase;
@@ -41,8 +43,13 @@ body {
   color: var(--secondary-text);
 }
 
-.nav__item::before {
+.nav__item:hover::before {
   width: 100%;
+  display: block;
+  height: 4px;
+  content: "";
+  background-color: var(--hover-color);
+  border-radius: 2px;
 }
 
 .arrow {
@@ -55,6 +62,7 @@ body {
 .right {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
+  border-color: var(--secondary-text);
 }
 
 .down {
