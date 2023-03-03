@@ -1,47 +1,79 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <meta
+        http-equiv="X-UA-Compatible"
+        content="ie=edge"
+    >
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
 </head>
+
 <body>
     <header>
-        <a>
-            <img src="logo.png" alt="logo">
-        </a>
+
+        <img
+            src="./img/logo.png"
+            alt="logo"
+            width="10%"
+        >
+
         <nav>
             <ul>
                 <li>Strona Główna</li>
-                <li>Informacje</li>
+                <li>Informacje
                     <ul>
                         <li>Info 1</li>
                         <li>Info 2</li>
                     </ul>
-                <li>Galeria</li>
+                </li>
+
+                <li>Galeria
                     <ul>
                         <li>Foto 1</li>
                         <li>Foto 2</li>
                     </ul>
+                </li>
+
                 <li>Kontakt</li>
             </ul>
         </nav>
     </header>
+
     <main>
         <article>
             <h1>Title</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, dignissimos sequi nulla modi ducimus, delectus soluta nam laboriosam corporis officia itaque, deserunt consequatur culpa consectetur. Maiores, repudiandae? Similique, minus. Rerum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, dignissimos sequi nulla modi ducimus, delectus soluta nam laboriosam corporis officia itaque, deserunt consequatur culpa consectetur. Maiores, repudiandae? Similique, minus. Rerum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, dignissimos sequi nulla modi ducimus, delectus soluta nam laboriosam corporis officia itaque, deserunt consequatur culpa consectetur. Maiores, repudiandae? Similique, minus. Rerum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, dignissimos sequi nulla modi ducimus,
+                delectus soluta nam laboriosam corporis officia itaque, deserunt consequatur culpa consectetur. Maiores,
+                repudiandae? Similique, minus. Rerum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel,
+                dignissimos sequi nulla modi ducimus, delectus soluta nam laboriosam corporis officia itaque, deserunt
+                consequatur culpa consectetur. Maiores, repudiandae? Similique, minus. Rerum.Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Vel, dignissimos sequi nulla modi ducimus, delectus soluta nam laboriosam
+                corporis officia itaque, deserunt consequatur culpa consectetur. Maiores, repudiandae? Similique, minus.
+                Rerum.</p>
             <p>Opublikowano: <time datetime="2023-02-22T20:00">22 lutego 2023</time> </p>
-            <p>Autor: Agata</p>
-            <img src="https://image-optimizer.jpgstoreapis.com/QmcKJzwGmNjeYcBQLy2TRHRwdgkvV6F4F1w3J1SzyVRvK5?width=1200" alt="Danketsu" width="500px">
+            <p>Autor:<a rel="author"> Agata </a></p>
+            <figure>
+                <img
+                    src="./img/main-img.webp"
+                    alt="Danketsu"
+                    width="30%"
+                >
+                <figcaption>obrazek</figcaption>
+            </figure>
+
             <table>
                 <caption>NFT</caption>
                 <thead>
                     <tr>
                         <th>nr</th>
                         <th>ranking</th>
-                        <th>cena</th>                
+                        <th>cena</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -57,11 +89,32 @@
                     </tr>
                 </tbody>
             </table>
+
         </article>
 
+        <form action="">
+            <label> Please write your comment
+                <textarea
+                    placeholder="Message"
+                    type="text"
+                    name="submitted comment"
+                    cols="30"
+                    rows="5"
+                ></textarea>
+
+
+                <input
+                    type="submit"
+                    value="SEND"
+                />
+            </label>
+        </form>
+
     </main>
+
     <footer>
         &copy; Copyright 2023
     </footer>
 </body>
+
 </html>
