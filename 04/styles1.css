@@ -82,7 +82,8 @@ html {
   background-color: var(--hover-color);
   border-radius: 2px;
   transition: width 0.8s ease;
-  transform: translateY(-20px);
+  margin-bottom: 10px;
+  /* transform: translateY(-20px); */
 }
 
 .nav__item:hover::before {
