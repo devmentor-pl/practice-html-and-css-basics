@@ -31,12 +31,13 @@ html {
 .nav__item {
   cursor: pointer;
   position: relative;
-  border: 1px solid green;
+  /* border: 1px solid green; */
   text-align: center;
 }
 
 .nav__item:nth-child(2) {
-  padding-right: 30px;
+  /* padding-right: 30px; */
+  width: 100px;
 }
 
 .nav__item:hover,
@@ -109,7 +110,7 @@ html {
   -webkit-transform: rotate(45deg);
   position: absolute;
   right: 0;
-  top: 5px;
+  top: 15px;
   /* transition: right 0.3s ease; */
 }
 
