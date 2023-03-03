@@ -48,6 +48,9 @@ html {
   position: relative;
 }
 
+.dropdown__item {
+}
+
 .nav__item:hover .dropdown {
   display: block;
 }
