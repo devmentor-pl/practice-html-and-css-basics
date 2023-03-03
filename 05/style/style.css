@@ -10,18 +10,27 @@ body {
 	margin: 0 auto;
 	max-width: 1000px;
 }
-nav {
+.nav {
 	display: flex;
 	justify-content: space-between;
 }
-nav img {
+.nav .nav__logo {
 	display: inline-block;
 	width: 200px;
 	height: 50px;
 	background: orange;
 }
-nav div a {
-	display: inline-block;
+.nav .nav__menu {
+	font-size: 0;
+}
+.nav .menu__items {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+	list-style: none;
+	font-size: 16px;
+}
+.menu__items .items__element {
 	width: 100px;
 	height: 50px;
 	background: orange;

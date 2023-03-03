@@ -13,7 +13,7 @@ body {
 	font-family: sans-serif;
 	background: var(--background-color);
 }
-nav {
+.navigation-element {
 	width: 100%;
 	margin: 20px 0 0 10px;
 	background: white;
@@ -29,10 +29,10 @@ nav {
 .nav .nav__item:first-child {
 	color: var(--nav-item-color);
 }
-.nav .nav__item:nth-of-type(2) {
+.nav .nav__item--dropdown {
 	position: relative;
 }
-.nav .nav__item:nth-of-type(2):hover:after {
+.nav .nav__item--dropdown:hover:after {
 	content: '>';
 	position: absolute;
 	font-size: 12px;
@@ -40,7 +40,7 @@ nav {
 	right: 5px;
 	transform: rotate(90deg);
 }
-.nav .nav__item:nth-of-type(2):hover {
+.nav .nav__item--dropdown:hover {
 	color: var(--nav-item-color);
 	border-top: 2px solid var(--nav-item-color);
 }
@@ -49,7 +49,7 @@ nav {
 	position: absolute;
 	text-transform: capitalize;
 }
-.nav .nav__item:nth-of-type(2):hover .item__dropdown {
+.nav__item:nth-of-type(2):hover .item__dropdown {
 	display: block;
 	top: 100%;
 
@@ -72,7 +72,7 @@ nav {
 .nav .link__subdirectory {
 	display: none;
 }
-.nav .dropbox__link:last-of-type:hover .link__subdirectory {
+.dropbox__link:last-of-type:hover .link__subdirectory {
 	display: block;
 	position: absolute;
 	top: 0;

@@ -37,10 +37,10 @@
 					laborum omnis hic, facilis odio nihil, animi repudiandae exercitationem! Incidunt, cumque perspiciatis. Consectetur.
 				</p>
 				<time class="article__date">20.01.2000</time>
-				<div class="author-box">
+				<figure class="author-box">
 					<img src="" alt="Author portrait" class="author-box__portrait" />
-					<p class="author-box__name">Lorem</p>
-				</div>
+					<figcaption class="author-box__name">Lorem</figcaption>
+				</figure>
 				<img src="" alt="Ilustration" />
 				<table class="table">
 					<caption class="table__title">
@@ -70,8 +70,11 @@
 					</tbody>
 				</table>
 			</article>
+
 			<form onsubmit="event.preventDefault()" class="comment" style="display: flex; flex-direction: column">
-				<textarea name="Comment content" placeholder="Enter comment" id="user-comment" cols="30" rows="10" class="comment__user-comment"></textarea>
+				<div>
+					<textarea name="Comment content" placeholder="Enter comment" id="user-comment" cols="30" rows="10" class="comment__user-comment"></textarea>
+				</div>
 				<label
 					>Name:
 					<input type="text" id="comment-author" class="comment__comment-author" placeholder="enter your name" />

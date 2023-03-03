@@ -1,10 +1,16 @@
-:root {
-	--font-link: 'https://www.fontsquirrel.com/fonts/source-sans-pro';
+@font-face {
+	font-family: 'Source Sans PRO';
+	src: local('Source Sans PRO'), url(../fonts/source-sans-pro/SourceSansPro-Regular.otf) format('woff2');
 }
 @font-face {
 	font-family: 'Source Sans PRO';
-	src: url(var(--font-link)) format('woff2'), url(var(--font-link)) format('woff2'), url(var(--font-link)) format('woff'),
-		url(var(--font-link)) format('truetype');
+	src: local('Source Sans PRO'), url(../fonts/source-sans-pro/SourceSansPro-It.otf) format('woff2');
+	font-style: italic;
+}
+@font-face {
+	font-family: 'Source Sans PRO';
+	src: local('Source Sans PRO'), url(../fonts/source-sans-pro/SourceSansPro-Bold.otf) format('woff2');
+	font-weight: bold;
 }
 * {
 	padding: 0;
@@ -45,6 +51,7 @@ body {
 .child--middle {
 	width: calc(0.3 * 600px - 20px);
 }
+
 .child--middle {
 	font-weight: bold;
 	margin: 0 10px;
