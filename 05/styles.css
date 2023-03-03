@@ -1,0 +1,85 @@
+:root {
+  --text-color: #303030;
+  --hover-color: #0997de;
+}
+
+html {
+  color: var(--text-color);
+}
+
+.section {
+  width: 100vw;
+  /* border: 1px solid green; */
+  padding: 5px 0;
+  margin-bottom: 5px;
+}
+
+.wrapper {
+  display: flex;
+  border: 1px solid blue;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.header > .wrapper {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.nav__list {
+  display: flex;
+  gap: 30px;
+}
+
+.nav__item {
+  cursor: pointer;
+}
+
+.nav__item a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.nav__item:hover {
+  color: var(--hover-color);
+}
+
+.article {
+  column-count: 2;
+}
+
+.article__content {
+  break-inside: avoid-column;
+}
+
+/* nie wiem jak zrobić, zeby obrazek mial taka sama wysokosc jak content */
+.article__content img {
+  object-fit: cover;
+}
+
+.gallery figure {
+  flex: 1;
+  margin: 10px; /* wartość marginesu do dostosowania */
+}
+
+figcaption {
+  text-align: center;
+}
+/* nie wiem jak zrobić, zeby stworzyły sie jednakowe przerwy w tej syutacji po bokach i miedzy kolumnami. */
+.gallery > .wrapper {
+  justify-content: space-around;
+}
+
+.footer {
+  min-height: 100px;
+  font-weight: 700;
+}
+
+footer > .wrapper {
+  justify-content: center;
+}
