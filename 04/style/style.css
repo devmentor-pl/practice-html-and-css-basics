@@ -21,6 +21,10 @@ body {
 .nav {
 	display: flex;
 }
+.nav a {
+	text-decoration: none;
+	color: inherit;
+}
 .nav .nav__item {
 	padding: 30px 20px;
 	text-transform: uppercase;
