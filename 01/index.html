@@ -1,12 +1,95 @@
 <!DOCTYPE html>
-<html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>devmentor.pl - HTML & CSS BASICS - #01</title>
-</head>
-<body>
-    
-</body>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<style>
+			textarea {
+				resize: none;
+			}
+		</style>
+		<title>devmentor.pl - HTML & CSS BASICS - #01</title>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<img src="" alt="Logo" />
+				<ul class="nav">
+					<li class="nav__item"><a href="#" class="nav__link">First</a></li>
+					<li class="nav__item">
+						<a href="#" class="nav__link">Second</a>
+						<ul class="item__dropdown">
+							<li class="dropdown__item">Second a</li>
+							<li class="dropdown__item">Second b</li>
+						</ul>
+					</li>
+					<li class="nav__item">Third</li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<article class="article">
+				<h2 class="article__title">Title</h2>
+				<p class="article__content">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem iure deleniti sapiente iusto libero ipsam facere, molestias dolorum? Expedita
+					veritatis voluptatem delectus enim quasi voluptates voluptate nulla similique velit et libero, obcaecati dolorem ratione assumenda eligendi quam
+					laborum omnis hic, facilis odio nihil, animi repudiandae exercitationem! Incidunt, cumque perspiciatis. Consectetur.
+				</p>
+				<time class="article__date">20.01.2000</time>
+				<figure class="author-box">
+					<img src="" alt="Author portrait" class="author-box__portrait" />
+					<figcaption class="author-box__name">Lorem</figcaption>
+				</figure>
+				<img src="" alt="Ilustration" />
+				<table class="table">
+					<caption class="table__title">
+						Article table
+					</caption>
+					<colgroup class="table__colgroup">
+						<col class="colgroup__item" />
+						<col class="colgroup__item" />
+					</colgroup>
+					<thead class="table__head">
+						<tr class="head__row">
+							<th class="head__row">Item</th>
+							<th class="head__row">Item</th>
+							<th class="head__row">Item</th>
+							<th class="head__row">Item</th>
+							<th class="head__row">Item</th>
+						</tr>
+					</thead>
+					<tbody class="table__body">
+						<tr class="body__row">
+							<td class="row__data">Item2</td>
+							<td class="row__data">Item2</td>
+							<td class="row__data">Item2</td>
+							<td class="row__data">Item2</td>
+							<td class="row__data">Item2</td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+
+			<form onsubmit="event.preventDefault()" class="comment" style="display: flex; flex-direction: column">
+				<div>
+					<textarea name="Comment content" placeholder="Enter comment" id="user-comment" cols="30" rows="10" class="comment__user-comment"></textarea>
+				</div>
+				<label
+					>Name:
+					<input type="text" id="comment-author" class="comment__comment-author" placeholder="enter your name" />
+				</label>
+				<time class="comment__date">01.20.2000</time>
+				<div>
+					<input type="submit" onclick="submitComment()" />
+				</div>
+			</form>
+		</main>
+		<footer>&copy; Pawel | Devmentor</footer>
+		<script type="text/javascript">
+			function submitComment() {
+				alert('Comment added');
+			}
+		</script>
+	</body>
 </html>
