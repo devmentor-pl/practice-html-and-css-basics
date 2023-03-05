@@ -1,6 +1,6 @@
 /* COMMON */
 @font-face {
-    font-family: 'source_sans_proregular';
+    font-family: 'source_sans';
     src: url('./../fonts/fs/sourcesanspro-regular-webfont.woff2') format('woff2'),
         url('./../fonts/fs/sourcesanspro-regular-webfont.woff') format('woff');
     font-weight: normal;
@@ -8,30 +8,30 @@
 }
 
 @font-face {
-    font-family: 'source_sans_probold';
+    font-family: 'source_sans';
     src: url('./../fonts/fs/sourcesanspro-bold-webfont.woff2') format('woff2'),
         url('./../fonts/fs/sourcesanspro-bold-webfont.woff') format('woff');
-    font-weight: normal;
+    font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'source_sans_proitalic';
+    font-family: 'source_sans';
     src: url('./../fonts/fs/sourcesanspro-it-webfont.woff2') format('woff2'),
         url('./../fonts/fs/sourcesanspro-it-webfont.woff') format('woff');
     font-weight: normal;
-    font-style: normal;
+    font-style: italic;
 }
 
 .parent {
     width: 600px;
     padding: 20px;
-    /* font-family: 'Source Sans PRO'; */
+    font-family: 'source_sans'
 }
 
 .child {
     background-color: rgb(171, 222, 235);
-    min-height: 100px;
+    min-height: 120px;
 
 }
 
@@ -41,23 +41,16 @@
     width: calc(30% - 10px);
 }
 
-.child--first {
-    font-family: 'source_sans_proregular';
-}
+.child--first {}
 
 .child--middle {
-    font-family: 'source_sans_probold';
+    font-weight: bold;
 }
 
 .child--last {
     width: 40%;
-    font-family: 'source_sans_proitalic';
+    font-style: italic;
 }
-
-
-/* font-family: 'Source Sans Pro', sans-serif; */
-
-
 
 /* END OF COMMON */
 
