@@ -25,18 +25,15 @@ html {
   background-color: var(--nav-bg);
   font-size: 20px;
   text-transform: uppercase;
-  /* padding: 20px; */
 }
 
 .nav__item {
   cursor: pointer;
   position: relative;
-  /* border: 1px solid green; */
   text-align: center;
 }
 
 .nav__item:nth-child(2) {
-  /* padding-right: 30px; */
   width: 100px;
 }
 
@@ -64,7 +61,7 @@ html {
   left: 100%;
   top: 50%;
 }
-/* dlaczego text-align nie wyśrodkowuje tekstu? */
+
 .dropdown__item,
 .dropdown2__item {
   text-align: center;
@@ -84,7 +81,6 @@ html {
   border-radius: 2px;
   transition: width 0.8s ease;
   margin-bottom: 10px;
-  /* transform: translateY(-20px); */
 }
 
 .nav__item:hover::before {
@@ -96,7 +92,6 @@ html {
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 3px;
-  /* vertical-align: 6px; */
 }
 
 .right {
@@ -111,7 +106,6 @@ html {
   position: absolute;
   right: 0;
   top: 15px;
-  /* transition: right 0.3s ease; */
 }
 
 .nav__item:hover .down,
