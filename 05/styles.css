@@ -72,7 +72,7 @@ figcaption {
 }
 /* nie wiem jak zrobić, zeby stworzyły sie jednakowe przerwy w tej syutacji po bokach i miedzy kolumnami. */
 .gallery > .wrapper {
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .footer {
