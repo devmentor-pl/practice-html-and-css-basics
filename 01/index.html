@@ -6,11 +6,11 @@
     <meta
         name="viewport"
         content="width=device-width, initial-scale=1.0"
-    >
+    />
     <meta
         http-equiv="X-UA-Compatible"
         content="ie=edge"
-    >
+    />
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
 </head>
 
@@ -49,9 +49,68 @@
                     <p>Author: Unknown</p>
                 </small>
             </address>
+
             <div>
-                <img src="https://images.pexels.com/photos/574070/pexels-photo-574070.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="laptop_image">
+                <img
+                    src="https://images.pexels.com/photos/574070/pexels-photo-574070.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="laptop_image"
+                >
             </div>
+
+            <div>
+                <table border="1">
+                    <caption>Przykładowa tabela</caption>
+                    <colgroup>
+                        <col
+                            span="3"
+                            style="background: none;"
+                        >
+                        <col style="background: orange">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                          <th>Header 1</th>
+                          <th>Header 2</th>
+                          <th>Header 3</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Row 1, Column 1</td>
+                          <td>Row 1, Column 2</td>
+                          <td>Row 1, Column 3</td>
+                        </tr>
+                        <tr>
+                          <td>Row 2, Column 1</td>
+                          <td>Row 2, Column 2</td>
+                          <td>Row 2, Column 3</td>
+                        </tr>
+                      </tbody>
+                </table>
+            </div>
+
+            <div>
+                <form>
+
+                    <div>
+                        <label>Miejsce na Twój komentarz:
+                            <input comment="commnet" />
+                        </label>
+                    </div>
+
+                    <div>
+                        <label>Autor
+                            <input comment="author" />
+                        </label>
+                    </div>
+
+                    <div>
+                        <input type="submit" />
+                    </div>
+
+                </form>
+            </div>
+
         </article>
     </main>
 </body>
