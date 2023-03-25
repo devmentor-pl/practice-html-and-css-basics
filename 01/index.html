@@ -26,27 +26,28 @@
         <nav>
             <ul>
                 <li>
-                    <a href="#">home</a>
+                    <a href="#">Strona główna</a>
                 </li>
                 <li>
-                    <a href="#">kontakt</a>
+                    <a href="#">Kontakt</a>
                 </li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <article>
-            <h2>Article title</h2>
+        <article id="article">
+            <h2>Tytuł artykułu</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam blanditiis cumque animi debitis
                 necessitatibus sequi quasi placeat ab harum rerum dolor dolores accusantium eius, eos voluptas ut
                 eveniet alias hic?</p>
             <p>Opublikowane:
                 <time datetime="2023-03-24">2023-03-24</time>
             </p>
+
             <address>
                 <small>
-                    <p>Author: Unknown</p>
+                    <p>Autor: Nieznany</p>
                 </small>
             </address>
 
@@ -60,58 +61,119 @@
             <div>
                 <table border="1">
                     <caption>Przykładowa tabela</caption>
+
                     <colgroup>
                         <col
                             span="3"
                             style="background: none;"
                         >
-                        <col style="background: orange">
+                        <col style="background: none">
                     </colgroup>
+
                     <thead>
                         <tr>
-                          <th>Header 1</th>
-                          <th>Header 2</th>
-                          <th>Header 3</th>
+                            <th>Nagłówek 1</th>
+                            <th>Nagłówek 2</th>
+                            <th>Nagłówek 3</th>
                         </tr>
-                      </thead>
-                      <tbody>
+                    </thead>
+
+                    <tbody>
                         <tr>
-                          <td>Row 1, Column 1</td>
-                          <td>Row 1, Column 2</td>
-                          <td>Row 1, Column 3</td>
+                            <td>Rząd 1, Kolumna 1</td>
+                            <td>Rząd 1, Kolumna 2</td>
+                            <td>Rząd 1, Kolumna 3</td>
                         </tr>
                         <tr>
-                          <td>Row 2, Column 1</td>
-                          <td>Row 2, Column 2</td>
-                          <td>Row 2, Column 3</td>
+                            <td>Rząd 2, Kolumna 1</td>
+                            <td>Rząd 2, Kolumna 2</td>
+                            <td>Rząd 2, Kolumna 3</td>
                         </tr>
-                      </tbody>
+                    </tbody>
                 </table>
             </div>
-
-            <div>
-                <form>
-
-                    <div>
-                        <label>Miejsce na Twój komentarz:
-                            <input comment="commnet" />
-                        </label>
-                    </div>
-
-                    <div>
-                        <label>Autor
-                            <input comment="author" />
-                        </label>
-                    </div>
-
-                    <div>
-                        <input type="submit" />
-                    </div>
-
-                </form>
-            </div>
-
         </article>
+
+        <hr />
+
+        <div>
+            <form>
+                <div>
+                    <label>Miejsce na Twój komentarz:
+                        <input comment="commnet" />
+                    </label>
+                </div>
+
+                <div>
+                    <label>Autor
+                        <input comment="author" />
+                    </label>
+                </div>
+
+                <div>
+                    <input type="submit" />
+                </div>
+
+            </form>
+        </div>
+
+        <div>
+            <article class="comment">
+                <p>
+                    To jest 1 komentarz w tej sekcji
+                </p>
+                <small>
+                    <p>Autor: Nieznany</p>
+                </small>
+                <small>
+                    <p>Opublikowane:
+                        <time datetime="2023-03-24">2023-03-24</time>
+                    </p>
+                </small>
+            </article>
+
+            <article class="comment">
+                <p>
+                    To jest 3 komentarz w tej sekcji
+                </p>
+                <small>
+                    <p>Autor: Nieznany</p>
+                </small>
+                <small>
+                    <p>Opublikowane:
+                        <time datetime="2023-03-24">2023-03-24</time>
+                    </p>
+                </small>
+            </article>
+
+            <article class="comment">
+                <p>
+                    To jest 3 komentarz w tej sekcji
+                </p>
+                <small>
+                    <p>Autor: Nieznany</p>
+                </small>
+                <small>
+                    <p>Opublikowane:
+                        <time datetime="2023-03-24">2023-03-24</time>
+                    </p>
+                </small>
+        </div>
+        </article>
+
+        <footer>
+            <div>&copy; 2023 Nieznany</div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Strona główna</a>
+                    </li>
+                    <li>
+                        <a href="#">Kontakt</a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
     </main>
 </body>
 
