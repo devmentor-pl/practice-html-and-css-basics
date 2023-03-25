@@ -7,7 +7,7 @@
 Znacznik label, którego przodkiem jest klasa .ac-container 
 (0, 1, 1)
 */
-?? {
+.ac-container label {
     height: 30px !important;
     line-height: 21px !important;
     font-size: 12px !important;
@@ -44,17 +44,17 @@ Znacznik label, którego przodkiem jest klasa .ac-container
 
 /* 
 Zmiana koloru tła po najechaniu przez kursor myszy na znacznik label, 
-który znajduje się wewnątrze elementu o klasie .ac-container 
+który znajduje się wewnątrz elementu o klasie .ac-container 
 (0, 2, 1)
 */
-?? {
+.ac-container > label {
     background: #fff;
 }
 
 /*
 Te same style CSS dla dwóch selektorów:
 1) 
-znacznik label, którego poprzedni brat jest znaznaczonym inputem (użyj pseudoklasy), 
+znacznik label, którego poprzedni brat jest zaznaczony inputem (użyj pseudoklasy), 
 i ten brat musi posiadać przodka o klasie .ac-container 
 (0, 2, 2)
 2) 
