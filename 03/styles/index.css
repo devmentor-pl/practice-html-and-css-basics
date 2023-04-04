@@ -1,0 +1,42 @@
+.parent.parent--inline-block, .parent.parent--float, .parent.parent--flexbox {
+  width: 600px;
+  padding: 20px;
+}
+
+.child.child--first { width: 30%; } .child.child--middle { width: 30%; } .child.child--last { width: 40%; }
+
+.child.child--first + .child.child--middle {
+  margin-bottom: 10px;
+}
+
+.child.child--middle + .child.child--last {
+  margin-bottom: 10px;
+}
+
+.child {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.child.child--first {
+  font-weight: 400; /* Regular */
+}
+
+.child.child--middle {
+  font-weight: 700; /* Bold */
+}
+
+.child.child--last {
+  font-style: italic; /* Italic */
+}
+
+.parent.parent--inline-block {
+  display: inline-block;
+}
+
+.parent.parent--float {
+  float: left;
+}
+
+.parent.parent--flexbox {
+  display: flex;
+}
