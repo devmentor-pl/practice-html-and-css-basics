@@ -1,0 +1,55 @@
+body {
+    background-color: #F6F6F6;
+}
+
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+
+/* Display list items horizontally */
+ul.navbar li {
+    float: left;
+}
+
+/* Style the anchor tags */
+ul.navbar li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.navbar li a:hover {
+    color: #84D7FF;
+}
+
+/* Dropdown menu styles */
+ul.navbar li ul.dropdown {
+    list-style-type: none;
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+    box-shadow: 0px 8px 16px 0px rgb(51,51,51);
+}
+
+ul.navbar li ul.dropdown li {
+    float: none;
+}
+
+ul.navbar li ul.dropdown li a {
+    color: #FFFFDE;
+    padding: 8px 16px;
+    text-align: left;
+}
+
+/* Show the dropdown menu when the parent list item is hovered */
+ul.navbar li:hover ul.dropdown {
+    display: block;
+}
