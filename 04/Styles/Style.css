@@ -1,0 +1,97 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* :root {
+} */
+
+body {
+	margin-top: 20px;
+	font-size: 24px;
+	color: gray;
+}
+
+.nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	min-height: 50px;
+	padding: 0 10px;
+	position: fixed;
+	top: 20px;
+	left: 30px;
+	box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.25);
+}
+.nav-item {
+	display: inline-block;
+}
+
+.nav-item a {
+	color: dimgrey;
+	text-decoration: none;
+	letter-spacing: 1.5px;
+	transition: color 0.3s;
+	cursor: pointer;
+	padding: 1rem 1rem;
+}
+
+.nav-item a:hover {
+	color: royalblue;
+}
+
+li {
+	list-style: none;
+}
+
+.dropdown {
+	position: relative;
+}
+
+.dropdown ul {
+	width: 150px;
+	text-align: center;
+	position: absolute;
+	background-color: dimgrey;
+	/* padding: 0; */
+}
+
+.dropdown ul a {
+	color: #fdfdfd;
+	/* padding: 0; */
+}
+
+.dropdown ul li {
+	padding: 0.5rem;
+}
+
+.dropdown ul li a {
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+}
+
+.dropdown ul li:hower {
+	color: white;
+}
+
+.dropdown ul {
+	display: none;
+}
+
+.dropdown a:focus + ul.level-1,
+.dropdown a:hover + ul.level-1,
+.dropdown ul.level-1:hover {
+	display: block;
+}
+
+li.link-2:hover li.nav-item-2 {
+	display: block;
+}
+
+/* .dropdown ul.level-1-2:hover ul {
+	display: block;
+} */
