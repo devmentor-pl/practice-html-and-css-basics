@@ -10,7 +10,7 @@ ul.navbar {
     background-color: white;
 }
 
-/* Display list items horizontally */
+/* Display items horizontally */
 ul.navbar li {
     float: left;
 }
@@ -36,7 +36,7 @@ ul.navbar li ul.dropdown {
     background-color: #333;
     min-width: 160px;
     z-index: 1;
-    box-shadow: 0px 8px 16px 0px rgb(51,51,51);
+    box-shadow: 0px 8px 16px 0px rgba(51,51,51,0.1);
 }
 
 ul.navbar li ul.dropdown li {
@@ -44,7 +44,7 @@ ul.navbar li ul.dropdown li {
 }
 
 ul.navbar li ul.dropdown li a {
-    color: #FFFFDE;
+    color: #fff;
     padding: 8px 16px;
     text-align: left;
 }
@@ -53,3 +53,27 @@ ul.navbar li ul.dropdown li a {
 ul.navbar li:hover ul.dropdown {
     display: block;
 }
+
+ul.navbar li ul.dropdown li ul {
+    list-style-type: none;
+}
+
+/* Show the ">" character when hovering over "Item 2" */
+ul.navbar li ul.dropdown > li:nth-child(2):hover > a::after {
+    content: ' >';
+}
+
+/* Hide the sub-items by default */
+ul.navbar li ul.dropdown > li:nth-child(2) ul {
+    display: none;
+}
+
+/* Show the sub-items when hovering over "Item 2" */
+ul.navbar li ul.dropdown > li:nth-child(2):hover > ul {
+    display: block;
+}
+
+
+
+
+
