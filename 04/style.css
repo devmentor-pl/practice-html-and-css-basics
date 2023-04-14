@@ -1,0 +1,122 @@
+:root {
+	--background: #f6f6f6;
+	--dark-background: #333333;
+	--menu: rgb(0, 154, 225);
+	--grey-light: #bec7d3;
+}
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: var(--background);
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+nav {
+	display: flex;
+	margin: 10px;
+	background-color: #fff;
+}
+.menu {
+	display: inline-block;
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 10px;
+}
+.menu__list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.menu__list--link {
+	font-size: 24px;
+	width: 100%;
+}
+.menu__list--link span {
+	color: var(--menu);
+}
+.menu__list a {
+	padding: 10px;
+	width: 100%;
+	color: var(--dark-background);
+	transition: color 0.3s;
+	text-decoration: none;
+	border-top: none;
+}
+.menu__list a:hover {
+	color: var(--menu);
+	border-top: 2px solid var(--menu);
+}
+.menu__items {
+	display: none;
+	position: absolute;
+	width: 200px;
+	height: 100px;
+	padding: 10px;
+	margin-top: 10px;
+	color: var(--background);
+	background-color: var(--dark-background);
+}
+.menu__items a {
+	color: var(--grey-light);
+}
+.menu__items a:hover {
+	color: var(--background);
+	border: none;
+}
+.black-menu{
+	display: block;
+	position: absolute;
+	width: 200px;
+	left: 100%;	padding: 10px;
+	background-color: var(--dark-background);
+}
+.menu__items--first {
+	top: 0;
+}
+.menu__items--second {
+	top: 50%;
+}
+.arrow{
+	width: 100%;
+}
+.arrow:hover::after {
+	display: inline-block;
+	content: '<';
+	color: var(--menu);
+	margin-left: 50px;
+	transform: rotate(-90deg);
+	font-weight: 800;
+}
+.menu__items > li:hover::after {
+	position: relative;
+	content: '>';
+	left: 70px;
+	color: var(--background);
+	font-weight: 800;
+}
+.items:hover .menu__items {
+	display: block;
+}
+.items:hover .menu__items--first,
+.menu__items:hover .menu__items--first {
+	display: none;
+}
+.item-one:hover .menu__items--first {
+	display: block;
+}
+.items:hover .menu__items--second,
+.menu__items:hover .menu__items--second {
+	display: none;
+}
+.item-two:hover .menu__items--second {
+	display: block;
+}

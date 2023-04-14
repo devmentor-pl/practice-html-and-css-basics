@@ -1,0 +1,45 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+.parent {
+	width: 600px;
+	padding: 20px;
+}
+
+.parent--inline-block .child {
+	display: inline-block;
+}
+.parent--float .child {
+	float: left;
+}
+
+.parent--float::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.parent--flexbox {
+	display: flex;
+}
+.child {
+	font-family: 'Source Sans PRO';
+}
+.child--first {
+	margin-right: 10px;
+	width: calc(100% / 10 * 3 - 40px);
+}
+.child--middle {
+	width: calc(100% / 10 * 3 - 40px);
+	margin-right: 10px;
+	font-weight: bold;
+}
+.child--last {
+	width: calc(100% / 10 * 4 - 40px);
+	font-style: italic;
+}
+@font-face {
+	font-family: 'Source Sans PRO';
+	src: url(./source-sans-pro/SourceSansPro-Regular.otf) format('opentype');
+}
