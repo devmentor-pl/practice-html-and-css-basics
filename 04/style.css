@@ -72,20 +72,26 @@ nav {
 	color: var(--background);
 	border: none;
 }
-.black-menu{
+.black-menu {
 	display: block;
 	position: absolute;
 	width: 200px;
-	left: 100%;	padding: 10px;
+	left: 100%;
+	padding: 10px;
 	background-color: var(--dark-background);
 }
+.item-one {
+	position: relative;
+}
 .menu__items--first {
-	top: 0;
+	position: absolute;
+	top: -10px;
 }
 .menu__items--second {
+	position: absolute;
 	top: 50%;
 }
-.arrow{
+.arrow {
 	width: 100%;
 }
 .arrow:hover::after {

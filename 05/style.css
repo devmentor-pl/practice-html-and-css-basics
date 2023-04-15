@@ -9,12 +9,12 @@
 	padding: 10px;
 }
 .wrapper {
-	max-width: 1000px;
-	border: 5px solid var(--wrapper-color);
 	display: flex;
 	justify-content: space-between;
 	margin: 0 auto;
 	padding: 10px 0;
+	max-width: 1000px;
+	border: 5px solid var(--wrapper-color);
 }
 .nav {
 	padding: 10px;

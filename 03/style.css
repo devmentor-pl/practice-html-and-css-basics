@@ -28,18 +28,25 @@
 }
 .child--first {
 	margin-right: 10px;
-	width: calc(100% / 10 * 3 - 40px);
+	width: calc(30% - 20px);
 }
 .child--middle {
-	width: calc(100% / 10 * 3 - 40px);
+	width: calc(30% - 20px);
 	margin-right: 10px;
-	font-weight: bold;
+	font-family: 'Source Sans bold';
 }
 .child--last {
-	width: calc(100% / 10 * 4 - 40px);
-	font-style: italic;
+	width: calc(40%);
+	font-family: 'Source Sans italic';
 }
 @font-face {
 	font-family: 'Source Sans PRO';
 	src: url(./source-sans-pro/SourceSansPro-Regular.otf) format('opentype');
+}
+@font-face {
+	font-family: 'Source Sans bold';
+	src: url(./source-sans-pro/SourceSansPro-Bold.otf) format('opentype');
+}@font-face {
+	font-family: 'Source Sans italic';
+	src: url(./source-sans-pro/SourceSansPro-It.otf) format('opentype');
 }
