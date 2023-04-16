@@ -2,96 +2,120 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	text-decoration: none;
 }
 
-/* :root {
+/* .abc {
+
+	transition: transform 0.3s;
 } */
 
 body {
-	margin-top: 20px;
-	font-size: 24px;
-	color: gray;
+	min-height: 100vh;
+	background-color: (#eeeeee);
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.nav {
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	min-height: 50px;
-	padding: 0 10px;
+header {
 	position: fixed;
-	top: 20px;
-	left: 30px;
-	box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.25);
-}
-.nav-item {
-	display: inline-block;
-}
-
-.nav-item a {
-	color: dimgrey;
-	text-decoration: none;
-	letter-spacing: 1.5px;
-	transition: color 0.3s;
-	cursor: pointer;
-	padding: 1rem 1rem;
+	top: 0px;
+	left: 0;
+	right: 0;
+	background: white;
+	box-shadow: 0px 5px 10px rgba(186, 183, 183, 0.6);
+	min-height: 60px;
+	/* padding: 15px 30px; */
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	z-index: 10;
 }
 
-.nav-item a:hover {
-	color: royalblue;
+header .nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
-li {
+header .nav ul {
 	list-style: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.dropdown {
+header .nav ul li {
 	position: relative;
+	/* max-height: 2rem; */
 }
 
-.dropdown ul {
-	width: 150px;
-	text-align: center;
+header .nav ul li a {
+	font-size: 20px;
+	/* min-width: 120px; */
+	padding: 5px 25px;
+	color: grey;
+	display: block;
+}
+
+header .nav ul li a:hover {
+	color: rgb(0, 132, 255);
+}
+
+header .nav ul li ul {
 	position: absolute;
-	background-color: dimgrey;
-	/* padding: 0; */
-}
-
-.dropdown ul a {
-	color: #fdfdfd;
-	/* padding: 0; */
-}
-
-.dropdown ul li {
-	padding: 0.5rem;
-}
-
-.dropdown ul li a {
-	width: 100%;
-	height: 100%;
-	display: inline-block;
-	padding: 0;
-	margin: 0;
-}
-
-.dropdown ul li:hower {
+	top: 40px;
+	left: 20px;
+	width: 180px;
+	background: black;
 	color: white;
-}
-
-.dropdown ul {
 	display: none;
 }
 
-.dropdown a:focus + ul.level-1,
-.dropdown a:hover + ul.level-1,
-.dropdown ul.level-1:hover {
-	display: block;
+header .nav .item-drop-1 a {
+	color: #ddd;
+	min-width: 100px;
+	min-height: 40px;
+	padding: 5px 5px;
 }
 
-li.link-2:hover li.nav-item-2 {
-	display: block;
+header .nav ul li ul li {
+	width: 100%;
 }
 
-/* .dropdown ul.level-1-2:hover ul {
-	display: block;
-} */
+header .nav ul li ul li ul {
+	top: 0px;
+	left: 180px;
+}
+
+header .nav ul li:focus-within > ul,
+header .nav ul li:hover > ul {
+	display: initial;
+}
+
+.nav li.item:hover {
+	border-top: 2px solid rgb(0, 132, 255);
+}
+
+.nav li.item-arrow:hover::after {
+	content: ">";
+	position: absolute;
+	display: inline-block;
+	transform: rotate(90deg);
+	color: rgb(0, 132, 255);
+	top: 12px;
+	left: 100px;
+	height: 12px;
+	font-size: 16px;
+}
+
+.nav li.item-arrow-2:hover::after {
+	content: ">";
+	position: absolute;
+	display: inline-block;
+	/* transform: rotate(90deg); */
+	color: #ddd;
+	top: 8px;
+	left: 160px;
+	height: 12px;
+	font-size: 16px;
+}
