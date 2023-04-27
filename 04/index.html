@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta
+        http-equiv="X-UA-Compatible"
+        content="IE=edge"
+    >
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <title>Document</title>
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+</head>
+
+<body>
+
+    <nav class="nav">
+
+        <ul class="nav__list">
+            <li class="nav__item">
+                <a class="nav__item-link" href="">Home</a>
+            </li>
+            <li class="nav__item nav__item-container">
+                <a class="nav__item-link nav__item-linkItems" href="">Items<i class="nav__arrow nav__arrow-down">></i></a>
+
+                <ul class="nav__nestedList firstNestedList">
+                    <li class="nestedList__item">
+                        <a class="nestedList__item-link" href="">Item 1</a>
+                    </li>
+                    <li class="nestedList__item nestedList__item-container">
+                        <a class="nestedList__item-link nestedList__item-linkContainer" href="">Item 2 <i class="nav__arrow nav__arrow-right">></i></a>
+
+                        <ul class="nav__nestedList secondNestedList">
+                            <li class="nestedList__item">
+                                <a class="nestedList__item-link" href="">Item 2.1</a>
+                            </li>
+                            <li class="nestedList__item">
+                                <a class="nestedList__item-link" href="">Item 2.2</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </li>
+            <li class="nav__item"><a class="nav__item-link" href="">Settings</a></li>
+            <li class="nav__item"><a class="nav__item-link" href="">Contact</a></li>
+        </ul>
+
+    </nav>
+
+</body>
+
+</html>
