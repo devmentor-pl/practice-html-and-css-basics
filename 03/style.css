@@ -1,0 +1,110 @@
+@font-face {
+    font-family: "Source Sans PRO";
+    src: url(source-sans-pro/SourceSansPro-Regular.otf) format('opentype');
+}
+
+:root {
+    --fontName: "Source Sans PRO";
+    --margin: 10px
+}
+
+/* reset styli  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* wspólne ustawienia dla wszystkich elementów */
+
+.parent {
+    /* margin-top: var(--margin); */
+    width: 600px;
+    padding: 20px;
+}
+
+.child--first,
+.child--middle,
+.child--last {
+    font-family: var(--fontName);
+}
+
+.child--middle {
+    font-weight: bold;
+}
+
+.child--last {
+    font-style: italic;
+}
+
+/* inline-block */
+
+.parent--inline-block {
+    font-size: 0;
+    /* usunięcie spacji pomiędzy elementami inline-block*/
+}
+
+.parent--inline-block .child--first,
+.parent--inline-block .child--middle,
+.parent--inline-block .child--last {
+    font-size: 16px;
+    display: inline-block;
+}
+
+.parent--inline-block .child--first,
+.parent--inline-block .child--middle {
+    width: calc((100% - (var(--margin)) * 2) * 0.3);
+    /* 30% rodzica*/
+}
+
+.parent--inline-block .child--middle {
+    margin: 0 var(--margin);
+}
+
+.parent--inline-block .child--last {
+    width: calc((100% - (var(--margin)) *2) * 0.4);
+    /* 40% rodzica*/
+}
+
+/* float */
+
+.parent--float .child--first,
+.parent--float .child--middle,
+.parent--float .child--last {
+    float: left;
+    width: calc((100% - (var(--margin)) *2) * 0.3)
+}
+
+.parent--float .child--middle {
+    margin: 0 var(--margin);
+}
+
+.parent--float .child--last {
+    width: calc((100% - (var(--margin)) *2) * 0.4)
+}
+
+.parent--float::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* third parent - flexbox  162 162 216*/
+
+.parent--flexbox {
+    display: flex;
+    gap: var(--margin)
+}
+
+.parent--flexbox .child--first {
+    flex-basis: 30%;
+}
+
+.parent--flexbox .child--middle {
+    flex-basis: 30%;
+}
+
+.parent--flexbox .child--last {
+    flex-basis: 40%;
+}
