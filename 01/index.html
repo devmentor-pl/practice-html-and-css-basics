@@ -71,16 +71,19 @@
           />
         </figure>
 
-        <h1>Efektywne zarządzenie sobą w czasie</h1>
-
-        <div class="article-header">
+        <header class="article-header">
+          <h1>Efektywne zarządzenie sobą w czasie</h1>
           <div class="article-author">
-            08.03.2023 |
+            <time class="comment__date" datetime="2023-03-08 20:21"
+              >2023-03-08 20:21</time
+            >
             <span class="author">
-              <a href="#" title="Autor artykułu">Paweł Kiełpiński</a>
+              <a href="#" rel="author" title="Autor artykułu"
+                >Paweł Kiełpiński</a
+              >
             </span>
           </div>
-        </div>
+        </header>
 
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo
@@ -114,11 +117,13 @@
                 </ul>
               </td>
               <td>
-                <li>zapobieganie</li>
-                <li>planowanie</li>
-                <li>rekreacja</li>
-                <li>szukanie możliwości</li>
-                <li>budowanie relacji</li>
+                <ul>
+                  <li>zapobieganie</li>
+                  <li>planowanie</li>
+                  <li>rekreacja</li>
+                  <li>szukanie możliwości</li>
+                  <li>budowanie relacji</li>
+                </ul>
               </td>
             </tr>
 
@@ -132,10 +137,12 @@
                 </ul>
               </td>
               <td>
-                <li>przyjemności</li>
-                <li>złodzieje czasu</li>
-                <li>niektóre e-maile</li>
-                <li>szukanie możliwości</li>
+                <ul>
+                  <li>przyjemności</li>
+                  <li>złodzieje czasu</li>
+                  <li>niektóre e-maile</li>
+                  <li>szukanie możliwości</li>
+                </ul>
               </td>
             </tr>
           </tbody>
@@ -155,21 +162,17 @@
       <hr />
 
       <form action="./add-comment.php" method="POST">
-        <label for="name">Imię i nazwisko</label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          min="5"
-          max="30"
-          required
-        /><br />
+        <div>
+          <label for="name">Imię i nazwisko</label>
+          <input type="text" id="name" name="name" min="5" max="30" required />
+        </div>
 
-        <p><label for="comment">Treść Twojego komentarza:</label></p>
-        <textarea id="comment" name="comment" rows="5" cols="40" required>
-Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse necessitatibus earum voluptate repellendus magnam delectus. Debitis, odit. Impedit, itaque et.
-</textarea
-        ><br />
+        <div>
+          <p><label for="comment">Treść Twojego komentarza:</label></p>
+          <textarea id="comment" name="comment" rows="5" cols="40" required>
+            Esse necessitatibus earum voluptate repellendus magnam delectus. Debitis, odit. Impedit, itaque et.
+          </textarea>
+        </div>
 
         <input type="submit" value="Dodaj komentarz" />
       </form>
@@ -183,7 +186,9 @@ Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse necessitatibus ea
           <li>
             <article>
               <h1>Mateusz</h1>
-              <time class="comment__date">2023-01-12 20:21:11</time>
+              <time class="comment__date" datetime="2023-01-12 20:21"
+                >2023-01-12 20:21</time
+              >
               <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
             </article>
           </li>
@@ -191,7 +196,9 @@ Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse necessitatibus ea
           <li>
             <article>
               <h1>Tomek</h1>
-              <time class="comment__date">2023-01-25 15:12:13</time>
+              <time class="comment__date" datetime="2023-01-25 15:12"
+                >2023-01-25 15:12</time
+              >
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Commodi.
@@ -202,7 +209,9 @@ Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse necessitatibus ea
           <li>
             <article>
               <h1>Marysia</h1>
-              <time class="comment__date">2023-03-06 22:22:34</time>
+              <time class="comment__date" datetime="2023-03-06 22:22"
+                >2023-03-06 22:22</time
+              >
               <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
             </article>
           </li>

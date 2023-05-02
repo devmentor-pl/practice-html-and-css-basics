@@ -65,7 +65,7 @@
   padding: 3px 3px 3px 3px;
 }
 
-.article1__article {
+.article1__content {
   margin: 0 auto;
   display: flex;
   flex-direction: row;
@@ -76,7 +76,7 @@
   min-height: 244px;
 }
 
-.article1__article-section {
+.article1__content-section {
   background-color: orange;
   min-height: 232px;
   width: 49.8%;
@@ -96,7 +96,7 @@
   padding: 3px 3px 3px 3px;
 }
 
-.article2__article {
+.article2__content {
   margin: 0 auto;
   border: 3px solid blue;
   max-width: 1000px;
@@ -106,7 +106,7 @@
   justify-content: space-around;
 }
 
-.article2__article-section {
+.article2__content-section {
   background-color: orange;
   min-height: 232px;
   width: 32.8%;

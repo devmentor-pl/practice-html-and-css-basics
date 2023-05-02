@@ -1,5 +1,21 @@
 @font-face {
-  font-family: "source_sans_proregular";
+  font-family: "Source sans";
+  src: url("sourcesanspro-bold-webfont.woff2") format("woff2"),
+    url("sourcesanspro-bold-webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Source sans";
+  src: url("sourcesanspro-it-webfont.woff2") format("woff2"),
+    url("sourcesanspro-it-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Source sans";
   src: url("sourcesanspro-regular-webfont.woff2") format("woff2"),
     url("sourcesanspro-regular-webfont.woff") format("woff");
   font-weight: normal;
