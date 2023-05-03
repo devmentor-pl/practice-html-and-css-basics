@@ -6,6 +6,7 @@
 .row {
     outline: 3px solid green;
     width: 100%;
+    margin-bottom: 10px;
 }
 
 .container {
@@ -17,7 +18,7 @@
 .cell {
     background-color: orange;
     margin: 0;
-    min-height: 50px;
+    height: 50px;
     padding: 0;
 }
 
@@ -54,4 +55,14 @@
 .section__article {
     min-height: 200px;
     width: 32%;
+}
+
+.footer__container {
+    display: flex;
+}
+
+.footer__copyrights {
+    margin: 0 auto;
+    height: 25px;
+    min-width: 100px;
 }
