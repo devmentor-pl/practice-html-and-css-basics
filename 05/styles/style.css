@@ -21,7 +21,7 @@
     padding: 0;
 }
 
-.header__container {
+.header__container, .main__container {
     display: flex;
     justify-content: space-between;
     padding: 1px 0 5px 0;
@@ -33,4 +33,14 @@
 
 .header__nav {
     min-width: 40%;
+}
+
+.main__container{
+    min-height: 200px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.main__article, .main__ads {
+    width: calc(50% - 2px);
 }
