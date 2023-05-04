@@ -40,83 +40,76 @@ a {
     text-transform: uppercase;
 }
 
-.nav__item-container {
+.nav__item--container {
     position: relative;
 }
 
-.nav__item-link {
+.nav__link {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
     color: #333333;
     flex-grow: 1;
 }
 
-.nav__item-link:hover {
+.nav__link:hover {
     border-top: 3px solid #009AE1;
     border-bottom: 3px solid transparent;
-    /* reguła dodana żeby tekst się nie obniżał po dodaniu górnego bordera. Jakie jest inne rozwiązanie? */
     color: #009AE1;
 }
 
-.nav__item-linkItems {
-    display: flex;
-    align-items: center;
-}
-
-.nav__arrow-down {
+.nav__arrow--down {
     transform: rotate(90deg);
     padding-bottom: 20px;
 }
 
 /* 1 zagnieżdzona nawigacja */
 
-.nav__nestedList {
+.nav__nested-list {
     visibility: hidden;
     position: absolute;
     display: flex;
     flex-direction: column;
 }
 
-.nav__item:hover .firstNestedList {
+.nav__item:hover .nav__nested-list--first {
     visibility: visible;
 }
 
-.firstNestedList {
+.nav__nested-list--first {
     left: 0;
     top: 70px
 }
 
-.nestedList__item {
+.nested-list__item {
     display: flex;
     width: 200px;
     text-transform: none;
     background-color: #333333;
 }
 
-.nestedList__item-link {
+.nested-list__link {
     width: 100%;
     padding: 10px 20px;
     color: #F5F5F5;
 }
 
-.nestedList__item-container {
+.nested-list__item--container {
     position: relative;
 }
 
-.nestedList__item-linkContainer {
+.nested-list__link--container {
     display: flex;
     justify-content: space-between;
 }
 
 /* 2 zagnieżdzona nawigacja */
 
-.nestedList__item-container:hover .secondNestedList {
+.nested-list__item--container:hover .nav__nested-list--second {
     visibility: visible;
 }
 
-.secondNestedList {
+.nav__nested-list--second {
     top: 0;
     left: 200px
 }

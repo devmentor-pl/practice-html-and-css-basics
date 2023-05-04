@@ -3,9 +3,24 @@
     src: url(source-sans-pro/SourceSansPro-Regular.otf) format('opentype');
 }
 
+@font-face {
+    font-family: "Source Sans PRO";
+    src: url(source-sans-pro/SourceSansPro-Bold.otf) format('opentype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Source Sans PRO";
+    src: url(source-sans-pro/SourceSansPro-It.otf) format('opentype');
+    font-style: italic;
+}
+
 :root {
-    --fontName: "Source Sans PRO";
     --margin: 10px
+}
+
+body {
+    font-family: "Source Sans PRO";
 }
 
 /* reset styli  */
@@ -19,15 +34,8 @@
 /* wspólne ustawienia dla wszystkich elementów */
 
 .parent {
-    /* margin-top: var(--margin); */
     width: 600px;
     padding: 20px;
-}
-
-.child--first,
-.child--middle,
-.child--last {
-    font-family: var(--fontName);
 }
 
 .child--middle {
@@ -43,11 +51,11 @@
 .parent--inline-block {
     font-size: 0;
     /* usunięcie spacji pomiędzy elementami inline-block*/
+    vertical-align: top;
 }
 
-.parent--inline-block .child--first,
-.parent--inline-block .child--middle,
-.parent--inline-block .child--last {
+.parent--inline-block .child {
+    vertical-align: top;
     font-size: 16px;
     display: inline-block;
 }

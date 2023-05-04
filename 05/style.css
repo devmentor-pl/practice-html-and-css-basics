@@ -18,39 +18,28 @@
     border: 3px solid rgb(61, 139, 202)
 }
 
-.flexItem {
+.flex-item {
     margin: 6px 0;
     background-color: rgb(255, 204, 45);
 }
 
 /* sekcja nr 1 - header */
 
-header {
-    position: fixed;
-    /* Wykonaj to zadanie w taki sposób, aby elementy wyglądały jak doczepione do lewego i prawego boku. - rozumiem że mają być nieruchome względem przeglądarki */
-    top: 0;
-    left: 0;
-}
-
-.header__box {
+.top__box {
     display: flex;
     justify-content: space-between;
     height: 70px;
 }
 
-.header__img {
+.top__img {
     width: 200px;
 }
 
-.header__nav {
+.top__nav {
     width: 400px;
 }
 
 /* sekcja nr 2 - section1 */
-
-main {
-    margin-top: 90px;
-}
 
 .section1__box {
     display: flex;
@@ -76,14 +65,14 @@ main {
 
 /* sekcja nr 4 - footer */
 
-.footer__box {
+.end__box {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100px;
 }
 
-.footer__info {
+.end__info {
     height: 60px;
     width: 150px;
 }
