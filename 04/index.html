@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <nav class="header__nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#">home</a></li>
+            <li class="nav__item">
+              items<span class="nav__item--arrow"></span>
+              <ul class="nav__dropdown dropdown">
+                <li class="dropdown__item"><a href="">item 1</a></li>
+                <li class="dropdown__item">
+                  item 2 <span class="nav__item--arrow"></span>
+                  <ul class="nav__dropdown dropdown--deep dropdown">
+                    <li class="dropdown__item"><a href="">item 2.1</a></li>
+                    <li class="dropdown__item"><a href="">item 2.2</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="nav__item"><a href="#">settings</a></li>
+            <li class="nav__item"><a href="#">contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  </body>
+</html>
