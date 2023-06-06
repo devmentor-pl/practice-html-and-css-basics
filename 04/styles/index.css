@@ -53,7 +53,6 @@ body {
   position: absolute;
   top: 0;
   right: 15px;
-  display: block;
   width: 5px;
   height: 5px;
   border-top: 1px solid var(--color-primary-2);
@@ -61,7 +60,7 @@ body {
   transform: rotate(225deg);
 }
 
-.nav__item:hover > .nav__item--arrow::after {
+.nav__item:hover.nav__item--arrow::after {
   border-top: 1px solid var(--color-primary-1);
   border-left: 1px solid var(--color-primary-1);
 }
@@ -86,23 +85,28 @@ body {
   position: relative;
 }
 
-.dropdown__item .nav__item--arrow::after {
+.dropdown__item a {
+  color: var(--color-primary-3);
+}
+
+.dropdown__item.nav__item--arrow::after {
   top: 20%;
   right: 15px;
   width: 5px;
   height: 5px;
-  border-top: 1px solid var(--color-primary-1);
-  border-left: 1px solid var(--color-primary-1);
+  border-top: 1px solid var(--color-primary-3);
+  border-left: 1px solid var(--color-primary-3);
   transform: rotate(130deg);
-}
-
-.dropdown__item a {
-  color: var(--color-primary-3);
 }
 
 .dropdown__item:hover,
 .dropdown__item a:hover {
   color: var(--color-white);
+}
+
+.dropdown__item:hover.nav__item--arrow::after {
+  border-top: 1px solid var(--color-white);
+  border-left: 1px solid var(--color-white);
 }
 
 .dropdown__item:hover > .nav__dropdown {
