@@ -6,11 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/hero.css" />
+    <link rel="stylesheet" href="styles/offer.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
   </head>
   <body>
-    <header id="header" class="header">
-      <div class="header__container container">
+    <header id="header" class="header section">
+      <div class="header__container container row">
         <h2 class="header__logo">form.</h2>
         <nav class="header__nav">
           <ul class="nav__links row">
@@ -22,5 +26,78 @@
         </nav>
       </div>
     </header>
+
+    <section class="hero section">
+      <div class="hero__container container row">
+        <div class="hero__info">
+          <h1>form.</h1>
+          <h3>design and build websites</h3>
+          <p class="hero__content-info">
+            Highly skilled at progressive enhancement, <br />
+            design systems & Ul Engineering.
+          </p>
+        </div>
+        <div class="hero__imgs row">
+          <div class="imgs__photo">
+            <img src="./assests/images/forkman.jpeg" alt="man with a fork" />
+          </div>
+          <div class="imgs__photo">
+            <img src="./assests/images/scalesmen.jpeg" alt="men on a scale" />
+          </div>
+          <div class="imgs__photo">
+            <img
+              src="./assests/images/umbrella-man-1.jpeg"
+              alt="man with an umrella"
+            />
+          </div>
+          <div class="imgs__photo">
+            <img src="./assests/images/poleman.jpeg" alt="man on a pole" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- wiem, że ta sekcja nie do tego służy, żeby wrzucać about us i get in touch tutaj, ale nie miałem innego pomyśłu -->
+    <section class="offer section">
+      <div class="offer__container container row">
+        <div class="offer__single-offer row">
+          <h3 class="single-offer__title">about us</h3>
+          <p class="single-offer__description">
+            I'm baby hexagon lyft 3 wolf moon, DIY lumbersexual ascot cray
+            gochujang freegan. Raw denim affogato banjo gastropub trust fund.
+          </p>
+        </div>
+        <div class="offer__single-offer row">
+          <h3 class="single-offer__title">work</h3>
+          <ul class="single-offer__description projects">
+            <li><a href="/">project 1</a></li>
+            <li><a href="/">project 2</a></li>
+            <li><a href="/">project 3</a></li>
+            <li><a href="/">project 4</a></li>
+          </ul>
+        </div>
+        <div class="offer__single-offer row">
+          <h3 class="single-offer__title">get in touch</h3>
+          <div class="single-offer__description">
+            <p>
+              I’m looking for any new opportunities. Whether you have a question
+              or just want to say hi, I’ll get back to you!
+            </p>
+            <div class="single-offer__btn-actions row">
+              <button><a href="mailto:test@test.com">Say hello</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer section">
+      <div class="footer__container container row">
+        <div class="footer__info">
+          <h4 class="footer__title">form.</h4>
+          <p class="footer__copyright-info">Copyright &copy; 2023 form., Inc</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
