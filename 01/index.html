@@ -56,29 +56,34 @@
           />
         </figure>
         <table style="border: 1px solid black">
+          <thead>
           <tr>
             <th>Lorem</th>
             <th>Ipsum</th>
             <th>Dolor</th>
           </tr>
+        </thead>
+        <tbody>
           <tr>
             <td>Dolor</td>
             <td>Ipsum</td>
             <td>Lorem</td>
           </tr>
+        </tbody>
         </table>
       </article>
       <form>
         <label for="name">Name:</label>
-        <input style="display: block" type="text" name="name" />
+        <input style="display: block" type="text" name="name" id="name"/>
         <label for="lastName">Last name:</label>
-        <input style="display: block" type="text" name="lastName" />
+        <input style="display: block" type="text" name="lastName" id="lastName"/>
         <label for="comment">Comment:</label>
         <textarea
           style="display: block"
           name="comment"
           cols="30"
           rows="10"
+          id="comment"
         ></textarea>
         <button type="submit">Add your comment</button>
       </form>
