@@ -36,15 +36,20 @@ body {
 }
 .nav__dropdown {
     display: none;
-    position: absolute;
-    background-color: #333333;
     width: 200%;
     top: 100%;
     left: 0;
 }
-.nav__dropdown .dropdown__item {
+.dropdown {
+    background-color: #333333;
+    position: absolute;
+}
+.dropdown__item {
     padding: 15px 0 15px 20px;
     text-transform: capitalize;
+}
+.dropdown:first-child {
+    color: #F6F6F6;
 }
 .dropdown__item:first-child,
 .second__item:first-child {
@@ -64,8 +69,6 @@ body {
 }
 .dropdown__second {
     display: none;
-    position: absolute;
-    background-color: #333333;
     width: 100%;
     top: 0;
     left: 100%;
