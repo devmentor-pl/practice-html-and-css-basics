@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04 - dropdown menu</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+
+    <ul class="nav">
+        <li class="active nav__item">
+            HOME
+        </li>
+        <li class="nav__item first-dropdown">
+            ITEMS <span class="nav__item--icon">></span>
+            <ul class="nav__dropdown">
+                <li class="dropdown__item">
+                    ITEM1
+                </li>
+                <li class="dropdown__item ">
+                    ITEM2 <span>></span>
+                    <ul class="nav__dropdown--second">
+                        <li class="dropdown__item">ITEM2.1</li>
+                        <li class="dropdown__item">ITEM2.1</li>
+                    </ul>
+
+                </li>
+            </ul>
+        </li>
+        <li class="nav__item">
+            SETTINGS
+        </li>
+        <li class="nav__item">
+            CONTACT
+        </li>
+    </ul>
+
+</body>
+
+</html>
