@@ -3,10 +3,10 @@
   "features": {
   },
   "customizations": {
+    // Configure properties specific to VS Code.
     "vscode": {
-      "extensions": [
-        "ritwickdey.LiveServer"
-      ]
-      
+      // Add the IDs of extensions you want installed when the container is created.
+      "extensions": ["ritwickdey.LiveServer"]
+    }
   }
 }
