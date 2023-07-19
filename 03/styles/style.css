@@ -1,6 +1,7 @@
 @font-face {
 	font-family: 'Source Sans PRO';
 	src: url(source-sans-pro/SourceSansPro-Bold.otf) format('opentype');
+	src: url(source-sans-pro/SourceSansPro-Regular.otf) format('opentype');
 }
 
 * {
