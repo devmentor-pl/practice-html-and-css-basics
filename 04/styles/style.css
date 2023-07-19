@@ -37,7 +37,7 @@ ul .active {
 	rotate: 90deg;
 }
 .first-dropdown,
-.dropdown__item:nth-child(2) {
+.nav__dropdown--item:nth-child(2) {
 	position: relative;
 }
 .nav__dropdown {
@@ -49,14 +49,14 @@ ul .active {
 .nav__item:hover .nav__dropdown {
 	display: block;
 }
-.dropdown__item {
+.nav__dropdown--item {
 	display: block;
 	padding: 10px 20px;
 	width: 120px;
 	color: #e6e6e6;
 	background-color: #333;
 }
-.dropdown__item:hover {
+.nav__dropdown--item:hover {
 	color: #fff;
 }
 .nav__dropdown--second {
@@ -65,6 +65,6 @@ ul .active {
 	top: 0;
 	left: 100%;
 }
-.dropdown__item:nth-child(2):hover > .nav__dropdown--second {
+.nav__dropdown--item:nth-child(2):hover > .nav__dropdown--second {
 	display: block;
 }
