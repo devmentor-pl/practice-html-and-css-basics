@@ -4,4 +4,4 @@ Ten katalog jest używany do konfiguracji usługi [codespaces](https://github.co
 
 Przy jego pomocy uruchamiam Twój kod, aby wykonać dla Ciebie Code Review.
 
-Nie modyfikuj jego zawartości.
+❌ **Nie modyfikuj jego zawartości.**
