@@ -1,0 +1,53 @@
+.green {
+    border: 5px solid green;
+    margin: 10px;
+}
+
+.blue {
+    border: 5px solid blue;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 5px 0;
+}
+
+.orange {
+    background-color: orange;
+    min-height: 50px;
+}
+
+.green--main .orange {
+    min-height: 400px;
+}
+
+.green--header .blue {
+    display: flex;
+    justify-content: space-between;
+}
+
+.orange--logo {
+    width: 160px;
+    margin: 0;
+}
+
+.orange--nav {
+    width: 300px;
+}
+
+.green--main .blue {
+    display: flex;
+    justify-content: space-between;
+}
+
+.green--main .orange {
+    width: 480px; /* nie wychodzi po nadaniu 48px jak w przyładzie*/
+}
+
+.green--section .blue {
+    display: flex;
+    justify-content: space-around;
+}
+
+.green--section .orange {
+    width: 30%;
+    min-height: 300px;
+}
