@@ -10,10 +10,40 @@
     <body>
         <nav class="nav">
             <ul class="nav__list menu">
-                <li class="menu__item">HOME</li>
-                <li class="menu__item">ITEMS</li>
-                <li class="menu__item">SETTINGS</li>
-                <li class="menu__item">CONTACT</li>
+                <li class="menu__item">
+                    <a href="" class="menu__link">HOME</a>
+                </li>
+                <li class="menu__item menu__dropdown">
+                    <a href="" class="menu__link">ITEMS</a>
+                    <ul class="dropdown">
+                        <li class="dropdown__item">
+                            <a href="" class="dropdown__link">ITEM 1</a>
+                        </li>
+
+                        <li class="dropdown__item menu__dropdown-right">
+                            <!--określa że ma podmenu dropdown__item--children-->
+                            <a href="" class="dropdown__link">ITEM 2</a>
+                            <ul class="dropdown-right">
+                                <li class="dropdown-right__item">
+                                    <a href="" class="dropdown-right__link"
+                                        >ITEM 2.1</a
+                                    >
+                                </li>
+                                <li class="dropdown-right__item">
+                                    <a href="" class="dropdown-right__link"
+                                        >ITEM 2.2</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu__item">
+                    <a href="" class="menu__link">SETTINGS</a>
+                </li>
+                <li class="menu__item">
+                    <a href="" class="menu__link">CONTACT</a>
+                </li>
             </ul>
         </nav>
     </body>
