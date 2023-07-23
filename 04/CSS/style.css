@@ -1,0 +1,95 @@
+body {
+    background-color: rgb(204, 198, 198);
+    font-size: 20px;
+}
+
+.menu {
+    margin: 20px;
+    background-color: white;
+    display: flex;
+}
+
+.menu__item {
+    padding: 20px 40px;
+    border-top: 5px solid transparent;
+}
+
+.menu__dropdown-right {
+    /* wobec tego elemtu pozycjonukemy dropdown-right*/
+    position: relative;
+}
+
+.menu__dropdown-right::after {
+    /*tworzymy strzałkę*/
+    content: ">";
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: white;
+}
+
+.menu__dropdown-right:hover /* po najechaniu na item 2*/> .dropdown-right {
+    display: block; /*pokazuje drugie menu*/
+}
+
+.menu__item:hover {
+    border-top: 5px solid rgb(0, 132, 255);
+}
+
+.menu__link {
+    color: #444;
+    text-decoration: none; /*wyłączamy podkreślenie nagłówków, nadajemy kolor*/
+}
+
+.menu__dropdown {
+    position: relative; /* określamy względem czego pozycjonujemy*/
+}
+
+.menu__dropdown::after {
+    /*tworzymy strzałkę*/
+    content: ">";
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    transform: rotate(90deg); /*obracamy strzałkę*/
+}
+
+.menu__dropdown:hover > .dropdown {
+    /* po najechaniu na items rozwija się podmenu*/
+    display: block;
+}
+.dropdown {
+    position: absolute; /* określamy pozycję absolutną dzięki czemu ustalimy pozycję*/
+    background-color: black;
+    top: 100%; /* dzięki wpisaniu 100% nie mamy odstępu i nie znika menu*/
+    left: 0;
+    min-width: 280px;
+    display: none; /* wyłączamy widoczność menu*/
+}
+
+.dropdown__item {
+    padding: 10px 20px;
+}
+
+.dropdown__link {
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown-right {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background-color: black;
+    min-width: 240px;
+    display: none; /* ukrywamy menu items 2*/
+}
+
+.dropdown-right__item {
+    padding: 10px 20px;
+}
+
+.dropdown-right__link {
+    color: white;
+    text-decoration: none;
+}
