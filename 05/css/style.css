@@ -1,6 +1,7 @@
 .green {
     border: 5px solid green;
     margin: 10px;
+    padding: 5px 0;
 }
 
 .blue {
@@ -50,4 +51,13 @@
 .green--section .orange {
     width: 30%;
     min-height: 300px;
+}
+
+.green--footer .blue {
+    display: flex;
+    justify-content: center;
+}
+
+.green--footer .orange {
+    width: 100px;
 }
