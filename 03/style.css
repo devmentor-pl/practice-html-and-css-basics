@@ -4,9 +4,15 @@
 	box-sizing: border-box;
 }
 
+body{
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+
 .parent {
 	width: 600px;
 	padding: 20px;
+    font-style: ;
 }
 
 .parent--inline-block .child {
@@ -30,6 +36,11 @@
 	width: calc(30% - 10px);
 	margin-right: 10px;
 }
+
+.child--middle{
+    font-weight: bold;
+}
 .child--last {
 	width: 40%;
+    font-style: italic;
 }
