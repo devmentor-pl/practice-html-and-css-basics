@@ -52,7 +52,7 @@ body {
 	z-index: 1;
 }
 
-/* Links inside the dropdown */
+
 .dropdown-content a {
 	color: black;
 	padding: 5px;
@@ -60,13 +60,13 @@ body {
 	display: block;
 }
 
-/* Change color of dropdown links on hover */
+
 .dropdown-content a:hover {
 	background-color: #ddd;
 	border-top: none;
 }
 
-/* Show the dropdown menu on hover */
+
 .dropdown:hover .dropdown-content {
 	display: block;
 }
