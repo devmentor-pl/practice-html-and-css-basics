@@ -7,6 +7,81 @@
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
 </head>
 <body>
-    
+    <header>
+        <h1><img src="" alt=""></h1>
+        <nav>
+            <ul>
+                <li><a href="#">home</a></li>
+                <li>
+                    <a href="#">oferta</a>
+                    <ul>
+                        <li><a href="#">strony www</a></li>
+                        <li><a href="#">sklepy internetowe</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">o mnie</a></li>
+                <li><a href="#">kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h1>Jakiś tytuł</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat fuga dolorum?</p>
+            <figure>
+                <img src="images/img.png">
+                <figcaption>Super obrazek</figcaption>
+            </figure>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">The table header</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>The table body1</td>
+                        <td>with two columns1</td>
+                    </tr>
+                    <tr>
+                        <td>The table body2</td>
+                        <td>with two columns2</td>
+                    </tr>
+                    <tr>
+                        <td>The table body3</td>
+                        <td>with two columns3</td>
+                    </tr>
+                </tbody>
+            </table>
+            <footer>
+                <p>Autor artykułu: <a rel="author">Mateusz B.</a>, data publikacji: <time datetime="2021-01-01">przedwczoraj</time></p>
+            </footer>
+        </article>
+    </main>
+    <section>
+        <form action="">
+            <div><label for="name">Imię</label><input type="text" name="name" id="name"></div>
+            <div><label for="content"></label><textarea name="content" id="content" cols="30" rows="10"></textarea></div>
+            <div><input type="submit" value="Dodaj komentarz"></div>
+        </form>
+
+        <ul>
+            <li>
+                <h2><a rel="author">Ania</a>, <time datetime="2022-02-01">2022-02-01</time></h2>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </li>
+            <li>
+                <h2><a rel="author">Ola</a>, <time datetime="2022-02-01">2022-03-02</time></h2>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </li>
+            <li>
+                <h2><a rel="author">Marcin</a>, <time datetime="2022-02-01">2022-05-02</time></h2>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </li>
+        </ul>
+    </section>
+    <footer>
+        <p>&copy; 2024 devmentor.pl</p>
+    </footer>
 </body>
 </html>
