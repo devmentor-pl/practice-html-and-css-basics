@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
   </head>
   <body>
     <header>
-      <img src="./img/webdev-logo.png" alt="logo image" style="height: 100px" />
+      <img src="./img/webdev-logo.png" alt="logo image" class="img--logo" />
       <nav>
         <ul>
           <li><a href="#">Strona główna</a></li>
@@ -33,12 +34,14 @@
           jak zmiany klimatu, utrata bioróżnorodności oraz degradacja
           ekosystemów....
         </p>
-        <p>Data publikacji: 22 sierpnia 2023</p>
-        <p>Autor: Maria Nowak</p>
+        <p>
+          Data publikacji: <time datetime="2023-08-07"> 07 sierpnia 2023</time>.
+        </p>
+        <p>Autor: <a href="”#”" rel="”author”">Maria Nowak</a></p>
         <img
           src="./img/article-illustration.jpg"
           alt="Illustration image"
-          style="height: 200px"
+          class="img--ill"
         />
         <table>
           <tr>
@@ -54,45 +57,51 @@
             <td>Przyrost lasów i zalesianie obszarów degradowanych</td>
           </tr>
         </table>
+        <!-- Text area -->
       </article>
-      <form action="#" method="post">
-        <textarea rows="4" cols="50"></textarea><br />
-        <button type="submit">Dodaj komentarz</button>
-      </form>
-      <br />
+      <div>
+        <label for="comment">Napisz komentarz:</label>
+        <form action="#" method="post">
+          <textarea id="comment" rows="4" cols="50"></textarea>
+          <button type="submit">Dodaj komentarz</button>
+        </form>
+      </div>
       <!-- Single comment -->
-      <div style="border: 1px solid black">
+      <article>
         <p>
           Treść komentarza bardzo mnie zaintrygowała. Zmiany klimatu to poważny
           problem, z którym musimy się zmierzyć jako społeczeństwo.
         </p>
-        <p>Autor: Janina Kowalska</p>
-        <p>Data utworzenia: 24 sierpnia 2023</p>
-      </div>
-      <br />
+        <p>Autor: <a href="”#”" rel="”author”">Janina Kowalska</a></p>
+        <p>
+          Data utworzenia:<time datetime="2023-08-24"> 24 sierpnia 2023</time>.
+        </p>
+      </article>
       <!-- End of single comment -->
       <!-- Single comment -->
-      <div style="border: 1px solid black">
-        <p></p>
+      <article>
         <p>
           Nie zgadzam się z twierdzeniem, że działalność człowieka jest główną
           przyczyną zmian klimatu. Istnieje wiele czynników naturalnych, które
           również mają wpływ na naszą planetę.
         </p>
-        <p>Autor: Andrzej Nowak</p>
-        <p>Data utworzenia: 25 sierpnia 2023</p>
-      </div>
-      <br />
+        <p>Autor: <a href="”#”" rel="”author”">Andrzej Nowak</a></p>
+        <p>
+          Data utworzenia:<time datetime="2023-08-25"> 25 sierpnia 2023</time>.
+        </p>
+      </article>
       <!-- End of single comment -->
       <!-- Single comment -->
-      <div style="border: 1px solid black">
+      <article>
         <p>
           Bardzo ważny artykuł. Musimy działać teraz, aby przekazać naszym
           przyszłym pokoleniom zdrową i zrównoważoną planetę.
         </p>
-        <p>Autor: Ewa Wiśniewska</p>
-        <p>Data utworzenia: 26 sierpnia 2023</p>
-      </div>
+        <p>Autor: <a href="”#”" rel="”author”">Ewa Wiśniewska</a></p>
+        <p>
+          Data utworzenia:<time datetime="2023-08-26"> 26 sierpnia 2023</time>.
+        </p>
+      </article>
       <!-- End of single comment -->
     </main>
     <footer>
