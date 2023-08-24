@@ -1,0 +1,40 @@
+:root {
+    --color-a: #333333;
+    --color-b: #5DB4E9;
+    --color-c: #F7F7F7;
+    --color-d: #FFFFFF;
+}
+.nav {
+    background-color: var(--color-c);
+    display: flex;
+    font-family: sans-serif;
+    margin: 10px;
+}
+.nav__item {
+    color: var(--color-a);
+    background-color: var(--color-d);
+    padding: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav__dropdown {
+    display: none;
+    padding : 20px;
+}
+.nav__item:hover > .nav__dropdown {
+    display: block;
+}
+.dropdown__item {
+    background-color: var(--color-a);
+    color: var(--color-d);
+    padding: 5px 20px;
+    position: absolute;
+    
+}
+
+.nav__item:hover {
+    color: var(--color-b);
+    border-top: 5px solid var(--color-b);
+}
