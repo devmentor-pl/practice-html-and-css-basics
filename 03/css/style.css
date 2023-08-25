@@ -29,24 +29,28 @@
 .parent--float .child {
     float:right;
 }
+.parent--float:first-child {
+    margin-left: 0;
+
+}
 .parent--flexbox {
     display: flex;
     justify-content: space-between;
     margin: 10px;
 }
 .child--first {
-    width: 30%;
+    width: calc(30% - 10px);
     font-family: "Source Sans Pro";
     font-style: normal;
 }
 .child--middle {
-    width: 30%;
+    width: calc(30% - 10px);
     font-family: "Source Sans Pro";
     font-style: normal;
     font-weight: bold;
 }
 .child--last {
-    width: 40%;
+    width: calc(30% - 10px);
     font-family: "Source Sans Pro";
     font-style: italic;
 }

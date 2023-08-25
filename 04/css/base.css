@@ -9,12 +9,12 @@
     display: flex;
     font-family: sans-serif;
     margin: 10px;
+    position: relative;
 }
 .nav__item {
     color: var(--color-a);
     background-color: var(--color-d);
     padding: 20px;
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,6 +22,8 @@
 .nav__dropdown {
     display: none;
     padding : 20px;
+    position: absolute;
+    top: 100%;
 }
 .nav__item:hover > .nav__dropdown {
     display: block;
