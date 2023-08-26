@@ -1,0 +1,54 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: "Source Sans PRO";
+	src: url(https://www.fontsquirrel.com/fonts/source-sans-pro);
+	font-style: normal;
+}
+
+section {
+	position: relative;
+}
+
+.parent {
+	width: 600px;
+	padding: 20px;
+}
+.child {
+	padding: 0 5px 0 5px;
+}
+
+.parent .child--first {
+	max-width: calc(0.3 * 100%);
+	font-weight: normal;
+}
+.parent .child--middle {
+	max-width: calc(0.3 * 100%);
+	font-weight: bold;
+}
+.parent .child--last {
+	max-width: calc(0.38 * 100%);
+	font-style: italic;
+}
+
+.parent--inline-block div {
+	display: inline-block;
+}
+
+.parent--float div {
+	float: left;
+	min-height: 180px;
+}
+
+.parent--flexbox div {
+	margin-top: 20px;
+	float: none;
+	display: inline-flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
