@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>04 - Multi-level menu</title>
+  </head>
+  <body>
+   <!-- Multi-level menu container -->
+    <nav class="menu--container">
+      <ul class="container--ul">
+        <li class="container--li">
+          <a href="#">home</a><span class="arr arr--down">></span></a>
+        </li>
+        <li class="container--li items-li">
+          <a href="#">items</a><span class="arr arr--down">></span>
+          <!-- Second level menu -->
+          <ul class="container--2lvl">
+            <li class="li--2lvl">
+              <a href="#">Item 1</a>
+            </li>
+            <li class="li--2lvl items--3lvl--list">
+              <a href="#">Item 2</a><span class="arr arr--right">></span>
+              <!-- Third level menu -->
+                        <ul class="container--3lvl">
+            <li class="li--2lvl">
+              <a href="#">Item 2.1</a>
+            </li>
+            <li class="li--2lvl">
+              <a href="#">Item 2.2</a>
+            </li>
+          </ul>
+          <!-- End of third level menu -->
+            </li>
+          </ul>
+          <!-- End of Second level menu-->
+        </li>
+        <li class="container--li">
+          <a href="#">settings </a><span class="arr arr--down">></span>
+        </li>
+        <li class="container--li">
+          <a href="#">contact </a><span class="arr arr--down">></span>
+        </li>
+      </ul>
+    </nav>
+   <!-- End of multi-level menu container -->
+  </body>
+</html>

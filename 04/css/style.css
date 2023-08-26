@@ -1,0 +1,134 @@
+:root {
+  /* Colors */
+  --primary-color: #079bdf;
+  --primary-text-color: #333;
+  --text-color-white: #defcff;
+  --primary-bg-color: #f3f3f3;
+  --primary-bg-list: #333333;
+
+  /* Transition */
+  --transition: all 0.3s ease-in-out;
+}
+
+/* //////////////////////////////////////////////////////// */
+
+body {
+  background-color: var(--primary-bg-color);
+}
+
+.container--ul {
+  clear: both;
+  background-color: #fff;
+  height: 5rem;
+  min-width: max-content;
+}
+
+.container--li {
+  list-style: none;
+  float: left;
+}
+
+.container--li > a {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.02rem;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  color: var(--primary-text-color);
+  border-top: 0.3rem solid transparent;
+  padding: 1rem;
+}
+
+.container--li:hover > a {
+  color: var(--primary-color);
+  border-top: 0.3rem solid var(--primary-color);
+  transition: var(--transition);
+}
+
+.arr {
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 0.02rem;
+  line-height: 2.5rem;
+}
+
+.arr--down {
+  writing-mode: vertical-rl;
+  opacity: 0;
+}
+
+.container--li:hover .arr--down {
+  color: var(--primary-color);
+  opacity: 1;
+  transition: var(--transition);
+}
+/* //////////////////////////////////////////////////////// */
+/* Second level menu styles */
+
+.items-li {
+  position: relative;
+}
+
+.container--2lvl {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  list-style: none;
+  width: 200%;
+  background-color: var(--primary-bg-list);
+}
+
+.items-li:hover .container--2lvl {
+  opacity: 1;
+  visibility: visible;
+  transition: var(--transition);
+}
+
+.li--2lvl {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.li--2lvl a {
+  font-size: 1.8rem;
+  letter-spacing: 0.02rem;
+  line-height: 2.5rem;
+  text-decoration: none;
+  color: var(--primary-bg-color);
+}
+
+/* Arrow settings */
+.arr--right {
+  opacity: 0;
+  color: var(--text-color-white);
+}
+
+.li--2lvl:hover .arr--right {
+  opacity: 1;
+  transition: var(--transition);
+}
+
+/* //////////////////////////////////////////////////////// */
+/* Third level menu styles */
+.items--3lvl--list {
+  position: relative;
+}
+
+.container--3lvl {
+  position: absolute;
+  left: 100%;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  list-style: none;
+  background-color: var(--primary-bg-list);
+}
+
+.items--3lvl--list:hover .container--3lvl {
+  opacity: 1;
+  visibility: visible;
+  transition: var(--transition);
+}
+/* //////////////////////////////////////////////////////// */
