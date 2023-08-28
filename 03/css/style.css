@@ -27,11 +27,16 @@
     display: inline-block;
 }
 .parent--float .child {
-    float:right;
+    float:left;
 }
 .parent--float:first-child {
     margin-left: 0;
 
+}
+.parent--float::after {
+    content: '';
+    clear: both;
+    display: block;
 }
 .parent--flexbox {
     display: flex;
