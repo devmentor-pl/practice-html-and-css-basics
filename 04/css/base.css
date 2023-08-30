@@ -4,6 +4,10 @@
     --color-c: #F7F7F7;
     --color-d: #FFFFFF;
 }
+.container{
+    display: flex;
+    justify-content: space-between;
+}
 .nav {
     background-color: var(--color-c);
     display: flex;
@@ -49,7 +53,8 @@
     color: var(--color-d);
     padding: 5px 20px;
     position: relative;
-    float: right;
+    top: 0;
+    left: 100%;
 }
 
 .nav__item:hover {
