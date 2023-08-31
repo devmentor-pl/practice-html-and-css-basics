@@ -1,0 +1,16 @@
+.section2__container {
+    display: flex;
+    justify-content: space-between;
+}
+.section2__article1 {
+    min-height: 200px;
+    width: 33%;
+}
+.section2__article2 {
+    min-height: 200px;
+    width: 33%;
+}
+.section2__article3 {
+    min-height: 200px;
+    width: 33%;
+}

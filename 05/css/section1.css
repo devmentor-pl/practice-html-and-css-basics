@@ -1,0 +1,14 @@
+.section1__container {
+    display: flex;
+    justify-content: space-between;
+}
+.section1__article1 {
+    min-height: 300px;
+    width: 49%;
+    margin: 0;
+}
+.section1__article2 {
+    min-height: 300px;
+    width: 49%;
+    margin: 0;
+}

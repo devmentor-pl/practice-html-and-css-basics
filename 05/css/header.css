@@ -1,0 +1,13 @@
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.header__section1 {
+    min-width: 200px;
+    margin:0;
+}
+.header__section2 {
+    min-width: 400px;
+    margin: 0;
+}
