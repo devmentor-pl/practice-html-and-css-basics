@@ -4,10 +4,6 @@
     --color-c: #F7F7F7;
     --color-d: #FFFFFF;
 }
-.container{
-    display: flex;
-    justify-content: space-between;
-}
 .nav {
     background-color: var(--color-c);
     display: flex;
@@ -22,6 +18,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+}
+.arrow {
+    font-size: 10px;
+    position: absolute;
+    right: 6px;
+    top: 25%;
+    
+}
+.arrow:hover {
+    transform: rotate(0.25turn);
 }
 .nav__dropdown {
     display: none;
