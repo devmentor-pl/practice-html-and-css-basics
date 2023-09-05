@@ -1,12 +1,104 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <meta
+        http-equiv="X-UA-Compatible"
+        content="ie=edge"
+    >
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
 </head>
+
 <body>
-    
+
+    <header class="header">
+        <img
+            class="header__logo" src="./images/logo.png" alt="logo">
+
+        <nav class="container">
+            <ul class="nav__links">
+                <li class="nav__link-item"><a href="#" class="nav__link">element 1</a></li>
+                <li class="nav__link-item"><a href="#" class="nav__link">element 2
+                    <ul class="submenu__links">
+                        <li class="submenu__link-item"><a href="#" class="submenu__link">element2.1</a></li>
+                        <li class="submenu__link-item"><a href="#" class="submenu__link">element2.2</a></li>
+                        <li class="submenu__link-item"><a href="#" class="submenu__link">element2.3</a></li>
+                    </ul>
+                </a></li>
+                <li class="nav__link-item"><a href="#" class="nav_link">element 3</a></li>
+                <li class="nav__link-item"><a href="#" class="nav_link">element 4</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <article class="article">
+            <h1 class="article__header">Title</h1>
+            <p class="article__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem tempora perspiciatis est impedit, nobis pariatur. Repellat sunt nemo officia aperiam inventore? Sequi harum laborum, provident iusto ex blanditiis consequatur adipisci itaque pariatur illo voluptas eos, ut assumenda ducimus nam. Autem fuga in exercitationem molestias repellendus nostrum officia, eligendi obcaecati dolore.</p>
+            <p class="article__date">04.09.2023</p>
+            <p class="article__author">Krystian Makowski</p>
+            <div class="article__bg-img">
+                <img class="article__img" src="./images/pic.png" alt="article image">
+            </div>
+
+            <table class="table">
+                <tr>
+                    <th>Name</th>
+                    <td>Joe</td>
+                    <td>Sarah</td>
+                </tr>
+                <tr>
+                    <th>Surname</th>
+                    <td>Doherty</td>
+                    <td>Kennedy</td>
+                </tr>
+                <tr>
+                    <th>Age</th>
+                    <td>20</td>
+                    <td>25</td>
+                </tr>
+            </table>
+
+        </article>
+
+        <section class="forms">
+            <form action="GET" class="form">
+                <div><label for="name">name</label><input type="text" name="name" id="name" placeholder="type your name"></div>
+                <div><label for="surname">surname</label><input type="text" name="surname" id="surname" placeholder="type your surname"></div>
+                <div><label for="email">e-mail</label><input type="email" name="email" id="email" placeholder="joe@gmail.com"></div>
+                <div><label for="comment"><textarea name="comment" id="comment" rows="5" cols="30" placeholder="write your comment!"></textarea></label></div>
+                <div><input type="submit" value="send"></div>
+            </form>
+        </section>
+
+        <section class="comments">
+
+            <div class="comment">
+            <h3 class="comments__header">Joe Doherty. 04.09.2023</h3>
+            <p class="comments__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi facere excepturi nemo ad, numquam dolorum.</p>
+        </div>
+
+        <div class="comment">
+            <h3 class="comments__header">Joe Doherty. 04.09.2023</h3>
+            <p class="comments__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi facere excepturi nemo ad, numquam dolorum.</p>
+        </div>
+
+        <div class="comment">
+            <h3 class="comments__header">Joe Doherty. 04.09.2023</h3>
+            <p class="comments__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi facere excepturi nemo ad, numquam dolorum.</p>
+        </div>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer_text">&copy; Krystian Makowski 2023</p>
+    </footer>
 </body>
+
 </html>
