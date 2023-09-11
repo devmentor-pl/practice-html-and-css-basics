@@ -62,7 +62,7 @@ to samo co w 1) ale z efektem najechania kursorem na label
 (0, 3, 2)
 */
 
- .ac-container > div > input:checked{
+ .ac-container input:checked +label{
     background: #f1f2f3;
     color: #666;
     text-shadow: 0 1px 1px rgba(255,255,255,0.6);
