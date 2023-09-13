@@ -5,7 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS BASICS - #03</title>
+    <link href="https://fonts.cdnfonts.com/css/source-sans-pro" rel="stylesheet">        
+    <link rel="stylesheet" href="/03/index.css">
 </head>
+
+<style>
+
+.parent {
+    width: 600px;
+    padding: 20px;
+}
+
+.child {
+    width: calc(30% - 10px);
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+}
+
+.child:nth-child(3) {
+    width: calc(40% - 10px);
+}
+
+.child--first + .child--middle,
+.child--middle + .child--last {
+    margin-top: 10px;
+}
+
+.child--middle {
+    font-weight: bold;
+}
+
+.child--last {
+    font-style: italic;
+}
+
+</style>
 <body>
     
     <section class="parent parent--inline-block">
