@@ -1,0 +1,39 @@
+.header__container {
+    display: flex;
+    justify-content: space-between;;
+}
+.header__logo {
+    min-width: 200px;
+    margin: 0px;
+}
+.header__nav {
+    min-width: 400px;
+    margin: 0px;
+}
+.content__container {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+}
+.content__article, .content__ads {
+    min-height: 200px;
+    width: 48.5%;
+    
+}
+.main__container {
+    display: flex;
+    justify-content: space-around;
+}
+.main__box {
+    width: 31%;
+    min-height: 200px;
+    justify-content: space-evenly;
+}
+.footer__container {
+    display: flex;
+    justify-content: center
+}
+.footer__copyright {
+    width: 10%;
+}
+
