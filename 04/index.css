@@ -1,57 +1,98 @@
-* {
+body {
     background-color: #F6F6F6;
-}
-
-.nav {
-    background-color: white;
-    margin: 15px;
-}
-.navbar {
-    max-width: 400px;
-    background-color: inherit;
 }
 .menu {
     display: flex;
-    justify-content: space-around;
-    padding: 10px;
+    background-color: white;
+    margin: 20px; 
 }
 .menu__item {
+    background-color: white;
+    padding: 15px 30px 15px 20px;
     position: relative;
 }
+.menu__item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #009AE1;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+.menu__item:hover::before {
+    transform: scaleX(1);
+}
 .menu__link {
+    background-color: white;
     text-decoration: none;
-    padding: 10px 20px;
+    color: black;
+}
+.menu__item:nth-child(-n+2) .menu__link {
+    color: #009AE1;
+}
+.menu__item:nth-last-child(-n+2) .menu__link {
+    color: black;
+}
+.menu__dropdown {
+    position: relative;
+}
+.menu__dropdown:hover > .dropdown {
     display: block;
 }
-.menu__dropdown ul {
-    display: none;
+.menu__dropdown-extend:hover > .dropdown_extend {
+    display: block;
+}
+.dropdown__item {
+    padding: 15px;
+}
+.dropdown__link {
+    text-decoration: none;
+    color: white;
+    padding-left: 6px;
+}
+.menu__dropdown-extend {
+    position: relative;
+}
+.dropdown-extend__item {
+    padding: 15px;
+}
+.dropdown__link-extend {
+    text-decoration: none;
+    color: white;
+}
+.dropdown {
     position: absolute;
     top: 100%;
-    left: 0;
+    left: 00px;
+    width: 200px;
+    background-color: #333333;
+    display: none;
 }
-.menu__item.menu__dropdown:hover > ul {
-    display: block;
+.dropdown_extend {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 200px;
+    background-color: #333333;
+    display: none;
 }
-.menu__item.menu__dropdown:hover::after {
+.menu__dropdown::after {
     content: ">";
     position: absolute;
-    right: 0px;
-    top: 10px;
-    transform: rotate(90deg);
+    right: 5px;
+    top: 12px;
+    scale: 0.8;
+    transform: rotate(90deg);  
 }
-.menu__dropdown li.menu__dropdown:hover::after {
-    content: none;
-}
-.menu__dropdown li {
-    display: block;
-}
-.menu__dropdown li:hover > ul {
-    display: block;
-    left: 100%;
-    top: 0;
-}
-a {
-    text-decoration: none;
-    color: #000000;
-    background-color: white;
+.menu__dropdown-extend::after {
+    content: "<";
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    scale: 0.8;
+    transform: rotate(180deg); 
+    color: white;
 }
