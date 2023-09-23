@@ -16,7 +16,7 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 20px;
+	/* padding: 20px; */
 	list-style-type: none;
 	background-color: silver;
 }
@@ -69,7 +69,11 @@ a {
     background-color: hsl(0, 0%, 20%);
 }
 
-.nav__item:hover .nav__list__submenu--primary {
+.nav__item{
+    padding:20px;
+}
+
+.nav__item:hover > .nav__list__submenu--primary {
     display: block;
 }
 
@@ -81,7 +85,7 @@ a {
     left: 100%;
 }
 
-.nav__item:hover .nav__list__submenu--secondary {
+.nav__item:hover > .nav__list__submenu--secondary {
     display: block;
     transition: .6s ease-in;
 }
