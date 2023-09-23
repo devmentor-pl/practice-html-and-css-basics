@@ -8,9 +8,14 @@
 	vertical-align: top;
 }
 
-.parent--float {
+.parent--float::after{
+    content:'';
+    clear: both;
+    display:block;
+}
+
+.parent--float .child {
 	float: left;
-	clear: both;
 }
 
 .parent--flexbox {
@@ -19,16 +24,16 @@
 }
 
 .child--first {
-    width: calc(30% - 10px);
+    width: calc(30% - 20px);
     padding: 10px;
 }
 
 .child--middle{
-    width: calc(30% - 10px);
+    width: calc(30% - 20px);
     padding: 10px;
 }
 
 .child--last{
-    width:calc(40% - 10px);
+    width:calc(40% - 20px);
     padding:10px;
 }
