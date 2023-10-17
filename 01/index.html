@@ -1,12 +1,180 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    />
+    <meta
+        http-equiv="X-UA-Compatible"
+        content="ie=edge"
+    />
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
 </head>
+
 <body>
-    
+
+    <header>
+        <a href="/">
+            <img
+                src="https://devmentor.pl/wp-content/uploads/2021/01/cropped-logo-devmentor.pl_.png"
+                alt="devmentor logo"
+            >
+        </a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Strona główna</a>
+                </li>
+                <li>
+                    <a href="#">Kontakt</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article id="article">
+            <h2>Tytuł artykułu</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam blanditiis cumque animi debitis
+                necessitatibus sequi quasi placeat ab harum rerum dolor dolores accusantium eius, eos voluptas ut
+                eveniet alias hic?</p>
+            <p>Opublikowane:
+                <time datetime="2023-03-24">2023-03-24</time>
+            </p>
+
+            <address>
+                <small>
+                    <p>Autor: Nieznany</p>
+                </small>
+            </address>
+
+            <div>
+                <img
+                    src="https://images.pexels.com/photos/574070/pexels-photo-574070.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="laptop_image"
+                >
+            </div>
+
+            <div>
+                <table border="1">
+                    <caption>Przykładowa tabela</caption>
+
+                    <colgroup>
+                        <col
+                            span="3"
+                            style="background: none;"
+                        >
+                        <col style="background: none">
+                    </colgroup>
+
+                    <thead>
+                        <tr>
+                            <th>Nagłówek 1</th>
+                            <th>Nagłówek 2</th>
+                            <th>Nagłówek 3</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Rząd 1, Kolumna 1</td>
+                            <td>Rząd 1, Kolumna 2</td>
+                            <td>Rząd 1, Kolumna 3</td>
+                        </tr>
+                        <tr>
+                            <td>Rząd 2, Kolumna 1</td>
+                            <td>Rząd 2, Kolumna 2</td>
+                            <td>Rząd 2, Kolumna 3</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </article>
+
+        <hr />
+
+        <div>
+            <form>
+                <div>
+                    <label>Miejsce na Twój komentarz:
+                        <input comment="commnet" />
+                    </label>
+                </div>
+
+                <div>
+                    <label>Autor
+                        <input comment="author" />
+                    </label>
+                </div>
+
+                <div>
+                    <input type="submit" />
+                </div>
+
+            </form>
+        </div>
+
+        <div>
+            <article class="comment">
+                <p>
+                    To jest 1 komentarz w tej sekcji
+                </p>
+                <small>
+                    <p>Autor: Nieznany</p>
+                </small>
+                <small>
+                    <p>Opublikowane:
+                        <time datetime="2023-03-24">2023-03-24</time>
+                    </p>
+                </small>
+            </article>
+
+            <article class="comment">
+                <p>
+                    To jest 3 komentarz w tej sekcji
+                </p>
+                <small>
+                    <p>Autor: Nieznany</p>
+                </small>
+                <small>
+                    <p>Opublikowane:
+                        <time datetime="2023-03-24">2023-03-24</time>
+                    </p>
+                </small>
+            </article>
+
+            <article class="comment">
+                <p>
+                    To jest 3 komentarz w tej sekcji
+                </p>
+                <small>
+                    <p>Autor: Nieznany</p>
+                </small>
+                <small>
+                    <p>Opublikowane:
+                        <time datetime="2023-03-24">2023-03-24</time>
+                    </p>
+                </small>
+        </div>
+        </article>
+
+        <footer>
+            <div>&copy; 2023 Nieznany</div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Strona główna</a>
+                    </li>
+                    <li>
+                        <a href="#">Kontakt</a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+    </main>
 </body>
+
 </html>
