@@ -1,0 +1,16 @@
+.wrapper__header {
+  height: 60px;
+}
+
+.header__logo,
+.header__nav {
+  height: 100%;
+}
+
+.header__logo {
+  flex-basis: 15%;
+}
+
+.header__nav {
+  flex-basis: 40%;
+}

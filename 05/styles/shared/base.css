@@ -1,0 +1,26 @@
+:root {
+  --green-standard: #0ED145;
+  --blue-standard: #00A8F3;
+  --cell-standard: #FFCA18;
+}
+
+.wrapper {
+  width: 100%;
+  margin-bottom: 10px;
+  outline: 2px solid var(--green-standard);
+  padding: 10px 0;
+}
+
+.cell {
+  background-color: var(--cell-standard);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  outline: 2px solid var(--blue-standard);
+  width: 1000px;
+  margin: 0 auto;
+  padding: 10px 0;
+}
