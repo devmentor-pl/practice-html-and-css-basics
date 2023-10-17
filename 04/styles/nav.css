@@ -1,0 +1,138 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('./../assets/fonts/Roboto-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  --blue-main: #009AE1;
+  --background-secondary: #333333;
+  --white: #fff;
+}
+
+body {
+  background-color: #F6F6F6;
+  font-family: 'Roboto';
+  box-sizing: border-box;
+}
+
+.nav {
+  height: 60px;
+  padding: 20px 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.primary__list,
+.secondary__list {
+  display: none;
+}
+
+ul.nav__list {
+  background-color: #fff;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.nav__list__item {
+  flex-basis: 8%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.nav__list__item a {
+  color: #000;
+  border: 3px solid inherit;
+  height: 60px;
+  width: 100%;
+  line-height: 60px;
+  text-align: center;
+}
+
+.nav__list__item > a:focus {
+  color: var(--blue-main);
+}
+
+.nav__list__item > a:hover,
+.items:has(.primary__list:hover) > a {
+  color: var(--blue-main);
+  border-top: 3px solid var(--blue-main);
+}
+
+.nav__list__item a:hover + .primary__list,
+.primary__list:hover {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: block;
+}
+
+.primary__list,
+.secondary__list {
+  background-color: var(--background-secondary);
+  width: 200px;
+}
+
+.primary__list__item,
+.secondary__list__item {
+  padding: 6px 10px;
+  height: 30px;
+}
+
+.primary__list__item a {
+  color: var(--white);
+  font-size: 14px;
+  cursor: pointer;
+  display: inline-block;
+  text-align: left;
+  height: 30px;
+  line-height: 30px;
+}
+
+.arrow {
+  border: solid;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.arrow--right {
+  transform: rotate(315deg);
+  position: relative;
+  left: 75%;
+}
+
+.arrow--down {
+  display: none;
+  margin-left: 5px;
+  border-color: var(--blue-main);
+  transform: rotate(45deg);
+}
+
+.items:has(.primary__list:hover) .arrow--down,
+.items a:hover .arrow--down {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.primary__list__item:nth-child(2):hover .secondary__list {
+  display: block;
+  position: relative;
+  left: calc(100% + 10px);
+  top: calc((-100% - 6px));
+  background-color: var(--background-secondary);
+}
+
+.primary__list__item:hover > a,
+.secondary__list__item:hover > a {
+  font-weight: bold;
+}
+
+
