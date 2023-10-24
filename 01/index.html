@@ -7,6 +7,77 @@
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
 </head>
 <body>
-    
+    <header>
+        <div id="logo">Logo</div>
+        <nav>
+            <ul>
+                <li><a href="#">Strona główna</a></li>
+                <li><a href="#">O nas</a></li>
+                <li>
+                    <a href="#">Produkty</a>
+                    <ul>
+                        <li><a href="#">Produkt 1</a></li>
+                        <li><a href="#">Produkt 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main> <!- opis znacznika <article> strona23 -> 
+        <article>
+            <h1>Dawny Homo Sapiens</h1>
+            <p>Treść artykułu...</p>
+            <p>Data publikacji: 24 października 2023</p>
+            <p>Autor: David</p>
+            <img src="sciezka/do/ilustracji.jpg" alt="Homo sapiens sapiens"> 
+            <table>
+                <!-- Tabela -->
+            </table>
+        </article>
+
+        <section id="komentarze">
+            <h2>Komentarze</h2>
+            <form>
+                <label for="komentarz">Dodaj komentarz:</label><br>
+                <textarea id="komentarz" name="komentarz" rows="4" cols="50"></textarea><br>
+                <label for="autor">Autor:</label>
+                <input type="text" id="autor" name="autor"><br>
+                <input type="submit" value="Dodaj komentarz">
+            </form>
+
+            <div class="komentarz">
+                <p>Treść komentarza...</p>
+                <p>Autor komentarza</p>
+                <p>Data utworzenia: 24 października 2023</p>
+            </div>
+
+            <div class="komentarz">
+                <p>Treść komentarza...</p>
+                <p>Autor komentarza</p>
+                <p>Data utworzenia: 24 października 2023</p>
+            </div>
+        </section>
+        <!- formularz ze strony 30 , a może ze strony 49 lepszy ? -> 
+        <form>
+            <div>
+                <label>Imię
+                    <input name="firstName" />
+                </label>
+            </div>
+            <div>
+                <label>Nazwisko
+                    <input name="lastName" />
+
+                </label>
+            </div>
+            <div><input type="submit" /> </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Nazwa Twojej Strony. Wszelkie prawa zastrzeżone.</p>
+    </footer>
 </body>
 </html>
