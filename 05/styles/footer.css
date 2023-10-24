@@ -1,0 +1,10 @@
+.footer__container {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100px;
+}
+
+.footer__copyright-info {
+    font-size: 10px;
+}

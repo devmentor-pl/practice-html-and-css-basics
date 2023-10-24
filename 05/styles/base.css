@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,700;1,500;1,700&family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;1,300;1,400&family=Oswald:wght@200;400;600;700&display=swap");
+
+:root {
+  --clr-primary-1: hsl(0, 0%, 12.5%);
+  --clr-primary-2: hsl(0, 0%, 83.9%);
+  --clr-primary-3: hsl(8, 89%, 57.3%);
+
+  --border--max: ;
+}
+
+* {
+  color: var(--clr-primary-1);
+}
+
+body {
+  background-color: var(--clr-primary-2);
+  font-family: "Oswald", sans-serif;
+  width: 100vw;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+h1 {
+  font-size: clamp(100px, 12vw, 200px);
+}
+
+h1:hover {
+  color: var(--clr-primary-3);
+}
+
+h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 75px;
+  font-weight: normal;
+}
+
+h3 {
+  font-family: "Montserat", sans-serif;
+  font-size: 30px;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--clr-primary-1);
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  line-height: 2;
+  font-size: 18px;
+  font-size: 4vw;
+  font-size: clamp(14px, 4vw, 20px);
+  max-width: 600px;
+}
+
+button {
+  padding: 0.5rem 1em;
+  background-color: var(--clr-primary-3);
+  border: none;
+  transition: 0.3s ease-in-out;
+  font-size: 15px;
+  font-family: "Oswald", sans-serif;
+}
+
+button:hover {
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.section {
+  /* border: 2px solid green; */
+  padding: 1em 0;
+  margin: 2px 0;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 5px auto;
+  /* border: 2px solid blue; */
+}
+
+.row {
+  display: flex;
+}

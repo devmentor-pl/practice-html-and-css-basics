@@ -1,0 +1,74 @@
+@font-face {
+  font-family: "Source Sans PRO";
+  src: url(SourceSansPro-Regular.otf) format("opentype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Source Sans PRO";
+  src: url(source-sans-pro/SourceSansPro-Bold.otf) format("opentype");
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Source Sans PRO";
+  src: url(source-sans-pro/SourceSansPro-It.otf) format("opentype");
+  font-style: italic;
+  font-weight: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans PRO", sans-serif;
+}
+
+.parent {
+  width: 600px;
+  padding: 20px;
+  background-color: antiquewhite;
+  margin: 15px;
+}
+
+/* INLINE BLOCK */
+.parent--inline-block .child {
+  display: inline-block;
+}
+
+/* FLOAT  */
+.parent--float .child {
+  float: left;
+}
+
+.parent--float::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* FLEX */
+.parent--flexbox {
+  display: flex;
+}
+
+.child {
+  /* outline: 1px solid; */
+  /* outline-color: red; */
+  margin: 5px;
+  width: calc(30% - 10px);
+}
+
+.parent .child--last {
+  width: calc(40% - 10px);
+}
+
+.child.child--middle {
+  font-weight: bold;
+}
+
+.child.child--last {
+  font-style: italic;
+}
