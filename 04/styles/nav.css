@@ -26,9 +26,11 @@ a {
   text-decoration: none;
 }
 
-.primary__list,
-.secondary__list {
+.primary,
+.secondary {
   display: none;
+  background-color: var(--background-secondary);
+  width: 200px;
 }
 
 ul.nav__list {
@@ -38,8 +40,9 @@ ul.nav__list {
   align-items: center;
 }
 
-.nav__list__item {
+.list__item {
   flex-basis: 8%;
+  margin-right: 10px;
   height: 60px;
   display: flex;
   align-items: center;
@@ -47,7 +50,7 @@ ul.nav__list {
   position: relative;
 }
 
-.nav__list__item a {
+.list__item a {
   color: #000;
   border: 3px solid inherit;
   height: 60px;
@@ -56,37 +59,31 @@ ul.nav__list {
   text-align: center;
 }
 
-.nav__list__item > a:focus {
+.list__item > a:focus {
   color: var(--blue-main);
 }
 
-.nav__list__item > a:hover,
-.items:has(.primary__list:hover) > a {
+.list__item > a:hover,
+.items:has(.primary:hover) > a {
   color: var(--blue-main);
   border-top: 3px solid var(--blue-main);
 }
 
-.nav__list__item a:hover + .primary__list,
-.primary__list:hover {
+.list__item a:hover + .primary,
+.primary:hover {
   position: absolute;
   top: 100%;
   left: 0;
   display: block;
 }
 
-.primary__list,
-.secondary__list {
-  background-color: var(--background-secondary);
-  width: 200px;
-}
-
-.primary__list__item,
-.secondary__list__item {
+.primary__item,
+.secondary__item {
   padding: 6px 10px;
   height: 30px;
 }
 
-.primary__list__item a {
+.primary__item a {
   color: var(--white);
   font-size: 14px;
   cursor: pointer;
@@ -116,13 +113,13 @@ ul.nav__list {
   transform: rotate(45deg);
 }
 
-.items:has(.primary__list:hover) .arrow--down,
+.items:has(.primary:hover) .arrow--down,
 .items a:hover .arrow--down {
   display: inline-block;
   margin-bottom: 5px;
 }
 
-.primary__list__item:nth-child(2):hover .secondary__list {
+.primary__item:nth-child(2):hover .secondary {
   display: block;
   position: relative;
   left: calc(100% + 10px);
@@ -130,8 +127,8 @@ ul.nav__list {
   background-color: var(--background-secondary);
 }
 
-.primary__list__item:hover > a,
-.secondary__list__item:hover > a {
+.primary__item:hover > a,
+.secondary__item:hover > a {
   font-weight: bold;
 }
 
