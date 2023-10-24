@@ -25,7 +25,8 @@
         </nav>
     </header>
 
-    <main> <!- opis znacznika <article> strona23 -> 
+    <main> 
+        <!-- opis znacznika <article> strona23 --> 
         <article>
             <h1>Dawny Homo Sapiens</h1>
             <p>Treść artykułu...</p>
@@ -60,20 +61,21 @@
             </div>
         </section>
         <!--  formularz ze strony 30 , a może ze strony 49 lepszy + copyrights strona 67? --> 
-        <form>
-            <div>
-                <label>Imię
-                    <input name="firstName" />
-                </label>
-            </div>
-            <div>
-                <label>Nazwisko
-                    <input name="lastName" />
+        
 
-                </label>
-            </div>
-            <div><input type="submit" /> </div>
-        </form>
+        <form><div>
+            <label for="nickname">Twój nick:</label>
+            <input type="text" id="nickname" name="nickname"></div>
+            <div>
+            <label for="user-email">Twój e-mail:</label>
+            <input type="email" id="user-email" name="user-email" required></div>
+            <div>
+            <label for="content">Treść:</label>
+            <textarea rows="10" cols="50" id="content"  name="content" placeholder="Wpisz tutaj treść komentarza. Proszę bądź
+            miły i uprzejmy!"></textarea></div>
+            <div><input type="submit" value="Dodaj" /> </div>
+          </form>
+
     </main>
 
     <footer>
