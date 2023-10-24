@@ -8,80 +8,80 @@
 </head>
 <body>
     <header>
-        <div id="logo">Logo</div>
+        <div><img src="./logo.jpg" alt="Mam nadzieję, że logo będzie działać." width="66" height="77" />
+        </div>
         <nav>
             <ul>
                 <li><a href="#">Strona główna</a></li>
-                <li><a href="#">O nas</a></li>
-                <li>
-                    <a href="#">Produkty</a>
+                    <li>
+                    <a href="#">Artykuły:</a>
                     <ul>
-                        <li><a href="#">Produkt 1</a></li>
-                        <li><a href="#">Produkt 2</a></li>
+                        <li><a href="">Dawny Homo Sapiens</a></li>
+                        
                     </ul>
                 </li>
-                <li><a href="#">Kontakt</a></li>
+                <li><a href="https://www.linkedin.com/in/davidtk/">Kontakt</a></li>
             </ul>
         </nav>
     </header>
-
+    <style> td { border: 1px solid black; } </style>
     <main> 
-        <!-- opis znacznika <article> strona23 --> 
+        <!-- opis znacznika <article> strona23 -->
+            <hr> 
         <article>
             <h1>Dawny Homo Sapiens</h1>
-            <p>Treść artykułu...</p>
-            <p>Data publikacji: 24 października 2023</p>
-            <p>Autor: David</p>
-            <img src="sciezka/do/ilustracji.jpg" alt="Homo sapiens sapiens"> 
-            <table>
-                <!-- Tabela -->
-            </table>
-        </article>
+            <p>Dieta ketogeniczna działa na zasadzie redukcji spożycia węglowodanów do poziomu, który zmusza organizm do produkcji 
+                tzw. ciał ketonowych, które stają się głównym źródłem energii [2]. Ten proces może pomóc w utracie wagi, regulacji 
+                poziomu cukru we krwi i poprawie funkcji mózgu.</p>
+             <p>Podstawy diety ketogenicznej można odnaleźć w sposobie żywienia ludzi w epoce paleolitu, około 2,5 miliona lat temu [1]. 
+                Wówczas ludzie byli myśliwymi i zbieraczami, a ich dieta składała się przede wszystkim z dzikich zwierząt, ryb,
+                 owoców leśnych oraz roślin jadalnych. Spożywali oni niewielkie ilości węglowodanów w postaci dzikich roślin, ale były 
+                 to głównie błonnik i nieprzetworzone węglowodany, znacznie różniące się od współczesnych źródeł cukrów.</p>  
+            <p>Moja droga przez świat diet była pełna fascynujących odkryć i cennych naukowych lekcji. Rozpocząłem ją od eksperymentów 
+                z różnymi rodzajami diet, aby lepiej zrozumieć, jakie są ich wpływy na zdrowie i samopoczucie. W ciągu lat próbowałem 
+                wielu diet, w tym wegetariańskiej, witariańskiej, wegańskiej, a obecnie jestem na diecie ketogenicznej, która i tak 
+                jest w 90% roślinna.</p> 
+
+            
+            <table><tr><td><p>Data publikacji: 24 października 2023</p></td></tr></table>
+            <table><tr><td><p>Autor: David</p></td></tr></table>
+            <img src="ilustracja.jpg" alt="Homo sapiens sapiens"> 
+            
+            </article>
+        <hr>
 
         <section id="komentarze">
-            <h2>Komentarze</h2>
-            <form>
-                <label for="komentarz">Dodaj komentarz:</label><br>
-                <textarea id="komentarz" name="komentarz" rows="4" cols="50"></textarea><br>
-                <label for="autor">Autor:</label>
-                <input type="text" id="autor" name="autor"><br>
-                <input type="submit" value="Dodaj komentarz">
-            </form>
-
+            <h2>Najpopularniejszy komentarz</h2>
+           
             <div class="komentarz">
-                <p>Treść komentarza...</p>
-                <p>Autor komentarza</p>
-                <p>Data utworzenia: 24 października 2023</p>
-            </div>
-
-            <div class="komentarz">
-                <p>Treść komentarza...</p>
-                <p>Autor komentarza</p>
-                <p>Data utworzenia: 24 października 2023</p>
+                <p>Na stos z Nim ! </p>
+                <p>Trol internetowy</p>
+                <p>Data utworzenia: 24 października 666 rok p.n.e</p>
             </div>
         </section>
-        <!--  formularz ze strony 30 , a może ze strony 49 lepszy + copyrights strona 67? --> 
-        
+
+        <!--  Który formularz wykorzystać? Formularz ze strony 30 , a może ze strony 49 ? + copyrights strona 67 hmmm.... pomyśleć muszę...
+        Zdecydowałem zakodować inny formularz ;-) --> 
+        <hr>
 
         <form><div>
-            <label for="nickname">Twój nick:</label>
-            <input type="text" id="nickname" name="nickname"></div>
+            <label for="nickname">Twój nick:</label></div>
+            <div><input type="text" id="nickname" name="nickname"></div>
             <div>
-            <label for="user-email">Twój e-mail:</label>
-            <input type="email" id="user-email" name="user-email" required></div>
+            <label for="user-email">Twój e-mail:</label></div>
+            <div><input type="email" id="user-email" name="user-email" required></div>
             <div>
-            <label for="content">Treść:</label>
-            <textarea rows="10" cols="50" id="content"  name="content" placeholder="Wpisz tutaj treść komentarza. Proszę bądź
+            <label for="content">Treść:</label></div>
+            <div><textarea rows="10" cols="50" id="content"  name="content" placeholder="Wpisz tutaj treść komentarza. Proszę bądź
             miły i uprzejmy!"></textarea></div>
             <div><input type="submit" value="Dodaj" /> </div>
           </form>
 
     </main>
+    <hr>
 
     <footer>
-        <p>David T</p>
-        <p><a href="mailto:dawidtk@gmail.com">dawidtk@gmail.com</a></p>
-        <div> &copy; 2023 Ostatni Sapiens. Wszelkie prawa zastrzeżone.</div> 
+        <div> &copy; 2023 Ostatni Sapiens. Wszelkie prawa zastrzeżone. <a href="mailto:dawidtk@gmail.com">dawidtk@gmail.com</a></div> 
     </footer>
 </body>
 </html>
