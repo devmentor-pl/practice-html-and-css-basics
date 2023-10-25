@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('path/to/source-sans-pro.woff2') format('woff2'),
+         url('path/to/source-sans-pro.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.parent {
+    width: 600px;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
