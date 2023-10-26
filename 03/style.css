@@ -22,5 +22,11 @@
     line-height: 100px;
 }
 
+.child--middle {
+    font-weight: bold;
+}
 
+.child--last {
+    font-style: italic;
+}
 
