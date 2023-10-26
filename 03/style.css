@@ -30,3 +30,6 @@
     font-style: italic;
 }
 
+.inline-block .parent {
+    display: inline-block;
+}
