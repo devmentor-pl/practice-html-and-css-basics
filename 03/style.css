@@ -13,3 +13,14 @@
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+.child {
+    width: 30%;
+    display: inline-block;
+    text-align: center;
+    margin-right: 10px;
+    height: 100px;
+    line-height: 100px;
+}
+
+
+
