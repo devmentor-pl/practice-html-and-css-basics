@@ -33,3 +33,11 @@
 .inline-block .parent {
     display: inline-block;
 }
+
+.float .parent {
+    float: left;
+}
+
+.flexbox .parent {
+    display: flex;
+}
