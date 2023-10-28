@@ -1,43 +1,70 @@
 @font-face {
     font-family: 'Source Sans Pro';
-    src: url('path/to/source-sans-pro.woff2') format('woff2'),
-         url('path/to/source-sans-pro.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+    src: url(SourceSansPro-Bold.otf) format('opentype');
+        font-style: bold; 
+        font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Source Sans It';
+    src: url(./SourceSansPro-It.otf) format('opentype');
+        font-style: normal; 
+        font-weight: italic ;
+}
+
+@font-face {
+    font-family: 'Source Sans Regular';
+    src: url(./SourceSansPro-Regular.otf) format('opentype');
+        font-style: regular; 
+        font-weight: normal;
 }
 
 .parent {
     width: 600px;
     padding: 20px;
-    margin-bottom: 20px;
-    font-family: 'Source Sans Pro', sans-serif;
+     
+}
+
+.parent--inline-block .child {
+    display: inline-block;
+    outline: 1px solid red;
+    
 }
 
 .child {
-    width: 30%;
+    width: calc(30% - 10px);
     display: inline-block;
-    text-align: center;
-    margin-right: 10px;
-    height: 100px;
-    line-height: 100px;
+    
+    
 }
 
+.parent--float .child {
+    float: left;  
+}
+
+.parent--float::after{
+    content: '';
+    display: block;
+    clear: both;
+    outline: 1px solid blue;
+}
+
+.parent--flexbox {
+    display: flex;
+    outline: 1px solid green;
+}
+
+.child--first,
 .child--middle {
-    font-weight: bold;
+    width: calc(30% - 10px);
+    margin-right: 10px;
+
 }
 
 .child--last {
     font-style: italic;
+    width: 40%;
 }
 
-.inline-block .parent {
-    display: inline-block;
-}
 
-.float .parent {
-    float: left;
-}
 
-.flexbox .parent {
-    display: flex;
-}
