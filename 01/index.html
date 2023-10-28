@@ -74,71 +74,47 @@
             </footer>
             
         </article>
-        <hr>
-
-        <table><tr><td>
-        <section id="comments">
-            <h2>Najpopularniejszy komentarz</h2>
-           
-            <div class="comments">
-                <p><b>Treść:</b> Na stos z Nim ! </p>
-                <footer>
-                    <p><b>Autor:</b> Trol internetowy</p>
-                    <p>Data utworzenia: 29 luty 666 rok p.n.e</p>
-                </footer>
-            </div>
-        </section></td></tr>
-        </table>
-
-        <table><tr><td>
-            <section id="comments"> 
-                <h2>Nowy komentarz</h2>
-               
-                <div class="comments">
-                    <p><b>Treść:</b> To prawda, dawniej odżywialiśmy się zdrowiej </p>
-
-                    <footer>
-                  
-                        <p><b>Autor:</b> Archeolog</p>
-                        <p>Data utworzenia: 24 października 2023</p>
-                    </footer>
+    </main>
+        <section>
+                 
+            <form>
+                <div>
+                    <label for="nickname">Twój nick:</label>
                 </div>
-            </section></td></tr>
-        </table>
-        
-        <hr>
-
-        <form>
-            <div>
-                <label for="nickname">Twój nick:</label>
-            </div>
-            <div>
-                <input type="text" id="nickname" name="nickname">
-            </div>
-            <div>
-                <label for="user-email">Twój e-mail:</label>
-            </div>
-            <div>
-                <input type="email" id="user-email" name="user-email" required>
-            </div>
-            <div>
-            <label for="content">Treść:</label>
-            </div>
-            <div>
-                <textarea rows="10" cols="50" id="content"  name="content" placeholder="Wpisz tutaj treść komentarza. Proszę bądź
-            miły i uprzejmy!"></textarea>
-            </div>
-            <div>
-                <input type="submit" value="Dodaj" /> 
-            </div>
-          </form>
+                <div>
+                    <input type="text" id="nickname" name="nickname">
+                </div>
+                <div>
+                    <label for="user-email">Twój e-mail:</label>
+                </div>
+                <div>
+                    <input type="email" id="user-email" name="user-email" required>
+                </div>
+                <div>
+                    <label for="content">Treść:</label>
+                </div>
+                <div>
+                    <textarea rows="10" cols="30" id="content"  name="content" placeholder="Wpisz tutaj treść komentarza.Proszę bądź miły i uprzejmy!"></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Dodaj"/> 
+                </div>
+            </form>
 <!-- placeholder umożliwia dodania tzw. niewidzialnej treści w ramce formularza. Dodatek required oznacza , że podanie adresu email jest
 konieczne jeśli osoba chce dodać komentarz-->
-    </main>
-     <hr>
+            <ul>
+                <li>
+                    <h3><a rel="author">dr Archeolog</a>, <time datetime="2023-10-26">2023-10-26</time></h3>
+                    <p>To prawda dzisiejsza żywność jest słabej jakości</p>
+
+                </li>
+                <li><h3><a rel="author">Klecha</a>, <time datetime="2023-10-27">2023-10-27</time></h3>
+                    <p>Nie prawda! Na stos z Nim!</p></li>               
+            </ul>
+     
 
     <footer>
-        <div> &copy; 2023 David - Wszelkie prawa zastrzeżone. <a href="mailto:dawidtk@gmail.com">dawidtk@gmail.com</a></div> 
+        <p>&copy; 2023 David - Wszelkie prawa zastrzeżone. <a href="mailto:dawidtk@gmail.com">dawidtk@gmail.com</a></p>
     </footer>
 </body>
 </html>
