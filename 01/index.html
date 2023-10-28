@@ -8,26 +8,27 @@
 </head>
 <body>
     <header>
-        <div><img src="./logo.jpg" alt="Mam nadzieję, że logo będzie działać." width="66" height="77" />
+        <div>
+            <img src="./logo.jpg" alt="My avatar - logo" width="66" height="77" />
         </div>
         <nav>
             <ul>
                 <li><a href="#">Strona główna</a></li>
-                    <li>
-                    <a href="#">Artykuły:</a>
-                    <ul>
+                <li>
+                    <a href="#">Artykuły:</a></li>
+                    <ul> 
                         <li><a href="">Dawny Homo Sapiens</a></li>
-                        
                     </ul>
-                </li>
+                                          
+                           
                 <li><a href="https://www.linkedin.com/in/davidtk/">Kontakt</a></li>
             </ul>
         </nav>
     </header>
     <style> td { border: 1px solid black; } </style>
     <main> 
-        <!-- opis znacznika <article> strona23 -->
-            <hr> 
+        
+        
         <article>
             <h1>Dawny Homo Sapiens</h1>
             <p>Dieta ketogeniczna działa na zasadzie redukcji spożycia węglowodanów do poziomu, który zmusza organizm do produkcji 
@@ -40,59 +41,101 @@
             <p>Moja droga przez świat diet była pełna fascynujących odkryć i cennych naukowych lekcji. Rozpocząłem ją od eksperymentów 
                 z różnymi rodzajami diet, aby lepiej zrozumieć, jakie są ich wpływy na zdrowie i samopoczucie. W ciągu lat próbowałem 
                 wielu diet, w tym wegetariańskiej, witariańskiej, wegańskiej, a obecnie jestem na diecie ketogenicznej, która i tak 
-                jest w 90% roślinna.</p> 
-
+                jest w 90% roślinna.</p>             
+        
+            <figure>
+                <img src="ilustracja.jpg" alt="Ewolucja homo sapiens sapiens"> 
+                <figcaption>Zabawna Ewolucja Homo Sapiens</figcaption>
+            </figure>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">table header </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>table body1</td>
+                        <td>with two colums1</td>
+                    </tr>
+                    <tr>
+                        <td>table body2</td>
+                        <td>with two colums2</td>
+                    </tr>
+                    <tr>
+                        <td>table body3</td>
+                        <td>with two colums3</td>
+                    </tr>
+                </tbody>
+            </table>
+            <footer>
+                <p>Autor artykułu: <a rel="author">David Tk</a>, data publikacji: <time datetime="2023-10-25"</time>
+                    <a href="https://www.linkedin.com/in/davidtk/">Chcesz przeczytać więcej artykułów tego autora ?</a>
+            </footer>
             
-            <table><tr><td><p>Data publikacji: 24 października 2023</p></td></tr></table>
-            <table><tr><td><p>Autor: David</p></td></tr></table>
-            <img src="ilustracja.jpg" alt="Homo sapiens sapiens"> 
-            
-            </article>
+        </article>
         <hr>
 
         <table><tr><td>
-        <section id="komentarze">
+        <section id="comments">
             <h2>Najpopularniejszy komentarz</h2>
            
-            <div class="komentarz">
+            <div class="comments">
                 <p><b>Treść:</b> Na stos z Nim ! </p>
-                <p><b>Autor:</b> Trol internetowy</p>
-                <p>Data utworzenia: 29 luty 666 rok p.n.e</p>
+                <footer>
+                    <p><b>Autor:</b> Trol internetowy</p>
+                    <p>Data utworzenia: 29 luty 666 rok p.n.e</p>
+                </footer>
             </div>
-        </section></td></tr></table>
+        </section></td></tr>
+        </table>
 
         <table><tr><td>
-            <section id="komentarze">
+            <section id="comments"> 
                 <h2>Nowy komentarz</h2>
                
-                <div class="komentarz">
+                <div class="comments">
                     <p><b>Treść:</b> To prawda, dawniej odżywialiśmy się zdrowiej </p>
-                    <p><b>Autor:</b> Archeolog</p>
-                    <p>Data utworzenia: 24 października 2023</p>
-                </div>
-            </section></td></tr></table>
-        
 
-        <!--  Który formularz wykorzystać? Formularz ze strony 30 , a może ze strony 49 ? + copyrights strona 67 hmmm.... pomyśleć muszę...
-        Zdecydowałem zakodować inny formularz ;-) --> 
+                    <footer>
+                  
+                        <p><b>Autor:</b> Archeolog</p>
+                        <p>Data utworzenia: 24 października 2023</p>
+                    </footer>
+                </div>
+            </section></td></tr>
+        </table>
+        
         <hr>
 
-        <form><div>
-            <label for="nickname">Twój nick:</label></div>
-            <div><input type="text" id="nickname" name="nickname"></div>
+        <form>
             <div>
-            <label for="user-email">Twój e-mail:</label></div>
-            <div><input type="email" id="user-email" name="user-email" required></div>
+                <label for="nickname">Twój nick:</label>
+            </div>
             <div>
-            <label for="content">Treść:</label></div>
-            <div><textarea rows="10" cols="50" id="content"  name="content" placeholder="Wpisz tutaj treść komentarza. Proszę bądź
-            miły i uprzejmy!"></textarea></div>
-            <div><input type="submit" value="Dodaj" /> </div>
+                <input type="text" id="nickname" name="nickname">
+            </div>
+            <div>
+                <label for="user-email">Twój e-mail:</label>
+            </div>
+            <div>
+                <input type="email" id="user-email" name="user-email" required>
+            </div>
+            <div>
+            <label for="content">Treść:</label>
+            </div>
+            <div>
+                <textarea rows="10" cols="50" id="content"  name="content" placeholder="Wpisz tutaj treść komentarza. Proszę bądź
+            miły i uprzejmy!"></textarea>
+            </div>
+            <div>
+                <input type="submit" value="Dodaj" /> 
+            </div>
           </form>
 <!-- placeholder umożliwia dodania tzw. niewidzialnej treści w ramce formularza. Dodatek required oznacza , że podanie adresu email jest
 konieczne jeśli osoba chce dodać komentarz-->
     </main>
-    <hr>
+     <hr>
 
     <footer>
         <div> &copy; 2023 David - Wszelkie prawa zastrzeżone. <a href="mailto:dawidtk@gmail.com">dawidtk@gmail.com</a></div> 
