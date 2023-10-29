@@ -9,6 +9,31 @@ body {
 }
 
 .menu_item {
-    padding: 10px 20px;
+    padding: 20px 40px;
+    border-top: 5px soli transparent; 
+}
 
+.menu_item:hover {
+    border-top-color: #336699;
+}
+
+.menu_link {
+    color: #444;
+    text-decoration: none;
+}
+.menu_dropdown {
+    position: relative;
+}
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 240px;
+    background-color: #444;
+}
+
+.dropdown_link {
+    color: #fff;
+    text-decoration: none;
 }
