@@ -96,7 +96,7 @@ nav {
     visibility: hidden;
 }
 
-/* rozwijanie dropdown_submenu po najechaniu kursorem*/
+/* NIE DZIAŁA -- rozwijanie dropdown_submenu po najechaniu kursorem*/
 .dropdown_.dropdown:hover + .dropdown_submenu,
 .dropdown_submenu:hover {
     visibility: visible;
