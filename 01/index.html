@@ -33,15 +33,17 @@
     </header>
     <main>
       <article>
-        <h2>Lorem ipsum dolor</h2>
+        <h1>Lorem ipsum dolor</h1>
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam
           error quis nam fugit totam officiis minus a incidunt blanditiis ipsam
           quam perspiciatis sunt nobis vel reprehenderit inventore, pariatur
           voluptatum quibusdam.
         </p>
-        <time datetime="2023-10-30 10:00">2023-10-30 10:00</time>
-        <p>Author: Jan Kowalski</p>
+        <p>
+          Author: <a rel="author">Jan Kowalski. </a
+          ><time datetime="2023-10-30 10:00">Date: 2023-10-30 10:00</time>
+        </p>
         <img
           src="./illustration.png"
           alt="illustration" />
@@ -67,16 +69,17 @@
       </article>
       <form>
         <div>
-          <label for="comment-area"> Dodaj swój komentarz:</label>
+          <label for="comment-area"> Add your comment:</label>
           <div>
             <textarea
               id="comment-area"
-              cols="30"
               rows="10">
             </textarea>
           </div>
         </div>
-        <input type="submit" />
+        <input
+          type="submit"
+          value="Send" />
       </form>
       <section>
         <div>
@@ -86,8 +89,10 @@
             consequatur nostrum, mollitia rem modi facilis optio laboriosam,
             enim reprehenderit in.
           </p>
-          <p>Author: Anna Nowak</p>
-          <time datetime="2023-10-30 11:00">2023-10-30 11:00</time>
+          <p>
+            Author: <a rel="author">Anna Nowak. </a
+            ><time datetime="2023-10-31 11:00">Date: 2023-10-31 11:00</time>
+          </p>
         </div>
         <div>
           <p>
@@ -96,8 +101,10 @@
             consequatur nostrum, mollitia rem modi facilis optio laboriosam,
             enim reprehenderit in.
           </p>
-          <p>Author: Jan Kowalski</p>
-          <time datetime="2023-10-30 12:00">2023-10-30 12:00</time>
+          <p>
+            Author: <a rel="author">Anna Nowak. </a
+            ><time datetime="2023-10-31 11:00">Date: 2023-10-31 11:00</time>
+          </p>
         </div>
       </section>
     </main>
