@@ -1,16 +1,22 @@
 @font-face {
-    font-family: 'Source Sans PRO-Regular';
+    font-family: 'Source Sans PRO';
     src: url(./font-style/SourceSansPro-Regular.otf) format('opentype');
+    font-style: normal;
+    font-weight: normal;
 }
 
 @font-face {
-    font-family: 'Source Sans PRO-Bold' ;
+    font-family: 'Source Sans PRO' ;
     src: url(./font-style/SourceSansPro-Bold.otf) format('opentype');
+    font-style: normal;
+    font-weight: bold;
 }
 
 @font-face {
-    font-family: 'Source Sans PRO-Italic' ;
+    font-family: 'Source Sans PRO' ;
     src: url(./font-style/SourceSansPro-It.otf) format('opentype');
+    font-style: italic;
+    font-weight: normal;
 }
 
 .parent {
@@ -21,21 +27,24 @@
 .child--first {
     margin-right: 10px;
     width: calc(30% - 10px);
-    font-family: 'Source Sans PRO-Regular';
+    font-family: 'Source Sans PRO';
     font-style: normal;
+    font-weight: normal;
 }
 
 .child--middle {
     margin-right: 10px;
     width: calc(30% - 10px);
-    font-family: 'Source Sans PRO-Bold';
+    font-family: 'Source Sans PRO';
+    font-style: normal;
     font-weight: bold;
 }
 
 .child--last {
-    width: calc(40% - 10px);
-    font-family: 'Source Sans PRO-Italic';
+    width: 40%;
+    font-family: 'Source Sans PRO';
     font-style: italic;
+    font-weight: normal;
 }
 
 /*inline-block element*/
@@ -51,7 +60,7 @@
     float: left;
 }
 
-.parent--float .child::after {
+.parent--float::after {
     content: "";
     display: block;
     clear: both;
