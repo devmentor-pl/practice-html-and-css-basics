@@ -1,27 +1,27 @@
-.content-01__container {
+.content-block__container {
     min-height: 280px;
     display: flex;
     justify-content: space-evenly;
 }
 
-.content-01__paragraph-01 {
+.content-block__main {
     width: 50%;
     margin-left: 0;
     margin-right: 5px;
 }
 
-.content-01__paragraph-02 {
+.content-block__aside {
     width: 50%;
     margin-right: 0;
     margin-left: 5px;
 }
 
-.content-02__container {
+.content-box__container {
     height: 280px;
     display: flex;
     justify-content: space-evenly;
 }
 
-.content-02__paragraph {
+.content-box__paragraph {
     width: 33%;
 } 
