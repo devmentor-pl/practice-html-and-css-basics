@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
    
-    <link rel="stylesheet" href="style.css"
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./reset.css">
 </head>
 <body>
+    <div> 
 
-    <nav class="nav">
+     <nav class="nav">
         <ul class="nav_list menu">
             <li class="menu_item">
                 <a href="" class="menu_link">Home</a>
@@ -21,8 +23,17 @@
                     <li class="dropdown_item">
                         <a href="" class="dropdown_link">Productnr1</a>
                     </li>
-                    <li class="dropdown_item">
+                    <li class="dropdown_item dropdown_item--children">
                         <a href="" class="dropdown_link">Productnr2</a>
+
+                        <ul class="dropdown_right"> 
+                            <li class="dropdown-right_item">
+                                <a href="" class="dropdown-right_link">New Products</a>
+                            </li>
+                            <li class="dropdown-right_item">
+                                <a href="" class="dropdown-right_link">Other Products</a>
+                            </li>
+                        </ul>
                     </li>
 
                 </ul>
@@ -30,6 +41,6 @@
             <li class="menu_item">Contact</li>
         </ul>
     </nav>
-    
+   </div> 
 </body>
 </html>

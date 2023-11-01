@@ -1,39 +1,17 @@
+@font-face {
+	font-family: 'Source Sans PRO';
+	src: url(./SourceSansPro-Bold.otf) format('opentype');
+}
+
 body {
-    background: #f4f4f4;
+    background-color: #f4f4f4; 
+    width: 800px;
+    height: 700px; 
+}
+/* .nav czyli menu. margin20px odstęp menu od lewej*/
+.nav {
+background-color: #fff; 
+display: flex;
+margin: 20px;
 }
 
-.menu {
-    background-color: #fff;
-    display: flex;
-    margin: 20px;
-}
-
-.menu_item {
-    padding: 20px 40px;
-    border-top: 5px soli transparent; 
-}
-
-.menu_item:hover {
-    border-top-color: #336699;
-}
-
-.menu_link {
-    color: #444;
-    text-decoration: none;
-}
-.menu_dropdown {
-    position: relative;
-}
-
-.dropdown {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    min-width: 240px;
-    background-color: #444;
-}
-
-.dropdown_link {
-    color: #fff;
-    text-decoration: none;
-}
