@@ -1,7 +1,18 @@
-@font-face {
-	font-family: 'Source Sans PRO';
-	src: url(./SourceSansPro-Bold.otf) format('opentype');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
 
 body {
     background-color: #f4f4f4; 
@@ -13,5 +24,11 @@ body {
 background-color: #fff; 
 display: flex;
 margin: 20px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: 18px;
+font-weight: bold;
 }
 
+.menu_item {
+    display: flex;
+}
