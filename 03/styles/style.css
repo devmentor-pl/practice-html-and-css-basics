@@ -60,18 +60,13 @@
   font-size: 16px;
   vertical-align: top;
 }
-.parent--inline-block .child--last {
-  width: 40%;
-}
 
 /* FLOAT METHOD */
 .parent--float .child {
   float: left;
   width: calc(30% - 10px);
 }
-.parent--float .child--last {
-  width: 40%;
-}
+
 .parent--float::after {
   content: '';
   display: block;
@@ -85,6 +80,7 @@
 .parent--flexbox .child {
   width: calc(30% - 10px);
 }
-.parent--flexbox .child--last {
+
+.parent .child--last {
   width: 40%;
 }
