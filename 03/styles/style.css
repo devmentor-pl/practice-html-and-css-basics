@@ -1,0 +1,90 @@
+@font-face {
+  font-family: 'Source Sans PRO';
+  src: url(../fonts/webfontkit-20231102-064306/sourcesanspro-bold-webfont.woff),
+    format('woff')
+      url(../fonts/webfontkit-20231102-064306/sourcesanspro-bold-webfont.woff2)
+      format('woff2');
+  font-style: normal;
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Source Sans PRO';
+  src: url(../fonts/webfontkit-20231102-064306/sourcesanspro-it-webfont.woff)
+      format('woff'),
+    url(../fonts/webfontkit-20231102-064306/sourcesanspro-it-webfont.woff2)
+      format('woff2');
+
+  font-style: italic;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Source Sans PRO';
+  src: url(../fonts/webfontkit-20231102-064306/sourcesanspro-regular-webfont.woff)
+      format('woff'),
+    url(../fonts/webfontkit-20231102-064306/sourcesanspro-regular-webfont.woff2)
+      format('woff2');
+
+  font-style: normal;
+  font-weight: normal;
+}
+
+.parent {
+  width: 600px;
+  padding: 20px;
+  outline: 1px solid red;
+  font-family: 'Source Sans PRO', Arial, Helvetica, sans-serif;
+}
+
+.child--first,
+.child--middle {
+  margin-right: 10px;
+}
+
+.child--first {
+  font-weight: regular;
+}
+.child--middle {
+  font-weight: bold;
+}
+.child--last {
+  font-style: italic;
+}
+
+/* INLINE-BLOCK METHOD */
+.parent--inline-block {
+  font-size: 0;
+}
+.parent--inline-block .child {
+  display: inline-block;
+  width: calc(30% - 10px);
+  font-size: 16px;
+  vertical-align: top;
+}
+.parent--inline-block .child--last {
+  width: 40%;
+}
+
+/* FLOAT METHOD */
+.parent--float .child {
+  float: left;
+  width: calc(30% - 10px);
+}
+.parent--float .child--last {
+  width: 40%;
+}
+.parent--float::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* FLEXBOX METHOD */
+.parent--flexbox {
+  display: flex;
+}
+.parent--flexbox .child {
+  width: calc(30% - 10px);
+}
+.parent--flexbox .child--last {
+  width: 40%;
+}
