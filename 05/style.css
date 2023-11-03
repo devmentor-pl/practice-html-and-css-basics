@@ -10,11 +10,23 @@
 }
 .container {
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1000px; 
     outline-color: blue;
 }
 .cell {
     min-height: 50px;
     outline-color: orange;
+}
+
+/* header.css */
+.header__container {
+    display: flex;
+    justify-content: space-between;
+}
+.header__logo {
+    min-width: 200px;
+}
+.header__nav {
+    min-width: 400px;
 }
 
