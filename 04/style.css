@@ -15,7 +15,7 @@ a {
 
 /* Main menu */
 .menu {
-  background-color: #3d3aeb;
+  background-color: #444;
   color: #fff;
   font-family: 'Courier New', Courier, monospace;
   font-size: 16px;
@@ -43,7 +43,7 @@ a {
 .menu__sublist {
   display: none;
   position: absolute;
-  background-color: #3d3aeb;
+  background-color: #4444;
 }
 
 .menu__sublist--bottom {
@@ -57,7 +57,7 @@ a {
 
 /* Change background color on hover for menu and drop-down items */
 .menu__item:hover {
-  background-color: #201dca;
+  background-color: #444;
 }
 
 /* Show drop-down on hover of the parent menu item */
