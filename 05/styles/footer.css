@@ -1,0 +1,11 @@
+.footer__container {
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__paragraph {
+    width: 150px;
+    height: 70px;
+}
