@@ -1,53 +1,66 @@
+/* Basic style reset */
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
-
 a {
-    text-decoration: none;
-    display: block;
+  text-decoration: none;
+  display: block;
 }
 
-
-body {
-    background-color: #f4f4f4; 
-    width: 800px;
-    height: 700px; 
-}
-/* .nav czyli menu. margin20px odstęp menu od lewej*/
-.nav {
-background-color: #fff; 
-display: flex;
-margin: 20px;
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-font-size: 18px;
-font-weight: bold;
+/* Main menu */
+.menu {
+  background-color: #3d3aeb;
+  color: #fff;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+  font-weight: bold;
+  white-space: nowrap;
 }
 
-.menu_item {
-    display: flex;
+.menu__list {
+  display: flex;
+}
+.menu__link, .menu__item--parent {
+  padding: 15px 20px;
 }
 
-.menu_link, .menu_item {
-    padding: 15px 20px;
+.menu__link {
+  color: #fff;
 }
 
-.menu_item--children {
-    cursor: default;
-    position: relative;
+.menu__item--parent {
+  cursor: default;
+  position: relative;
 }
 
-.manu_dropdown {
-    display: none;
-    position: absolute;
+/* Drop-down */
+.menu__sublist {
+  display: none;
+  position: absolute;
+  background-color: #3d3aeb;
 }
 
-.dropdown-right_item {
-    left: 0;
-    top: 100%;
+.menu__sublist--bottom {
+  left: 0;
+  top: 100%;
+}
+.menu__sublist--right {
+  left: 100%;
+  top: 0;
+}
+
+/* Change background color on hover for menu and drop-down items */
+.menu__item:hover {
+  background-color: #201dca;
+}
+
+/* Show drop-down on hover of the parent menu item */
+.menu__item--parent:hover > .menu__sublist {
+  display: block;
 }
