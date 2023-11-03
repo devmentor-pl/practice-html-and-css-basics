@@ -45,7 +45,7 @@
     width: 50%;
 }
 
-/* footer.css */
+/* content article.css */
 .content__container {
     display: flex;
     justify-content: space-around;
@@ -57,4 +57,7 @@
     min-height: 100px;
 }
 
-
+/*footer  */
+.footer {
+    justify-content: center;
+}
