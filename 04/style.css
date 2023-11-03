@@ -32,3 +32,22 @@ font-weight: bold;
 .menu_item {
     display: flex;
 }
+
+.menu_link, .menu_item {
+    padding: 15px 20px;
+}
+
+.menu_item--children {
+    cursor: default;
+    position: relative;
+}
+
+.manu_dropdown {
+    display: none;
+    position: absolute;
+}
+
+.dropdown-right_item {
+    left: 0;
+    top: 100%;
+}
