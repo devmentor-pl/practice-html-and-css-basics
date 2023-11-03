@@ -16,6 +16,7 @@
 .header__container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .header__logo {
   height: 60px;
@@ -26,3 +27,18 @@
   width: 50%;
 }
 /* END OF HEADER */
+
+/* SECTION CONTENT */
+
+.content__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content__article {
+  height: 200px;
+  width: 48%;
+}
+/* END OF SECTION CONTENT */
+
+/* SECTION ITEMS */
