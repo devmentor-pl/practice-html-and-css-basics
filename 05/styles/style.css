@@ -10,7 +10,6 @@
 .cell {
   background-color: orange;
 }
-
 /* HEADER */
 
 .header__container {
@@ -50,6 +49,20 @@
 }
 .item__article {
   width: 30%;
-  height: 200px;
+  height: 230px;
 }
 /* END OF SECTION ITEMS */
+
+/* FOOTER */
+
+.footer__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+}
+.footer__text {
+  height: 60px;
+  width: 50%;
+}
+/* END OF FOOTER */
