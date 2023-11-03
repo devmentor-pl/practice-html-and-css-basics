@@ -19,11 +19,11 @@
   align-items: center;
 }
 .header__logo {
-  height: 60px;
+  height: 80px;
   width: 15%;
 }
 .header__nav {
-  height: 60px;
+  height: 80px;
   width: 50%;
 }
 /* END OF HEADER */
@@ -36,9 +36,20 @@
   align-items: center;
 }
 .content__article {
-  height: 200px;
+  height: 300px;
   width: 48%;
 }
 /* END OF SECTION CONTENT */
 
 /* SECTION ITEMS */
+
+.items__container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.item__article {
+  width: 30%;
+  height: 200px;
+}
+/* END OF SECTION ITEMS */
