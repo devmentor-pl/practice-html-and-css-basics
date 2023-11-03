@@ -5,6 +5,14 @@
   box-sizing: border-box;
 }
 
+/* tak wiem , że nie jest do końca ekranu, ale 
+    lepiej jest mi się skupić skoro menu jest małe ;-) */
+body {
+    background-color: rgb(221, 222, 222);
+    width: 800px; 
+    height: 1000px;
+}
+
 ul {
   list-style: none;
 }
@@ -15,10 +23,10 @@ a {
 
 /* Main menu */
 .menu {
-  background-color: #444;
-  color: #fff;
+  background-color: #fff;
+  color: #444;
   font-family: 'Courier New', Courier, monospace;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
   white-space: nowrap;
 }
@@ -31,7 +39,7 @@ a {
 }
 
 .menu__link {
-  color: #fff;
+  color: #0ff;
 }
 
 .menu__item--parent {
@@ -43,7 +51,7 @@ a {
 .menu__sublist {
   display: none;
   position: absolute;
-  background-color: #4444;
+  background-color: #444;
 }
 
 .menu__sublist--bottom {
