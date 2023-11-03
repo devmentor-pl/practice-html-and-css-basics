@@ -1,0 +1,28 @@
+.row {
+  border: 2px solid green;
+}
+.container {
+  max-width: 1000px;
+  border: 2px solid blue;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+.cell {
+  background-color: orange;
+}
+
+/* HEADER */
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+}
+.header__logo {
+  height: 60px;
+  width: 15%;
+}
+.header__nav {
+  height: 60px;
+  width: 50%;
+}
+/* END OF HEADER */
