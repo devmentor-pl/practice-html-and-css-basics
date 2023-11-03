@@ -12,7 +12,7 @@ Tym razem Twoim zadaniem bedzie wykonanie menu, które zawiera 3 poziomy:
 
 Podpowiedzi:
 - kolory menu możesz pobrać za pomocą dodatku do przeglądarki Chrome: [ColorZilla](https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp),
-- strzałki uzyskasz przy pomocy znaku większości/mniejszości odpowiednio odwróconym przy pomocy [transform: rotate()](https://www.w3schools.com/cssref/playit.asp?filename=playcss_transform_rotate).
+- strzałki uzyskasz przy pomocy znaku większości/mniejszości odpowiednio odwróconego przy pomocy [transform: rotate()](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate).
 
 
 &nbsp;
