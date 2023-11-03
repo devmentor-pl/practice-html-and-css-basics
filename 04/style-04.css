@@ -1,113 +1,99 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #F6F6F6;
-    padding: 0;
+/* Style podstawowe */
+* {
     margin: 0;
-}
-/* położenie i wygląd podstawowego paska menu */
-nav {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    column-gap: 0;
-    align-items: center;
-    position: fixed;
-    top: 15px; 
-    left: 10px;
-    background-color: #ffffff;;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #F6F6F6;
 }
 
-.nav-bar,
-.nav-bar_dropdown {
-    text-align: center;
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+/* położenie i wygląd głównego paska menu */
+.menu {
+    margin-top: 15px;
+    margin-left: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    white-space: nowrap;
+}
+
+.menu__list {
+    display: flex;
+    background-color: #ffffff;
+}
+
+.menu__link {
     padding: 30px;
-    background-color: #ffffff; 
+    background-color: #ffffff;
     color: black;
-    text-decoration: none;  
+}
+
+.menu__item--parent,
+.menu__subitem--parent {
+    position: relative;
+    cursor: default;
 }
 
 /* dodanie strzałki przy elemencie ITEMS */
-.nav-bar_dropdown::after {
+.menu__link--bottom::after {
     content: '>';
     display: inline-block;
     transform: rotate(90deg);
     padding-right: 5px;
-} 
+}
 
-/* efekt graficzny po najechaniu kursorem na podstawowy pasek menu*/
-.nav-bar:hover,
-.nav-bar_dropdown:hover {
+/* wygląd i położenie dropdown menu */
+.menu__sublist {
+    width: 200px;
+    height: 82px;
+    display: none;
+    position: absolute;
+    background-color: #333333;
+}
+
+.menu__sublist--bottom {
+    left: 0;
+    top: 100%;
+}
+
+.menu__sublist--right {
+    left: 100%;
+    top: 0
+}
+
+.menu__sublink {
+    text-decoration: none;
+    background-color: #333333;
+    color: #ffffff;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* dodanie strzałki przy elemencie Item 2*/
+.menu__sublink--right::after {
+    content: ">";
+    padding-left: 115px;
+}
+
+/* efekt graficzny po najechaniu kursorem na główny pasek menu */
+.menu__item:hover {
     color: #009CE1;
     border-top-style: solid;
     border-color: #009CE1;
     margin-top: -3px;
 }
 
-/* pozycja elementu ITEMS*/
-.nav-bar_dropdown {
-    position: relative;
-} 
-
-/* wygląd i położenie dropdown container */
-.dropdown {
-    width: 170px;
-    height: 70px;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 78px; left: 108px;
-    background-color: #333333;
-    visibility: hidden;
+/* rozwijanie i chowanie dropdown menu */
+.menu__item--parent:hover > .menu__sublist,
+.menu__subitem--parent:hover > .menu__sublist {
+    display: block;
 }
-
-/* wygląd linków w dropdown menu i submenu*/
-.dropdown a,
-.dropdown_submenu a {
-    text-decoration: none;
-    color: #ffffff;
-    flex-grow: 1;
-    padding-left: 10px;
-    padding-top: 8px;
-}
-
-/* dodanie strzałki przy elemencie Item 2*/
-.dropdown_dropdown::after {
-    content: ">";
-    padding-left: 100px;
-}
-
-/* rozwijanie dropdown menu po najechaniu kursorem */
-.nav-bar_dropdown:hover + .dropdown,
-.dropdown:hover {
-    visibility: visible;
-}
-
-/* położeniu i wygląd container dropdown_submenu */
-.dropdown_submenu {
-    width: 170px;
-    height: 70px;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    left: 278px; 
-    top: 113px;
-    background-color: #333333;
-    visibility: hidden;
-}
-
-/* NIE DZIAŁA -- rozwijanie dropdown_submenu po najechaniu kursorem*/
-.dropdown_.dropdown:hover + .dropdown_submenu,
-.dropdown_submenu:hover {
-    visibility: visible;
-}
-
-
-
-
-
-
-
-
-
-

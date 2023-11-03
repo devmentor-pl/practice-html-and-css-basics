@@ -11,22 +11,23 @@
 
 <body>
     <header>
-        <nav>
-            <a href="" class="nav-bar">HOME</a>
-            <a href="" class="nav-bar_dropdown">ITEMS</a>
-                <div class="dropdown">
-                    <a href="">Item 1</a>
-                    <a href="" class="dropdown_dropdown">Item 2</a>
-                </div>    
-                    <div class="dropdown_submenu">
-                            <a href="">Item 2.1</a>
-                            <a href="">Item 2.2</a>
-                    </div>    
-            <a href="" class="nav-bar">SETTINGS</a>
-            <a href="" class="nav-bar">CONTACT</a>
-               
+        <nav class="menu">
+            <ul class="menu__list">
+                <li class="menu__item"><a href="" class="menu__link">HOME</a></li>
+                <li class="menu__item menu__item--parent"><a href="" class="menu__link menu__link--bottom">ITEMS</a>
+                    <ul class="menu__sublist menu__sublist--bottom">
+                        <li class="menu__subitem"><a href="" class="menu__sublink">Item 1</a></li>
+                        <li class="menu__subitem menu__subitem--parent"><a href="" class="menu__sublink menu__sublink--right">Item 2</a>
+                            <ul class="menu__sublist menu__sublist--right">
+                                <li class="menu__subitem"><a href="" class="menu__sublink">Item 2.1</a></li>
+                                <li class="menu__subitem"><a href="" class="menu__sublink">Item 2.2</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu__item"><a href="" class="menu__link">SETTINGS</a></li>
+                <li class="menu__item"><a href="" class="menu__link">CONTACT</a></li>
+            </ul>
         </nav>
     </header>
 </body>
-
-</html>
