@@ -1,19 +1,19 @@
 @font-face {
-    font-family: 'Source Sans Pro';
-    src: url(SourceSansPro-Bold.otf) format('opentype');
-        font-style: bold; 
+    font-family: 'Source Sans PRO Bold';
+    src: url(./SourceSansPro-Bold.otf) format('opentype');
+        font-style: bold ; 
         font-weight: normal;
 }
 
 @font-face {
-    font-family: 'Source Sans It';
+    font-family: 'Source Sans Pro It';
     src: url(./SourceSansPro-It.otf) format('opentype');
-        font-style: normal; 
-        font-weight: italic ;
+        font-style: italic; 
+        font-weight: normal ;
 }
 
 @font-face {
-    font-family: 'Source Sans Regular';
+    font-family: 'Source Sans Pro Regular';
     src: url(./SourceSansPro-Regular.otf) format('opentype');
         font-style: regular; 
         font-weight: normal;
@@ -21,22 +21,15 @@
 
 .parent {
     width: 600px;
-    padding: 20px;
-     
+    padding: 20px; 
 }
 
 .parent--inline-block .child {
     display: inline-block;
-    outline: 1px solid red;
+    outline: 1px solid red; 
     
 }
-
-.child {
-    width: calc(30% - 10px);
-    display: inline-block;
-    
-    
-}
+  
 
 .parent--float .child {
     float: left;  
@@ -54,17 +47,21 @@
     outline: 1px solid green;
 }
 
-.child--first,
+.child--first{
+    width: calc(30% - 10px);
+    margin-right: 10px;
+}
 .child--middle {
     width: calc(30% - 10px);
     margin-right: 10px;
-
 }
 
 .child--last {
     font-style: italic;
-    width: 40%;
+    width: 30%;
 }
 
-
+.parent--float {
+    font-family: Source;
+}
 
