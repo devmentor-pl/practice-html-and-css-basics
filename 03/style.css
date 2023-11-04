@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Source Sans PRO Bold';
     src: url(./SourceSansPro-Bold.otf) format('opentype');
-        font-style: bold ; 
+        font-style: bold; 
         font-weight: normal;
 }
 
@@ -15,7 +15,8 @@
 @font-face {
     font-family: 'Source Sans Pro Regular';
     src: url(./SourceSansPro-Regular.otf) format('opentype');
-        font-style: regular; 
+        font-style: regular; /* Dlaczego tutaj na inny kolor mi się świeci? może 
+        nie działa prawidłowo ? */
         font-weight: normal;
 }
 
@@ -25,9 +26,7 @@
 }
 
 .parent--inline-block .child {
-    display: inline-block;
-    outline: 1px solid red; 
-    
+    display: inline-block;    
 }
   
 
@@ -39,29 +38,29 @@
     content: '';
     display: block;
     clear: both;
-    outline: 1px solid blue;
 }
 
 .parent--flexbox {
     display: flex;
-    outline: 1px solid green;
 }
 
 .child--first{
     width: calc(30% - 10px);
-    margin-right: 10px;
+    margin-right: 5px;
+    font-style: normal;
+    font-weight: regular;
 }
 .child--middle {
     width: calc(30% - 10px);
-    margin-right: 10px;
+    margin-right: 5px;
+    font-style: normal;
+    font-weight: bold;
 }
 
 .child--last {
     font-style: italic;
-    width: 30%;
+    width: calc(40% - 10px);
 }
 
-.parent--float {
-    font-family: Source;
-}
+
 
