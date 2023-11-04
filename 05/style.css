@@ -50,14 +50,19 @@
     display: flex;
     justify-content: space-around;
 }
-.content__copyrights, 
-.content__logo,
-.content__sponsors {
+.content__article1, 
+.content__article2,
+.content__article3 {
     width: 50%;
-    min-height: 100px;
+    min-height: 200px;
 }
 
 /*footer  */
-.footer {
+.footer, .article4 {
     justify-content: center;
+    min-height: 100%;
+    width: 100%;
+    margin: auto 0;
+    
 }
+
