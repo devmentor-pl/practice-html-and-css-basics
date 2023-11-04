@@ -16,6 +16,7 @@
 .cell {
     min-height: 50px;
     outline-color: orange;
+    background-color: orange;
 }
 
 /* header.css */
@@ -34,7 +35,7 @@
 .content__container {
     align-items: flex-start;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
 }
 .content__article {
     min-height: 200px;
@@ -58,11 +59,10 @@
 }
 
 /*footer  */
-.footer, .article4 {
+.footer, {
     justify-content: center;
     min-height: 100%;
     width: 100%;
-    margin: auto 0;
-    
+        
 }
 
