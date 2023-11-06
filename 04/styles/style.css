@@ -67,7 +67,7 @@
 }
 .dropdown__sub-dropdown {
   left: 100%;
-  top: 50%;
+  top: 0;
   width: 100%;
 }
 .dropdown__link,
