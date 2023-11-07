@@ -44,8 +44,8 @@
 }
 
 .child--first{
-    width: calc(30% - 5px);
-    margin-right: 5px;
+    width: calc(30% - 10px);
+    margin-right: 10px;
     font-style: normal;
     font-weight: normal;
 }
