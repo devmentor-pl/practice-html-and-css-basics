@@ -1,6 +1,6 @@
 /* base.css */
 .row, .cell, .container {
-    margin: 10px;
+    margin: 20px;
     padding: 10px;
     outline: 4px solid;
 
@@ -12,22 +12,25 @@
     margin: 0 auto;
     max-width: 1000px; 
     outline-color: blue;
+    padding: 5px 0;
     
 }
 .cell {
     min-height: 50px;
     outline-color: orange;
     background-color: orange;
+        
 }
 
 /* header.css */
 .header__container {
     display: flex;
     justify-content: space-between;
+    
 }
 .header__logo {
     min-width: 200px;
-    margin: 0;
+            
 }
 .header__nav {
     min-width: 400px;
