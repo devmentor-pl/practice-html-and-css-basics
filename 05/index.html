@@ -3,42 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task nr 05 90% done</title>
+    <title>Task nr 05 - done !!!! 100% yeah !</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
 </head>
 <body>
-    <!-- Header of project-->
-    <header class="green green--header">
-        <div class="blue">
-            <h1 class="orange orange--logo"></h1>
-            <nav class="orange orange--nav"></nav>
+    <!--header: logo on the left and menu on the right-->
+    <header class="header row">
+        <div class="container header__container">
+            <h1 class="cell header__logo"></h1> <!--skoro to logo to powinno być <img> 
+                czyli dodane zdjęcie np; <img class="cell header__logo" /> -->
+            <nav class=" cell header__nav"></nav>
         </div>
     </header>
-<!-- first section of two columns-->
-    <main class="green green--main">
-        <div class="blue">
-            <article class="orange orange--article"></article>
-            <aside class="orange orange--nav"></aside>
+<!--first section with two columns-->
+    <section class="content row ">
+        <div class="content__container--first container">
+            <article class="content__column--first cell"></article>
+            <article class="content__column--first cell"></article>
         </div>
-    </main>
-<!-- tree columns-->
-    <section class="green green--section">
-        <div class="blue">
-            <article class="orange"></article>
-            <article class="orange"></article>
-            <article class="orange"></article>
+    </section>
+<!--second section with three columns-->
+    <section class="content row">
+        <div class="content__container--second container">
+            <article class="content__column--second cell"></article>
+            <article class="content__column--second cell"></article>
+            <article class="content__column--second cell"></article>
         </div>
     </section>
 <!--footer-->
-    <footer class="green green--footer">
-        <div class="blue">
-            <div class="blue">
-                <div class="orange"></div>
-            
-        </div>
-            
-            
+    <footer class="footer row ">
+        <div class="footer__container container">
+            <section class="footer__content cell"></section>
         </div>
     </footer>
 </body>
