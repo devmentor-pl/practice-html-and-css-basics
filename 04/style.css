@@ -5,8 +5,7 @@
   box-sizing: border-box;
 }
 
-/* tak wiem , że nie jest do końca ekranu, ale 
-    lepiej jest mi się skupić skoro menu jest małe ;-) */
+
 body {
     background-color: rgb(221, 222, 222);
     width: 800px; 
