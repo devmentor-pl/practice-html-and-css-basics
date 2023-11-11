@@ -2,53 +2,160 @@
 <html lang="pl">
 
 <head>
-    <meta charset="UTF-8">
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-    <meta
-        http-equiv="X-UA-Compatible"
-        content="ie=edge"
-    >
-    <title>devmentor.pl - HTML & CSS BASICS - #01</title>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+  <meta
+    http-equiv="X-UA-Compatible"
+    content="ie=edge"
+  />
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid black;
+    }
+  </style>
+  <title>devmentor.pl - HTML & CSS BASICS - #01</title>
 </head>
 
 <body>
-    <header>
-        <a href=""><img
-                src=""
-                alt="logo"
-            ></a>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Products</a></li>
-                <ul>
-                    <li><a href="#">Cars</a></li>
-                    <li><a href="#">Tires</a></li>
-                    <li><a href="#">Tools</a></li>
-                    <li><a href="#">Spareparts</a></li>
-                </ul>
-                <li><a href="#">Clients</a></li>
-                <li><a href="#">Testimonials</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <article>
-            <title></title>
-            <p></p>
-        </article>
-        <form>
-            <p></p>
-            <p></p>
-            <p></p>
-        </form>
-    </main>
-    <footer></footer>
+  <header>
+    <a href=""><img
+        src=""
+        alt="logo"
+      /></a>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <ul>
+          <li><a href="#">Cars</a></li>
+          <li><a href="#">Tires</a></li>
+          <li><a href="#">Tools</a></li>
+        </ul>
+        <li><a href="#">Clients</a></li>
+        <li><a href="#">Testimonials</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <hr>
+
+  <main>
+    <article>
+      <h1>Future Cars</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+        numquam dolores quaerat, minima est possimus pariatur magni a. Odit
+        dolorum inventore quisquam in deleniti eveniet ratione molestiae,
+        officia obcaecati illum. Quaerat, veniam. Corrupti minima, fugit
+        assumenda placeat magnam ducimus est, aliquid unde labore officiis
+        quasi nam quae! Aliquid omnis obcaecati officiis, impedit qui quos
+        soluta a nam cumque incidunt. Expedita.
+      </p>
+      <p>Data publikacji: 11 listopada 2023</p>
+      <p>Autor: Rafa Krutul</p>
+      <img
+        src=""
+        alt="Pictures"
+      />
+
+      <br />
+
+      <table>
+        <caption>
+          <th colspan="3">Cars</th>
+        </caption>
+        <tr>
+          <th scope="col">Model</th>
+          <th scope="col">Color</th>
+          <th scope="col">Price</th>
+        </tr>
+        <tr>
+          <th scope="row">Toyota</th>
+          <td>Green metalic</td>
+          <td>25,600$</td>
+        </tr>
+        <tr>
+          <th scope="row">Mercedes</th>
+          <td>Blue pearl</td>
+          <td>115.000$</td>
+        </tr>
+        <tr>
+          <th scope="row">Hyundai Tucson</th>
+          <td>Brown </td>
+          <td>32,500$</td>
+        </tr>
+      </table>
+
+      <br />
+    </article>
+  </main>
+
+  <hr>
+
+  <section>
+    <form action="">
+      <label for="komentarz">Dodaj komentarz:</label>
+      <br>
+      <textarea
+        id="komentarz"
+        name="komentarz"
+        rows="4"
+        cols="30"
+      ></textarea>
+      <br>
+      <label for="autor">Autor komentarza:</label>
+      <br>
+      <input
+        type="text"
+        id="autor"
+        name="autor"
+      >
+      <br>
+      <input
+        type="submit"
+        value="Dodaj Komentarz"
+      >
+    </form>
+
+    <br>
+
+    <div>
+      <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea vel praesentium non
+          dolorem ratione, fuga eveniet error molestiae magnam dolores quisquam animi?
+          Iusto deleniti ad assumenda temporibus, consequuntur illum voluptatibus.
+          Id fugiat quas neque, quis labore repudiandae, est voluptatem soluta dignissimos
+          nulla sapiente ullam mollitia alias iusto veritatis explicabo rem impedit
+          incidunt expedita modi esse. Quisquam debitis sunt aspernatur amet?</p>
+        <b><i>Autor: Jarosław Samyk</i></b>
+        <p>Data utworzenia: 7 listopada 2023</p>
+      </div>
+      <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ad, aperiam
+          laborum unde veritatis alias adipisci assumenda sunt veniam qui blanditiis nam
+          eos et quas optio dolorem expedita consectetur aliquam.
+          Distinctio quos alias a eligendi consequuntur omnis ipsum incidunt sapiente
+          error, repellendus, nobis laboriosam temporibus cupiditate atque, dolorum
+          voluptates nisi tempore quae. Ad cumque dignissimos, deserunt culpa corporis
+          vitae iure.</p>
+        <b><i>Autor: Robert Naruszewski</i></b>
+        <p>Data utworzenia: 8 listopada 2023</p>
+      </div>
+    </div>
+  </section>
+
+  <hr>
+
+  <footer>
+    <p>&copy; 2023 Car Magazine. All rights reserved</p>
+  </footer>
 </body>
 
 </html>
