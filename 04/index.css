@@ -1,16 +1,19 @@
 body {
     background-color: #F6F6F6;
 }
+
 .menu {
     display: flex;
     background-color: white;
     margin: 20px; 
 }
+
 .menu__item {
     background-color: white;
     padding: 15px 30px 15px 20px;
     position: relative;
 }
+
 .menu__item::before {
     content: "";
     position: absolute;
@@ -22,55 +25,78 @@ body {
     transform: scaleX(0);
     transition: transform 0.3s ease;
 }
+
 .menu__item:hover::before {
     transform: scaleX(1);
 }
+
 .menu__link {
     background-color: white;
     text-decoration: none;
     color: black;
 }
+
 .menu__item:nth-child(-n+2) .menu__link {
     color: #009AE1;
 }
+
 .menu__item:nth-last-child(-n+2) .menu__link {
     color: black;
 }
-.menu__dropdown {
+
+/* Rozwijane menu */
+.dropdown {
     position: relative;
 }
-.menu__dropdown:hover > .dropdown {
+
+.dropdown__container {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100px;
+    background-color: #333333;
+}
+
+.dropdown:hover > .dropdown__container {
     display: block;
 }
-.menu__dropdown-extend:hover > .dropdown_extend {
+
+.dropdown__extend-container {
+    display: none;
+    position: absolute;
+    width: 120px;
+    top: 50px;
+    left: 100%;
+    background-color: #333333;
+}
+
+.dropdown__extend:hover > .dropdown__extend-container {
     display: block;
 }
-.dropdown__item {
+
+.dropdown__item, .dropdown__extend-item {
     padding: 15px;
 }
-.dropdown__link {
+
+.dropdown__link, .dropdown__extend-link {
     text-decoration: none;
     color: white;
-    padding-left: 6px;
 }
+
 .menu__dropdown-extend {
     position: relative;
 }
+
 .dropdown-extend__item {
     padding: 15px;
 }
+
 .dropdown__link-extend {
     text-decoration: none;
     color: white;
 }
-.dropdown {
-    position: absolute;
-    top: 100%;
-    left: 00px;
-    width: 200px;
-    background-color: #333333;
-    display: none;
-}
+
 .dropdown_extend {
     position: absolute;
     top: 0;
@@ -79,19 +105,22 @@ body {
     background-color: #333333;
     display: none;
 }
-.menu__dropdown::after {
+
+/* Styl strzalek */
+.dropdown::after {
     content: ">";
     position: absolute;
     right: 5px;
     top: 12px;
     scale: 0.8;
-    transform: rotate(90deg);  
+    transform: rotate(90deg);
 }
-.menu__dropdown-extend::after {
+
+.dropdown__extend::after {
     content: "<";
     position: absolute;
     right: 10px;
-    top: 15px;
+    top: 60px;
     scale: 0.8;
     transform: rotate(180deg); 
     color: white;
