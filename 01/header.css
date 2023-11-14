@@ -8,6 +8,7 @@
 
 .navbar__container {
   display: flex;
+  cursor: pointer;
 }
 
 .navbar__item {
