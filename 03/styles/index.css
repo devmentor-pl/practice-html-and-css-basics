@@ -23,12 +23,12 @@
     width: 600px;
     padding: 20px;
     font-family: 'Source Sans PRO';
-    display: flex;
 }
 
 .child {
-    width: calc(30% - 5px); 
+    width: calc(30% - 10px);
     margin-right: 10px;
+    display: inline-block;
 }
 
 .child--first {
@@ -39,25 +39,29 @@
 .child--middle {
     font-weight: bold;
     font-style: normal;
-
 }
 
 .child--last {
     width: calc(40% - 10px);
     font-weight: normal;
     font-style: italic;
-    
+    margin-right: 0;
 }
 
-.parent--inline-block {
+.parent--inline-block .child {
     display: inline-block;
-    
+
 }
 
 .parent--float {
     float: left;
+
 }
 
 .parent--flexbox {
     display: flex;
+    flex-wrap: wrap;
+    clear: both; 
+
 }
+
