@@ -7,13 +7,46 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
     <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./header.css">
 </head>
 
 <body>
     
     <header class="header">
-        <nav class="header__navbar"></nav>
-        <div class="header__logo"></div>
+        <nav class="header__navbar">
+            <ul class="navbar__container">
+                <li class="navbar__item">HOME</li>
+                <li class="navbar__item">CATEGORIES
+                    <ul class="items__container">
+                        <li class="items__item">Living Room</li>
+                        <li class="items__item">Kitchen</li>
+                        <li class="items__item">Bedroom</li>
+                        <li class="items__item">Bathroom</li>
+                        <li class="items__item">Dining Room</li>
+                    </ul>
+                </li>
+                <li class="navbar__item">VIDEO
+                    <ul class="items__container">
+                        <li class="items__item">LATEST</li>
+                        <li class="items__item">ARCHIVE</li>
+                    </ul>
+                </li>
+                <li class="navbar__item">ABOUT US
+                    <ul class="items__container">
+                        <li class="items__item">ME</li>
+                        <li class="items__item">MY TEAM</li>
+                    </ul>
+                </li>
+                <li class="navbar__item">CONTACT
+                    <ul class="items__container">
+                        <li class="items__item">PHONE NUMBER</li>
+                        <li class="items__item">WHAT'S UP</li>
+                        <li class="items__item">E-MAIL</li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <img class="header__logo" src="./img/logo.jpg" alt="Logo">
     </header>
 
 </body>
