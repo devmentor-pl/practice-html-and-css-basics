@@ -68,9 +68,17 @@
         <section id="comments">
             <h2>Komentarze</h2>
             <form action="#">
-                <input type="text" placeholder="Treść komentarza">
-                <input type="text" placeholder="Autor komentarza">
-                <input type="submit" value="Dodaj komentarz">
+                <div class="form__row">
+                    <label for="comment-content">Treść komentarza</label>
+                    <input type="text" id="comment-content" placeholder="Treść komentarza">
+                </div>
+                <div class="form__row">
+                    <label for="comment-author">Autor komentarza:</label>
+                    <input type="text" id="comment-author" placeholder="Autor komentarza">
+                </div>
+                <div class="form__row">
+                    <input type="submit" value="Dodaj komentarz">
+                </div>
             </form>
             <ul>
                 <li>
