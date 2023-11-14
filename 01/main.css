@@ -1,0 +1,21 @@
+.main {
+  padding: 20px 0;
+}
+
+.main__article {
+  width: 50vw;
+  float: left;
+  margin-left: 25vw;
+  margin-right: 4vw;
+}
+
+.ads__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ads__ad {
+  padding-bottom: 25vh;
+  width: 15vw;
+}
