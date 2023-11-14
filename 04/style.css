@@ -1,0 +1,76 @@
+/* Basic style reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+    background-color: rgb(221, 222, 222);
+    width: 800px; 
+    height: 1000px;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  display: block;
+}
+
+/* Main menu */
+.menu {
+  background-color: rgb(248, 248, 248);
+  color: #444;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.menu__list {
+  display: flex;
+}
+.menu__link, .menu__item--parent {
+  padding: 15px 20px;
+}
+
+.menu__link {
+  color: rgb(4, 5, 4);
+}
+
+.menu__item--parent {
+  cursor: default;
+  position: relative;
+}
+
+/* Drop-down */
+.menu__sublist {
+  display: none;
+  position: absolute;
+  background-color: rgb(249, 250, 249);
+}
+
+.menu__sublist--bottom {
+  left: 0;
+  top: 100%;
+}
+.menu__sublist--right {
+  left: 100%;
+  top: 0;
+}
+
+/* Change background color on hover for menu and drop-down items */
+.menu__item:hover {
+  background-color: #444;
+  color: rgb(248, 248, 248);
+}
+
+/* Show drop-down on hover of the parent menu item */
+.menu__item--parent:hover > .menu__sublist {
+  display: block;
+  background-color: #444;
+  color: rgb(240, 248, 248);
+}
