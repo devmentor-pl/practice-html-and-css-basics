@@ -1,12 +1,111 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header>
+      <img src="./img/webdev-logo.png" alt="logo image" class="img--logo" />
+      <nav>
+        <ul>
+          <li><a href="#">Strona główna</a></li>
+          <li>
+            <a href="#">Informacje</a>
+            <ul>
+              <li><a href="#">Informacje poziom 2</a></li>
+              <li><a href="#">Blog poziom 2</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Galeria</a></li>
+          <li><a href="#">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <article>
+        <h1>Zagrożenia i ochrona środowiska naturalnego</h1>
+        <p>
+          Współczesny świat staje w obliczu licznych wyzwań związanych z ochroną
+          środowiska naturalnego. Nasza planeta zmaga się z problemami, takimi
+          jak zmiany klimatu, utrata bioróżnorodności oraz degradacja
+          ekosystemów....
+        </p>
+        <p>
+          Data publikacji: <time datetime="2023-08-07"> 07 sierpnia 2023</time>.
+        </p>
+        <p>Autor: <a href="”#”" rel="”author”">Maria Nowak</a></p>
+        <img
+          src="./img/article-illustration.jpg"
+          alt="Illustration image"
+          class="img--ill"
+        />
+        <table>
+          <tr>
+            <th>Skutki globalnego ocieplenia</th>
+            <th>Środki zaradcze</th>
+          </tr>
+          <tr>
+            <td>Ekstremalne zjawiska pogodowe</td>
+            <td>Redukcja emisji gazów cieplarnianych</td>
+          </tr>
+          <tr>
+            <td>Podnoszenie się poziomu mórz</td>
+            <td>Przyrost lasów i zalesianie obszarów degradowanych</td>
+          </tr>
+        </table>
+        <!-- Text area -->
+      </article>
+      <div>
+        <label for="comment">Napisz komentarz:</label>
+        <form action="#" method="post">
+          <textarea id="comment" rows="4" cols="50"></textarea>
+          <button type="submit">Dodaj komentarz</button>
+        </form>
+      </div>
+      <!-- Single comment -->
+      <article>
+        <p>
+          Treść komentarza bardzo mnie zaintrygowała. Zmiany klimatu to poważny
+          problem, z którym musimy się zmierzyć jako społeczeństwo.
+        </p>
+        <p>Autor: <a href="”#”" rel="”author”">Janina Kowalska</a></p>
+        <p>
+          Data utworzenia:<time datetime="2023-08-24"> 24 sierpnia 2023</time>.
+        </p>
+      </article>
+      <!-- End of single comment -->
+      <!-- Single comment -->
+      <article>
+        <p>
+          Nie zgadzam się z twierdzeniem, że działalność człowieka jest główną
+          przyczyną zmian klimatu. Istnieje wiele czynników naturalnych, które
+          również mają wpływ na naszą planetę.
+        </p>
+        <p>Autor: <a href="”#”" rel="”author”">Andrzej Nowak</a></p>
+        <p>
+          Data utworzenia:<time datetime="2023-08-25"> 25 sierpnia 2023</time>.
+        </p>
+      </article>
+      <!-- End of single comment -->
+      <!-- Single comment -->
+      <article>
+        <p>
+          Bardzo ważny artykuł. Musimy działać teraz, aby przekazać naszym
+          przyszłym pokoleniom zdrową i zrównoważoną planetę.
+        </p>
+        <p>Autor: <a href="”#”" rel="”author”">Ewa Wiśniewska</a></p>
+        <p>
+          Data utworzenia:<time datetime="2023-08-26"> 26 sierpnia 2023</time>.
+        </p>
+      </article>
+      <!-- End of single comment -->
+    </main>
+    <footer>
+      <p>&copy; 2023 Maciej Nęcka. All rights reserved. ^^</p>
+    </footer>
+  </body>
 </html>
