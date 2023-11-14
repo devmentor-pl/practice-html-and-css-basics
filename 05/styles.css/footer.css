@@ -1,0 +1,10 @@
+.footer__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+}
+.footer__content{
+    min-width: 20%;
+    min-height: 50px;
+}

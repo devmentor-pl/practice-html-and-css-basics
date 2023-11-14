@@ -1,0 +1,11 @@
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    min-height: 100px;
+}
+.header__logo {
+    min-width: 20%;
+}
+.header__nav {
+    min-width: 40%;
+}

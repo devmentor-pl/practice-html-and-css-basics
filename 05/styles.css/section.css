@@ -1,0 +1,8 @@
+.section__container {
+    display: flex;
+    justify-content: space-between;
+    min-height: 200px;
+}
+.section__content{
+    min-width: 49.9%;
+}

@@ -1,0 +1,14 @@
+.row {
+    margin: 3px;
+    padding: 3px 10px;
+    border: solid 3px rgb(7, 209, 7);
+}
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    border: solid 3px rgb(19, 162, 206);
+    padding: 3px 0;
+}
+.cell {
+    background-color: rgb(255, 170, 11);
+}
