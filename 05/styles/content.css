@@ -1,0 +1,12 @@
+/* content.css */
+
+.content__container {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content__article {
+    min-height: 300px;
+    width: 50%;
+}
