@@ -1,12 +1,18 @@
 .main {
-  margin: 50px 0;
+  background-color: #AEDEFC;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 0;
 }
 
 .main__article {
-  width: 50vw;
+  background-color: var(--color-fourth);
+  border-radius: 60px;
+  width: 60vw;
   float: left;
-  margin-left: 25vw;
-  margin-right: 4vw;
+  margin-left: 20vw;
+  margin-right: 30px;
+  padding: 10px 5vw;
 }
 
 .article__date, .article__h1 {
@@ -52,6 +58,10 @@
   height: 120px;
   width: 40vw;
   text-align: start;
+}
+
+.article__comments {
+  margin-bottom: 20px; /* .main margin problem! */
 }
 
 .comments__container {

@@ -12,7 +12,7 @@
 }
 
 .navbar__item {
-  color: var(--color-second);
+  color: var(--color-third);
   padding: 0 20px;
   position: relative;
 }
