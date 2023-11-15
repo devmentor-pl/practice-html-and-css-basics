@@ -1,0 +1,68 @@
+.row, .container, .cell {
+    margin: 5px;
+    padding: 5px;
+}
+
+.row {
+    outline: 3px solid green;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.container {
+    outline: 3px solid royalblue;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.cell {
+    background-color: orange;
+    margin: 0;
+    height: 50px;
+    padding: 0;
+}
+
+.header__container, .main__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 1px 0 5px 0;
+}
+
+.header__logo {
+    min-width: 15%;
+}
+
+.header__nav {
+    min-width: 40%;
+}
+
+.main__container{
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.main__article, .main__ads {
+    min-height: 200px;
+    width: calc(50% - 2px);
+}
+
+.section__container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px 0 5px 0;
+}
+
+.section__article {
+    min-height: 200px;
+    width: 32%;
+}
+
+.footer__container {
+    display: flex;
+}
+
+.footer__copyrights {
+    margin: 0 auto;
+    height: 25px;
+    min-width: 100px;
+}

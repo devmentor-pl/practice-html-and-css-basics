@@ -1,12 +1,92 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
 </head>
+
 <body>
-    
+    <header>
+        <h1 class="logo"><img src="" alt=""></h1>
+        <nav>
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">portfolio</a>
+                    <ul>
+                        <li><a href="#">przykład 1</a></li>
+                        <li><a href="#">przykład 2</a></li>
+                        <li><a href="#">przykład 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">o nas</a></li>
+                <li><a href="#">kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2>Tytuł artykułu</h2>
+            <p> opublikowano: <time datetime="2023-03-05">2023-03-06</time> przez: <a rel="author">Natalia</a>
+            </p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non eveniet minus tempora esse nobis aperiam
+                praesentium unde libero sed maxime!</p>
+            <figure><img src="images/img.png">
+                <figcaption>Obrazek</figcaption>
+            </figure>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="3">Tytuł tabeli</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+    </main>
+    <section>
+        <form action="">
+            <div>
+                <label for="name">Imię</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div>
+                <label for="content"></label>
+                <textarea name="content" id="content" cols="30" rows="10"></textarea>
+            </div>
+            <div><input type="submit" value="Dodaj komentarz"></div>
+        </form>
+        <article>
+            <h2><a rel="author">Krysia</a>, <time datetime="2023-03-06">2023-03-06</time></h2>
+            <p>Lorem ipsum dolor sit.</p>
+        </article>
+        <article>
+            <h2><a rel="author">Wiesia</a>, <time datetime="2023-03-06">2023-03-06</time></h2>
+            <p>Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. At, error.</p>
+        </article>
+        <article>
+            <h2><a rel="author">Zdzisia</a>, <time datetime="2023-03-05">2023-03-05</time></h2>
+            <p>Lorem ipsum dolor sit amet
+                consectetur.</p>
+        </article>
+    </section>
+    <footer>
+        <p>&copy; 2023 Natalia</p>
+    </footer>
 </body>
+
 </html>
