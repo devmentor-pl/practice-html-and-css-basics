@@ -1,21 +1,21 @@
 .main {
   background-color: #AEDEFC;
   display: flex;
-  flex-wrap: wrap;
   padding-top: 100px; /* + 50px because of fixed positon of header */
   padding-bottom: 50px;
+}
+
+.empty {
+  width: 25%;
 }
 
 .main__article {
   background-color: var(--color-fourth);
   border-radius: 60px;
-  width: 60vw;
-  float: left;
-  margin-left: 20vw;
-  margin-right: 30px;
   padding: 0 5vw;
   padding-top: 10px;
   padding-bottom: 40px;
+  width: 50%;
 }
 
 .article__date, .article__h1 {
@@ -70,9 +70,6 @@
   text-align: start;
 }
 
-.writeComments__comment::placeholder {
-}
-
 .comments__container {
   border-radius: 20px;
   border: 1.5px solid;
@@ -114,12 +111,11 @@
 .ads__container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  width: 70%;
 }
 
 .ads__ad {
   padding-bottom: 20vh;
-  width: 15vw;
 }
 
 .ad__description {
@@ -130,9 +126,11 @@
 
 .main__ads {
   display: none;
+  width: 25%;
 }
 @media (min-width: 992px) {
   .main__ads {
-    display: unset;
+    display: flex;
+    justify-content: center;
   }
 }
