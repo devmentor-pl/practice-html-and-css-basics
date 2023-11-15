@@ -43,15 +43,47 @@
   justify-content: flex-end;
 }
 
-.article__comments {
+.article__writeComments, .article__comments {
   margin-top: 30px;
 }
 
-.comments__comment {
+.writeComments__comment {
   margin-top: 10px;
   height: 120px;
   width: 40vw;
   text-align: start;
+}
+
+.comments__container {
+  border: 1px solid;
+  margin-top: 10px;
+  width: 40vw;
+}
+.comments__user {
+  border-bottom: 1px solid;
+  display: flex;
+  align-items: center;
+}
+
+.user__picture {
+  height: 40px;
+  width: 40px;
+}
+
+.user__picture {
+  margin-left: 25px;
+}
+.user__name {
+  margin-left: 10px;
+}
+.comments__comment {
+  padding: 20px;
+}
+
+.comment__date {
+  display: block;
+  font-weight: 300; font-style: italic;
+  text-align: end;
 }
 
 .ads__container {
