@@ -4,11 +4,13 @@
   display: flex;
   justify-content: space-between;
   padding: 0 20px;
+  position: fixed;
+  width: 100%;
 }
 
 .navbar__container {
-  display: flex;
   cursor: pointer;
+  display: flex;
 }
 
 .navbar__item {
