@@ -1,12 +1,232 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
-</head>
-<body>
-    
-</body>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header class="top">
+      <nav class="nav">
+        <div class="logotype">
+          <a href="/">
+            <img src="" alt="logo" class="logotype__image" />
+          </a>
+        </div>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#">Artykuły</a>
+          </li>
+          <li class="nav__item nav__item--dropdown">
+            <a class="nav__link" href="#">Sporty</a>
+            <ul class="submenu">
+              <li class="submenu__item">
+                <a class="submenu__link" href="#">Siłownia</a>
+              </li>
+              <li class="submenu__item">
+                <a class="submenu__link" href="#">Basen</a>
+              </li>
+              <li class="submenu__item">
+                <a class="submenu__link" href="#">Kolarstwo</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Relacje</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Kontakt</a>
+          </li>
+          <li class="nav__item nav__item--social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+          </li>
+          <li class="nav__item nav__item--social">
+            <a href="#"><i class="fa fa-instagram"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="middle">
+      <article class="content">
+        <h1 class="content__title">Sport to zdrowie!</h1>
+        <div class="content__author">
+          <a rel="content-author"
+            >Andrzej Przybylski,
+            <time datetime="2023-02-13T00:00:00">13 luty 2023</time></a
+          >
+        </div>
+        <p class="content__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+          eius quia placeat vel culpa molestias exercitationem deserunt! Vel,
+          fugiat error nemo beatae debitis, autem eveniet, doloribus quod fuga
+          ex architecto.
+        </p>
+
+        <figure class="content__imagebox">
+          <img
+            src="https://picsum.photos/1000/400/"
+            alt="Konkretne zdjęcie"
+            class="content__imagebox--image"
+          />
+          <figcaption class="content__figcaption">
+            Sportowy styl życia
+          </figcaption>
+        </figure>
+
+        <p class="content__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+          eius quia placeat vel culpa molestias exercitationem deserunt! Vel,
+          fugiat error nemo beatae debitis, autem eveniet, doloribus quod fuga
+          ex architecto.
+        </p>
+        <p class="content__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+          eius quia placeat vel culpa molestias exercitationem deserunt! Vel,
+          fugiat error nemo beatae debitis, autem eveniet, doloribus quod fuga
+          ex architecto.
+        </p>
+
+        <h2 class="content__title content__title--medium">
+          Rodzaje aktywności:
+        </h2>
+
+        <table class="sport-list">
+          <caption class="sport-list__title">
+            Dyscyplina sportowa:
+          </caption>
+          <tr class="sport-list__list-row sport-list__list-row--header">
+            <th class="sport-list__item">Siłownia</th>
+            <th class="sport-list__item">Basen</th>
+            <th class="sport-list__item">Kolarstwo</th>
+          </tr>
+          <tr class="sport-list__list-row">
+            <td class="sport-list__item">Lorem ipsum dolor sit amet.</td>
+            <td class="sport-list__item">Lorem ipsum dolor sit amet.</td>
+            <td class="sport-list__item">Lorem ipsum dolor sit amet.</td>
+          </tr>
+        </table>
+
+        <p class="content__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+          eius quia placeat vel culpa molestias exercitationem deserunt! Vel,
+          fugiat error nemo beatae debitis, autem eveniet, doloribus quod fuga
+          ex architecto.
+        </p>
+
+        <h3 class="content__title content__title--small">O autorze:</h3>
+
+        <ul class="meta">
+          <li class="meta__item">
+            <strong>Andrzej Przybylski</strong>
+            <p class="meta__text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit
+              natus et, ipsa, accusamus atque perferendis excepturi aliquam in
+              soluta qui vero? Iure doloremque in, ipsum repudiandae itaque
+              laborum? Dolores, hic.
+            </p>
+          </li>
+          <li class="meta__item meta__item--socials">
+            Obserwuj mnie w social media:
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+          </li>
+        </ul>
+
+        <section class="comments">
+          <form action="" class="comments__form">
+            <div class="comments__row">
+              <label for="first-name">Imię:</label>
+              <input
+                id="comments-name"
+                type="text"
+                name="first-name"
+                placeholder="Jan"
+                class="comments__input"
+              />
+              <label for="second-name">Nazwisko:</label>
+              <input
+                id="comments-second-name"
+                type="text"
+                name="second-name"
+                placeholder="Kowalski"
+                class="comments__input"
+              />
+            </div>
+            <div class="comments__row">
+              <label for="message">Twoja wiadomość:</label>
+              <textarea
+                id="comments-message"
+                name="message"
+                cols="40"
+                rows="12"
+                placeholder="Tutaj wpisz treść swojego komentarza"
+                class="comments__textarea"
+              ></textarea>
+            </div>
+            <button type="submit" class="comments__submit">Wyślij!</button>
+          </form>
+
+          <ul class="comments__list">
+            <li class="comments__item">
+              <div class="comments__title">
+                <a rel="author"
+                  >Andrzej,
+                  <time datetime="2023-02-13T00:00:00">13 luty 2023</time></a
+                >
+              </div>
+              <p class="comments__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+                minus fuga unde error consequatur. Ipsam, ullam! Quia
+                praesentium quisquam fuga, excepturi harum commodi architecto
+                nemo eligendi sint? Quaerat, tempora officia?
+              </p>
+            </li>
+            <li class="comments__item">
+              <div class="comments__title">
+                <a rel="author"
+                  >Kasia,
+                  <time datetime="2023-02-13T00:00:00">13 luty 2023</time></a
+                >
+              </div>
+              <p class="comments__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+                minus fuga unde error consequatur. Ipsam, ullam! Quia
+                praesentium quisquam fuga, excepturi harum commodi architecto
+                nemo eligendi sint? Quaerat, tempora officia?
+              </p>
+            </li>
+            <li class="comments__item">
+              <div class="comments__title">
+                <a rel="author"
+                  >Rudy,
+                  <time datetime="2023-02-13T00:00:00">13 luty 2023</time></a
+                >
+              </div>
+              <p class="comments__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+                minus fuga unde error consequatur. Ipsam, ullam! Quia
+                praesentium quisquam fuga, excepturi harum commodi architecto
+                nemo eligendi sint? Quaerat, tempora officia?
+              </p>
+            </li>
+          </ul>
+        </section>
+      </article>
+    </main>
+
+    <footer class="bottom">
+      <p class="bottom__copyrights">&copy; Przybylski</p>
+      <div class="logotype">
+        <a href="/">
+          <img src="" alt="logo" class="logotype__image" />
+        </a>
+      </div>
+    </footer>
+  </body>
 </html>
