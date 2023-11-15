@@ -13,7 +13,9 @@
   float: left;
   margin-left: 20vw;
   margin-right: 30px;
-  padding: 10px 5vw;
+  padding: 0 5vw;
+  padding-top: 10px;
+  padding-bottom: 40px;
 }
 
 .article__date, .article__h1 {
@@ -49,24 +51,41 @@
   justify-content: flex-end;
 }
 
-.article__writeComments, .article__comments {
+.article__writeComments {
   margin-top: 100px;
 }
 
+.article__comments {
+  margin-top: 50px;
+}
+
 .writeComments__comment {
+  border-radius: 20px;
+  border: 1.5px solid;
+  border-color: var(--color-third);
   margin-top: 10px;
   height: 120px;
+  padding: 10px;
   width: 40vw;
   text-align: start;
 }
 
+.writeComments__comment::placeholder {
+}
+
 .comments__container {
-  border: 1px solid;
+  border-radius: 20px;
+  border: 1.5px solid;
+  border-color: var(--color-third);
+  background-color: var(--color-beta);
   margin-top: 10px;
   width: 40vw;
 }
 .comments__user {
-  border-bottom: 1px solid;
+  border-radius: 20px 20px 0 0;
+  border-bottom: 1.5px solid;
+  border-color: var(--color-third);
+  background-color: var(--color-beta);
   display: flex;
   align-items: center;
 }
@@ -88,6 +107,7 @@
 
 .comment__date {
   display: block;
+  margin-top: 5px;
   text-align: end;
 }
 
