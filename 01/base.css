@@ -1,4 +1,6 @@
 :root {
+  --color-alpha: black;
+  --color-beta: white;
   --color-main: #FFDFDF;
   --color-second: #AEDEFC;
   --color-third: #228B22;
