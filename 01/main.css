@@ -20,7 +20,6 @@
 }
 
 .article__date {
-  font-weight: 300; font-style: italic;
   margin-bottom: 10px;
 }
 
@@ -50,7 +49,7 @@
 }
 
 .article__writeComments, .article__comments {
-  margin-top: 30px;
+  margin-top: 100px;
 }
 
 .writeComments__comment {
@@ -58,10 +57,6 @@
   height: 120px;
   width: 40vw;
   text-align: start;
-}
-
-.article__comments {
-  margin-bottom: 20px; /* .main margin problem! */
 }
 
 .comments__container {
@@ -92,7 +87,6 @@
 
 .comment__date {
   display: block;
-  font-weight: 300; font-style: italic;
   text-align: end;
 }
 
@@ -111,4 +105,13 @@
   font-weight: 350; font-style: italic;
   color: var(--color-alpha);
   text-align: center;
+}
+
+.main__ads {
+  display: none;
+}
+@media (min-width: 992px) {
+  .main__ads {
+    display: unset;
+  }
 }
