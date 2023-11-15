@@ -1,12 +1,119 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo"></div>
+      <nav class="nav">
+        <ul class="nav__items">
+          <li class="nav__item">
+            <a class="nav__link" href="#">Home</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Pricing</a>
+            <ul class="nav__dropdown">
+              <li class="dropdown__item">
+                <a class="dropdown__link" href="#">Individual therapy</a>
+              </li>
+              <li class="dropdown__item">
+                <a class="dropdown__link" href="#">Group therapies</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <article class="article">
+        <section class="article__section">
+          <header class="article__header">
+            <h1 class="article__title">Tytuł artykułu</h1>
+            <p class="article__owner">Autor: John Doe | 14 lutego 2023</p>
+          </header>
+          <figure class="article__figure">
+            <img class="article__image" src="./img/obrazek.jpg" alt="Obrazek" />
+            <figcaption class="article__description"></figcaption>
+          </figure>
+          <p class="article__paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,
+            magnam obcaecati. Debitis, tempore, architecto quo officia
+            exercitationem a deleniti quis earum eos assumenda magni dolores
+            beatae asperiores nisi quisquam illum.
+          </p>
+          <table class="article__table table">
+            <thead class="table__head">
+              <tr class="table__row">
+                <th class="table__cell" colspan="2">Spis ludności</th>
+              </tr>
+            </thead>
+            <tbody class="table__body">
+              <tr class="table__row">
+                <td class="table__cell">Janusz</td>
+                <td class="table__cell">Janusz</td>
+              </tr>
+              <tr class="table__row">
+                <td class="table__cell">Puszek</td>
+                <td class="table__cell">Okruszek</td>
+              </tr>
+            </tbody>
+          </table>
+          <hr />
+        </section>
+        </article>
+        <section>
+          <form class="form" action="">
+            <input class="form__input" type="text" name="name" placeholder="ur name"  required/>
+            <textarea class="form__textarea"
+              name="message"
+              cols="30"
+              rows="10"
+              placeholder="Message"
+              required
+            ></textarea>
+            <button>Send</button>
+          </form>
+        </section>
+        <section class="comments">
+          <div class="comment">
+            <p class="comment__paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis fugiat tenetur delectus, velit, doloribus nostrum,
+              voluptate blanditiis sit temporibus optio atque laboriosam vitae
+              quo consequuntur minus a cum voluptatem accusantium.
+            </p>
+            <p class="comment__owner">Autor: John Doe | 14 lutego 2023</p>
+          </div>
+          <div class="comment">
+            <p class="comment__paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis fugiat tenetur delectus, velit, doloribus nostrum,
+              voluptate blanditiis sit temporibus optio atque laboriosam vitae
+              quo consequuntur minus a cum voluptatem accusantium.
+            </p>
+            <p class="comment__owner">Autor: John John | 10 lutego 2023</p>
+          </div>
+          <div class="comment">
+            <p class="comment__paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis fugiat tenetur delectus, velit, doloribus nostrum,
+              voluptate blanditiis sit temporibus optio atque laboriosam vitae
+              quo consequuntur minus a cum voluptatem accusantium.
+            </p>
+            <p class="comment__owner">Autor: John Smith | 7 lutego 2023</p>
+          </div>
+        </section>
+      </article>
+    </main>
+    <footer class="footer">
+        <p class="footer__paragraph">&copy <a href="#">KrisDev</a>. Wszelkie prawa zastrzeżone </p>
+    </footer>
+  </body>
 </html>

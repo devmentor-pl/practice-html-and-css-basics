@@ -1,0 +1,66 @@
+/* global */
+
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&display=swap");
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.parent {
+  box-sizing: border-box;
+  width: 600px;
+  padding: 20px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.child--first {
+  width: 30%;
+  font-style: normal;
+}
+
+.child--middle {
+  width: calc(30% - 20px);
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+.child--last {
+  width: 40%;
+  font-style: italic;
+}
+
+/* end of global */
+
+/* inline-block */
+
+.parent--inline-block {
+  font-size: 0;
+}
+
+.parent--inline-block .child {
+  display: inline-block;
+  font-size: 1rem;
+}
+
+/* end of inline-block */
+
+/* float */
+.parent--float .child {
+  float: left;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* end of float */
+
+/* flex  */
+
+.parent--flexbox {
+  display: flex;
+}
