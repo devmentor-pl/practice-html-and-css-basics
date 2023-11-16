@@ -1,12 +1,153 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="ie=edge"
+    />
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
-</head>
-<body>
-    
-</body>
+  </head>
+
+  <body>
+    <header>
+      <a href="#">LOGO</a>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">Link 1</li>
+          <li class="nav__item">Link 2</li>
+          <li class="nav__item">Link 3</li>
+          <li class="nav__item">Link 4</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <article class="article">
+          <h2 class="article__title">Title</h2>
+          <p class="article__paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos vel aut
+            voluptates quis adipisci! Rem quibusdam illo molestias voluptatibus
+            ipsa quo, sequi culpa dicta delectus excepturi est tenetur quidem
+            eaque illum accusantium qui earum laborum. Eveniet aut ullam
+            molestias accusamus saepe facilis eligendi molestiae, voluptates
+            quam dolore deleniti veniam officiis unde doloribus vero sunt
+            inventore et odit laborum cupiditate iure dolor deserunt commodi?
+            Soluta eaque sint mollitia aut. Nesciunt expedita deserunt porro rem
+            voluptate amet ipsum dolore est sapiente et, vel dolorem, quidem
+            facilis velit sit non magnam tempore voluptatum reprehenderit?
+            Tempora at veniam fugit perferendis aliquid pariatur iure vitae!
+          </p>
+          <span>Data publikacji</span>
+          <span>Autor</span>
+          <img
+            src="http://qnimate.com/wp-content/uploads/2014/03/images2.jpg"
+            alt="img"
+          />
+          <table>
+            <caption>
+              Random table
+            </caption>
+            <colgroup>
+              <col
+                span="3"
+                style="background: yellow"
+              />
+            </colgroup>
+            <thead>
+              <tr>
+                <th scope="col">Col1</th>
+                <th scope="col">Col2</th>
+                <th scope="col">Col3</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+      </section>
+
+      <section>
+        <article class="form">
+          <form>
+            <label for="email"
+              >E-mail
+              <input
+                type="email"
+                id="email"
+              />
+            </label>
+
+            <label
+              >Comment
+              <textarea
+                name="comment"
+                id="comment"
+                cols="30"
+                rows="10"
+                placeholder="Write comment here"
+              ></textarea>
+            </label>
+            <div><input type="submit" /></div>
+          </form>
+        </article>
+      </section>
+      <section>
+        <article>
+          <div class="comments__container">
+            <ul class="comments__list">
+              <li class="comments__item comments__author">John Doe</li>
+              <li class="comments__item comments__date">2023-01-01</li>
+              <li class="comments__item comments__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+                ipsa voluptatem voluptates. Voluptatum consequuntur voluptatem
+                adipisci voluptas, suscipit iste illum similique, illo aliquam,
+                animi tenetur blanditiis nostrum? Libero, porro similique!
+              </li>
+            </ul>
+          </div>
+        </article>
+        <article>
+          <div class="comments__container">
+            <ul class="comments__list">
+              <li class="comments__item comments__author">John Doe</li>
+              <li class="comments__item comments__date">2023-01-01</li>
+              <li class="comments__item comments__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+                ipsa voluptatem voluptates. Voluptatum consequuntur voluptatem
+                adipisci voluptas, suscipit iste illum similique, illo aliquam,
+                animi tenetur blanditiis nostrum? Libero, porro similique!
+              </li>
+            </ul>
+          </div>
+        </article>
+        <article>
+          <div class="comments__container">
+            <ul class="comments__list">
+              <li class="comments__item comments__author">John Doe</li>
+              <li class="comments__item comments__date">2023-01-01</li>
+              <li class="comments__item comments__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+                ipsa voluptatem voluptates. Voluptatum consequuntur voluptatem
+                adipisci voluptas, suscipit iste illum similique, illo aliquam,
+                animi tenetur blanditiis nostrum? Libero, porro similique!
+              </li>
+            </ul>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer class="footer">
+      © 2023 Mikołaj Krzywacz. Wszystkie prawa zastrzeżone
+    </footer>
+  </body>
 </html>

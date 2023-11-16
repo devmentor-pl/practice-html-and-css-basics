@@ -1,0 +1,114 @@
+/* NIE WIEM JAK POSORTOWAĆ ALFABETYCZNIE SELEKTORY W CSS. PRÓBOWAŁEM UYC POSTMANCSS I DODALEM LINIE KODU DO SETTINGS.JSON PRAWIE TAK JAK KAZALI NA INTERNECIE I MI NIE DZIAŁAŁO :/ */
+
+:root {
+  --primary-text: #000;
+  --secondary-text: #8e9396;
+  --bg-color: #c7c7c7;
+  --hover-color: #009ae1;
+  --dropdown-color: #333333;
+  --nav-bg: #fff;
+}
+html {
+  background-color: var(--bg-color);
+  color: var(--primary-text);
+  height: 100vh;
+}
+
+.nav {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.nav__list {
+  display: flex;
+  gap: 30px;
+  background-color: var(--nav-bg);
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.nav__item {
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+}
+
+.nav__item:nth-child(2) {
+  width: 100px;
+}
+
+.nav__item:hover,
+.dropdown__item:hover,
+.dropdown2__item:hover {
+  color: var(--hover-color);
+}
+
+.dropdown,
+.dropdown2__list {
+  display: none;
+  position: absolute;
+  background-color: var(--dropdown-color);
+  color: var(--nav-bg);
+  width: 100%;
+}
+
+.dropdown {
+  top: 100%;
+  left: 0;
+}
+
+.dropdown2__list {
+  left: 100%;
+  top: 50%;
+}
+
+.dropdown__item,
+.dropdown2__item {
+  text-align: center;
+}
+
+.nav__item:hover .dropdown,
+.dropdown__item:hover .dropdown2__list {
+  display: block;
+}
+
+.nav__item::before {
+  width: 0%;
+  display: block;
+  height: 4px;
+  content: "";
+  background-color: var(--hover-color);
+  border-radius: 2px;
+  transition: width 0.8s ease;
+  margin-bottom: 10px;
+}
+
+.nav__item:hover::before {
+  width: 100%;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  border-color: var(--secondary-text);
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  position: absolute;
+  right: 0;
+  top: 15px;
+}
+
+.nav__item:hover .down,
+.dropdown__item:hover .right {
+  border-color: var(--hover-color);
+}
