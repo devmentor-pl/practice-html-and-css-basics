@@ -18,10 +18,7 @@
   margin-bottom: 10px;
 }
 
-.child--first {
-  width: 30%;
-}
-.child--middle {
+.child--first, .child--middle {
   width: 30%;
 }
 .child--last {
