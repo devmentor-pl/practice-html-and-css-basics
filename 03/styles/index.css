@@ -28,7 +28,6 @@
 .child {
     width: calc(30% - 10px);
     margin-right: 10px;
-    display: inline-block;
 }
 
 .parent--inline-block .child {
