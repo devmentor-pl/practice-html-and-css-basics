@@ -106,3 +106,7 @@
     top: 0;
     left: 100%;
 }
+
+.no-submenu:hover::before {
+    content: '';  /* Jeśli chcesz, aby strzałki nie pojawiały się po najechaniu */
+}
