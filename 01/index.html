@@ -4,9 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
 </head>
 <body>
-    
+    <header>
+        <h1><img src="" alt="" />Agencja reklamy DrWeb</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#">Strona Główna</a></li>
+                        <li><a href="#">O nas</a></li>
+                        <li><a href="#">Oferta</a>
+                            <ul>
+                                <li><a href="#">Strony WWW</a></li>
+                                <li><a href="#">Reklamy Internetowe</a></li>
+                                <li><a href="#">Rozwiązania serwerowe</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Kontakt</a></li>
+                    </ul>
+                </nav>
+    </header>
+<main>
+    <article>
+        <h1>To jest tytuł</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea aspernatur eum blanditiis sit quos autem voluptatum culpa 
+            corporis debitis reprehenderit repellendus eligendi recusandae unde beatae, sed nam dicta fugiat dolorum?
+        </p>
+    </article>
+    <figure>
+        <img src="./images/ja.jpg" alt="to ja" />
+        <figcaption>To cały ja!</figcaption>
+    </figure>
+    <footer>
+        <p>Autorem jest: <a rel="author" href="#">Jakubek</a>, data publikacji <time datetime="2023-02-11">11.02.2023</time></p>
+    </footer>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2">The table header</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>The table body1</td>
+                <td>with two columns1</td>
+            </tr>
+            <tr>
+                <td>The table body2</td>
+                <td>with two columns2</td>
+            </tr>
+            <tr>
+                <td>The table body3</td>
+                <td>with two columns3</td>
+            </tr>
+        </tbody>
+    </table>
+</main>
+<section>
+    <form action="">
+        <div>
+            <label for="name">Imię:  </label>
+                <input type="text" name="name" id="name">     
+        </div>
+        <div>
+            <label for="content">Treść komentarza:</label>
+                <textarea name="content" id="content" cols="30" rows="10"></textarea>
+        </div>
+        <div><input type="submit" value="Dodaj komentarz"></div>
+    </form>
+</section>
+<section>
+    <ul>
+        <li>
+            <h2><a rel="author">Anna, <time datetime="2023-11-02">11.02.2023</time></a></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, quasi magni.</p>
+        </li>
+        <li>
+            <h2><a rel="author">Beata, <time datetime="2023-11-02">11.02.2023</time></a></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At voluptate minus accusantium nostrum odio ipsa.</p>
+        </li>
+        <li>
+            <h2><a rel="author">Grzegorz, <time datetime="2023-11-02">11.02.2023</time></a></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos?</p>
+        </li>
+    </ul>
+</section>
+<footer>
+    <p>&copy; 2023 devmentor.pl</p>
+</footer>
+
+
 </body>
 </html>
