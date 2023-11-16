@@ -31,6 +31,10 @@
     display: inline-block;
 }
 
+.parent--inline-block .child {
+    display: inline-block;
+}
+
 .child--first {
     font-weight: normal;
     font-style: normal;
@@ -42,20 +46,20 @@
 }
 
 .child--last {
-    width: 40%;
+    width: calc(40% - 10px);
     font-weight: normal;
     font-style: italic;
     margin-right: 0;
 }
 
-.parent--inline-block .child {
-    display: inline-block;
+
+.parent--float .child {
+    float: left;
 
 }
 
-.parent--float {
-    float: left;
-
+.parent--float::after {
+    clear: both;
 }
 
 .parent--flexbox {
