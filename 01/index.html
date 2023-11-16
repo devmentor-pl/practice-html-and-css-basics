@@ -1,12 +1,182 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="ie=edge"
+    />
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header>
+      <div>
+        <a href="/">
+          <img
+            src="https://dummyimage.com/150x50/000/fff&text=LOGO"
+            alt="Logo"
+          />
+        </a>
+        <nav>
+          <ul>
+            <li>
+              <a href="#">Link 1</a>
+            </li>
+            <li>
+              <a href="#">Link 2</a>
+              <ul>
+                <li>
+                  <a href="#">Link 2.1</a>
+                </li>
+                <li>
+                  <a href="#">Link 2.2</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Link 3</a>
+              <ul>
+                <li>
+                  <a href="#">Link 3.1</a>
+                </li>
+                <li>
+                  <a href="#">Link 3.2</a>
+                </li>
+                <li>
+                  <a href="#">Link 3.3</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <h1>Title</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, illum
+          perspiciatis dolores sed culpa dolor quasi in ad fugiat eos porro ab
+          nisi amet, consequuntur omnis deleniti numquam dolore ea. Lorem ipsum
+          dolor sit amet consectetur adipisicing elit. Et, illum perspiciatis
+          dolores sed culpa dolor quasi in ad fugiat eos porro ab nisi amet,
+          consequuntur omnis deleniti numquam dolore ea. Lorem ipsum dolor sit
+          amet consectetur adipisicing elit. Et, illum perspiciatis dolores sed
+          culpa dolor quasi in ad fugiat eos porro ab nisi amet, consequuntur
+          omnis deleniti numquam dolore ea. Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Et, illum perspiciatis dolores sed culpa
+          dolor quasi in ad fugiat eos porro ab nisi amet, consequuntur omnis
+          deleniti numquam dolore ea. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Et, illum perspiciatis dolores sed culpa dolor quasi
+          in ad fugiat eos porro ab nisi amet, consequuntur omnis deleniti
+          numquam dolore ea. Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Et, illum perspiciatis dolores sed culpa dolor quasi in ad
+          fugiat eos porro ab nisi amet, consequuntur omnis deleniti numquam
+          dolore ea.
+        </p>
+        <figure>
+          <img
+            src="https://dummyimage.com/350x250/000/fff"
+            alt="article image"
+          />
+          <figcaption>image description</figcaption>
+        </figure>
+        <footer>
+          <p>
+            Author of the article:
+            <a
+              rel="author"
+              href="author/anetasobanska"
+              >Aneta Sobanska</a
+            >, publication date: <time datetime="2001-05-15T19:00">May 15</time>
+          </p>
+        </footer>
+        <table>
+          <caption>
+            Articles
+          </caption>
+          <colgroup>
+            <col style="background: #c4c3c5" />
+            <col style="background: #9c9b9c" />
+          </colgroup>
+          <thead>
+            <tr>
+              <th scope="col">Title</th>
+              <th scope="col">Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>HTML</td>
+              <td>12/03/20022</td>
+            </tr>
+            <tr>
+              <td>CSS</td>
+              <td>01/04/2022</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+
+      <section>
+        <h2>Leave comment</h2>
+        <form action="">
+          <div>
+            <label
+              >Name
+              <input name="name" />
+            </label>
+          </div>
+          <div>
+            <label
+              >Comment
+              <textarea
+                name="content"
+                rows="4"
+              ></textarea>
+            </label>
+          </div>
+          <div>
+            <input
+              type="submit"
+              value="send"
+            />
+          </div>
+        </form>
+
+        <ul>
+          <li>
+            <h3>
+              <a rel="author">
+                Posted <time datetime="2001-05-15T19:00">May 15</time> by
+                Lisa.</a
+              >
+            </h3>
+            <p>consequuntur omnis deleniti numquam dolore ea.</p>
+          </li>
+          <li>
+            <h3>
+              <a rel="author">
+                Posted <time datetime="2001-05-15T19:00">May 15</time> by Gilles
+                Stella.</a
+              >
+            </h3>
+            <p>
+              Et, illum perspiciatis dolores sed culpa dolor quasi in ad fugiat
+              eos porro ab nisi amet.
+            </p>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2022 sobanska.fr</p>
+    </footer>
+  </body>
 </html>
