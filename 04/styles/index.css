@@ -108,5 +108,5 @@
 }
 
 .no-submenu:hover::before {
-    content: '';  /* Jeśli chcesz, aby strzałki nie pojawiały się po najechaniu */
+    content: '';  
 }
