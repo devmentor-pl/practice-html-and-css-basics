@@ -1,0 +1,64 @@
+/* global settings */
+.row, .container {
+    margin: 10px;
+    outline: 2px solid;
+}
+
+.row {
+    padding: 10px;
+    outline-color: #0ED145;
+}
+
+.container {
+    display: flex;
+    max-width: 1000px;
+    padding: 10px 0;
+    margin: 0 auto;
+    outline-color: #00A8F3;
+}
+
+.cell {
+    height: 200px;
+    background-color: #FFCA18;
+}
+
+/* header */
+.header__container, .content__container {
+    justify-content: space-between;
+}
+
+.header__logo, .header__nav {
+    height: 50px;
+    width: 200px;
+}
+
+.header__nav {
+    width: 400px;
+}
+
+/* section content */
+.content__article {
+    width: 49%;
+    margin: 0;
+}
+
+/* section review */
+.review__container {
+    justify-content: space-evenly;
+}
+
+.review__text {
+    width: 30%;
+}
+
+/* footer */
+.footer__container {
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+}
+
+.footer__copyrights {
+    height: 40px;
+    width: 150px;
+}
