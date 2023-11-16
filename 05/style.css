@@ -1,0 +1,67 @@
+header, section, footer {
+    width: 100%;
+    min-height: 50px;
+    outline: 3px solid green;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.container {
+    width: 1200px;
+    min-height: 50px;
+    outline: 3px solid blue;
+    margin: 0 auto;
+}
+
+.cell {
+    background-color: orange;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo {
+    width: 250px;
+    height: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.header__menu {
+    width: 500px;
+    height: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.section__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section__half {
+    width: calc(99%/2);
+    height: 300px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.section__tri {
+    width: calc(100%/3);
+    height: 300px;
+    margin: 10px;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: center;
+}
+
+.footer__text {
+    min-height: 100px;
+    width: 200px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
