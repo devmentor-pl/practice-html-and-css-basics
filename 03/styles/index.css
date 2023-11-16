@@ -42,7 +42,7 @@
 }
 
 .child--last {
-    width: calc(40% - 10px);
+    width: 40%;
     font-weight: normal;
     font-style: italic;
     margin-right: 0;
