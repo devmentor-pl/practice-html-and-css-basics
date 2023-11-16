@@ -127,12 +127,7 @@
 }
 
 .ads {
-  display: none;
+  display: flex;
+  justify-content: center;
   width: 25%;
-}
-@media (min-width: 992px) {
-  .ads {
-    display: flex;
-    justify-content: center;
-  }
 }
