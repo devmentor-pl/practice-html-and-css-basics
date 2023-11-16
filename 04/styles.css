@@ -16,41 +16,67 @@ body {
 }
 
 .navbar__item {
-  font-size: 18px;
+  font-size: 20px;
   padding: 20px;
   position: relative;
 }
 
-.dropdown {
+.navbar__arrow::after {
+  content: '>';
   display: none;
+  position: absolute;
+  right: -2px;
+  transform: rotate(90deg);
+}
+
+.dropdown {
   background-color: #333333;
-  color: #DCCEC4;
+  display: none;
   left: 0;
   top: 64px;
   position: absolute;
+  width: 200px;
+}
 
+.dropdown__arrow::after {
+  content: '>';
+  color: #DCCEC4;
+  display: none;
+  position: absolute;
+  right: 10px;
+}
+
+.subDropdown {
+  background-color: #333333;
+  display: none;
+  margin-top: -37px; /* Chyba to trochę na siłę ogarnąłem, ale nie widziałem lepszego rozwiązania. Prówałem z flexboxem ale nie wychodziło, to samo z float. :( */
+  left: 200px;
+  position: absolute;
   width: 200px;
 }
 
 .dropdown__item,
 .subDropdown__item {
-  margin: 10px 30px;
-
+  color: #DCCEC4;
+  padding: 10px 30px;
+}
+.dropdown__item:hover,
+.subDropdown__item:hover {
+  color: white;
 }
 
-.navbar__item:hover > .dropdown {
-  display: block;
-}
-
+.navbar__item:hover > .dropdown,
 .dropdown__item:hover > .subDropdown {
   display: block;
 }
-
-.subDropdown {
-  display: none;
-  background-color: #333333;
-  margin-top: -34px; /* Chyba to trochę na siłę ogarnąłem, ale nie widziałem lepszego rozwiązania. Prówałem z flexboxem ale nie wychodziło, to samo z float. :( */
-  position: absolute;
-  width: 200px;
-  left: 200px;
+.navbar__arrow:hover::after,
+.dropdown__arrow:hover::after {
+  display: unset;
 }
+
+.navbar__item:hover {
+  border-top: 3px solid;
+  color: #079CE1;
+  padding-top: 17px;
+}
+
