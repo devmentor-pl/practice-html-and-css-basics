@@ -1,0 +1,56 @@
+body {
+  background-color: #F5F5F5;
+}
+
+.navbar {
+  padding: 20px 10px 0 10px;
+}
+.navbar__container {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar__item:first-child {
+  color: #079CE1;
+}
+
+.navbar__item {
+  font-size: 18px;
+  padding: 20px;
+  position: relative;
+}
+
+.dropdown {
+  display: none;
+  background-color: #333333;
+  color: #DCCEC4;
+  left: 0;
+  top: 64px;
+  position: absolute;
+
+  width: 200px;
+}
+
+.dropdown__item,
+.subDropdown__item {
+  margin: 10px 30px;
+
+}
+
+.navbar__item:hover > .dropdown {
+  display: block;
+}
+
+.dropdown__item:hover > .subDropdown {
+  display: block;
+}
+
+.subDropdown {
+  display: none;
+  background-color: #333333;
+  margin-top: -34px; /* Chyba to trochę na siłę ogarnąłem, ale nie widziałem lepszego rozwiązania. Prówałem z flexboxem ale nie wychodziło, to samo z float. :( */
+  position: absolute;
+  width: 200px;
+  left: 200px;
+}
