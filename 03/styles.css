@@ -3,9 +3,21 @@
   width: 600px;
 }
 
+.parent--inline-block {
+  display: inline-block;
+}
+.parent--float {
+  float: left;
+}
+.parent--flexbox {
+  display: flex;
+  flex-direction: column;
+}
+
 .child {
   margin-bottom: 10px;
 }
+
 .child--first {
   width: 30%;
 }
