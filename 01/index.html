@@ -1,12 +1,155 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
-</head>
-<body>
+  </head>
+  <body>
+
+    <header>
+      <div class="header__container">
+
+        <div class="header__logo">
+          <img src="logo.img" alt="Company logo" />
+        </div>
+
+        <div class="header__menu">
+
+          <ul class="header__menu__items">
+
+            <li class="header__menu__item">
+              Strona główna
+              <ul class="header__menu__dropdown">
+                <li class="header__menu_item"></li>
+                <li class="header__menu_item"></li>
+              </ul>
+            </li>
+
+            <li class="header__menu__item">
+              O nas
+              <ul class="header__menu__dropdown">
+                <li class="header__menu_item"></li>
+                <li class="header__menu_item"></li>
+              </ul>
+            </li>
+
+            <li class="header__menu__item">
+              Kontakt
+              <ul class="header__menu__dropdown">
+                <li class="header__menu_item"></li>
+                <li class="header__menu_item">
+                  <ul class="header__menu__dropdown">
+                    <li class="header__menu__item"></li>
+                    <li class="header__menu__item"></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <section class="content">
+
+      <div class="content__container">
+
+        <article class="content__article">
+          <h1 class="content__article__title">Tytuł artykułu</h1>
+          <div class="content__article__paragraph">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+              optio totam excepturi quisquam ex nemo laborum tempora eveniet
+              sapiente cupiditate aliquid molestias dicta impedit dolorum,
+              nesciunt fugit obcaecati modi ducimus?
+            </p>
+          </div>
+
+          <div class="content__article__date">
+            <time>2023-11-12</time>
+          </div>
+
+          <div class="content__article__author">John Doe</div>
+
+          <div class="content__article__image">
+            <img src="./image.jpg" alt="Ilustracja" />
+          </div>
+
+          <div class="content_article__table">
+            <table>
+              <caption class="content__article__table__caption">
+                Tabela HTML
+              </caption>
+              <colgroup class="content__article__table__colgroup"></colgroup>
+              <thead class="content__article__table__thead">
+                <tr>
+                  <th scope="col">1</th>
+                  <th scope="col">2</th>
+                  <th scope="col">3</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1.1</td>
+                  <td>2.1</td>
+                  <td>2.3</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+    </section>
     
-</body>
+    <section class="comments">
+      <div class="comments__form">
+        <form>
+          <h2>Formularz do komentowania</h2>
+          <div>
+            <label>Twoje imię<input type="firstName" /></label>
+          </div>
+          <div>
+            <label>Twoje nazwisko<input type="lastName" /></label>
+          </div>
+          <div>
+            <label for="content">Tutaj wpisz komentarz</label>
+            <textarea name="content" id="content" cols="30" rows="5"></textarea>
+          </div>
+          <div>
+            <input type="submit" />
+          </div>
+        </form>
+      </div>
+
+      <div class="comments__examples">
+        <h2>Przykładowe komentarze</h2>
+
+        <div class="comments__example">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, laborum.</p>
+        </div>
+        <div class="comments__example__author">John Doe</div>
+        <div class="comments__example__date"><time>2023-11-12</time>
+        </div>
+        <div class="comments__example">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, laborum.</p>
+        </div>
+        <div class="comments__example__author">Jane Doe</div>
+        <div class="comments__example__date"><time>2023-11-13</time>
+        </div>
+        <div class="comments__example">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, laborum.</p>
+        </div>
+        <div class="comments__example__author">Joe Doe</div>
+        <div class="comments__example__date"><time>2023-11-14</time>
+        </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <section class="footer__copyrights">&copy Stopka</section>
+      </div>
+    </footer>
+  </body>
 </html>
