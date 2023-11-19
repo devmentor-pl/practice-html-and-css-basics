@@ -65,3 +65,17 @@
     margin-bottom: 10px;
   }
   /* End Testimonials */
+
+  /* Footer */
+.footer .blue_line {
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+  .footer .middle_footer {
+    min-height: 40px;
+    width: 150px;
+    margin: 5px;
+  }
+  /* End Footer */
