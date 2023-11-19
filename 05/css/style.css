@@ -1,0 +1,30 @@
+/* Header */
+.blue_line {
+    border: 5px solid blue;
+    max-width: 1000px;
+    margin: 5px auto;
+  }
+  
+  .content {
+    background-color: orange;
+  }
+  
+  .blue_line {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    width: 200px;
+  }
+  
+  .menu {
+    width: 450px;
+  }
+  
+  .logo,
+  .menu {
+    min-height: 50px;
+    margin: 5px 0px;
+  }
+  /*Header End */
