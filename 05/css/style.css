@@ -1,3 +1,13 @@
+body {
+    background: whitesmoke;
+  }
+  
+  .green_line {
+    border: 5px solid green;
+    margin-bottom: 5px;
+    max-width: 1150px;
+  }
+
 /* Header */
 .blue_line {
   border: 5px solid blue;
