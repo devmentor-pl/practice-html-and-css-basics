@@ -37,3 +37,31 @@
   margin: 8px 0px;
 }
 /* End Main */
+
+/* Testimonials */
+
+/* TEST */
+/* .testimonial {
+  min-height: 250px;
+  width: 33%;
+  margin: 10px 5px 10px 8px;
+} */
+
+.testimonials .blue_line {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .testimonials .testimonial {
+    min-height: 220px;
+    width: 32%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  /* Spaces beetwen geen/blue lines  */
+  .testimonials .space_top--bottom {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  /* End Testimonials */
