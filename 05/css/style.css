@@ -1,30 +1,39 @@
 /* Header */
 .blue_line {
-    border: 5px solid blue;
-    max-width: 1000px;
-    margin: 5px auto;
-  }
-  
-  .content {
-    background-color: orange;
-  }
-  
-  .blue_line {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .logo {
-    width: 200px;
-  }
-  
-  .menu {
-    width: 450px;
-  }
-  
-  .logo,
-  .menu {
-    min-height: 50px;
-    margin: 5px 0px;
-  }
-  /*Header End */
+  border: 5px solid blue;
+  max-width: 1000px;
+  margin: 5px auto;
+}
+
+.content {
+  background-color: orange;
+}
+
+.blue_line {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 200px;
+}
+
+.menu {
+  width: 450px;
+}
+
+.logo,
+.menu {
+  min-height: 50px;
+  margin: 5px 0px;
+}
+/*Header End */
+
+/* Main */
+.article_left,
+.article_right {
+  min-height: 200px;
+  width: calc(50% - 3px);
+  margin: 8px 0px;
+}
+/* End Main */
