@@ -51,7 +51,7 @@
   justify-content: flex-end;
 }
 
-.writeComments {
+.write-comments {
   margin-top: 100px;
 }
 
@@ -59,7 +59,7 @@
   margin-top: 50px;
 }
 
-.writeComments__item {
+.write-comments__item {
   border-radius: 20px;
   border: 1.5px solid;
   border-color: var(--color-third);
