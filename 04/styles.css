@@ -21,7 +21,7 @@ body {
   position: relative;
 }
 
-.navbar__arrow::after {
+.navbar__item--arrow::after {
   content: '>';
   display: none;
   position: absolute;
@@ -39,7 +39,7 @@ body {
   width: 200px;
 }
 
-.dropdown__arrow::after {
+.dropdown__item--arrow::after {
   content: '>';
   color: #DCCEC4;
   display: none;
@@ -70,8 +70,8 @@ body {
 .dropdown__item:hover > .subDropdown {
   display: block;
 }
-.navbar__arrow:hover::after,
-.dropdown__arrow:hover::after {
+.navbar__item--arrow:hover::after,
+.dropdown__item--arrow:hover::after {
   display: unset;
 }
 
