@@ -24,7 +24,7 @@
   width: 60px;
 }
 
-.dropdown__container {
+.dropdown {
   background-color: var(--color-main);
   display: flex;
   opacity: 0;
@@ -42,10 +42,10 @@
   text-align: center;
 }
 
-.dropdown__container, .dropdown__container li:last-child {
+.dropdown, .dropdown li:last-child {
   border-radius: 0 0 30px 30px;
 }
 
-.navbar__item:hover > .dropdown__container {
+.navbar__item:hover > .dropdown {
   opacity: 1;
 }
