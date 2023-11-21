@@ -11,22 +11,24 @@
 </head>
 <body>
     <header>
-        <nav class="nav">
-            <ul nav_list>
-                <li class="nav_item">HOME</li>
-                <li class="nav_item">ITEMS
-                    <ul class="nav_dropdown">
-                        <li class="dropdown_item">Item 1</li>
-                        <li class="dropdown_item">Item 2
-                            <ul class="nav_dropdown">
-                                <li class="dropdown_item">Item 2.1</li>
-                                <li class="dropdown_item">Item 2.2</li>
+        <nav>
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#" class="nav__item--colored">HOME</a></li>
+                <li class="nav__item--arrow"><a class="nav_item--link" href="#">ITEMS </a>
+                    <div class="arrow">></div>
+                    <ul class="nav__dropdown">
+                        <li class="dropdown__item--light"><a href="#">Item 1</a></li>
+                        <li class="dropdown__item--light space"><a href="#">Item 2</a>
+                        <div class="dropdown_arrow">></div>
+                            <ul class="nav__dropdown dropdown">
+                                <li class="dropdown__item--light"><a href="#">Item 2.1</a></li>
+                                <li class="dropdown__item--light"><a href="#">Item 2.2</a></li>
                             </ul>
                         </li>
                     </ul>
                 </li>
-                <li class="nav_item">SETTINGS</li>
-                <li class="nav_item">CONTACT</li>
+                <li class="nav__item"><a href="#">SETTINGS</a></li>
+                <li class="nav__item"><a href="#">CONTACT</a></li>
             </ul>
         </nav>
     </header>
