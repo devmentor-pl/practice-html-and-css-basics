@@ -3,9 +3,15 @@
   width: 600px;
 }
 
+.parent--inline-block {
+  font-size: 0;
+}
+
 .parent--inline-block .child {
   display: inline-block;
+  font-size: initial;
 }
+
 .parent--float .child {
   float: left;
 }
@@ -18,12 +24,12 @@
 
 .child {
   margin-right: 10px;
-  width: calc(30% - 20px);
+  width: calc(30% - 10px);
 }
 
 .child--last {
   margin-right: 0;
-  width: calc(40% - 20px);
+  width: 40%;
 }
 
 .parent--flexbox {
