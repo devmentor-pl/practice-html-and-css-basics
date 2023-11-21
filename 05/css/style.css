@@ -5,7 +5,8 @@ body {
   .green_line {
     border: 5px solid green;
     margin-bottom: 5px;
-    max-width: 1150px;
+    /* max-width: 1150px; */
+    max-width: 100%;
   }
 
 /* Header */
