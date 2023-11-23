@@ -33,7 +33,7 @@
 
 .child--first {
     font-family: 'Source Sans PRO';
-	font-weight: regular;
+	font-weight: normal;
 }
 
 .child--middle {
@@ -42,7 +42,7 @@
 }
 
 .child--last {
-    width: calc(40% - 20px);
+    width: calc(40% - 10px);
     font-family: 'Source Sans PRO';
 	font-weight: bold;
 }
@@ -57,6 +57,7 @@
 }
 
 .parent--float .child::after {
+    content: "";
     clear: both;
 }
 

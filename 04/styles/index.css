@@ -60,7 +60,7 @@
     display: none;
     padding-top: 10px;
     position: absolute;
-    top: calc(60px - 3px);
+    top: 100%;
     width: 220px;
     left: 0;
     background-color: #333333;
