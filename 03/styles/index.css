@@ -56,9 +56,10 @@
     float: left;
 }
 
-.parent--float .child::after {
+.parent--float::after {
     content: "";
     clear: both;
+    display: block;
 }
 
 .parent--flexbox {
