@@ -20,16 +20,19 @@
 .menu__item--parent {
   position: relative;
 }
-.menu__arrow-bottom::after {
+
+.arrow::after {
   content: ">";
   position: absolute;
-  right: 5px;
-  top: 25px;
-  transform: rotate(90deg);
 }
-.menu__arrow-right::after {
-  content: ">";
-  position: absolute;
+
+.arrow--bottom::after {
+  right: 5px;
+  top: 50%;
+  transform: translate(0, -50%) rotate(90deg);
+}
+
+.arrow--right::after {
   right: 15px;
   top: 25px;
   color: white;
