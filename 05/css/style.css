@@ -1,0 +1,34 @@
+body {
+    background-color: bisque;
+}
+
+.green {
+    border: 5px solid green;
+}
+
+.green--header .blue {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blue {
+    border: 5px solid blue;
+    width: 1000px;
+    margin: 0 auto;
+    padding: 5px;
+
+}
+
+.orange {
+    background-color: orange;
+    min-height: 50px;
+}
+
+.orange--logo {
+    width: 160px;
+    margin: 0;
+}
+
+.orange--nav {
+    width: 300px;
+}
