@@ -9,22 +9,24 @@
 <body>
     <header>
         <img src="computer-tv-svgrepo-com.svg" alt="code logo">
-        <ul>
-            <li><a href="#">Start</a></li>
-                <ul>
-                    <li><a href="#">Main Page</a></li>
-                    <li><a href="#">Log In</a></li>
-                </ul>
-            <li><a href="#">More</a></li>
-                <ul>
-                    <li><a href="#">Our Story</a></li>
-                    <li><a href="#">Our Mission</a></li>
-                        <ul>
-                            <li><a href="#">Donate</a></li>
-                        </ul>
-                </ul>
-            <li><a href="#">Contact</a></li>
-        </ul>
+        <nav>
+            <ul>
+                <li><a href="#">Start</a></li>
+                    <ul>
+                        <li><a href="#">Main Page</a></li>
+                        <li><a href="#">Log In</a></li>
+                    </ul>
+                <li><a href="#">More</a></li>
+                    <ul>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Our Mission</a></li>
+                            <ul>
+                                <li><a href="#">Donate</a></li>
+                            </ul>
+                    </ul>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <article>
@@ -60,34 +62,40 @@
                 </tr>
             </table>
         </article>
-        <div>
-            <form>
+        <form>
             <fieldset>
-                <label for="comment">Comments:</label>
-                <textarea name="comment" placeholder="Leave a Comment"></textarea>
-                <input type="email" name="email" placeholder="Your Email Address"></input>
-                <button type="submit">Submit</button>
+                <div>
+                    <label for="comment">Comments:</label>
+                </div>
+                <div>
+                    <textarea name="comment" placeholder="Leave a Comment"></textarea>
+                </div>
+                <div>
+                    <input type="email" name="email" placeholder="Your Email Address"></input>
+                </div>
+                <div>
+                    <button type="submit">Submit</button>
+                </div>
             </fieldset>
-            </form>
-        </div>
+        </form>
         <div>
             <h2>Comments:</h2>
             <div>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Non aliquam reprehenderit eum quae. Accusamus dolore suscipit aut placeat deserunt repudiandae.
                 </p>
-                <p>John Snow</p>
-                <p>Posted: <time datetime="2024-01-02"></time>2 January 2024</p>
+                <p><b>John Snow</b></p>
+                <p><b>Posted:</b> <time datetime="2024-01-02"></time>2 January 2024</p>
             </div>
             <div>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque quam qui non.</p>
-                <p>Emma S.</p>
-                <p>Posted: <time datetime="2024-01-07"></time>7 January 2024</p>
+                <p><b>Emma S.</b></p>
+                <p><b>Posted:</b> <time datetime="2024-01-07"></time>7 January 2024</p>
             </div>
             <div>
                 <p>Lorem ipsum dolor sit.</p>
-                <p>Greg Smith</p>
-                <p>Posted: <time datetime="2024-01-08"></time>8 January 2024</p>
+                <p><b>Greg Smith</b></p>
+                <p><b>Posted:</b> <time datetime="2024-01-08"></time>8 January 2024</p>
             </div>
         </div>
     </main> 
