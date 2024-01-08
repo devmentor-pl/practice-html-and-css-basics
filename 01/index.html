@@ -7,6 +7,95 @@
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
 </head>
 <body>
+    <header>
+        <div id="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Pozycja 1</a>
+                    <ul>
+                        <li><a href="#">Podpozycja 1.1</a></li>
+                        <li><a href="#">Podpozycja 1.2</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Pozycja 2</a>
+                    <ul>
+                        <li><a href="#">Podpozycja 2.1</a></li>
+                        <li><a href="#">Podpozycja 2.2</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h1>Tytuł</h1>
+            <p>Treść artykułu</p>
+            <p>Data publikacji: <time datetime="2023-11-11">11 listopada 2023</time></p>
+            <p>Autor: Imię i Nazwisko</p>
+            <img src="ilustracja.png" alt="Ilustracja">
+            <table>
+                <tr>
+                    <th>Nagłowek 1</th>
+                    <th>Nagłowek 2</th>
+                </tr>
+                <tr>
+                    <td>Dane 1,1</td>
+                    <td>Dane 1,2</td>
+                </tr>
+            </table>
+        </article>
+        <form action="#" method="post">
+        <div>   
+            <label for="name">Autor</label>
+            <input type="text" id="name" name="name"  required>
+        </div>  
+
+        <div>
+            <label for="comment">Komentarz:</label>
+            <textarea id="comment" name="comment" rows="3" required></textarea>
+        </div>
+        <div>  
+            <button type="submit">Dodaj komentarz</button>
+        </div>  
+        </form>
+    </main>
+        <article>
+            <p><strong>Treść komentarza: </strong>Treśc 1</p>
+            <p><strong>Autor: </strong>Autor 1</p>
+            <p><strong>Data utworzenia </strong>2023-11-11</p>
+        </article>
+       
+
+       
+        <article>
+            <p><strong>Treść komentarza: </strong>Treśc 2</p>
+            <p><strong>Autor: </strong>Autor 2</p>
+            <p><strong>Data utworzenia </strong>2023-11-10</p>
+        </article>
+       
+
+       
+        <article>
+            <p><strong>Treść komentarza: </strong>Treśc 3</p>
+            <p><strong>Autor: </strong>Autor 3</p>
+            <p><strong>Data utworzenia </strong>2023-11-13</p>
+        </article>
     
+        <footer>
+            <div>&copy; 2023 Wszelkie prawa zastrzeżone</div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <a href="/contact">Kontakt</a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+        
 </body>
 </html>
