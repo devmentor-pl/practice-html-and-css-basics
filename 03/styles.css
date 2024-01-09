@@ -1,0 +1,48 @@
+.parent {
+  padding: 20px;
+  width: 600px;
+}
+
+.parent--inline-block {
+  font-size: 0;
+}
+
+.parent--inline-block .child {
+  display: inline-block;
+  font-size: initial;
+}
+
+.parent--float .child {
+  float: left;
+}
+
+.parent--float::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.child {
+  margin-right: 10px;
+  width: calc(30% - 10px);
+}
+
+.child--last {
+  margin-right: 0;
+  width: 40%;
+}
+
+.parent--flexbox {
+  display: flex;
+  flex-direction: row;
+}
+
+.parent--flexbox .child {
+  margin-right: 10px;
+  width: 30%;
+}
+
+.parent--flexbox .child--last {
+  margin-right: 0;
+  width: 40%;
+}

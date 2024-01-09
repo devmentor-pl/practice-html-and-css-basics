@@ -1,0 +1,111 @@
+
+@font-face {
+  font-family: 'Cormorant Garamond';
+  src: url('./fonts/CormorantGaramond/CormorantGaramond-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cormorant Garamond';
+  src: url('./fonts/CormorantGaramond/CormorantGaramond-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Cormorant Garamond';
+  src: url('./fonts/CormorantGaramond/CormorantGaramond-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cormorant Garamond';
+  src: url('./fonts/CormorantGaramond/CormorantGaramond-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cormorant Garamond';
+  src: url('./fonts/CormorantGaramond/CormorantGaramond-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cormorant Garamond';
+  src: url('./fonts/CormorantGaramond/CormorantGaramond-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Cormorant Garamond';
+  src: url('./fonts/CormorantGaramond/CormorantGaramond-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+body {
+  font-family: 'Cormorant Garamond';
+  font-size: 16px;
+}
+.navbar__item {
+  font-size: 18px;
+  font-weight: 700;
+}
+.items__item {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.article__date {
+  font-size: 14px;
+  font-weight: 300; font-style: italic;
+}
+.article__h1 {
+  font-size: 24px;
+  font-weight: 600;
+}
+.article__p {
+  font-weight: 500;
+}
+.photo__description {
+  font-style: italic;
+}
+.article__author {
+  font-style: italic;
+  font-weight: 700;
+}
+
+.article__writeComments label, .comments__h {
+  font-weight: 600;
+}
+.comment__date {
+  font-weight: 300; font-style: italic;
+}
+@media (min-width: 992px) {
+  body {
+    font-size: 20px;
+  }
+  .article__date {
+    font-size: 18px;
+  }
+  .article__h1 {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 1400px) {
+  body {
+    font-size: 24px;
+  }
+  .article__date {
+    font-size: 24px;
+  }
+  .article__h1 {
+    font-size: 48px;
+  }
+}
