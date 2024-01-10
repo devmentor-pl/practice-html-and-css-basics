@@ -22,34 +22,39 @@
 .parent {
     width: 600px;
     padding: 20px;
+    font-size: 0;
 }
 
+.child {
+    font-size: 16px;
+}
 .child--first {
-    width: 30%;
-    margin-bottom: 10px;
+    width: calc(30% - 10px);
+    margin-right: 10px;
     font-family: "Source Sans Pro";
     font-style: normal;
     font-weight: normal;
 }
 
 .child--middle {
-    width: 30%;
-    margin-bottom: 10px;
+    width: calc(30% - 10px);
+    margin-right: 10px;
     font-family: "Source Sans Pro";
     font-weight: bold;
 }
 
 .child--last {
-    width: 40%;
+    width: calc(40%);
+    margin-right: 0px;
     font-family: "Source Sans Pro";
     font-style: italic;
 }
 
-.parent--inline-block {
+.parent--inline-block .child {
     display: inline-block;
 }
 
-.parent--float {
+.parent--float > .child {
     float: left;
 }
 
@@ -59,5 +64,6 @@
 
 .parent--flexbox {
     display: flex;
-    flex-direction: column;
+    clear: both;
+    flex-direction: row;
 }
