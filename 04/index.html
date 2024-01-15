@@ -8,24 +8,24 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li>
+        <nav class="nav">
+            <ul class="nav__menu">
+                <li class="menu__item"><a class="menu__item--home" href="#">HOME</a></li>
+                <li class="menu__item">
                     <a href="#">ITEMS</a>
                     <ul>
-                        <li><a href="#">Item 1</a></li>
-                        <li>
+                        <li class="menu__item menu__item--nested"><a href="#">Item 1</a></li>
+                        <li class="menu__item menu__item--nested">
                             <a href="#">Item 2</a>
                             <ul>
-                                <li><a href="#">Item 2.1</a></li>
-                                <li><a href="#">Item 2.2</a></li>
+                                <li class="menu__item menu__item--nested"><a href="#">Item 2.1</a></li>
+                                <li class="menu__item menu__item--nested"><a href="#">Item 2.2</a></li>
                             </ul>
                         </li>
                     </ul>
                 </li>
-                <li><a href="#">SETTINGS</a></li>
-                <li><a href="#">CONTACT</a></li>
+                <li class="menu__item"><a href="#">SETTINGS</a></li>
+                <li class="menu__item"><a href="#">CONTACT</a></li>
             </ul>
         </nav>
     </header>  
