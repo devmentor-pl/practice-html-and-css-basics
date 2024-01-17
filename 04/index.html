@@ -4,22 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Multilevel menu</title>
+    <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/index.css">
 </head>
 <body>
     <header>
         <nav class="nav">
             <ul class="nav__menu">
-                <li class="menu__item"><a class="menu__item--home" href="#">HOME</a></li>
-                <li class="menu__item">
+                <li class="menu__item menu__item--home"><a href="#">HOME</a></li>
+                <li class="menu__item menu__item--drop">
                     <a href="#">ITEMS</a>
-                    <ul>
-                        <li class="menu__item menu__item--nested"><a href="#">Item 1</a></li>
-                        <li class="menu__item menu__item--nested">
+                    <ul class="menu--submenu">
+                        <li class="submenu__item"><a href="#">Item 1</a></li>
+                        <li class="submenu__item">
                             <a href="#">Item 2</a>
-                            <ul>
-                                <li class="menu__item menu__item--nested"><a href="#">Item 2.1</a></li>
-                                <li class="menu__item menu__item--nested"><a href="#">Item 2.2</a></li>
+                            <ul class="submenu--nested">
+                                <li class="nested__item"><a href="#">Item 2.1</a></li>
+                                <li class="nested__item"><a href="#">Item 2.2</a></li>
                             </ul>
                         </li>
                     </ul>
