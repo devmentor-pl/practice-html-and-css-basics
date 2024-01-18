@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+    /* add FONT! */
+}
+
+.nav {
+    list-style: none;
+    display: flex;
+    padding: 10px;
+    background-color: pink;
+    
+}
+
+.nav__item {
+    margin: 10px;
+    padding: 10px;
+    color: rgb(218, 29, 92);
+    align-items: flex-start;
+    position: relative;
+    min-height: 40px;
+}
+
+.nav__img {
+    height: 50px;
+}
+
+.nav__dropdown {
+    list-style: none;
+    padding: 10px;
+    position: absolute;
+    padding-top: 20px;
+    padding-left: 0;
+    display: none;
+}
+
+/* Dlaczego taki zapis, a nie sam .nav__dropdown:hover ? */
+.nav__item:hover > .nav__dropdown {
+    display: block;
+}
+
+.nav__item:active {
+    background-color: rgb(235, 235, 235, 0.6);
+}
+
+.dropdown__item {
+    padding: 6px;
+    margin: 3px;
+    min-width: 100px;
+    background-color: rgb(235, 235, 235, 0.6);
+    border-bottom: 2px solid rgb(243, 241, 241);
+}
