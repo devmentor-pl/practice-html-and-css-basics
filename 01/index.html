@@ -5,8 +5,147 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/footer.css">
 </head>
 <body>
-    
+    <header class="header">
+        <div class="header__container">
+            <h1 class="header__logo">
+                <a href="./"><img src="./images/logo.png"></a>
+            </h1>
+            <nav class="header__nav">
+                <ul class="nav__list">
+                    <li class="nav__item">Home</li>
+                    <li class="nav__item">Oferta</li>
+                    <li class="nav__item">Cennik</li>
+                    <li class="nav__item nav__dropdown">
+                        Blog
+                        <ul class="nav__dropdown__item">
+                            <li class="dropdown__item">HTML</li>
+                            <li class="dropdown__item">CSS</li>
+                            <li class="dropdown__item">JS</li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">Kontakt</li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+    <main class="main">
+        <div class="main__container">
+            <article class="main__article">
+                <h2 class="article__title">
+                    Nowy post!
+                </h2>
+                <p class="article__content">
+                    Tutaj znajduje się treść posta, która jest na razie trochę krótka, ponieważ jeszcze nie mam na nią pomysłu ale z czasem
+                    będzie się coraz bardziej rozbudowywać dlatego zachęcam serdecznie do odwiedzania strony i śledzenia zmian. No i GIT! 
+                </p>
+                <div class="article__data">
+                    <div class="article__image">
+                        <img src="./images/portret.png">
+                    </div>
+                    <div class="article__table">
+                        <table class="table">
+                            <caption>Umiejętności: </caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col">HTML</th>
+                                    <th scope="col">CSS</th>
+                                    <th scope="col">JavaScript</th>
+                                </tr>
+                            </thead>
+                            <tbody
+                            ><tr>
+                                <td>3/5</td>
+                                <td>3/5</td>
+                                <td>2/5</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </div>
+                </div>
+                <hr>
+                <div class="article__footer">
+                    <h3 class="article__date">
+                        <time>22.02.2022</time>
+                    </h3>
+                    <h3 class="article__author">
+                        Adam Pierzynowski
+                    </h3>
+                </div>
+            </article>
+        </div>
+        <div class="main__container">
+                <form action="" class="form__comment">
+                    <div class="form__comment__input">
+                        <label for="name">Imię: 
+                            <input type="text" name="name" id="name" placeholder="Imię">
+                        </label>
+                    </div>
+                    <div class="form__comment__input">
+                        <label for="name">E-mail: 
+                            <input type="email" name="email" id="email"  placeholder="E-mail">
+                        </label>
+                    </div>
+                    <div class="form__comment__content">
+                        <label for="name">Treść: 
+                            <textarea rows="10"cols="50" name="content" id="content" placeholder="Treść"></textarea>
+                        </label>
+                    </div>
+                    <div class="form__comment__button">
+                            <input type="submit" value="Dodaj komentarz">
+                    </div>
+                </form>
+        </div>
+        <div class="main__container">
+            <h2 class="comments__header">Komentarze:</h2>
+            <article class="comment">
+                <div class="comment__header">
+                    <h3 class="comment__user"> 
+                        Mateusz
+                    </h3>
+                    <time class="comment__date">24.02.2022</time>
+                </div>
+                <p class="comment__content">
+                    Tutaj znajduje się treść komentarza, która jest na razie trochę krótka, ponieważ jeszcze nie mam na nią pomysłu ale z czasem
+                    będzie się coraz bardziej rozbudowywać dlatego zachęcam serdecznie do odwiedzania strony i śledzenia zmian. No i GIT! 
+                </p>
+            </article>
+            <article class="comment">
+                <div class="comment__header">
+                    <h3 class="comment__user"> 
+                        Adam
+                    </h3>
+                    <time class="comment__date">23.02.2022</time>
+                </div>
+                <p class="comment__content">
+                    Fajna stronka, będę wpadał częściej.
+                </p>
+            </article>
+            <article class="comment">
+                <div class="comment__header">
+                    <h3 class="comment__user"> 
+                        Alicja
+                    </h3>
+                    <time class="comment__date">22.02.2022</time>
+                </div>
+                <p class="comment__content">
+                    Super, tak trzymaj!
+                </p>
+            </article>
+        </div>  
+    </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <section class="footer__copyright">
+                &copy 2022 Soven Sp. z o.o.
+            </section>
+        </div>
+    </footer>
 </body>
 </html>

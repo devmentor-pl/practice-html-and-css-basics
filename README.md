@@ -1,3 +1,9 @@
+# LINKI DO ROZWIĄZAŃ:
+## Zadanie 1: https://alonevoice.github.io/practice-html-and-css-basics/01/
+## Zadanie 2: https://alonevoice.github.io/practice-html-and-css-basics/02/
+## Zadanie 3: https://alonevoice.github.io/practice-html-and-css-basics/03/
+## Zadanie 4: https://alonevoice.github.io/practice-html-and-css-basics/04/
+## Zadanie 5: https://alonevoice.github.io/practice-html-and-css-basics/05/
 > :dart: *Chcę mieć absolutną pewność, że **darmowe materiały**, które publikuję, spełniają Twoje oczekiwania. Dlatego oferuję Ci ebooka o wartości 39 PLN: `Jak zostać programistą? SKUTECZNY PRZEWODNIK` w zamian za [wypełnienie ankiety](https://devmentor.pl/ankieta).*
 
 &nbsp;
