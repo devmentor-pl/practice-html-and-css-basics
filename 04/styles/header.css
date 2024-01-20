@@ -1,0 +1,102 @@
+/* header.css */
+
+.header__container {
+     display: flex;
+     justify-content: center;
+}
+
+.header__logo {
+     min-width: 200px;
+}
+
+.header__nav {
+     min-width: 80%;
+     height: fit-content;
+}
+
+img#main_logo {
+     width: 25%;
+     height: auto;
+}
+
+.header__nav {
+     background-color: cyan;
+     display: flex;
+     flex-direction: row;
+     justify-content: start;
+}
+
+ul {
+     list-style: none;
+     float: left;
+}
+
+ul > li {
+     margin: 0;
+     padding: 0;
+     float: left; 
+     position: relative;
+     height: 30px;
+}
+
+ul > li > a {
+     padding: 10px; 
+     color: #444;
+     text-decoration: none;
+}
+
+ul > li > a:hover, 
+ul > li:hover > a {
+     color: green;
+     text-decoration: underline;
+     width: auto;
+}
+
+ul > li ul {
+     padding: 0;
+     position: absolute; 
+     display: none; 
+     left: 0px; 
+     top: 30px; 
+     width: 200px; 
+     text-align: left;
+     background-color: #fcfcfc;
+     border: 1px solid #ccc;
+}
+ 
+ul li:hover > ul {
+     display: block;
+}
+ 
+ul > li ul ul {
+     left: 200px; 
+     top: -1px;
+}
+ 
+ul > li ul li {
+     margin: 0; 
+     padding: 0;
+     position: relative; 
+     float: none; 
+     height: auto;
+}
+ 
+ul > li ul li a {
+     padding: 10px 20px; 
+     color: #505050; 
+     text-decoration: none;
+     display: block;
+}
+ 
+ul > li ul li a:hover,
+ul > li ul li:hover > a {
+     text-decoration: none;
+     color: black;
+     background-color: yellowgreen;
+}
+
+.arrow_right {
+     background-image: url(../images/arrow_right.png);
+     background-repeat:no-repeat;
+     background-position:98% center;
+   }
