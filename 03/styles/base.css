@@ -1,0 +1,59 @@
+@font-face {
+  /* regular */
+  font-family: "source_sans_proregular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../assets/sourcesanspro-regular-webfont.woff") format("woff");
+}
+
+@font-face {
+  /* bold */
+  font-family: "source_sans_probold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../assets/sourcesanspro-bold-webfont.woff") format("woff");
+}
+
+@font-face {
+  /* italic */
+  font-family: "source_sans_proitalic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../assets/sourcesanspro-it-webfont.woff") format("woff");
+}
+
+.parent {
+  padding: 20px;
+  width: 600px;
+}
+
+.parent--inline-block .child {
+  display: inline-block;
+  font-family: "source_sans_proregular";
+}
+
+.parent--float .child {
+  float: left;
+  font-family: "source_sans_probold";
+}
+
+.parent--flexbox {
+  display: flex;
+  font-family: "source_sans_proitalic";
+}
+
+.child--first,
+.child--middle {
+  margin-right: 10px;
+  width: calc(30% - 20px);
+}
+
+.child--last {
+  width: 40%;
+}
+
+/* outlines */
+/* .child {
+  outline: 1px solid;
+  outline-color: green;
+} */

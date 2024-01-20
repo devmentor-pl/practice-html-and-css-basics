@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/base.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Menu</title>
+  </head>
+  <body>
+    <section class="wrapper">
+      <ul class="menu">
+        <li class="menu__item">HOME</li>
+        <li class="menu__item menu__item--dropdown">
+          ITEMS
+          <ul class="menu__dropdown dropdown">
+            <li class="dropdown__item">Item_1</li>
+            <li class="dropdown__item menu__item--second-dropdown">
+              Item_2
+              <ul class="menu__second-dropdown">
+                <li class="second-dropdown__item">Item_2.1</li>
+                <li class="second-dropdown__item">Item_2.2</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="menu__item">SETTINGS</li>
+        <li class="menu__item">CONTACT</li>
+      </ul>
+    </section>
+  </body>
+</html>
