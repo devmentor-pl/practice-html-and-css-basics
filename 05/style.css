@@ -1,0 +1,94 @@
+/* COMMON */
+
+body, html {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0 1px;
+}
+
+.header__logo, .header__nav, .first__item--left, .first__item--right, .second__item--right, .second__item--middle, .second__item--right, .footer__item {
+    height: 100%;
+    background-color: rgb(255, 217, 0);
+}
+
+.header, .footer {
+    height: 80px;
+}
+
+.first, .second {
+    height: 300px;
+}
+
+/* end of COMMON */
+
+/* HEADER */
+/* prawy margines nie działa */
+.header, .first, .second, .footer {
+    outline: 2px solid rgb(0, 209, 84);
+    width: 100%;
+    margin: 10px 3px;
+    padding: 3px;
+}
+
+.container {
+    outline: 2px solid rgb(0, 204, 255);
+    height: 99%;
+    width: 80%;
+    margin: 1px auto;
+    padding: 2px;
+}
+
+.header > .container {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.header__logo {
+    width: 200px;
+}
+
+.header__nav {
+    width: 500px;
+}
+
+/* End of HEADER */
+
+/* FIRST */
+.first > .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.first__item--left, .first__item--right {
+    width: 566px;
+}
+
+/* end of FIRST */
+
+/* SECOND */
+/* nie pojawiły się prostokąty */
+.second > .container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.second__item--left, .second__item--right, .second__item--middle {
+    width: 200px;
+}
+/* end of SECOND */
+
+/* FOOTER */
+
+.footer > .container {
+    display: flex;
+    justify-content: center;
+}
+.footer__item {
+    width: 100px;
+    margin: 10px;
+    height: 70%;
+}
+
+
+/* end of FOOTER */

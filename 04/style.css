@@ -1,0 +1,44 @@
+body, html {
+    box-sizing: border-box;
+    background-color: rgb(242, 241, 241);
+}
+
+.menu {
+    display: flex;
+    background-color: white;
+}
+
+.menu__item {
+    margin: 10px;
+    padding: 5px;
+    position: relative;
+}
+
+.menu__item--blue {
+    color: #399AE2;
+}
+
+.menu__level2 {
+    /* display: flex; */
+}
+
+.level2__item {
+    background-color: beige;
+    margin: 5px;
+    padding: 5px;
+    background-color: #333333;
+    color: white;
+    position: absolute;
+}
+
+.menu__level3 {
+    /* display: flex; */
+}
+
+.level3__item {
+    background-color: beige;
+    margin: 5px;
+    padding: 5px;
+    outline: 1px solid rgb(249, 220, 115);
+    /* position: relative; */
+}
