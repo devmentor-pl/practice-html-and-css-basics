@@ -1,3 +1,5 @@
+/* COMMON */
+
 html, body {
     @font-face {
         font-family: 'Source Sans Pro', sans-serif;
@@ -13,73 +15,85 @@ html, body {
 
 /* INLINE-BLOCK */
 
-.parent--inline-block > .child--first, .child--middle, .child--last {
+/* lub .parent--inline-block > .child */
+
+.parent--inline-block > .child--first, 
+.parent--inline-block > .child--middle, 
+.parent--inline-block > .child--last {
     display: inline-block;
-    outline: 1px solid red;
 }
 
-.child--first {
+.parent--inline-block > .child--first {
     margin-right: 10px;
     font-style: normal;
-    width: 30%;
+    width: calc(30% - 50px);
 }
 
-.child--middle {
+.parent--inline-block > .child--middle {
     margin-right: 10px;
     font-style: bold;
-    width: 30%;
+    width: calc(30% - 50px);
 }
 
-.child--last {
-    margin-left: 10px;
+.parent--inline-block > .child--last {
+    /* margin-left: 10px; */
     font-style: italic;
-    width: 40%;
+    width: calc(40% - 50px);
 }
 
 /* FLOAT */
 
-.parent--float > .child--first, .child--middle, .child--last {
+/* lub .parent--float > .child */
+
+.parent--float > .child--first, 
+.parent--float > .child--middle, 
+.parent--float > .child--last {
     float: left;
-    outline: 1px solid red;
 }
 
-
-.child--first {
+.parent--float > .child--first {
     margin-right: 10px;
     font-size: normal;
+    width: calc(30% - 50px);
 }
 
-.child--middle {
+.parent--float > .child--middle {
     margin-right: 10px;
     font-style: bold;
+    width: calc(30% - 50px);
 }
 
-.child--last {
+.parent--float > .child--last {
     margin-left: 10px;
     font-style: italic;
+    width: calc(40% - 50px);
     clear: both;
 } 
 
 /* FLEX */
-.parent--flexbox > .child--first, .child--middle, .child--last {
+
+/* lub .parent--flexbox > .child */
+.parent--flexbox > .child--first, 
+.parent--flexbox > .child--middle, 
+.parent--flexbox > .child--last {
     display: flex;
 }
 
-.child {
+.parent--flexbox > .child {
     flex-basis: 30% 30% 40%;
 }
 
-.child--first {
+.parent--flexbox > .child--first {
     margin-right: 10px;
     font-style: normal;
 }
 
-.child--middle {
+.parent--flexbox > .child--middle {
     margin-right: 10px;
     font-style: bold;
 }
 
-.child--last {
+.parent--flexbox > .child--last {
     margin-left: 10px;
     font-style: italic;
 }

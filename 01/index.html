@@ -15,7 +15,7 @@
                 <img class="nav__img" src="./logo_wax.jpg" alt="waxclinic_logo">
             </li>
             <li class="nav__item nav__item--no-space">O nas
-                <ul class="nav__dropdown">
+                <ul class="nav__dropdown dropdown">
                     <li class="dropdown__item">Depilacja</li>
                     <li class="dropdown__item">Cennik</li>
                     <li class="dropdown__item">Promocje</li>
@@ -26,17 +26,20 @@
         </ul>
         <!-- UMÓW WIZYTĘ! -->
     </header>
-    <section class="promotion"></section>
-    <div>
-        <h2 class="promotion__title">30% rabatu na pierwszą depilację</h2>
-        <button class="promotion__btn">Odbierz!</button>
-        <img src="./slaider.jpg" alt="promo-30%">
-    </div>
+    <section class="promotion">
+        <div>
+            <h2 class="promotion__title">30% rabatu na pierwszą depilację</h2>
+            <button class="promotion__btn">Odbierz!</button>
+            <img class="promotion_image" src="./slaider.jpg" alt="promo-30%">
+        </div>
+
+    </section>
     <article class="blog">
         <div>
             <h1 class="blog__title">
                 ZWIĘKSZYĆ PEWNOŚĆ SIEBIE?
             </h1> 
+            <p class="blog__date">20-01-2023</p>
             <p class="blog__body">
                 Chcesz mieć gładką skórę bez podrażnień? Depilacja woskiem 
                 to obecnie najskuteczniejsza i najbezpieczniejsza metoda 
@@ -48,6 +51,7 @@
                 Nasz doświadczony Team Wax Clinic jest gwarancją najlepszej 
                 depilacji w Warszawie.
             </p>
+            <p class="blog__author">Autor: Karolina Kowalska</p>
         </div>
         <div>
             <img src="" alt="">
@@ -98,7 +102,9 @@
         <h2 class="form__title">Odbierz rabat 30% na pierwszą depilację!</h2>
         <form>
             <div class="form__container">
+                <label>Imię</label>
                 <input class="form__btn--name" type="text" placeholder="Imię" />
+                <label>E-mail</label>
                 <input class="form__btn--email" type="text" placeholder="E-mail">
                 <button class="form__btn--send">Odbierz!</button>
             </div>

@@ -33,7 +33,6 @@ body, html {
     display: none;
 }
 
-/* Dlaczego taki zapis, a nie sam .nav__dropdown:hover ? */
 .nav__item:hover > .nav__dropdown {
     display: block;
 }
@@ -48,4 +47,15 @@ body, html {
     min-width: 100px;
     background-color: rgb(235, 235, 235, 0.6);
     border-bottom: 2px solid rgb(243, 241, 241);
+}
+
+/* Obrazek jest celowo rozciągnięty, aby nie zajmował całej strony, 
+a CSS nie miał być w tym zadaniu wykonany  */
+
+.promotion_image {
+    height: 200px;
+    width: 100%;
+}
+.blog__date, .blog__author {
+    font-style: italic;
 }
