@@ -1,0 +1,57 @@
+body {
+	background-color: antiquewhite;
+}
+.green {
+	border: 5px solid green;
+	margin: 10px;
+	padding: 5px 0;
+}
+.blue {
+	border: 5px solid blue;
+	max-width: 1000px;
+	margin: 5px auto;
+	padding: 10px 0;
+}
+
+.orange {
+	min-height: 50px;
+	background-color: orange;
+}
+.header .blue {
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo {
+	width: 100px;
+}
+.nav {
+	width: 400px;
+}
+
+.container .blue {
+	display: flex;
+	justify-content: space-between;
+}
+.article {
+	min-height: 250px;
+	width: 48%;
+}
+.container .second-section {
+	display: flex;
+	justify-content: space-evenly;
+}
+.item {
+	min-height: 250px;
+	width: 31%;
+}
+.footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.footer-content {
+	min-height: 100px;
+	margin: 10px;
+	width: 30%;
+}
