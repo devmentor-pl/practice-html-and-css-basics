@@ -3,7 +3,6 @@
     width: 700px;
     min-height: 400px;
     padding: 12px;
-    /*border: 3px solid red;*/
 }
 
 .nav__menu {
@@ -12,7 +11,6 @@
     width: 100%;
     display: flex;
     justify-content: flex-start;
-    /*border: 3px solid green;*/
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
@@ -32,7 +30,6 @@
 }
 
 .menu__item {
-    /*border: 3px solid blue;*/
     padding: 10px;
     height: 100%;
     display: flex;
@@ -49,7 +46,6 @@
 .menu--submenu,
 .submenu--nested {
     position: absolute;
-    /*border: 3px solid yellowgreen;*/
     margin-top: 0;
     background-color: #333333;
     width: 170px;
