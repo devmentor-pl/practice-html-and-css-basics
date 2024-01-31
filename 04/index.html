@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Multi-levels menu</title>
+	</head>
+	<body>
+		<header>
+        <nav class="nav__menu">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#">Home</a></li>
+                <li class="nav__item arrow"><a href="#">items</a>
+				<ul class="nav__submenu nav__submenu--primary">
+					<li><a href="#" class="nav__link">Item 1</a></li>
+					<li class="nav__dropdown"><a href="#" class="nav__link">Item 2</a>
+					<ul class = "nav__submenu nav__submenu--secondary">
+						<li class ="nav__item"><a href="#" class="nav__link">Item 2.1</a></li>
+						<li class ="nav__item"><a href="#" class="nav__link">Item 2.2</a></li>
+					</ul>
+					</li>
+				</ul>
+				</li>
+                <li class="nav__item"><a href="#">settings</a></li>
+                <li class="nav__item"><a href="#">Contact</a></l>
+            </ul>
+        </nav>
+    </header>
+	</body>
+</html>
