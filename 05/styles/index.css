@@ -1,0 +1,24 @@
+.container {
+    border: 5px solid rgb(5, 198, 5);
+    width: 100%;
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: center;
+    padding: 5px;
+}
+
+.content-width {
+    border: 5px solid rgb(0, 136, 255); 
+    width: 1000px;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+.content__element {
+    background-color: orange;
+    height: 100px;
+    width: 200px;
+    border: 3px solid black;
+}
