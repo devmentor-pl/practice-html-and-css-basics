@@ -1,12 +1,11 @@
 header {
     margin: 0;
     width: 100%;
-    box-sizing: border-box;
     display: flex;
 }
 .header__container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
    
 }
 .nav {
@@ -18,7 +17,6 @@ header {
     width: 150px;
     height: 100px;
     background-color: red;
-    justify-content: space-around;
     border: 1px solid black;
 }
 .header__logo {
