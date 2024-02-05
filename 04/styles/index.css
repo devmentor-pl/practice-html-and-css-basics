@@ -18,10 +18,11 @@ nav {
   height: 100%;
   width: 100px;
   cursor: pointer;
+  transition: 0.3s color ease-in, 0.3s border ease-in;
 }
 .nav__item:hover {
-  color: blue;
-  border-top: 1px solid blue;
+  color: #0e9ae1;
+  border-top: 1px solid #0e9ae1;
 }
 .nav__item--unfold:hover::after {
   content: ">";
@@ -32,13 +33,19 @@ nav {
 .nav__item--unfold:hover > .nav__dropdown {
   display: block;
 }
-.nav__dropdown {
+
+.nav__dropdown,
+.item__dropdown {
   display: none;
   position: absolute;
-  top: 100%;
-  background-color: black;
+  background-color: #333333;
   color: white;
 }
+.nav__dropdown {
+  top: 100%;
+  left: 0;
+}
+
 .dropdown__item {
   display: flex;
   align-items: center;
@@ -59,10 +66,6 @@ nav {
   background-color: rgba(36, 36, 36, 0.77);
 }
 .item__dropdown {
-  display: none;
-  position: absolute;
   top: 50%;
   left: 100%;
-  background-color: black;
-  color: white;
 }
