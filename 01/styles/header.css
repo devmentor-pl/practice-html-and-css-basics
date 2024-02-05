@@ -1,0 +1,18 @@
+header {
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+}
+header h1 {
+    background-color: blueviolet;
+    margin: 0;
+    padding: 10px;
+    display: inline-flex;
+    justify-content: flex-start;
+    box-sizing: border-box;
+}
+.logo {
+    width: 150px;
+    height: 100px;
+}
