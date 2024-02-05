@@ -4,15 +4,24 @@ header {
     box-sizing: border-box;
     display: flex;
 }
-header h1 {
-    background-color: blueviolet;
-    margin: 0;
-    padding: 10px;
-    display: inline-flex;
-    justify-content: flex-start;
-    box-sizing: border-box;
+.header__container {
+    display: flex;
+    justify-content: space-between;
+   
 }
-.logo {
+.nav {
+    background-color: gray;
+    padding: 10px;
+    display: flex;
+}
+.nav__item {
+    width: 150px;
+    height: 100px;
+    background-color: red;
+    justify-content: space-around;
+    border: 1px solid black;
+}
+.header__logo {
     width: 150px;
     height: 100px;
 }
