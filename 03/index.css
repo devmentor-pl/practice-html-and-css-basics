@@ -5,9 +5,22 @@
 
 .child--first,
 .child--middle {
-    width: 30%;   
+    width: calc(30% - 10px);
+    margin-right: 10px;  
 }
 
 .child--last {
-    width: 40%;
+    width: calc(40% - 10px);
+}
+
+.parent--inline-block .child {
+    display: inline-block;
+}
+
+.parent--float .child {
+    float: left;
+}
+
+.parent--flexbox {
+    display: flex;
 }
