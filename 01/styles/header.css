@@ -3,14 +3,25 @@ header {
     width: 100%;
     display: flex;
 }
-
-.nav__item {
-    width: 150px;
-    height: 100px;
-    background-color: red;
-    border: 1px solid black;
-}
 .header__logo {
     width: 150px;
     height: 100px;
+}
+.menu a {
+    padding: 20px 25px;
+    text-decoration: none;
+    color: #111;
+    display: inline-block;
+    text-align: left;
+    box-sizing: border-box;
+}
+.parent {
+    position: relative;
+    display: inline-block;
+}
+.child {
+    position: absolute;
+    top: 100%;
+    left: 0px;
+
 }
