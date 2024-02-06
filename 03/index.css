@@ -27,7 +27,7 @@
 
 @font-face {
     font-family: 'Source Sans PRO';
-	src: url('../fonts/source-sans-pro/SourceSansPro-bold.otf') format('opentype');
+	src: url('fonts/source-sans-pro/SourceSansPro-Bold.otf') format('opentype');
 	font-style: normal;
 	font-weight: bold;
 }
