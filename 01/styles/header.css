@@ -1,18 +1,9 @@
 header {
-    margin: 0;
+    margin: 30px;
     width: 100%;
     display: flex;
 }
-.header__container {
-    display: flex;
-    justify-content: center;
-   
-}
-.nav {
-    background-color: gray;
-    padding: 10px;
-    display: flex;
-}
+
 .nav__item {
     width: 150px;
     height: 100px;
