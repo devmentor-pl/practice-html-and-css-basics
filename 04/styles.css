@@ -44,7 +44,7 @@ body {
     content: '>';
     position: absolute;
     right: 10px;
-    top: 32px;
+    top: 34px;
     transform: rotate(90deg);
     font-family: 'Lato', sans-serif;
     color: #444;
@@ -75,7 +75,7 @@ body {
     content: '>';
     position: absolute;
     right: 20px;
-    top: 25px;
+    top: 23px;
     font-family: 'Lato', sans-serif;
     color: white;
 }
@@ -92,14 +92,14 @@ body {
 .dropdown-second {
     position: absolute;
     left: 100%;
-    top: 0;
+    top: 2px;
     background-color: #444;
     min-width: 200px;
     display: none;
 }
 
 .dropdown-second__item {
-    padding: 12px 40px;
+    padding: 20px 40px;
 }
 
 .dropdown-second__link {
