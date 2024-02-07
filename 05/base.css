@@ -1,6 +1,6 @@
 .row, .cell, .container {
-    margin: 5px;
-    padding: 5px;
+    margin: 7px 0;
+    padding: 5px 0;
 }
 
 .row, .container {
@@ -10,10 +10,14 @@
 .row {
     outline-color: rgb(51, 201, 51);
     margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 .container {
-    max-width: 1000px;
+    width: 1000px;
+    display: flex;
+    height: auto;
     outline-color: rgb(49, 116, 240);
 }
 
