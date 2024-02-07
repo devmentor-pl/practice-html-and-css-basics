@@ -24,6 +24,11 @@ body {
 	margin-left: 5px;
 	position: relative;
 	cursor: pointer;
+	border-top: 5px solid transparent;
+}
+
+.nav__item:hover {
+	border-top: 5px solid lightblue;
 }
 
 
