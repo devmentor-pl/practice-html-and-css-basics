@@ -3,7 +3,7 @@
 <head>
     <!-- ... -->
 <link rel="stylesheet" href="./styles/reset.css">
-<link rel="stylesheet" href="./styles/base.css">
+<link rel="stylesheet" href="./styles/base.cs">
 <link rel="stylesheet" href="./styles/header.css">
 <link rel="stylesheet" href="./styles/content.css">
 <link rel="stylesheet" href="./styles/footer.css">
@@ -11,19 +11,18 @@
 </head>
 <body>
     <header>
-        <nav>
-          <ul>
+        <nav class="menu">
+          <ul class="menu_list">
             <li><img src="./images/logo_01.jpg" class="header__logo" alt="logo"></li>
-            <li><a href="#home">Strona główna</a></li>
-            <li>Podcast streamingi ▼
+            <li><a href="#home" class="menu__link">Strona główna</a></li>
+            <li class="menu_item menu__item--parent">Podcast streamingi ▼
               <ul>
-            <li><a href="#spotify">Spotify</a></li>
-            <li><a href="#apple_podcast">Apple Podcast</a></li>
+            <li><a href="#spotify" class="menu__sublist menu__sublist--bottom">Spotify</a></li>
+            <li><a href="#apple_podcast" class="menu__sublist menu__sublist--bottom">Apple Podcast</a></li>
               </ul>
-            </li>
-            <li><a href="#home">Kontakt</a></li>
+                </li>
+            <li><a href="#home" class="menu__link">Kontakt</a></li>
            </ul>
-      
         </nav>
 
 
