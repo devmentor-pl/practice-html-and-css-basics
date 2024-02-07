@@ -1,0 +1,23 @@
+.row, .cell, .container {
+    margin: 5px;
+    padding: 5px;
+}
+
+.row, .container {
+    outline: 4px solid;
+}
+
+.row {
+    outline-color: rgb(51, 201, 51);
+    margin-bottom: 20px;
+}
+
+.container {
+    max-width: 1000px;
+    outline-color: rgb(49, 116, 240);
+}
+
+.cell {
+    min-height: 50px;
+    background-color: rgb(255, 186, 36);
+}
