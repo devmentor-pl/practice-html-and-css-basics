@@ -1,0 +1,37 @@
+.parent {
+    width: 600px;
+    padding: 20px;
+}
+
+.child--first,
+.child--middle {
+    width: calc(30% - 10px);
+    margin-right: 10px;  
+}
+
+.child--last {
+    width: calc(40% - 10px);
+}
+
+.parent--inline-block .child {
+    display: inline-block;
+}
+
+.parent--float .child {
+    float: left;
+}
+
+.parent--flexbox {
+    display: flex;
+}
+
+@font-face {
+    font-family: 'Source Sans PRO';
+	src: url('fonts/source-sans-pro/SourceSansPro-Bold.otf') format('opentype');
+	font-style: normal;
+	font-weight: bold;
+}
+
+.child {
+    font-family: 'Source Sans PRO';
+}

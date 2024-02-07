@@ -1,0 +1,27 @@
+.row, .cell, .container {
+    margin: 7px 0;
+    padding: 5px 0;
+}
+
+.row, .container {
+    outline: 4px solid;
+}
+
+.row {
+    outline-color: rgb(51, 201, 51);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 1000px;
+    display: flex;
+    height: auto;
+    outline-color: rgb(49, 116, 240);
+}
+
+.cell {
+    min-height: 50px;
+    background-color: rgb(255, 186, 36);
+}
