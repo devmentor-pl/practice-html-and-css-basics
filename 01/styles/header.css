@@ -24,8 +24,9 @@ a {
     font-size: 16px;
     font-weight: bold;
     white-space: nowrap;
-    text-decoration: none;
-    display: block;
+    text-align: center;
+    box-sizing: border-box;
+    
 }
 
 .menu__list {
@@ -41,4 +42,14 @@ a {
 .menu__item--parent {
     cursor: default;
     position: relative;
+}
+/* Drop-down */
+.menu__sublist {
+    display: none;
+    position: absolute;
+    background-color: #3d3aeb;
+}
+.menu__sublist--bottom {
+    left: 0;
+    top: 100%;
 }

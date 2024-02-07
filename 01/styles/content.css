@@ -1,0 +1,13 @@
+/* main content */
+.main__container {
+
+}
+.Header__title {
+    background-color: palevioletred;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+
+}
