@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
     text-align: center;
+    background-color: palevioletred;
 
 }
 .Header__title {
@@ -13,7 +14,12 @@
     font-weight: bold;
     text-align: center;
 }
+.article__main_foto {
+    
+    
+}
 .article__p {
     background-color: lemonchiffon;
     color: dimgrey;
+    text-align: left;
 }
