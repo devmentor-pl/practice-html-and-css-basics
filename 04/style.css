@@ -31,6 +31,22 @@ body {
 	position: relative;
 }
 
+.dropdown:after {
+	content: '>';
+	position: absolute;
+	right: -20px;
+	top: 15px;
+	transform: rotate(90deg);
+} 
+
+.dropdown2:after {
+	content: '>';
+	color: var(--color-one);
+	position: absolute;
+	right: 10px;
+	top: 5px;
+}
+
 .dropdown:hover > .nav__dropdown1 {
 	display: block;
 }
