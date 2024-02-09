@@ -19,9 +19,11 @@
     
 }
 .article__p {
+    
     background-color: lemonchiffon;
     color: dimgrey;
     text-align: left;
+    height: 250px;
 }
 
 .date__autor {
@@ -29,6 +31,10 @@
     font-family:  Trattatello, fantasy;
     font-size: 75%;
     text-align: right;
+    width: 85%;
+    margin: 15px;
+    background-color: lemonchiffon;
+
 
 }
 
@@ -41,8 +47,9 @@
 }
 
 .text {
+
     width: 85%;
     margin: 15px;
-    min-height: auto;
-  
+    padding: 0;
+    
 }
