@@ -31,3 +31,18 @@
     text-align: right;
 
 }
+
+.article__foto {
+
+    float: right;
+    margin: 10px;
+    text-align: justify;
+
+}
+
+.text {
+    width: 85%;
+    margin: 15px;
+    min-height: auto;
+  
+}
