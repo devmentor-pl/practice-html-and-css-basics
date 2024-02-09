@@ -23,3 +23,11 @@
     color: dimgrey;
     text-align: left;
 }
+
+.date__autor {
+
+    font-family:  Trattatello, fantasy;
+    font-size: 75%;
+    text-align: right;
+
+}

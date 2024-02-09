@@ -31,25 +31,37 @@ a {
 
 .menu__list {
     display: flex;
-
+    
 }
+
+.menu__list li {
+    width: 25%;
+} 
+
 .menu__link, .menu__item--parent {
     padding: 15px 20px;
 }
+
 .menu__link {
     color: #fff;
 }
+
 .menu__item--parent {
     cursor: default;
     position: relative;
 }
+
 /* Drop-down */
 .menu__sublist {
     display: none;
     position: absolute;
-    background-color: #3d3aeb;
+    background-color: #ffffff;
 }
+
 .menu__sublist--bottom {
     left: 0;
     top: 100%;
 }
+.menu__item--parent:hover ul {
+    display: block;
+} 
