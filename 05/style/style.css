@@ -1,0 +1,70 @@
+.row,
+.container {
+  outline: 3px solid;
+  margin: 20px;
+  padding: 10px 0;
+}
+
+.cell {
+  background-color: orange;
+}
+
+.row {
+  outline-color: green;
+}
+
+.container {
+  outline-color: rgb(0, 128, 255);
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.header,
+.section__1 {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 150px;
+  height: 50px;
+}
+
+.nav__primary {
+  width: 350px;
+  height: 50px;
+}
+
+.article {
+  width: 50%;
+  height: 200px;
+}
+
+.article:last-child {
+  margin-left: 10px;
+}
+
+.section__2 {
+  justify-content: space-between;
+}
+
+.section__2__article {
+  width: 33.33%;
+  height: 250px;
+  margin-right: 15px;
+}
+
+.section__2__article:first-child {
+  margin-left: 15px;
+}
+
+.footer {
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__paragraph {
+  width: 15%;
+  min-height: 100px;
+}
