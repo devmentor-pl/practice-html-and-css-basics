@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <!-- ... -->
+    <!-- style -->
 <link rel="stylesheet" href="./styles/reset.css">
 <link rel="stylesheet" href="./styles/base.css">
 <link rel="stylesheet" href="./styles/header.css">
@@ -10,6 +10,7 @@
 
 </head>
 <body>
+    <!--nawigacja strony-->
     <header>
         <nav class="menu">
           <ul class="menu__list">
@@ -42,6 +43,7 @@
 
 <main>
     <div class="main__container">
+<!--artykuł-->        
         <article>
             <img src="./images/article_podcast.jpg" class="article__main_foto">
            <H1 class="Header__title">Co to jest podcast?</H1>
@@ -58,7 +60,7 @@
                 od edukacji dla dzieci po biznes, rozwój osobisty,
                 inwestycje i motoryzację.
 
-                
+<!--tabela-->
                 <table class="table">
                     <caption class="title__table">Statyski słuchalności Podcastów</caption>
                     <colgroup> 
@@ -81,7 +83,7 @@
                         </tr>
                     </tbody>
                 </table>
-
+<!--Stopka autora i daty-->
             </div>
                     <div class="date__autor">
 
@@ -89,8 +91,22 @@
 
                     </div>
             </p>
+<!--sekcja komentarzy ..ciagle walka jak to zrobić żeby działało :) S-->
+            <div class="commentary">
+                <form action="form.php">
+                    <div>
+                        <textarea name="Komentarz" cols="35" rows="15">Czy utrzyma się ta tendencja wzrostu ? Proszę zostaw swoją opinię...</textarea>
+                    </div>
+                    <div>
+                        <label>Podpis
+                            <input name="Podpis" />
+                        </label>
+                        <input type="submit" value="Prześlij">
+                    </div>
+                </form>
+            </div>
         </article>
-        <div>
+       
            
 
         </div>
