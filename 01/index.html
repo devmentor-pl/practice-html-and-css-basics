@@ -93,17 +93,20 @@
             </p>
 <!--sekcja komentarzy ..ciagle walka jak to zrobić żeby działało :) S-->
             <div class="commentary">
-                <form action="form.php">
+                <form>
                     <div>
-                        <textarea name="Komentarz" cols="35" rows="15">Czy utrzyma się ta tendencja wzrostu ? Proszę zostaw swoją opinię...</textarea>
+                        <textarea name="Komentarz" cols="75" rows="7">Czy utrzyma się ta tendencja wzrostu ? Proszę, zostaw swoją opinię...</textarea>
                     </div>
-                    <div>
-                        <label>Podpis
-                            <input name="Podpis" />
-                        </label>
-                        <input type="submit" value="Prześlij">
+                    <div>   
+                        <label for="nickname">Twój Podpis</label>
                     </div>
-                </form>
+                    <div>    
+                        <input type="text" id="nickname" name="nickname" required>
+                    </div>
+                    <div>    
+                        <input type="submit" value="Dodaj komentarz">
+                    </div>    
+                 </form>
             </div>
         </article>
        
