@@ -76,5 +76,21 @@
 /* END OF SECTION 3 */
 
 /* SECTION 4 */
+.section-4 {
+	max-width: 1000px;
+	min-height: 100px;
+	margin: 10px auto;
+	border: 3px solid #00a8f3;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.part6 {
+	width: 200px;
+	height: 50px;
+	background-color: #ffca18;
+	margin: 3px 0;
+}
 
 /* END OF SECTION 4 */
