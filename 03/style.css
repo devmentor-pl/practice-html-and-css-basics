@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Source Sans PRO';
+	src: url(source-sans-pro/SourceSansPro-Bold.otf) format('opentype');
+    
+}
+div  {
+
+    
+}
+
+.parent {
+    
+    width: 600px;
+    padding: 20px;
+    display: flex;
+}
+.child {
+
+    padding: 10px;    
+}
+
+.child--first {
+
+    width: 30%;
+}
+
+.child--middle {
+
+    width: 30%;
+}
+
+.child--last {
+
+    width: 40%;
+
+}
