@@ -7,6 +7,93 @@
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
 </head>
 <body>
-    
+    <header class="header-row">
+        <div class="header_container">
+            <h1 class="header_logo"></h1>
+            <nav class="nav">
+                <ul class="nav_dropdown">
+                    <li class="dropdown_item">Main page</li>
+                    <li class="dropdown_item">Contact Us</li>
+                    <li class="dropdown_item">Item 3</li>
+                    <li class="dropdown_item">Item 4</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class ="main_container">
+        <article class="article_section">
+            <div class="article_container">
+                <h2 class="article_title"></h2>
+                <section class="article_content">
+                    <p>Paragraph 1</p>
+                    <p>Paragraph 2</p>
+                    <p>Paragraph 3</p>
+                    <p>Paragraph 4</p>
+                    <address class="author"> Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br>
+                    </address>
+                    <p class="date"> 
+                        on <time pubdate datetime="2024-01-06" title="January 6th, 2024">06/01/2024</time>
+                    </p>
+                    <img>
+                    <table class="table_content">
+                        <tr class="table_header">
+                            <th>Column 1</th>
+                            <th>Column 2</th>
+                            <th>Column 3</th>
+                        </tr>
+                        <tr class="table_row">
+                            <td class="table_entry">Data entry 1</td>
+                            <td class="table_entry">Data entry 2</td>
+                            <td class="table_entry">Data entry 3</td>
+                        </tr>
+                        <tr class="table_row">
+                            <td class="table_entry">Data entry 1</td>
+                            <td class="table_entry">Data entry 2</td>
+                            <td class="table_entry">Data entry 3</td>
+                        </tr>
+                    </table>
+                    <br><br>
+                </section>
+            </div>
+        </article>
+        <form class="comment_section">
+            <label for="fname">First name:</label>
+            <input type="text"><br><br>
+            <label for="lname">Last name:</label>
+            <input type="text"><br><br>
+            <label for="comment">Your comment</label>
+            <input type="text"><br><br>
+            <input type="submit">
+            <input type="reset"><br><br>
+        </form>
+        <section>
+            <div class="comment_list">
+                <h2>Comments</h2>
+                <div class="comment">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <address class="comment_author">Author 1</address>
+                    <p class="comment_date"><time pubdate datetime="2011-08-28" title="August 28th, 2011">8/28/11</time>
+                    </p>
+                </div>
+                <div class="comment">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <address class="comment_author">Author 2</address>
+                    <p class="comment_date"><time pubdate datetime="2011-08-28" title="August 28th, 2011">8/28/11</time>
+                    </p>
+                </div>
+                <div class="comment">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <address class="comment_author">Author 3</address>
+                    <p class="comment_date"><time pubdate datetime="2011-08-28" title="August 28th, 2011">8/28/11</time>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer_container">
+                <section class="copyrights_info"></section>
+            </div>
+        </footer>
+    </main>
 </body>
 </html>
