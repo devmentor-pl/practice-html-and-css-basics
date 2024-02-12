@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NavBar</title>
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+  <body>
+    <nav>
+      <ul class="nav__list">
+        <li class="nav__item">HOME</li>
+        <li class="nav__item nav__item--unfold">
+          ITEMS
+          <ul class="nav__dropdown">
+            <li class="dropdown__item">Item 1</li>
+            <li class="dropdown__item dropdown__item--unfold">
+              Item 2
+              <ul class="item__dropdown">
+                <li class="dropdown__item">Item 2.1</li>
+                <li class="dropdown__item">Item 2.2</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="nav__item">SETTINGS</li>
+        <li class="nav__item">CONTACT</li>
+      </ul>
+    </nav>
+  </body>
+</html>

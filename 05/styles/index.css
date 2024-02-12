@@ -1,0 +1,50 @@
+/* HEADER */
+.header {
+  margin-bottom: 10px;
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+}
+.header__logo {
+  width: 10%;
+}
+.header__nav {
+  width: 45%;
+}
+
+/* MAIN */
+.main {
+  margin-bottom: 10px;
+}
+
+.section1__container {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.section1__content {
+  width: 50%;
+  height: 400px;
+}
+
+.section2__container {
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.section2__content {
+  height: 400px;
+  width: 33.333%;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__content {
+  width: 20%;
+}

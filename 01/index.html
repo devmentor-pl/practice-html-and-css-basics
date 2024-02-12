@@ -1,12 +1,94 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container container">
+        <h1 class="header__logo"></h1>
+        <nav class="header__nav">
+          <ul class="nav">
+            <li class="nav__item"><a href="#" class="nav__link"></a></li>
+            <li class="nav__item">
+              <a href="#" class="nav__link"></a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link"></a>
+              <ul class="item__dropdown">
+                <li class="dropdown__item"><a href=""></a>></li>
+                <li class="dropdown__item"><a href=""></a></li>
+                <li class="dropdown__item"><a href=""> </a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <div class="main__container container">
+        <section class="main__articles">
+          <article class="article">
+            <h2 class="article__title"></h2>
+            <p class="article__title"></p>
+            <section class="article__info">
+              <p class="info__date"></p>
+              <p class="info__author"></p>
+            </section>
+            <img class="article__image" src="" alt="" />
+            <div class="article__table">
+              <table class="table">
+                <caption class="table__caption"></caption>
+                <thead class="table__header">
+                  <tr class="table__row">
+                    <th class="table__heading"></th>
+                    <th class="table__heading"></th>
+                    <th class="table__heading"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="table__row">
+                    <td class="table__cell"></td>
+                    <td class="table__cell"></td>
+                    <td class="table__cell"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+        </section>
+        <section class="main__comment-form">
+          <form class="comment-form__form">
+            <div class="name-input__wrapper">
+              <input
+                type="text"
+                class="form__name-input"
+                placeholder="username"
+              />
+            </div>
+            <div class="comment__wrapper">
+              <textarea
+                class="form__comment"
+                placeholder="comment"
+                rows="10"
+              ></textarea>
+            </div>
+          </form>
+        </section>
+        <section class="main__comments">
+          <div class="comments__coment">
+            <p class="comment__text"></p>
+            <div class="comment__info">
+              <p class="comment__date"></p>
+              <p class="comment__user"></p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>&copy;Lorem.</footer>
+  </body>
 </html>
