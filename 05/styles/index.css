@@ -1,5 +1,5 @@
 .container {
-    border: 5px solid rgb(5, 198, 5);
+    border: 5px solid #0ED145;
     width: 100%;
     display: flex;
     margin-bottom: 10px;
@@ -7,18 +7,60 @@
     padding: 5px;
 }
 
-.content-width {
-    border: 5px solid rgb(0, 136, 255); 
+.container__content {
+    border: 5px solid #00A8F3; 
     width: 1000px;
     max-width: 1000px;
     display: flex;
     justify-content: center;
-    padding: 5px;
 }
 
 .content__element {
-    background-color: orange;
+    background-color: #FFCA18;
     height: 100px;
     width: 200px;
-    border: 3px solid black;
 }
+
+.container__content--section1 {
+    justify-content:space-between;
+    padding: 5px 0 5px;
+}
+
+.content__element--logo {
+    width: calc(20%);
+    height: 50px;
+}
+
+.content__element--menu {
+    width: calc(40%);
+    height: 50px;
+}
+
+.container__content--section2 {
+    justify-content:space-between;
+    padding: 10px 0 10px;
+}
+
+.content__element--column {
+    width: calc(50% - 5px);
+    height: 200px;
+}
+
+.container__content--section3 {
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+}
+
+.container__content--section3 > .content__element--column {
+    min-height: 150px;
+    margin: 5px;
+}
+
+.container__content--section4 {
+    padding: 5px;
+}
+
+.content__element--footer {
+    height: 30px;
+    width: calc(10%);
