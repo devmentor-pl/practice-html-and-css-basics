@@ -9,3 +9,10 @@ ol {
     line-height: 2em;
 
 }
+
+li {
+
+    float: left;
+    background-color: rgb(180, 25, 20);
+    width: 150px;
+}
