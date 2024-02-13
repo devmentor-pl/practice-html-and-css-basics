@@ -31,7 +31,6 @@ co chodziło ? bo zastanawiałem się nad wartością none, co by mi to dało ? 
 .parent--flexbox {
 
     display: flex;
-    place-content: end space-between;
     
 }
 .child {
