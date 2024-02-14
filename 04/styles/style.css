@@ -10,11 +10,17 @@
 
 }
 
+.main__menu:first-child {
+    
+    margin-left: 0px;
+}
+
 .main__menu {
 
     float: left;
     background-color: rgb(180, 25, 20);
     width: 150px;
+    margin-left: 10px;
 }
 
 .link {
