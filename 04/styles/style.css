@@ -20,7 +20,7 @@
     float: left;
     background-color: rgb(180, 25, 20);
     width: 150px;
-    margin-left: 10px;
+    margin-left: 2px;
 }
 
 .link {
@@ -38,5 +38,15 @@ link:hover {
 .main__menu:hover {
 
     background-color: #EEE;
+}
+
+.submenu__second {
+    background-color: rgb(252, 173, 45);
+    border-top: 1px solid #FFF;
+
+}
+.submenu__second:hover {
+
+    background-color: #DDD;
 }
 
