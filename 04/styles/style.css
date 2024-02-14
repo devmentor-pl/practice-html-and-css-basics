@@ -1,4 +1,4 @@
-ol {
+.menu {
 
     list-style-type: none;
     padding: 0;
@@ -10,9 +10,27 @@ ol {
 
 }
 
-li {
+.main__menu {
 
     float: left;
     background-color: rgb(180, 25, 20);
     width: 150px;
 }
+
+.link {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    padding: 0 5px;
+}
+
+link:hover {
+
+    color: #09C;
+}
+
+.main__menu:hover {
+
+    background-color: #EEE;
+}
+
