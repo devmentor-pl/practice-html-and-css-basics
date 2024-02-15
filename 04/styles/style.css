@@ -22,13 +22,16 @@
     width: 150px;
     margin-left: 2px;
     display: block;
+    
    
 }
-
+/* starałem się zrobić z paddingiem tak jak u ciebe na blogu, 
+lecz nic mi takiego nie wychodziło, za chiny ludowe nie mogę zrobić żeby cały prostokąt był 
+klikalny ...  */
 .link {
     color: #000;
     text-decoration: none;
-    padding: 0 5px;
+    
 }
 
 link:hover {
@@ -45,15 +48,49 @@ link:hover {
 .submenu__second {
     background-color: rgb(252, 173, 45);
     border-top: 1px solid #FFF;
+    
    
 
 }
 .submenu__second:hover {
 
-    background-color: #DDD;
+    background-color: #abc;
 }
 
 .second__link:hover {
+    background-color: #FFF;
+}
+
+.menu__bottom {
+    display: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* trzecia sekcja podmenu */
+.submenu__third {
+    background-color: rgb(252, 173, 45);
+    border-top: 1px solid #FFF;
+ 
+}
+
+.menu__right {
+    display: none;
+    position: absolute;
+    background-color: rgb(252, 173, 45);
+}
+
+.submenu__third {
+    left: 100%;
+    top:0;
+    
+}
+.submenu__third:hover {
+
+    background-color: #abc;
+}
+
+.third__link:hover {
     background-color: #FFF;
 }
 
