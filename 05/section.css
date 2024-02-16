@@ -1,0 +1,9 @@
+.theme__container {
+    display: flex;
+    justify-content: space-between;
+}
+.theme__article, .theme__text, .theme__contents {
+    min-height: 200px;
+    width: 50%;
+    margin: 2%;
+}

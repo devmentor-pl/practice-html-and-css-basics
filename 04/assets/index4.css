@@ -1,0 +1,63 @@
+#menu {
+    background-color: rgba(37, 107, 197, 0.575);
+    padding: 15px;
+    display: flex;
+}
+
+.menu__list {
+    background-color: rgba(255, 253, 253, 0.295);
+    margin-left: 10px;
+    padding: 10px;
+    float: left;
+    position: relative;
+}
+
+.menu__list--margin {
+    margin-left: 0;
+}
+
+.menu__list:hover > .menu__dropp, .menu__dropp:hover > .menu__dropp1, .menu__dropp1:hover + .menu__dropp2 {
+    display: block;
+}
+.menu__dropp2:hover {
+    display: block;
+}
+.menu__dropp {
+    display: none;
+    position: absolute;
+    padding-top: 10px;
+    left: 0;
+}
+.menu__dropp1 > .dropp__menu1 {
+    position: relative;
+    left: 120px;
+    bottom: 28px;
+}
+.menu__dropp2 > .dropp__menu2 {
+    position: relative;
+    left: 260px;
+    bottom: 56px;
+}
+
+.dropp__menu, .dropp__menu1, .dropp__menu2 {
+    padding: 5px 30px;
+    min-width: 140px;
+    background: rgb(0, 200, 2500);
+    position: relative;
+}
+
+.menu__dropp .menu__dropp1, .menu__dropp2 {
+    display: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:active {
+    color: red;
+}
+
+.arrow {
+    position: relative;
+    margin-left: 7.4px;
+}
