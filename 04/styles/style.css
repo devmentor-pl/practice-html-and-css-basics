@@ -57,6 +57,7 @@ link:hover {
 .submenu__second {
     background-color: rgb(252, 173, 45);
     border-top: 1px solid #FFF;
+    position: relative;
     
 }
 .submenu__second:hover {
@@ -71,27 +72,36 @@ link:hover {
 .menu__bottom {
     display: none;
     padding: 0;
-    margin: 0;
+
 }
 .submenu__second:hover > .menu__right {
     display: block;
 }
 /* trzecia sekcja podmenu */
+
+/* chciałem aby sekcja trzecia też była odsunięta o 1px ale że odpychałem za pomocą 
+menu right nie potrafiłem dojść gdzie potrzebowałbym bym wpisać 
+margin żeby to zadziałało i dało mi przestrzeń jednego px :/ */ 
 .submenu__third {
     background-color: rgb(252, 173, 45);
-    border-top: 1px solid #FFF;
- 
+    border-top: 1px #FFF;
+    position: relative;
 }
 
 .menu__right {
     display: none;
     position: absolute;
     background-color: rgb(252, 173, 45);
+    left: 100%;
+    top: 0%;
+    
+
 }
 
 .submenu__third {
-    left: 100%;
-    top:0;
+    left: 0%;
+    top: 100%;
+    
     
 }
 .submenu__third:hover {
@@ -102,4 +112,11 @@ link:hover {
 .link:hover {
     background-color: #FFF;
 }
-
+.rotate {
+  transform: rotate(90deg);
+}
+div {
+    position: fixed;
+    left: 10px;
+    top: 10px;
+}
