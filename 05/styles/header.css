@@ -1,0 +1,12 @@
+.header__container {
+    display: flex;
+    justify-content: space-between;
+}
+.header__logo {
+    min-width: 150px;
+    background-color: orange;
+}
+.header__nav {
+    min-width: 300px;
+    background-color: orange;
+}
