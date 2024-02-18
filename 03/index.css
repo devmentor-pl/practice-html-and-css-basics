@@ -19,10 +19,6 @@
     font-style: normal;
 }
 
-.child {
-    border: green;
-}
-
 .child--middle {
     width: 30%; height: 100%;
     font-weight: bold;
@@ -33,12 +29,9 @@
     font-style: italic;
 }
 
-.parent--inline-block {
-    display: block;
-}
 
-.parent--inline-block .child {
-    display: inline-block;
+.parent--inline-block .child{
+    display: inline-block ;
 }
 
 .parent--float .child {
