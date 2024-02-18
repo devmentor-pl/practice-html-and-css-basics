@@ -4,10 +4,14 @@
     justify-content: space-between;
 }
 .content__article {
-    min-height: 400px;
+    margin-left: 0px;
+    min-height: 250px;
     width: 50%;
+    background-color: orange;
 }
 .content__ads {
-    min-height: 390px;
+    margin-right: 0px;
+    min-height: 240px;
     width: 50%;
+    background-color: orange;
 }

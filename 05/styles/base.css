@@ -8,6 +8,7 @@
 }
 .container {
     margin: 0px;
+    padding: 0px;
     max-width: 1000px;
     outline-color: blue;
 }
