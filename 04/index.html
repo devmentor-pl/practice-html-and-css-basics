@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="reset.css">
+    <title>Dropdown menu</title>
+</head>
+<body>
+    <ul class="nav">
+        <li class="nav__item nav__item--blue-color">
+            HOME
+        </li>
+        <li class="nav__item nav__item--blue-color nav__item--blue-higlight">
+            ITEMS <div class="arrow-down">></div>
+            <ul class="nav__dropdown">
+                <li class="dropdown__item">
+                    item1
+                </li>
+                <li class="dropdown__item">
+                    item2 
+                    <span class="right-arrow">></span>
+                    <ul class="nav__dropdown2">
+                        <li class="nav__item2">
+                            item2.1
+                        </li>
+                        <li class="nav__item2">
+                            item2.2
+                        </li>
+                    </ul> 
+                </li>
+            </ul>
+        </li>
+        <li class="nav__item">
+            SETTINGS
+        </li>
+        <li class="nav__item">
+            CONTACT
+        </li>
+    </ul>
+</body>
+</html>
