@@ -1,0 +1,46 @@
+/* html {
+    height: 100vh; width: 100vw;
+    background-color: #F6F6F6;
+} */
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    border: 1px solid black;
+    
+}
+
+.nav__item {
+    padding: 20px 30px;
+}
+
+.nav__item:first-child {
+    padding: 20px 15px;
+}
+
+.nav__item--blue-color {
+    color:#64BDED;;
+}
+
+.arrow-down {
+    display: inline-block;
+    vertical-align: middle;
+    transform: rotate(90deg);
+    font-size: 10px;
+    padding: 0px 5px;
+}
+.nav__item--blue-higlight {
+    position: relative;
+}
+
+.blue-rectangle {
+    display: inline-block;
+    height: 10px;
+    width: 100%;
+    background-color: #64BDED;
+    position: relative;
+    bottom: 0px;
+    top: 0;
+    left: 0;
+}

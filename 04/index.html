@@ -4,23 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="reset.css">
     <title>Dropdown menu</title>
 </head>
 <body>
     <ul class="nav">
-        <li class="nav__item">
+        <li class="nav__item nav__item--blue-color">
             HOME
         </li>
-        <li class="nav__item">
-            ITEMS
+        <li class="nav__item nav__item--blue-color nav__item--blue-higlight">
+            ITEMS <div class="arrow-down">></div>
+            <!-- <div class="blue-rectangle"></div> -->
             <ul class="nav__drpodown">
                 <li class="dropdown__item">
                     item1
                 </li>
-            <ul class="nav__drpodown">
                 <li class="dropdown__item">
                     item2
-                    <ul class="nav__second-dropdown">
+                    <!-- <ul class="nav__second-dropdown">
                         <li class="second-dropdown__item">
                             item2.1
                         </li>
@@ -28,7 +30,7 @@
                         <li class="second-dropdown__item">
                             item2.2
                         </li>
-                    </ul>
+                    </ul> -->
                 </li>
             </ul>
         </li>
