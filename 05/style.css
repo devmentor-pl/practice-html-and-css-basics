@@ -1,0 +1,98 @@
+.section{
+    width: calc(100%-10px);
+    border: 3px solid;
+    border-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    width: 1000px;
+    height: 90%;
+    border: 3px solid;
+    border-color: blue;
+    display: flex;
+    align-items: center;
+}
+
+.section__header{
+    height: 100px;
+}
+
+.content__header{
+    justify-content:   space-between;
+}
+
+.logo{
+    width: 25%;
+    height: 90%;
+    background-color: orange;
+}
+
+.menu{
+    width: 40%;
+    height: 90%;
+    background-color: orange;
+}
+
+.section__first{
+    height: 300px;
+}
+
+.content__sectionfirst{
+    justify-content: space-between;
+}
+
+.sectionfirst__right{
+    width: 40%;
+    height: 90%;
+    background-color: orange;
+}
+
+.sectionfirst__left{
+    width: 40%;
+    height: 90%;
+    background-color: orange;
+}
+
+.section__second{
+    height: 300px;
+}
+
+.content__sectionsecond{
+    justify-content: space-evenly;
+}
+
+.sectionsecond__right{
+    width: 30%;
+    height: 90%;
+    background-color: orange;
+}
+
+.sectionsecond__middle{
+    width: 30%;
+    height: 90%;
+    background-color: orange;
+}
+
+.sectionsecond__left{
+    width: 30%;
+    height: 90%;
+    background-color: orange;
+}
+
+.section__footer{
+    height: 50px;
+}
+
+.content__footer{
+    height: 70%;
+    justify-content: center;
+}
+
+.footer__card{
+    width: 10%;
+    height: 70%;
+    background-color: orange;
+}
