@@ -83,11 +83,11 @@
 }
 
 .section__footer{
-    height: 50px;
+    min-height: 100px;
 }
 
 .content__footer{
-    height: 70%;
+    height: 90px;
     justify-content: center;
 }
 
