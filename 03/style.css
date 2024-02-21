@@ -15,20 +15,21 @@ div {
     
     width: 600px;
     padding: 20px;
-    display: flex;
+
+
 }
-.parent--inline-block {
+.parent--inline-block .child{
 
     display: inline-block;
 }
 /* no tu przeniosłem na prawo żebym widział, że coś się dzieje :). A w ogóle to jest to o 
 co chodziło ? bo zastanawiałem się nad wartością none, co by mi to dało ? oprócz tego że nic :D  */
-.parent--float {
+.parent--float .child{
 
     float: right;
 }
 
-.parent--flexbox {
+.parent--flexbox .child{
 
     display: flex;
     
