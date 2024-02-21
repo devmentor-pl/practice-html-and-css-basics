@@ -1,0 +1,27 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #F6F6F6;
+}
+
+ul {
+    list-style: none;
+}
+
+.menu {
+    background-color: #fff;
+    display: flex;
+    margin: 20px;
+}
+
+.menu_item {
+    padding: 20px 40px;
+    border-top: 5px solid transparent;
+}
+
+.menu_item:hover {
+    border-top-color: #009AE1;
+}
