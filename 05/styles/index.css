@@ -17,8 +17,6 @@
 
 .content__element {
     background-color: #FFCA18;
-    height: 100px;
-    width: 200px;
 }
 
 .container__content--section1 {
@@ -58,9 +56,12 @@
 }
 
 .container__content--section4 {
-    padding: 5px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 .content__element--footer {
-    height: 30px;
-    width: calc(10%);
+    min-height: 100px;
+    width: 200px;
+}
