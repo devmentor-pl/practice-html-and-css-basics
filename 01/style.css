@@ -1,0 +1,39 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+.shadow-style {
+  box-shadow: 2px 4px 8px 3px rgba(0, 0, 0, 0.8);
+  margin: 20px;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+/* Logo */
+
+.logo {
+  display: flex;
+  width: 100%;
+}
+
+.logo__picture {
+  background-image: url(./7.jpg);
+  height: 300px;
+  flex-basis: 30%;
+  background-size: contain;
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
+.logo__menu {
+  align-items: center;
+  display: flex;
+}
+.logo__menu-text {
+  align-items: center;
+  font-size: 19px;
+}
