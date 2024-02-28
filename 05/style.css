@@ -1,10 +1,22 @@
 .green {
     border: 5px solid #0ED145;
+    padding: 5px;
+    margin: 5px;
 }
 
 .section_top .blue {
     display: flex;
     justify-content: space-between;
+}
+
+.section_middle .blue {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section_bottom .blue {
+    display: flex;
+    justify-content: center;
 }
 
 .blue {
@@ -16,7 +28,7 @@
 .content {
     background-color: #FFCA18;
     min-height: 50px;
-    margin: 5px 0px;
+    margin: 10px 0px;
 }
 
 .content_logo {
@@ -25,4 +37,18 @@
 
 .content_menu {
     width: 300px;
+}
+
+.section_middle .content {
+    width: 49%;
+    min-height: 200px;
+}
+
+.section_middle .content_story {
+    margin: 10px;
+    min-height: 200px;
+}
+
+.content_footer {
+    width: 100px;
 }
