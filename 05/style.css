@@ -1,0 +1,28 @@
+.green {
+    border: 5px solid #0ED145;
+}
+
+.section_top .blue {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blue {
+    border: 5px solid #00A8F3;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.content {
+    background-color: #FFCA18;
+    min-height: 50px;
+    margin: 5px 0px;
+}
+
+.content_logo {
+    width: 160px;
+}
+
+.content_menu {
+    width: 300px;
+}
