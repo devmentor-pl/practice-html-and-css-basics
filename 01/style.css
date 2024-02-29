@@ -134,10 +134,7 @@ body {
 }
 /*End Comment Form */
 
-/* .testimonials {
-  display: flex;
-  padding-top: 2rem;
-} */
+/* Comment form */
 
 .comment-forms__comments-arrow {
   flex-basis: 10%;
@@ -161,3 +158,16 @@ body {
   border-radius: 50%;
   height: 70px;
 }
+
+/* End Comment form */
+
+/* Footer  */
+.footer {
+  background-color: #dfe4ea;
+}
+
+.footer__box {
+  padding: 1rem;
+}
+
+/* End Footer  */
