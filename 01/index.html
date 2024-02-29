@@ -14,7 +14,7 @@
         <div class="logo__menu">
           <div class="logo__menu-text">
             <ul>
-              <h1>Lorem ipsum</h1>
+              <h1 class="color-blue">Lorem ipsum</h1>
               <li>Testowanie układu</li>
               <li>Ułatwienie pracy nad projektem</li>
               <li>Ocena wyglądu tekstu</li>
@@ -27,7 +27,10 @@
     </header>
     <article class="article shadow-style container">
       <div class="contents">
-        <h2 class="contents__header">Po co używa się tekstu "Lorem Ipsum"</h2>
+        <h2 class="contents__header">
+          Po co używa się tekstu
+          <span style="color: #70a1ff">"Lorem Ipsum"</span>
+        </h2>
       </div>
       <div class="contents__text">
         <ul class="contents__text-size">
@@ -89,5 +92,58 @@
         </div>
       </div>
     </article>
+
+    <section class="shadow-style comment-forms container">
+      <div class="comment-form">
+        <form class="comment-form__user action=" method="POST">
+          <input
+            class="comment-form__user-width"
+            type="text"
+            name="user name"
+            placeholder="user name"
+            required
+          />
+
+          <textarea
+            class="comment-form__user-width"
+            name=""
+            rows="10"
+            placeholder="Zostaw komentarz"
+          ></textarea>
+          <button class="comment-form__button comment-form__user-width">
+            Wyślij
+          </button>
+        </form>
+
+        <div class="comment-forms__comments">
+          <div class="comment-forms__comments-arrow">
+            <img src="./back.png" height="20px" alt="" />
+          </div>
+          <div class="comment">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+              esse quisquam animi in expedita tenetur obcaecati, perspiciatis
+              aliquam, quia facere eius placeat. Obcaecati accusantium id
+              facilis hic beatae, accusamus laboriosam.
+            </p>
+            <figure>
+              <hr class="comment-forms__comments-rule" />
+              <img
+                class="comment-forms__comments__avatar"
+                src="./users.jpg"
+                alt="Users foto"
+              />
+              <figcaption>
+                <p class="comment-forms__comments__name">John Doe</p>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="comment-forms__comments-arrow">
+            <img src="./next.png" height="20px" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

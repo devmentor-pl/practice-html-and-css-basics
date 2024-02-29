@@ -10,7 +10,11 @@ body {
 
 .container {
   max-width: 1024px;
-  margin: 0 auto;
+  margin: 10px auto 20px auto;
+}
+
+.color-blue {
+  color: #70a1ff;
 }
 
 /* Logo */
@@ -43,7 +47,6 @@ body {
 
 /* contents */
 .article {
-  padding: top 20px;
 }
 
 .contents {
@@ -91,4 +94,70 @@ body {
 
 .author-description__text-p {
   margin-top: 0;
+}
+
+/*End author's description */
+
+/*End Comment Form */
+
+.comment-forms {
+  border: solid 1px black;
+}
+
+.comment-form {
+  display: flex;
+}
+
+.comment-form__user {
+  flex-basis: 40%;
+  margin: 10px;
+  border-radius: 4px;
+}
+
+.comment-form__user-width {
+  width: 100%;
+  border-radius: 5px;
+  margin: 5px;
+  font-size: 18px;
+  outline: none;
+}
+
+.comment-forms__comments {
+  flex-basis: 60%;
+
+  margin: 0 10px 0 10px;
+  display: flex;
+}
+
+.comment-form__button {
+  background-color: #70a1ff;
+}
+/*End Comment Form */
+
+/* .testimonials {
+  display: flex;
+  padding-top: 2rem;
+} */
+
+.comment-forms__comments-arrow {
+  flex-basis: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.comment {
+  flex-basis: 80%;
+  text-align: center;
+}
+
+.comment-forms__comments-rule {
+  margin: 2rem auto;
+  width: 30%;
+  min-width: 200px;
+}
+.comment-forms__comments__avatar {
+  border-radius: 50%;
+  height: 70px;
 }
