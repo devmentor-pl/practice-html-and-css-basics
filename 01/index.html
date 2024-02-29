@@ -1,12 +1,172 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header class="shadow-style container">
+      <div class="logo">
+        <div class="logo__picture"></div>
+        <div class="logo__menu">
+          <div class="logo__menu-text">
+            <ul>
+              <h1 class="color-blue">Lorem ipsum</h1>
+              <li>Testowanie układu</li>
+              <li>Ułatwienie pracy nad projektem</li>
+              <li>Ocena wyglądu tekstu</li>
+              <li>Ułatwienie procesu projektowego</li>
+              <li>Zachowanie poufności</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <article class="article shadow-style container">
+      <div class="contents">
+        <h2 class="contents__header">
+          Po co używa się tekstu
+          <span style="color: #70a1ff">"Lorem Ipsum"</span>
+        </h2>
+      </div>
+      <div class="contents__text">
+        <ul class="contents__text-size">
+          <li>
+            <b>Testowanie układu: </b>Jest powszechnie stosowany do testowania
+            układu stron internetowych, projektów graficznych i składu
+            typograficznego. Zamiast używać prawdziwej treści, można wstawić
+            losowy tekst Lorem Ipsum, aby zobaczyć, jak wyglądać będzie
+            ostateczny projekt.
+          </li>
+          <li>
+            <b>Ułatwienie pracy nad projektem:</b> Podczas projektowania stron
+            internetowych lub innych projektów graficznych, nie zawsze mamy
+            gotową treść do umieszczenia na stronie. Lorem Ipsum dostarcza
+            wypełniacza, który pomaga wizualizować projekt, zanim prawdziwa
+            treść zostanie dodana.
+          </li>
+          <li>
+            Ocena wyglądu tekstu: Tekst Lorem Ipsum jest pozbawiony znaczenia,
+            dzięki czemu można oceniać wyłącznie wygląd i układ tekstu, a nie
+            jego treść. Jest to przydatne, gdy projektant chce skupić się na
+            samym wyglądzie, a nie na czytelności treści.
+          </li>
+          <li>
+            <b>Ułatwienie procesu projektowego:</b> Użycie Lorem Ipsum może
+            przyspieszyć proces projektowy, eliminując potrzebę oczekiwania na
+            dostarczenie prawdziwej treści. Projektant może zająć się pracą nad
+            układem, zanim treść zostanie ostatecznie dostarczona przez klienta.
+          </li>
+          <li>
+            <b>Zachowanie poufności:</b> Kiedy projektant pracuje nad projektem
+            dla klienta, który jeszcze nie dostarczył treści, Lorem Ipsum
+            pozwala zachować poufność projektu. Niejawna treść nie ujawnia
+            prawdziwych danych klienta przed zatwierdzeniem.
+          </li>
+        </ul>
+        <hr />
+
+        <div class="author-description">
+          <div class="author-description__photo"></div>
+          <div class="author-description__text">
+            <p class="author-description__text-p">
+              Tekst "Lorem Ipsum" pochodzi z fragmentu dzieła
+              <b>"De finibus bonorum et malorum"</b> (O granicach dobra i zła)
+              napisanego przez rzymskiego filozofa <b>Cycerona</b> około 45 roku
+              p.n.e. Jednakże stosowany w dzisiejszych czasach tekst Lorem Ipsum
+              jest zmodyfikowaną wersją pochodzącą z wydania
+              <i
+                >"Lorem Ipsum" opublikowanego w XVI wieku przez nieznanego
+                autora.</i
+              >
+              Tekst ten został skompilowany z części dzieł Cycerona i
+              przetworzony w celu uzyskania bezsensownego, ale czytelnego
+              fragmentu tekstu, który jest wykorzystywany głównie jako
+              wypełniacz w projektach graficznych, składzie typograficznym i
+              testach układu stron internetowych.
+            </p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <section class="shadow-style comment-forms container">
+      <div class="comment-form">
+        <form class="comment-form__user action=" method="POST">
+          <input
+            class="comment-form__user-width"
+            type="text"
+            name="user name"
+            placeholder="user name"
+            required
+          />
+
+          <textarea
+            class="comment-form__user-width"
+            name=""
+            rows="10"
+            placeholder="Zostaw komentarz"
+          ></textarea>
+          <button class="comment-form__button comment-form__user-width">
+            Wyślij
+          </button>
+        </form>
+
+        <div class="comment-forms__comments">
+          <div class="comment-forms__comments-arrow">
+            <img src="./back.png" height="20px" alt="" />
+          </div>
+          <div class="comment">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+              esse quisquam animi in expedita tenetur obcaecati, perspiciatis
+              aliquam, quia facere eius placeat. Obcaecati accusantium id
+              facilis hic beatae, accusamus laboriosam.
+            </p>
+            <figure>
+              <hr class="comment-forms__comments-rule" />
+              <img
+                class="comment-forms__comments__avatar"
+                src="./users.jpg"
+                alt="Users foto"
+              />
+              <figcaption>
+                <p class="comment-forms__comments__name">John Doe</p>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="comment-forms__comments-arrow">
+            <img src="./next.png" height="20px" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer container shadow-style">
+      <div class="footer__box">
+        <h5>&copy; Prawa autorskie</h5>
+        <div>
+          <p>
+            Lorem Ipsum jest powszechnie uważane za tekst należący do domeny
+            publicznej, co oznacza, że nie podlega ochronie praw autorskich.
+            Możesz go swobodnie używać w dowolnym celu, bez konieczności
+            uzyskiwania zgody lub uiszczania opłat.
+          </p>
+        </div>
+        <h5>Ograniczenia</h5>
+        <div>
+          <p>
+            Chociaż Lorem Ipsum jest domeną publiczną, istnieją pewne
+            ograniczenia w jego użyciu. Nie możesz używać go w sposób, który
+            sugeruje, że jest on Twoim autorstwem lub wprowadza w błąd co do
+            jego pochodzenia.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
