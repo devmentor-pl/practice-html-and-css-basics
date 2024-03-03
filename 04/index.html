@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="menu">
+            <li class="menu__item">
+                <a class="nav__link" href="#">HOME</a>
+            </li>
+            <li class="menu__item menu__dropdown">
+                <a class="menu__link" href="#">ITEMS</a>
+                <ul class="dropdown">
+                    <li class="dropdown__item">
+                        <a class="dropdown__link" href="#">Item 1</a>
+                    </li>
+                    <li class="dropdown__item dropdown__item--dropdown">
+                        <a class="dropdown__link" href="#">Item 2</a>
+                        <ul class="dropdown-right">
+                            <li class="dropdown-right__item">
+                                <a class="dropdown-right__link" href="#">Item 2.1</a>
+                            </li>
+                            <li class="dropdown-right__item">
+                                <a class="dropdown-right__link" href="#">Item 2.2</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu__item"><a href="#">SETTINGS</a></li>
+            <li class="menu__item"><a href="#">CONTACT</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>
