@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'source_sans';
+    src: url('./../fonts/sourcesanspro-regular-webfont.woff2') format('woff2'),
+         url('./../fonts/sourcesanspro-regular-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'source_sans';
+    src: url('./../fonts/sourcesanspro-it-webfont.woff2') format('woff2'),
+         url('./../fonts/sourcesanspro-it-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'source_sans';
+    src: url('./../fonts/sourcesanspro-bold-webfont.woff2') format('woff2'),
+         url('./../fonts/sourcesanspro-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+
+.parent {
+    width: 600px;
+    padding: 20px;
+    border: 1px solid green;
+}
+
+.parent--inline-block .child {
+    display: inline-block;
+}
+
+.parent--float::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.parent--float .child {
+    float: left;
+}
+
+.parent--flexbox {
+    display: flex;
+}
+
+.child {
+    border: 1px solid red;
+    font-family: 'source_sans';
+}
+
+.child--first,
+.child--middle {
+    width: calc(30% - 10px);
+    margin-right: 10px;
+}
+
+.child--last {
+    width: 40%;
+}
+
+
+.child--first {
+    font-weight: normal;
+
+}
+
+.child--middle {
+    font-weight: bold;
+}
+
+.child--last {
+    font-style: italic;
+}
