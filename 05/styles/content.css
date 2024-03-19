@@ -1,0 +1,45 @@
+.content__container {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+        
+}
+.content__article {
+    margin-left: 0%;
+    margin-right: 1%;
+    min-height: 250px;
+    width: 50%;
+    background-color: orange;
+}
+.content__ads {
+    margin-left: 1%;
+    margin-right: 0%;
+    min-height: 240px;
+    width: 50%;
+    background-color: orange;
+}
+/* tutaj chciałem zrobić jak na przykładzie, że ostatni pojemnik jest mniejszy i równo od góry i dołu
+oddalony. Wychodziło mi tak jak zostało ostatecznie, tj. pojemnik mniejszy ale odsuwa się tylko od dolnej krawędzi. 
+próbowałem */
+.content__container2 {
+
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-evenly;
+}
+.content__section1 {
+    width: 33%;
+    min-height: 55px;
+    background-color: orange;
+}
+.content__section2 {
+    width: 33%;
+    min-height: 55px;
+    background-color: orange;
+    
+}
+.content__section3 {
+    width: 33%;
+    background-color: orange;
+    
+}
