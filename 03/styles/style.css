@@ -1,6 +1,46 @@
+@font-face {
+    font-family: 'source_sans';
+    src: url('./../fonts/fs/sourcesanspro-bold-webfont.woff2') format('woff2'),
+         url('./../fonts/fs/sourcesanspro-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'source_sans';
+    src: url('./../fonts/fs/sourcesanspro-regular-webfont.woff2') format('woff2'),
+         url('./../fonts/fs/sourcesanspro-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'source_sans';
+    src: url('./../fonts/fs/sourcesanspro-it-webfont.woff2') format('woff2'),
+         url('./../fonts/fs/sourcesanspro-it-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
 .parent {
     width: 600px;
     padding: 20%;
+    font-family: source_sans;
+}
+
+.parent--inline-block {
+
+}
+
+.parent--float {
+    font-weight: bold;
+}
+
+.parent--flexbox {
+    font-style: italic;
 }
 
 .parent--inline-block .child {
