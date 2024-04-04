@@ -1,0 +1,41 @@
+/* * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+} */
+
+body {
+	background-color: #333;
+	font-family: "Roboto", sans-serif;
+}
+.parent {
+	width: 600px;
+	padding: 20px;
+}
+.parent--inline-block {
+	display: flex;
+}
+.parent--float {
+	display: flex;
+}
+.parent--flexbox {
+	display: flex;
+}
+.child {
+	display: inline-block;
+}
+.child--first,
+.child--middle {
+	width: 30%;
+	margin-right: 10px;
+}
+.child--first {
+	font-weight: normal;
+}
+.child--middle {
+	font-weight: bold;
+}
+.child--last {
+	width: 40%;
+	font-style: italic;
+}
