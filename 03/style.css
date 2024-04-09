@@ -12,11 +12,11 @@ body {
 	width: 600px;
 	padding: 20px;
 }
-.parent--inline-block {
-	display: flex;
+.parent--inline-block .child {
+	display: inline-block;
 }
-.parent--float {
-	display: flex;
+.parent--float .child {
+	float: left;
 }
 .parent--flexbox {
 	display: flex;
@@ -26,11 +26,12 @@ body {
 }
 .child--first,
 .child--middle {
-	width: 30%;
+	width: calc(30% - 10px);
 	margin-right: 10px;
 }
 .child--first {
 	font-weight: normal;
+	
 }
 .child--middle {
 	font-weight: bold;
