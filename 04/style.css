@@ -40,7 +40,7 @@ body {
 	left: 170px;
 	width: 300px;
 }
-.nav__list--under {
+.nav__under--list {
 	width: 300px;
 	color: white;
 	background-color: #333;
@@ -50,7 +50,7 @@ body {
 	text-transform: capitalize;
 }
 
-.nav__list--under a:hover {
+.nav__under--list a:hover {
 	color: rgb(14, 144, 180);
 }
 .arrow-down {
@@ -76,11 +76,11 @@ body {
 	background-color: #333;
 	display: none;
 }
-.nav__list--side {
+.nav__side--list {
 	padding: 10px 20px;
 	font-size: 1.2rem;
 	text-transform: capitalize;
 }
-.nav__list--side:hover {
+.nav__side--list:hover {
 	color: rgb(14, 144, 180);
 }
