@@ -7,6 +7,98 @@
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
 </head>
 <body>
-    
+    <header class="header__container">
+        <figure class="header__logo">
+            <img class="header__logo--img" src="./img/logo.jpg" alt="Company logo image">
+        </figure>
+        <nav class="nav__container">
+            <ul class="nav__content">
+                <li class="nav__item">
+                    <a href="#menu" class="nav__link">Menu</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#shop" class="nav__link">Shop</a>
+                    <ul class="nav__shop-dropdown">
+                        <li class="nav__shop-dropdown--item">
+                            <a href="#tshirt">Tshirts</a>
+                        </li>
+                        <li class="nav__shop-dropdown--item">
+                            <a href="#skirt">Skirts</a>
+                        </li>
+                        <li class="nav__shop-dropdown--item">
+                            <a href="#shoes">Shoes</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav__item">
+                    <a href="#about" class="nav__link">About</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main__container">
+        <article class="article__container">
+
+            <h1 class="article__header">This is awesome header</h1>
+
+            <p class="article__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ab voluptates saepe ea consequuntur dolore delectus iste autem laborum soluta corporis tempora, accusamus ad unde iure nobis praesentium quae laudantium.</p>
+            <p class="article__content article__content--date"><b>Publication date: </b>11.04.2024</p>
+            <p class="article__content article__content--author"><b>Author: </b>Jan Kowalski</p>
+
+            <figure class="article__illustration">
+                <img class="article__illustration--img" src="./img/image" alt="Illustration image">
+                <figcaption class="article__illustration--fcap">This is an image of something interesting</figcaption>
+            </figure>
+
+            <table class="article__table-container">
+                <tr class="article__table--item-name">
+                    <th>Tshit</th>
+                    <th>Skirt</th>
+                    <th>Shoes</th>
+                    <th>Socks</th>
+                </tr>
+                <tr class="article__table--item-price">
+                    <td>49.99$</td>
+                    <td>29.99$</td>
+                    <td>84.99$</td>
+                    <td>4.99$</td>
+                </tr>
+            </table>
+
+        </article>
+
+        <form class="form__container" action="">
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="Type your username">
+
+            <label for="comment">Comment:</label>
+            <textarea name="" id="comment" cols="30" rows="10"></textarea>
+
+            <input type="submit" value="SEND">
+        </form>
+
+        <section class="testimonials__container">
+            <div class="testimonials__user1">
+                <p class="testimonial__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati fuga molestias doloremque, maxime nisi, officia quibusdam, eum blanditiis voluptatem sequi voluptas tempora perferendis vel. Doloremque dignissimos veritatis temporibus repellat officiis?</p>
+                <p class="testimonials__para--author"><b>Posted by: </b>Krzysio Zbysio</p>
+                <p class="testimonials__para--date"><b>Date: </b>21.03.2021</p>
+            </div>
+            <div class="testimonials__user2">
+                <p class="testimonial__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati fuga molestias doloremque, maxime nisi, officia quibusdam, eum blanditiis voluptatem sequi voluptas tempora perferendis vel. Doloremque dignissimos veritatis temporibus repellat officiis?</p>
+                <p class="testimonials__para--author"><b>Posted by: </b>Jacek Placek</p>
+                <p class="testimonials__para--date"><b>Date: </b>14.08.2020</p>
+            </div>
+            <div class="testimonials__user3">
+                <p class="testimonial__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati fuga molestias doloremque, maxime nisi, officia quibusdam, eum blanditiis voluptatem sequi voluptas tempora perferendis vel. Doloremque dignissimos veritatis temporibus repellat officiis?</p>
+                <p class="testimonials__para--author"><b>Posted by: </b>Barbara Kowalska</p>
+                <p class="testimonials__para--date"><b>Date: </b>06.11.2019</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer__container">
+        <p class="footer__copyrights">Copyright &copy2024 Designed by BartekB94</p>
+    </footer>
 </body>
 </html>
