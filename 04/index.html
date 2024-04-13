@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>3 levels menu</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a class="menu__main" href="#">HOME</a></li>
+                <li class=""><a class="menu__main" href="#">ITEMS <span class="arrow-down">></span></a>
+                    <ul class="menu__dropdown-first">
+                        <li><a href="#">Item 1</a></li>
+                        <li><a href="#">Item 2 <span class="arrow-right">></span></a>
+                            <ul class="menu__dropdown-second">
+                                <li><a href="#">Item 2.1</a></li>
+                                <li><a href="#">Item 2.2</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a class="menu__main" href="#">SETTINGS</a></li>
+                <li><a class="menu__main" href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
