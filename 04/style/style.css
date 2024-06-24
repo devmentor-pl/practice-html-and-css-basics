@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #fff;
+    padding: 10px 0;
+}
+
+.menu, .submenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu > li {
+    display: inline-block;
+    position: relative;
+    padding: 10px 20px;
+}
+
+.menu > li > a {
+    text-decoration: none;
+    color: #000;
+    padding: 10px;
+}
+
+.menu > li:hover > a {
+    border-bottom: 2px solid #00f;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+}
+
+.submenu li {
+    position: relative;
+}
+
+.submenu li a {
+    display: block;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.submenu li a:hover {
+    background-color: #555;
+}
+
+.menu > li:hover .submenu {
+    display: block;
+}
+
+.submenu .submenu {
+    left: 100%;
+    top: 0;
+}
