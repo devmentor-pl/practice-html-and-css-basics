@@ -1,0 +1,75 @@
+
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.parent {
+    width: 600px;
+    padding: 20px;
+    margin-bottom: 40px; /* Dodanie odstępu między sekcjami */
+}
+
+.child {
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.child--first {
+    width: 30%;
+    font-weight: 400;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.child--middle {
+    width: 30%;
+    font-weight: 700;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.child--last {
+    width: calc(40% - 20px);
+    font-style: italic;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Inline-block */
+.parent--inline-block .child {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+}
+
+.parent--inline-block .child--last {
+    margin-right: 0;
+}
+
+/* Float */
+.parent--float .child {
+    float: left;
+    margin-right: 10px;
+}
+
+.parent--float .child--last {
+    margin-right: 0;
+}
+
+.parent--float::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Flexbox */
+.parent--flexbox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.parent--flexbox .child {
+    margin-right: 10px;
+}
+
+.parent--flexbox .child--last {
+    margin-right: 0;
+}
