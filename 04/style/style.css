@@ -53,7 +53,7 @@ header {
     background-color: #555;
 }
 
-.menu > li:hover .submenu {
+.menu  li:hover > .submenu {
     display: block;
 }
 

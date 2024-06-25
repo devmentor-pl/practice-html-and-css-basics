@@ -28,7 +28,7 @@ body {
 }
 
 .child--last {
-    width: 40%;
+    width: calc(40% - 20px);
     font-style: italic;
     font-family: 'Source Sans Pro', sans-serif;
 }
