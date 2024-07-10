@@ -1,0 +1,113 @@
+/* COMMON */
+@font-face {
+    font-family: 'source_sans';
+    src: url('./../fonts/fs/sourcesanspro-regular-webfont.woff2') format('woff2'),
+        url('./../fonts/fs/sourcesanspro-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'source_sans';
+    src: url('./../fonts/fs/sourcesanspro-bold-webfont.woff2') format('woff2'),
+        url('./../fonts/fs/sourcesanspro-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'source_sans';
+    src: url('./../fonts/fs/sourcesanspro-it-webfont.woff2') format('woff2'),
+        url('./../fonts/fs/sourcesanspro-it-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+.parent {
+    width: 600px;
+    padding: 20px;
+    font-family: 'source_sans'
+}
+
+.child {
+    background-color: rgb(171, 222, 235);
+    min-height: 120px;
+
+}
+
+.child--first, .child--middle {
+    width: 30%;
+    margin-right: 10px;
+    width: calc(30% - 10px);
+}
+
+.child--first {}
+
+.child--middle {
+    font-weight: bold;
+}
+
+.child--last {
+    width: 40%;
+    font-style: italic;
+}
+
+/* END OF COMMON */
+
+
+/* INLINE-BLOCK */
+.parent--inline-block {
+    font-size: 0;
+}
+
+.parent--inline-block .child {
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.parent--inline-block .child--first {}
+
+.parent--inline-block .child--middle {}
+
+.parent--inline-block .child--last {}
+
+/* END OF INLINE-BLOCK */
+
+
+
+/* FLOAT */
+.parent--float {}
+
+.parent--float::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.parent--float .child {
+    float: left;
+}
+
+.parent--float .child--middle {}
+
+.parent--float .child--last {}
+
+/* END OF FLOAT */
+
+
+
+/* FLEXBOX */
+.parent--flexbox {
+    display: flex;
+}
+
+.parent--flexbox .child {}
+
+.parent--flexbox .child--first {}
+
+.parent--flexbox .child--middle {}
+
+.parent--flexbox .child--last {}
+
+/* END OF FLEXBOX */
