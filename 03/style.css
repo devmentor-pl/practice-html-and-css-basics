@@ -1,0 +1,67 @@
+
+
+.parent {
+    width: 600px;
+    padding: 20px;
+}
+
+.child {
+    margin-right: 10px;
+}
+
+.child--first {
+    width: calc(30% - 20px);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: normal;
+}
+
+.child--middle {
+    width: calc(30% - 20px);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+}
+
+.child--last {
+    width: 40%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: Italic;
+}
+
+
+.parent--inline-block .child {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.parent--inline-block .child:last-child {
+    margin-right: 0;
+}
+
+
+.parent--float .child {
+    float: left;
+}
+
+.parent--float::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.parent--float .child:last-child {
+    margin-right: 0;
+}
+
+.parent--flexbox {
+    display: flex;
+}
+
+.parent--flexbox .child:last-child {
+    margin-right: 0;
+}
+
+
+@font-face {
+    font-family: ;
+    src: url();
+}
