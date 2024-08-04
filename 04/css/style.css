@@ -10,6 +10,7 @@ body {
 	background-color: var(--bg-color);
 	font-family: "Source Sans PRO";
 }
+
 .nav,
 .nav__item {
 	display: flex;
