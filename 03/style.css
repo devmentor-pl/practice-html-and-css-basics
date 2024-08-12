@@ -41,11 +41,11 @@ parent--inline-block {
 }
 
 .child--first {
-    font-weight: normal;
+    font-style: normal;
 }
 
 .child--middle {
-    font-weight: bold;
+    font-style: bold;
 }
 .child--last {
 width: 40%;
