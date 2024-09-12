@@ -1,0 +1,100 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/* w tej wizualizacji byla mozliwosc stowrzenia wiekszej ilosci class dla wspolnych elementow, chociazby klasa two z one pokrywala sie w wiekszym stopniu i tez moznabyloby skrocic troche kodu, ale w prawdziwych projektach raczej nie zdarzaja sie tak typowo lustrzane odbicia jesli chodzi o sekcje wiec juz na sile nie chcialem tego skracac, ale zdaje sobie sprawe, ze mozna i sie da */
+body {
+	/* adding margin for body, to better see outlines */
+	margin: 5px;
+	background-color: bisque;
+}
+.section-margin {
+	margin-top: 10px;
+}
+.wrapper {
+	margin: 0 auto;
+	max-width: 1000px;
+	height: 100%;
+}
+.section {
+	height: 38vh;
+	padding: 10px 0;
+	outline: 3px solid green;
+}
+/* header section */
+header {
+	padding: 5px;
+	height: 10vh;
+	outline: 3px solid green;
+}
+.nav {
+	display: flex;
+	justify-content: space-between;
+	/* adding padding for moving outlines from themselves */
+	padding: 5px 0;
+	height: 100%;
+	outline: 3px solid blue;
+}
+.nav__left,
+.nav__right {
+	height: 100%;
+	background-color: gold;
+}
+.nav__left {
+	width: 25%;
+}
+.nav__right {
+	width: 40%;
+}
+
+/* section one */
+.one {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 0;
+	height: 100%;
+	outline: 3px solid blue;
+}
+.one__left,
+.one__right {
+	width: calc(50% - 5px);
+	height: 100%;
+	background-color: gold;
+}
+
+/* section two */
+.two {
+	display: flex;
+	justify-content: space-evenly;
+	padding: 10px 0;
+	height: 100%;
+	outline: 3px solid blue;
+}
+
+.two__middle,
+.two__first,
+.two__last {
+	height: 100%;
+	width: 32%;
+	background-color: gold;
+}
+
+/* footer */
+footer {
+	height: 10vh;
+	outline: 3px solid green;
+	padding: 5px 0;
+}
+.footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	outline: 3px solid blue;
+}
+.footer__div {
+	height: 80%;
+	width: 20%;
+	background-color: gold;
+}
