@@ -4,54 +4,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Rykowisko jeleni</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <title>Kurs maturalny z matematyki</title>
 </head>
 <body>
-    <header>
-        <h1>Co we wrześniu ryczy?</h1>
-        <div> 
-            <img src="/logo.jpg" alt="Rykowisko">
-        </div>
-<nav>
-    <ul class="menu">
-        <li><a href="#">Czym jest rykowisko?</a></li>
-        <li>
-            <a href="#">Informacje praktyczne</a>
-            <ul class="submenu">
-                <li><a href="#">Kiedy udać się do lasu?</a></li>
-                <li><a href="#">Jak się ubrać?</a></li>
-                <li><a href="#">Na co uważać?</a></li>
+    <div id="nav">
+        <header>
+            <img src="/my solutions/2/logo.jpg" alt="200">
+            <ul>
+                <li> <a href="#">O mnie</a> </li>
+                <li> <a href="#">rodzaje kursów</a> </li>
+                    <ul>
+                        <li> <a href="#">podstawowy</a>  </li>
+                        <li> <a href="#">rozszerzony</a></li>
+                    </ul>
+                <li> <a href="#">cennik</a> </li>
+                <li> <a href="#">recenzje</a> </li>
+                <li> <a href="#">formularz kontatkowy</a> </li>
             </ul>
-        </li>
-        <li><a href="#">O mnie</a></li>
-    </ul>  
+        </header>
+    </div>
 
-</nav>   
-    </header>
-<main>
-    <article>
-        <h2>Zaczynamy rykowisko 2024</h2>
-        <p>W ostatni weekend sierpnia w województwie Małopolskim w Powiecie Chrzanowskim zaczęło się rykowisko jeleni. Codziennie będę obserwował zachowania byków i łań, a następnie przedstawiał relacje na tej stronie.</p>
-        <img src="/red deer1.jpg" alt="jeleń byk">
-        <br>
-        <table class="table">
-            <thead> 
-           Liczba byków w libiąskim lesie
-            </thead>
-            <tbody>
-                <th>Liczba byków</th>
-                <th>Liczba łań</th>
-                <tr>
-                    <td>26</td>
-                    <td>38</td>
-                </tr>
-            </tbody>   
-        </table>
-        <time datetime="2024=09-02">2 września 2024</time> 
-        <p>Piotr Palka</p>
-    </article>
-</main>
-    
+    <div id="hero">
+        <article>
+            <h2>O mnie</h2>
+            <img src="/my solutions/2/JA" alt="200">
+                <p>Nauczaniem matematyki zajmuje się 8 lat. W tym czasie udało mi się skutecznie pomóc kilkuset uczniom w zdaniu egzaminów – głównie szkoły średniej, a także ósmoklasistom (kiedyś absolwentom gimnazjów). Mam kilka autorskich planów przygotowania do matury podstawowej i rozszerzonej (w zależności od czasu i zaangażowania ucznia). Pomagam również w zrozumieniu bieżącego materiału z lekcji lub wykładu.</p>
+                <table border="1">
+                    <caption>Cennik</caption>
+                    <colgroup>
+                        <col span="3" style="background: wheat;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">Rodzaj lekcji</th>
+                            <th scope="col">Czas trwania</th>
+                            <th scope="col">Cena</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Online</td>
+                            <td>50 minut</td>
+                            <td>75 zł</td>
+                        </tr>
+                        <tr>
+                            <td>Stacjonarna</td>
+                            <td>50 minut</td>
+                            <td>75 zł</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br/>
+                <footer>
+                    <time datetime="2.09.2024">2 września 2024</time>
+                    <p>Autor: Piotr Palka</p>
+                </footer>
+        </article>
+    </div>
+    <div id="form">
+        <form>
+            <h3>Formularz kontaktowy</h3>
+            <div>
+                <label>Imię
+                    <input name="First name"/>
+                </label>
+            </div>
+            <div>
+                <label>Nazwisko
+                    <input name="Last name"/>
+                </label>
+            </div>
+            <div>
+                <label>Treść
+                    <input type="text" size="50"> 
+                </label>
+            </div>
+            <div>
+                <input type="submit"/>
+            </div>
+        </form>
+    </div>
+    <div id="testimonials">
+        <div>
+            <h3>Komentarze uczniów</h3>
+            <p>
+                <em>
+                    Bardzo polecam korepetycje. Konkretna pomoc i miłe podejście. Wynik z matury bardzo satysfakcjonujący!
+                </em>
+            </p>
+            <p>Wiktor</p>
+            <time datetime="3.07.2023">3 lipca 2023</time>
+            <hr/>
+            <p>
+                <em>
+                    Świetne podejście do ucznia, oraz ogromne umiejętności przekazywania wiedzy. Korepetycje zawsze przebiegały w miłej atmosferze, bez presji i stresu. Z czystym sumieniem mogę polecić Pana Piotra, dzięki jego korepetycjom wynik matury przeszedł moje najśmielsze oczekiwania!
+                </em>
+            </p>
+            <p>Jagoda</p>
+            <time datetime="2.07.2024">2 lipca 2024</time>
+        </div>
+    </div>
+    <div id="contact"></div>
+    <footer>
+        <p> &copy; Matematyka Twoja Przyszłość. Wszelkie prawa zastrzeżone</p>
+    </footer>
 </body>
 </html>
