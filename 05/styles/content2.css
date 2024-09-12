@@ -1,0 +1,10 @@
+.content2__container {
+    display: flex;
+    justify-content: space-evenly;
+    height: 200px;
+
+}
+
+.content2__column1, .content2__column2, .content2_column3 {
+    width: 325px;
+}
