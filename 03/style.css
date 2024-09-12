@@ -1,0 +1,39 @@
+.parent {
+	width: 600px;
+	padding: 20px;
+}
+
+.parent--inline-block .child {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.parent--float::after{
+    content:'';
+    clear: both;
+    display:block;
+}
+
+.parent--float .child {
+	float: left;
+}
+
+.parent--flexbox {
+	display: flex;
+    justify-content: space-between;
+}
+
+.child--first {
+    width: calc(30% - 20px);
+    padding: 10px;
+}
+
+.child--middle{
+    width: calc(30% - 20px);
+    padding: 10px;
+}
+
+.child--last{
+    width:calc(40% - 20px);
+    padding:10px;
+}
