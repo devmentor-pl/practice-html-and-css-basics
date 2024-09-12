@@ -5,8 +5,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    
+    <header>
+        <img src="./img/logo.jpg" alt="logo">
+        <nav id="nav">
+            <ul>
+                <li><a href="./#main">Strona główna</a></li>
+                <li><a href="./#comments">Komentarze</a>
+                    <ul>
+                        <li><a href="./#comment-1">Komentarz 1</a></li>
+                        <li><a href="./#comment-2">Komentarz 2</a></li>
+                        <li><a href="./#comment-3">Komentarz 3</a></li>
+                        
+                    </ul>
+                </li>
+                <li><a href="./#maker">Twórca</a></li>
+        </nav>
+    </header>
+    <main id="main">
+        <article>
+            <h2>Artykuł 1</h2>
+
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat perspiciatis, autem veritatis adipisci, inventore modi aspernatur excepturi et aliquid quaerat qui sit porro iusto quis minima illum magni consequuntur temporibus.
+            Error esse aut iusto quibusdam accusantium itaque iure, asperiores totam atque aliquid beatae nobis illum, veniam illo non reprehenderit eveniet facere, cupiditate blanditiis vero magnam porro? Exercitationem molestiae officia nihil.
+            Deserunt, odio. Odit architecto possimus ea magnam in ipsam autem, vitae ullam, repudiandae quae, et obcaecati officiis minima itaque adipisci consequuntur iste corporis odio? Voluptatibus doloribus sapiente asperiores ad et.
+            Dolores vel odio ad quasi vero minus commodi quibusdam mollitia porro velit quis tempora voluptates neque sapiente alias at, rerum pariatur ipsa aliquam, voluptas ratione. Labore maxime animi consequuntur sequi.
+            Velit facere recusandae vel. Quisquam deserunt quasi, quod, dolore consequuntur velit, perspiciatis cupiditate error deleniti distinctio totam quaerat vitae amet voluptatibus voluptate unde corrupti eum expedita. Voluptatum nemo suscipit assumenda?</p>
+            
+            <h5>
+                <time itemprop="datePublished" datetime="2015-11-30T12:00:00Z">Nov 30th 2015 12:00am</time>
+            </h5>
+            <h4>Jan Kowalski</h4>
+            <figure>
+                <img src="./img/image.jpg" alt="beach">
+                <figcaption>Plaża</figcaption>
+            </figure>
+            
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nagłówek 1</th>
+                        <th>Nagłówek 2</th>
+                        <th>Nagłówek 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lato</td>
+                        <td>Podróż</td>
+                        <td>Wypoczynek</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+        <section>
+            <h3>Wpisz swój komenatrz</h3>
+            <form action="">
+                <div>
+                    <label for="name">Imię</label>
+                    <input type="text" name="name" id="name" placeholder="Imię">
+                </div>
+                <div>
+                    <label for="nazwisko">Nazwisko</label>
+                    <input type="text" name="nazwisko" id="nazwisko" placeholder="Nazwisko">
+                </div>
+                <div>
+                    <label for="msg">Twój komenatrz</label>
+                    <textarea name="content" id="msg" cols="30" rows="10" placeholder="Twój komentarz tutaj"></textarea>
+                </div>
+                
+                <input type="submit" value="Wyślij">
+            </form>
+        </section>
+        <div>
+            <section id="comments">
+                <h2>Komentarze</h2>
+                <div id="comment-1">
+                    <h3>Komentarz 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod explicabo harum quam, totam reprehenderit cum error numquam ipsam ut molestiae quibusdam sunt alias aliquam earum vel suscipit soluta cumque inventore?</p>
+                    <h5>
+                        <time itemprop="datePublished" datetime="2016-11-30T12:30:00Z">Nov 30th 2016 12:30</time>
+                    </h5>
+                    <h4>Ola Kotowicz</h4>
+                </div>
+                <div id="comment-2">
+                    <h3>Komentarz 2</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod explicabo harum quam, totam reprehenderit cum error numquam ipsam ut molestiae quibusdam sunt alias aliquam earum vel suscipit soluta cumque inventore?</p>
+                    <h5>
+                        <time itemprop="datePublished" datetime="2017-05-30T20:00:00Z">May 30th 2017 20:00</time>
+                    </h5>
+                    <h4>Adam Jastrząb</h4>
+                </div>
+                <div id="comment-3">
+                    <h3 >Komentarz 3</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod explicabo harum quam, totam reprehenderit cum error numquam ipsam ut molestiae quibusdam sunt alias aliquam earum vel suscipit soluta cumque inventore?</p>
+                    <h5>
+                        <time itemprop="datePublished" datetime="2015-11-30T12:00:00Z">Nov 30th 2015 12:00am</time>
+                    </h5>
+                    <h4>Zygfryd XYX</h4>
+                </div>
+            </section>
+        </div>
+        
+    </main>
+    <footer id="maker">
+        <h5>Copyright &copy Maciej K</h5>
+    </footer>
 </body>
 </html>
