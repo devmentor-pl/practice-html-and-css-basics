@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: grey;
+}
+
+:root {
+    --green: #008000;
+    --blue: #0000ff;
+    --yellow: #FFC919;
+    --white: #ffffff;
+  }
+
+  .section-a {
+    padding-top: 4px;
+    padding-bottom: 7px;
+  }
+
+  .section-b {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+/* ##### START STYLING HEADER SECTION ##### */
+
+.header, .section-a, .section-b, footer {
+    width: 100%;
+    border: 5px solid var(--green);
+    margin-bottom: 10px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    border: 5px solid var(--blue);
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.container-header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4px;
+    padding-bottom: 8px;
+}
+
+.header__logo {
+    width: 225px;
+    height: 80px;
+    background-color: var(--yellow);
+}
+
+.menu {
+    background-color: var(--yellow);
+    display: flex;
+}
+
+.menu__list {
+    width: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.menu__item {
+    padding: 20px;
+}
+
+.menu__link {
+    text-decoration: none;
+    color: var(--white);
+}
+
+/* ##### END STYLING HEADER SECTION ##### */
+
+/* ##### START STYLING MAIN SECTION ##### */
+
+.articles {
+    display: flex;
+    justify-content: space-between;
+}
+
+.article {
+    width: calc(50% - 5px);
+    height: 200px;
+    background-color: var(--yellow);
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* SECTION B */
+
+.comments {
+    display: flex;
+    justify-content: space-between;
+}
+
+.comment {
+    width: 33.33%;
+    height: 200px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    margin-right: 12px;
+    background-color: var(--yellow);
+}
+
+.box1 {
+    margin-left: 12px;
+}
+
+/* ##### END STYLING MAIN SECTION ##### */
+
+/* ##### START STYLING FOOTER SECTION ##### */
+
+.footer {
+    min-height: 100px;
+    margin-bottom: 5px;
+}
+
+.container-footer {
+    min-height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-text {
+    background-color: var(--yellow);
+    color: var(--white);
+    width: 125px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ##### END STYLING FOOTER SECTION ##### */
+
+
+
+

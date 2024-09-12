@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'robotoregular';
+    src: url('Roboto-Regular-webfont.eot');
+    src: url('Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Roboto-Regular-webfont.woff2') format('woff2'),
+         url('Roboto-Regular-webfont.woff') format('woff'),
+         url('Roboto-Regular-webfont.ttf') format('truetype'),
+         url('Roboto-Regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.parent {
+    width: 600px;
+    padding:20px;
+}
+.parent
+.child--first,
+.child--middle {
+    width: calc(30% - 10px);
+    margin-right: 10px;
+}
+
+.parent .child--last {
+    width: calc(40% - 10px);
+    font-family: "robotoregular";
+    font-weight: normal;
+    font-style: italic;
+}
+
+.parent .child--middle {
+    font-family: "robotoregular";
+    font-weight: bold;
+    font-style: normal;
+}
+
+.parent .child--first {
+    font-family: "robotoregular";
+    font-weight: normal;
+    font-style: normal;
+}
+
+.parent--inline-block .child {
+    display: inline-block;
+}
+
+.parent--float .child {
+    float: left;
+}
+
+.parent--float::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.parent--flexbox {
+    display: flex;
+}
