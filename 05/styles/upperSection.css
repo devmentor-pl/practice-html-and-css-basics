@@ -1,0 +1,19 @@
+.content__container {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content__article_upper_left {
+    background-color: #FFCA18;
+    min-height: 300px;
+    width: 49%;
+    margin-left: 0;
+}
+
+.content__article_upper_right {
+    background-color: #FFCA18;
+    min-height: 300px;
+    width: 49%;
+    margin-right: 0;
+}
