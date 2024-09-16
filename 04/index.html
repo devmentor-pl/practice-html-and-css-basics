@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DropDown Menu</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <ul class="nav__list menu">
+        <li class="menu__item">
+          <a class="menu__link" href="#">home</a>
+        </li>
+        <li class="menu__item menu__downitems menu__arrow">
+          <a class="menu__link" href="#"
+            >items<span class="arrow-down">></span></a
+          >
+          <ul class="menu__down">
+            <li class="menu__downitem">
+              <a class="menu__down-link" href="#">Item 1</a>
+            </li>
+            <li class="menu__downitem menu__right">
+              <a class="menu__down-link" href="#"
+                >Item 2<span class="arrow-right">></span></a
+              >
+              <ul class="menu__down-right">
+                <li class="menu__down-right-item">
+                  <a class="menu__down-right-link" href="#">Item 2.1</a>
+                </li>
+                <li class="menu__down-right-item">
+                  <a class="menu__down-right-link" href="#">Item 2.2</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">settings</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">contact</a>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>
