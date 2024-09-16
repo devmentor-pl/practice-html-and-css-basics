@@ -1,12 +1,148 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>devmentor.pl - HTML & CSS BASICS - #01</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>devmentor.pl - HTML & CSS BASICS - #01</title>
 </head>
+
 <body>
-    
+  <header>
+    <a href="/">
+      <img src="./logo.png" alt="logo">
+    </a>
+    <nav>
+      <ul>
+        <li>
+          <a href="/">HOME</a>
+        </li>
+        <li>
+          <a href="/recipeslist">WIĘCEJ PRZEPISÓW</a>
+        </li>
+        <li>
+          <a href="/contact">KONTAKT</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <article>
+      <h1>Obłędnie czekoladowe brownie!</h1>
+      <div>
+        <img src="./brownie.jpg" alt="brownie">
+      </div>
+      <h2>Lista składinków</h2>
+      <p>
+      <table>
+        <colgroup>
+          <col span="2" style="background: rgb(104, 66, 9);">
+          <col style="background: rgb(150, 6, 25);">
+        </colgroup>
+        <thead>
+          <tr>
+            <th scope="col">Składnik</th>
+            <th scope="col">Jednostka</th>
+            <th scope="col">Ilość</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>masło</td>
+            <td>gram</td>
+            <td>200</td>
+          </tr>
+          <tr>
+            <td>czekolada min 70%</td>
+            <td>gram</td>
+            <td>200</td>
+          </tr>
+          <tr>
+            <td>sól</td>
+            <td>szczypta</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>cukier</td>
+            <td>gram</td>
+            <td>50</td>
+          </tr>
+          <tr>
+            <td>jajka</td>
+            <td>sztuk</td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <td>mąka</td>
+            <td>gram</td>
+            <td>140</td>
+          </tr>
+          <tr>
+            <td>kakao</td>
+            <td>gram</td>
+            <td>100</td>
+          </tr>
+        </tbody>
+      </table>
+
+      </p>
+      <h2>Wykonanie:</h2>
+      <p>
+        Czekoladę i masło wrzucić do naczynia miksującego, ustawić temperaturę 50&deg; C, obroty w prawo poziom 1, 15
+        minut.
+        Pozostałe kroki wykonywać przy temperaturze 0&deg; C.
+        Dodać cukier ustawić obroty na mocy 1 na 3 minuty.
+        Dodać jajka ustawić obroty na mocy 1 na 1 minutę.
+        Dodać mąkę i kakao, ustywaić na tryb miękkie ciasto na 2 minuty.
+        Piec 20-25 minut w 175&deg; C.
+      </p>
+      <footer>
+        <p>Autor: Magdalena Grzesik</p>
+        <p>Data publikacji: <time datetime="2024-02-06">6 lutego 2024</time></p>
+      </footer>
+    </article>
+    <form>
+      <div>
+        <label>Nazwa
+          <input name="name">
+        </label>
+      </div>
+      <div>
+        <label>Komentarz
+          <input name="comment">
+        </label>
+      </div>
+      <div><input type="submit" /></div>
+    </form>
+    <section>
+      <h2>Komentarze:</h2>
+      <ul>
+        <li>
+          <p>Basia:</p>
+          <p>Bardzo czekoladowe!</p>
+          <p>Data: <time datetime="2024-02-06">6 lutego 2024</time></p>
+        </li>
+        <li>
+          <p>Adam:</p>
+          <p>Super pyszne</p>
+          <p>Data: <time datetime="2024-02-06">6 lutego 2024</time></p>
+        </li>
+        <li>
+          <p>Jola:</p>
+          <p>Idealne dla fanów gorzkiej czekolady</p>
+          <p>Data: <time datetime="2024-02-06">6 lutego 2024</time></p>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <div>&copy; Magdalena Grzesik</div>
+  </footer>
+
 </body>
+
 </html>
