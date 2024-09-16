@@ -1,0 +1,21 @@
+.header {
+    margin: 0 auto;
+}
+
+.header__hero {
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.navigation__list {
+    column-gap: 20px;
+    display: flex;
+}
+
+.navigation__list > li a {
+    color: inherit;
+    font-weight: 500;
+    text-decoration: none;
+}
