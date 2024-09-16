@@ -1,12 +1,146 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <meta
+        http-equiv="X-UA-Compatible"
+        content="ie=edge"
+    >
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
+    <link
+        rel="stylesheet"
+        href="./styles/base.css"
+    >
 </head>
+
 <body>
-    
+    <header>
+        <h1><img
+                src="./logo.png"
+                alt="Company logo"
+                width="400"
+            ></h1>
+        <nav>
+            <h2>Menu</h2>
+            <ul>
+                <li>Strona główna</li>
+                <li>Oferta</li>
+                <ul>
+                    <li>Cennik</li>
+                    <li>Oferty sezonowe</li>
+                </ul>
+                <li>Projekty</li>
+                <ul>
+                    <li>Strony WWW</li>
+                    <li>Aplikacje web</li>
+                    <li>Aplikacje mobile</li>
+                </ul>
+                <li>Kontakt</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2>Top 10 najnowszych trendów web designu</h2>
+            <p style="color: grey"><span style="color:black">Data publikacji: </span><time>2023-01-24</time>
+            </p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam incidunt laborum iusto repellendus cum.
+                Repellendus voluptatibus nihil sapiente quis ipsa. Illum reprehenderit beatae repudiandae assumenda ut
+                minima doloribus explicabo aliquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint omnis
+                atque sit reprehenderit reiciendis, cum quas, quaerat pariatur praesentium mollitia, consectetur vero
+                ducimus in eius eaque? Necessitatibus maxime adipisci laborum?</p>
+            <!-- <p>Autor: <a rel="author">John Doe</a></p> -->
+            <p style="color: grey"><span style="color:black">Autor: </span>John Doe</p>
+            <figure>
+                <img
+                    src="./web-design.png"
+                    width="600px"
+                    style="outline: 3px solid red"
+                >
+                <figcaption>Pomoc wizualna</figcaption>
+            </figure>
+            <table style="border: 1px solid grey ; margin: 20px 10px">
+                <caption>Tabela losowych liczb</caption>
+                <thead style="border: 3px solid black; background-color:aqua">
+                    <tr>
+                        <th>Styczeń</th>
+                        <th>Luty</th>
+                        <th>Marzec</th>
+                        <th>Kwiecień</th>
+                        <th>Maj</th>
+                        <th>Czerwiec</th>
+                        <th>Lipiec</th>
+                        <th>Sierpień</th>
+                        <th>Wrzesień</th>
+                        <th>Październik</th>
+                        <th>Listopad</th>
+                        <th>Grudzień</th>
+                    </tr>
+                </thead>
+                <tbody style="border:3px solid black; background-color:antiquewhite">
+                    <tr>
+                        <td>13</td>
+                        <td>45</td>
+                        <td>56</td>
+                        <td>67</td>
+                        <td>76</td>
+                        <td>43</td>
+                        <td>87</td>
+                        <td>12</td>
+                        <td>42</td>
+                        <td>34</td>
+                        <td>56</td>
+                        <td>123</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+        <section>
+            <form>
+                <h3>Zostaw komentarz:</h3>
+                <div>
+                    <label for="name">Imię
+                        <input
+                            id="name"
+                            type="text"
+                            name="name"
+                            placeholder="Imię"
+                        />
+                    </label>
+                </div>
+                <div>
+                    <label for="message">Treść</label>
+                    <textarea
+                        id="message"
+                        rows="10"
+                        cols="50"
+                        placeholder="Wiadomość"
+                    ></textarea>
+                </div>
+                <div><input
+                        type="submit"
+                        value="Dodaj komentarz"
+                    /></div>
+            </form>
+        </section>
+        <hr>
+        <h3>Komentarze:</h3>
+        <h4 style="color: grey"><span style="color:black">Anna </span>| 24.01.2023</h4>
+        <p>"Super artykuł. Polecam gorąco osobom zainteresowanym nowoczesnym web designem!"</p>
+        <h4 style="color: grey"><span style="color:black">Beata </span>| 25.01.2023</h4>
+        <p>"Artykuł raczej wtórny, trendy może były modne w zeszłym sezonie."</p>
+        <h4 style="color: grey"><span style="color:black">Piotrek </span>| 26.01.2023</h4>
+        <p>"Może być."</p>
+        <br>
+    </main>
+    <footer>
+        <div style="text-align: center;">&copy; DefaultCompany 2023</div>
+    </footer>
 </body>
+
 </html>
