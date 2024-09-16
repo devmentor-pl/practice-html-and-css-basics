@@ -1,0 +1,129 @@
+:root {
+    --all-boxes-width: 1000px;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    line-height: 200%;
+    font-family: sans-serif;
+}
+
+.wrapper {
+    width: 100%;
+    height: 99vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* ===========header==================== */
+
+.header {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+}
+
+
+.header__items {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 100%; */
+}
+
+.header__logo {
+    padding: 10px;
+    flex-basis: 200px;
+    background-color: tomato;
+    text-align: center;
+    /* flex-grow: 1;  */
+}
+
+.header__nav {
+    flex-basis: 400px;
+}
+
+.header__nav--list {
+    padding: 10px;
+    list-style-type: none;
+    background-color: rgb(216, 216, 216);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.header__nav--list--items {
+    padding: 0 10px;
+}
+
+.header__nav--list--items > a {
+    text-decoration: none;
+    color: darkolivegreen;
+}
+
+/* ============main====================== */
+
+.content {
+    flex-grow: 1;
+    max-width: var(--all-boxes-width);
+    display: flex;
+    padding: 10px 0;
+}
+
+.content__items {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.content__items--left {
+    padding: 1em;
+    background-color: rgb(245, 209, 90);
+}
+
+.content__items--right {
+    padding: 1em;
+    background-color: rgb(110, 214, 240);
+}
+
+/* =========articles===================== */
+
+.articles {
+    padding: 10px 0;
+    flex-grow: 1;
+    font-size: .9em;
+    max-width: var(--all-boxes-width);
+    display: flex;
+    gap: 10px;
+}
+
+.articles__item {
+    background-color: rgb(87, 233, 111);
+}
+
+.articles__item--right  {
+    margin-right: 10px;
+}
+
+.articles__item--left {
+    margin-left: 10px;
+}
+
+/* =========footer======================= */
+.footer {
+    width: var(--all-boxes-width);
+    min-height: 100px;
+    background-color: rgb(224, 143, 143);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

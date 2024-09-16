@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -7,6 +8,80 @@
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
 </head>
 <body>
-    
+    <header>
+        <h1 class=logo>
+            <img src="" alt="">
+            Logo
+        </h1>
+        <nav class="menu">
+            <ul class="navigation">
+                <li>About</li>
+                <li>Contact</li>
+                <li>Articles</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article class="article">
+            <h4 class="article__title">
+                Tytuł artykułu
+            </h4>
+            <p class="article__data">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quod consectetur fuga corporis ratione ipsa voluptatibus neque unde necessitatibus labore. Voluptatum voluptas numquam repellat possimus dicta, iste dignissimos perferendis neque?
+            Corporis fugiat asperiores dicta! Hic ducimus unde aperiam ipsum doloribus minus nobis sequi est, officiis expedita, ipsa illum fuga! Cumque ipsam exercitationem laudantium omnis sint alias corporis nulla beatae nam.
+            Exercitationem, eligendi laboriosam sint blanditiis itaque consequatur maxime est soluta nam eius aut, natus dolorem earum accusamus quidem? Voluptatibus, magni perspiciatis ad expedita officiis cupiditate itaque corporis sed consequatur quaerat?
+            A quae repellendus voluptates omnis harum perspiciatis architecto magni, cumque aspernatur corporis. Quibusdam cumque non alias temporibus amet. Quisquam ipsam voluptatibus sint! Excepturi quae, quibusdam non natus id facere autem?
+            Nemo nostrum veritatis dolorum pariatur tenetur repellendus accusantium perferendis praesentium tempore, recusandae a dolorem quos velit natus sint ipsam. Illum id maxime illo consequuntur praesentium voluptatibus consequatur nobis quis quos?
+            </p>
+            <h5 class="article__author">
+                <em>Author: Tomasz Skrętkowski</em>
+                <span class="article__date">20.01.2014 r</span>
+            </h5> 
+            <img src="" alt="">
+            <table>
+                <caption>Tablica Ćwiczebna</caption>
+                <thead>
+                    <tr>
+                        <td>H</td><td>E</td><td>D</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td><td>2</td><td>3</td>
+                    </tr>
+                    <tr>
+                        <td>4</td><td>5</td><td>6</td>
+                    </tr>
+                    <tr>
+                        <td>7</td><td>8</td><td>9</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>&copy;</td><td>&half;</td><td>&gt;</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <form method="POST" action="index.html">
+                <fieldset>
+                    <label for="comment">Wpisz komentarz: </label><br>
+                    <textarea type="textarea" name="comment" id="comment" placeholder="Leave your comment: "></textarea><br>
+                    
+                    <label for="comment-author">
+                        Imię i nazwisko: 
+                    </label>
+                    <input type="text" name="comment-author" id="comment-author">
+                    <label for="comment-date">
+                        Data: 
+                    </label>
+                    <input type="text" name="comment-date" id="comment-date"><br>
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+        </article>
+
+    </main>
+    <footer>
+        <h6>&copy; Tomasz Skrętkowski 2021 r.</h6>
+    </footer>
 </body>
 </html>
