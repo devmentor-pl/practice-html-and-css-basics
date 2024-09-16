@@ -1,0 +1,92 @@
+@font-face {
+	font-family: 'aileron';
+	src: url('../fonts/aileron_regular_macroman/Aileron-Regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'aileron';
+	src: url('../fonts/aileron_bold_macroman/Aileron-Bold-webfont.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'aileron';
+	src: url('../fonts/aileron_italic_macroman/Aileron-Italic-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: italic;
+}
+
+body {
+	font-family: 'aileron';
+}
+
+.parent {
+	clear: both;
+	margin-top: 10px;
+	padding: 20px;
+	width: 600px;
+}
+
+/* positioning elements by using display: inline-block */
+.parent--inline-block {
+	background-color: lightblue;
+	font-size: 0;
+}
+
+.parent--inline-block .child {
+	display: inline-block;
+	font-size: 16px;
+	vertical-align: top;
+}
+
+.parent--inline-block .child--first,
+.parent--inline-block .child--middle {
+	margin-right: 10px;
+	width: calc((540px / 100) * 30);
+}
+
+.parent--inline-block .child--last {
+	width: calc((540px / 100) * 40);
+}
+
+/* positioning elements by using CSS float */
+.parent--float {
+	background-color: burlywood;
+	display: inline-block;
+	margin-top: 10px;
+}
+.parent--float .child--first,
+.parent--float .child--middle {
+	float: left;
+	margin-right: 10px;
+	width: calc((540px / 100) * 30);
+}
+
+.parent--float .child--last {
+	float: left;
+	width: calc((540px / 100) * 40);
+}
+
+/* positioning elements by using CSS Flexbox and adding font styles */
+.parent--flexbox {
+	background-color: royalblue;
+	column-gap: 10px;
+	display: flex;
+}
+
+.child--first {
+	flex-basis: 30%;
+}
+
+.child--middle {
+	flex-basis: 30%;
+	font-weight: bold;
+}
+
+.child--last {
+	flex-basis: 40%;
+	font-style: italic;
+}
