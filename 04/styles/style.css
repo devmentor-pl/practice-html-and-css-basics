@@ -1,0 +1,122 @@
+.menu {
+
+    list-style-type: none;
+    margin: 0;
+    font-size: 19px;
+    text-align: center;
+    height: 2em;
+    line-height: 2em;
+    white-space: nowrap;
+
+}
+
+.main__menu:first-child {
+    
+    margin-left: 0px;
+}
+/* pierwsza sekcja menu */
+.main__menu {
+
+    float: left;
+    background-color: rgb(180, 25, 20);
+    width: 150px;
+    margin-left: 2px;
+    display: block; 
+}
+/* starałem się zrobić z paddingiem tak jak u ciebe na blogu, 
+lecz nic mi takiego nie wychodziło, za chiny ludowe nie mogę zrobić żeby cały prostokąt był 
+klikalny ...  */
+
+
+/*
+.main__menu, .link {
+    padding: 1px 2px;
+}
+próbowałem takim zestawem to osiągnąć 
+*/
+.link {
+    color: #000;
+    text-decoration: none;
+    
+}
+
+link:hover {
+
+    color: #09C;
+}
+
+.main__menu:hover {
+
+    background-color: #EEE;
+}
+.main__menu:hover > .menu__bottom {
+    display: block;
+}
+
+/*druga sekcja, podmenu pierwszego stopnia */
+.submenu__second {
+    background-color: rgb(252, 173, 45);
+    border-top: 1px solid #FFF;
+    position: relative;
+    
+}
+.submenu__second:hover {
+
+    background-color: #abc;
+}
+
+.link:hover {
+    background-color: #FFF;
+}
+
+.menu__bottom {
+    display: none;
+    padding: 0;
+
+}
+.submenu__second:hover > .menu__right {
+    display: block;
+}
+/* trzecia sekcja podmenu */
+
+/* chciałem aby sekcja trzecia też była odsunięta o 1px ale że odpychałem za pomocą 
+menu right nie potrafiłem dojść gdzie potrzebowałbym bym wpisać 
+margin żeby to zadziałało i dało mi przestrzeń jednego px :/ */ 
+.submenu__third {
+    background-color: rgb(252, 173, 45);
+    border-top: 1px #FFF;
+    position: relative;
+}
+
+.menu__right {
+    display: none;
+    position: absolute;
+    background-color: rgb(252, 173, 45);
+    left: 100%;
+    top: 0%;
+    
+
+}
+
+.submenu__third {
+    left: 0%;
+    top: 100%;
+    
+    
+}
+.submenu__third:hover {
+
+    background-color: #abc;
+}
+
+.link:hover {
+    background-color: #FFF;
+}
+.rotate {
+  transform: rotate(90deg);
+}
+div {
+    position: fixed;
+    left: 10px;
+    top: 10px;
+}

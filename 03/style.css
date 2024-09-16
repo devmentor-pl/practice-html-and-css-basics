@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "Source Sans PRO";
+  src: url(source-sans-pro/SourceSansPro-Bold.otf) format("opentype");
+  font-style: normal;
+}
+
+div {
+  font-family: "Source Sans PRO";
+}
+
+.parent {
+  width: 600px;
+  padding: 20px;
+}
+.parent--inline-block .child {
+  display: inline-block;
+}
+/* no tu przeniosłem na prawo żebym widział, że coś się dzieje :). A w ogóle to jest to o 
+co chodziło ? bo zastanawiałem się nad wartością none, co by mi to dało ? oprócz tego że nic :D  */
+.parent--float .child {
+  float: right;
+}
+
+.parent--flexbox .child {
+  display: flexbox;
+}
+.child {
+  padding: 10px;
+  margin: 1px;
+}
+
+.child--first {
+  width: 30%;
+  font-style: normal;
+}
+
+.child--middle {
+  width: 30%;
+  font-style: bold;
+}
+
+.child--last {
+  width: 40%;
+  font-style: italic;
+}

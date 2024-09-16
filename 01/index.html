@@ -1,12 +1,130 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>devmentor.pl - HTML & CSS BASICS - #01</title>
+    <!-- style -->
+<link rel="stylesheet" href="./styles/reset.css">
+<link rel="stylesheet" href="./styles/base.css">
+<link rel="stylesheet" href="./styles/header.css">
+<link rel="stylesheet" href="./styles/content.css">
+<link rel="stylesheet" href="./styles/footer.css">
+
 </head>
 <body>
+    <!--nawigacja strony-->
+    <header>
+        <nav class="menu">
+          <ul class="menu__list">
+
+            <li>
+                <img src="./images/logo_01.jpg" class="header__logo" alt="logo"> 
+            </li>
+
+            <li>
+                <a href="#home" class="menu__link">Strona główna</a>
+            </li>
+
+            <li class="menu_item menu__item--parent">Podcast streamingi ▼
+
+              <ul class="menu__sublist">
+                <li>
+                    <a href="#spotify">Spotify</a>
+                </li>
+                <li>
+                    <a href="#apple_podcast">Apple Podcast</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#home" class="menu__link">Kontakt</a></li>
+           </ul>
+        </nav>
+
+
+    </header>
+
+<main>
+    <div class="main__container">
+<!--artykuł-->        
+        <article>
+            <img src="./images/article_podcast.jpg" class="article__main_foto">
+           <H1 class="Header__title">Co to jest podcast?</H1>
+
+            <div class="text">
+                <p class="article__p">
+                Najprościej ujmując podcast to audycja radiowa dostępna przez internet na 
+                żądanie, której możesz słuchać kiedy 
+                chcesz i gdzie chcesz.
+
+                <img src="./images/article_podcast.jpg" class="article__foto" >
+             
+                Tematyka obejmuje chyba wszystkie dziedziny życia,
+                od edukacji dla dzieci po biznes, rozwój osobisty,
+                inwestycje i motoryzację.
+
+<!--tabela-->
+                <table class="table">
+                    <caption class="title__table">Statyski słuchalności Podcastów</caption>
+                    <colgroup> 
+                        <col span="3">
+                        
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col" class="table__head">Rok</th>
+                            <th scope="col" class="table__head">2019</th>
+                            <th scope="col" class="table__head">2020</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td>27%</td>
+                            <td>31%</td>
     
+                        </tr>
+                    </tbody>
+                </table>
+<!--Stopka autora i daty-->
+            </div>
+                    <div class="date__autor">
+
+                        <p>18.03.2015 Zenobiusz Mosal</p>
+
+                    </div>
+            </p>
+<!--sekcja komentarzy ..ciagle walka jak to zrobić żeby działało :) 
+No i niestety poległem, do tego potrzeba albo połączenia php albo js i to na serwerze :) z moich informacji wynika, ale jeszcze poszukam...
+-->
+            <div class="commentary">
+                <form>
+                    <div>
+                        <textarea name="Komentarz" cols="75" rows="7">Czy utrzyma się ta tendencja wzrostu ? Proszę, zostaw swoją opinię...</textarea>
+                    </div>
+                    <div>   
+                        <label for="nickname">Twój Podpis</label>
+                    </div>
+                    <div>    
+                        <input type="text" id="nickname" name="nickname" required>
+                    </div>
+                    <div>    
+                        <input type="submit" value="Dodaj komentarz">
+                    </div>    
+                 </form>
+            </div>
+        </article>
+       
+           
+
+        </div>
+    </div>
+    <footer class="footer">
+
+        <p>Copyright © 2024 Podcast Story. Wszelkie prawa zastrzeżone.
+            <br>
+            <a href="copyright.html">Polityka Prywatności</a>
+        </p>
+    </footer>
+
 </body>
+
 </html>
+<!-- <a href="https://www.freepik.com/free-psd/recycle-logo-3d-illustration-design_40596315.htm#page=3&query=logo%20png&position=19&from_view=keyword&track=ais&uuid=dba31735-4a56-4c8b-ae79-5845bb7213e4">Image by Rochak Shukla</a> on Freepik-->
