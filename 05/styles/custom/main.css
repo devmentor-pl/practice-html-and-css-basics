@@ -1,0 +1,27 @@
+.first,
+.second {
+  height: 300px;
+}
+
+.first__left,
+.first__right {
+  flex-basis: 50%;
+  height: 100%;
+}
+
+.first__left {
+  margin-right: 10px;
+}
+
+.second__item {
+  flex-basis: 33%;
+  height: 100%;
+}
+
+.second__item {
+  margin-right: 10px;
+}
+
+.second__item:first-child {
+  margin-left: 10px;
+}
