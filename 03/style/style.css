@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700;italic&display=swap');
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* Podstawowy styl dla .parent */
+.parent {
+    width: 600px;
+    padding: 20px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Podstawowe style dla .child */
+.child {
+    padding: 10px;
+    background-color: #f0f0f0;
+    box-sizing: border-box;
+}
+
+/* Szerokości dla .child */
+.child--first {
+    width: 30%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400; /* Regular */
+}
+
+.child--middle {
+    width: 30%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700; /* Bold */
+}
+
+.child--last {
+    width: 40%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: italic; /* Italic */
+}
+
+/* Odstęp między elementami */
+.child:not(:last-child) {
+    margin-right: 10px;
+}
+
+/* Pozycjonowanie za pomocą inline-block */
+.parent--inline-block .child {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Pozycjonowanie za pomocą float */
+.parent--float .child {
+    float: left;
+}
+
+/* Pozycjonowanie za pomocą flexbox */
+.parent--flexbox {
+    display: flex;
+    justify-content: space-between;
+}
