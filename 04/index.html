@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Dropdown menu with CSS</title>
+  </head>
+  <body>
+    <nav class="nav">
+      <ul class="menu">
+        <li class="menu__item">
+          Home
+          <!-- <img
+            src="./images/icon-arrow-down.svg"
+            alt="Arrow down"
+            class="menu__arrow"
+          /> -->
+          <ul class="menu__dropdown dropdown">
+            <li class="dropdown__item">
+              <span class="dropdown__link">Home 1</span>
+               <img
+                src="./images/icon-arrow-down.svg"
+                alt="Arrow right"
+                class="dropdown__arrow"
+              /> 
+              <ul class="dropdown__nested">
+                <li class="nested__item">Home 1.1</li>
+                <li class="nested__item">Home 2.1</li>
+              </ul>
+            </li>
+            <li class="dropdown__item">
+              <span>Home 2</span>
+              <img
+                src="./images/icon-arrow-down.svg"
+                alt="Arrow right"
+                class="dropdown__arrow"
+              />
+            </li>
+          </ul>
+        </li>
+        <li class="menu__item">
+          Items
+          <!-- <img
+            src="./images/icon-arrow-down.svg"
+            alt="Arrow down"
+            class="menu__arrow"
+          /> -->
+          <ul class="menu__dropdown dropdown">
+            <li class="dropdown__item">
+              <span>Item 1</span>
+              <img
+                src="./images/icon-arrow-down.svg"
+                alt="Arrow right"
+                class="dropdown__arrow"
+              /> 
+              <ul class="dropdown__nested">
+                <li class="nested__item">Item 1.2</li>
+                <li class="nested__item">Item 2.2</li>
+              </ul>
+            </li>
+            <li class="dropdown__item">
+              <span>Item 2</span>
+              <img
+                src="./images/icon-arrow-down.svg"
+                alt="Arrow right"
+                class="dropdown__arrow"
+              />
+              <ul class="dropdown__nested">
+                <li class="nested__item">Item 2.1</li>
+                <li class="nested__item">Item 2.2</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="menu__item">
+          Settings
+          <!-- <img
+            src="./images/icon-arrow-down.svg"
+            alt="Arrow down"
+            class="menu__arrow"
+          /> -->
+        </li>
+        <li class="menu__item">
+          Contact
+          <!-- <img
+            src="./images/icon-arrow-down.svg"
+            alt="Arrow down"
+            class="menu__arrow"
+          />
+        -->
+          <ul class="menu__dropdown dropdown">
+            <li class="dropdown__item">
+              <span>Contact 1</span>
+              <img
+                src="./images/icon-arrow-down.svg"
+                alt="Arrow right"
+                class="dropdown__arrow"
+              />
+              <ul class="dropdown__nested">
+                <li class="nested__item">Contact 1.2</li>
+              </ul>
+            </li>
+            <li class="dropdown__item">
+              <span>Contact 2</span>
+              <img
+                src="./images/icon-arrow-down.svg"
+                alt="Arrow right"
+                class="dropdown__arrow"
+              />
+              <ul class="dropdown__nested">
+                <li class="nested__item">Contact 2.1</li>
+                <li class="nested__item">Contact 2.2</li>
+              </ul>
+            </li>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>

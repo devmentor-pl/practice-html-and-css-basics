@@ -1,12 +1,143 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo"></div>
+      <nav class="nav">
+        <ul class="nav__menu">
+          <a href="#" class="nav__item">
+            Start
+            <ul class="nav__dropdown">
+              <li class="nav__dropdown-item">Section 1</li>
+              <li class="nav__dropdown-item">Section 2</li>
+              <li class="nav__dropdown-item">Section 3</li>
+            </ul>
+          </a>
+          <a href="#" class="nav__item">
+            About
+            <ul class="nav__dropdown">
+              <li class="nav__dropdown-item">Company</li>
+              <li class="nav__dropdown-item">Product</li>
+            </ul>
+          </a>
+          <a href="" class="nav__item">
+            Contact
+            <ul class="nav__dropdown">
+              <li class="nav__dropdown-item">E-mail</li>
+              <li class="nav__dropdown-item">Facebook</li>
+              <li class="nav__dropdown-item">Twitter</li>
+            </ul>
+          </a>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <article class="article">
+        <div class="article__main">
+          <h1 class="article__heading">Heading</h1>
+          <img src="./photo.jpg" alt="Img" class="article__img" />
+          <table class="article__table">
+            <caption>
+              Table
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Title 1</th>
+                <th scope="col">Title 2</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><a href="#" class="article__item">Item</a></td>
+                <td><a href="#" class="article__item">Item</a></td>
+              </tr>
+              <tr>
+                <td><a href="#" class="article__item">Item</a></td>
+                <td><a href="#" class="article__item">Item</a></td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="article__desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+            quia, minus labore aspernatur inventore doloremque iure dicta
+            consequatur voluptatem error molestiae sint quos, porro quibusdam
+            maiores? Quas modi aut, eum, molestias laudantium quasi possimus non
+            a quod eius deleniti, quisquam impedit! Expedita corporis accusamus
+            provident, nihil quae ex. Ullam aliquam molestias saepe sint ea
+            eligendi voluptatibus. Suscipit consectetur quia fuga quas,
+            accusamus delectus, explicabo ipsum eaque tenetur, labore
+            repudiandae libero animi! Debitis, atque ea minus delectus ullam
+            sunt dolores doloribus.
+          </p>
+          <p class="article__footer">
+            Written on <time datetime="2021-06-07">June 7th</time> by
+            <em>Author</em>
+          </p>
+        </div>
+        <section class="comments-section">
+          <form action="/action_page.php" class="add-comment">
+            <label for="comment" class="add-comment__label"
+              >Comment article:</label
+            >
+            <br />
+            <textarea
+              id="comment"
+              name="comment"
+              rows="6"
+              cols="60"
+              class="add-comment__text"
+            >
+            </textarea>
+            <br /><br />
+            <input type="submit" value="Submit" class="add-comment__btn" />
+          </form>
+          <article class="comments">
+            <div class="comments__comment">
+              <p class="comments__content">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Possimus similique quisquam sit vel officiis doloribus,
+                obcaecati aliquid provident veritatis fugit!
+              </p>
+              <p class="comments__author">
+                Written on <time datetime="2021-06-07">June 7th</time> by
+                <em>Comment's Author</em>
+              </p>
+            </div>
+            <div class="comments__comment">
+              <p class="comments__content">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Possimus similique quisquam sit vel officiis doloribus,
+                obcaecati aliquid provident veritatis fugit!
+              </p>
+              <p class="comments__author">
+                Written on <time datetime="2021-06-07">June 7th</time> by
+                <em>Comment's Author</em>
+              </p>
+            </div>
+            <div class="comments__comment">
+              <p class="comments__content">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Possimus similique quisquam sit vel officiis doloribus,
+                obcaecati aliquid provident veritatis fugit!
+              </p>
+              <p class="comments__author">
+                Written on <time datetime="2021-06-07">June 7th</time> by
+                <em>Comment's Author</em>
+              </p>
+            </div>
+          </article>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <p class="copywright">© 1999-2021, Author.com</p>
+    </footer>
+  </body>
 </html>
