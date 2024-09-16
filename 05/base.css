@@ -1,0 +1,18 @@
+/** @format */
+
+.row,
+.container,
+.cell {
+  margin: 5px;
+  padding: 5px;
+}
+.row {
+  outline: green 1px solid;
+}
+.container {
+  outline: blue 1px solid;
+  width: 1000px;
+}
+.cell {
+  background-color: orange;
+}
