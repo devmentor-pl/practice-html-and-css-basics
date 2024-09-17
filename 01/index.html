@@ -1,12 +1,163 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <meta
+        http-equiv="X-UA-Compatible"
+        content="ie=edge"
+    >
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
 </head>
+
 <body>
-    
+    <header>
+        <a href="/">
+            <img
+                src="./images/logo.png"
+                alt="logo"
+            >
+        </a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/">home</a>
+                </li>
+                <li>
+                    <a href="/about">about</a>
+                </li>
+                <li>
+                    <a href="/portfolio">portfolio</a>
+                    <ul>
+                        <li>
+                            <a href="/portfolio/work-1">work-1</a>
+                        </li>
+                        <li>
+                            <a href="/portfolio/work-2">work-2</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/contact">contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article>
+                <header>
+                    <h1>Lorem, ipsum dolor.</h1>
+                    <p> Published by:
+                        <a rel="author">Author</a>
+                        <time datetime="2023-02-01">2023-02-01</time>
+                    </p>
+                </header>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, molestias!</p>
+                <figure>
+                    <img
+                        src="./images/img.jpg"
+                        alt="image"
+                    >
+                    <figcaption>Image description</figcaption>
+                </figure>
+                <table>
+                    <caption>Tabele title</caption>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Surname</th>
+                            <th>Country</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Jonh</td>
+                            <td>Doe</td>
+                            <td>United States</td>
+                        </tr>
+                        <tr>
+                            <td>Jan</td>
+                            <td>Kowalski</td>
+                            <td>Poland</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>Footer content 1</td>
+                            <td>Footer content 2</td>
+                            <td>Footer content 3</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </article>
+        </section>
+        <section>
+            <form
+                action="./add-comment.php"
+                method="POST"
+            >
+                <h2>Leave a comment</h2>
+                <textarea
+                    cols="30"
+                    rows="10"
+                    placeholder="Write a comment here..."
+                    required
+                ></textarea>
+                <label for="comment-author">Your name</label>
+                <input
+                    type="text"
+                    name="comment-author"
+                    id="comment-author"
+                    placeholder="e.g. John Snow"
+                    required
+                >
+                <button
+                    type="submit"
+                    name="submit"
+                >Send</button>
+            </form>
+        </section>
+        <section>
+            <h2>Comments</h2>
+            <ol>
+                <li>
+                    <p>Posted by:
+                        <a rel="author"> John Doe</a>
+                    </p>
+                    <p>
+                        <time datetime="2023-02-01">01.02.2023</time>
+                    </p>
+                    <p>Lorem ipsum dolor sit.</p>
+                </li>
+                <li>
+                    <p>Posted by:
+                        <a rel="author">Jan Kowalski</a>
+                    </p>
+                    <p>
+                        <time datetime="2023-02-01">01.02.2023</time>
+                    </p>
+                    <p>Lorem ipsum dolor sit.</p>
+                </li>
+                <li>
+                    <p>Posted by:
+                        <a rel="author"> John Snow</a>
+                    </p>
+                    <p>
+                        <time datetime="2023-02-01">01.02.2023</time>
+                    </p>
+                    <p>Lorem ipsum dolor sit.</p>
+                </li>
+            </ol>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 KasiaBokisz</p>
+    </footer>
 </body>
+
 </html>
