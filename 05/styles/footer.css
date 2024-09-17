@@ -1,0 +1,7 @@
+.footer__container {
+    display:flex;
+    justify-content: space-around;
+}
+.footer__logo {
+    width: 10%;
+}
