@@ -1,12 +1,146 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <meta
+        http-equiv="X-UA-Compatible"
+        content="ie=edge"
+    >
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
 </head>
+
 <body>
-    
+    <header>
+        <div>
+            <img
+                src="logo.png"
+                alt="Kontakt"
+            />
+
+        </div>
+        <nav>
+            <ul>
+                <a href="first.html">
+                    <li>First</li>
+                </a>
+                <a href="second.html">
+                    <li>
+                        Second
+                        <ul>
+                            <a href="one.html">
+                                <li>One</li>
+                            </a>
+                            <a href="two.html">
+                                <li>Two</li>
+                            </a>
+                            <a href="three.html">
+                                <li>Three</li>
+                            </a>
+                        </ul>
+                    </li>
+                </a>
+                <a href="third.html">
+                    <li>Third</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2>Nagłówek</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos ipsa, quo cumque ullam iure deserunt
+                molestiae placeat libero, adipisci ut reiciendis corrupti qui. Libero fugit, harum sed voluptates
+                inventore tempore.</p>
+            <p>Autor: Marcin Frąckowiak</p>
+            <p>Data: 02.03.2022</p>
+            <div>
+                <img
+                    src="./img/photo.png"
+                    alt="photo"
+                />
+            </div>
+            <table>
+                <caption>Tabela nr 1</caption>
+                <thead>
+                    <tr>
+                        <th>kolumna 1</th>
+                        <th>kolumna 2</th>
+                        <th>kolumna 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>wartość 1</th>
+                        <th>wartość 2</th>
+                        <th>wartość 3</th>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+        <div>
+            <form>
+                <div>
+                    <label>Imię:
+                        <input name="lastName" />
+                    </label>
+                </div>
+                <div>
+                    <label>E-mail:
+                        <input name="mail" />
+                    </label>
+                </div>
+                <div>
+                    <label>Twój komentarz</label>
+                    <textarea rows="4">
+
+                    </textarea>
+                </div>
+                <div><input type="submit" /></div>
+            </form>
+        </div>
+        <article>
+            <h3>Komentarze:</h3>
+            <div>
+                <div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti qui temporibus rerum id deserunt
+                        dolores voluptates eos natus, nesciunt cumque, libero nobis explicabo hic eveniet placeat voluptas!
+                        Eos, odio quisquam?
+                    </p>
+                    <p>Autor: Jan Kowalski</p>
+                    <p>Utworzony: 24.12.2021</p>
+                </div>
+                <div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti qui temporibus rerum id deserunt
+                        dolores voluptates eos natus, nesciunt cumque, libero nobis explicabo hic eveniet placeat voluptas!
+                        Eos, odio quisquam?
+                    </p>
+                    <p>Autor: Jan Nowak</p>
+                    <p>Utworzony: 31.12.2021</p>
+                </div>
+                <div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti qui temporibus rerum id deserunt
+                        dolores voluptates eos natus, nesciunt cumque, libero nobis explicabo hic eveniet placeat voluptas!
+                        Eos, odio quisquam?
+                    </p>
+                    <p>Autor: Grzegorz Kwiatkowski</p>
+                    <p>Utworzony: 01.01.2022</p>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <div>
+            &copy; Marcin Frąckowiak
+        </div>
+    </footer>
 </body>
+
 </html>
