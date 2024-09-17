@@ -1,0 +1,20 @@
+.header__row {
+    max-width: 100%;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo {
+    min-width: 200px;
+    min-height: 50px;
+    margin-left: -5px;
+}
+
+.header__nav {
+    min-width: 400px;
+    min-height: 50px;
+    margin-right: -5px;
+}
