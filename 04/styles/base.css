@@ -1,0 +1,143 @@
+:root {
+  --backgroundColor: #f7f7f7;
+  --navColor: #ffffff;
+  --navColorElement: #159ae1;
+  --navDropdownColor: #333333;
+  --navDropdownColorHover: #474747;
+  font-size: 10px;
+}
+
+body {
+  background-color: var(--backgroundColor);
+  font-family: "Open Sans", sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.menu {
+  align-items: center;
+  background-color: var(--navColor);
+  display: flex;
+  font-size: 1.5rem;
+  height: 60px;
+  justify-content: space-around;
+  letter-spacing: 1px;
+  max-width: 700px;
+  min-width: 400px;
+  width: 50vw;
+}
+
+.menu:hover {
+  cursor: pointer;
+}
+
+.menu__item {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+/* hidden blue element / transition */
+.menu__item::before {
+  background-color: var(--navColorElement);
+  content: "";
+  height: 3px;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  transition: 0.3s linear;
+  width: 100%;
+}
+
+/* visible blue element after :hover */
+.menu__item:hover:before {
+  background-color: var(--navColorElement);
+  content: "";
+  height: 3px;
+  left: 0;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+/* arrow dropdown */
+.menu__item--dropdown::after {
+  content: ">";
+  font-size: 1.3rem;
+  margin-left: 5px;
+  opacity: 0.5;
+  padding-left: 3px;
+  transform: rotate(90deg);
+}
+
+/* flexbox between text and arrow */
+.menu__item--second-dropdown {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* arrow on dropdown */
+.menu__item--second-dropdown::after {
+  content: ">";
+  font-size: 1.3rem;
+  opacity: 0.5;
+}
+
+.menu__item:hover {
+  color: var(--navColorElement);
+  font-weight: 600;
+}
+
+.dropdown__item,
+.second-dropdown__item {
+  background-color: var(--navDropdownColor);
+  color: var(--navColor);
+  font-size: 1.4rem;
+  padding: 10px 10px 10px 20px;
+}
+
+.dropdown__item:hover,
+.second-dropdown__item:hover {
+  background-color: var(--navDropdownColorHover);
+}
+
+/* hidden visability of dropdowns before :hover */
+.menu__dropdown {
+  margin-top: 140px;
+  opacity: 0;
+  position: absolute;
+  transition: 0.05s linear;
+  visibility: hidden;
+  width: 100%;
+  z-index: -1;
+}
+
+.menu__second-dropdown {
+  left: 100%;
+  opacity: 0;
+  position: absolute;
+  top: 39px;
+  transition: 0.05s linear;
+  visibility: hidden;
+  width: 100%;
+}
+
+/* visability of dropdowns after :hover */
+.menu__item--dropdown:hover > .menu__dropdown {
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu__item--second-dropdown:hover > .menu__second-dropdown {
+  opacity: 1;
+  visibility: visible;
+}
