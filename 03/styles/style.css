@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'source sans pro';
+    src: url('sourcesanspro-regular-webfont.woff2') format('woff2'),
+         url('sourcesanspro-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.parent {
+    width: 600px;
+    padding: 20px;
+    display: flex;
+
+}
+
+.child {
+    width: 100%;
+    margin-right: 10px;
+}
+
+.child--first, .child--middle {
+    max-width: 30%;
+}
+
+.child--last {
+    max-width: 40%;
+    margin-right: 0;
+}
+
