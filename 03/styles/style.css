@@ -48,7 +48,7 @@
 }
 
 .child--first, .child--middle {
-    max-width: 30%;
+    max-width: calc(30% - 10px);
 }
 
 .child--first {
@@ -60,7 +60,7 @@
 }
 
 .child--last {
-    max-width: 40%;
+    max-width: calc(40% - 10px);
     margin-right: 0;
     font-style: italic;
 }
