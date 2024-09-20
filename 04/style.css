@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F5F5F5;
+}
+
+.navbar__list {
+
+    align-items: center;
+    background-color: #FFFFFF;
+    color: #333333;
+    display: flex;
+    height: 70px;
+    justify-content: flex-start;
+    list-style: none;
+    margin: 20px 10px 0 10px;
+    max-width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.navbar__element {
+    margin: 0 25px;
+}
+
+.navbar__link {
+    color: #333333;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.navbar__link:hover {
+    color: #009AE1;
+}
+
+.navbar__link::after {
+    content: '';
+    position: absolute;
+    left: -25px;
+    top: -26px;
+    width: calc(100% + 50px);
+    height: 3px;
+    background-color: transparent;
+}
+
+.navbar__link:hover::after {
+    background-color: #009AE1;
+    
+}
+
+.navbar__dropdown {
+    position: relative;
+}
+
+.navbar__dropdown:last-child {
+    position: absolute;
+}
+
+.navbar__element:nth-child(2) > .navbar__link {
+    position: relative;
+}
+
+.navbar__element:nth-child(2) > .navbar__link::before {
+    position: absolute;
+    content: '>';
+    color: transparent;
+    right: -20px;
+    transform: rotate(-90deg);
+    
+}
+
+.navbar__element:nth-child(2) > .navbar__link:hover::before {
+    color: #009AE1;
+}
+
+.navbar__element:nth-child(2) > .navbar__link:active::before {
+    transform: rotate(90deg);
+}
