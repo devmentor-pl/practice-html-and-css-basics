@@ -14,7 +14,7 @@ body {
 
 .navbar {
     background-color: #F5F5F5;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .navbar__container, .hero__container, .features__container, .footer__container {
@@ -61,6 +61,11 @@ body {
 
 }
 
+.hero__title {
+    font-size: 24px;
+    padding-bottom: 15px;
+}
+
 .hero__element:first-child {
     margin-right: 20px;
 }
@@ -70,7 +75,7 @@ body {
 }
 
 .features {
-    margin: 30px 0;
+    margin: 40px 0;
 }
 
 .features__container {
