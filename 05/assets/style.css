@@ -82,6 +82,11 @@ body {
     justify-content: space-evenly;
 }
 
+.features__title {
+    font-size: 18px;
+    padding-bottom: 15px;
+}
+
 .features__element {
     width: 25%;
 }
