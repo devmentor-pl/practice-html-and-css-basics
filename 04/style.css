@@ -15,7 +15,7 @@ body {
     background-color: #FFFFFF;
     color: #333333;
     display: flex;
-    height: 70px;
+    /* height: 70px; */
     justify-content: flex-start;
     list-style: none;
     margin: 20px 10px 0 10px;
@@ -23,11 +23,12 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
     font-size: 16px;
-    line-height: 20px;
+    /* line-height: 20px; */
 }
 
 .navbar__element {
     margin: 0 25px;
+    position: relative;
 }
 
 .navbar__link {
@@ -35,6 +36,8 @@ body {
     text-decoration: none;
     cursor: pointer;
     position: relative;
+    padding: 30px 0;
+    display: block;
 }
 
 .navbar__link:hover {
@@ -56,28 +59,34 @@ body {
 }
 
 .navbar__dropdown {
-    position: relative;
-}
-
-.navbar__dropdown:last-child {
     position: absolute;
+    top: 120px;
 }
 
-.navbar__element:nth-child(2) > .navbar__link {
+/* .navbar__dropdown:last-child {
+    position: absolute;
+} */
+
+/* .navbar__element:nth-child(2) > .navbar__link {
     position: relative;
-}
+} */
 
-.navbar__element:nth-child(2) > .navbar__link::before {
+.navbar__element--dropdown > .navbar__link::before {
     position: absolute;
     content: '>';
     color: transparent;
     right: -20px;
-    transform: rotate(-90deg);
+    transform: rotate(90deg);
     
 }
 
-.navbar__element:nth-child(2) > .navbar__link:active::before {
+/* .navbar__element:nth-child(2) > .navbar__link:active::before {
     transform: rotate(90deg);
+} */
+
+
+.navbar__element:hover .dropdown {
+    display: block;
 }
 
 
@@ -86,9 +95,9 @@ body {
 }
 
 
-.navbar__element:nth-child(2) {
+/* .navbar__element:nth-child(2) {
     position: relative;
-}
+} */
 
 .dropdown, .dropdown2 {
     display: none;
@@ -100,7 +109,7 @@ body {
 
 .dropdown {
     position: absolute;
-    top: 45px;
+    top: 100%;
     left: -25px;
 }
 
@@ -118,12 +127,12 @@ body {
     
 }
 
-.dropdown__item:nth-child(2) {
+.dropdown__item--children {
     position: relative;
 }
 
 
-.dropdown__item:nth-child(2)::after {
+.dropdown__item--children::after {
     position: absolute;
     content: '>';
     right: 10px;
@@ -132,12 +141,16 @@ body {
 
 .dropdown2 {
     position: absolute;
-    left: 204px;
+    left: 100%;
     top: 0;
     
 }
 
-.navbar__element:nth-child(2):active > .dropdown,
-.dropdown > .dropdown__item:nth-child(2):active > .dropdown2 {
+.dropdown__item--children:hover .dropdown2 {
     display: block;
 }
+
+/* .navbar__element:nth-child(2):active > .dropdown,
+.dropdown > .dropdown__item:nth-child(2):active > .dropdown2 {
+    display: block;
+} */
