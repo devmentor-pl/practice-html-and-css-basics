@@ -1,0 +1,12 @@
+.article__container {
+    display: flex;
+    justify-content: space-around;
+    min-height: 200px;
+}
+.article__content {
+   width: calc(1000px / 3);
+   margin: 0 3px;
+}
+.article__content:nth-child(2) {
+    margin: 0;
+}
