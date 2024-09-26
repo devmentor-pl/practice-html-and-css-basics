@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>devmentor.pl - HTML & CSS BASICS - #01 contact</title>
+
+    <link rel="stylesheet" href="./styles/contact.css">
+
+</head>
+<body>
+
+    <form>
+        <div>
+            <label for="nickname">Twój nick:</label>
+        </div>
+        <div>
+            <input type="text" id="nickname" name="nickname" placeholder="Podaj Twój nick">
+        </div>
+        <div>
+            <label for="user-email">Twój e-mail:</label>
+        </div>
+        <div>
+            <input type="email" id="user-email" name="user-email" placeholder="Podaj Twój e-mail">
+        </div>
+        <div>
+            <label for="content">Treść:</label>
+        </div>
+        <div>
+            <textarea rows="10" cols="50" id="content" name="content" placeholder="Dodaj Twój komentarz"></textarea>
+        </div>
+        <div>
+            <button id="buttonComment" value="dodaj" onclick="addComment()">
+        </div>
+    </form>
+
+    <script src='./scripts/contact.js'></script>
+
+</body>
+</html>
