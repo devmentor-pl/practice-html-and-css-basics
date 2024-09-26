@@ -1,0 +1,71 @@
+:root {
+    --containerBorderColor: green;
+    --wrapperBorderColor: blue;
+    --conentColor: orange;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 3px;
+        border: 3px solid var(--containerBorderColor);
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+        margin: 3px;
+    width: 1000px;
+        border: 3px solid var(--wrapperBorderColor);
+}
+
+.content {
+    margin: 3px 0;
+    background-color: var(--conentColor);
+}
+
+.header_logo {
+    width: 150px;
+    height: 50px;
+}
+
+.header_nav {
+    width: 350px;
+    height: 50px;
+}
+
+.content_article {
+    width: calc(50% - 3px);
+    height: 475px;
+}
+
+.content_aside {
+    width: calc(50% - 3px);
+    height: 475px;
+}
+
+.testimonials {
+    justify-content: space-evenly;
+}
+
+.testimonials_article {
+    width: 310px;
+    height: 250px;
+}
+
+.footer {
+    justify-content: center;
+}
+
+.footer_section {
+    width: 100px;
+    height: 50px;
+}

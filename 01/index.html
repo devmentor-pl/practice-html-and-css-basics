@@ -2,11 +2,116 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" 
+        content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" 
+        content="ie=edge">
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
 </head>
 <body>
+<header>
+    <figure>
+        <a href="./index.html"><img src="" alt="Web's logo" /></a>
+    </figure>
+
+    <nav>
+        <ul>
+            <a href="">
+                <li>O Nas</li>
+            </a>
+            <a href="">
+                <li>Articles</li>
+            </a>
+            <a href="">
+                <li>Oferta</li>
+            </a>
+            <a href="">
+                <li>Kontakt</li>
+            </a>
+            </ul>
+    </nav>
+</header>
+
+<main>
+    <article>
+        <header>
+            <h2>Tytuł artykułu</h2>
+            <time>
+                <h4>05/03/2022</h4>
+            </time>
+            <h4>Rafał Kochanecki</h4>
+            </header>
+            
+            <figure>
+            <img src="" alt="Img article">
+        </figure>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero veritatis
+            iste cupiditate aut rem in. Corporis illum, corrupti quaerat repellat dolores
+            eligendi, enim repellendus dicta ratione rem neque voluptatum vitae!</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero veritatis
+            iste cupiditate aut rem in. Corporis illum, corrupti quaerat repellat dolores
+            eligendi, enim repellendus dicta ratione rem neque voluptatum vitae!</p>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">#1</th>
+                    <th scope="col">#2</th>
+                    <th scope="col">#3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td scope="row">1</td>
+                    <td scope="row">2</td>
+                    <td scope="row">3</td>
+                </tr>
+            </tbody>
+        </table>
+    </article>
+
+    <section>
+        <form action="">
+            <div>
+                <div>
+                    <label for="email">Podaj adres email:</label>
+                    <input type="text" id='email' placeholder="Email adress" />
+                </div>
+                <div>
+                    <label for="name">Podaj imię i nazwisko:</label>
+                    <input type="text" id='name' placeholder="Full name" />
+                    </div>
+            </div>
+            <div>
+                <label for="comment">Dodaj komentarz:</label>
+                <textarea name="" id="comment" cols="46" rows="10" placeholder="Dodaj komentarz..."></textarea>
+                </div>
+            <button type="submit">Wyślij</button>
+        </form>
+    </section>
     
+    <article>
+        <header>
+            <h2>Tytuł artykułu</h2>
+            <time>
+                <h4>05/03/2022</h4>
+            </time>
+            <h4>Rafał Kochanecki</h4>
+        </header>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, delectus?
+        Illum natus neque, ad libero odit id a, veritatis magnam voluptates labore vel
+        voluptatibus quaerat doloremque alias, dolorem saepe hic!</p>
+    </article>
+</main>
+
+<footer>
+    <div id="footer">
+        &copy; 2022 devmentor.pl
+    </div>
+</footer>
+
 </body>
 </html>
