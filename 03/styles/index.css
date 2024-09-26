@@ -1,0 +1,110 @@
+@font-face {
+  font-family: "Source sans";
+  src: url("sourcesanspro-bold-webfont.woff2") format("woff2"),
+    url("sourcesanspro-bold-webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Source sans";
+  src: url("sourcesanspro-it-webfont.woff2") format("woff2"),
+    url("sourcesanspro-it-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Source sans";
+  src: url("sourcesanspro-regular-webfont.woff2") format("woff2"),
+    url("sourcesanspro-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.parent {
+  width: 600px;
+  padding: 20px;
+  background-color: cadetblue;
+}
+
+body {
+  font-family: "source_sans_proregular";
+}
+
+.child.child--middle {
+  font-weight: bold;
+}
+
+.child.child--last {
+  font-style: italic;
+}
+
+/* ============================================= */
+/* inline-block */
+
+.parent--inline-block div {
+  display: inline-block;
+}
+
+.parent--inline-block div.child.child--first {
+  margin-right: 10px;
+  width: calc(100% - (70% + 10px));
+}
+
+.parent--inline-block div.child--middle {
+  margin-right: 10px;
+  width: calc(100% - (70% + 10px));
+}
+
+.parent--inline-block div.child--last {
+  width: calc(100% - 60%);
+}
+
+/* ============================================= */
+/* float */
+
+.parent--float {
+  min-height: 130px;
+}
+
+.parent--float div.child.child--first {
+  margin-right: 10px;
+  width: calc(100% - (70% + 10px));
+  float: left;
+}
+
+.parent--float div.child--middle {
+  margin-right: 10px;
+  width: calc(100% - (70% + 10px));
+  float: left;
+}
+
+.parent--float div.child--last {
+  width: calc(100% - 60%);
+  float: left;
+}
+
+/* ============================================= */
+/* flexbox */
+
+.parent--flexbox {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.parent--flexbox div.child.child--first {
+  width: 30%;
+  margin-right: 10px;
+}
+
+.parent--flexbox div.child--middle {
+  width: 30%;
+  margin-right: 10px;
+}
+
+.parent--flexbox div.child--last {
+  width: 40%;
+}
+/* ============================================= */

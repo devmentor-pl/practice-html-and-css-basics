@@ -1,0 +1,137 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: lightgray;
+}
+
+.container {
+  width: 600px;
+
+  margin: 30px;
+  background-color: #009ae1;
+}
+
+.container__nav {
+  height: 0px;
+}
+
+ul.nav {
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav {
+  height: 50px;
+}
+
+.nav__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  width: 25%;
+  font-size: 14px;
+  background-color: white;
+  position: relative;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+li.nav__item a[href] {
+  text-decoration: none;
+  color: #333333;
+}
+
+li.nav__item:hover,
+li.nav__item a[href]:hover {
+  color: #009ae1;
+}
+
+li.nav__item:hover {
+  border-top: 2px solid #009ae1;
+}
+
+.nav__dropdown {
+  position: absolute;
+  padding-top: 0px;
+  left: 0px;
+  margin-top: 105px;
+  display: none;
+  width: 150px;
+}
+
+.nav__item:hover > .nav__dropdown {
+  display: block;
+}
+
+.dropdown__item-lvl1 {
+  background: #333333;
+  border-bottom: 0 solid rgb(220, 220, 200);
+  padding: 11px 15px;
+  color: white;
+  text-align: left;
+  font-size: 12px;
+}
+
+/* nav__item-arrow--down */
+li.nav__item.nav__item-arrow--down:hover::after {
+  content: ">";
+  display: inline-block;
+  transform: rotate(90deg);
+  color: #009ae1;
+  margin-left: 15px;
+  height: 13px;
+  font-size: 17px;
+}
+
+/* dropdown__item-lvl1--arrow */
+.dropdown__item-lvl1.arrow:hover::after {
+  content: ">";
+  position: absolute;
+  font-size: 14px;
+  margin-left: 83px;
+  margin-top: 0px;
+}
+
+.dropdown__item-lvl1.dropdown__item-lvl1--arrow {
+  position: relative;
+}
+
+.nav__dropdown--lvl2 {
+  position: absolute;
+  padding-top: 0px;
+  left: 150px;
+  margin-top: -25.5px;
+  display: none;
+  width: 150px;
+}
+
+.dropdown__item-lvl1.dropdown__item-lvl1--arrow:hover > .nav__dropdown--lvl2 {
+  display: block;
+  color: red;
+}
+
+.dropdown__item-lvl2 {
+  background: #333333;
+  border-bottom: 0 solid rgb(220, 220, 200);
+  padding: 11px 15px;
+  color: white;
+  text-align: left;
+  font-size: 12px;
+}
+
+.nav__item ~ a[href],
+li.dropdown__item-lvl2 a[href],
+li.dropdown__item-lvl1 a[href],
+.dropdown__item-lvl1.dropdown__item-lvl1--arrow {
+  color: white;
+  text-decoration: none;
+}
+
+a[href]:hover,
+li.dropdown__item-lvl2 a[href]:hover,
+li.dropdown__item-lvl1 a[href]:hover,
+.dropdown__item-lvl1.dropdown__item-lvl1--arrow:hover {
+  color: #009ae1;
+}
