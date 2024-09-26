@@ -1,0 +1,19 @@
+.hero__container {
+  gap: 2em;
+  align-items: center;
+}
+
+.hero__container > * {
+  flex: 1;
+}
+
+.hero__imgs {
+  gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.hero__content-info {
+  margin-top: 30px;
+  line-height: 1.4;
+}
