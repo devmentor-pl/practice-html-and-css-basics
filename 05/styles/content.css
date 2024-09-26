@@ -1,0 +1,28 @@
+.content__container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.content__article:first-child{
+    margin-right: 10px;
+}
+.content__article{
+    flex-basis: calc(50% - 10px);
+    height: 200px;
+}
+.content__container2{
+    display: flex;
+
+    justify-content: space-around;
+}
+.content__article2:first-child{
+    margin-left: calc(10%/4/2);
+}
+
+.content__article2:last-child{
+    margin-right: calc(10%/4/2);
+}
+.content__article2 {
+    flex-basis: 30%;
+    height: 200px;
+}

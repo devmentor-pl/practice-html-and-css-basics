@@ -1,0 +1,11 @@
+.header__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo {
+    flex-basis: 100px;
+}
+.header__nav{
+    flex-basis: 200px;
+}
