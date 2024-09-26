@@ -1,12 +1,120 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
 </head>
+
 <body>
-    
+
+    <head>
+        <div class="logo"><img src="" alt="LOGO"></div>
+        <nav>
+            <ul class="nav__links">
+                <a href="#article">
+                    <li>Article</li>
+                </a>
+                <a href="#products">
+                    <li>Products</li>
+                </a>
+                <a href="#comments">
+                    <li>Comments</li>
+                </a>
+                <a href="#">
+                    <li>
+                        Projects
+                        <ul class="nav_links 2nd-level">
+                            <a href="#">
+                                <li>Project 1</li>
+                            </a>
+                            <a href="#">
+                                <li>Project 1</li>
+                            </a>
+                        </ul>
+                    </li>
+                </a>
+
+            </ul>
+        </nav>
+    </head>
+
+    <main>
+        <article>
+            <h2>Very interesting article</h2>
+            <p>
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro repellat accusamus quasi explicabo dolor vitae numquam fuga sequi vero, suscipit iusto saepe iure omnis perspiciatis quas, harum ex veniam non!</span><span>Vel commodi fuga a quod tempora corrupti dolorum tempore iure, id sed dolore aut. Cum placeat nobis consequatur recusandae laudantium quidem quia hic laboriosam veritatis libero culpa illum, blanditiis reprehenderit?</span><span>Pariatur, officiis. Molestiae doloribus unde incidunt in, error amet laborum dolor quasi consequuntur itaque ipsum aut ex laudantium atque exercitationem explicabo voluptas illo eaque voluptatum. Perferendis qui odio optio quasi?</span><span>Aliquam, voluptatem eaque veniam aut facere eius, voluptas animi dolorem maiores quasi provident numquam maxime, porro voluptatum quidem distinctio cumque vel! Hic, reprehenderit repellendus maxime recusandae illo voluptatem voluptates perferendis!</span><span>Nemo quas ad qui accusamus incidunt ducimus. Omnis laudantium ab sint ex iusto a officia ad nesciunt quisquam! Corrupti ipsa molestias ex voluptatibus ullam natus at accusantium debitis soluta velit?</span>
+            </p>
+
+            <figure>
+                <img src="#" alt="Weird image">
+                <figcaption>Giraffe</figcaption>
+            </figure>
+
+            <table id="products">
+                <thead>
+                    <tr>
+                        <th colspan="3">Great table</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                </tr>
+                <tr>
+                    <td>Pencil</td>
+                    <td>4.99</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>Ruler</td>
+                    <td>7.39</td>
+                    <td>13</td>
+                </tr>
+            </table>
+
+            <div class="date">29.02.2024</div>
+            <div class="author">kozlofski.dev</div>
+        </article>
+
+
+        <section class="comments" id="comments">
+            <form action="" method="GET" class="comments__form">
+                <div><input type="text" name="name" placeholder="Your name" required></div>
+
+                <div><textarea name="comment" cols="30" rows="10" placeholder="Write a comment" required>
+                </textarea>
+                </div>
+
+                <div><input type="submit" value="comment"></div>
+            </form>
+
+
+            <ul class="comments">
+                <li>
+                    <h2><a rel="author">User 1</a>, <time datetime="2023-01-13">2023-01-13</time></h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro perferendis praesentium
+                        recusandae iure fugit quos!</p>
+                </li>
+                <li>
+                    <h2><a rel="author">User 2</a>, <time datetime="2023-01-14">2023-01-14</time></h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro perferendis praesentium
+                        recusandae iure fugit quos!</p>
+                </li>
+            </ul>
+
+
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy 2024 <a href="#">kozlofski.dev</a></p>
+    </footer>
 </body>
+
 </html>
