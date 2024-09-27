@@ -1,0 +1,12 @@
+.footer__container {
+    display: flex;
+    justify-content: space-around;
+       }
+   
+   .footer__copyrights {
+    width: 20%;
+    background-color: orange
+    ;
+    margin: 10px 10px 10px 10px;
+    
+   }
