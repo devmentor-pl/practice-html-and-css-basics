@@ -1,12 +1,193 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <meta
+        http-equiv="X-UA-Compatible"
+        content="ie=edge"
+    >
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
 </head>
+
 <body>
-    
+    <header>
+        <div class="header__logo">
+            <h1>OKNOSTYL</h1>
+            <img
+                src="./img/hero.png"
+                alt="Logo"
+                height="300"
+            />
+        </div>
+
+        <nav class="nav">
+            <ul>
+                <a href="./#hero">
+                    <li class="nav-item">Home</li>
+                </a>
+                <a href="./#services ">
+                    <li class="nav-item">Usługi</li>
+                    <ul>
+                        <a href="#">
+                            <li>Montaż okien</li>
+                        </a>
+                        <a href="#">
+                            <li>Demontaż okien</li>
+                        </a>
+                        <a href="#">
+                            <li>Wymiana szyb</li>
+                        </a>
+                    </ul>
+                </a>
+                <a href="./#pricelist">
+                    <li class="nav-item">Cennik</li>
+                </a>
+                <a href="./#contact">
+                    <li class="nav-item">Kontakt</li>
+                </a>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <article>
+            <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste incidunt excepturi delectus maxime
+                aliquid. Praesentium fugit porro aut quo ipsam eaque odio, similique minima, dolore cupiditate doloribus
+                ipsum nam labore minus blanditiis qui hic impedit unde. Accusantium, quae rerum in fugit blanditiis
+                magnam. Accusantium dolorum consequatur natus, tempora doloribus quia necessitatibus! Ad quasi vitae
+                placeat magni asperiores iure? Dolore ut adipisci voluptas perspiciatis nulla illo voluptatibus ratione
+                officiis delectus, libero, mollitia illum aperiam accusantium quasi ipsum eaque exercitationem nemo cum
+                minima sint necessitatibus possimus esse similique impedit. Dolorem, doloribus ullam! Eaque laborum
+                nostrum culpa, consequuntur numquam nisi alias laboriosam tenetur debitis impedit qui illum deserunt
+                facere obcaecati dolor saepe aut voluptatibus quasi, asperiores est quam eos deleniti odit illo!
+                Voluptates expedita sit quia id alias! Distinctio consectetur quisquam ab error magnam atque
+                necessitatibus quis repellendus illum nostrum mollitia, cumque facere dolorem nobis dolore esse veniam a
+                quo quia porro iure ipsam sunt nesciunt! Harum eveniet et repellat magnam consequatur corporis similique
+                provident sed, expedita fugit quam at nulla officiis blanditiis error nemo voluptatum sequi, impedit
+                maiores esse! Et, voluptatem nulla quae maiores consectetur consequuntur repellat aut, voluptates harum
+                ex provident reprehenderit assumenda, amet earum quod excepturi asperiores quis inventore. Aspernatur.
+            </p>
+            <figure>
+                <img
+                    src="./img/mycie-okien.jpg"
+                    alt="Mycie okien na wysokości"
+                >
+
+            </figure>
+            <figcaption>
+                <p class="testimonial__name">Jarosław Ambroży</p>
+            </figcaption>
+            <time datetime="10-03-2022">10 grudzień 2021</time>
+
+            <table>
+                <caption>Lista usług</caption>
+                <colgroup>
+                    <col
+                        span="4"
+                        style="background: #2980b9;"
+                    >
+                    <col style="background: #10507b;">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th scope="col">Nazwa</th>
+                        <th scope="col">Ilość okien</th>
+                        <th scope="col">Cena</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Montaż okien</td>
+                        <td>1</td>
+                        <td>450 PLN</td>
+                    </tr>
+                </tbody>
+                <tr>
+                    <td>Deontaż okien</td>
+                    <td>1</td>
+                    <td>250 PLN</td>
+                </tr>
+                <tr>
+                    <td>Wymiana szyb</td>
+                    <td>1</td>
+                    <td>350 PLN</td>
+                </tr>
+                <tr>
+                    <td>Mycie okien</td>
+                    <td>1</td>
+                    <td>200 PLN</td>
+                </tr>
+            </table>
+
+        </article>
+        <section>
+
+            <form>
+                <div>
+                    <label>Imię
+                        <input name="firstName">
+                    </label>
+                </div>
+                <div>
+                    <label>Nazwisko
+                        <input name="lastName">
+                    </label>
+                </div>
+                <div>
+                    <textarea
+                        name="massage"
+                        cols="30"
+                        rows="10"
+                    ></textarea>
+                </div>
+                <div><input
+                        type="submit"
+                        value="Dodaj komentarz"
+                    ></div>
+            </form>
+        </section>
+        <section>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum perspiciatis numquam neque minus,
+                cupiditate deleniti optio quod amet, eius sint animi maxime reiciendis molestiae eos illo ea. Dolores,
+                velit vitae!</p>
+            <figcaption>
+                <p class="comments__name">Jan Kowalski</p>
+            </figcaption>
+            <time datetime="10-03-2022">18 styczeń 2022</time>
+            <hr />
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum perspiciatis numquam neque minus,
+                cupiditate deleniti optio quod amet, eius sint animi maxime reiciendis molestiae eos illo ea. Dolores,
+                velit vitae!</p>
+            <figcaption>
+                <p class="comments__name">Ewa Drozda</p>
+            </figcaption>
+            <time datetime="10-03-2022">18 luty 2022</time>
+            <hr />
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum perspiciatis numquam neque minus,
+                cupiditate deleniti optio quod amet, eius sint animi maxime reiciendis molestiae eos illo ea. Dolores,
+                velit vitae!</p>
+            <figcaption>
+                <p class="comments__name">Andrzej Dauda</p>
+            </figcaption>
+            <time datetime="10-03-2022">27 luty 2022</time>
+            <hr />
+        </section>
+    </main>
+    <footer>
+        <p>
+            &copy; 2022 Ewelina Grześków
+        </p>
+    </footer>
+
 </body>
+
 </html>
