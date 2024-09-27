@@ -1,0 +1,122 @@
+:root {
+    --color-alfa: #52C5F1;
+    --color-beta: #333;
+    --color-gamma: white;
+}
+
+body {
+    background-color: gray;
+}
+
+.nav__item > a {
+    text-decoration: none;
+    color: black;
+}
+.nav {
+    display: flex;
+    margin: 1.5em 1.3em;
+    background-color: var(--color-gamma);
+    width: 100%;
+}
+
+.nav__item {
+    padding: 1em;
+    font-size: 1.3em;
+    position: relative;
+    width: 15%;
+    cursor: pointer;
+}
+
+.nav__item:hover:before {
+    content: "";
+    height: 3px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color:var(--color-alfa);
+    background-color: var(--color-alfa);
+}
+
+.dropdown:after {
+    content: ">";
+    transform:rotate(90deg);
+    display: inline-block;
+    position:absolute;
+    margin-left: 15px;
+    font-size: 13px;
+    font-weight: 900;
+}
+
+.dropdown:hover:after {
+    color:var(--color-alfa);
+}
+
+.nav__item:hover > a{
+    color:var(--color-alfa);
+}
+
+.nav__item:hover > .nav__dropdown {
+    display: block;
+}
+
+.dropdown__style {
+    position:absolute;
+    background-color: var(--color-beta);
+    width:100%
+}
+
+.nav__dropdown {
+    margin-top: 1em;
+    padding: 0.5em;
+    display: none;
+    left:0;
+}
+
+.dropdown__item {
+    padding: 0.3em;
+    padding: 0.5em 0.7em;
+    color: #DDD; /* f6f6f6 */
+    position: relative;
+}
+
+.dropdown__item a{
+    text-decoration: none;
+    color: #DDD; /* f6f6f6 */
+}
+
+.nav__dropdown:hover > .dropdown__item:hover > a{
+    color: #f6f6f6
+}
+
+.nav__dropdown .dropdown__item:hover:after {
+    content: ">";
+    color: #f6f6f6;
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 17px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.dropdown__item--inside {
+    padding: 0.5em 0.7em;
+    cursor: pointer;
+    display: none;
+    left: 100%;
+    top: 0;
+    min-width: 113%;
+}
+
+.dropdown__item:hover .dropdown__item--inside {
+    display: block;
+}
+
+.dropdown__item--inside:hover .inside__item:hover a{
+    color: #f6f6f6;
+}
+
+.inside__item {
+    padding: 0.5em 0.7em;
+}
+
