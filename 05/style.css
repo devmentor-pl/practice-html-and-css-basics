@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mainHeader {
+    background-color: antiquewhite;
+}
+
+/*MENU POSITIONING*/
+.contentContainer {
+    background-color: rgb(173, 146, 112);
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapped {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/*IMG LOGO AND MENU SIZE*/
+.logoContainer {
+    width: 15%;
+    background-color: aliceblue;
+}
+
+.logo {
+    width: 30%;
+}
+
+.menuItemsContainer {
+    background-color: cadetblue;
+    width: 40%;
+}
+
+/*MENU ITEMS STYLES*/
+
+
+.contentColumnContainer {
+    width: 49%;
+    background-color: blanchedalmond;
+}
+
+.contentColumnContainer2 {
+    width: 33%;
+    background-color: aquamarine;
+}
+
+.contentContainer2 {
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid gold;
+}
+
+.footerContainer {
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
