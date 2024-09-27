@@ -1,0 +1,78 @@
+/* wspólne właściwości */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    margin: 2px 0;
+    border: 3px solid rgb(75, 199, 75)
+}
+
+.box {
+    max-width: 1000px;
+    margin: 5px auto;
+    border: 3px solid rgb(61, 139, 202)
+}
+
+.flex-item {
+    margin: 6px 0;
+    background-color: rgb(255, 204, 45);
+}
+
+/* sekcja nr 1 - header */
+
+.top__box {
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+}
+
+.top__img {
+    width: 200px;
+}
+
+.top__nav {
+    width: 400px;
+}
+
+/* sekcja nr 2 - section1 */
+
+.section1__box {
+    display: flex;
+    gap: 10px
+}
+
+.section1__article {
+    height: 300px;
+    flex-basis: 50%;
+}
+
+/* sekcja nr 3 - section2 */
+
+.section2__box {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.section2__article {
+    height: 300px;
+    flex-basis: 32%;
+}
+
+/* sekcja nr 4 - footer */
+
+.end__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+}
+
+.end__info {
+    height: 60px;
+    width: 150px;
+}
