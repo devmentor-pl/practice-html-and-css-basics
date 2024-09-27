@@ -1,0 +1,12 @@
+.img--logo {
+  height: 6rem;
+}
+
+.img--ill {
+  height: 12rem;
+}
+
+article {
+  border: 2px solid black;
+  margin-top: 2rem;
+}
