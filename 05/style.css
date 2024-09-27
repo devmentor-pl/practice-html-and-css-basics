@@ -1,0 +1,60 @@
+.body {
+    background: #f4f4f4;
+}
+
+.green {
+    border: 5px solid green;
+    margin: 10px;
+}
+
+.green--header .blue {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blue {
+    border: 5px solid blue;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 5px; 0;
+}
+
+.orange {
+    background-color: orange;
+    min-height: 50px;
+}
+.orange--logo {
+    margin: 0;
+    width: 160px;
+}
+
+.orange--nav {
+    width: 300px;
+}
+
+.green--main .blue {
+    display: flex;
+    justify-content: space-between;
+}
+.green--main .orange {
+    width: 48%;
+    min-height: 400px;
+}
+
+.green--section .blue {
+    display: flex;
+    justify-content: space-between;
+}
+.green--section .orange {
+    width: 30%;
+    min-height: 300px;
+}
+
+.green--footer .orange {
+    width: 100px;
+}
+
+.green--footer .blue {
+    display: flex;
+    justify-content: center;
+}
