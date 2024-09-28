@@ -4,9 +4,133 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>devmentor.pl - HTML & CSS BASICS - #01</title>
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>waxclinic.pl - HTML & CSS BASICS - #01</title>
 </head>
 <body>
-    
+    <header class="header">
+        <ul class="nav">
+            <li>
+                <img class="nav__img" src="./logo_wax.jpg" alt="waxclinic_logo">
+            </li>
+            <li class="nav__item nav__item--no-space">O nas
+                <ul class="nav__dropdown dropdown">
+                    <li class="dropdown__item">Depilacja</li>
+                    <li class="dropdown__item">Cennik</li>
+                    <li class="dropdown__item">Promocje</li>
+                </ul>
+            </li>
+            <li class="nav__item">Blog</li>
+            <li class="nav__item">Kontakt</li>
+        </ul>
+        <!-- UMÓW WIZYTĘ! -->
+    </header>
+    <section class="promotion">
+        <div>
+            <h2 class="promotion__title">30% rabatu na pierwszą depilację</h2>
+            <button class="promotion__btn">Odbierz!</button>
+            <img class="promotion_image" src="./slaider.jpg" alt="promo-30%">
+        </div>
+
+    </section>
+    <article class="blog">
+        <div>
+            <h1 class="blog__title">
+                ZWIĘKSZYĆ PEWNOŚĆ SIEBIE?
+            </h1> 
+            <p class="blog__date">20-01-2023</p>
+            <p class="blog__body">
+                Chcesz mieć gładką skórę bez podrażnień? Depilacja woskiem 
+                to obecnie najskuteczniejsza i najbezpieczniejsza metoda 
+                pozbywania się włosków. Depilacja bikini i nóg w Wax Clinic 
+                to gwarancja skuteczności i bezpieczeństwa. Nie zwlekaj. 
+                Odwiedź nas już teraz! W dogodnym dla Ciebie czasie, w drodze 
+                z pracy czy w przerwie na lunch. Poczuj się wspaniale, komfortowo, 
+                gładko, po prostu smooth po naszej depilacji woskiem bikini i nóg. 
+                Nasz doświadczony Team Wax Clinic jest gwarancją najlepszej 
+                depilacji w Warszawie.
+            </p>
+            <p class="blog__author">Autor: Karolina Kowalska</p>
+        </div>
+        <div>
+            <img src="" alt="">
+        </div>
+    </article>
+
+    <section class="table">
+        <div>
+            <table>
+            <caption>
+                Popularne zabiegi
+            </caption>
+            <colgroup>
+            <col style="background-color: pink;">
+            <col style="background-color: pink;">
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th>Zabieg</th>
+                    <th>Cena</th>
+                </tr>
+                <tr>
+                    <td>Bikini</td>
+                    <td>153 zł</td>
+                </tr>
+                <tr>
+                    <td>Nogi</td>
+                    <td>143 zł</td>
+                </tr>
+                <tr>
+                    <td>Ręce</td>
+                    <td>98 zł</td>
+                </tr>
+                <tr>
+                    <td>Brwi</td>
+                    <td>55 zł</td>
+                </tr>
+            </tbody>
+            <tfoot>
+
+            </tfoot>
+        </table>
+        <img src="" alt="">
+        </div>
+    </section>
+
+    <section class="form">
+        <h2 class="form__title">Odbierz rabat 30% na pierwszą depilację!</h2>
+        <form>
+            <div class="form__container">
+                <label>Imię</label>
+                <input class="form__btn--name" type="text" placeholder="Imię" />
+                <label>E-mail</label>
+                <input class="form__btn--email" type="text" placeholder="E-mail">
+                <button class="form__btn--send">Odbierz!</button>
+            </div>
+        </form>
+    </section>
+    <section class="comment">
+        <div class="comment__first">
+            <img src="./user1.jpg" alt="client-1">
+            <hr>
+            <p>Od ponad roku odwiedzam Wasz salon regularnie i zawsze jest bardzo profesjonalnie, dokładnie i komfortowo. W Waszym salonie nigdy nie zdarzyła się żadna "wpadka", a doświadczenia z innymi salonami mam spore. Ale to do Was zaczęłam chodzić regularnie i obecnie jest to jedyne miejsce, któremu ufam jeśli chodzi o depilację.
+                Pani Dominika jest mistrzem w swoim fachu, ale będąc u innych pań także nigdy nie miałam zastrzeżeń.
+                Polecam salon zwłaszcza dla osób, które chciałyby się odważyć na swój pierwszy raz z depilacją woskiem ☺️
+            </p>      
+            <p>Magda Markowska</p>
+            <p>14-06-2021</p>
+        </div>
+        <div class="comment__second">
+            <img src="./user2.jpg" alt="client-2">
+            <hr>
+            <p>Jestem mega zadowolona z efektu!!! Pierwszy raz zdecydowałam się na full brazylianę i nie żałuję, że wybrałam ten lokal. Miła, bardzo profesjonalna obsługa, szybko, sprawnie, bez potrzeby poprawek. Cena z pierwszym rabatem bardzo korzystna. Przerzucam się z innej popularnej sieciówki tutaj. Polecam!</p>       
+            <p>Anna Kowalska</p>
+            <p>22-01-2022</p>
+        </div>
+    </section>
+    <footer class="regulations">
+        &copy waxclinic.pl
+    </footer>
 </body>
 </html>

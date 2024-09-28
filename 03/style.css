@@ -1,0 +1,100 @@
+/* COMMON */
+
+html, body {
+    @font-face {
+        font-family: 'Source Sans Pro', sans-serif;
+        src: url(source-sans-pro/SourceSansPro-Bold.otf);
+    }
+    box-sizing: border-box;
+}
+
+.parent {
+    width: 600px;
+    padding: 20px;
+}
+
+/* INLINE-BLOCK */
+
+/* lub .parent--inline-block > .child */
+
+.parent--inline-block > .child--first, 
+.parent--inline-block > .child--middle, 
+.parent--inline-block > .child--last {
+    display: inline-block;
+}
+
+.parent--inline-block > .child--first {
+    margin-right: 10px;
+    font-style: normal;
+    width: calc(30% - 50px);
+}
+
+.parent--inline-block > .child--middle {
+    margin-right: 10px;
+    font-style: bold;
+    width: calc(30% - 50px);
+}
+
+.parent--inline-block > .child--last {
+    /* margin-left: 10px; */
+    font-style: italic;
+    width: calc(40% - 50px);
+}
+
+/* FLOAT */
+
+/* lub .parent--float > .child */
+
+.parent--float > .child--first, 
+.parent--float > .child--middle, 
+.parent--float > .child--last {
+    float: left;
+}
+
+.parent--float > .child--first {
+    margin-right: 10px;
+    font-size: normal;
+    width: calc(30% - 50px);
+}
+
+.parent--float > .child--middle {
+    margin-right: 10px;
+    font-style: bold;
+    width: calc(30% - 50px);
+}
+
+.parent--float > .child--last {
+    margin-left: 10px;
+    font-style: italic;
+    width: calc(40% - 50px);
+    clear: both;
+} 
+
+/* FLEX */
+
+/* lub .parent--flexbox > .child */
+.parent--flexbox > .child--first, 
+.parent--flexbox > .child--middle, 
+.parent--flexbox > .child--last {
+    display: flex;
+}
+
+.parent--flexbox > .child {
+    flex-basis: 30% 30% 40%;
+}
+
+.parent--flexbox > .child--first {
+    margin-right: 10px;
+    font-style: normal;
+}
+
+.parent--flexbox > .child--middle {
+    margin-right: 10px;
+    font-style: bold;
+}
+
+.parent--flexbox > .child--last {
+    margin-left: 10px;
+    font-style: italic;
+}
+
