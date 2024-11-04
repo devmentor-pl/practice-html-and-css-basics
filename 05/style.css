@@ -1,0 +1,84 @@
+/* Variables */
+
+:root {
+  --element-height: 90%;
+}
+
+.header,
+.main,
+.section,
+.footer {
+  border: 1px solid green;
+  padding: 5px 0;
+}
+.header__container,
+.main__container,
+.section__container,
+.footer__container {
+  width: 1000px;
+
+  outline: 1px solid blue;
+  margin: 0 auto;
+}
+
+/* Header */
+.header__container {
+  height: 13vh;
+}
+
+.header__container,
+.main__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__img-container,
+.header__nav-container {
+  height: var(--element-height);
+  background-color: orange;
+}
+.header__img-container {
+  flex-basis: 20%;
+}
+.header__nav-container {
+  flex-basis: 40%;
+}
+
+/* Main */
+.main__container {
+  height: 35vh;
+}
+.main__col1,
+.main__col2 {
+  height: var(--element-height);
+  background-color: orange;
+  width: 49.7%;
+}
+/* Section */
+.section__container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 30vh;
+}
+.section__col1,
+.section__col2,
+.section__col3 {
+  height: var(--element-height);
+  background-color: orange;
+  width: 32%;
+}
+
+/* Footer */
+.footer__container {
+  height: 12vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__col1 {
+  height: var(--element-height);
+  background-color: orange;
+  width: 10%;
+}
