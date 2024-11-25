@@ -1,12 +1,135 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
 </head>
+
 <body>
-    
+
+    <header class="header">
+        <div class="header__container container">
+            <h1 class="header__logo">Logo</h1>
+            <nav class="header__nav">Nav
+                <ul class="nav">
+                    <li class="nav__item">Home</li>
+                    <li class="nav__item">Portfolio
+                        <ul class="nav__dropdown">
+                            <li class="dropdown__item">strony www</li>
+                            <li class="dropdown__item">aplikacje</li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">Kontakt</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main class="content">
+        <div class="content__container container">
+            <article class="main__article">
+                <h2 class="article__title">Tytuł artykułu</h2>
+                <p class="article__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga doloribus
+                    illum
+                    recusandae cumque? Voluptatum blanditiis corporis atque, alias magni dignissimos cumque, cupiditate
+                    minus odio dolorem minima repellendus, molestias quia. Nisi?</p>
+                <time datetime="25-11-2024">25-11-2024</time>
+                <a rel="author">Michał Majewski</a>
+                <figure>
+                    <img src="" alt="">
+                    <figcaption>opis zdjecia</figcaption>
+                </figure>
+
+                <table>
+                    <caption>Dane uzytkowników</caption>
+                    <colgroup>
+                        <col span="1" style="background: grey;">
+                        <col style="background: gold;">
+                        <col style="background: gold;">
+                        <col style="background: gold;">
+                        <col style="background: gold;">
+                    </colgroup>
+
+                    <thead style="background: grey;">
+                        <tr>
+                            <th scope="col">LP.</th>
+                            <th scope="col">Nazwa</th>
+                            <th scope="col">Użytkownik</th>
+                            <th scope="col">Profil</th>
+                            <th scope="col">Ocena</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Alfa</td>
+                            <td>User-1</td>
+                            <td>Pełny</td>
+                            <td>4+</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Beta</td>
+                            <td>User-2</td>
+                            <td>Niepełny</td>
+                            <td>3</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+            <hr>
+            <form class="comment__form">
+                <input type="text" name="userName" placeholder="Nazwa użytkownika">
+                <br />
+                <br />
+                <textarea name="comment"></textarea>
+                <br />
+                <br />
+
+                <button type="submit">Wyślij</button>
+            </form>
+
+
+            <div class="comments__section">
+                <div class="comment__container">
+                    <h3 class="comment__author">Jan Kowalski</h3>
+                    <p class="comment__text">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde iusto ipsa architecto recusandae
+                        libero atque quisquam placeat necessitatibus laborum similique.
+                    </p>
+                    <p class="comment__date">25 listopada 2024</p>
+                </div>
+                <div class="comment__container">
+                    <h3 class="comment__author">Jan Kowalski</h3>
+                    <p class="comment__text">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde iusto ipsa architecto recusandae
+                        libero atque quisquam placeat necessitatibus laborum similique.
+                    </p>
+                    <p class="comment__date">25 listopada 2024</p>
+                </div>
+                <div class="comment__container">
+                    <h3 class="comment__author">Jan Kowalski</h3>
+                    <p class="comment__text">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde iusto ipsa architecto recusandae
+                        libero atque quisquam placeat necessitatibus laborum similique.
+                    </p>
+                    <p class="comment__date">25 listopada 2024</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer container">
+        <div class="footer__container">
+            <section class="footer__copyrights">&copy 2024 CodeMike</section>
+        </div>
+    </footer>
+
 </body>
+
 </html>
