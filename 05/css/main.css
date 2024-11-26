@@ -71,6 +71,7 @@
 .footer__container {
     justify-content: center;
     padding: 5px;
+    min-height: 100px;
 }
 .footer__copyrigts {
     width: 300px;   
