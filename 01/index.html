@@ -15,14 +15,14 @@
             <h1 class="header__logo">Logo</h1>
             <nav class="header__nav">Nav
                 <ul class="nav">
-                    <li class="nav__item">Home</li>
-                    <li class="nav__item">Portfolio
+                    <li class="nav__item"><a href="#">Home</a></li>
+                    <li class="nav__item"><a href="#">Portfolio</a>
                         <ul class="nav__dropdown">
-                            <li class="dropdown__item">strony www</li>
-                            <li class="dropdown__item">aplikacje</li>
+                            <li class="dropdown__item"><a href="#">strony www</a></li>
+                            <li class="dropdown__item"><a href="#">aplikacje</a></li>
                         </ul>
                     </li>
-                    <li class="nav__item">Kontakt</li>
+                    <li class="nav__item"><a href="#">Kontakt</a></li>
                 </ul>
             </nav>
         </div>
@@ -84,42 +84,40 @@
             <hr>
             <form class="comment__form">
                 <input type="text" name="userName" placeholder="Nazwa użytkownika">
-                <br />
-                <br />
+                <p><input /></p>
                 <textarea name="comment"></textarea>
-                <br />
-                <br />
+                <p><input /></p>
 
                 <button type="submit">Wyślij</button>
             </form>
 
 
-            <div class="comments__section">
-                <div class="comment__container">
+            <section class="comments__section">
+                <article class="comment__container">
                     <h3 class="comment__author">Jan Kowalski</h3>
                     <p class="comment__text">
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde iusto ipsa architecto recusandae
                         libero atque quisquam placeat necessitatibus laborum similique.
                     </p>
                     <p class="comment__date">25 listopada 2024</p>
-                </div>
-                <div class="comment__container">
+                </article>
+                <article class="comment__container">
                     <h3 class="comment__author">Jan Kowalski</h3>
                     <p class="comment__text">
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde iusto ipsa architecto recusandae
                         libero atque quisquam placeat necessitatibus laborum similique.
                     </p>
                     <p class="comment__date">25 listopada 2024</p>
-                </div>
-                <div class="comment__container">
+                </article>
+                <article class="comment__container">
                     <h3 class="comment__author">Jan Kowalski</h3>
                     <p class="comment__text">
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde iusto ipsa architecto recusandae
                         libero atque quisquam placeat necessitatibus laborum similique.
                     </p>
                     <p class="comment__date">25 listopada 2024</p>
-                </div>
-            </div>
+                </article>
+            </section>
 
         </div>
     </main>

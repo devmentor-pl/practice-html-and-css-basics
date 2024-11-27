@@ -5,70 +5,44 @@
     font-style: normal;
     font-weight: bold;
 }
-
-
-/* * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-} */
-
 .parent {
-    /* display: flex;
-    justify-content: space-between; */
+    display: flex;
+    justify-content: space-between;
     border: 3px solid gold;
     min-width: 600px;
     outline-color: green;
     padding: 20px;
 }
-
 .child--first {
     width: 30%;
     margin-right: 10px;
     font-family: 'SOURCE SANS PRO';
 }
-
 .child--middle {
     width: 30%;
     margin-right: 10px;
     font-family: 'SOURCE SANS PRO';
     font-weight: bold;
 }
-
 .child--last{
     width: 40%;
     font-family: 'SOURCE SANS PRO';
     font-style: italic;
 }
-
-/* .parent--inline-block {
-display: inline-block;
-margin: 0 auto;
-} */
-
 .parent--inline-block > .child {
     display: inline-block;
-    width: 30%;
 }
-
 .clearfix::after {
     content: "";
     clear: both;
-  }
-
+}
 .parent--float {
     float: left;
 }
-
 .parent--float > .child {
     display: inline-block;
-    width: 30%;
 }
-  
-.parent--flexbox {
+/* .parent--flexbox {
     display: flex;
     justify-content: start;
-}
-.parent--flexbox > .child {
-    width: 30%;
-}
+} */
