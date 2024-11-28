@@ -6,8 +6,6 @@
     font-weight: bold;
 }
 .parent {
-    display: flex;
-    justify-content: space-between;
     border: 3px solid gold;
     min-width: 600px;
     outline-color: green;
@@ -25,24 +23,21 @@
     font-weight: bold;
 }
 .child--last{
-    width: 40%;
+    width: calc(40% - 30px);
     font-family: 'SOURCE SANS PRO';
     font-style: italic;
 }
 .parent--inline-block > .child {
-    display: inline-block;
+    display: inline-block; 
+}
+.parent--float > .child {
+    float: left;
 }
 .clearfix::after {
     content: "";
     clear: both;
 }
-.parent--float {
-    float: left;
-}
-.parent--float > .child {
-    display: inline-block;
-}
-/* .parent--flexbox {
+.parent--flexbox {
     display: flex;
     justify-content: start;
-} */
+}
