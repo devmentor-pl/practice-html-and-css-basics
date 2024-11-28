@@ -1,0 +1,106 @@
+:root {
+    --color-alfa: rgb(143, 143, 143);
+    --color-beta: rgb(64, 66, 67);
+    --color-nav-item: rgb(245, 240, 240);
+    --color-gold: rgb(255, 215, 0);
+    --color-black: rgb(51, 51, 51);
+}
+.nav__container {
+    padding: 20px 0 20px 0;
+}
+.nav {
+    background: var(--color-nav-item);
+    display: flex;
+}
+.nav__item {
+    background-color: var(--color-nav-item);
+    padding: 20px;
+    margin-left: 10px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color .3s;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.nav__item > a {
+    text-decoration: none;
+    color: var(--color-black);
+}
+.nav__item:hover > a {
+    color: var(--color-gold);
+}
+.dropdown__item > a {
+    text-decoration: none;
+    color: var(--color-alfa);
+}
+.dropdown__item:hover > a {
+    color: var(--color-gold);
+}
+.nav__item > img {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+}
+.nav__item:hover > img {
+    filter: invert(90%) sepia(23%) saturate(6155%) hue-rotate(359deg) brightness(106%) contrast(105%);
+}
+.dropdown__item > img {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 5px;
+    filter: invert(61%) sepia(1%) saturate(1804%) hue-rotate(317deg) brightness(93%) contrast(93%);
+}
+.dropdown__item:hover > img {
+    filter: invert(90%) sepia(23%) saturate(6155%) hue-rotate(359deg) brightness(106%) contrast(105%);
+}
+.nav__item::before {
+    content: '';
+    width: 100%;
+    height: 4px;
+    color: var(--color-gold);
+    background-color: var(--color-gold);
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: scaleX(0);
+    transition: transform .4s ease-in-out;
+}
+.nav__item:hover {
+    background-color: var( --color-alfa);
+    color: var(--color-gold);
+    
+}
+.nav__item:hover::before {
+    transform: scaleX(1);
+}
+.dropdown {
+    color: var(--color-alfa);
+}
+.nav__dropdown {
+    display: none;
+    padding: 20px 0 20px 0;
+    position: absolute;
+    left: 0;
+}
+.dropdown__item {
+    background: var(--color-beta);
+    padding: 10px 20px;
+    min-width: 180px;
+}
+.dropdown__item:hover {
+    color: var(--color-gold);
+}
+.nav__item:hover > .nav__dropdown {
+    display: block;
+}
+.nav__dropdown-second {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 180px;
+}
+.dropdown__item:hover > .nav__dropdown-second {
+    display: block;
+}
