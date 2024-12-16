@@ -1,12 +1,210 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
-</head>
-<body>
-    
-</body>
+  </head>
+
+  <body>
+    <header>
+      <h1>Website Name</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="#">Home</a>
+          </li>
+
+          <li>
+            Articles
+            <ul>
+              <li>
+                <a href="#html">HTML</a>
+              </li>
+              <li>
+                <a href="#css">CSS</a>
+              </li>
+              <li>
+                <a href="#js">JavaScript</a>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#comments">Comments</a>
+          </li>
+
+          <li>
+            <a href="#about">About</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="articles">
+        <h2>Articles</h2>
+
+        <!-- HTML ARTICLE -->
+        <article id="html">
+          <h3>HTML</h3>
+
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero animi
+            voluptas quo quisquam laboriosam suscipit qui esse omnis, rem
+            doloribus!
+          </p>
+
+          <div>
+            Posted on
+            <time datetime="2024-12-16">December 16th, 2024</time>
+            <address>by <strong>Bartosz Dudziak</strong></address>
+          </div>
+
+          <figure>
+            <img
+              width="100"
+              src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
+              alt="HTML Logo"
+            />
+            <figcaption>HTML Logo</figcaption>
+          </figure>
+        </article>
+
+        <!-- CSS ARTICLE -->
+        <article id="css">
+          <h3>CSS</h3>
+
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio odit
+            quisquam nihil non ut nobis, quae cupiditate necessitatibus
+            voluptatum cum commodi ipsam amet sapiente magnam, nulla
+            exercitationem quod earum facilis?
+          </p>
+
+          <div>
+            Posted on
+            <time datetime="2024-12-16">December 16th, 2024</time>
+
+            <address>by <strong>Bartosz Dudziak</strong></address>
+          </div>
+
+          <figure>
+            <img
+              width="100"
+              src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg"
+              alt="CSS Logo"
+            />
+            <figcaption>CSS Logo</figcaption>
+          </figure>
+        </article>
+
+        <!-- JavaScript ARTICLE -->
+        <article id="js">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+            soluta ad harum dolor alias deserunt vel, ipsa a quae quidem
+            recusandae? Quam, ullam sit corporis, commodi distinctio iure
+            nesciunt eveniet, laboriosam modi numquam porro voluptate maiores
+            minus delectus labore cumque cupiditate? Saepe, amet totam nisi
+            neque, ut officiis ratione voluptate fugiat tenetur veniam omnis
+            laborum accusamus, soluta odio. Deleniti, nihil
+          </p>
+
+          <div>
+            Posted on
+            <time datetime="2024-12-16">December 16th, 2024</time>
+            <address>by <strong>Bartosz Dudziak</strong></address>
+          </div>
+
+          <figure>
+            <img
+              width="100"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/640px-Unofficial_JavaScript_logo_2.svg.png"
+              alt="JavaScript Logo"
+            />
+            <figcaption>JavaScript Logo</figcaption>
+          </figure>
+
+          <table>
+            <caption>
+              Top 3 JavaScript Frameworks
+            </caption>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Popularity</th>
+                <th>Created by</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>React</th>
+                <td>39.5%</td>
+                <td>Meta</td>
+              </tr>
+              <tr>
+                <th>Angular</th>
+                <td>17.1%</td>
+                <td>Google</td>
+              </tr>
+              <tr>
+                <th>Vue</th>
+                <td>15.4%</td>
+                <td>Evan You</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+      </section>
+
+      <section id="comments">
+        <h2>Comments</h2>
+        <form>
+          <textarea id="newComment" cols="40" rows="10">
+Leave your commnet...</textarea
+          >
+          <button type="submit">Submit</button>
+        </form>
+
+        <div>
+          <ul>
+            <li>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Accusamus, temporibus.
+              </p>
+              <div>
+                <address>Harry Potter</address>
+                <time datetime="2024-12-16">December 16th, 2024</time>
+              </div>
+            </li>
+
+            <li>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Recusandae, sapiente odit doloribus illo in quam nisi ipsum
+                fugit eligendi repellat?
+              </p>
+              <div>
+                <address>Ron Weasley</address>
+                <time datetime="2024-12-16">December 16th, 2024</time>
+              </div>
+            </li>
+
+            <li>
+              <p>Lorem ipsum dolor sit amet.</p>
+              <div>
+                <address>Hermione Granger</address>
+                <time datetime="2024-12-16">December 16th, 2024</time>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer id="about"><div>&copy; 2024 Bartosz Dudziak</div></footer>
+  </body>
 </html>
