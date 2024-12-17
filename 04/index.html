@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MultiLevel Dropdown Menu</title>
+
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <ul class="nav__menu">
+          <li class="nav__item">
+            <a class="nav__link" href="#home">Home</a>
+          </li>
+          <li class="nav__item nav__item--dropdown">
+            <span class="nav__link"
+              >Items<span class="arrow arrow-down"></span>
+            </span>
+            <ul class="nav__submenu nav__submenu--down">
+              <li class="nav__item">
+                <a class="nav__link" href="#item1">Item 1</a>
+              </li>
+              <li class="nav__item nav__item--dropdown">
+                <span class="nav__link">Item 2</span
+                ><span class="arrow arrow-right"></span>
+                <ul class="nav__submenu nav__submenu--right">
+                  <li class="nav__item">
+                    <a class="nav__link" href="#item2.1">Item 2.1</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#item2.2">Item 2.2</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#settings">Settings</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+</html>
