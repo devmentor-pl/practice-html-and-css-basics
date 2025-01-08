@@ -28,9 +28,23 @@ a {
 .menu__link {
   color: black;
 }
+.menu__link--drop {
+  color: #fff;
+  padding: 15px 20px;
+}
+.marker {
+  margin-left: 100px;
+  font-size: 12px;
+}
+.arrow {
+  display: inline-block;
+  transform: rotate(90deg);
+  font-size: 12px;
+}
 
 .menu__item {
   border-top: 5px solid transparent;
+  position: relative;
 }
 
 .menu__item:hover {
@@ -54,6 +68,11 @@ a {
 
   min-width: 205px;
 }
+
+.menu__item:hover > .menu__sublist {
+  display: block;
+}
+
 .sublist__link {
   color: #fff;
 }
@@ -65,10 +84,7 @@ a {
   left: 100%;
   top: 0;
 }
-.menu__item:hover {
-  background-color: #fff;
-}
-/* Show drop-down on hover of the parent menu item */
+
 .menu__item--parent:hover > .menu__sublist {
   display: block;
 }

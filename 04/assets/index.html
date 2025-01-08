@@ -12,20 +12,30 @@
       <ul class="menu__list">
         <li class="menu__item"><a href="#home" class="menu__link">HOME</a></li>
         <li class="menu__item menu__item--parent">
-          ITEMS ▼
+          ITEMS <span class="arrow">></span>
           <ul class="menu__sublist menu__sublist--bottom">
-            <li class="menu__item"><a href="#shop" class="menu__link">Item 1</a></li>
+            <li class="menu__item">
+              <a href="#shop" class="menu__link--drop">Item 1</a>
+            </li>
             <li class="menu__item menu_item--parent">
-              Item 2 ▶
+              <a href="#item2" class="menu__link--drop">Item 2 <span class="marker">></span></a>
               <ul class="menu__sublist menu__sublist--right">
-                <li class="menu__item"><a href="#Item2.1" class="menu__link">Item 2.1</a></li>
-                <li class="menu__item"><a href="#Item2.2" class="menu__link">Item 2.2</a></li>
+                <li class="menu__item">
+                  <a href="#Item2.1" class="menu__link--drop">Item 2.1</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#Item2.2" class="menu__link--drop">Item 2.2</a>
+                </li>
               </ul>
             </li>
           </ul>
         </li>
-        <li class="menu__item"><a href="#settings" class="menu__link">SETTINGS</a></li>
-        <li class="menu__item"><a href="#contact" class="menu__link">CONTACT</a></li>
+        <li class="menu__item">
+          <a href="#settings" class="menu__link">SETTINGS</a>
+        </li>
+        <li class="menu__item">
+          <a href="#contact" class="menu__link">CONTACT</a>
+        </li>
       </ul>
     </nav>
   </body>
