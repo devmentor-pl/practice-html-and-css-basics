@@ -52,6 +52,9 @@ a {
 .menu__item:hover {
   border-top-color: #336699;
 }
+.menu__item:hover a{
+  color: lightblue;
+}
 
 .menu__item--parent {
   cursor: default;
@@ -90,3 +93,4 @@ a {
 .menu__item--parent:hover > .menu__sublist {
   display: block;
 }
+
