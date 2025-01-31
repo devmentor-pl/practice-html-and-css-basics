@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>devmentor.pl - HTML & CSS BASICS - #01</title>
+    <title>NG Dev - Home</title>
   </head>
   <body>
     <header>
@@ -53,5 +53,141 @@
         </ul>
       </nav>
     </header>
+    <main>
+      <article>
+        <h2><a href="/travel/germany">Visit Oktoberfest in Germany</a></h2>
+        <img
+          src=".\1280px-Haupteingang_Oktoberfest_2012.jpg"
+          alt="Oktoberfest main entrance"
+          width="400px"
+        />
+        <p>
+          Oktoberfest in Germany, held annually in Munich, is the world's
+          largest folk festival, attracting millions of visitors. It is famous
+          for its traditional Bavarian beer served in massive tents, lively
+          music, and hearty food like pretzels, sausages, and roast chicken.<br />
+          Visitors wear traditional outfits like lederhosen and dirndls, adding
+          to the festive atmosphere. Beyond beer, Oktoberfest features amusement
+          rides, parades, and cultural performances, making it a unique blend of
+          tradition and celebration.<br />
+          <time datetime="2024-10-31">31.01.2025</time> <br />
+          <author>Neil Gorski</author>
+        </p>
+        <table>
+          <caption>
+            Oktoberfest statistics
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">Year</th>
+              <th scope="col">Attendence (Million)</th>
+              <th scope="col">Beer Consupsion (Million Liters)</th>
+              <th scope="col">Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2024</td>
+              <td>6.7</td>
+              <td>7.0</td>
+              <td>Beer prices reached up to €15 per liter</td>
+            </tr>
+            <tr>
+              <td>2023</td>
+              <td>7.2</td>
+              <td>6.5</td>
+              <td>
+                Record attendance; increase in non-alcoholic drinks (+50%) and
+                food sales (+15%)
+              </td>
+            </tr>
+            <tr>
+              <td>2022</td>
+              <td>5.7</td>
+              <td>7.1</td>
+              <td>Festival returns after two-year break</td>
+            </tr>
+            <tr>
+              <td>2021</td>
+              <td>0</td>
+              <td>0</td>
+              <td>Canceled due to COVID-19</td>
+            </tr>
+            <tr>
+              <td>2020</td>
+              <td>0</td>
+              <td>0</td>
+              <td>Canceled due to COVID-19</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+      <hr />
+      <form>
+        <fieldset>
+          <legend>Have you already been there?</legend>
+          <label for="name">What's your name?</label><br />
+          <input type="text" id="name" value="Frank Messner" /><br />
+          <label for="message">Tell us your Story.</label><br />
+          <textarea name="comment" id="message" cols="50" rows="5"></textarea
+          ><br />
+          <input type="submit" />
+        </fieldset>
+      </form>
+      <hr />
+      <div class="comments">
+        <div class="comment">
+          <author>Flynn Wilson</author><br />
+          <time datetime="2024-12-10">10.12.2024</time>
+          <p>
+            As I stepped into Oktoberfest, the energy was electric—music,
+            laughter, and the clinking of massive beer steins filled the air.
+            Dressed in my freshly bought lederhosen, I found a spot in a packed
+            beer tent, where strangers quickly became friends over a shared Maß.
+            The rich aroma of roasted chicken and pretzels tempted me between
+            sips of the smoothest beer I’d ever tasted. As the brass band
+            played, I stood on the bench, singing along with thousands of
+            others, completely lost in the moment. Under the glowing festival
+            lights, I knew—I’d be back next year.
+          </p>
+        </div>
+
+        <div class="comment">
+          <author>Ruth Byrd</author><br />
+          <time datetime="2024-11-3">3.11.2024</time>
+          <p>
+            The moment I entered Oktoberfest, I was swept up in a whirlwind of
+            music, laughter, and the smell of sizzling bratwurst. I grabbed a
+            Maß of golden beer, its foam spilling over as I toasted with
+            strangers who felt like old friends. The band struck up a lively
+            tune, and before I knew it, I was standing on a bench, singing at
+            the top of my lungs. Between bites of warm pretzels and spinning
+            rides, I felt pure joy. As the night ended, I smiled, knowing this
+            was an experience I’d never forget.
+          </p>
+        </div>
+        <div class="comment">
+          <author>Fatimah Best</author><br />
+          <time datetime="2024-11-30">30.11.2024</time>
+          <p>
+            As I stepped into Oktoberfest, I expected a dreamlike festival, but
+            the reality was different. The crowds were overwhelming, pushing in
+            every direction, and finding a seat in a beer tent felt impossible.
+            When I finally got a Maß, the price nearly made me choke—€15 for a
+            single beer! The music was deafening, and after hours of standing
+            shoulder to shoulder with sweaty strangers, the excitement faded.
+            The lines for food were endless, and even the famous pretzel felt
+            dry and overpriced. As I left, dodging puddles of spilled beer, I
+            couldn’t help but think—maybe Oktoberfest just isn’t for me.
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>
+        &copy; 2022-2025 <a href="mailto:info@ng-dev.com">NG-DEV.com</a>. All
+        rights reserved.
+      </p>
+    </footer>
   </body>
 </html>
