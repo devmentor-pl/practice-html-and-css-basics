@@ -52,7 +52,7 @@ a {
 .menu__item:hover {
   border-top-color: #336699;
 }
-.menu__item:hover a{
+.menu__item:hover > a, .menu__item:hover{
   color: lightblue;
 }
 
