@@ -8,24 +8,24 @@
     <title>Nav Demo</title>
   </head>
   <body>
-    <nav>
-      <ul class="nav">
-        <li class="nav__item">HOME</li>
-        <li class="nav__item" "nav__dropdown">
+    <nav class="navbar">
+      <ul>
+        <li>HOME</li>
+        <li class="navbar__dropdown">
           ITEMS
-          <ul class="nav__dropdown">
+          <ul>
             <li class="dropdown__item">Item 1</li>
-            <li class="dropdown__item" >
+            <li class="dropdown__item">
               Item 2
-              <ul class="dropdown">
+              <ul class="navbar__dropdown--second">
                 <li class="dropdown__item">Item 2.1</li>
                 <li class="dropdown__item">Item 2.2</li>
               </ul>
             </li>
           </ul>
         </li>
-        <li class="nav__item">SETTINGS</li>
-        <li class="nav__item">CONTACT</li>
+        <li>SETTINGS</li>
+        <li>CONTACT</li>
       </ul>
     </nav>
   </body>
