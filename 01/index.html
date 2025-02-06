@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,119 @@
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
 </head>
 <body>
-    
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Site Logo" width="100" height="50">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li>
+                    <a href="#">Categories</a>
+                    <ul>
+                        <li><a href="/category1">Category 1</a></li>
+                        <li><a href="/category2">Category 2</a></li>
+                        <li><a href="/category3">Category 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h1>Article Title</h1>
+
+            <section>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget aliquam tincidunt,
+                    nisl
+                    nunc aliquet nunc, vel malesuada nunc nunc et nunc. Vivamus non magna vel orci efficitur ultricies.
+                </p>
+                <p>Aliquam erat volutpat. Integer commodo, mauris sit amet consectetur consequat, nisl nunc aliquet
+                    nunc,
+                    eget aliquam nunc nunc et nunc.</p>
+            </section>
+
+            <p><small>Published: <time datetime="2025-01-30">30 January 2025</time> | Author: John Smith</small></p>
+
+            <figure>
+                <img src="articleimage.jpg" alt="Article Image" width="100" height="100">
+                <figcaption>Article Image Description</figcaption>
+            </figure>
+
+            <table>
+                <caption>Example Table</caption>
+                <thead>
+                    <tr>
+                        <th>Heading 1</th>
+                        <th>Heading 2</th>
+                        <th>Heading 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Data 1</td>
+                        <td>Data 2</td>
+                        <td>Data 3</td>
+                    </tr>
+                    <tr>
+                        <td>Data 4</td>
+                        <td>Data 5</td>
+                        <td>Data 6</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+
+        <section id="comments">
+            <h2>Add Comment</h2>
+
+            <form action="/" method="POST">
+                <div>
+                    <label for="author">Name:</label>
+                    <input type="text" id="author" name="author" required>
+                </div>
+
+                <div>
+                    <label for="comment">Comment:</label>
+                    <textarea id="comment" name="comment" rows="4" required></textarea>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+
+            <div class="comment">
+                <header>
+                    John Smith <small> - <time datetime="2025-01-31T10:00">31 January 2025, 10:00</time></small>
+                </header>
+
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            </div>
+
+            <div class="comment">
+                <header>
+                    James Jones <small> - <time datetime="2025-01-31T12:30">31 January 2025, 12:30</time></small>
+                </header>
+
+                <p>Sequi quam dolorum quia possimus velit ut nulla corrupti fuga mollitia quae, ducimus laboriosam assumenda esse!</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>&copy; 2025 devmentor.pl. All rights reserved.</div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/">home</a>
+                </li>
+                <li>
+                    <a href="/contact">contact</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
 </body>
+
 </html>
