@@ -1,27 +1,136 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div>
-            <a href="#"><img src="path/to/logo.svg" alt="Logo Alt Text" loading="lazy" title="Visit Homepage"></a>
+      <nav>
+        <a href="/">
+          <img
+            src="./images/topweather.svg"
+            alt="Logo Alt Text"
+            loading="lazy"
+            title="Visit Homepage" />
+        </a>
+        <ul>
+          <li>O mnie</li>
+          <li>
+            Portfolio
             <ul>
-                <li>O mnie</li>
-                <li>Portfolio
-                    <ul>
-                        <li>Galeria Sztuki</li>
-                        <li>Wizualizacja Online</li>
-                    </ul>
-                </li>
-                <li>Oferta</li>
-                <li>Kontakt</li>
+              <li>Galeria Sztuki</li>
+              <li>Wizualizacja Online</li>
             </ul>
-        </div>
+          </li>
+          <li>Oferta</li>
+          <li>Kontakt</li>
+        </ul>
+      </nav>
     </header>
-</body>
+    <hr />
+
+    <main>
+      <article>
+        <h1>Weather forecast for Poland</h1>
+        <div>
+          <img src="./images/thunderstorm-clouds.svg" alt="Stormy Cloud" />
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua.
+        </p>
+        <p>
+          <b>
+            Posted on
+            <time datetime="2025-02-10 09:00">February 10</time>
+            by Mateusz
+          </b>
+        </p>
+
+        <table>
+          <caption>List of Articles</caption>
+          <thead>
+            <tr>
+              <th scope="col">Article Name</th>
+              <th scope="col">Author</th>
+              <th scope="col">Date Published</th>
+              <th scope="col">Comments Amount</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Weather forecast for Poland</th>
+              <td>Mateusz</td>
+              <td>
+                <time datetime="2025-02-10 09:00">February 10, 2025</time>
+              </td>
+              <td>3</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+
+      <h2>Your super stormy comment</h2>
+      <form action="./add-comment.php" id="form" method="POST">
+        <fieldset>
+          <legend>About the weather</legend>
+          <div>
+            <label for="name">
+              Name
+              <input type="text" name="firstName" id="name" required />
+            </label>
+          </div>
+          <div>
+            <textarea rows="4" cols="50" name="comment" form="form">
+            Enter your comment here...</textarea
+            >
+          </div>
+          <div><input type="submit" value="Comment!" /></div>
+        </fieldset>
+      </form>
+
+      <section>
+        <h2>Comments</h2>
+        <div>
+          <h3>Mateusz</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+          <time datetime="2025-02-10 09:00">February 10, 2025</time>
+          <hr />
+
+          <h3>Zaneta</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+          <time datetime="2025-02-10 09:00">February 10, 2025</time>
+          <hr />
+
+          <h3>Jan</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+          <time datetime="2025-02-10 09:00">February 10, 2025</time>
+          <hr />
+        </div>
+      </section>
+
+      <footer>
+        <div>&copy; 2025 topweather.com</div>
+      </footer>
+    </main>
+  </body>
 </html>
