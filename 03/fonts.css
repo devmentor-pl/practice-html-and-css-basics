@@ -1,0 +1,23 @@
+/* Font style: regular */
+@font-face {
+  font-family: 'Source Sans PRO';
+  src: url(./fonts/source-sans-pro/SourceSansPro-Regular.otf) format('truetype');
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* Font style: bold */
+@font-face {
+  font-family: 'Source Sans PRO';
+  src: url(./fonts/source-sans-pro/SourceSansPro-Bold.otf) format('truetype');
+  font-style: normal;
+  font-weight: 700;
+}
+
+/* Font style: italic */
+@font-face {
+  font-family: 'Source Sans PRO';
+  src: url(./fonts/source-sans-pro/SourceSansPro-It.otf) format('truetype');
+  font-style: italic;
+  font-weight: 400;
+}
