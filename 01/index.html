@@ -1,12 +1,122 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
 </head>
+
 <body>
-    
+    <header>
+        <img src="" alt="logo">
+        <ul>
+            <li><a href="#">Strona głowna</a></li>
+            <li> <a href="#">Tresc głowna</a>
+                <ul>
+                    <li><a href="#">Artykul</a></li>
+                    <li><a href="#">Formularz</a></li>
+                    <li><a href="#">Komentarze</a></li>
+                </ul>
+            </li>
+
+        </ul>
+    </header>
+    <main>
+        <article>
+            <h2>Lorem, ipsum dolor.</h2>
+            <p>Posting date: <time datetime="2018-07-07">July 7</time></p>
+            <p>Autor</p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+            </p>
+            <table>
+                <caption>Tabela</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Kolumna 1</th>
+                        <th scope="col">Kolumna 2</th>
+                        <th scope="col">Kolumna 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lorem ipsum</td>
+                        <td>Lorem ipsum</td>
+                        <td>Lorem ipsum</td>
+                    </tr>
+                </tbody>
+            </table>
+            <figure>
+                <img src="" alt="image">
+            </figure>
+        </article>
+    </main>
+
+    <section>
+        <form action="">
+            <div>
+                <label>Autor
+                    <input name="Name" />
+                </label>
+            </div>
+            <div>
+                <label>Data
+                    <input name="Data utworzenia" />
+                </label>
+            </div>
+            <div>
+                <textarea rows="10" cols="50"></textarea>
+            </div>
+            <div><input type="submit" /></div>
+        </form>
+        <ul>
+            <li>
+                <h2><a rel="author">Krystyna</a>, <time datetime="2018-07-07">July 7</time></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
+                    ex ea commodo consequat.</p>
+            </li>
+            <li>
+                <h2><a rel="author">Krystyna</a>, <time datetime="2018-07-07">July 7</time></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
+                    ex ea commodo consequat.</p>
+            </li>
+            <li>
+                <h2><a rel="author">Krystyna</a>, <time datetime="2018-07-07">July 7</time></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
+                    ex ea commodo consequat.</p>
+            </li>
+        </ul>
+    </section>
+
+    <footer>
+        <div>&copy; Lorem ipsum.pl</div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/">home</a>
+                </li>
+                <li>
+                    <a href="/contact">kontakt</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+
 </body>
+
 </html>
