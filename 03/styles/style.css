@@ -1,0 +1,63 @@
+/* import font */
+@font-face {
+    font-family: 'Source Sans PRO';
+	src: url(../fonts/SourceSansPro-Regular.otf) format('opentype'), url(../fonts/SourceSansPro-Bold.otf) format('opentype'), url(../fonts/SourceSansPro-It.otf) format('opentype');
+}
+
+/* global */
+:root {
+    /* Global font */
+    font-family: 'Source Sans PRO';
+    /* Dimensions */
+    --marginChild: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+.clearfix::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+/* main */
+.parent {
+    padding: 20px;
+    width: 600px;  
+}
+
+/* problem z ustawieniem odstępów i poprawnym wyliczeniem 30% 30% 40% dla .child - z box-sizing: border-box i bez tej właściwości elementy zajmują ~28% i ~38% */
+.child--first, .child--middle {
+    margin-right: var(--marginChild);
+    width: calc(30% - var(--marginChild));
+}
+
+.child--middle {
+    font-weight: 700;
+}
+
+.child--last {
+    font-style: italic;
+    width: calc(40% - var(--marginChild));
+    /* width: 40%; */
+}
+
+.parent--inline-block .child {
+    display: inline-block;
+}
+
+.parent--float .child {
+    float: left;
+}
+
+.parent--flexbox {
+    display: flex;
+}
