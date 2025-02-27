@@ -1,12 +1,128 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
 </head>
+
 <body>
-    
+    <header class="header">
+        <div class="header__container container">
+            <a class="header__logo" href="#">
+                <img src="./img/ico/iconmonstr-file-24.svg" alt="logo">
+            </a>
+            <nav class="header__nav">
+                <ul class="nav">
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Strona główna</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Artykuły</a>
+                        <ul class="nav__dropdown dropdown">
+                            <li class="dropdown__item">
+                                <a class="dropdown__link" href="#">Najnowsze</a>
+                            </li>
+                            <li class="dropdown__item">
+                                <a class="dropdown__link" href="#">Polecane</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Kontakt</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="main__container container">
+            <h1 class="main__title">Tytuł strony głównej</h1>
+            <article class="article">
+                <h2 class="article__title">Tytuł artykułu</h2>
+                <p class="article__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quidem. Ipsa
+                    nobis totam cupiditate quam
+                    esse, temporibus sequi quis aliquid ad iusto ea veniam sunt aliquam sapiente consequuntur, fugit
+                    molestias.
+                </p>
+                <p class="article__date">Data publikacji: <time datetime="2022-12-29">29 grudnia 2022</time></p>
+                <p class="article__author">Jan Kowalski</p>
+                <figure class="article__img">
+                    <img src="" alt="ilustracja artykułu">
+                    <figcaption>Opis ilustracji</figcaption>
+                </figure>
+
+                <table class="table">
+                    <thead class="table__title">
+                        <tr>
+                            <th colspan="3">Nagłówek tabeli</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table__body">
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+
+            <form class="form">
+                <h3 class="form__title">Formularz do komentowania</h3>
+                <div class="form__item">
+                    <label class="form__label" for="name">Imię</label>
+                    <input class="form__input" type="text" name="name" id="name">
+                </div>
+                <div class="form__item">
+                    <label class="form__label" for="email">Email:</label>
+                    <input class="form__input" type="email" name="email" id="email">
+                </div>
+                <div class="form__item">
+                    <label class="form__label" for="message"></label>
+                    <textarea class="form__textarea" name="message" id="message" cols="30" rows="10"
+                        placeholder="Wprowadź treść wiadomości"></textarea>
+                </div>
+                <input class="form__btn" type="submit" value="Prześlij">
+            </form>
+
+            <section class="comments">
+                <h3 class="comments__title">Komentarze</h3>
+                <div class="comment">
+                    <p class="comment__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos,
+                        unde.</p>
+                    <p class="comment__author">Jarek
+                        <time class="comment__date" datetime="2022-12-30">2022-12-30</time>
+                    </p>
+                </div>
+                <div class="comment">
+                    <p class="comment__text">Lorem ipsum dolor.</p>
+                    <p class="comment__author">Artur
+                        <time class="comment__date" datetime="2022-12-29">2022-12-29</time>
+                    </p>
+                </div>
+                <div class="comment">
+                    <p class="comment__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos,
+                        unde. Lorem ipsum dolor sit amet.</p>
+                    <p class="comment__author">Michał
+                        <time class="comment__date" datetime="2022-12-28">2022-12-28</time>
+                    </p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__text">&copy 2022 - jarekwach</p>
+    </footer>
 </body>
+
 </html>
