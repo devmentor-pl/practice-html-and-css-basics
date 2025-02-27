@@ -1,0 +1,95 @@
+@import url(./_colors.css);
+
+@font-face {
+	font-family: "Source Sans PRO";
+	src: url(../assets/fonts/source-sans-pro/SourceSansPro-Light.otf);
+	font-weight: lighter;
+	font-style: normal;
+}
+body {
+	background-color: var(--bg-color);
+	font-family: "Source Sans PRO";
+}
+
+.nav,
+.nav__item {
+	display: flex;
+	font-size: 30px;
+	background-color: #fff;
+}
+.nav {
+	margin: 15px;
+}
+.nav__item {
+	position: relative;
+	padding: 30px;
+	border-top: 3px solid transparent;
+	transition: 0.2s;
+}
+.nav__item:hover,
+a {
+	border-color: var(--primary-color);
+}
+.nav__item:hover > .nav__dropdown {
+	display: block;
+}
+.nav__item:hover .arrow {
+	color: var(--primary-color);
+}
+.text-up {
+	text-transform: uppercase;
+}
+.nav__link {
+	display: inline-block;
+	height: 100%;
+	text-decoration: none;
+	width: 100%;
+	color: black;
+	transition: 0.2s;
+	position: relative;
+}
+.nav__link:hover {
+	color: var(--primary-color);
+}
+.nav__dropdown {
+	position: absolute;
+	padding-top: 68px;
+	left: 0;
+	display: none;
+}
+.dropdown__item {
+	background-color: var(--dropdown-color);
+	font-size: 30px;
+	padding: 10px 250px 10px 30px;
+	transition: 0.3s;
+	position: relative;
+	transition: 0.2s;
+}
+.dropdown__item:hover {
+	background-color: gray;
+}
+.dropdown__item a {
+	color: white;
+	font-size: 22px;
+	margin-right: 31px;
+}
+.arrow {
+	position: absolute;
+	right: -37%;
+	color: transparent;
+	transition: 0.2s;
+	transform: rotate(90deg);
+}
+.dropdown-arrow {
+	position: absolute;
+	left: 18rem;
+}
+.dropdown-second {
+	position: absolute;
+	top: 0;
+	padding: 0px 0px 0px 100%;
+}
+
+.dropdown__item:hover > .nav__dropdown {
+	display: block;
+}
