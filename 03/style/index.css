@@ -28,6 +28,8 @@
     font-family: 'SourceSansPro';
 }
 
+.parent--inline-block {}
+
 .parent--float {
     font-weight: bold;
 }
