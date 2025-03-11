@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'SourceSansPro';
+    src: url('./../fonts/fs/SourceSansPro-Bold.woff2') format('woff2'),
+        url('./../fonts/fs/SourceSansPro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SourceSansPro';
+    src: url('./../fonts/fs/SourceSansPro-Regular.woff2') format('woff2'),
+        url('./../fonts/fs/SourceSansPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SourceSansPro';
+    src: url('./../fonts/fs/SourceSansPro-It.woff2') format('woff2'),
+        url('./../fonts/fs/SourceSansPro-It.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+.parent {
+    width: 600px;
+    padding: 20px;
+    font-family: 'SourceSansPro';
+}
+
+.parent--float {
+    font-weight: bold;
+}
+
+.parent--flexbox {
+    font-style: italic;
+}
+
+.parent--inline-block .child {
+    display: inline-block;
+    white-space: wrap;
+}
+
+.parent--float::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.parent--float .child {
+    float: left;
+}
+
+.parent--flexbox {
+    display: flex;
+}
+
+.child--first, .child--middle {
+    width: calc(30% - 10px);
+    margin-right: 10px;
+}
+
+.child--last {
+    width: 40%;
+}
