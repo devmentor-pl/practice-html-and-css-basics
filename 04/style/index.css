@@ -6,6 +6,12 @@ body {
     background-color: #fff;
     display: flex;
     margin: 20px;
+    font-size: 18px;
+    font-family: "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+.home_font-color {
+    color: #009AE1;
 }
 
 .menu__item {
@@ -15,4 +21,74 @@ body {
 
 .menu__item:hover {
     border-top-color: #009AE1;
+    color: #009AE1;
+}
+
+.menu__dropdown {
+    position: relative;
+}
+
+.menu__dropdown::after {
+    content: '>';
+    position: absolute;
+    right: 2px;
+    top: 13px;
+    transform: rotate(90deg);
+}
+
+.menu__dropdown:hover>.dropdown {
+    display: block;
+}
+
+.dropdown {
+    position: absolute;
+    background-color: #333333;
+    top: 100%;
+    left: 0;
+    min-width: 200px;
+    display: none;
+}
+
+.dropdown__item {
+    padding: 10px 20px;
+}
+
+.menu__dropdown-right {
+    position: relative;
+}
+
+.menu__dropdown-right::after {
+    content: '>';
+    position: absolute;
+    right: 2px;
+    top: 13px;
+    color: #fff;
+}
+
+.menu__dropdown-right:hover>.dropdown-right {
+    display: block;
+}
+
+
+.dropdown__link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.dropdown-right {
+    position: absolute;
+    background-color: #333333;
+    left: 100%;
+    top: 0;
+    min-width: 200px;
+    display: none;
+}
+
+.dropdown-right__item {
+    padding: 10px 20px;
+}
+
+.dropdown-right__link {
+    color: #fff;
+    text-decoration: none;
 }
