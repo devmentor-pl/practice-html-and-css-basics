@@ -1,12 +1,120 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header>
+      <img src="https://picsum.photos/id/1/50/50" alt="" class="logo" />
+      <nav>
+        <ul class="nav">
+          <li><a href="#">articles</a></li>
+          <li><a href="#">projects</a></li>
+          <li>
+            <a href="#">about us</a>
+            <ul>
+              <li><a href="#">contact us</a></li>
+              <li><a href="#">careers</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <article>
+        <h1>The Power of Mindful Morning Routines</h1>
+        <p>
+          Starting your day with intention can set the tone for everything that
+          follows. A mindful morning routine doesn’t have to be long or
+          complicated. It can be as simple as a few minutes of deep breathing,
+          stretching, or journaling. The key is consistency and presence. By
+          dedicating a small portion of your morning to mindfulness, you can
+          boost your focus, reduce stress, and enhance your overall well-being.
+          Try it tomorrow: before diving into your daily tasks, take a moment to
+          center yourself. The results may surprise you.
+        </p>
+        <figure>
+          <img
+            src="https://picsum.photos/id/215/800/450"
+            alt="Picture of a beach"
+          />
+        </figure>
+        <figcaption>Beach in Brazil</figcaption>
+        <table>
+          <caption>
+            Site's statistics
+          </caption>
+          <thead>
+            <tr>
+              <th>Number of editions</th>
+              <th>Number of authors</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>3</td>
+              <td>2</td>
+            </tr>
+          </tbody>
+        </table>
+        <footer class="article__footer">
+          <div class="article__date">Publication date: 10.03.2025</div>
+          <div class="article__author">Author: John Doe</div>
+        </footer>
+      </article>
+      <div class="comment__area">
+        <form id="comment-form" action="submit">
+          <label for="comment-content">Comment this article</label>
+          <div>
+            <textarea
+              name="comment"
+              id="comment-content"
+              rows="5"
+              cols="50"
+            ></textarea>
+            <input type="submit" value="Comment" />
+          </div>
+        </form>
+        <h2>Latest comments:</h2>
+        <article class="comment__container">
+          <p class="comment__content">
+            Great advice! Starting my day with meditation has definitely
+            improved my focus and mood.
+          </p>
+          <footer>
+            <div class="comment__author">Author: John Doe</div>
+            <div class="comment__date">03.03.2025</div>
+          </footer>
+        </article>
+        <article class="comment__container">
+          <p class="comment__content">
+            I love this idea! I’ll try adding journaling to my morning routine.
+          </p>
+          <footer>
+            <div class="comment__author">Author: Sylvia Doe</div>
+            <div class="comment__date">03.05.2025</div>
+          </footer>
+        </article>
+        <article class="comment__container">
+          <p class="comment__content">
+            Simple but effective. A few deep breaths can really make a
+            difference. Thanks for sharing!
+          </p>
+          <footer>
+            <div class="comment__author">Author: Allan Poe</div>
+            <div class="comment__date">03.01.2025</div>
+          </footer>
+        </article>
+      </div>
+    </main>
+    <footer>
+      © 2025 NataliaKur. All rights reserved. This content, including text,
+      images, and other materials, is protected by copyright. Unauthorized
+      reproduction, distribution, or modification is prohibited without the
+      express written permission of the copyright owner.
+    </footer>
+  </body>
 </html>
