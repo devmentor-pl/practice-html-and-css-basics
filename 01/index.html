@@ -8,16 +8,19 @@
   </head>
   <body>
     <header>
-      <img src="https://picsum.photos/id/1/50/50" alt="" class="logo" />
+      <div>
+        <img src="https://picsum.photos/id/1/50/50" alt="" class="logo" />
+      </div>
+
       <nav>
-        <ul class="nav">
-          <li><a href="#">articles</a></li>
-          <li><a href="#">projects</a></li>
+        <ul>
+          <li><a href="articles.html">articles</a></li>
+          <li><a href="projects.html">projects</a></li>
           <li>
-            <a href="#">about us</a>
+            <a href="about.html">about us</a>
             <ul>
-              <li><a href="#">contact us</a></li>
-              <li><a href="#">careers</a></li>
+              <li><a href="contact.html">contact us</a></li>
+              <li><a href="careers.html">careers</a></li>
             </ul>
           </li>
         </ul>
@@ -61,14 +64,16 @@
           </tbody>
         </table>
         <footer class="article__footer">
-          <div class="article__date">Publication date: 10.03.2025</div>
+          <div class="article__date">
+            Publication date: <time datetime="2025-03-10">10.03.2025</time>
+          </div>
           <div class="article__author">Author: John Doe</div>
         </footer>
       </article>
       <div class="comment__area">
-        <form id="comment-form" action="submit">
+        <form id="comment-form" action="#">
           <label for="comment-content">Comment this article</label>
-          <div>
+          <div class="comment-form__content">
             <textarea
               name="comment"
               id="comment-content"
