@@ -46,16 +46,14 @@
 }
 
 /* Float */
-.parent--float {
-  margin-bottom: 100px;
+.parent--float:after {
+  content: "";
+  display: block;
+  clear: both;
 }
 .parent--float .child {
   float: left;
 }
-.parent--float:after {
-  clear: both;
-}
-
 /* Flexbox */
 .parent--flexbox {
   display: flex;
