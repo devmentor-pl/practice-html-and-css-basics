@@ -22,15 +22,18 @@
   font-family: "Source Sans PRO";
 }
 .child--first {
-  width: 30%;
+  width: calc(30% - 20px);
+  margin: 0 10px;
   font-weight: normal;
 }
 .child--middle {
-  width: 30%;
+  width: calc(30% - 20px);
+  margin: 0 10px;
   font-weight: bold;
 }
 .child--last {
-  width: 40%;
+  width: calc(40% - 20px);
+  margin: 0 10px;
   font-style: italic;
 }
 
