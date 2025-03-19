@@ -71,7 +71,7 @@ body {
   min-width: 200px;
   background-color: var(--dark-bg);
 }
-.nav__item:hover .dropdown__item:not(.dropdown__item--sub),
+.nav__item:hover .nav__dropdown > .dropdown__item,
 .dropdown__item:hover .dropdown__item--sub {
   display: block;
 }
