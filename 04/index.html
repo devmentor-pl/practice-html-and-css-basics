@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet"
+    >
+    <link
+        rel="stylesheet"
+        href="./styles/reset.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="./styles/index.css"
+    >
+    <title>Document</title>
+</head>
+
+<body>
+
+    <nav class="nav__container">
+        <ul class="nav">
+            <li class="nav__item"><a
+                    class="nav__link"
+                    href="#"
+                >home</a></li>
+            <li class="nav__item nav__item--parent"><span class="arrow__down">items ></span>
+                <ul class="nav_dropdown dropdown">
+                    <li class="nav__item"><a
+                            class="nav_link"
+                            href="#"
+                        >Item 1</a></li>
+                    <li class="nav__item nav__item--parent">Item 2 >
+                        <ul class="nav__dropdown dropdown">
+                            <li class="nav_item"><a
+                                    class="nav__link"
+                                    href="#"
+                                >Item 2.1</a></li>
+                            <li class="nav_item"><a
+                                    class="nav__link"
+                                    href="#"
+                                >Item 2.2</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav__item"><a
+                    class="nav__link"
+                    href="#"
+                >settings</a></li>
+            <li class="nav__item"><a
+                    class="nav__link"
+                    href="#"
+                >contact</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>
