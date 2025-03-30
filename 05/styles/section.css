@@ -1,0 +1,28 @@
+.section__container {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.section__item-left {
+    width: 30%;
+    height: 400px;
+    background-color: orange;
+
+}
+
+.section__item-middle {
+    width: 30%;
+    height: 400px;
+    background-color: orange;
+
+}
+
+.section__item-right {
+    align-self: flex-end;
+    width: 30%;
+    height: 380px;
+    background-color: orange;
+
+}

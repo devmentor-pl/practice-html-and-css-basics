@@ -46,7 +46,12 @@
 
 
 .parent--float {
+    background-color: red;
+}
+
+.parent--float .child {
     float: left;
+
 }
 
 .parent--float::after {
@@ -62,7 +67,7 @@
 
 .child--first, .child--middle {
     margin-right: 10px;
-    width: calc(30% - 15px);
+    width: calc(30% - 10px);
 }
 
 .child--middle {
