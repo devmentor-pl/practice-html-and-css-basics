@@ -70,6 +70,7 @@ body {
 }
 
 .dropdown__item {
+    position: relative;
     background-color: var(--dropdown-background);
     padding: 15px 20px;
     width: 240px;
@@ -90,6 +91,9 @@ body {
     display: none;
     position: absolute;
     left: 240px;
+    top: 0;
+
+
 }
 
 .dropdown__item-sub {
