@@ -7,14 +7,14 @@
 
 
 
-.section__item--middle {
+.section__item-middle {
     width: 30%;
     height: 400px;
     background-color: orange;
 
 }
 
-.section__item--middle-right {
+.section__item-middle--right {
     align-self: flex-end;
     height: 380px;
 
