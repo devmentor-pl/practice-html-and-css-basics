@@ -7,6 +7,195 @@
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
 </head>
 <body>
+    <!-- Mój pierwszy html :) Zadanie Krystian Bąk - Kurs DevMentor -->
+
+    <!-- Header start -->
+
+    <header class="main_header">
+        <div class="logo">
+            <img src="https://www.agatameble.pl/media/cache/filemanager_original/images/redesign/logo/logo.png">
+        </div> 
+        <nav class="menu">
+
+            <ul class="main_category">
+                <li class="item_category">
+                    <a class="name_category">Strona główna</a>
+                </li>
+                <li class="item_category">
+                    <a class="name_category">Kontakt</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- end header-->
+
+    <!-- Contnet start -->
+
+    <main>
     
+    <!-- Zastosowamy Emmet 
+
+     h2*3{To jest tytuł}>p*3{}>a[href="#"]{Zobacz więcej}>img*3[src="#" alt="Kuchnia w stylu japandi"
+     
+     Nie zadziałał - musiałem szukać rozwiązania. 
+
+     Poprawiony na: 
+
+     (h2{To jest tytuł}+p{}+a[href="#"]{Zobacz więcej}+img[src="#" alt="Kuchnia w stylu japandi"])*3
+
+     
+     ] -->
+
+    <!-- Post start -->
+
+        <article style="max-width: 60%;"> 
+            <h2>To jest tytuł</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <a href="https://www.agatameble.pl/">Zobacz więcej</a>
+            <hr>
+            <img src="https://www.agatameble.pl/media/cache/resolve/filemanager_original/images/aktualnosci/2025/03/_2_kuchnia_w_stylu_japandi__poczenie_funkcjonalnoci_i_estetyki/desk/Projekt_bez_nazwy1.png" alt="Kuchnia w stylu japandi">
+            <h3>To jest nagłówek</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <a href="https://www.agatameble.pl/">Zobacz więcej</a>
+            <hr>
+            <img src="https://www.agatameble.pl/media/cache/resolve/filemanager_original/images/aktualnosci/2025/03/_2_kuchnia_w_stylu_japandi__poczenie_funkcjonalnoci_i_estetyki/desk/Projekt_bez_nazwy1.png" alt="Kuchnia w stylu japandi">
+            <h3>To jest nagłówek</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <a href="https://www.agatameble.pl/">Zobacz więcej</a>
+            <hr>
+            <img src="https://www.agatameble.pl/media/cache/resolve/filemanager_original/images/aktualnosci/2025/03/_2_kuchnia_w_stylu_japandi__poczenie_funkcjonalnoci_i_estetyki/desk/Projekt_bez_nazwy1.png" alt="Kuchnia w stylu japandi">    
+            
+        <footer>
+            <address>
+                Autor: <p>Nieznany</p>
+                Opublikowano: <time datatime="2025-04-04">4 kwietnia 2025</time>
+            </address>
+        </footer>
+    </article>
+
+    <!-- Post end -->
+
+    <!-- Table Start -->
+    <div  style="width: 100%; display: flex; justify-content: center;">
+        <table>
+            <caption>
+                <thead>
+                    <tr>
+                        <th>Dane do pobrania</th>
+                        <th>Dane techniczne</th>
+                        <th>Insrukcja montażu</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td>Plik 1</td>
+                        <td>Plik 2</td>
+                    </tr>
+                </tbody>
+            </caption>
+        </table>
+    </div>
+    <!-- Table end -->
+
+    <!-- Comments start -->   
+
+        <div class="container_comments" style="text-align: center;">
+            <h2>Strfa komentarzy</h2>
+            <article class="comments_item">
+                <div class="comment_item">
+                    <footer>
+                        <address>
+                            <p>Autor</p>
+                        </address>
+                    </footer>
+                    <div class="comment">
+                        <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+                        Opublikowano: <time datatime="2025-04-05">5 kwietnia 2025</time>
+                    </div>
+                </div>
+            </article>
+            <article class="comments_item">
+                <div class="comment_item">
+                    <footer>
+                        <address>
+                            <p>Autor</p>
+                        </address>
+                    </footer>
+                    <div class="comment">
+                        <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+                        Opublikowano: <time datatime="2025-04-05">5 kwietnia 2025</time>    
+                    </div>
+                </div>
+            </article>
+            <article class="comments_item">
+                <div class="comment_item">
+                    <footer>
+                        <address>
+                            <p>Autor</p>
+                        </address>
+                    </footer>
+                    <div class="comment">
+                        <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+                        Opublikowano: <time datatime="2025-04-05">5 kwietnia 2025</time>        
+                    </div>
+                </div>
+            </article>
+        </div>  
+    
+    <!-- Comments end -->   
+    
+    <!-- Form start -->
+
+        <div class="cont_form" style="width: 100%; text-align: center;">
+            <div class="tile_form">
+                <h1>Masz uwagi? Zostaw komentarz!</h1>
+            </div>
+                <form action="">
+                    <div><textarea name="Wprowadz komentarz" id="123" rows="20" cols="60"></textarea></div>
+                </form>
+           
+        </div>
+
+    <!-- Form end -->  
+
+    </main>
+
+    <!-- Content end -->
+
+
+    <!-- Footer start -->
+
+    <footer style="text-align: center;">
+        <div>&copy; 2025 Kurs devmentor.pl</div>
+    </footer>
+
+    <!-- Footer end-->
+
 </body>
 </html>
+
+   <!-- Dostałem proste stylowanie-->
+
+
+<style>
+main{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+.main_header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    max-width: 100%;
+}
+th{
+    padding-right: 12px;
+}
+</style>
