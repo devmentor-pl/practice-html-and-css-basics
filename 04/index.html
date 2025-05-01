@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Navigation Menu with Dropdown</title>
+  </head>
+  <body>
+    <nav class="nav">
+      <ul class="nav--menu">
+        <li class="nav--item">
+          <a href="#" class="nav--link nav--link--active">HOME</a>
+        </li>
+        <li class="nav--item">
+          <a href="#" class="nav--link nav--link--has-dropdown">ITEMS</a>
+          <ul class="dropdown">
+            <li class="dropdown--item">
+              <a href="#" class="dropdown--link">Item 1</a>
+            </li>
+            <li class="dropdown--item">
+              <a href="#" class="dropdown--link dropdown--link--has-submenu"
+                >Item 2</a
+              >
+              <ul class="submenu">
+                <li class="dropdown--item">
+                  <a href="#" class="dropdown--link">Item 2.1</a>
+                </li>
+                <li class="dropdown__item">
+                  <a href="#" class="dropdown--link">Item 2.2</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="nav--item">
+          <a href="#" class="nav--link">SETTINGS</a>
+        </li>
+        <li class="nav--item">
+          <a href="#" class="nav--link">CONTACT</a>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>

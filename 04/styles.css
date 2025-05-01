@@ -1,0 +1,104 @@
+:root {
+  --active-color: #2ba2e4;
+  --dropdown-color: #333333;
+  --body-color: #f6f6f6;
+  --nav-color: #ffffff;
+  --nav-link-border-height: 4px;
+  --icon-size: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--body-color);
+}
+
+.nav {
+  background-color: var(--nav-color);
+}
+
+.nav--menu {
+  display: flex;
+  list-style: none;
+}
+
+.nav--item {
+  position: relative;
+}
+
+.nav--link {
+  /* A transparent border is added to reserve space, preventing layout shifts when the border becomes visible on hover. */
+  border-top: var(--nav-link-border-height) solid transparent;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 20px 25px;
+}
+
+.nav--link:hover {
+  color: var(--active-color);
+  border-top: var(--nav-link-border-height) solid var(--active-color);
+}
+
+.nav--link--active {
+  color: var(--active-color);
+}
+
+.nav--link--has-dropdown::after {
+  content: '>';
+  font-size: var(--icon-size);
+  /* By default, the ::after and ::before pseudo-elements are rendered with display: inline, 
+    which prevents transformations such as rotate() from being applied. To enable rotation and other transformations, 
+    I explicitly set their display to inline-block. */
+  display: inline-block;
+  transform: rotate(90deg);
+  margin-left: 5px;
+}
+
+.dropdown {
+  position: absolute;
+  background-color: var(--dropdown-color);
+  width: 200px;
+  display: none;
+  list-style: none;
+}
+
+.dropdown--item {
+  position: relative;
+}
+
+.dropdown--link {
+  display: block;
+  padding: 15px 20px;
+  color: var(--nav-color);
+  text-decoration: none;
+}
+
+.dropdown--link--has-submenu::after {
+  content: '>';
+  position: absolute;
+  right: 15px;
+  font-size: var(--icon-size);
+}
+
+.submenu {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background-color: var(--dropdown-color);
+  min-width: 200px;
+  display: none;
+  list-style: none;
+}
+
+.nav--item:hover .dropdown {
+  display: block;
+}
+
+.dropdown--item:hover .submenu {
+  display: block;
+}
