@@ -1,12 +1,289 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>devmentor.pl - HTML & CSS BASICS - #01</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      property="url"
+      content="https://example.net/getting-started-with-html-css-a-beginners-guide"
+    />
+    <meta name="description" content="Devblog Wojciech Gajda" />
+    <meta
+      name="dcterms.description"
+      lang="pl"
+      content="Devblog Wojciech Gajda"
+    />
+    <!-- keywords  -->
+    <meta name="keywords" content="HTML & CSS" />
+    <meta name="dcterms.subject" lang="pl" content="HTML; CSS" />
+
+    <meta name="application-name" content="Devblog Wojciech Gajda" />
+    <meta name="msapplication-tooltip" content="Devblog Wojciech Gajda" />
+    <meta name="msapplication-starturl" content="http://example.net" />
+    <meta name="msapplication-window" content="width=1024;height=768" />
+    <meta
+      property="og:site_name"
+      content="Example.net - devblog Wojciech Gajda"
+    />
+
+    <meta property="og:url" content="https://example.net" />
+    <meta
+      property="og:title"
+      content="Getting Started with HTML & CSS: A Beginner's Guide | Example.net - devblog Wojciech Gajda"
+    />
+    <meta property="og:image" content="./images/favicon.png" />
+
+    <!-- This link points to the author's page to improve semantic structure and author identification. -->
+    <link rel="author" href="http://example.net/about-me" />
+    <!-- This link provides an RSS feed for users to subscribe to new blog posts. -->
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="RSS"
+      href="http://example.net/feed"
+    />
+    <!-- This link provides an Atom feed for users to subscribe to new blog posts. -->
+    <link
+      rel="alternate"
+      type="application/atom+xml"
+      title="ATOM"
+      href="http://example.net/atom"
+    />
+
+    <link rel="index" title="Home page" href="https://example.net" />
+    <link
+      rel="prev"
+      title="HTML: Hello world"
+      href="https://example.net/html-hello-world"
+    />
+    <link
+      rel="next"
+      title="Getting Started with HTML & CSS: A Beginner's Guide PART II"
+      href="https://example.net/getting-started-with-html-css-a-beginners-guid-part-2"
+    />
+    <link
+      rel="canonical"
+      href="https://example.net/getting-started-with-html-css-a-beginners-guide"
+    />
+    <link rel="pingback" href="./xmlrpc.php" />
+    <link rel="icon" href="./images/favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="./images/apple-touch-icon.png" />
+    <link rel="stylesheet" href="./styles.css" />
+
+    <title property="name">example.net - HTML & CSS BASICS - #01</title>
+  </head>
+  <body>
+    <header>
+      <!-- 'vocab' defines the vocabulary (Schema.org) for semantic meaning, and 'typeof' specifies that this <nav> is a SiteNavigationElement. -->
+      <nav id="menu" vocab="http://schema.org" typeof="SiteNavigationElement">
+        <ul>
+          <li>
+            <a href="https://example.net" rel="index">
+              <p>Example.net</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">About me</a>
+            <ul>
+              <li><a href="#">Stack</a></li>
+              <li><a href="#">Experience</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Services</a>
+            <ul>
+              <li><a href="#">Web Development</a></li>
+              <li><a href="#">Marketing</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main property="mainEntityOfPage" tabindex="-1">
+      <article
+        class="post h-entry"
+        property="blogPost"
+        vocab="http://schema.org"
+        typeof="BlogPosting"
+      >
+        <header>
+          <h1 property="headline">
+            <a
+              href="https://example.net/getting-started-with-html-css-a-beginners-guide"
+              class="bookmark u-uid u-url"
+              rel="bookmark"
+              title="Getting Started with HTML & CSS: A Beginner's Guide"
+              >Getting Started with HTML & CSS: A Beginner's Guide</a
+            >
+          </h1>
+
+          <p class="post-info">
+            Published
+            <time datetime="2025-04-24" property="datePublished"
+              >April 24, 2025</time
+            >
+            by
+            <a
+              href="https://example.net/about-me"
+              property="author"
+              vocab="http://schema.org"
+              typeof="Person"
+              rel="author"
+              ><span property="name">Wojciech Gajda</span></a
+            >
+          </p>
+        </header>
+
+        <div property="articleBody">
+          <figure property="image">
+            <picture>
+              <source
+                media="(min-width: 45em)"
+                srcset="large-1.jpg 1x, large-2.jpg 2x"
+              />
+              <source
+                media="(min-width: 18em)"
+                srcset="med-1.jpg 1x, med-2.jpg 2x"
+              />
+              <source srcset="small-1.jpg 1x, small-2.jpg 2x" />
+              <img src="small-1.jpg" alt="CSS & HTML Logos" />
+            </picture>
+            <figcaption>HTML & CSS Logos</figcaption>
+          </figure>
+          <p>
+            If you’re new to web development, HTML and CSS are the perfect
+            starting point. These two technologies form the foundation of every
+            website. HTML (HyperText Markup Language) is used to structure
+            content on the web. With HTML, you define elements like headings,
+            paragraphs, images, and links. Here’s a simple example:
+          </p>
+          <p>
+            CSS (Cascading Style Sheets) is used to style your HTML content —
+            from colors and fonts to layout and responsiveness. A simple CSS
+            example:
+          </p>
+          <p>
+            Combining these two, you can create well-structured and visually
+            appealing websites. Start small, practice often, and don’t be afraid
+            to experiment! Example Table:
+          </p>
+          <h2>CSS</h2>
+
+          <table border="1">
+            <caption>
+              Example data
+            </caption>
+            <thead>
+              <tr>
+                <th>Tag</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>h1</td>
+                <td>Main heading</td>
+              </tr>
+              <tr>
+                <td>p</td>
+                <td>Paragraph</td>
+              </tr>
+              <tr>
+                <td>a</td>
+                <td>Link</td>
+              </tr>
+              <tr>
+                <td>img</td>
+                <td>Image</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <section>
+          <h2>Comments</h2>
+          <ol>
+            <li property="comment" vocab="http://schema.org" typeof="Comment">
+              <div>
+                <a href="#comment-25">
+                  <time
+                    datetime="2011-01-07T20:41:06+00:00"
+                    property="dateCreated"
+                    >07.01.2011, 20:41</time
+                  >
+                </a>
+                <b property="author" vocab="http://schema.org" typeof="Person"
+                  ><a href="http://example.net/" property="name url"
+                    >Anna Smith</a
+                  >
+                  commented</b
+                >
+              </div>
+              <p property="text">
+                This article really helped me understand the basics. Clear
+                examples and easy to follow. Thanks!
+              </p>
+            </li>
+
+            <li property="comment" vocab="http://schema.org" typeof="Comment">
+              <div>
+                <a href="#comment-25">
+                  <time
+                    datetime="2011-01-07T20:41:06+00:00"
+                    property="dateCreated"
+                    >07.01.2011, 20:41</time
+                  >
+                </a>
+                <b property="author" vocab="http://schema.org" typeof="Person"
+                  ><a href="http://example.net/" property="name url">Make J.</a>
+                  commented</b
+                >
+              </div>
+              <p property="text">
+                I'm just starting my coding journey and this guide gave me a
+                solid foundation. Would love to see a follow-up on Flexbox!
+              </p>
+            </li>
+          </ol>
+
+          <form action="https://example.net/comment.php" method="post">
+            <h3>Add comment</h3>
+            <p>
+              <label for="comment-author">Name</label>
+              <input type="text" name="author" id="comment-author" required />
+            </p>
+            <p>
+              <label for="comment-email">E-mail</label>
+              <input type="email" name="email" id="comment-email" required />
+            </p>
+
+            <p>
+              <label for="comment-comment">Comment</label>
+              <textarea
+                name="comment"
+                id="comment-comment"
+                cols="48"
+                rows="7"
+                required
+              ></textarea>
+            </p>
+            <p>
+              <button name="submit" type="submit" id="comment-submit">
+                Send
+              </button>
+            </p>
+            <input type="hidden" name="comment_post_ID" value="88" />
+          </form>
+        </section>
+      </article>
+    </main>
+
+    <footer>
+      Copyright &copy; 2025 by
+      <a href="https://example.net/about-me" rel="author">Wojciech Gajda</a>
+    </footer>
+  </body>
 </html>
