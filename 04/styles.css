@@ -21,16 +21,16 @@ body {
   background-color: var(--nav-color);
 }
 
-.nav--menu {
+.nav__menu {
   display: flex;
   list-style: none;
 }
 
-.nav--item {
+.nav__item {
   position: relative;
 }
 
-.nav--link {
+.nav__link {
   /* A transparent border is added to reserve space, preventing layout shifts when the border becomes visible on hover. */
   border-top: var(--nav-link-border-height) solid transparent;
   text-decoration: none;
@@ -39,16 +39,16 @@ body {
   padding: 20px 25px;
 }
 
-.nav--link:hover {
+.nav__link:hover {
   color: var(--active-color);
   border-top: var(--nav-link-border-height) solid var(--active-color);
 }
 
-.nav--link--active {
+.nav__link--active {
   color: var(--active-color);
 }
 
-.nav--link--has-dropdown::after {
+.nav__link--has-dropdown::after {
   content: '>';
   font-size: var(--icon-size);
   /* By default, the ::after and ::before pseudo-elements are rendered with display: inline, 
@@ -67,18 +67,18 @@ body {
   list-style: none;
 }
 
-.dropdown--item {
+.dropdown__item {
   position: relative;
 }
 
-.dropdown--link {
+.dropdown__link {
   display: block;
   padding: 15px 20px;
   color: var(--nav-color);
   text-decoration: none;
 }
 
-.dropdown--link--has-submenu::after {
+.dropdown__link--has-submenu::after {
   content: '>';
   position: absolute;
   right: 15px;
@@ -95,10 +95,10 @@ body {
   list-style: none;
 }
 
-.nav--item:hover .dropdown {
+.nav__item:hover .dropdown {
   display: block;
 }
 
-.dropdown--item:hover .submenu {
+.dropdown__item:hover .submenu {
   display: block;
 }
