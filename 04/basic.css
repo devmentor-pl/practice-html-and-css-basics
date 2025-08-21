@@ -1,0 +1,9 @@
+html, body, div, nav, ol, ul, li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+ol, ul{
+    list-style: none;
+}
