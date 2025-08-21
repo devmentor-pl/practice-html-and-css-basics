@@ -7,7 +7,10 @@
         name="viewport"
         content="width=device-width, initial-scale=1.0"
     >
-    <link rel="stylesheet" href="./basic.css">
+    <link
+        rel="stylesheet"
+        href="./basic.css"
+    >
     <link
         rel="stylesheet"
         href="./style.css"
@@ -16,22 +19,47 @@
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li>HOME</li>
-            <li>ITEMS<ul>
-                    <li>Item 1</li>
-                    <li>Item 2
-                </ul>
-                <ul>
-                    <li>item 2.1</li>
-                    <li>item 2.2</li>
-            </li>
-                 </ul>
+    <nav class="nav">
+        <ul class="nav__list menu">
+            <li class="menu__item"><a
+                    href=""
+                    class="menu__link"
+                >HOME</a></li>
+            <li class="menu__item menu__dropdown"><a
+                    href=""
+                    class="menu__link"
+                >ITEMS</a>
+                <ul class="dropdown">
+                    <li class="dropdown__item"><a
+                            href=""
+                            class="dropdown__link"
+                        >Item 1</a></li>
+                    <li class="dropdown__item"><a
+                            href=""
+                            class="dropdown__link"
+                        >Item 2</a>
+                        <ul class="submenu">
+                            <li class="submenu__item"><a
+                                    href=""
+                                    class="submenu__link"
+                                >item 2.1</a></li>
+                            <li class="submenu__item"><a
+                                    href=""
+                                    class="submenu__link"
+                                >item 2.2</a>
 
-        </li>
-        <li>SETTING</li>
-        <li>CONTACT</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu__item"><a
+                    href=""
+                    class="menu__link"
+                >SETTING</a></li>
+            <li class="menu__item"><a
+                    href=""
+                    class="menu__link"
+                >CONTACTS</a></li>
         </ul>
     </nav>
 </body>
