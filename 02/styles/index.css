@@ -7,7 +7,7 @@
 Znacznik label, którego przodkiem jest klasa .ac-container 
 (0, 1, 1)
 */
- label {
+.ac-container label {
     height: 30px !important;
     line-height: 21px !important;
     font-size: 12px !important;
