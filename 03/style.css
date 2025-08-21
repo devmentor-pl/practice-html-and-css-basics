@@ -24,16 +24,6 @@
     font-style: normal;
 }    
 
-body {
-    margin: 0;
-    padding: 0;
-}
-
-
-.child {
-    box-sizing: border-box;
-    padding: 10px;
-}
 .child--first {
     font-family: source_sans_pro-regular, sans-serif;
     font-weight: 400;
@@ -48,19 +38,27 @@ body {
     font-family: SourceSansPro-Italic, sans-serif;
     font-weight: 400;
     font-style: italic;
-    margin-right: 0
+   
 }
+
+
 .parent {
     width: 600px;
-    padding: 20px;
+   
 }
-.parent--float {
-}
-.parent--flexbox {
-}
-.parent--inline-block{
+
+.parent--inline-block .child{
     display: inline-block;
-    vertical-align: top;
-    margin-right: 10px;
-    
+
 }
+.child--first,
+.child--middle{
+    width: 30%;
+}
+
+
+.child--last{
+    width: 40%;
+}
+
+
