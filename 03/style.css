@@ -20,7 +20,7 @@
     font-family: 'source_sans_pro-regular';
     src: url('./fonts/sourcesanspro-regular-webfont.woff2') format('woff2'),
          url('./fonts/sourcesanspro-regular-webfont.woff') format('woff');
-    font-weight: 400;
+    font-weight: normal;
     font-style: normal;
 }    
 
@@ -41,9 +41,14 @@
    
 }
 
+.clearfix {
+    clear: both;
+}
+
 
 .parent {
     width: 600px;
+    outline: 1px solid green;
    
 }
 
@@ -51,11 +56,33 @@
     display: inline-block;
 
 }
-.child--first,
-.child--middle{
-    width: 30%;
+
+.parent--float .child{
+    float: left;
+
+
 }
 
+.parent--float::after {
+    content:"";
+    clear: both;
+    display: block;
+}
+
+.parent--flexbox {
+    display: flex;
+}
+
+.child--first,
+.child--middle{
+    width: calc(30% - 10px);
+    outline: 1px solid red;
+    margin-right: 10px;
+    vertical-align: top;
+    /* max-height: 50px;
+    overflow: hidden; */
+   
+}
 
 .child--last{
     width: 40%;
