@@ -1,5 +1,6 @@
 .green{
    border: 5px solid green;
+   margin: 10px;
 }
 
 .blue{
@@ -7,7 +8,7 @@
     max-width: 1000px;
     margin: auto;
     justify-content: space-between;
-    padding: 2px;
+    padding: 5px;
 
 }
 
@@ -20,6 +21,9 @@
 .header
 .blue {
     display: flex;
+    justify-content: space-between;
+    padding: 2px;
+
 }
 
 .logo{
@@ -30,5 +34,28 @@
     width: 400px;
 
 }
+
+.main .blue {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main .orange {
+    min-height: 400px;
+    width: 48%;
+}
+.section .blue {
+    display: flex;
+}
+
+.section .orange {
+    width: 30%;
+    justify-content: space-between;
+}
+
+.article {
+    min-height: 300px;
+}
+
 
 
