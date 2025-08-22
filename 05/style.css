@@ -1,6 +1,7 @@
 .green{
    border: 5px solid green;
    margin: 10px;
+   padding: 5px 0;
 }
 
 .blue{
@@ -55,6 +56,15 @@
 
 .article {
     min-height: 300px;
+}
+
+.footer .blue{
+    display: flex;
+    justify-content: center;
+}
+
+.footer .orange {
+     width: 100px;
 }
 
 
