@@ -1,0 +1,7 @@
+.header,
+.main,
+.footer {
+    border: 2px solid green;
+    width: 100%;
+    min-height: 50px;
+}
