@@ -1,13 +1,9 @@
-/*Acco*/
+
 .ac-container {
     max-width: 400px;
 }
 
-/* 
-Znacznik label, którego przodkiem jest klasa .ac-container 
-(0, 1, 1)
-*/
-?? {
+.ac-container label{
     height: 30px !important;
     line-height: 21px !important;
     font-size: 12px !important;
@@ -42,27 +38,11 @@ Znacznik label, którego przodkiem jest klasa .ac-container
     text-align: left;
 }
 
-/* 
-Zmiana koloru tła po najechaniu przez kursor myszy na znacznik label, 
-który znajduje się wewnątrze elementu o klasie .ac-container 
-(0, 2, 1)
-*/
-?? {
+.ac-container label:hover{
     background: #fff;
 }
 
-/*
-Te same style CSS dla dwóch selektorów:
-1) 
-znacznik label, którego poprzedni brat jest znaznaczonym inputem (użyj pseudoklasy), 
-i ten brat musi posiadać przodka o klasie .ac-container 
-(0, 2, 2)
-2) 
-to samo co w 1) ale z efektem najechania kursorem na label 
-(0, 3, 2)
-*/
-??,
-?? {
+.ac-container input:checked+label, .ac-container input:checked+label:hover {
     background: #f1f2f3;
     color: #666;
     text-shadow: 0 1px 1px rgba(255,255,255,0.6);
@@ -73,7 +53,7 @@ to samo co w 1) ale z efektem najechania kursorem na label
 }
 
 .ac-container label:hover:after,
-.ac-container input:checked + label:hover:after {
+.ac-container input:checked+label:hover:after {
     content: '';
     position: absolute;
     width: 24px;
@@ -83,13 +63,7 @@ to samo co w 1) ale z efektem najechania kursorem na label
     background: transparent url(../images/arrow_down.png) no-repeat center center;
 }
 
-/*
-Pseudo-element jako ostatnie dziecko label, tworzony tylko po najechaniu kursorem myszy na ten element (label),
-którego poprzedni brat jest zaznaczonym inputem (użyj pseudoklasy),
-którego przodek to element o klasie .ac-container
-(0, 3, 3)
-*/
-?? {
+.ac-container input:checked+label:hover::after {
     background-image: url(../images/arrow_up.png);
 }
 
@@ -120,13 +94,7 @@ którego przodek to element o klasie .ac-container
     text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
     font: normal normal 12px 'Open Sans';
 }
-
-/*
-Rodzeństwo o typie article, dla elementu input, który jest zaznaczony (użyj pseudoklasy) 
-oraz posiada przodka o klasie .ac-container
-(0, 2, 2)
-*/
-?? {
+.ac-container input:checked~article {
     -webkit-transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
     -moz-transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
     -o-transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
@@ -135,14 +103,14 @@ oraz posiada przodka o klasie .ac-container
     box-shadow: 0 0 0 1px rgba(155,155,155,0.3);
 }
 
-.ac-container input:checked ~ article.ac-small {
+.ac-container input:checked~article.ac-small {
     height: 140px;
 }
 
-.ac-container input:checked ~ article.ac-medium {
+.ac-container input:checked~article.ac-medium {
     height: 180px;
 }
 
-.ac-container input:checked ~ article.ac-large {
+.ac-container input:checked~article.ac-large {
     height: 230px;
 }
