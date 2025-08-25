@@ -1,12 +1,153 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <meta
+        http-equiv="X-UA-Compatible"
+        content="ie=edge"
+    >
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
 </head>
+
 <body>
-    
+    <header class="header">
+        <img
+            src=""
+            alt="logo"
+            class="logo"
+        >
+        <nav class="nav">
+            <ul>
+                <li><a href="#">1</a>
+                    <ul>
+                        <li><a href="#">1.1</a></li>
+                        <li><a href="#">1.2</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h2>Tytuł artykułu</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, ullam.
+            </p>
+            <p>
+                <strong> Data publikacji:</strong>
+                <time datetime="16.08.2025">
+                    16 sierpnia 2025
+                </time>
+            </p>
+            <p><strong>Author:</strong>
+            <address>
+                <a href="mailto: lehakrylov199@gmail.com">Oleksii Krylov</a>
+            </address>
+            </p>
+            <img
+                src="#"
+                alt="Tu jest ilustracja"
+            >
+            <h3>Tabela</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                        <th>4</th>
+                        <th>5</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>a</td>
+                        <td>b</td>
+                        <td>c</td>
+                    </tr>
+                    <tr>
+                        <td>a</td>
+                        <td>b</td>
+                        <td>c</td>
+                        <td>d</td>
+                        <td>e</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+        <form>
+            <label for="author">Autor:</label><br>
+            <input
+                type="text"
+                id="author"
+                name="author"
+                required
+            ><br><br>
+
+            <label for="comment">Komentarz:</label><br>
+            <textarea
+                id="comment"
+                name="comment"
+                rows="4"
+            >
+            </textarea><br><br>
+
+            <button 
+                type="submit">
+                  Wysłać
+            </button>
+        </form>
+        <div>
+            <p>
+                <strong>Jan  Kowalski</strong>
+                <time datetime="15.08.2025">15 sierpnia 2025</time>
+            </p>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis reprehenderit alias ratione quam cum mollitia vitae neque magni velit, earum aut officiis harum nesciunt suscipit ipsam, odit vel, voluptatem enim!
+            </p>
+        </div>
+        <div>
+            <p>
+                <strong>John Doe</strong>
+                <time datetime="14.08.2025">14 sierpnia 2025</time>
+            </p>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis reprehenderit alias ratione quam cum mollitia vitae neque magni velit, earum aut officiis harum nesciunt suscipit ipsam, odit vel, voluptatem enim!
+            </p>
+        </div>
+        <div>
+            <p>
+                <strong>Ola Olszewska</strong>
+                <time datetime="13.08.2025">13 sierpnia 2025</time>
+            </p>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis reprehenderit alias ratione quam cum mollitia vitae neque magni velit, earum aut officiis harum nesciunt suscipit ipsam, odit vel, voluptatem enim!
+            </p>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy;Tu prawa autorskie</p>
+    </footer>
 </body>
+
 </html>

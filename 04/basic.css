@@ -1,0 +1,17 @@
+html, body, div, a, nav, ol, ul, li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+ol, ul{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    background: none;  
+}
+
+
