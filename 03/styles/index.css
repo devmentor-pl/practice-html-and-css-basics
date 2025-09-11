@@ -1,0 +1,158 @@
+/* Source Sans Pro Regular */
+@font-face {
+	font-family: 'Source Sans Pro';
+	src: url('../fonts/source-sans-pro/SourceSansPro-Regular.otf')
+		format('opentype');
+	font-weight: 400; /* Odpowiednik "normal" */
+	font-style: normal;
+}
+
+/* Source Sans Pro Italic */
+@font-face {
+	font-family: 'Source Sans Pro';
+	src: url('../fonts/source-sans-pro/SourceSansPro-It.otf') format('opentype');
+	font-weight: 400;
+	font-style: italic;
+}
+
+/* Source Sans Pro Light */
+@font-face {
+	font-family: 'Source Sans Pro';
+	src: url('../fonts/source-sans-pro/SourceSansPro-Light.otf')
+		format('opentype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+/* Source Sans Pro Light Italic */
+@font-face {
+	font-family: 'Source Sans Pro';
+	src: url('../fonts/source-sans-pro/SourceSansPro-LightIt.otf')
+		format('opentype');
+	font-weight: 300;
+	font-style: italic;
+}
+
+/* Source Sans Pro Semibold */
+@font-face {
+	font-family: 'Source Sans Pro';
+	src: url('../fonts/source-sans-pro/SourceSansPro-Semibold.otf')
+		format('opentype');
+	font-weight: 600;
+	font-style: normal;
+}
+
+/* Source Sans Pro Semibold Italic */
+@font-face {
+	font-family: 'Source Sans Pro';
+	src: url('../fonts/source-sans-pro/SourceSansPro-SemiboldIt.otf')
+		format('opentype');
+	font-weight: 600;
+	font-style: italic;
+}
+
+/* Source Sans Pro Bold */
+@font-face {
+	font-family: 'Source Sans Pro';
+	src: url('../fonts/source-sans-pro/SourceSansPro-Bold.otf') format('opentype');
+	font-weight: 700; /* Odpowiednik "bold" */
+	font-style: normal;
+}
+
+/* Source Sans Pro Bold Italic */
+@font-face {
+	font-family: 'Source Sans Pro';
+	src: url('../fonts/source-sans-pro/SourceSansPro-BoldIt.otf')
+		format('opentype');
+	font-weight: 700;
+	font-style: italic;
+}
+
+/* Source Sans Pro Black */
+@font-face {
+	font-family: 'Source Sans Pro';
+	src: url('../fonts/source-sans-pro/SourceSansPro-Black.otf')
+		format('opentype');
+	font-weight: 900;
+	font-style: normal;
+}
+
+/* Source Sans Pro Black Italic */
+@font-face {
+	font-family: 'Source Sans Pro';
+	src: url('../fonts/source-sans-pro/SourceSansPro-BlackIt.otf')
+		format('opentype');
+	font-weight: 900;
+	font-style: italic;
+}
+
+/* Source Sans Pro ExtraLight */
+@font-face {
+	font-family: 'Source Sans Pro';
+	src: url('../fonts/source-sans-pro/SourceSansPro-ExtraLight.otf')
+		format('opentype');
+	font-weight: 200;
+	font-style: normal;
+}
+
+/* Source Sans Pro ExtraLight Italic */
+@font-face {
+	font-family: 'Source Sans Pro';
+	src: url('../fonts/source-sans-pro/SourceSansPro-ExtraLightIt.otf')
+		format('opentype');
+	font-weight: 200;
+	font-style: italic;
+}
+
+* {
+	box-sizing: border-box;
+	font-family: 'Source Sans Pro';
+}
+
+.parent {
+	/* I used font size 0 because whitespace couses child element  wrapped  to new line */
+	font-size: 0;
+	padding: 20px;
+	width: 600px;
+}
+
+.parent--inline-block .child {
+	display: inline-block;
+}
+
+.parent--float .child {
+	float: left;
+}
+
+.parent--inline-block .child--middle,
+.parent--float .child--middle {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.parent--float::after {
+	clear: both;
+}
+
+.parent--flexbox {
+	display: flex;
+	column-gap: 10px;
+}
+
+.child {
+	font-size: 12px;
+	width: calc(30% - 10px);
+}
+
+.child--first {
+	font-weight: normal;
+}
+
+.child--middle {
+	font-weight: bold;
+}
+
+.child.child--last {
+	font-style: italic;
+	width: calc(40% - 10px);
+}
