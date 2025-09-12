@@ -1,0 +1,113 @@
+:root {
+	--main-color: #333333;
+	--secondary-color: #009be2;
+	--bckg-color: #f7f7f7;
+	--bckg2-color: #ffffff;
+}
+
+* {
+	font-family: Arial, Helvetica, sans-serif;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	background-color: var(--bckg-color);
+	font-size: 1.4rem;
+}
+
+nav {
+	background-color: var(--bckg2-color);
+	font-size: 1.6rem;
+	margin: 20px 10px;
+}
+
+nav a {
+	text-decoration: none;
+}
+
+nav ul li {
+	list-style-type: none;
+}
+
+nav ul li.current a {
+	color: var(--secondary-color);
+}
+
+/* First level menu */
+
+nav > ul {
+	display: flex;
+}
+nav > ul > li {
+	position: relative;
+}
+
+nav > ul > li > a {
+	color: var(--main-color);
+	display: block;
+	padding: 1.6em 1.5em;
+	text-transform: uppercase;
+}
+
+nav > ul > li:hover > a {
+	color: var(--secondary-color);
+}
+
+nav > ul > li:hover::before {
+	background-color: var(--secondary-color);
+	content: '';
+	display: block;
+	height: 3px;
+	position: absolute;
+	width: 100%;
+}
+/* arrow */
+nav li:has(ul.dropdown)::after {
+	content: '^';
+	position: absolute;
+	top: 50%;
+	right: 0.2em;
+	transform: translateY(calc(-50% - 0.3em)) rotate(180deg);
+}
+
+/* Dropdown menu */
+nav li:hover > .dropdown {
+	display: block;
+}
+
+nav .dropdown {
+	display: none;
+	background-color: var(--main-color);
+	position: absolute;
+	color: var(--bckg-color);
+}
+nav .dropdown li {
+	position: relative;
+}
+
+nav .dropdown a {
+	color: var(--bckg-color);
+	display: block;
+	padding: 1em 7em 1.2em 1.3em;
+	text-wrap: nowrap;
+}
+
+nav .dropdown li:hover a {
+	color: var(--bckg2-color);
+}
+
+nav .dropdown .dropdown {
+	left: 100%;
+}
+
+/* arrow for dropdown*/
+.dropdown li:has(ul.dropdown)::after {
+	right: 1em;
+	transform: translateY(-50%) rotate(90deg);
+}
