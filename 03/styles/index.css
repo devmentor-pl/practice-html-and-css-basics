@@ -132,6 +132,8 @@
 
 .parent--float::after {
 	clear: both;
+	content: '';
+	display: block;
 }
 
 .parent--flexbox {
