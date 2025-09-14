@@ -20,11 +20,11 @@ Each task is placed in a separate folder (`01` – `05`) with my own commits doc
 
 ## Tasks Overview
 
-- [**Task 01**](https://github.com/ArturDevCraft/practice-html-and-css-basics/tree/main/01) – Built a basic semantic HTML structure as the foundation for later styling.
-- [**Task 02**](https://github.com/ArturDevCraft/practice-html-and-css-basics/tree/main/02) – Add missing CSS selectors to the code.
-- [**Task 03**](https://github.com/ArturDevCraft/practice-html-and-css-basics/tree/main/03) – Used three methods to set elements positions on page
-- [**Task 04**](https://github.com/ArturDevCraft/practice-html-and-css-basics/tree/main/04) – Created a multi-level drop-down menu
-- [**Task 05**](https://github.com/ArturDevCraft/practice-html-and-css-basics/tree/main/05) – Created a website layout using **flexbox**
+- [**Task 01**](./01) – Built a basic semantic HTML structure as the foundation for later styling.
+- [**Task 02**](./02) – Add missing CSS selectors to the code.
+- [**Task 03**](./03) – Used three methods to set elements positions on page
+- [**Task 04**](./04) – Created a multi-level drop-down menu
+- [**Task 05**](./05) – Created a website layout using **flexbox**
 
 ## Highlights
 
