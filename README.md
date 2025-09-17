@@ -1,51 +1,38 @@
-> :rocket: *Potrzebujesz pomocy w rozwiązaniu zadania? Nie wiesz, czy Twój kod jest wystarczająco dobry? Chcesz skonsultować CV lub szukasz zespołu, do wspólnego projektu? To wszystko znajdziesz na naszym serwerze Discord. Dostęp jest **bezpłatny i bez zobowiązań**. :white_check_mark: [Dołącz teraz](https://devmentor.pl/discord) do naszej społeczności!*
+# Practice HTML and CSS Basics
 
-&nbsp;
+This repository contains a set of exercises in HTML and CSS that I completed to refresh and strengthen my knowledge.  
+Each task is placed in a separate folder (`01` – `05`) with my own commits documenting the learning process.
 
-# HTML i CSS: Podstawy
+## What I Learned
 
-Znajomość HTML-a i CSS-a jest niezbędna do rozpoczęcia przygody z programowaniem w języku JavaScript, dlatego zawsze najpierw polecam naukę podstaw tych dwóch technologii.
+- Reviewed **HTML semantics** – proper use of elements such as `header`, `nav`, `main`, `section`, `article`, and `footer`.
+- Practiced creating **forms**: input fields, textarea, select, radio buttons, checkboxes, and their attributes.
+- Strengthened knowledge of **CSS styling**: selectors, pseudo-classes, pseudo-elements, inheritance, and specificity.
+- Gained experience in building **page layouts** using **Flexbox**.
+- Learned best practices for **code readability and organization**.
 
-Zanim przystąpisz do zadań, powinieneś przerobić:
+## Solutions I Used
 
-- podstawowe znaczniki HTML oraz temat semantyki w HTML,
-- podstawowe selektory i specyficzność w CSS,
-- pozycjonowanie elementów przy pomocy:
-    - inline-block,
-    - float,
-    - flexbox,
-    - position: relative & absolute,
-- tworzenie układu strony.
+- Semantic HTML structures instead of overusing `div` elements.
+- **Flexbox** for simpler layouts (e.g., navigation bars, forms) and also more complex multi-column and multi-row layouts.
+- Organized CSS with **cascading rules** and grouped selectors to avoid code repetition.
+- Kept HTML and CSS in separate files for better project structure.
 
-&nbsp;
+## Tasks Overview
 
-## Zadania
+- [**Task 01**](./01) – Built a basic semantic HTML structure as the foundation for later styling.
+- [**Task 02**](./02) – Add missing CSS selectors to the code.
+- [**Task 03**](./03) – Used three methods to set elements positions on page
+- [**Task 04**](./04) – Created a multi-level drop-down menu
+- [**Task 05**](./05) – Created a website layout using **flexbox**
 
-> :bangbang: *Raz w tygodniu wykonuję **bezpłatny [Code Review](https://en.wikipedia.org/wiki/Code_review)** wybranej losowo osobie, która nie współpracuje ze mną w ramach [mentoringu](https://devmentor.pl/mentoring-javascript/). Zrób [Pull Request](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork) i weź udział w losowaniu, wysyłając link do PR w odpowiednim kanale na [Discordzie](https://devmentor.pl/discord). Życzę Ci efektywnej nauki programowania!
-> Pozdrawiam, [Mateusz Bogolubow](https://www.linkedin.com/in/mateusz-bogolubow/).*
+## Highlights
 
-&nbsp;
-### :point_right: &nbsp; [`#01`](./01) &nbsp; [`#02`](./02) &nbsp; [`#03`](./03) &nbsp; [`#04`](./04) &nbsp; [`#05`](./05) &nbsp; :point_left:	
+- Each folder shows my **iterative process** – from a simple structure to a polished result.
+- Demonstrated both **Flexbox** and older approaches to layout building. It could help me work with legacy code.
+- Paid attention to **semantic HTML**, making the code accessible and clean.
+- Used **consistent commit messages** to track the development progress.
 
-&nbsp;
+---
 
-:arrow_left: [*poprzedni zestaw zadań (**JavaScript: Narzędzia**)*](https://github.com/devmentor-pl/practice-js-tools)
-
-
-## Jak wykonać zadania?
-
-> :no_entry: *Jeśli poniższa instrukcja nie jest dla Ciebie wystarczająca to możesz skorzystać z [bezpłatnego warsztatu JavaScript: Narzędzia](https://devmentor.pl/workshop-js-tools), w którym znajdziesz dokładniejsze informacje.*
-
-&nbsp;
-
-- Najpierw zrób tzw. [`fork`](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/fork-a-repo) (prawy, górny róg strony). W ten sposób utworzysz kopię tego repozytorium na Twoim koncie GitHub. 
-
-- Teraz będziesz mógł wykonywać zadania na swoim repozytorium. Wystarczy, że skopiujesz pliki na swój komputer przy pomocy komendy [`git clone`](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository).
-
-- Zadania rozwiązuj jedno po drugim, ponieważ z każdym kolejnym ich poziom trudności wzrasta.  
-
-- Pamiętaj o zapisywaniu historii zmian w plikach przy pomocy komend [`git add`](https://github.com/git-guides/git-add) oraz [`git commit`](https://github.com/git-guides/git-commit).
-
-- Aby wysłać dane na zdalny serwer, wystarczy komenda [`git push`](https://github.com/git-guides/git-push).
-
-- Po wysłaniu plików na GitHuba wykonaj [Pull Request](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork), aby wziąć udział w losowaniu bezpłatnego [Code Review](https://en.wikipedia.org/wiki/Code_review) wykonanych zadań
+📌 This repository is part of my portfolio – it demonstrates my hands-on practice with HTML and CSS as well as attention to detail in coding.
