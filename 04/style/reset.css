@@ -1,0 +1,114 @@
+/* https://github.com/alex-e-leon/reset-css-complete */
+
+/* General reset */
+html, body, div, span, applet, object, iframe,
+input, button, select, optgroup, textarea,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  background: none;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  /* line-height is set by :root */
+  line-height: inherit;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+s, u {
+  text-decoration: none;
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+input[type="submit"],
+button {
+  width: auto;
+  overflow: visible;
+  cursor: pointer;
+  line-height: inherit;
+  color: inherit;
+
+  /* Corrects inability to style clickable `input` types in iOS */
+  appearance: none;
+}
+
+button::-moz-focus-inner {
+  /* Remove excess padding and border in Firefox 4+ */
+  border: 0;
+  padding: 0;
+}
+
+/* safari requires some special resets for input type="search" */
+input[type="search"] {
+  -webkit-appearance: textfield;
+}
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* ie 11 has it's own magic font-size rules for sub and sup */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  sub, sup {font-size:120%;}
+}
+
+/* some sensible global styles */
+:root {
+ /* prevents mobile browsers from sometimes scaling text */
+  text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* sets box-sizing back to the sane border-box for all elements */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
