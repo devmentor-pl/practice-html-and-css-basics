@@ -7,7 +7,7 @@
 Znacznik label, którego przodkiem jest klasa .ac-container 
 (0, 1, 1)
 */
-?? {
+.ac-container label {
     height: 30px !important;
     line-height: 21px !important;
     font-size: 12px !important;
@@ -47,7 +47,7 @@ Zmiana koloru tła po najechaniu przez kursor myszy na znacznik label,
 który znajduje się wewnątrze elementu o klasie .ac-container 
 (0, 2, 1)
 */
-?? {
+.ac-container label:hover {
     background: #fff;
 }
 
@@ -61,8 +61,8 @@ i ten brat musi posiadać przodka o klasie .ac-container
 to samo co w 1) ale z efektem najechania kursorem na label 
 (0, 3, 2)
 */
-??,
-?? {
+.ac-container input:checked + label,
+.ac-container input:checked + label:hover {
     background: #f1f2f3;
     color: #666;
     text-shadow: 0 1px 1px rgba(255,255,255,0.6);
@@ -89,7 +89,7 @@ którego poprzedni brat jest zaznaczonym inputem (użyj pseudoklasy),
 którego przodek to element o klasie .ac-container
 (0, 3, 3)
 */
-?? {
+.ac-container input:checked+label:hover:after {
     background-image: url(../images/arrow_up.png);
 }
 
@@ -126,7 +126,7 @@ Rodzeństwo o typie article, dla elementu input, który jest zaznaczony (użyj p
 oraz posiada przodka o klasie .ac-container
 (0, 2, 2)
 */
-?? {
+.ac-container input:checked ~ article {
     -webkit-transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
     -moz-transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
     -o-transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
