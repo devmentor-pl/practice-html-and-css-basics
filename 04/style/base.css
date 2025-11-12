@@ -1,0 +1,76 @@
+
+    :root{
+      --bar-color: #FFFFFF;
+      --body-color : #F6F6F6;
+      --active-color : #1EA5E3;
+      --submenu-bcgr-col: #333333;
+      --submenu-txt-col: #CCCCCC;
+      --submenu-txt-col-active: #FFFFFF;
+    }
+    body{
+        background-color: var(--body-color);
+     }
+    .nav {
+        background-color: var(--bar-color);
+        display: flex;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+    .nav__item{                       
+        border-top: solid 3px var(--bar-color)  ;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 25px;        
+        position: relative;
+        padding: 20px 40px;
+    }
+    .nav__item:hover{
+        border-top: solid 3px var(--active-color);
+        color: var(--active-color);
+    }
+    .nav__item:nth-of-type(2):hover:after {        
+        content: '>';
+        color: var(--active-color);
+        position: absolute;
+        margin-left: 20px;         
+        font-family: monospace;        
+        transform: rotate(90deg);      
+    }
+    .nav__dropdown{
+        display: none;
+        padding-top: 20px;
+        margin-left: -40px;
+        position: absolute;
+    }   
+    .nav__item:hover > .nav__dropdown {
+        display: block;
+    }
+    .dropdown__item,
+    .sidemenu__item
+    {        
+        background-color: var(--submenu-bcgr-col);
+        color: var(--submenu-txt-col);
+        min-width: 350px;      
+        padding: 15px 30px;    
+    }
+    .dropdown__item:hover:after{
+        content: '>'; 
+        float: right;
+        font-family: monospace;
+    }
+    .dropdown__item:hover,
+    .sidemenu__item:hover{
+        color: var(--submenu-txt-col-active);
+    }
+    .dropdown__item:hover > .dropdown__sidemenu{
+        display: block;                      
+    } 
+    .dropdown__sidemenu{
+        display: none;
+        position: absolute;
+        min-width: 350px;
+        left:350px;
+        background-color: var(--submenu-bcgr-col);
+        transform: translateY(-35px);
+    }
+   
+

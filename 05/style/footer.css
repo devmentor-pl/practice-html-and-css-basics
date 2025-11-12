@@ -1,0 +1,13 @@
+.footer{
+    min-height: 100px;
+    padding: 10px;
+}
+.footer__container{   
+    padding: 20px;      
+}
+
+.footer__content{    
+    margin: auto auto;
+    width: 200px;
+    height: 70px;   
+}

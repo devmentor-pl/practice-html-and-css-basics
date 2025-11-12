@@ -1,0 +1,17 @@
+.header{
+    padding: 5px 0px 10px 0px;
+}
+
+.header__container{
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 0 10px 0;
+    min-height: 70px;
+}
+.header__logo{
+    width:100px;
+}
+
+.header__nav{
+    width:250px;    
+}

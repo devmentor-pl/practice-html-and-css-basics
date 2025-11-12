@@ -1,0 +1,15 @@
+.content2{
+    margin-top:10px;
+    padding: 15px 0 15px 0;
+}
+.content2__container
+{
+    display:flex;
+    justify-content: space-evenly;
+    min-height: 200px;
+    padding: 15px 0 15px 0;
+}
+.content2__item{    
+    width: 30%;
+}
+
