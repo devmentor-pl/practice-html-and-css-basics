@@ -1,0 +1,63 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+	font-family: 'Source Sans PRO';
+	src: url(./fonts/SourceSansPro-Regular.otf) format('opentype');
+}
+
+.parent {
+    width: 600px;
+    padding: 20px;
+}
+
+/*------------------------- inline-block ------------------------*/
+
+.parent--inline-block .child {   /* Do index.html dodano komentarz */
+    display: inline-block;       /* do div'ów. Elementy typu inline */
+}                                /* interpretują je jako przestrzeń */
+
+/*--------------------------- float -----------------------------*/
+
+.parent--float .child {
+    float: left;
+}
+
+.parent--float::after {    /* po użyciu float elementy przestają*/
+    content: '';           /* wypełniać element .parent */
+    display: block;        /* właściwość clear zatrzymuje opływanie */
+    clear: both;           /* dodajemy go do ostatniego dziecka */
+}
+
+/*------------------------- flexbox -----------------------------*/
+
+.parent--flexbox {
+    display: flex;
+}
+
+/*---------------------------------------------------------------*/
+
+.child--first, .child--middle {
+    width: calc(30% - 10px); /* użyta funkcja calc (odejmuje margin) */
+    margin-right: 10px;
+}
+
+/*-------------------------- fonty ------------------------------*/
+
+.child--first {
+    font-family: 'Source Sans PRO';
+    font-style: regular;
+}
+
+.child--middle {
+    font-family: 'Source Sans PRO';
+	font-weight: bold;
+}
+
+.child--last {
+    width: 40%; /* wymagana zadaniem regulacja szerokości */
+    font-family: 'Source Sans PRO';
+	font-style: italic;
+}
