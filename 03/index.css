@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'Source Sans PRO';
+    src: url(source-sans-pro/SourceSansPro-Bold.otf);
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Source Sans PRO';
+    src: url(source-sans-pro/SourceSansPro-Regular.otf);
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Source Sans PRO';
+    src: url(source-sans-pro/SourceSansPro-It.otf);
+    font-style: italic;
+    font-weight: normal;
+}
+
+.parent {
+width: 600px;
+padding: 20px;
+font-family: 'Source Sans PRO';
+}
+
+.child--first {
+     width: calc(30% - 10px);
+    font-style: normal;
+    margin-right: 10px;
+}
+
+.child--middle {
+    width: calc(30% - 10px);
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.child--last {
+     width: 40%; 
+    font-style: italic;
+}
+
+ .parent--inline-block .child  {
+    display: inline-block;
+}
+
+ .parent--float .child {
+    float: left;
+}
+
+ .parent--flexbox {
+    display: flex;
+}
+
