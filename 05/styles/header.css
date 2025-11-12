@@ -1,0 +1,15 @@
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo {
+    min-width: 200px;
+    margin-left: -5px;
+}
+
+.header__nav {
+    min-width: 400px;
+    margin-right: -5px;
+}
