@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #d4d3d3;
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header{
+    background-color: #fff;
+    margin: 2%;
+}
+ul{
+    list-style-type: none;
+}
+.navbar .main__list{
+    display: flex;
+}
+li{
+    padding: 2%;
+}
+a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+.main__item:hover{
+        border-top: solid 3px rgb(74, 74, 228);
+}
+a:hover{
+    color:  rgb(74, 74, 228);
+}
+.arrow{
+    display: inline-block;
+    transform: rotate(90deg);
+}
+.second__list{
+    background-color: #444;
+    color: #fff;
+    position: absolute;
+    top: 110px;
+    left: 130px;
+    width: 200px;
+    visibility: hidden;
+}
+.second__list li{
+    position: relative;
+    padding: 10px 50px 10px 20px;
+}
+.second__list a,
+.third__list a{
+    color: #fff;
+}
+.second__arrow{
+    position: absolute;
+    left: 180px;
+}
+.third__list{
+    background-color: #444;
+    position: absolute;
+    top: 0;
+    left: 200px;
+    width: 200px;
+    visibility: hidden;
+}
+.third__list li{
+    padding: 10px 20px 10px 20px;
+}
+
+#items1:hover .second__list{
+    visibility: visible;
+}
+#items2:hover .third__list{
+    visibility: visible;
+}
