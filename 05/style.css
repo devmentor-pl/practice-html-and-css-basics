@@ -1,0 +1,64 @@
+.row, .cell, .container {
+    padding: 5px;
+    outline: 1px solid;
+}
+
+.row {
+    outline-color: green;
+    width: calc(100%-2px);
+    margin: 25px 5px;
+}
+
+.container {
+    margin: 5px auto;
+    outline-color: blue;
+    max-width: 1000px;
+    padding: 1px;
+}
+
+.cell {
+    outline-color: orange;
+    margin: 5px;
+}
+
+.header__container, .content__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo {
+    min-height: 150px;
+    min-width: 200px;
+}
+
+.header__nav {
+    min-height: 150px;
+    min-width: 400px;
+}
+
+
+.content_article {
+    min-height: 300px;
+    min-width: 480px;
+}
+
+.gallery__container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.gallery_image {
+    min-height: 200px;
+    width: 30%;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__author {
+    min-height: 100px;
+    min-width: 250px;
+}
