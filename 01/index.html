@@ -1,12 +1,121 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header>
+      <h1>Logo</h1>
+      <nav>
+        <ul>
+          <li><a href="#">link 1</a></li>
+          <li><a href="#">link 2</a></li>
+          <li>
+            <a href="#">link 3</a>
+            <ul>
+              <li><a href="#">link 3.1</a></li>
+              <li><a href="#">link 3.2</a></li>
+              <li>
+                <a href="#">link 3.3</a>
+                <ul>
+                  <li><a href="#">link 3.3.1</a></li>
+                  <li><a href="#">link 3.3.2</a></li>
+                  <li><a href="#">link 3.3.3</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <article>
+        <h2>Title</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, sint
+          autem delectus quaerat obcaecati nobis illum possimus ipsum impedit,
+          ea vero esse? Officiis id corporis quia molestias exercitationem quos
+          labore rerum non earum. Ad, sint. Cum eaque recusandae velit
+          aspernatur, ullam aliquid consequuntur magnam aut ducimus hic vero
+          quibusdam ea.
+        </p>
+        <time datetime="2023-06-14 20:00">14-06-2023</time
+        ><span
+          >, Author of the article:
+          <a href="#" rel="author">Fryderyk Jellinek</a></span
+        >
+        <figure>
+          <img
+            src="https://dummyimage.com/300.png/09f/fff"
+            alt="author ilustration"
+            width="100px"
+            height="100px"
+          />
+        </figure>
+        <table style="border: 1px solid black">
+          <thead>
+          <tr>
+            <th>Lorem</th>
+            <th>Ipsum</th>
+            <th>Dolor</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Dolor</td>
+            <td>Ipsum</td>
+            <td>Lorem</td>
+          </tr>
+        </tbody>
+        </table>
+      </article>
+      <form>
+        <label for="name">Name:</label>
+        <input style="display: block" type="text" name="name" id="name"/>
+        <label for="lastName">Last name:</label>
+        <input style="display: block" type="text" name="lastName" id="lastName"/>
+        <label for="comment">Comment:</label>
+        <textarea
+          style="display: block"
+          name="comment"
+          cols="30"
+          rows="10"
+          id="comment"
+        ></textarea>
+        <button type="submit">Add your comment</button>
+      </form>
+      <article>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe,
+          soluta.
+        </p>
+        <a href="#" rel="author">John Doe</a>
+        <time datetime="2023-06-14 20:00">14-06-2023</time>
+      </article>
+      <article>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia iste
+          aliquam obcaecati ut, iure quidem reiciendis cumque numquam
+          perspiciatis eum aperiam? Sint optio enim incidunt rerum sequi
+          distinctio animi libero.
+        </p>
+        <a href="#" rel="author">Chris Rock</a>
+        <time datetime="2023-06-14 20:00">14-06-2023</time>
+      </article>
+      <article>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id,
+          accusamus!
+        </p>
+        <a href="#" rel="author">Jan Kowalski</a>
+        <time datetime="2023-06-14 20:00">14-06-2023</time>
+      </article>
+    </main>
+    <footer>
+      <p>&copy; by Fryderyk Jellinek</p>
+    </footer>
+  </body>
 </html>
