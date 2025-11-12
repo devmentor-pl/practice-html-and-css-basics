@@ -1,0 +1,19 @@
+.staff__container {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+}
+.staff__article {
+    min-height: 150px;
+    width: 30%;
+    margin-left: 0;
+}
+.staff__article2 {
+    min-height: 150px;
+    width: 30%;
+}
+.staff__article3 {
+    min-height: 150px;
+    width: 30%;
+    margin-right: 0;
+}
