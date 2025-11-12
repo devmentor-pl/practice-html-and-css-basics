@@ -1,0 +1,37 @@
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.first-section-container,
+.second-section-container {
+  border: 2px solid #293241;
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+  width: 100%;
+}
+
+.first-section,
+.second-section {
+  border: 2px solid #ee6c4d;
+  display: flex;
+  height: 250px;
+  justify-content: space-between;
+  margin: 10px 0 10px 0;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.first-section__article {
+  background-color: #8fb9aa;
+  margin: 10px 0 10px 0;
+  width: calc(50% - 5px);
+}
+
+.second-section__article {
+  background-color: #8fb9aa;
+  margin: 10px;
+  width: calc(100% / 3 - 5px);
+}
