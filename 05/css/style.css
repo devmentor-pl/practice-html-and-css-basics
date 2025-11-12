@@ -1,0 +1,154 @@
+/* STAGE ONE */
+.first {
+      border: 6px solid green;
+      padding-top: 5px;
+      padding-bottom: 5px;
+}
+
+.first--header .second {
+      display: flex;
+      justify-content: space-between;
+}
+
+.second {
+      border: 6px solid blue;
+      max-width: 1000px;
+      margin: auto;
+      
+}
+
+.third {
+      background-color: orange;
+      min-height: 80px;
+      margin-top: 0;
+      
+}
+
+.third--item {
+      width: 260px;
+      margin-bottom: 0;
+}
+
+.third--nav {
+      width: 400px;
+}
+/* END OF STAGE ONE */
+
+/* SECOND STAGE */
+
+.rectangle--header .rectangle__second{
+      display: flex;
+      justify-content: space-between;
+}
+
+.rectangle{
+      border: 6px solid green;
+      margin-top: 5px;
+      height: 350px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+}
+
+.rectangle__second{
+      border: 6px solid blue;
+      max-width: 1000px;
+      margin: auto;
+      height: 338px;
+}
+
+.fourth{
+      background-color: orange;
+      min-height: 80px;
+      margin-top: 0;
+}
+
+.fourth--item{
+      width: 49.5%;
+      margin-bottom: 0;
+}
+
+.fourth--nav{
+      width: 49.5%;
+}
+/* END OF SECOND STAGE */
+
+/* STAGE THIRD */
+
+.square--header .square__second{
+      display: flex;
+}
+
+.square{
+      border: 6px solid green;
+      margin-top: 5px;
+      height: 350px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+}
+
+.square__second{
+      border: 6px solid blue;
+      max-width: 1000px;
+      margin: auto;
+      height: 338px;
+}
+
+.fifth{
+      background-color: orange;
+      min-height: 80px;
+      margin-top: 0;
+}
+
+.fifth--item{
+      width: 32%;
+      margin-bottom: 0;
+      margin: 10px 10px 10px 10px;
+}
+
+.fifth--nav{
+      width: 32%;
+      margin: 10px 10px 10px 10px;
+}
+
+.fifth--art{
+      width: 32%;
+      margin: 15px 10px 15px 10px;
+}
+
+/* END OF STAGE THIRD */
+
+/* STAGE FOURTH */
+
+.form--header .form__second{
+      display: flex;
+      justify-content: center;
+ 
+}
+
+.form{
+      border: 6px solid green;
+      margin-top: 5px;
+      height: 60px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+}
+
+.form__second{
+      border: 6px solid blue;
+      max-width: 1000px;
+      margin: auto;
+      height: 50px;
+}
+
+.sixth{
+      background-color: orange;
+      min-height: 20px;
+      margin-top: 0;
+}
+
+.sixth--item{
+      width: 150px;
+      margin: 5px 0 5px 0;
+}
+
+/* END OF STAGE FOURTH */

@@ -1,0 +1,96 @@
+html {
+      font-family: sans-serif
+}
+
+body {
+      background-color: rgb(237, 239, 243);
+}
+
+.menu {
+      background-color: white;
+      display: flex;      
+}
+
+.menu__item {
+      padding: 20px 30px;
+      border-top: 5px solid transparent;
+      color: blue;
+}
+
+.menu__item:hover {
+      border-top-color: rgb(68, 93, 253);
+}
+
+.menu__element {
+      color: rgb(32, 68, 175);
+      text-decoration: none;
+}
+
+.menu__level {
+      position: relative;
+}
+
+.menu__level::after {
+      content: '>';
+      position: absolute;
+      right: 10px;
+      top: 18px;
+      transform: rotate(90deg);
+}
+
+.menu__level:hover>.level {
+      display: block;
+}
+
+.level {
+      position: absolute;
+      background-color: rgb(67, 63, 63);
+      top: 100%;
+      left: 0;
+      min-width: 215px;
+      display: none;
+}
+
+.level__item {
+      padding: 10px 15px;
+
+}
+
+.level__item--second--level {
+      position: relative;
+}
+
+.level__item--second--level:hover>.level-second {
+      display: block
+}
+
+.level__item--second--level::after {
+      content: '>';
+      position: absolute;
+      color: white;
+      right: 10px;
+      top: 10px;
+}
+
+.level__element {
+      color: white;
+      text-decoration: none;
+}
+
+.level-second {
+      position: absolute;
+      background-color: rgb(67, 63, 63);
+      left: 100%;
+      min-width: 215px;
+      top: 0;
+      display: none;
+}
+
+.level-second__item {
+      padding: 10px 15px;
+}
+
+.level-second__element {
+      color: white;
+      text-decoration: none;
+}
