@@ -1,12 +1,133 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
+    <script src="https://kit.fontawesome.com/39329175e7.js" crossorigin="anonymous"></script>
+
 </head>
+
 <body>
-    
+
+    <header>
+        <div>
+            <a href="#">
+                <i class="fa-sharp fa-solid fa-face-awesome"> <span>Smile</span></i>
+            </a>
+
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li><a href="#">Offer</a>
+                    <ul>
+                        <li><a href="#">Offer 1</a></li>
+                        <li><a href="#">Offer 2</a></li>
+                        <li><a href="#">Offer 3</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#">Prices</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore enim incidunt itaque veniam officiis
+                dignissimos sint ipsam obcaecati, sequi dolores magni natus maxime nemo fugiat quasi consequuntur, modi
+                quas qui?</p>
+            <figure>
+                <img src="https://picsum.photos/300/200" alt="random picture">
+                <figcaption>img info</figcaption>
+            </figure>
+            <table>
+                <thead>
+                    <tr>
+                        <th>one</th>
+                        <th>two</th>
+                        <th>three</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>5</td>
+                        <td>7</td>
+                        <td>9</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <div>
+                <p>Author <time datetime="2022-02-10">date</time></p>
+            </div>
+        </article>
+        <section>
+            <form action="">
+                <div><label for="name">name</label>
+                    <input type="text" name="name" id="name" placeholder="your name">
+                </div>
+                <div><label for="email">email</label>
+                    <input type="email" name="email" id="email" placeholder="your email">
+                </div>
+                <label for="comment"></label>
+
+
+                <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+                <div>
+                    <button type="submit">Send your comment</button>
+
+                </div>
+
+            </form>
+            <div>
+                <h2>Previous comments</h2>
+                <ul>
+                    <li>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, harum.</p>
+                        <p>Author <time datetime="2022-02-10">date</time></p>
+                    </li>
+                    <li>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, harum.Lorem ipsum dolor sit
+                            amet consectetur adipisicing elit. Doloremque provident sapiente nisi.</p>
+                        <p>Author <time datetime="2022-02-10">date</time></p>
+                    </li>
+                    <li>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, harum.</p>
+                        <p>Author <time datetime="2022-02-10">date</time></p>
+                    </li>
+                    <li>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, harum.Lorem ipsum dolor sit
+                            amet consectetur adipisicing elit. Doloremque provident sapiente nisi.
+                        </p>
+                        <p>Author <time datetime="2022-02-10">date</time></p>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Kozerka 2023</p>
+    </footer>
 </body>
+
 </html>
