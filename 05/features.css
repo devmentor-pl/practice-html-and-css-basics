@@ -1,0 +1,13 @@
+
+.features__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+  flex: 1 1 100%;
+  gap: 10px;
+}
+
+.feature {
+  min-height: 150px;
+  width: 100%;
+}
