@@ -1,0 +1,80 @@
+/*desktop */
+
+/* header */
+
+.header__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.header__logo {
+    width: 20%;
+}
+
+.header__nav {
+    width: 40%;
+    display: block;
+}
+
+.header__nav-menu {
+    display: none;
+}
+
+.header__nav-menu-icon {
+    display: none;
+}
+
+#header__nav-menu {
+    display: none;
+}
+ 
+/* content */
+
+.content {
+    height: 40vh;
+}
+
+.content__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.content__article {
+    width: 100%;
+}
+
+/* box */
+
+.box {
+    height: 40vh;
+}
+
+.box__container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px;
+}
+
+.box__article {
+    width: 100%
+}
+
+/* footer */
+
+.footer {
+    height: calc(10vh - 15px);
+}
+
+.footer__container {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__logo {
+    width: 20%;
+}
