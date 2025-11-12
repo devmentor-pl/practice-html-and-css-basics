@@ -1,0 +1,18 @@
+.content__container {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+   }
+   .content__article {
+    min-height: 300px;
+    width: 75%;
+    background-color: orange;
+    margin: 18px 10px 18px 0px;
+   }
+   .content__ads {
+    min-height: 300px;
+    width: 75%;
+    background-color: orange;
+    margin: 18px 0px 18px 10px;
+   }
+   

@@ -1,0 +1,22 @@
+.content2__container {
+    display: flex;
+    justify-content: space-between;
+       }
+   .content2__article {
+    min-height: 200px;
+    width: 50%;
+    background-color: orange;
+    margin: 15px ;
+   }
+   .content2__ads {
+    min-height: 200px;
+    width: 50%;
+    background-color: orange;
+    margin: 15px ;
+   }
+   .content2__logo 
+   {min-height: 200px;
+    width: 50%;
+    background-color: orange;
+    margin: 15px ;
+}
