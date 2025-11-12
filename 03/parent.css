@@ -1,0 +1,18 @@
+/** @format */
+
+.parent--inline-block > * {
+  display: inline-block;
+}
+.parent--float > * {
+  float: left;
+}
+.parent--float::after {
+  content: "";
+  display: block;
+  clear: left;
+}
+
+.parent--flexbox {
+  display: flex;
+  justify-content: flex-start;
+}

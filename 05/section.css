@@ -1,0 +1,16 @@
+/** @format */
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section__container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.section__content {
+  width: 30%;
+  height: 300px;
+  margin: 20px 0px;
+}

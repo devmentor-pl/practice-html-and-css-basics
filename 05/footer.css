@@ -1,0 +1,17 @@
+/** @format */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+}
+.footer__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__logo {
+  width: 10%;
+  height: 30px;
+}
