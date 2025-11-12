@@ -7,6 +7,98 @@
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
 </head>
 <body>
-    
+    <header>
+        <div class="logo">
+            <h1>LOGO STRONY</h1>
+        </div>
+        <nav class="menu">
+            <ul>
+            <li>Strona główna</li>
+            <li>O mnie</li>
+            <li>Zdjęcia
+                <ul>
+                    <li>Natura
+                        <ul>
+                            <li>Zwierzęta</li>
+                            <li>Rośliny</li>
+                            <li>Architektura</li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li>Pojazdy
+                        <ul>
+                            <li>Samochody</li>
+                            <li>Motocykle</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Artykuły</li>
+            </ul>
+            
+        </nav>
+    </header>
+    <main>
+        <article>
+            <img src="img/05.jpg" width="10%" height="10%" alt="cat-family">
+            <h3>Najlepsze zdjęcia</h3>
+            <span class="author"><i>Dawid Tchórz</i> || <time datetime="24-11-2021">24 listopada</time></span>
+            
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad hic saepe perferendis eos cumque dolorem suscipit, voluptatibus quam reiciendis sit, unde sapiente culpa. Eaque corporis ullam beatae quos eum neque deserunt nostrum modi totam ex repellat distinctio, possimus, ratione libero eos aperiam mollitia nam atque earum. Facere neque officia excepturi blanditiis exercitationem voluptatibus, voluptates debitis corrupti quod laboriosam, ratione libero! A blanditiis numquam facere distinctio odio, sequi aspernatur perspiciatis corporis neque aut sit, nobis velit qui soluta? Nisi magnam obcaecati sit in, enim temporibus, quae alias minus delectus vero voluptatibus corporis eum. Obcaecati necessitatibus vel tenetur modi, sapiente atque! Magnam.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Kateogoria
+                            <th>Nazwisko</th>
+                            <th>Ocena</th>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Natura</th>
+                        <td>Nowak</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <th>Portret</th>
+                        <td>Mazur</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <th>Zdjęcia nocą</th>
+                        <td>Kopeć</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <th>W ruchu</th>
+                        <td>Kowal</td>
+                        <td>4</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+        <br>
+        <form>
+            <div><label for="comment">Dodaj komentarz:</label></div>
+            <textarea name="comment" rows="4" cols="80"></textarea>
+        </form>
+        <h2 class="comment">Komentarze:</h2>
+        <span class="comment__cell">
+            <h3 class="commment_author">Marcin||20.10.2020</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, iusto? Assumenda reprehenderit distinctio optio blanditiis consectetur in facere vel itaque fugit amet perspiciatis doloremque error, veritatis aliquid eum beatae neque! Reiciendis, pariatur libero quae minus similique odit eum explicabo ex aspernatur atque adipisci voluptas veniam delectus magnam provident nostrum ducimus.</p>
+            </span>
+        <span class="comment__cell">
+            <h3 class="commment_author">Adam||10.12.2001</h3>
+            <p>Quam iste rerum repellendus ratione provident accusantium in nihil consectetur? Corporis deserunt recusandae perspiciatis! Deleniti sit quasi pariatur iste nisi assumenda et recusandae exercitationem, repellat neque iusto unde aperiam suscipit ducimus excepturi autem fuga corrupti totam? Blanditiis aspernatur libero sint eveniet quis sit provident omnis vel obcaecati.</p>
+            </span>
+        <span class="comment_cell">
+            <h3 class="commment_author">Zbyszek||5.10.2021</h3>
+            <p>Blanditiis consectetur in facere vel itaque fugit amet perspiciatis doloremque error, veritatis aliquid eum beatae neque! Reiciendis, pariatur libero quae minus similique odit eum explicabo ex aspernatur atque adipisci voluptas veniam delectus magnam provident nostrum ducimus.</p>
+            </span>
+
+    </main>
+    <footer>Copyright by &copy; Dawid. All rights reserved.</footer>
 </body>
 </html>
