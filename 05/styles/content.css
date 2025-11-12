@@ -1,0 +1,18 @@
+.content__container{
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+}
+.content__article{
+    min-width: 450px;
+    min-height: 400px;
+}
+.content__container-second{
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+.content__article-second{
+    min-width: 300px;
+    min-height: 100px;
+}
