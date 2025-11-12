@@ -4,9 +4,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>devmentor.pl - HTML & CSS BASICS - #01</title>
+    <title>Korona Gór Polski</title>
 </head>
 <body>
-    
+    <header>
+        <a href="/">
+            <img src="logogory.jpg"alt="gory">
+        </a>
+        <nav class="menu">
+            <a href="/">Start</a>
+            <ul>
+                <li><a href="/">Aktualności</a></li>
+                <li> <a href="/">Szczyty</a></li>
+            </ul>
+                <li>
+                    <a href="/">Klub</a>
+                </li>
+                <li>
+                    <a href="/">Kontakt</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h1> Korona Gór Polski</h1>
+                <p>Korona Gór Polski ustanowiona została w 1997 roku, a tworzy ją 28 najwyższych szczytów wszystkich pasm górskich naszego kraju. Aby zostać jej zdobywcą trzeba wejść na nie pokonując siłą własnych mięśni ponad 30 tysięcy metrów n.p.m. Chętni do tego czynu powołali 13 grudnia 1997 r. Klub Zdobywców Korony Gór Polski, do którego należy ponad 60 tysięcy miłośników gór. Spośród nich godnością Zdobywcy szczyci się blisko 3000 osób.</p>
+                <time class="time"> 2021-03-12 15:20 </time>
+                <address class="author"> Laura Zacharuk</address>
+            <img src="gorymarsz.jpg" alt="czlowieknaszlakugorskim">
+            <div class="table"> 
+                <table border="1">
+                <caption>Szczyty Korony Gór Polski</caption>         
+    <!-- thead>tr>th*4+tr>td*4+tr>td*4 --> 
+                <thead>
+                    <tr>
+                        <th>nr</th>
+                        <th>pasmo</th>
+                        <th>nazwa</th>
+                        <th>wysokość</th>
+                    </tr>
+                </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Góry Świętokrzystkie</td>
+                            <td>Łysica</td>
+                            <td>612</td>
+                        </tr>
+                        <tr class="altrow">
+                            <td>2</td>
+                            <td>Masyw Ślęży(Przedg.Sud)</td>
+                            <td>Ślęża</td>
+                            <td>718</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Góry Kaczawskie</td>
+                            <td>Skopiec</td>
+                            <td>724</td>
+                        </tr>
+        <!-- tr>td*4+tr>td*4 -->
+                        <tr class="altrow">
+                            <td>4</td>
+                            <td>Góry Bardzkie</td>
+                            <td>Kłodzka Góra</td>
+                            <td>765</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Góry Wałbrzyskie</td>
+                            <td>Chełmiec</td>
+                            <td>869</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </article>
+    </main>
+
+    <form action="./add-comment.php" method="POST">
+        <div>
+            <label> Komentarze
+                <input type="text" name="comment" />
+            </label>
+        </div>
+        <div>
+            <input type="submit" value="Prześlij" />
+        </div>
+    </form>
+    <article class="comment">
+        <time class="time">2021-03-14 14:20 </time>
+        <address class="author">Mirela Kowalska</author>
+            <p>Świetna inicjatywa z tą książeczką! Razem z rodziną zdobywamy po kolei wszystkie szczyty:)</p>
+        <time class="time">2021-03-16 09:40 </time>
+        <address class="author">Janusz Gajda</author>
+            <p>Na stare lata na nowo wróciłem w góry, udało mi się już zdobyć 5 szczytów.</p>
+        <time class="time">2021-03-18 11:20</time>
+        <address class="author">Mateusz Brzózka</address> 
+            <p>Ekstra pomysł, czekam na przesyłkę:D</p>
+    </article>
+    <footer>
+        <div>&copy; 2021 Wszelkie prawa zastrzeżone KoronaGórPolski.pl</div>
+    </footer>
 </body>
 </html>
