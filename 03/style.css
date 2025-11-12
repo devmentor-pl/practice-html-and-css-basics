@@ -1,0 +1,47 @@
+
+@font-face {
+    font-family: "Source Sans";
+    src: url(../03/fonts//sourcesanspro-regular-webfont.woff);
+    src: url(../03/fonts/sourcesanspro-regular-webfont.woff2);
+}
+
+.parent {
+    width: 600px;
+    padding: 20px;
+}
+
+.parent--inline-block .child {
+    display: inline-block;
+}
+
+.parent--float .child {
+    float: left;
+}
+
+.parent--float::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.parent--flexbox {
+    display: flex
+}
+
+.child {
+    width: calc(30% - 7px);
+}
+
+.child--first {
+    font-family: "Source Sans";
+  }
+
+  .child--middle {
+    font-family: "Source Sans";
+    font-weight: bold;
+  }
+
+  .child--last {
+    font-family: "Source Sans";
+    font-style:italic;
+  }

@@ -1,0 +1,12 @@
+
+.header__logo {
+    margin-left: -3px;
+    margin-top: 2px;
+    width: 25%;
+}
+
+.header__nav {
+    margin-right: -3px;
+    margin-top: 2px;
+    width: 40%;
+}
