@@ -1,0 +1,68 @@
+
+@font-face {
+    font-family: "Source Sans PRO";
+    src: url(https://www.fontsquirrel.com/fonts/source-sans-pro);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Source Sans PRO", sans-serif;
+}
+
+.parent {
+    width: 600px;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.parent--inline-block {
+    display: inline-block;
+    flex-direction: row;
+    background-color: red;
+}
+
+.parent--inline-block .child {
+    display: inline-block;
+}
+
+.parent--float {
+    float: left;
+    flex-direction: row;
+    background-color: orange;
+}
+
+/* https://stackoverflow.com/questions/16280040/css3-flexbox-display-box-vs-flexbox-vs-flex */
+.parent--flexbox {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    background-color: orangered;
+}
+
+section > div:first-child {
+    width: calc(3px * (600 - 20) / 10);
+    margin: 0px 5px 0px 0px;
+    font-style: normal;
+    background-color: yellow;
+}
+
+section > div:nth-child(2) {
+    width: calc(3px * (600 - 20) / 10);
+    margin: 0px 5px 0px 5px;
+    font-weight: bold;
+    background-color: green;
+}
+
+section > div:last-child {
+    width: calc(4px * (600 - 20) / 10);
+    margin: 0px 0px 0px 5px;
+    font-style: italic;
+    background-color: indigo;
+}
+

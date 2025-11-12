@@ -1,0 +1,80 @@
+
+@font-face {
+    font-family: "Source Sans Regular";
+    src: url(./font/SourceSansPro-Regular.otf) format("opentype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Source Sans Italic";
+    src: url(./font/SourceSansPro-It.otf) format("opentype");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Source Sans Bold";
+    src: url(./font/SourceSansPro-Bold.otf) format("opentype");
+    font-weight: bold;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.parent {
+    width: 600px;
+    padding: 20px;
+    border: 0.1px solid black;
+}
+
+.child--first {
+    font-family: "Source Sans Regular";
+    width: calc(((600px - 40px) * 0.3) - (24px / 3));
+    margin: 0px 5px 0px 0px;
+    border: 0.1px solid black;
+    background-color: yellow;
+}
+
+.child--middle {
+    font-family: "Source Sans Bold";
+    width: calc(((600px - 40px) * 0.3) - (24px / 3));
+    margin: 0px 5px 0px 5px;
+    border: 0.1px solid black;
+    background-color: lightblue;
+}
+
+.child--last {
+    font-family: "Source Sans Italic";
+    width: calc(((600px - 40px) * 0.4) - (24px / 3));
+    margin: 0px 0px 0px 5px;
+    border: 0.1px solid black;
+    background-color: orangered;
+}
+
+.parent--inline-block .child--first,
+.parent--inline-block .child--middle,
+.parent--inline-block .child--last {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.parent--float .child--first,
+.parent--float .child--middle,
+.parent--float .child--last {
+    float: left;
+}
+
+.parent--float::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.parent--flexbox {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}

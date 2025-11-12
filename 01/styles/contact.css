@@ -1,0 +1,13 @@
+/* contact.css */
+
+input[type="text"],
+input[type="email"],
+textarea {
+     border: 1px solid blue;
+}
+
+button#buttonComment {
+	font-size: 1vw;
+	width: 13vw;
+	background-color: red;
+}
