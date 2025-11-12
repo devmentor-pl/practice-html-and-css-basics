@@ -1,0 +1,85 @@
+@font-face {
+  font-family: "Source Sans PRO";
+  src: url("../fonts/SourceSansPro-Bold.otf") format("opentype");
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Source Sans PRO";
+  src: url("../fonts/SourceSansPro-Regular.otf") format("opentype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Source Sans PRO";
+  src: url("../fonts/SourceSansPro-It.otf") format("opentype");
+  font-style: italic;
+  font-weight: normal;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.parent {
+  width: 600px;
+  padding: 20px;
+}
+
+/* Common child elements */
+.child {
+  font-family: "Source Sans PRO";
+}
+.child--first {
+  width: 30%;
+}
+.child--middle {
+  width: 30%;
+  font-weight: bold;
+}
+.child--last {
+  width: 40%;
+  font-style: italic;
+}
+
+/* Inline Block Method */
+.parent--inline-block {
+  font-size: 0;
+}
+.parent--inline-block > .child {
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Float Method */
+.parent--float > .child {
+  float: left;
+}
+
+/* Children of Inline Block and Float Methods */
+.parent--inline-block > .child--first,
+.parent--float > .child--first {
+  width: calc(30% - 5px);
+  margin-inline-end: 5px;
+}
+.parent--inline-block > .child--middle,
+.parent--float > .child--middle {
+  width: calc(30% - 10px);
+  margin-inline: 5px;
+}
+.parent--inline-block > .child--last,
+.parent--float > .child--last {
+  width: calc(40% - 5px);
+  margin-inline-start: 5px;
+}
+
+/* Flexbox Method */
+.parent--flexbox {
+  display: flex;
+  gap: 10px;
+}
