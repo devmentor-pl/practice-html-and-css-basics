@@ -1,0 +1,94 @@
+/* COMMON */
+.row, .container, .cell {
+    outline: 4px solid;
+}
+
+.row {
+    outline-color: green;
+    margin: 20px;
+    padding: 10px;
+    /* width: 100%; */
+}
+
+.container {
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    outline-color: blue;
+    max-width: 1000px;
+    min-height: 50px;
+}
+
+.cell {
+    background-color: orange;
+    outline-color: transparent
+}
+
+/* END OF COMMON */
+
+
+/* HEADER */
+.header__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo {
+    min-width: 100px;
+}
+
+.header__nav {
+    min-width: 200px;
+}
+
+/* END OF HEADER */
+
+
+/* SECTION-1 */
+.section-1__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-1__article, .section-1__image {
+    width: 50%;
+    width: calc(50% - 5px);
+}
+
+.section-1__article {
+    margin-right: 5px;
+}
+
+.section-1__image {
+    margin-left: 5px;
+}
+
+/* END OF SECTION-1 */
+
+
+/* SECTION-2 */
+.section-2__container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.section-2__div--first, .section-2__div--second, .section-2__div--third {
+    width: 30%;
+}
+
+/* END OF SECTION-2 */
+
+
+/* FOOTER */
+.footer__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__content {
+    min-height: 100px;
+    min-width: 100px;
+}
+
+/* END OF FOOTER */
