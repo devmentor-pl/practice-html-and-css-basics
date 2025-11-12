@@ -1,0 +1,133 @@
+.main {
+  background-color: #AEDEFC;
+  display: flex;
+  padding-top: 100px; /* + 50px because of fixed positon of header */
+  padding-bottom: 50px;
+}
+
+.empty {
+  width: 25%;
+}
+
+.article {
+  background-color: var(--color-fourth);
+  border-radius: 60px;
+  padding: 0 5vw;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  width: 50%;
+}
+
+.article__date, .article__h1 {
+  margin-left: 1vw;
+}
+
+.article__date {
+  margin-bottom: 10px;
+}
+
+.article__h1 {
+  margin-bottom: 20px;
+}
+
+.article__photo {
+  display: flex;
+  flex-direction: column;
+  max-width: 50vw;
+  margin-bottom: 20px;;
+}
+
+.photo__description {
+  align-self: flex-end;
+  margin-top: 5px;
+}
+
+.article__p {
+  margin-bottom: 10px;
+}
+
+.article__author {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.write-comments {
+  margin-top: 100px;
+}
+
+.comments {
+  margin-top: 50px;
+}
+
+.write-comments__item {
+  border-radius: 20px;
+  border: 1.5px solid;
+  border-color: var(--color-third);
+  cursor: pointer;
+  margin-top: 10px;
+  height: 120px;
+  padding: 10px;
+  width: 40vw;
+  text-align: start;
+}
+
+.comments__container {
+  border-radius: 20px;
+  border: 1.5px solid;
+  border-color: var(--color-third);
+  background-color: var(--color-beta);
+  margin-top: 10px;
+  width: 40vw;
+}
+.user {
+  border-radius: 20px 20px 0 0;
+  border-bottom: 1.5px solid;
+  border-color: var(--color-third);
+  background-color: var(--color-beta);
+  display: flex;
+  align-items: center;
+}
+
+.user__picture {
+  height: 40px;
+  width: 40px;
+}
+
+.user__picture {
+  margin-left: 25px;
+}
+.user__name {
+  margin-left: 10px;
+}
+.comments__item {
+  padding: 20px;
+}
+
+.comment__date {
+  display: block;
+  margin-top: 5px;
+  text-align: end;
+}
+
+.ads__container {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.ads__item {
+  cursor: pointer;
+  padding-bottom: 20vh;
+}
+
+.ads__description {
+  font-weight: 350; font-style: italic;
+  color: var(--color-alpha);
+  text-align: center;
+}
+
+.ads {
+  display: flex;
+  justify-content: center;
+  width: 25%;
+}
