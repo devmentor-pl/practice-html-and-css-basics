@@ -1,0 +1,57 @@
+@font-face {
+	font-family: 'Source Sans PRO';
+	src: url(source-sans-pro/SourceSansPro-Bold.otf) format('opentype');
+	src: url(source-sans-pro/SourceSansPro-Regular.otf) format('opentype');
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.parent {
+	padding: 20px;
+	width: 600px;
+}
+
+.child {
+	font-family: 'Source Sans PRO';
+}
+
+.parent.parent--inline-block {
+	font-size: 0;
+}
+
+.parent--inline-block .child {
+	display: inline-block;
+	font-size: 1rem;
+}
+
+.parent.parent--float {
+	overflow: auto;
+}
+
+.parent.parent--float .child {
+	float: left;
+}
+
+.parent.parent--flexbox {
+	display: flex;
+}
+
+.child--first {
+	width: calc(30% - 5px);
+	/* normal nie trzeba pisac, bo jest to domyslna wartosc */
+}
+
+.child--middle {
+	margin: 0 10px;
+	width: calc(30% - 5px);
+	font-weight: bold;
+}
+
+.child--last {
+	width: calc(40% - 10px);
+	font-style: italic;
+}
