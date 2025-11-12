@@ -1,0 +1,132 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #F7F7F7;
+    font-family: sans-serif;
+}
+
+.fa-chevron-down {
+    font-size: 0.6rem;
+    margin-left: 10px;
+}
+
+.fa-chevron-right {
+    display: none;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+}
+
+.nav {
+    margin-top: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF;
+}
+
+.nav__links {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65px;
+    width: 100px;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    text-transform: uppercase;
+}
+
+.nav__link:hover {
+    cursor: pointer;
+    color: #009AE1;
+    border-top-color: #009AE1;
+}
+
+.nav__link__multi-level {
+    position: relative;
+}
+
+.nav__links--level-1 {
+    display: none;
+    list-style: none;
+    padding-left: 0;
+    background-color: #333333;
+    font-size: 0.8rem;
+    text-transform: lowercase;
+}
+
+.nav__link--level-1-first, .nav__link--level-1-second {
+    height: 40px;
+    width: 200px;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+}
+
+.nav__link__multi-level:hover > .nav__links--level-1{
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+
+.nav__links--level-2-first, .nav__links--level-2-second {
+    display: none;
+    list-style: none;
+    background-color: #333333;
+    font-size: 0.8rem;
+}
+
+.nav__link--level-2 {
+    height: 40px;
+    width: 200px;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+}
+
+.nav__link--level-1-first:hover > .first-chevron {
+    display: inline-flex;
+    position: absolute;
+    font-size: 0.5rem;
+    right: 10%;
+}
+
+.nav__link--level-1-first:hover > .nav__links--level-2-first{
+    display: inline-grid;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    padding: 0;
+}
+
+.nav__link--level-1-second:hover > .second-chevron {
+    display: inline-flex;
+    position: absolute;
+    font-size: 0.5rem;
+    right: 10%;
+}
+
+.nav__link--level-1-second:hover > .nav__links--level-2-second{
+    display: inline-grid;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    padding: 0;
+}
