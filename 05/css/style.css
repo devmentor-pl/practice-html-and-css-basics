@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.green-line {
+    outline: 3px green solid;
+}
+
+.blue-line {
+    display: flex;
+    justify-content: space-between;
+    outline: 3px blue solid;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.orange-line {
+    background-color: #F4CA11;
+    height: 7vh;
+}
+
+.orange--logo {
+    flex-basis: 15%;
+}
+
+.orange--nav {    
+    flex-basis: 30%;
+}
+
+.orange--article,
+.orange--image {
+    flex-basis: 49.7%;
+    height: 30vh;
+}
+
+.orange--gallery {
+    flex-basis: 32.5%;
+    height: 30vh;
+}
+
+.blue--flex-space {
+    justify-content: space-around;
+}
+
+.blue--flex-center {
+    justify-content: center
+}
+
+.orange--footer {
+    flex-basis: 15%;
+    height: 5vh;
+}
+
+.header, .main{
+    margin: 0 0 10px 0
+}

@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: Roboto, sans-serif;
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+body {
+    background-color: #F6F6F6;
+}
+
+.nav {
+    display: flex;
+    width: 1024px;
+    background-color: white;
+    margin: 10px auto;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    cursor: pointer;
+}
+
+.first-level {
+    padding: 20px 16px;
+    border-top: 3px solid white;
+}
+
+.first-level:hover {
+    border-top: 3px solid #4FA0D8;
+}
+
+.first-level:hover>a {
+    color: #4FA0D8;
+}
+
+.second-level,
+.third-level {
+    padding: 8px 16px;
+}
+
+.second-level a,
+.third-level a {
+    color: rgb(213, 211, 211);
+}
+
+.second-level:hover>a,
+.third-level:hover>a {
+    color: white;
+}
+
+.first-level__container,
+.second-level__container {
+    position: relative;
+    display: block;
+}
+
+.second-level__drop,
+.third-level__drop {
+    display: none;
+    position: absolute;
+    width: 180px;
+    background: #333333;
+}
+
+.first-level__container:hover>.second-level__drop {
+    display: block;
+    top: 100%;
+    left: 0;
+}
+
+.second-level__container:hover>.third-level__drop {
+    display: block;
+    top: 0;
+    left: 100%;
+}
+
+.rotated {
+    display: inline-block;
+    transform: rotate(90deg);
+}
+
+.span-left-side {
+    display: inline-block;
+    margin-right: 3px;
+}
+
+.span-right-side {
+    display: inline-block;
+    margin-left: 90px;
+}
