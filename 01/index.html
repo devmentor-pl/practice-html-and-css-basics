@@ -1,12 +1,145 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
 </head>
+
 <body>
-    
+
+    <header>
+
+        <a href="#"><img style="max-width: 40px;" src="./images/logo.png" alt="logo"></a>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Portfolio</a>
+                    <ul>
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">JavaScript</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <article>
+            <h2>Article Title</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, id voluptas temporibus architecto nihil
+                eos quidem ratione ipsa inventore blanditiis cum est officia, nobis pariatur voluptate sed consectetur.
+                Quisquam, in? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, saepe accusantium. Ullam
+                quibusdam non molestias quo ex similique, voluptates esse recusandae blanditiis impedit ipsam, enim
+                omnis, sunt consectetur? Obcaecati, optio?</p>
+
+            <p>Autor: Michał <time datetime="2023-09-07T20:40:06+00:00">07.09.2023</time></p>
+
+            <img src="./images/pexels-simon-berger-1323550.jpg" alt="mountains">
+
+            <table>
+                <caption>Sample Table</caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">First Name</th>
+                        <th scope="col">Last Name</th>
+                        <th scope="col">Age</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>49</td>
+                    </tr>
+                    <tr>
+                        <td>David</td>
+                        <td>Johnson</td>
+                        <td>27</td>
+                    </tr>
+                    <tr>
+                        <td>Erica</td>
+                        <td>Simons</td>
+                        <td>43</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </article>
+
+        <h3>Dodaj komentarz</h3>
+        <form method="post" id="add_comment">
+            <fieldset>
+                <legend>Napisz komentarz</legend>
+                <dl>
+                    <dt>
+                        <label for="comment_author">Nick</label>
+                    </dt>
+                    <dd>
+                        <input type="text" name="author" id="comment_author" tabindex="1">
+                    </dd>
+                    <dt>
+                        <label for="comment_email">E-mail</label>
+                    </dt>
+                    <dd>
+                        <input type="text" name="email" id="comment_email" tabindex="2">
+                    </dd>
+                    <dt>
+                        <label for="comment_url">Strona</label>
+                    </dt>
+                    <dd>
+                        <input type="text" name="url" id="comment_url" tabindex="3">
+                    </dd>
+                    <dt>
+                        <label for="comment_comment">Komentarz</label>
+                    </dt>
+                    <dd>
+                        <textarea name="comment" id="comment_comment" cols="48" rows="7" tabindex="5"></textarea>
+                    </dd>
+                    <dd>
+                        <button name="submit" type="submit" id="comment_submit" tabindex="5">Wyślij</button>
+                    </dd>
+                </dl>
+                <input type="hidden" name="comment_post_ID" value="88">
+            </fieldset>
+        </form>
+
+        <h3>Komentarze</h3>
+        <ol class="comments">
+            <li class="alt" id="comment-25">
+                <small><a href="#comment-25" title="">01.01.2023, 21:19</a> </small>
+                <cite><a href="#"><img alt="Avatar użytkownika " src="#" height="48" width="48">Stefan</a></cite>
+                <div>
+                    <p>Świetny blog</p>
+                </div>
+            </li>
+            <li class="alt" id="comment-25">
+                <small><a href="#comment-25" title="">01.01.2023, 21:19</a> </small>
+                <cite><a href="#"><img alt="Avatar użytkownika " src="#" height="48" width="48">Jola</a></cite>
+                <div>
+                    <p>Oby więcej takich wpisów!</p>
+                </div>
+            </li>
+            <li class="alt" id="comment-25">
+                <small><a href="#comment-25" title="">01.01.2023, 21:19</a> </small>
+                <cite><a href="#"><img alt="Avatar użytkownika " src="#" height="48" width="48">Jakub</a></cite>
+                <div>
+                    <p>Już nie mogę doczekać się kolejnego artykułu.</p>
+                </div>
+            </li>
+        </ol>
+
+    </main>
+
+    <footer id="footer">Copyright &copy; 2023 by Michał</footer>
+
 </body>
+
 </html>
