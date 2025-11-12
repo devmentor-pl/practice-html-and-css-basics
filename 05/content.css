@@ -1,0 +1,21 @@
+.content__container {
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.content__article {
+    background-color: blue;
+    width: 45%;
+    height: 500px;
+
+}
+
+.content__article2 {
+    background-color: rgb(0, 255, 85);
+    width: 30%;
+    height: 400px;
+
+}
