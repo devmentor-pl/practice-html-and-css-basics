@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'Source Sans reg';
+    src: url(./webfontkit-20230220-124122/sourcesanspro-regular-webfont.woff2) format('woff2'),
+         url(./webfontkit-20230220-124122/sourcesanspro-regular-webfont.woff) format('woff');
+    
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Source Sans it';
+    src: url(./webfontkit-20230220-124122/sourcesanspro-it-webfont.woff2) format('woff2'),
+         url(./webfontkit-20230220-124122/sourcesanspro-it-webfont.woff) format('woff');
+    
+    font-style: normal;
+    font-weight: normal;
+}
+
+.parent {
+    width: 600px;
+    padding: 20px;
+    
+}
+
+.parent--inline-block {
+    font-family: 'Source Sans reg';
+}
+
+.parent--float{
+    font-family: 'Source Sans it';
+}
+
+.child--first,
+.child--middle {
+    width: calc(30% - 10px);
+    margin-right: 10px;
+}
+
+
+.child--last {
+    width: calc(40%);
+    
+}
+
+.parent {
+    display: flex;
+    }
+
+.parent--inline-block .child {
+    display: inline-block;
+    }
+
+.parent--float .child {
+    display: left;
+}
