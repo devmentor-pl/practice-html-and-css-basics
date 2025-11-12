@@ -1,0 +1,27 @@
+.row, .cell, .container {
+    /* border: 5px solid; */
+}
+
+.row {
+    border-color: green;
+    margin-bottom: 1em;
+}
+
+.footer {
+    margin-bottom: 0;
+}
+
+.cell {
+    border-color: orange;
+    min-height: 50px;
+}
+
+.container {
+    border-color: blue;
+    margin: 1em auto;
+    max-width: 1000px;
+}
+
+.section {
+    margin: 4em 0;
+}

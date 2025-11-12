@@ -1,0 +1,35 @@
+.section__container {
+    display: flex;
+}
+
+.section__container--first {
+    gap: 2em;
+    justify-content: space-between;
+}
+
+.section__container--second {
+    justify-content: space-evenly;
+}
+
+.section__article {
+    background-color: orange;
+    min-height: 150px;
+}
+
+.section__container--first .section__article {
+    flex-basis: 50%;
+}
+
+.section__container--second .section__article {
+    flex-basis: 25%;
+}
+
+/* Media querries */
+@media (max-width: 800px) {
+
+.section__container {
+    flex-direction: column;
+ gap: 2em;   
+}
+}
+
