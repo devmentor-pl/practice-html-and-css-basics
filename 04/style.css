@@ -1,0 +1,95 @@
+body {
+    background-color: rgb(246, 246, 246);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+  }
+
+.navigation {
+    margin-left: 5px;
+    margin-top: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    background-color: rgb(255, 255, 255); 
+}
+
+.navigation__button {
+    position: relative;
+    padding: 20px;
+    color: rgb(0, 154, 225);
+}
+
+.navigation__button--dropdown {
+    color: black;
+}
+
+.navigation__button--dropdown:hover {
+    color: rgb(0, 154, 225);
+    border-top: solid rgb(0, 154, 225);
+    padding-top: 18px;
+    padding-right: 0;
+} 
+
+.navigation__button--dropdown:hover::after {
+    display: inline-block;
+    margin-left: 5px;
+    content: '>';
+    transform: rotate(90deg);
+} 
+
+.dropdown__list {
+    display: none;
+    top: 100%;
+    left: 0;
+    position: absolute;
+}
+
+.navigation__button--dropdown:hover > .dropdown__list {
+    display: block;
+}
+
+.dropdown__item {
+    background-color: rgb(51, 51, 51);
+    color: white;
+    padding: 10px 90px 10px 20px ;
+    white-space: nowrap;
+}
+
+.dropdown__item:hover {
+    padding-right: 0;
+}
+
+.dropdown__list--A {
+    left: 100%;
+    top: 0;
+}
+
+.dropdown__list--B {
+    left: 100%;
+    top: 50%;
+}
+
+.dropdown__item--A:hover>.dropdown__list--A{
+    display: block;
+}
+
+.dropdown__item--B:hover>.dropdown__list--B {
+    display: block;
+}
+
+.dropdown__item--A:hover::after {
+    display: inline-block;
+    content: '>';
+    padding-left: 90px;
+    padding-right: 0;
+    color: white;
+} 
+
+.dropdown__item--B:hover::after {
+    display: inline-block;
+    content: '>';
+    padding-left: 90px;
+    color: white;
+}
