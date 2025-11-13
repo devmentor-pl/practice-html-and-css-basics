@@ -6,7 +6,184 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
 </head>
-<body>
-    
+
+<body>    
+    <header>
+        <a href="/">
+            <img src="./logo.jpg" height="150px" alt="Company logo">
+        </a>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="">Home</a>
+                </li>
+                <li>
+                    <a href="">About us</a>
+                    <ul>
+                        <li>
+                            <a href="">Team members</a>
+                        </li>
+                        <li>
+                            <a href="">Our mission</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">Contact</a>
+                    <ul>
+                        <li>
+                            <a href="">Facebook</a>
+                        </li>
+                        <li>
+                            <a href="">Instagram</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            
+            <div>
+                <h1>Title</h1>
+
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam quia optio, voluptates quae maxime sapiente consectetur accusamus incidunt, laborum ipsa velit! Nam officia reprehenderit mollitia fugiat officiis quis, labore quo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, eveniet exercitationem molestiae odit a pariatur ratione temporibus aperiam repellendus laudantium atque repudiandae, voluptatibus iure cum voluptates amet. Fugit, vero ab! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias porro sint, aut officia perspiciatis corporis atque excepturi enim assumenda blanditiis sequi a. Deserunt assumenda laboriosam quae odit consectetur nobis suscipit.
+                </p>
+
+                <footer>
+                    <p>
+                        Author
+                    </p>
+                    
+                    <p>
+                        18.10.2023
+                    </p>
+                </footer>
+            </div>
+
+            <div>
+                <a href="/">
+                    <img src="./photo1.jpg" height=300px alt="Nature landscape">
+                </a>
+
+                <footer>
+                    <p>
+                        Zdjęcie dodane przez Jamaal Hutchinson: https://www.pexels.com/pl-pl/zdjecie/islandia-krajobraz-woda-gora-18696922/
+                    </p>
+                </footer>
+            </div>
+
+            <div>
+                <table>
+                    <caption>
+                        Group No. 1
+                    </caption>
+                    
+                    <colgroup> 
+                        <col span="4" style="background: grey;">
+                        <col span="1" style="background: burlywood;">
+                    </colgroup>
+
+                    <thead>
+                        <tr>
+                            <th>First name</th>
+                            <th>Last name</th>
+                            <th>Age</th>
+                            <th>Address</th>
+                            <th>Attendance</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Jane</td>
+                            <td>Williams</td>                            
+                            <td>34</td>
+                            <td>Main Str. 12</td>
+                            <td>-</td>                            
+                        </tr>
+                        <tr>
+                            <td>John</td>
+                            <td>Eldridge</td>
+                            <td>27</td>
+                            <td>East Avn. 64</td>
+                            <td>+</td>
+                        </tr>
+                        <tr>
+                            <td>Susanne</td>
+                            <td>Boyle</td>
+                            <td>54</td>
+                            <td>Park Str. 79</td>
+                            <td>+</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>       
+        </article>
+
+        <h3>
+            Komentarze
+        </h3>
+
+        <form action="./add-comment.php" method="post">
+            <div>
+                <label>
+                    Imię
+                    <input name="firstName"/>
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    Nazwisko
+                    <input name="lastName"/>
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    Data
+                    <input type="datetime-local"/>
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    Komentarz
+                    <textarea rows="5" cols="30">
+                    </textarea>
+                </label>
+            </div>
+
+            <div>
+                <input type="submit"/>
+            </div>
+        </form>
+
+        <article>
+            <p>Janina Nowak</p>
+            <p>12.11.2022</p>
+            <p>Super strona!</p>
+            <br>
+            <p>Adam Przybysz</p>
+            <p>16.04.2023</p>
+            <p>Bardzo ciekawy artykuł...</p>
+            <br>
+            <p>Jan Kowalski</p>
+            <p>03.10.2023</p>
+            <p>Gdzie mogę dowiedzieć się o tym więcej?</p>
+            <br>
+        </article>
+        
+    </main>
+
+    <footer>
+        &copy; awboxx 2023
+    </footer>
+
 </body>
 </html>
