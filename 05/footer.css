@@ -1,0 +1,13 @@
+
+
+.footer__container {
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footer__middle {
+    width: 15%;
+}

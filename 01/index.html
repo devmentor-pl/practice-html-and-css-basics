@@ -7,6 +7,98 @@
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
 </head>
 <body>
-    
+    <header>
+        <a href="/">
+            <img src="devmentor_logo.png" alt="logo strony">
+        </a>
+        <ul class="nav">
+            <li class="nav__item">Strona główna</li>
+            <li class="nav__item">Twoje konwersacje</li>
+            <li class="nav__item">Więcej
+                <ul class="nav__dropdown">
+                    <li class="dropdown__item">Ustawienia</li>
+                    <li class="dropdown__item">Kontakt</li>
+                    <li class="dropdown__item">Powiadomienia</li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <article class="article">
+            <h1 class="article__title">Tytuł Artykułu</h1>
+            <p class="article__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, dolorum eos quaerat aliquam porro et explicabo commodi quo dolores numquam praesentium odit doloremque possimus consequatur sit maxime culpa, laborum quasi unde totam. Quas doloremque asperiores, quod eos sequi modi aperiam.</p>
+            <img src="cat-image.jpg" alt="cat Image" class="article__image">
+            <p class="article__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde iste quidem, necessitatibus quo praesentium quisquam corrupti, distinctio sequi quasi est enim fuga fugiat laboriosam similique? Veritatis corrupti voluptatum voluptatibus consequatur!</p>
+            <table>
+                <caption>table example</caption>
+                <colgroup>
+                    <col span="1" style="background-color: greenyellow">
+                    <col style="background: whitesmoke">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th scope="col">Data1 </th>
+                        <th scope="col">Data2</th>
+                        <th scope="col">Date3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Value1</td>
+                        <td>Value2</td>
+                        <td>Value3</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="article_body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita a libero, eaque exercitationem voluptas cum suscipit quaerat molestiae nesciunt delectus?</p>
+            <div class="article__date">2024.02.16</div>
+            <div class="article__author">Article Autho</div>
+        </article>
+        <hr>
+        <section>
+            <form> Add comment : 
+                <input type="text"> 
+                <input type="submit">
+            </form>
+        </section>
+        <hr>
+        <section>
+            <div class="comment">
+                <p class="comment__body">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam praesentium voluptate rem reiciendis vitae minima ut qui eaque totam eum.
+                </p>
+                <div class="comment__author">comment author</div>
+                <timer class="comment__date">{getCurrentDate}</timer>
+            </div>
+            <hr>
+            <div class="comment">
+                <p class="comment__body">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam praesentium voluptate rem reiciendis vitae minima ut qui eaque totam eum.
+                </p>
+                <div class="comment__author">comment author</div>
+                <timer class="comment__date">2024.02.16</timer>
+            </div>
+            <hr>
+            <div class="comment">
+                <p class="comment__body">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam praesentium voluptate rem reiciendis vitae minima ut qui eaque totam eum.
+                </p>
+                <div class="comment__author">comment author</div>
+                <timer class="comment__date">2024.02.16</timer>
+            </div>
+            <hr>
+            <div class="comment">
+                <p class="comment__body">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam praesentium voluptate rem reiciendis vitae minima ut qui eaque totam eum.
+                </p>
+                <div class="comment__author">comment author</div>
+                <timer class="comment__date">2024.02.16</timer>
+            </div>
+            <hr>
+        </section>
+    </main>
+    <footer>
+        &copy; devmentor.pl
+    </footer>
 </body>
 </html>

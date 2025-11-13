@@ -1,0 +1,14 @@
+.content__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content__left {
+    min-height: 250px;
+    width: calc(50% - 5px);
+}
+
+.content__right {
+    min-height: 250px;
+    width: calc(50% - 5px);
+}
