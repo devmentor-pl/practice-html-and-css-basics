@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section, footer {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    border: 2px solid green;
+}
+.first-section {
+    display: flex;
+    justify-content: center;
+}
+header,
+.second-section__wrapper,
+.third-section__wrapper,
+.footer__wrapper {
+    width: 1000px;
+    border: 2px solid blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+.footer {
+    min-height: 100px;
+}
+.footer__wrapper {
+    justify-content: center;
+}
+.logo, .menu {
+    width: 150px;
+    height: 100px;
+    background-color: orange;
+    margin: 5px 0;
+}
+.menu {
+    width: 300px;
+}
+
+/* .third-section__wrapper {
+    justify-content: space-around;
+} */
+/* Miałem provlem ponieważ odstępy między elementami były większe niż
+te od krawędzi. Dlatego postanowiłem użyć space-between i ręcznie wymusić
+marginesy na skrajnych elementachn */
+
+.third-section__wrapper {
+    justify-content: space-between;
+}
+
+.second-section__wrapper__article {
+    height: 180px;
+    width: 450px;
+    background-color: orange;
+    margin: 5px 0;
+}
+.third-section__wrapper__article {
+    margin: 10px 0;
+    height: 200px;
+    width: calc(960px / 3);
+    background-color: orange;
+}
+.third-section__wrapper__article:nth-child(1) {
+    margin-left: 10px;
+}
+.third-section__wrapper__article:nth-child(3) {
+    margin-right: 10px;
+}
+.footer__wrapper__content {
+    width: 25%;
+    height: 50%;
+    background-color: orange;
+}
