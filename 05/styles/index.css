@@ -1,0 +1,147 @@
+/* LOGO + MENU */
+
+.header {
+  width: 100%;
+  border: 3px solid green;
+  margin-top: 30px;
+  padding: 3px 3px 3px 3px;
+}
+
+.header__inner {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 3px solid blue;
+  max-width: 1000px;
+  height: 58px;
+  padding: 2px 0 4px 0;
+}
+
+.header__logo {
+  background-color: orange;
+  width: 150px;
+  border-radius: 3px;
+  min-height: 47px;
+}
+
+.header__logo-image {
+  width: 25%;
+  margin-left: 52px;
+  min-height: 31px;
+  margin-top: 5px;
+}
+
+.header__menu {
+  background-color: orange;
+  width: 440px;
+  border-radius: 3px;
+  min-height: 47px;
+}
+
+.header__menu-item-list {
+  display: flex;
+  justify-content: space-around;
+  line-height: 47px;
+}
+
+.header__menu-link {
+  cursor: pointer;
+  text-decoration: none;
+  color: #333333;
+}
+
+.header__menu-link:hover {
+  color: blue;
+}
+
+/* ARTICLE - TWO COLUMNS */
+
+.article1 {
+  width: 100%;
+  border: 3px solid green;
+  margin-top: 3px;
+  padding: 3px 3px 3px 3px;
+}
+
+.article1__content {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 4px 0 4px 0;
+  border: 3px solid blue;
+  max-width: 1000px;
+  min-height: 244px;
+}
+
+.article1__content-section {
+  background-color: orange;
+  min-height: 232px;
+  width: 49.8%;
+  padding: 5px 10px 3px 10px;
+  font-size: 15px;
+  text-align: justify;
+  text-indent: 10px;
+  border-radius: 3px;
+}
+
+/* ARTICLE - THREE COLUMNS */
+
+.article2 {
+  width: 100%;
+  border: 3px solid green;
+  margin-top: 3px;
+  padding: 3px 3px 3px 3px;
+}
+
+.article2__content {
+  margin: 0 auto;
+  border: 3px solid blue;
+  max-width: 1000px;
+  padding: 4px 0 4px 0;
+  min-height: 244px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.article2__content-section {
+  background-color: orange;
+  min-height: 232px;
+  width: 32.8%;
+  padding: 5px 10px 3px 10px;
+  text-align: justify;
+  text-indent: 10px;
+  border-radius: 3px;
+}
+
+/* FOOTER */
+
+.footer {
+  width: 100%;
+  border: 3px solid green;
+  margin-top: 3px;
+  padding: 3px 3px 3px 3px;
+}
+
+.footer__footer {
+  margin: 0 auto;
+  border: 3px solid blue;
+  max-width: 1000px;
+  min-height: 100px;
+  padding: 4px 0 4px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__footer-p {
+  background-color: orange;
+  min-height: 50px;
+  min-width: 100px;
+  text-align: center;
+  line-height: 50px;
+  padding: 0 10px 0 10px;
+  border-radius: 3px;
+}

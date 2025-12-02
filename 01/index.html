@@ -1,12 +1,228 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
-</head>
-<body>
-    
-</body>
+  </head>
+
+  <body>
+    <header>
+      <a href="#">
+        <img
+          src="./logo.png"
+          width="50"
+          height="50"
+          title="Logo firmy Devmentor.pl"
+          alt="Logo firmy Devmentor.pl"
+        />
+      </a>
+
+      <nav>
+        <ul>
+          <li><a href="#">Strona główna</a></li>
+
+          <li>
+            <a href="#">Informacje</a>
+            <ul>
+              <li><a href="#">Informacje A</a></li>
+              <li><a href="#">Informacje B</a></li>
+              <li><a href="#">Informacje C</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#">Galeria</a>
+            <ul>
+              <li><a href="#">Galeria A</a></li>
+              <li><a href="#">Galeria B</a></li>
+              <li>
+                <a href="#">Galeria C</a>
+                <ul>
+                  <li><a href="#">Galeria C 1</a></li>
+                  <li>
+                    <a href="#">Galeria C 2</a>
+                    <ul>
+                      <li><a href="#">Galeria C 2a</a></li>
+                      <li><a href="#">Galeria C 2b</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li><a href="#">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <hr />
+
+    <main>
+      <article>
+        <figure>
+          <img
+            src="./picture.jpg"
+            alt="Zdjęcie tablicy z listą zadań"
+            width="300"
+            height="200"
+          />
+        </figure>
+
+        <header class="article-header">
+          <h1>Efektywne zarządzenie sobą w czasie</h1>
+          <div class="article-author">
+            <time class="comment__date" datetime="2023-03-08 20:21"
+              >2023-03-08 20:21</time
+            >
+            <span class="author">
+              <a href="#" rel="author" title="Autor artykułu"
+                >Paweł Kiełpiński</a
+              >
+            </span>
+          </div>
+        </header>
+
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo
+          quae dignissimos dolorem recusandae, expedita dicta vero unde
+          laboriosam, tenetur libero blanditiis ad possimus consequatur dolorum
+          necessitatibus alias ipsa veniam sed doloremque. Placeat, sit ex. Vero
+          rerum magnam minus dolorem tempora iure non quam beatae provident
+          ratione autem, officia perferendis placeat.
+        </p>
+
+        <table>
+          <caption>
+            Kwadrat Eisenhowera
+          </caption>
+
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col">Pilne</th>
+              <th scope="col">Niepilne</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Ważne</td>
+              <td>
+                <ul>
+                  <li>sprawy naglące</li>
+                  <li>sprawy ,,na wczoraj"</li>
+                  <li>sytuacje kryzysowe</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li>zapobieganie</li>
+                  <li>planowanie</li>
+                  <li>rekreacja</li>
+                  <li>szukanie możliwości</li>
+                  <li>budowanie relacji</li>
+                </ul>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Nieważne</td>
+              <td>
+                <ul>
+                  <li>niektóre telefony</li>
+                  <li>błahe sprawy</li>
+                  <li>niektóre spotkania</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li>przyjemności</li>
+                  <li>złodzieje czasu</li>
+                  <li>niektóre e-maile</li>
+                  <li>szukanie możliwości</li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+          veritatis minus tenetur, minima aliquam officiis repellendus, vero
+          exercitationem deserunt odit ullam esse ducimus velit excepturi
+          sapiente tempora consequatur soluta eaque! Error eum similique et
+          facere animi sit nostrum. Similique temporibus laboriosam deserunt non
+          quos quisquam, voluptates odio consectetur, repellendus excepturi sunt
+          consequatur ut perspiciatis culpa.
+        </p>
+      </article>
+
+      <hr />
+
+      <form action="./add-comment.php" method="POST">
+        <div>
+          <label for="name">Imię i nazwisko</label>
+          <input type="text" id="name" name="name" min="5" max="30" required />
+        </div>
+
+        <div>
+          <p><label for="comment">Treść Twojego komentarza:</label></p>
+          <textarea id="comment" name="comment" rows="5" cols="40" required>
+            Esse necessitatibus earum voluptate repellendus magnam delectus. Debitis, odit. Impedit, itaque et.
+          </textarea>
+        </div>
+
+        <input type="submit" value="Dodaj komentarz" />
+      </form>
+
+      <hr />
+
+      <section>
+        <h1>Komentarze</h1>
+
+        <ol>
+          <li>
+            <article>
+              <h1>Mateusz</h1>
+              <time class="comment__date" datetime="2023-01-12 20:21"
+                >2023-01-12 20:21</time
+              >
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </article>
+          </li>
+
+          <li>
+            <article>
+              <h1>Tomek</h1>
+              <time class="comment__date" datetime="2023-01-25 15:12"
+                >2023-01-25 15:12</time
+              >
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Commodi.
+              </p>
+            </article>
+          </li>
+
+          <li>
+            <article>
+              <h1>Marysia</h1>
+              <time class="comment__date" datetime="2023-03-06 22:22"
+                >2023-03-06 22:22</time
+              >
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </article>
+          </li>
+        </ol>
+      </section>
+    </main>
+
+    <hr />
+
+    <footer>
+      <div>&copy; devmentor.pl</div>
+    </footer>
+  </body>
 </html>
