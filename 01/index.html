@@ -1,12 +1,147 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
 </head>
+
 <body>
-    
+    <header>
+        <a href="/"><img src="" alt=""></a>
+        <nav>
+            <ul>
+                <li><a href="">Lorem ipsum</a></li>
+                <li><a href="">Lorem ipsum</a></li>
+                <li><a href="">Lorem ipsum</a>
+                    <ul>
+                        <li><a href="">Lorem ipsum</a></li>
+                        <li><a href="">Lorem ipsum</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <article>
+                <h2>Lorem ipsum dolor sit.</h2>
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus sed odit odio nemo, placeat
+                        assumenda a excepturi error voluptatum voluptas sapiente. Unde ducimus magnam amet alias eius,
+                        sint
+                        dolor iste cum iure quo ex, culpa ipsa totam nihil ullam natus voluptates ad modi quam expedita
+                        officiis eum nobis perferendis debitis!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus sed odit odio nemo, placeat
+                        assumenda a excepturi error voluptatum voluptas sapiente. Unde ducimus magnam amet alias eius,
+                        sint
+                        dolor iste cum iure quo ex, culpa ipsa totam nihil ullam natus voluptates ad modi quam expedita
+                        officiis eum nobis perferendis debitis!</p>
+                </div>
+                <p>Data publikacji: <time datetime="2025-10-10">10 października 2025</time></p>
+                <address class="author">Jerzy Kowalski</address>
+                <figure>
+                    <img src="" alt="">
+                    <figcaption>opis ilustracji</figcaption>
+                </figure>
+
+                <table>
+                    <caption>Lorem, ipsum dolor.</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Lorem</th>
+                            <th scope="col">Lorem</th>
+                            <th scope="col">Lorem</th>
+                            <th scope="col">Lorem</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">lorem</th>
+                            <td>lorem</td>
+                            <td>lorem</td>
+                            <td>lorem</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">lorem</th>
+                            <td>lorem</td>
+                            <td>lorem</td>
+                            <td>lorem</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">lorem</th>
+                            <td>lorem</td>
+                            <td>lorem</td>
+                            <td>lorem</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th scope="row" colspan="3">lorem</th>
+                            <td>lorem</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </article>
+        </section>
+
+        <section>
+            <h2>Lorem, ipsum.</h2>
+            <form action="">
+                <div>
+                    <label for="name">Imię:</label>
+                    <input type="text" id="name" name="name" placeholder="imię">
+                </div>
+
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="e-mail">
+                </div>
+
+                <div>
+                    <label for="comment">Komentarz:</label>
+                    <textarea name="comment" id="comment" rows="5" cols="50"
+                        placeholder="Miejsce na Twój komentarz..."></textarea>
+                </div>
+
+                <div>
+                    <input type="submit" value="Wyślij!">
+                </div>
+            </form>
+        </section>
+
+        <section>
+            <h2>Lorem, ipsum.</h2>
+            <article class="comment">
+                <p class="comment-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae,
+                    obcaecati iure. Sunt repudiandae porro, delectus id, animi error nostrum labore ducimus quam est
+                    assumenda consequatur ab at doloribus repellendus beatae?</p>
+                <p class="comment-author">Jan Nowak</p>
+                <time class="comment-date" datetime="2025-12-11">11 grudnia 2025</time>
+            </article>
+            <article class="comment">
+                <p class="comment-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae,
+                    obcaecati iure. Sunt repudiandae porro, delectus id, animi error nostrum labore ducimus quam est
+                    assumenda consequatur ab at doloribus repellendus beatae?</p>
+                <p class="comment-author">Agnieszka Kowalska</p>
+                <time class="comment-date" datetime="2025-12-10">10 grudnia 2025</time>
+            </article>
+            <article class="comment">
+                <p class="comment-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae,
+                    obcaecati iure. Sunt repudiandae porro, delectus id, animi error nostrum labore ducimus quam est
+                    assumenda consequatur ab at doloribus repellendus beatae?</p>
+                <p class="comment-author">Piotr Kowalczyk</p>
+                <time class="comment-date" datetime="2025-12-09">09 grudnia 2025</time>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 devmentor.pl</p>
+    </footer>
 </body>
+
 </html>
