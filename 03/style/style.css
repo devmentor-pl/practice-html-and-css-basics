@@ -1,0 +1,81 @@
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url(source-sans-pro/SourceSansPro-Regular.otf) format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url(source-sans-pro/SourceSansPro-Bold.otf) format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url(source-sans-pro/SourceSansPro-Italic.otf) format('opentype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+
+.parent {
+  box-sizing: border-box;
+  width: 600px;
+  margin: 20px;
+}
+
+.child {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+.child--first {
+  width: calc(30% - 5px);
+  font-weight: normal;
+  font-size: normal;
+}
+
+.child--middle {
+  width: calc(30% - 10px);
+  font-weight: bold;
+}
+
+.child--last {
+  width: calc(40% - 5px);
+  font-style: italic;
+}
+
+
+.parent--inline-block {
+  font-size: 0;
+}
+
+.parent--inline-block .child {
+  display: inline-block;
+  font-size: 16px;
+  vertical-align: top;
+}
+
+.parent--inline-block .child--first,
+.parent--inline-block .child--middle,
+.parent--float .child--first,
+.parent--float .child--middle {
+  margin-right: 10px;
+}
+
+.parent--float .child {
+  float: left;
+}
+
+.parent--float::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.parent--flexbox {
+  display: flex;
+  gap: 10px;
+}

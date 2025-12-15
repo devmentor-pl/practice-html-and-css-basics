@@ -1,0 +1,9 @@
+.second-section__container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.second-section__content {
+  min-height: 400px;
+  width: 32%;
+}

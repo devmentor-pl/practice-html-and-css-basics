@@ -1,0 +1,117 @@
+:root {
+  --primary-color-light: #F7F7F7;
+  --primary-color-dark: #333333;
+  --secondary-color: #009AE1;
+}
+
+body {
+  background-color: var(--primary-color-light);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.dropdown-menu__list-item,
+.dropdown-menu__sublist-item {
+  text-transform: capitalize;
+  text-align: left;
+  padding: .7rem;
+  padding-left: 1.7rem;
+  width: 200px;
+  background-color: var(--primary-color-dark);
+  color: var(--primary-color-light);
+}
+
+.dropdown-menu__list,
+.dropdown-menu__sublist {
+  flex-direction: column;
+  position: absolute;
+  display: none;
+  top: 100%;
+  left: 0;
+}
+
+.nav__list-item:hover {
+  color: var(--secondary-color);
+}
+
+.dropdown-menu__sublist {
+  top: 50%;
+  left: 100%;
+}
+
+.header {
+  margin-top: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: fit-content;
+  background-color: white;
+}
+
+.nav__list {
+  display: flex;
+}
+
+.nav__list-item {
+  text-transform: uppercase;
+  padding: 1.7rem 1.7rem;
+  text-align: center;
+  position: relative;
+}
+
+.nav__list-item::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background-color: var(--secondary-color);
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  transition: width 250ms ease-in-out;
+}
+
+.nav__list-item:hover::after {
+  width: 100%;
+}
+
+.nav__list-item:hover > .dropdown-menu__list,
+.dropdown-menu__list-item:hover > .dropdown-menu__sublist,
+.nav__list-item:focus > .dropdown-menu__list,
+.dropdown-menu__list-item:focus > .dropdown-menu__sublist {
+  display: flex;
+}
+
+.nav__list-item:has(.dropdown-menu__list)::before {
+  content: ">";
+  position: absolute;
+  left: 75%;
+  top: 37%;
+  transform: rotateZ(270deg);
+  transition: all 250ms ease-in-out;
+}
+
+.nav__list-item:has(.dropdown-menu__list):hover::before {
+  transform: rotateZ(90deg);
+  left: 78%;
+}
+
+.dropdown-menu__list-item:has(.dropdown-menu__sublist)::after {
+  content: '>';
+  position: absolute;
+  left: 40%;
+  transition: left 250ms ease-in-out;
+}
+
+.dropdown-menu__list-item:has(.dropdown-menu__sublist):hover::after {
+  left: 90%
+}
+
+.dropdown-menu__list-item:hover > a,
+.dropdown-menu__sublist-item:hover > a {
+  color: white;
+}

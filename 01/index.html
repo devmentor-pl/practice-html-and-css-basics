@@ -1,12 +1,318 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <meta
+        http-equiv="X-UA-Compatible"
+        content="ie=edge"
+    >
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
 </head>
+
 <body>
-    
+
+    <header>
+        <picture>
+            <source
+                media="(min-width: 1024px)"
+                srcset="./images/logo-large.jpg"
+            >
+            <source srcset="./images/logo-small.jpg">
+            <img
+                src="./images/logo-small.jpg"
+                alt="Logo Uczelni XYZ"
+            >
+        </picture>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">O Uczelni</a>
+                    <ul>
+                        <li><a href="#">Historia</a></li>
+                        <li><a href="#">Władze Uczelni</a></li>
+                        <li><a href="#">Struktura organizacyjna</a></li>
+                        <li><a href="#">Misja i wizja</a></li>
+                        <li><a href="#">Kontakt</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Wydziały i Kierunki</a>
+                    <ul>
+                        <li>
+                            <a href="#">Wydział Informatyki</a>
+                            <ul>
+                                <li><a href="#">Informatyka</a></li>
+                                <li><a href="#">Informatyka stosowana</a></li>
+                                <li><a href="#">Cyberbezpieczeństwo</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Wydział Zarządzania</a>
+                            <ul>
+                                <li><a href="#">Zarządzanie</a></li>
+                                <li><a href="#">Logistyka</a></li>
+                                <li><a href="#">Marketing</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Wydział Prawa</a></li>
+                        <li><a href="#">Wydział Architektury</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Dla Kandydatów</a>
+                    <ul>
+                        <li><a href="#">Rekrutacja</a></li>
+                        <li><a href="#">Dni otwarte</a></li>
+                        <li><a href="#">Studia I stopnia</a></li>
+                        <li><a href="#">Studia II stopnia</a></li>
+                        <li><a href="#">Studia podyplomowe</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Dla Studentów</a>
+                    <ul>
+                        <li><a href="#">Plan zajęć</a></li>
+                        <li><a href="#">Biblioteka</a></li>
+                        <li><a href="#">Stypendia</a></li>
+                        <li><a href="#">Dziekanat</a></li>
+                        <li><a href="#">Akademik</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Nauka i Badania</a>
+                    <ul>
+                        <li><a href="#">Projekty badawcze</a></li>
+                        <li><a href="#">Publikacje naukowe</a></li>
+                        <li><a href="#">Konferencje</a></li>
+                        <li><a href="#">Współpraca międzynarodowa</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Aktualności</a>
+                    <ul>
+                        <li><a href="#">Ogłoszenia</a></li>
+                        <li><a href="#">Komunikaty</a></li>
+                        <li><a href="#">Wydarzenia</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">ZALOGUJ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article id="post-01">
+            <header>
+                <h2><a href="#post-01">Otwarta Rekrutacja!</a></h2>
+                <p>
+                    Autor: <strong>Rektor Uczelni XYZ</strong>
+                    <time datetime="2026-01-07T18:20:06+00:00">07.01.2026, 18:20</time>
+                </p>
+            </header>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dolores possimus tenetur. Expedita
+                    atque unde explicabo odio, doloremque libero suscipit iure dicta veniam aliquid a consectetur ut
+                    harum assumenda corrupti.lorem Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius
+                    suscipit excepturi aliquam, magni molestias incidunt ipsam ad, odit commodi veritatis debitis,
+                    sapiente natus deserunt temporibus ipsum eveniet sunt nisi hic! Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Quo voluptatem laboriosam magnam dolor molestias minus! Nam, odit.
+                    Adipisci reprehenderit totam ad excepturi sint quas quidem, aliquid exercitationem aspernatur
+                    mollitia sit!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, doloremque perspiciatis aliquid
+                    vitae cum nulla error distinctio dicta blanditiis animi possimus totam rem porro praesentium omnis
+                    nam aspernatur necessitatibus culpa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,
+                    deserunt. Est quam labore dolor hic placeat veritatis nisi. Rerum sint maxime impedit ad, omnis quod
+                    nisi reprehenderit rem dolores! Voluptates? Lorem, ipsum dolor sit amet consectetur adipisicing
+                    elit. Quasi atque repudiandae dicta quas suscipit tenetur iste pariatur eveniet fugiat voluptate
+                    itaque enim nobis ratione, accusantium cumque voluptatum aut fuga non?</p>
+                <figure>
+                    <img
+                        src=".images/wykres.jpg"
+                        alt="Wykres słupkowy"
+                    >
+                    <figcaption>Wykres przedstawia liczby przyjmowanych studentów w latach 2020-2026</figcaption>
+                </figure>
+                <table>
+                    <caption>Tabela oplat rekrutacji</caption>
+                    <colgroup>
+                        <col
+                            span="2"
+                            style="background-color: yellow;"
+                        >
+                        <col
+                            span="1"
+                            style="background-color: red;"
+                        >
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">Tryb studiów</th>
+                            <th scope="col">Stopień studiów</th>
+                            <th scope="col">Opłata rektutacyjna</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Stacjonarne</td>
+                            <td>I stopień</td>
+                            <td>80zł</td>
+                        </tr>
+                        <tr>
+                            <td>Stacjonarne</td>
+                            <td>II stopień</td>
+                            <td>120zł</td>
+                        </tr>
+                        <tr>
+                            <td>Zaoczne</td>
+                            <td>I stopień</td>
+                            <td>100zł</td>
+                        </tr>
+                        <tr>
+                            <td>Zaoczne</td>
+                            <td>II stopień</td>
+                            <td>140zł</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <footer>
+                <section>Tagi</section>
+            </footer>
+        </article>
+        <section id="comments">
+            <ol>
+                <li>
+                    <article id="comment-01">
+                        <header>
+                            <a href="comment-01">
+                                <time datetime="2026-01-07T20:41:06+00:00">07.01.2026, 20:41</time>
+                            </a>
+                            <h3>
+                                <b>
+                                    <a href="http://example.net/"><img
+                                            src="htpps://example.net/awatary/awatar.jpg"
+                                            alt="Awatar użytkownika"
+                                            height="48px"
+                                            width="48px"
+                                        >
+                                        Łukasz
+                                    </a>
+                                    skomentował
+                                </b>
+                            </h3>
+                        </header>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim voluptas saepe necessitatibus
+                            et ipsa dolores dolore sint dignissimos illum atque itaque adipisci sapiente alias, aliquid
+                            fugit, animi cupiditate nam aut.</p>
+                    </article>
+                <li>
+                    <article id="comment-01">
+                        <header>
+                            <a href="comment-01">
+                                <time datetime="2026-01-07T22:50:06+00:00">07.01.2026, 22:50</time>
+                            </a>
+                            <h3>
+                                <b>
+                                    <a href="http://example.net/"><img
+                                            src="htpps://example.net/awatary/awatar.jpg"
+                                            alt="Awatar użytkownika"
+                                            height="48px"
+                                            width="48px"
+                                        >
+                                        Kasia
+                                    </a>
+                                    skomentowała
+                                </b>
+                            </h3>
+                        </header>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim voluptas saepe necessitatibus
+                            et ipsa dolores dolore sint dignissimos illum atque itaque adipisci sapiente alias, aliquid
+                            fugit, animi cupiditate nam aut.</p>
+                    </article>
+                <li>
+                    <article id="comment-01">
+                        <header>
+                            <a href="comment-01">
+                                <time datetime="2026-01-20T13:13:06+00:00">20.01.2026, 13:13</time>
+                            </a>
+                            <h3>
+                                <b>
+                                    <a href="http://example.net/"><img
+                                            src="htpps://example.net/awatary/awatar.jpg"
+                                            alt="Awatar użytkownika"
+                                            height="48px"
+                                            width="48px"
+                                        >
+                                        Bartek
+                                    </a>
+                                    skomentował
+                                </b>
+                            </h3>
+                        </header>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim voluptas saepe necessitatibus
+                            et ipsa dolores dolore sint dignissimos illum atque itaque adipisci sapiente alias, aliquid
+                            fugit, animi cupiditate nam aut.</p>
+                    </article>
+                </li>
+            </ol>
+            <form
+                action="./src/add-comment.php"
+                method="POST"
+            >
+                <p>
+                    <label>
+                        Nazwa użytkownika
+                        <input
+                            type="text"
+                            name="username"
+                            id="user-name"
+                            placeholder="Nazwa użytkownika"
+                        >
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        Email
+                        <input
+                            type="email"
+                            name="email"
+                            id="user-email"
+                            placeholder="Adres email"
+                        >
+                    </label>
+                </p>
+                <p>
+                    <label for="comment-comment">Komentarz</label>
+                    <textarea
+                        name="comment"
+                        id="comment-comment"
+                        placeholder="Dodaj komentarz"
+                        rows="10"
+                        cols="50"
+                        required
+                        style="resize: none;"
+                    ></textarea>
+                </p>
+                <p>
+                    <button
+                        type="submit"
+                        name="submit"
+                        id="comment-submit"
+                    >Publikuj</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
 </body>
+
+<footer>
+    &copy;2025 TetraMeister
+</footer>
+
 </html>

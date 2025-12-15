@@ -1,0 +1,9 @@
+.first-section__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.first-section__content {
+  width: 49%;
+  min-height: 400px;
+}
