@@ -1,0 +1,46 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+
+.parent {
+	width: 600px;
+	padding: 20px;
+    font-style: ;
+}
+
+.parent--inline-block .child {
+	display: inline-block;
+}
+
+.parent--float {
+	overflow: hidden;
+}
+
+.parent--float .child {
+	float: left;
+}
+
+.parent--flexbox {
+	display: flex;
+}
+
+.child--first,
+.child--middle {
+	width: calc(30% - 10px);
+	margin-right: 10px;
+}
+
+.child--middle{
+    font-weight: bold;
+}
+.child--last {
+	width: 40%;
+    font-style: italic;
+}
