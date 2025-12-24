@@ -1,0 +1,59 @@
+.parent {
+    width: 600px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Source Sans PRO';
+    src: url(https://www.fontsquirrel.com/fonts/source-sans-pro);
+}
+
+.child {
+    font-family: 'Source Sans PRO';
+}
+
+.child--first {
+    font-style: normal;
+    width: calc(30% - 10px);
+}
+
+.child--middle {
+    font-weight: bold;
+    width: calc(30% - 10px);
+}
+
+.child--last {
+    font-style: italic;
+    width: calc(40% - 10px);
+}
+
+.parent--inline-block .child {
+    display: inline-block;
+}
+
+.parent--inline-block .child--first,
+.parent--inline-block .child--middle {
+    margin-right: 5px;
+}
+
+.parent--float .child {
+    float: left;
+}
+
+.parent--float:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.parent--float .child--first,
+.parent--float .child--middle {
+    margin-right: 10px;
+}
+
+.parent--flexbox {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
