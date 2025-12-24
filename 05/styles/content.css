@@ -1,0 +1,10 @@
+.content__container {
+	display: flex;
+	justify-content: space-between;
+	padding: 7px 0;
+}
+
+.content__article {
+	min-width: 48%;
+	min-height: 300px;
+}
