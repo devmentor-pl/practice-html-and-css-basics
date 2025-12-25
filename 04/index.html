@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Nav Demo</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul>
+        <li>HOME</li>
+        <li class="navbar__dropdown">ITEMS
+          <ul>
+            <li class="dropdown__item">Item 1</li>
+            <li class="dropdown__item">Item 2
+              <ul class="navbar__dropdown--second">
+                <li class="dropdown__item">Item 2.1</li>
+                <li class="dropdown__item">Item 2.2</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>SETTINGS</li>
+        <li>CONTACT</li>
+      </ul>
+    </nav>
+  </body>
+</html>

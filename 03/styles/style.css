@@ -1,0 +1,69 @@
+/* To see the outlines of the Element uncomment the CSS rules*/
+
+@font-face {
+    font-family: "Source Sans PRO";
+    src: url("./fonts/source-sans-pro/SourceSansPro-Regular.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Source Sans PRO";
+    src: url("./fonts/source-sans-pro/SourceSansPro-Bold.otf") format("opentype");
+    font-style: normal;
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Source Sans PRO";
+    src: url("./fonts/source-sans-pro/SourceSansPro-It.otf") format("opentype");
+    font-style: italic;
+    font-weight: normal;
+}
+
+.parent {
+    width: 600px;
+    padding: 20px;
+    /* outline: 1px solid rgb(34, 3, 3); */
+}
+
+.parent--inline-block .child{
+    display: inline-block;
+    white-space: wrap;
+}
+
+.parent--float::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.parent--float .child{
+    float: left;
+}
+
+.parent--flexbox {
+    display: flex;
+}
+
+/* .child {
+outline: 1px solid red;
+} */
+
+
+.child:nth-child(1) {
+    width: calc(30% - 5px);
+    font-family: "Source Sans PRO", "Times New Roman", "serif";
+    font-style: normal;
+}
+.child:nth-child(2) {
+    width: calc(30% - 10px);
+    font-family: "Source Sans PRO", "Times New Roman", "serif";
+    font-weight: bold;
+}
+.child:nth-child(3) {
+    width: calc(40% - 5px);
+    font-family: "Source Sans PRO", "Times New Roman", "serif";
+    font-style: italic;
+}
+.child--middle {
+    margin: 0 10px ;
+}
