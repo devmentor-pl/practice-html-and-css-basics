@@ -1,0 +1,42 @@
+.header__container {
+    justify-content: space-between;
+}
+
+.header__logo {
+    min-width: 150px;
+}
+
+.header__nav {
+    min-width: 350px;
+}
+
+.content__container {
+    justify-content: space-between;
+}
+
+.content__column,
+.content__article,
+.conent__ads {
+    height: 170px;
+}
+
+.content__article,
+.conent__ads {
+    min-width: 495px;
+}
+
+.column__container {
+    justify-content: space-evenly;
+}
+
+.content__column {
+    min-width: 320px;
+}
+
+.footer__container {
+    justify-content: center;
+}
+
+.footer__content {
+    min-width: 150px;
+}
