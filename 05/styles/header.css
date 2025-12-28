@@ -1,0 +1,19 @@
+/* header.css */
+.header__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo {
+    margin-left: 0;
+    margin-top: 5px;
+    min-width: 200px;
+    background-color: #FFCA18;
+}
+
+.header__nav {
+    margin-right: 0;
+    margin-top: 5px;
+    min-width: 400px;
+    background-color: #FFCA18;
+}
