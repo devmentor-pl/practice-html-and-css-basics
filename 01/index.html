@@ -7,6 +7,120 @@
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
 </head>
 <body>
-    
+    <header class="header row">
+        <div class="header__container container">
+            <h1 class="header__logo cell">
+                <a href="">
+                    <img 
+                    src="./img/html-file-with-code-symbol.svg"
+                    alt="htmlLogo"
+                    width="100px"
+                    height="150px">
+                </a>
+            </h1>
+            <nav class="header__nav cell">
+                <ul class="nav">
+                    <li class="nav__item">
+                        <a>Lorem.</a>
+                    </li>
+                    <li class="nav__item">
+                        <a>Lorem, ipsum.</a>
+                        <ul class="nav__dropdown dropdow">
+                            <li class="dropdown__item"><a>Lorem.</a></li>
+                            <li class="dropdown__item"><a>Lorem.</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item"><a>Lorem.</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="content row">
+            <div class="content__container container">                
+                <article class="content__article cell">
+                    <h1 class="content-title">Lorem, ipsum dolor.</h1>
+                    <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius reprehenderit ad quibusdam perferendis odio qui soluta corporis ipsa sit, aperiam, repudiandae adipisci molestias illo voluptatum sapiente similique magni quas dolorem?</p>
+                    <time datetime='2022-07-02'> 02 July 2022</time>
+                    <address rel="author">
+                    <figure>
+                        <img 
+                            src="./img/coding.svg"
+                            class="content-image"
+                            alt="codingLogo"
+                            width="75px"
+                            height="75px">
+                        <figcaption>Lorem.</figcaption>
+                    </figure>
+                    <table class="content__table">
+                        <caption class="table__caption"></caption>
+                        <colgroup>
+                            <col span="2" style="background: firebrick;">
+                            <col style="background: forestgreen">
+                        </colgroup>
+                        <thead>
+                            <tr class="table-row">
+                                <th class="table__item">Lorem.</th>
+                                <th class="table__item">Lorem.</th>
+                                <th class="table__item">Lorem.</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="table-row">
+                                <td class="table__item">Lorem, ipsum.</td>
+                                <td class="table__item">Lorem.</td>
+                                <td class="table__item">Lorem, ipsum dolor.</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr class="table-row">
+                                <td class="table__item">Lorem ipsum dolor sit.</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </article>
+            </div>
+            <div>
+                <form class="form">
+                    <div>
+                        <label class="form__label">Name
+                            <input class="form__input" name="firstName"/>
+                        </label>
+                    </div>
+                    <div>
+                        <label class="form__label">Surname
+                            <input class="form__input" name="lastName"/>
+                        </label>
+                    </div>
+                    <div>
+                        <textarea class="form__text"></textarea>
+                    </div>
+                    <div>
+                        <input class="form__button" type="submit"/>
+                    </div>
+                </form>
+            </div>
+            <div>
+                <article class="comment">
+                    <p class="comment__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. At quasi esse earum rem cupiditate enim quibusdam a labore ullam dolorem?</p>
+                    <address class="comment__author">Written by: John Paul</address>
+                    <time class="comment__date" datetime='2022-06-12' pubdate>12 June 2022</time>
+                </article>
+                <article class="comment">
+                    <p class="comment__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. At quasi esse earum rem cupiditate enim quibusdam a labore ullam dolorem?</p>
+                    <address class="comment__author">Written by: Keira J.</address>
+                    <time class="comment__date" datetime='2022-07-13' pubdate>13 July 2022</time>
+                </article>
+                <article class="comment">
+                    <p class="comment__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. At quasi esse earum rem cupiditate enim quibusdam a labore ullam dolorem?</p>
+                    <address class="comment__author">Written by: Joe Black</address>
+                    <time class="comment__date" datetime='2022-08-14' pubdate> 14 August 2022</time>
+                </article>
+            </div>
+        </section>
+        <footer class="footer">
+            <div>&copy; 2022 Agnieszka Szostak</div>
+        </footer>
+    </main>
 </body>
 </html>
