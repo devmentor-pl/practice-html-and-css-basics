@@ -3,36 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>devmentor.pl - HTML & CSS BASICS - #03</title>
+    <title>Layout Zadanie</title>
+    <style>
+        @font-face {
+            font-family: 'Source Sans PRO';
+            src: url('path/to/SourceSansPro-Regular.otf') format('opentype'),
+                 url('path/to/SourceSansPro-Bold.otf') format('opentype'),
+                 url('path/to/SourceSansPro-Italic.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        .parent {
+            width: 600px;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #f0f0f0;
+        }
+
+        .parent--inline-block .child {
+            display: inline-block;
+            width: calc(30% - 5px);
+            font-family: 'Source Sans PRO';
+        }
+
+        .parent--float .child {
+            float: left;
+            width: calc(30% - 5px);
+            font-family: 'Source Sans PRO';
+        }
+
+        .parent--flexbox {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .parent--flexbox .child {
+            width: calc(30% - 5px);
+            font-family: 'Source Sans PRO';
+        }
+
+        .child--first {
+            font-weight: normal;
+            margin-right: 10px;
+        }
+
+        .child--middle {
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .child--last {
+            font-style: italic;
+            width: 40%;
+        }
+
+        /* Dodatkowe czyszczenie dla float */
+        .parent--float::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
 </head>
 <body>
-    
     <section class="parent parent--inline-block">
         <div class="child child--first">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, asperiores.</div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, asperiores.
+        </div>
         <div class="child child--middle">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis praesentium in possimus!</div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis praesentium in possimus!
+        </div>
         <div class="child child--last">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, iure?</div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, iure?
+        </div>
     </section>
 
     <section class="parent parent--float">
         <div class="child child--first">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, asperiores.</div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, asperiores.
+        </div>
         <div class="child child--middle">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis praesentium in possimus!</div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis praesentium in possimus!
+        </div>
         <div class="child child--last">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, iure?</div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, iure?
+        </div>
     </section>
 
     <section class="parent parent--flexbox">
         <div class="child child--first">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, asperiores.</div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, asperiores.
+        </div>
         <div class="child child--middle">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis praesentium in possimus!</div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis praesentium in possimus!
+        </div>
         <div class="child child--last">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, iure?</div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, iure?
+        </div>
     </section>
 </body>
 </html>
