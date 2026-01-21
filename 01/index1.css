@@ -1,0 +1,47 @@
+h1 {
+    text-align: center;
+}
+ul.blue, ul.green {
+    color: red;
+}
+ul.red {
+    color: black;
+}
+section.logo img {
+    width: 10%;
+    height: 10%;
+    padding-inline: 50%;
+}
+article {
+    margin-bottom: 100px;
+}
+div.comment, div.comment2, div.comment3 {
+    border-left: 2px solid black;
+    border-collapse: collapse;
+    padding-left: 30px; 
+}
+figure {
+    display: inline-block;
+    position: relative;
+}
+figcaption {
+    background-color: rgb(249, 225, 1);
+    color: black;
+    text-align: center;
+    visibility: hidden;
+    margin-top: -10px;
+}
+figure:hover figcaption {
+    visibility: visible;
+}
+table, caption, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: center;
+    background-color: yellowgreen;
+}
+button {
+    margin-bottom: 50px;
+    position: relative; left: 7.1cm;
+}
