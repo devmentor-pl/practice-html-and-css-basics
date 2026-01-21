@@ -1,12 +1,157 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <meta
+        http-equiv="X-UA-Compatible"
+        content="ie=edge"
+    >
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
 </head>
+
 <body>
-    
+    <div>
+        <header>
+            <h1>logo</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">start</a>
+                    </li>
+                    <li>
+                        <a href="#">portfolio</a>
+                        <ul>
+                            <li>
+                                <a href="#">www</a>
+                            </li>
+                            <li>
+                                <a href="#">app</a>
+                            </li>
+                            <li>
+                                <a href="#">SEO</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">kontakt</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </header>
+        <main>
+            <article>
+                <h2>Tytul</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et perspiciatis
+                    nostrum eos natus deserunt
+                    repellat quasi libero voluptate, quidem distinctio nobis quaerat. Vitae velit nisi nostrum molestiae
+                    deleniti veritatis provident quas corrupti, modi sint, asperiores ea, quo repellendus sed iusto
+                    possimus exercitationem ipsa maiores? Tenetur maiores ipsam animi eius. Ex tenetur ad aliquam ut cum
+                    illum quaerat eos, laudantium quas, tempore voluptates minima rerum ea rem? Atque fugit odio
+                    reprehenderit, numquam adipisci ad debitis architecto in dicta qui voluptatem dolor libero
+                    temporibus possimus eum doloribus repudiandae eius perferendis. Iste omnis facilis alias tempora,
+                    sapiente laboriosam quo non veritatis et cumque!</p>
+                <time>2025-03-25</time><span>Michal Wasiak</span>
+
+                <figure><img
+                        src="https://cdn.pixabay.com/photo/2022/11/02/12/30/islands-7564775_1280.jpg"
+                        alt="Ludzie spacerujacy po plazy na tle skal w oceanie"
+                    >
+                    <figcaption></figcaption>
+                </figure>
+                <table>
+                    <caption>Cennik</caption>
+
+                    <thead>
+                        <tr>
+                            <th>Usluga</th>
+                            <th>Cena</th>
+                            <th>Czas realizacji</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>SEO</td>
+                            <td>300 PLN</td>
+                            <td>3 miesiace</td>
+                        </tr>
+                        <tr>
+                            <td>Strona WWW</td>
+                            <td>1999 PLN</td>
+                            <td>2 tygodnie</td>
+                        </tr>
+                        <tr>
+                            <td>Aplikacja webowa</td>
+                            <td>4999 PLN</td>
+                            <td>4 tygodnie</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+            <form>
+                <div>
+                    <h2>Dodaj komentarz</h2>
+                    <label>Imie
+                        <input
+                            type="text"
+                            placeholder="Podaj swoje Imie"
+                        >
+                    </label>
+                    <label class="form__item">Nazwisko
+                        <input
+                            type="text"
+                            placeholder="Podaj swoje Nazwisko"
+                        >
+                    </label>
+                    <label class="form__item">Komentarz
+                        <textarea
+                            rows="10"
+                            name="komentarz"
+                            placeholder="Napisz swoj komentarz"
+                        ></textarea>
+                    </label>
+                    <input
+                        type="submit"
+                        value="Wyslij komentarz"
+                    >
+                </div>
+            </form>
+            <section>
+                <h2>Komentarze</h2>
+                <ul>
+                    <li>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, ea?</p>
+                        <span>John Doe</span>
+                        <time>2025-02-20</time>
+                    </li>
+
+                    <li>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, ea?</p>
+                        <span>Jan Kowalski</span>
+                        <time>2025-01-29</time>
+                    </li>
+                    <li>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, ea?</p>
+                        <span>Andrzej Kwiatkowski</span>
+                        <time>2024-12-20</time>
+                    </li>
+                    <li>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, ea?</p>
+                        <span>Anna Mucha</span>
+                        <time>2024-02-20</time>
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; Michal Wasiak</p>
+        </footer>
+    </div>
 </body>
+
 </html>

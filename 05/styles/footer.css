@@ -1,0 +1,11 @@
+.footer__container {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.footer__copyrights {
+    width: 15%;
+    background-color: orange;
+}

@@ -1,0 +1,22 @@
+.content__container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+.content__article-left {
+    min-height: 400px;
+    width: 51%;
+    background-color: orange;
+
+}
+
+.content__article-right {
+    min-height: 400px;
+    width: 48%;
+    background-color: orange;
+
+}

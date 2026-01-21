@@ -1,0 +1,258 @@
+[33mcommit 24892ebfd563720313863bff978bdc058af71271[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: devmentor.pl <55095257+devmentor-pl@users.noreply.github.com>
+Date:   Thu May 2 07:02:21 2024 +0200
+
+    Update README.md
+
+[33mcommit 98ea68b9b08aa02bce3f29da295cbf488fd9b328[m
+Author: devmentor.pl <55095257+devmentor-pl@users.noreply.github.com>
+Date:   Thu May 2 07:01:45 2024 +0200
+
+    Update README.md
+
+[33mcommit aabd07c591c1986b3adb62b0f323b82ef64af808[m
+Author: devmentor.pl <55095257+devmentor-pl@users.noreply.github.com>
+Date:   Thu May 2 07:01:15 2024 +0200
+
+    Update README.md
+
+[33mcommit 9c12bc2f84e91651e8bc28b5054fde00008678d4[m
+Author: devmentor.pl <55095257+devmentor-pl@users.noreply.github.com>
+Date:   Thu May 2 07:00:23 2024 +0200
+
+    Update README.md
+
+[33mcommit 782abbc1225ee8358f213109699e6e698bfba48d[m
+Author: devmentor.pl <55095257+devmentor-pl@users.noreply.github.com>
+Date:   Thu May 2 06:59:45 2024 +0200
+
+    Update README.md
+
+[33mcommit 626b547241a20408bd6cf4299ef4fa3e6fc1bb33[m
+Author: devmentor.pl <55095257+devmentor-pl@users.noreply.github.com>
+Date:   Thu May 2 06:57:36 2024 +0200
+
+    Update README.md
+
+[33mcommit c38f1abe95ae402157c629359f56760bb7800766[m
+Author: devmentor.pl <55095257+devmentor-pl@users.noreply.github.com>
+Date:   Fri Dec 15 16:26:14 2023 +0100
+
+    Update README.md
+
+[33mcommit 14e617d642ceef84fd7a798b80720f9beb72f5cc[m
+Author: devmentor.pl <55095257+devmentor-pl@users.noreply.github.com>
+Date:   Fri Dec 15 16:18:33 2023 +0100
+
+    Update README.md
+
+[33mcommit 240acc461883b3f8031618a732592793d15484e0[m
+Author: devmentor.pl <55095257+devmentor-pl@users.noreply.github.com>
+Date:   Fri Nov 3 12:48:45 2023 +0100
+
+    Update rotate link
+
+[33mcommit 84d16a42937cd28260886f6b80af063b86bc8443[m
+Author: devmentor.pl <55095257+devmentor-pl@users.noreply.github.com>
+Date:   Fri Jul 21 11:04:51 2023 +0200
+
+    Update README.md
+
+[33mcommit dd7ad66e5706dfd11113c4ea7187325bcb75356d[m
+Author: devmentor.pl <55095257+devmentor-pl@users.noreply.github.com>
+Date:   Thu Jul 20 16:53:13 2023 +0200
+
+    Update README.md
+
+[33mcommit 2c6549bdae91447cb268709051490962aa6876aa[m
+Author: devmentor.pl <55095257+devmentor-pl@users.noreply.github.com>
+Date:   Thu Jul 20 16:52:45 2023 +0200
+
+    Add live share for devcontainer.json
+
+[33mcommit 74520ef354cddc148364e63d4dbf555a338c2ca9[m
+Author: devmentor.pl <55095257+devmentor-pl@users.noreply.github.com>
+Date:   Wed Jul 19 10:14:24 2023 +0200
+
+    Update README.md
+
+[33mcommit a3f028c96f28b5c8b86d973331bf46e687347e37[m
+Merge: 9985055 e2e7972
+Author: devmentor.pl <55095257+devmentor-pl@users.noreply.github.com>
+Date:   Wed Jul 19 10:13:09 2023 +0200
+
+    Merge pull request #153 from devmentor-pl/devmentor-pl-patch-1
+    
+    Create README.md for .devcontainer
+
+[33mcommit e2e7972079dbb3b9328a5f51be5aaa377c683595[m
+Author: devmentor.pl <55095257+devmentor-pl@users.noreply.github.com>
+Date:   Wed Jul 19 10:12:46 2023 +0200
+
+    Create README.md for .devcontainer
+
+[33mcommit 9985055da002ea2b9f9dfacb682f8613f1bd4e17[m
+Author: devmentor.pl <55095257+devmentor-pl@users.noreply.github.com>
+Date:   Wed Jul 19 10:05:22 2023 +0200
+
+    Update devcontainer.json
+
+[33mcommit 4dc2d3eacfebf41e05080b1a7bf3c65412410afa[m
+Author: devmentor.pl <55095257+devmentor-pl@users.noreply.github.com>
+Date:   Wed Jul 19 10:00:11 2023 +0200
+
+    Create devcontainer.json
+
+[33mcommit bbea66f076310087b31f2a09275d5ac433aeca69[m
+Author: devmentor.pl <55095257+devmentor-pl@users.noreply.github.com>
+Date:   Mon Dec 27 18:07:00 2021 +0100
+
+    add font-face info
+
+[33mcommit bb49dceca24e5c4b57997a86d58a563c2a959b94[m
+Author: devmentor.pl <55095257+devmentor-pl@users.noreply.github.com>
+Date:   Fri Jul 30 11:38:17 2021 +0200
+
+    improve task text
+
+[33mcommit 339a7d909d4e5641cbc10fdf5b50b51e67578948[m
+Author: devmentor.pl <55095257+devmentor-pl@users.noreply.github.com>
+Date:   Fri Jul 30 11:27:42 2021 +0200
+
+    improve task text
+
+[33mcommit 2aafe7c5561073db33e7602aba655153d70e87bc[m
+Author: devmentor.pl <55095257+devmentor-pl@users.noreply.github.com>
+Date:   Fri Jul 30 11:23:26 2021 +0200
+
+    improve task text
+
+[33mcommit 7d0b199c968e27f72b154078e3633c3b49d8a589[m
+Author: devmentor.pl <55095257+devmentor-pl@users.noreply.github.com>
+Date:   Fri Jul 30 11:15:10 2021 +0200
+
+    improve task text
+
+[33mcommit acce7e85b359a0978f3c665296dc1938cf8a038d[m
+Author: devmentor.pl <55095257+devmentor-pl@users.noreply.github.com>
+Date:   Fri Jul 30 11:12:14 2021 +0200
+
+    improve task text
+
+[33mcommit 4d443b28219575a1cca8c597c55357b59d9c33f1[m
+Author: devmentor.pl <55095257+devmentor-pl@users.noreply.github.com>
+Date:   Fri Jul 30 11:09:07 2021 +0200
+
+    fix typo
+
+[33mcommit 84ed8ba901ac75678c87bc8736ab266b58c63c61[m
+Author: devmentor.pl <55095257+devmentor-pl@users.noreply.github.com>
+Date:   Fri Jul 30 11:08:16 2021 +0200
+
+    improve readme text
+
+[33mcommit 04b6780df7c4c321785a3dbd61a886631b4d0324[m
+Author: Mateusz Bogolubow <mateusz@bogolubow.com>
+Date:   Tue Jan 19 10:31:57 2021 +0100
+
+    Remove unused files
+
+[33mcommit 0f1aed2d491b5105b2800c29cccbd11e3b8e1a80[m
+Author: Mateusz Bogolubow <mateusz@bogolubow.com>
+Date:   Tue Jan 19 10:29:18 2021 +0100
+
+    Improve description for task 05
+
+[33mcommit 28ef79da9b8a73ca25780588ec0165d388da9a3d[m
+Author: Mateusz Bogolubow <mateusz@bogolubow.com>
+Date:   Tue Jan 19 10:27:39 2021 +0100
+
+    Improve description for task 04
+
+[33mcommit 1d29d50226ea466e9820abd32aeeba767d361679[m
+Author: Mateusz Bogolubow <mateusz@bogolubow.com>
+Date:   Tue Jan 19 10:22:50 2021 +0100
+
+    Improve description for task 03
+
+[33mcommit 8a145e6c6502817696ebee5ba9fabd00a0ae32f5[m
+Author: Mateusz Bogolubow <mateusz@bogolubow.com>
+Date:   Tue Jan 19 10:22:25 2021 +0100
+
+    Fix link to prev test
+
+[33mcommit c1e2a9c9f00adcdc5dfada34de26722add4e37f7[m
+Author: Mateusz Bogolubow <mateusz@bogolubow.com>
+Date:   Tue Jan 19 10:19:30 2021 +0100
+
+    Improve description for task 01
+
+[33mcommit 8e8c6543c7520224c166d9a892a290c9c28a11b0[m
+Author: Mateusz Bogolubow <mateusz@bogolubow.com>
+Date:   Tue Jan 19 10:13:33 2021 +0100
+
+    Fix typos in description
+
+[33mcommit 986362855b3b441538141d04d6bd80506d2cb089[m
+Author: Mateusz Bogolubow <mateusz@bogolubow.com>
+Date:   Tue Jan 19 10:12:11 2021 +0100
+
+    Change content for section: How to complete tasks?
+
+[33mcommit 51ef480301cfb5b745ad01d2c37238f562911e9c[m
+Author: Mateusz Bogolubow <mateusz@bogolubow.com>
+Date:   Tue Jan 19 10:10:16 2021 +0100
+
+    Remove warnings
+
+[33mcommit 43eddc028960ef5781c136ec8a558e16a172c28f[m
+Author: Mateusz Bogolubow <mateusz@bogolubow.com>
+Date:   Tue Jan 19 10:09:11 2021 +0100
+
+    Change navigation view to tasks
+
+[33mcommit d7ca1abdbb72d0750d0ad1861e7ceb44abf4171a[m
+Author: Mateusz Bogolubow <mateusz@bogolubow.com>
+Date:   Tue Jan 19 10:08:13 2021 +0100
+
+    Add information about Code Review
+
+[33mcommit 878cea9f0fceb6b521cb995b72986202b9eb3317[m
+Author: Mateusz Bogolubow <mateusz@bogolubow.com>
+Date:   Tue Jan 19 10:07:28 2021 +0100
+
+    Change header content
+
+[33mcommit 39ffc4c36a587d9c41e9604418c3482b587c4b83[m
+Author: Mateusz Bogolubow <mateusz@bogolubow.com>
+Date:   Tue Jan 19 10:06:30 2021 +0100
+
+    Add information about polling
+
+[33mcommit 83ea6897dfc51a2edae411ac60f380d66b60a801[m
+Author: Mateusz Bogolubow <mateusz@bogolubow.com>
+Date:   Fri Aug 14 12:20:49 2020 +0200
+
+    Fix typos in description task 04
+
+[33mcommit f57691758b8138cf24bf88ce9c675ac1e5ae9463[m
+Author: Mateusz Bogolubow <mateusz@bogolubow.com>
+Date:   Fri Aug 14 12:08:10 2020 +0200
+
+    Fix descriptions in selectors
+
+[33mcommit fce039d8415a0a63ad7233d9051d8320675a0921[m
+Author: Mateusz Bogolubow <mateusz@bogolubow.com>
+Date:   Mon Aug 3 16:40:54 2020 +0200
+
+    Fix wrongly input type suggest
+
+[33mcommit 0d65357c4d754f7ea38df964c31fa198dbbf38ec[m
+Author: Mateusz Bogolubow <mateusz@bogolubow.com>
+Date:   Mon Apr 6 06:36:22 2020 +0200
+
+    Add more info in readme
+
+[33mcommit c234547c905eaa8301496240a0a9868f25d88960[m
+Author: Mateusz Bogolubow <mateusz@bogolubow.com>
+Date:   Sat Mar 21 08:56:28 2020 +
