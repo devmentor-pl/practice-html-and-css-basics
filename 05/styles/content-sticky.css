@@ -1,0 +1,22 @@
+/* content-sticky.css */
+
+
+.content-sticky__container {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.content-sticky__article {
+    min-height: 300px;
+    width: 50%;
+}
+
+.content-sticky__article:first-child {
+    margin-left: -2px; 
+}
+
+.content-sticky__article:last-child {
+    margin-right: -2px; 
+}
