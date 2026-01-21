@@ -1,12 +1,94 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1>Moje Logo</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home">Strona główna</a></li>
+          <li>
+            O nas
+            <ul>
+              <li><a href="#history">Historia</a></li>
+              <li><a href="#team">Zespół</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Kontakt</a></li>
+        </ul>
+      </nav>
+      <main>
+        <article>
+          <h2>Tytuł artykułu</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Perspiciatis, reprehenderit libero hic rerum facilis dolor autem
+            alias vero nisi quae illum sapiente iusto optio. Cupiditate quisquam
+            distinctio enim tempore eos.
+          </p>
+          <p>Data publikacji: 29.12.2024r</p>
+          <p>Autor: Jan Kowalski</p>
+          <figure>
+            <img
+              src="fireworks-9220290_640.jpg"
+              alt="Opis ilustracji"
+              style="max-width: 100%; height: auto"
+            />
+            <figcaption>Ilustracja do artykułu</figcaption>
+          </figure>
+          <table>
+            <thead>
+              <tr>
+                <th>Nagłówek 1</th>
+                <th>Nagłówek 2</th>
+                <th>Nagłówek 3</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Dane 1</td>
+                <td>Dane 2</td>
+                <td>Dane 3</td>
+              </tr>
+              <tr>
+                <td>Dane 4</td>
+                <td>Dane 5</td>
+                <td>Dane 6</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+        <section>
+          <h3>formularz do komentowania,</h3>
+          <label
+            >Imię
+            <input name="firstName" />
+          </label>
+        </section>
+        <section>
+          <h3>Komentarze</h3>
+          <div class="comment">
+            <p><strong>Autor:</strong> Anna Nowak</p>
+            <p><strong>Data:</strong> 29.12.2024r</p>
+            <p>Świetny artykuł</p>
+          </div>
+          <div class="comment">
+            <p><strong>Autor:</strong> Piotr Wiśniewski</p>
+            <p><strong>Data:</strong> 27 grudnia 2024</p>
+            <p>Podoba mi się sposób przedstawienia informacji.</p>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <p>&copy; 2024 Moja Strona. Wszelkie prawa zastrzeżone.</p>
+      </footer>
+    </header>
+  </body>
 </html>

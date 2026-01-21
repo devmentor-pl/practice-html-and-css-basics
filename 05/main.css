@@ -1,0 +1,58 @@
+.green {
+  width: 100%;
+  border: 5px solid green;
+  margin: 10px;
+  padding: 5px 0;
+}
+.blue {
+  max-width: 1000px;
+  border: 5px solid blue;
+  margin: 0 auto;
+  padding: 5px 0;
+}
+.orange {
+  background-color: orange;
+  min-height: 50px;
+}
+
+.green--main .orange {
+  min-height: 400px;
+}
+
+.green--header .blue {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2px;
+  padding-bottom: 5px;
+}
+.orange--logo {
+  width: 160px;
+}
+.orange--nav {
+  width: 300px;
+}
+.green--main .blue {
+  display: flex;
+  justify-content: space-between;
+}
+
+.green--main .orange {
+  width: 48%;
+}
+
+.green--section .blue {
+  display: flex;
+  justify-content: space-around;
+}
+
+.green--section .orange {
+  width: 30%;
+  min-height: 300px;
+}
+.green--footer .blue {
+  display: flex;
+  justify-content: center;
+}
+.green--footer .orange {
+  width: 100px;
+}
