@@ -1,12 +1,108 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
 </head>
+
 <body>
-    
+    <header>
+        <img src="./img/logo.png" alt="YouTube logo">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">O nas</a></li>
+            <li><a href="#">Usługi</a></li>
+            <ul>
+                <li><a href="#">Projekty</a></li>
+                <li><a href="#">Wyceny</a></li>
+                <li><a href="#">Opinie</a></li>
+            </ul>
+            <li><a href="#">Kontakt</a></li>
+        </ul>
+    </header>
+    <main>
+        <article>
+            <h1>Lorem, ipsum dolor.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, quia. Sapiente hic nostrum ea earum eveniet
+                sint tempore excepturi, quis fugit alias, iste nulla illo rerum. Dolore, unde deleniti quod perspiciatis
+                dolor sapiente deserunt suscipit est incidunt error accusamus numquam earum culpa doloremque
+                reprehenderit, recusandae quasi voluptates itaque aliquam animi.</p>
+
+            <p>Opublikowano: <time datetime="2024-02-05">5 lutego 2024</time></p>
+            <p>Autor: Tadeusz Kowalski</p>
+            <img src="./img/beach.jpg" alt="Tropical beach">
+
+            <table>
+                <caption>Kierunki wypraw:</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Lp.</th>
+                        <th scope="col">Kontynent</th>
+                        <th scope="col">Cena</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1.</td>
+                        <td>Europa</td>
+                        <td>2500 zł</td>
+                    </tr>
+                    <tr>
+                        <td>2.</td>
+                        <td>USA</td>
+                        <td>20000 zł</td>
+                    </tr>
+                    <tr>
+                        <td>3.</td>
+                        <td>Australia</td>
+                        <td>15000 zł</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+    </main>
+    <hr />
+    <h2>Skomentuj:</h2>
+    <form>
+        <label for="name">Imię:</label>
+        <input type="text" id="name" placeholder="Wpisz imię" required>
+        <br>
+        <label for="comment">Treść komentarza:</label>
+        <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Wpisz treść komentarza" required></textarea>
+        <br>
+        <button type="submit">Dodaj komentarz</button>
+    </form>
+    <hr>
+    <h2>Komentarze:</h2>
+    <div class="comment">
+        <p style="font-weight: bold">Mariusz</p>
+        <p>Data: 3.10.2023</p>
+        <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat animi doloremque nihil minus dolorem reprehenderit delectus laudantium odit possimus iste, esse repellat fugiat nemo fugit. Tenetur vel iste, ut quibusdam, quaerat quia dolorem corrupti eveniet sequi omnis ab cum nostrum. Minima ratione accusamus corporis neque illo doloribus inventore ullam aperiam?"</p>
+    </div>
+    <hr>
+    <div class="comment">
+        <p style="font-weight: bold">Ania</p>
+        <p>Data: 15.11.2022</p>
+        <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat animi doloremque nihil minus dolorem reprehenderit delectus laudantium odit possimus iste, esse repellat fugiat nemo fugit. Tenetur vel iste, ut quibusdam, quaerat quia dolorem corrupti eveniet sequi omnis ab cum nostrum. Minima ratione accusamus corporis neque illo doloribus inventore ullam aperiam?"</p>
+    </div>
+    <hr>
+    <div class="comment">
+        <p style="font-weight: bold">Waldemar</p>
+        <p>Data: 11.01.2024</p>
+        <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat animi doloremque nihil minus dolorem reprehenderit delectus laudantium odit possimus iste, esse repellat fugiat nemo fugit. Tenetur vel iste, ut quibusdam, quaerat quia dolorem corrupti eveniet sequi omnis ab cum nostrum. Minima ratione accusamus corporis neque illo doloribus inventore ullam aperiam?"</p>
+    </div>
+<hr>
+<hr>
+<hr>
+<footer>
+    <p>&copy; 2024 Besttrips Sp. z o.o. Wszelkie prawa zastrzeżone.</p>
+</footer>
+
+
+
 </body>
+
 </html>
