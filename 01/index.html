@@ -7,6 +7,68 @@
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
 </head>
 <body>
-    
+    <header class="header">
+        <a href="#" class="header__logo"><img src="./logo.png" alt="logo firmy" class="logo__img logo"></a>
+        <nav class="header__nav nav">
+            <ul class="nav__container">
+                <li class="nav__item"><a href="#">start</a></li>
+                <li class="nav__item"><a href="#">komentarze</a></li>
+                <li class="nav__item"><a href="#">o mnie</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <article class="article">
+            <h1 class="article__title title"></h1>
+            <p class="article__content content"></p>
+            <date class="article__date date"></date>
+        </article>
+        <form action="" class="comments__form form">
+            <div class="comments__content"><label for="">treść<input type="text" name="content"></label></div>
+            <div class="comments__name"><label for="">Nazwa użytkownika<input type="text" name="name"></label></div>
+        </form>
+        <article class="comments__article article">
+            <section class="comments__section section">
+                <h2>komentarze</h2>
+                <ul class="comments__list list">
+                    <li>
+                        <div class="comment">
+                            <h3 class="comment__author author">Jan Kowalski</h3>
+                            <p class="comment__content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus consequuntur dolor similique veniam at? Delectus ipsa quis beatae vel qui.</p>
+                            <time datetime="2021-01-07T22:41:06+00:00">07.01.2021, 22:41</time>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="comment">
+                            <h3 class="comment__author author">Marek Nowak</h3>
+                            <p class="comment__content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus consequuntur dolor similique veniam at? Delectus ipsa quis beatae vel qui.</p>
+                            <time datetime="2021-11-27T20:11:06+00:00">27.11.2021, 20:11</time>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="comment">
+                            <h3 class="comment__author author">John Krasinsky</h3>
+                            <p class="comment__content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus consequuntur dolor similique veniam at? Delectus ipsa quis beatae vel qui.</p>
+                            <time datetime="2021-12-09T20:01:06+00:00">09.12.2021, 20:01</time>
+                        </div>
+                    </li>
+                    
+                </ul>
+            </section>
+        </article>
+    </main>
+    <footer class="footer">
+        <div class="footer__copyrights">&copyIreneusz Cisło</div>
+        <nav class="footer__nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#">o mnie</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#">źródła</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 </html>
