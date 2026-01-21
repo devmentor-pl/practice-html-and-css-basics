@@ -1,0 +1,13 @@
+footer {
+  margin-bottom: 0;
+}
+
+.footer {
+  justify-content: center;
+  min-height: 100px;
+}
+
+.footer__item {
+  height: 50px;
+  width: 200px;
+}

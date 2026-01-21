@@ -1,12 +1,137 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>devmentor.pl - HTML & CSS BASICS - #01</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>devmentor.pl - HTML & CSS BASICS - #01</title>
 </head>
+
 <body>
-    
+  <header>
+    <a href="/">
+      <img src="./company_logo.svg" alt="logo">
+    </a>
+    <nav>
+      <ul>
+        <li>
+          <a href="/tickets">Tickets</a>
+        </li>
+        <li>
+          <a href="/flights">Flights</a>
+        </li>
+        <li>
+          <a href="/contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <article>
+        <header>
+          <h2>Lorem ipsum dolor sit.</h2>
+        </header>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam possimus a aperiam tenetur fugiat, eum
+          excepturi quaerat odio similique in, ducimus laboriosam est? Minima, perspiciatis.</p>
+        <time>October 20th, 2023</time>
+        <p>Autor</p>
+        <figure>
+          <img src="./ilustracja.png" alt="ilustracja">
+        </figure>
+        <table>
+          <caption>Lorem, ipsum.</caption>
+          <thead>
+            <tr>
+              <th>Numer rejsu</th>
+              <th>Godzina wylotu</th>
+              <th>Godzina przylotu</th>
+              <th>Linia lotnicza</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>LOT454</td>
+              <td>02:00</td>
+              <td>03:00</td>
+              <td>LOT Polish Airlines</td>
+            </tr>
+            <tr>
+              <td>ASA556</td>
+              <td>02:15</td>
+              <td>03:15</td>
+              <td>Asian Airlines</td>
+            </tr>
+            <tr>
+              <td>LHA123</td>
+              <td>02:45</td>
+              <td>04:00</td>
+              <td>Lufthansa</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+    </section>
+    <section>
+      <form action="./send.htm" method="post">
+        <div><label for="name">Imię
+          <input type="text" id="name">
+        </label>
+      </div>
+        <div>
+          <label for="lastname">Nazwisko
+            <input type="text" id="lastname">
+          </label>
+        </div>
+        <div>
+          <label for="note">
+            <textarea name="comment" id="note" cols="30" rows="15" placeholder="Wpisz swoje zapytanie"></textarea>
+          </label>
+        </div>
+        <div>
+          <input type="submit">
+        </div>
+      </form>
+    </section>
+    <section>
+      <ul>
+        <li>
+          <article>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque fugit provident eius laborum quibusdam doloribus!</p>
+            <div>
+              <time>October 20th, 2023, 22:34</time>
+              <div>
+                <a rel="author" href="">Autor 1</a>
+              </div>
+            </div>
+          </article>
+        </li>
+        <hr>
+        <li>
+          <article>
+            <p>Dicta laudantium blanditiis sequi totam repudiandae corrupti autem aliquam. Qui maxime magni dolorum autem aliquid.</p>
+            <time>October 20th, 2023, 22:31</time>
+            <div>
+              <a rel="author" href="">Autor 2</a>
+            </div>
+          </article>
+        </li>
+        <hr>
+        <li>
+          <article>
+            <p>Exercitationem doloribus voluptas atque ullam mollitia, sunt voluptate modi repellendus nisi, reprehenderit laborum! Beatae, laudantium?</p>
+            <time>October 20th, 2023, 20:31</time>
+            <div>
+              <a rel="author" href="">Autor 3</a>
+            </div>
+          </article>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 IT for Me</p>
+  </footer>
 </body>
 </html>
