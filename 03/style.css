@@ -1,0 +1,77 @@
+.parent {
+    width: 600px;
+    padding: 20px;
+    background-color: mistyrose;
+}
+
+.parent--inline-block {
+    display: inline-block;
+}
+
+.parent--inline-block>.child--first,
+.child--middle,
+.child--last {
+    float: left;
+}
+
+.parent--float {
+    float: left;
+}
+
+.parent--float>.child--first,
+.child--middle,
+.child--last {
+    float: left;
+}
+
+.parent--flexbox {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.child {
+    padding: 5px;
+    text-align: left;
+}
+
+.child--first {
+    width: 30%;
+    background-color: white;
+    @font-family: 'Source Sans PRO';
+    src: url(source-sans-pro/SourceSansPro-Regular.otf) format('opentype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+div {
+    font-family: 'Source Sans PRO';
+    font-weight: regular;
+}
+
+.child--middle {
+    width: 30%;
+    background-color: lightblue;
+    @font-family: 'Source Sans PRO';
+    src: url(source-sans-pro/SourceSansPro-Bold.otf) format('opentype');
+    font-style: normal;
+    font-weight: bold;
+}
+
+div {
+    font-family: 'Source Sans PRO';
+    font-weight: bold;
+}
+
+.child--last {
+    width: 40%;
+    background-color: lightyellow;
+    @font-family: 'Source Sans PRO';
+    src: url(source-sans-pro/SourceSansPro-Italic.otf) format('opentype');
+    font-style: italic;
+    font-weight: normal;
+}
+
+div {
+    font-family: 'Source Sans PRO';
+    font-weight: regular;
+}
