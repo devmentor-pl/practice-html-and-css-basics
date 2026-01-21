@@ -1,0 +1,39 @@
+.content__container {
+    max-width: 1000px;
+    align-items: center;
+    padding: 0;
+}
+
+.container article {
+    min-height: 150px;
+}
+
+
+
+.first-content {
+    justify-content: space-between;
+}
+
+.first {
+    width: 49%;
+}
+
+
+
+
+.second-content {
+    justify-content: space-evenly;
+}
+
+.second {
+    width: 30%;
+}
+
+
+
+
+
+
+
+
+
