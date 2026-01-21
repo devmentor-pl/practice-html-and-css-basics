@@ -1,0 +1,12 @@
+.content__row {
+	display: flex;
+	justify-content: space-between;
+	padding-right: 0;
+	padding-left: 0;
+}
+.content__article {
+	margin: 0;
+	padding: 0;
+	min-height: 250px;
+	min-width: 495px;
+}
