@@ -1,0 +1,132 @@
+/* FONTS @fontface */
+
+@font-face {
+    font-family: 'source_sans';
+    src: url('../fonts/fs/sourcesanspro-bold-webfont.woff2') format('woff2'),
+         url('../fonts/fs/sourcesanspro-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'source_sans';
+    src: url('../fonts/fs/sourcesanspro-it-webfont.woff2') format('woff2'),
+         url('../fonts/fs/sourcesanspro-it-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'source_sans';
+    src: url('../fonts/fs/sourcesanspro-regular-webfont.woff2') format('woff2'),
+         url('../fonts/fs/sourcesanspro-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.child--first{
+    font-family: source_sans, sans-serif;
+    font-weight: normal;
+}
+.child--middle{
+    font-family: source_sans, sans-serif;
+    font-weight: bold;
+}
+.child--last{
+    font-family: source_sans, sans-serif;
+    font-style: italic;
+    font-weight: normal;
+}
+
+
+/* START */
+
+.parent{
+    width:600px;
+    padding:20px; 
+}
+/* INLINE */
+.parent--inline-block .child{
+    display: inline-block;
+    outline: 1px solid red;
+}
+
+.parent--inline-block .child--first{
+    margin-right:5px;
+    width:calc(30% - 5px);
+}
+
+.parent--inline-block .child--middle{
+    margin-right:5px;
+    margin-left:5px;
+    width:calc(30% - 10px);
+}
+.parent--inline-block .child--last{
+    margin-left:5px;
+    width:calc(40% - 5px);
+}
+
+/* END INLINE */
+
+/* FLOAT */
+
+.parent--float{
+    background-color: yellow;
+}
+.parent--float::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+.parent--float .child{
+    float: left;
+    outline: 1px solid green;
+}
+
+.parent--float .child--first{
+    margin-right:5px;
+    width:calc(30% - 5px);
+}
+
+.parent--float .child--middle{
+    margin-right:5px;
+    margin-left:5px;
+    width:calc(30% - 10px);
+}
+.parent--float .child--last{
+    margin-left:5px;
+    width:calc(40% - 5px);
+}
+/* END FLOAT */
+
+/* FLEX */
+
+
+.parent--flexbox{
+    display: flex;
+}
+
+.parent--flexbox .child--first {
+    flex-basis: 30%;
+    margin-right: 5px;
+}
+
+.parent--flexbox .child--middle{
+    margin-left: 5px;
+    margin-right: 5px;
+    flex-basis: 30%;
+}
+
+.parent--flexbox .child--last{
+    margin-left: 5px;
+    flex-basis: 40%;
+}
+
+/* END FLEX */

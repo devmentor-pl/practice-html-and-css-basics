@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <nav class="nav">
+
+        <ul class="nav__list menu">
+            <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+            <li class="menu__item menu__dropdown"><a class="menu__link" href="#">Items</a>
+                
+                    <ul class="menu dropdown">
+                        <li class="dropdown__item"><a class="dropdown__link" href="#">Item 1</a></li>
+                        <li class="dropdown__item menu__dropdown__item--lv2"><a class="dropdown__link" href="#">Item 2</a>
+                            
+                            <ul class="menu dropdown--lv2 menu__dropdown--lv2">
+                                <li class="dropdown__item"><a class="dropdown__link" href="#">Item 2.1</a></li>
+                                <li class="dropdown__item"><a class="dropdown__link" href="#">Item 2.2</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+            </li>
+            <li class="menu__item"><a class="menu__link" href="#">Settings</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
