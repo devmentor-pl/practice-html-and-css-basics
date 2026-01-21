@@ -7,6 +7,157 @@
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
 </head>
 <body>
+
+    <header class="header">
+        
+        <div class="header__container">
+            <img src="" alt="logotype">
+            <nav class="navbar">
+
+                <ul class="navbar__list">
+
+                    <li class="navbar__element">
+                            <a href="" class="navbar__link">START</a>
+                    </li>
+
+                    <li class="navbar__element">
+                        <a href="" class="navbar__link">ABOUT</a>
+                        <ul class="navbar__dropdown dropdown">
+
+                            <li class="dropdown__element">
+                                <a href="" class="dropdown__link">STORY</a>
+                            </li>
+
+                            <li class="dropdown__element">
+                                <a href="" class="dropdown__link">HOW IT STARTED</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    
+                    <li class="navbar__element">
+                        <a href="" class="navbar__link">CONTACT</a>
+                    </li>
+            
+                </ul>
+
+            </nav>
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <article class="article">
+            <h1 class="article__title">Article title</h1>
+            <p class="article__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In ratione expedita voluptas nisi debitis, architecto exercitationem, quos magni consectetur temporibus 
+                ab non ipsam laborum possimus, nostrum ad dolorum? Error aspernatur necessitatibus consequuntur facilis, atque sed quidem est facere nobis perferendis sequi repellat expedita 
+                consectetur eos amet omnis labore soluta itaque aliquid? Eius assumenda, officia deserunt sed suscipit nesciunt ut aliquid et quibusdam a. Enim, distinctio fugit esse ex veritatis 
+                pariatur dolor. Error quam rerum dolorum placeat sequi excepturi deserunt? Aliquid illum suscipit veritatis esse numquam dolorum ipsum sequi commodi laboriosam, delectus temporibus 
+                rem vero quam quod repudiandae dolor aliquam explicabo.
+            </p>
+            <p class="article__date">18.09.24</p>
+            <p class="article__author">Anonymous</p>
+            <img src="" alt="article image" class="article__image">
+
+            <table class="article__table">
+                <thead>
+                    <tr>
+                        <th>X</th>
+                        <th>Y</th>
+                        <th>Z</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+        </article>
+
+        <form action="" class="form">
+            <div class="form__container">
+
+                <div class="form__name"></div>
+                    <label>Name:
+                        <input type="text" name="name" placeholder="Name">
+                    </label>
+                </div>
+
+                <div class="form__surname"></div>
+                    <label>Surname:
+                        <input type="text" name="surname" placeholder="Surname">
+                    </label>
+                </div>
+
+                <div class="form__email">
+                    <label>E-mail:
+                        <input type="email" placeholder="Type your e-mail">
+                    </label>
+                </div>
+
+                <div class="form__comment">  
+                    <label>Comment:
+                        <textarea 
+                            name="comment" 
+                            id="" 
+                            placeholder="Type your comment">
+                        </textarea>
+                    </label>
+                </div>
+
+                <div class="form__button">
+                    <button type="submit">SEND</button>
+                </div>
+
+            </div>
+        </form>
+
+        <div class="comments__container">
+
+            <div class="comment">
+                <p class="comment__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, velit!</p>
+                <p class="comment__author">Janusz Kowalski</p>
+                <p class="comment__date">20.08.24</p>
+                <hr/>
+            </div>
+
+            <div class="comment"></div>
+                <p class="comment__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae, doloribus.</p>
+                <p class="comment__author">John Doe</p>
+                <p class="comment__date">29.08.24</p>
+                <hr/>
+            </div>
+
+            <div class="comment"></div>
+                <p class="comment__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, quidem.</p>
+                <p class="comment__author">Adam Wolny</p>
+                <p class="comment__date">11.09.24</p>
+                <hr/>
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <footer class="footer">
+        <div>
+            &copy; All rights reserved.
+        </div>
+    </footer>
+    
     
 </body>
 </html>
