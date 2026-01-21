@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML i CSS: Podstawy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/reset.css" />
+    <link rel="stylesheet" href="src/index.css" />
+  </head>
+  <body>
+    <nav class="nav__container">
+      <ul class="nav">
+        <li class="nav__item"><a href="#">Home</a></li>
+        <li class="nav__item nav__item--dropdown">
+          <a href="#">Items</a>
+          <ul class="nav__dropdown">
+            <li class="dropdown__item"><a href="#">Item 1</a></li>
+            <li class="dropdown__item">
+              <a href="#">Item 2</a>
+              <ul class="nav__dropdown nav__dropdown--sub">
+                <li class="dropdown__item dropdown__item--sub">
+                  <a href="#">Item 2.1</a>
+                </li>
+                <li class="dropdown__item dropdown__item--sub">
+                  <a href="#">Item 2.2</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="nav__item"><a href="#">Settings</a></li>
+        <li class="nav__item"><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>
