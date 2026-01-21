@@ -1,0 +1,18 @@
+{
+    "sourceFile": "04/index.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1686411862466,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1686411862466,
+            "name": "Commit-0",
+            "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>Document</title>\n    <link rel=\"stylesheet\" href=\"./styles/reset.css\" />\n    <link rel=\"stylesheet\" href=\"./styles/index.css\" />\n  </head>\n  <body>\n    <header class=\"header\">\n      <div class=\"header__container\">\n        <nav class=\"nav header__nav\">\n          <ul class=\"nav__list\">\n            <li class=\"nav__item\"><a href=\"#home\">home</a></li>\n            <li class=\"nav__item nav__item--arrow\">\n              items\n              <ul class=\"nav__dropdown dropdown\">\n                <li class=\"dropdown__item\"><a href=\"\">item 1</a></li>\n                <li class=\"dropdown__item nav__item--arrow\">\n                  item 2\n                  <ul class=\"nav__dropdown dropdown--deep dropdown\">\n                    <li class=\"dropdown__item\"><a href=\"\">item 2.1</a></li>\n                    <li class=\"dropdown__item\"><a href=\"\">item 2.2</a></li>\n                  </ul>\n                </li>\n              </ul>\n            </li>\n            <li class=\"nav__item\"><a href=\"#\">settings</a></li>\n            <li class=\"nav__item\"><a href=\"#\">contact</a></li>\n          </ul>\n        </nav>\n      </div>\n    </header>\n  </body>\n</html>\n"
+        }
+    ]
+}

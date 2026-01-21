@@ -1,12 +1,143 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <h1 class="header__logo">logo</h1>
+        <nav class="header__nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#">home</a></li>
+            <li class="nav__item"><a href="#">gallery</a></li>
+            <li class="nav__item">
+              <a href="#">articles</a>
+              <ul class="nav__dropdown">
+                <li class="dropdown__item"><a href="">current year</a></li>
+                <li class="dropdown__item"><a href="">prior to 2023</a></li>
+              </ul>
+            </li>
+            <li class="nav__item"><a href="#">bio</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="section__main section">
+      <article class="section__article article">
+        <h3 class="article__title">title</h3>
+        <p class="article__content">
+          God is milking the cows through the vocation of the milkmaid.
+        </p>
+        <p class="article__publish-date">
+          <time datetime="2023-05-16 07:00">May 16</time>
+        </p>
+        <p class="article__author"><b>Author: </b>John Doe</p>
+        <img
+          src="https://quotestoponder.files.wordpress.com/2015/05/french-school-19-france-the-milkmaid-1758880.jpg?w=640"
+          alt="a milkmaid milking a cow"
+          class="article__image"
+        />
+        <table class="article__table">
+          <caption>
+            Top 15 milk producing countries in the world
+          </caption>
+          <thead>
+            <tr>
+              <th>World Rank</th>
+              <th>Country</th>
+              <th>Tonnes of Milk</th>
+              <th>Percentage of World Milk Production</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>United States of America</td>
+              <td>87,461,300</td>
+              <td>14.6</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>India</td>
+              <td>50,300,000</td>
+              <td>8.4</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>China</td>
+              <td>36,036,086</td>
+              <td>6.0</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+
+      <form class="section__form section">
+        <h2 class="form__title">Share your cow related experience</h2>
+        <div class="form__input-control">
+          <label for="fname">Name</label>
+          <input id="fname" name="fname" type="text" />
+        </div>
+        <div class="form__input-control">
+          <label for="lname">Surname</label>
+          <input id="lname" name="lname" type="text" />
+        </div>
+        <div class="form__input-control">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="text" />
+        </div>
+        <div class="form__input-control">
+          <label for="comment">Comment</label>
+          <textarea id="comment" name="comment" type="text"></textarea>
+        </div>
+        <div class="form__input-checkbox">
+          <label>
+            <input type="checkbox" id="checkbox" name="language" value="ar" />
+            Akceptuję regulamin.
+            <span class="input-checkbox__checkmark"></span>
+          </label>
+        </div>
+      </form>
+
+      <section class="section__comments section">
+        <div class="comments__single-comment">
+          <p class="single-comment__content">
+            A cow that is milking drinks about 30 to 50 gallons of water each
+            day.
+          </p>
+          <p class="single-comment__author"><b>Author: </b>John Doe</p>
+          <p class="single-comment__date">
+            <time datetime="2023-05-16 07:00">May 16</time>
+          </p>
+        </div>
+
+        <div class="comments__single-comment">
+          <p class="single-comment__content">Cows have four stomachs.</p>
+          <p class="single-comment__author"><b>Author: </b>John Doe</p>
+          <p class="single-comment__date">
+            <time datetime="2023-05-16 07:00">May 16</time>
+          </p>
+        </div>
+
+        <div class="comments__single-comment">
+          <p class="single-comment__content">
+            An average dairy cow produces 7 to 9 gallons of milk a day.
+          </p>
+          <p class="single-comment__author"><b>Author: </b>John Doe</p>
+          <p class="single-comment__date">
+            <time datetime="2023-05-16 07:00">May 16</time>
+          </p>
+        </div>
+      </section>
+
+      <footer class="section__footer section">
+        <div>&copy; 2023 John Doe</div>
+      </footer>
+    </main>
+  </body>
 </html>

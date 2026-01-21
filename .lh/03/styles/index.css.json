@@ -1,0 +1,42 @@
+{
+    "sourceFile": "03/styles/index.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 6,
+            "patches": [
+                {
+                    "date": 1686410963770,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1686411020676,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n }\n \n @font-face {\n   font-family: \"Source Sans PRO\";\n-  src: url(source-sans-pro/SourceSansPro-Bold.otf) format(\"opentype\");\n+  src: url(source-sans-pro/SourceSansPro-It.otf) format(\"opentype\");\n   font-style: normal;\n   font-weight: bold;\n }\n \n"
+                },
+                {
+                    "date": 1686411029127,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n \n @font-face {\n   font-family: \"Source Sans PRO\";\n   src: url(source-sans-pro/SourceSansPro-It.otf) format(\"opentype\");\n-  font-style: normal;\n+  font-style: italic;\n   font-weight: bold;\n }\n \n * {\n"
+                },
+                {
+                    "date": 1686411153265,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,11 +6,18 @@\n }\n \n @font-face {\n   font-family: \"Source Sans PRO\";\n+  src: url(source-sans-pro/SourceSansPro-Bold.otf) format(\"opentype\");\n+  font-style: normal;\n+  font-weight: bold;\n+}\n+\n+@font-face {\n+  font-family: \"Source Sans PRO\";\n   src: url(source-sans-pro/SourceSansPro-It.otf) format(\"opentype\");\n   font-style: italic;\n-  font-weight: bold;\n+  font-weight: normal;\n }\n \n * {\n   margin: 0;\n"
+                },
+                {
+                    "date": 1686411164757,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n @font-face {\n   font-family: \"Source Sans PRO\";\n   src: url(source-sans-pro/SourceSansPro-Bold.otf) format(\"opentype\");\n   font-style: normal;\n-  font-weight: bold;\n+  font-weight: normal;\n }\n \n @font-face {\n   font-family: \"Source Sans PRO\";\n"
+                },
+                {
+                    "date": 1686411183399,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n @font-face {\n   font-family: \"Source Sans PRO\";\n-  src: url(source-sans-pro/SourceSansPro-Bold.otf) format(\"opentype\");\n+  src: url(SourceSansPro-Regular.otf) format(\"opentype\");\n   font-style: normal;\n   font-weight: normal;\n }\n \n"
+                },
+                {
+                    "date": 1686411739241,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -69,6 +69,6 @@\n   font-weight: bold;\n }\n \n .child.child--last {\n-  font-style: italic;\n+  /* font-style: italic; */\n }\n"
+                }
+            ],
+            "date": 1686410963769,
+            "name": "Commit-0",
+            "content": "@font-face {\n  font-family: \"Source Sans PRO\";\n  src: url(source-sans-pro/SourceSansPro-Bold.otf) format(\"opentype\");\n  font-style: normal;\n  font-weight: bold;\n}\n\n@font-face {\n  font-family: \"Source Sans PRO\";\n  src: url(source-sans-pro/SourceSansPro-Bold.otf) format(\"opentype\");\n  font-style: normal;\n  font-weight: bold;\n}\n\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  font-family: \"Source Sans PRO\", sans-serif;\n}\n\n.parent {\n  width: 600px;\n  padding: 20px;\n  background-color: antiquewhite;\n  margin: 15px;\n}\n\n/* INLINE BLOCK */\n.parent--inline-block .child {\n  display: inline-block;\n}\n\n/* FLOAT  */\n.parent--float .child {\n  float: left;\n}\n\n.parent--float::after {\n  content: \"\";\n  display: block;\n  clear: both;\n}\n\n/* FLEX */\n.parent--flexbox {\n  display: flex;\n}\n\n.child {\n  /* outline: 1px solid; */\n  /* outline-color: red; */\n  margin: 5px;\n  width: calc(30% - 10px);\n}\n\n.parent .child--last {\n  width: calc(40% - 10px);\n}\n\n.child.child--middle {\n  font-weight: bold;\n}\n\n.child.child--last {\n  font-style: italic;\n}\n"
+        }
+    ]
+}
