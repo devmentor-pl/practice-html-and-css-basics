@@ -1,0 +1,43 @@
+.header__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo {
+    flex-basis: 25%;
+}
+
+.header__nav {
+    flex-basis: 50%;
+}
+
+.first-content__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.first-content__article {
+    flex-basis: 48%;
+    min-height: 400px;
+}
+
+.second-content__container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.second-content__item {
+    min-height: 200px;
+    flex-basis: 31%;
+}
+
+.footer__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__author {
+    flex-basis: 30%;
+    min-height: 100px;
+}
