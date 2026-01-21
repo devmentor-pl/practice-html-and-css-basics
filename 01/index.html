@@ -1,12 +1,99 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__container">
+        <img src="./logo.jpg" alt="Logo" class="header__img" />
+        <ul class="header__nav">
+          <li class="header__nav-item">Home</li>
+          <li class="header__nav-item">Artykuł</li>
+          <li class="header__nav-item">Kontakt</li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="main__article-container">
+        <article class="main__article">
+          <h1 class="main__article-title">Konkretny artykuł !</h1>
+          <p class="main__article-content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsum
+            dolorem quis illo ratione et, rerum molestias cupiditate tenetur
+            veniam est ipsam? Fugiat, perferendis. Deserunt quaerat deleniti
+            tempore recusandae harum! Id nesciunt harum explicabo nisi cum amet
+            libero sed sit laudantium, consequuntur magnam, velit doloremque?
+            Iusto tempore, voluptates officiis minus id ut, cum neque assumenda
+            est itaque blanditiis deleniti officia. Perferendis provident
+            explicabo fugit deleniti laudantium atque accusamus distinctio
+            facilis cupiditate delectus obcaecati similique tenetur aperiam
+            ratione maiores cum incidunt debitis, consequatur, corrupti
+            excepturi porro eius placeat odio. Est, ducimus!
+          </p>
+          <p class="main__article-date">20.11.2012</p>
+          <p class="main__article-author">Jan Nieznany</p>
+          <img
+            src="./article-img.jpg"
+            alt="Money image"
+            class="main__article-img"
+          />
+          <table class="main__article-table">
+            <thead>
+              <tr>
+                <th>Imię</th>
+                <th>Nazwisko</th>
+                <th>Wiek</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Jasiu</td>
+                <td>Kapela</td>
+                <td>55</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+      </section>
+      <section class="main_form-container">
+        <form class="main__form" action="#" method="POST">
+          <input
+            class="main__form-email"
+            placeholder="Wpisz swój adres email..."
+            type="email"
+          />
+          <textarea
+            class="main__form-comment"
+            placeholder="Wpisz komentarz tutaj..."
+            name="email"
+            id="email"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <button class="main__form-submit" type="submit">Wyślij</button>
+        </form>
+      </section>
+      <section class="main__comments-container">
+        <article class="main__comment">
+          <p class="main__comment-content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi natus
+            perferendis hic, perspiciatis quis aperiam iure, similique odio
+            cumque blanditiis nostrum omnis exercitationem fuga libero, deleniti
+            dolore! Consectetur, reiciendis odio.
+          </p>
+          <p class="main__comment-author">Arkadiusz Pan Pawłowski</p>
+          <p class="main__comment-date">14-10-2011</p>
+        </article>
+      </section>
+    </main>
+    <footer class="footer">
+      <h2 class="footer__copyright">
+        Wszelkie prawa zastrzeżone <span>&copy</span>
+      </h2>
+    </footer>
+  </body>
 </html>
