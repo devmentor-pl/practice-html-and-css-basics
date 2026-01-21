@@ -1,12 +1,91 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>devmentor.pl - HTML & CSS BASICS - #01</title>
-</head>
-<body>
-    
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>devmentor.pl - HTML & CSS BASICS - #01</title>
+	</head>
+	<body>
+		<header>
+			<nav class="nav__menu">
+				<figure>
+					<img src="./sciezka-do-logo" alt="logo" />
+				</figure>
+				<ul class="nav__list">
+					<li class="nav__item"><a href="#">O nas</a></li>
+					<li class="nav__item"><a href="#">Produkty</a></li>
+					<li class="nav__item"><a href="#">Kontakt</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<article class="post">
+				<h1 class="post__heading">Nagłówek postu</h1>
+				<p class="post__description">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione,
+					facere!
+				</p>
+				<p class="post__publishing">Data publikacji: <time>2023-09-06</time></p>
+				<p class="post__author">Jan Nowak</p>
+				<figure>
+					<img src="./ściezka-do-obrazu" alt="zdjęcie " />
+					<figcaption>opis zdjęcia</figcaption>
+				</figure>
+
+				<table>
+					<caption>Nagłowek tabeli</caption>
+					<thead>
+						<tr>
+							<th>Nazwa</th>
+							<th>Ilość</th>
+							<th>Cena</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>lorem</td>
+							<td>ipsum</td>
+							<td>dolor</td>
+						</tr>
+					</tbody>
+				</table>
+					<form>
+                        <div>
+                            <label for="comment">Treść komentarza:</label>
+                            <textarea name="comment" id="comment" ></textarea>
+                        </div>
+                        <div>
+                            <label for="author">Autor komentarza:</label>
+                            <input type ="text" id="author"></input>
+                        </div>
+						<div>
+							<button type ="submit">Dodaj komentarz</button>
+						</div>
+					</form>
+			</article>
+            <section>
+                <ul>
+                    <li>
+                        <p>komentarz: Lorem, ipsum dolor.</p>
+                        <p>Autor: Jan Nowak</p>
+                        <p>Data komentarza: <time>2023-09-06</time></p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <p>komentarz: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, rerum.</p>
+                        <p>Autor: Jan Kowalski</p>
+                        <p>Data komentarza: <time>2023-05-06</time></p>
+                    </li>
+                </ul>
+            </section>
+
+            <footer>
+                <div>
+                    &copy Wszelkie prawa zastrzeżone
+                </div>
+            </footer>
+		</main>
+	</body>
 </html>
