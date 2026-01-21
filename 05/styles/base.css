@@ -1,0 +1,24 @@
+.row,
+.container {
+	margin: 10px;
+	outline: 3px solid;
+	padding: 5px 0;
+}
+
+.row {
+	outline-color: green;
+}
+
+.container {
+	width: 1000px;
+	outline-color: blue;
+	margin: 0 auto;
+}
+
+.cell {
+	outline-color: orange;
+	min-height: 50px;
+	outline: 3px solid orange;
+	background-color: orange;
+	padding: 5px 0;
+}
