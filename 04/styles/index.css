@@ -1,0 +1,132 @@
+body{
+    background-color: #F6F6F6;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+:root {
+    --color-alfa: rgb(0, 154, 225);
+    --color-beta: rgb(255, 255, 255);
+    --color-gamma: rgb(51, 51, 51);
+}
+
+.nav {
+    background: var(--color-beta);
+    display: flex;
+    padding: 0 10px 10px;
+}
+
+.nav__item {
+    background: var(--color-beta);
+    cursor: pointer;
+    padding: 12px 20px;
+    position: relative;
+    border-top: 4px solid var(--color-beta);
+    text-transform: uppercase;
+}
+
+.nav__item:first-child{
+    color: var(--color-alfa);
+}
+
+.nav__item:hover {
+    border-top: 4px solid var(--color-alfa);
+    color: var(--color-alfa);
+}
+
+.nav__item--no-space {
+    margin-left: 0;
+}
+
+
+/* Strzałki 1  */
+
+.nav__item > ul::before,
+.dropdown__item > ul::before {
+    content: "";
+}
+
+.nav__item:hover::after{
+    content: ">";
+    position: absolute;
+    display: inline-block;
+    right: 4px;
+    margin-left: 8px;
+    transform: rotate(90deg);
+}
+
+/* Strzałki 2  */
+
+.dropdown__item:hover::after{
+    content: ">";
+    position: absolute;
+    display: inline-block;
+    right: 16px;
+    margin-left: 8px;
+}
+
+/* Jak zrobić żeby w ostatim nie było strzałek ?  */
+
+/* Działa ale czy moza inaczej?? Co w sytuacji gdyby zagłębień było więcej np. automatycznie tworzone?  */
+
+.nav__dropdown .nav__dropdown:last-child > .dropdown__item:hover::after{
+    content: "";
+}
+
+.nav__link {
+    display: inline-block;
+    color: var(--color-beta);
+    height: 100%;
+    text-decoration: none;
+    width: 100%;
+}
+
+.nav__item:hover > .nav__dropdown {
+    display: block;
+}
+
+.nav__item:hover > .nav__dropdown::after {
+    display: block;
+}
+
+.nav__dropdown {
+    display: none;
+    padding-top: 20px;
+    position: absolute;
+    left: 0;
+}
+
+/* Drugie rozwijanie */ 
+
+.dropdown__item:hover > .nav__dropdown {
+    display: block;
+}
+
+.nav__dropdown .nav__dropdown {
+    display: none;
+    padding-top: 20px;
+    position: absolute;
+    top: 42.4px;
+    left: 100%;
+}
+
+.dropdown__item {
+    min-width: 120px;
+    padding: 12px 20px;
+    background: var(--color-gamma);
+    color: var(--color-beta);
+    text-transform: capitalize;
+}
+
+
+.dropdown__link {
+    display: inline-block;
+    color: var(--color-alfa);
+    height: 100%;
+    text-decoration: none;
+    width: 100%;
+}

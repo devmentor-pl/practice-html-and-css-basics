@@ -1,0 +1,64 @@
+@font-face {
+	font-family: 'Source Sans PRO';
+	src: url(source-sans-pro/SourceSansPro-Bold.otf) format('opentype');
+	font-style: normal;
+	font-weight: bold;
+}
+
+/* Google Font
+
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Amatic+SC:wght@400;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Oleo+Script:wght@400;700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Square+Peg&family=The+Nautigal:wght@400;700&display=swap'); 
+
+*/
+
+*{
+	font: bold 12px/1.5em 'Source Sans PRO', regular;
+}
+
+.parent{
+    box-sizing: border-box;
+    max-width: 600px; /* Dla mniejszych ekranów txt nie mieściłby się*/
+    padding: 20px; /* Łącznie będzie 640px*/
+    display: flex;
+    gap: 10px;
+}
+
+/* 
+
+.child--first, .child--middle{
+    width: 30%;
+    
+}
+hild--last{
+    width: 40%;
+    
+}
+
+Zmiana na calc()
+
+*/
+
+.child{
+    width: 30%;
+}
+
+.child:last-child{
+    min-width: calc(100% - 368px); /* Mam wrażenie, że można to lepiej ograć */
+}
+
+.child--first{
+    display: inline-block;
+    font-weight: 400;
+}
+.child--middle{
+    float: right;
+    font-weight: bold;
+}
+.child--last{
+    display: flex;
+    align-items: end;
+    justify-content: left;
+    font-style: italic;
+    font-weight: 300;
+}
+

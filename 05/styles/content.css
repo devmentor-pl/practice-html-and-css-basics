@@ -1,0 +1,31 @@
+/* content.css */
+
+.content__container {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+}
+
+section[data-id="Moduł 1"] .content__container{
+    /* box-sizing: border-box; Przeniosłem do base.css */
+    padding: 0px;
+}
+
+/* Czy tuaj moglibyśmy zastosować podstawienie za "Moduł x" funkcję? Jak to będzie wyglądało w js? */
+
+section[data-id="Moduł 1"] .content__article.cell {
+    min-height: 300px;
+    width: 49.5%;
+    margin: 0px;
+}
+
+
+section[data-id="Moduł 2"] .content__article.cell {
+    min-height: 300px;
+    width: 33%;
+}
+
+section[data-id="Moduł 2"] .content__container{
+    /* box-sizing: border-box; Przeniosłem do base.css */
+    padding: 12px;
+}
