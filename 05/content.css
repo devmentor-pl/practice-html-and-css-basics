@@ -1,0 +1,17 @@
+/* content.css */
+.content__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+.content__article {
+    min-height: 150px;
+    width: 50%;
+    margin: 10px 10px 10px 0;
+
+}
+.content__ads {
+    min-height: 150px;
+    width: 50%;
+    margin: 10px 0 10px 10px
+}

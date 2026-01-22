@@ -1,0 +1,11 @@
+/* lastbox.css */
+.lastbox__container {
+    display: flex;
+    align-items: center;
+
+}
+.lastbox__box {
+    display: flex;
+    width: 30%;
+    
+}
