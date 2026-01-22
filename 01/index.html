@@ -5,8 +5,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
+    <style>
+        /* Dodałem ostylowanie, żeby nie oślepnąć od ekranu */
+        body {
+            background-color: #767676;
+            font-family: sans-serif;
+        }
+
+        table, th, td {
+            border:  1px solid black;
+        }
+    </style>
 </head>
 <body>
-    
+
+    <header>
+        <img class="logo" src="" alt="LOGO">
+        <nav class="navbar">
+            <ul class="main-menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="index.html">ABOUT ME</a></li>
+                <li><a href="#">WORK</a>
+                    <ul>
+                        <li><a href="#">PHOTO</a>
+                            <ul>
+                                <li><a href="">ICELAND</a></li>
+                                <li><a href="">ARGENTINA</a></li>
+                                <li><a href="">POLAND</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">DESIGN</a></li>
+                        <li><a href="#">ANIMATIONS</a></li>
+                        <li><a href="#">WEB</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <article class="article">
+            <h2>Lorem ipsum dolor</h2>
+            <img src="" alt="PICTURE">
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus aspernatur enim nisi quia illo, porro autem, repudiandae impedit error, odit excepturi dolor deleniti aperiam provident non accusamus! Facilis ut ex debitis natus. Similique molestiae modi id eos laboriosam sint repellendus possimus numquam perferendis magnam. Suscipit aliquam tenetur incidunt asperiores itaque deleniti dolor. Corrupti incidunt dolores libero, exercitationem dicta suscipit cum architecto quia. Ex repudiandae laboriosam natus aliquam perspiciatis dignissimos aspernatur!
+            </p>
+            <address>Author: Marek Bełz
+                <time datetime="2024-07-28">28.07.24</time>
+            </address>
+            
+            <table>
+                <caption>Important Table</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Title-1</th>
+                        <th scope="col">Title-2</th>
+                        <th scope="col">Title-3</th>
+                        <th scope="col">Title-4</th>
+                        <th scope="col">Title-5</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Title-1-2</th>
+                        <td>DATA</td>
+                        <td>DATA</td>
+                        <td>DATA</td>
+                        <td>DATA</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Title-1-3</th>
+                        <td>DATA</td>
+                        <td>DATA</td>
+                        <td>DATA</td>
+                        <td>DATA
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+
+        <section class="comment-section">
+            <form action="">
+                <h5>Comment:</h5>
+                <div>
+                    <textarea placeholder="Comment!" name="comments" id="comments" rows="10" cols="50"></textarea>
+                </div>
+                <input type="submit">
+            </form>
+            <div class="comment-history">
+                <div class="comment" id="last-comment">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, illo alias. Perferendis, doloremque animi qui voluptates quidem itaque veritatis. Magnam vero cum minus excepturi! Fugiat nihil voluptatem facilis, accusantium ipsam porro possimus cum non quidem beatae dolorum culpa nam sunt.
+                    </p>
+                    <address>Author: Marek Bełz
+                        <time datetime="2024-07-28">28.07.24</time>
+                    </address>
+                </div>
+                <div class="comment">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, illo alias. Perferendis, doloremque animi qui voluptates quidem itaque veritatis. Magnam vero cum minus excepturi! Fugiat nihil voluptatem facilis, accusantium ipsam porro possimus cum non quidem beatae dolorum culpa nam sunt.
+                    </p>
+                    <address>Author: Marek Bełz
+                        <time datetime="2024-07-28">28.07.24</time>
+                    </address>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2024 Marek Bełz</p>
+        </footer>
+
+
+    </main>
+
 </body>
 </html>

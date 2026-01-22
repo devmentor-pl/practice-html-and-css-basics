@@ -1,0 +1,64 @@
+.row {
+    outline: 3px solid;
+    outline-color: green;
+    margin: 10px auto;
+    padding: 5px;
+}
+
+.container {
+    outline: 3px solid blue;
+    width: 1000px;
+    margin: 5px auto;
+}
+
+.item {
+    border: 3px solid orange;
+}
+
+
+
+.header__container {
+   display: flex; 
+   justify-content: space-between;
+   padding: 5px 0;
+}
+
+.header__menu {
+    display: flex;
+}
+
+.menu__item {
+    margin-left: 10px;
+}
+
+.content_container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.content__item {
+    max-width: 495px;
+}
+
+.extra__container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 5px;
+}
+
+.extra__item {
+    margin: 10px 5px;
+}
+
+.footer__container {
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__item {
+    max-width: 50%;
+
+}
