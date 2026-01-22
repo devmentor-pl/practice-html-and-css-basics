@@ -1,12 +1,167 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <meta
+        http-equiv="X-UA-Compatible"
+        content="ie=edge"
+    >
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
+
+    <link
+        rel="stylesheet"
+        href="./css/reset.css"
+    >
+    <link
+        rel="stylesheet"
+        href="./css/base.css"
+    >
+    <link
+        rel="stylesheet"
+        href="./css/header.css"
+    >
+    <link
+        rel="stylesheet"
+        href="./css/menu.css"
+    >
+    <link
+        rel="stylesheet"
+        href="./css/content.css"
+    >
+    <link
+        rel="stylesheet"
+        href="./css/footer.css"
+    >
+
 </head>
+
 <body>
-    
+    <header class="header row">
+        <div class="header__container container">
+            <div class="haeder__logo cell">
+                <img
+                    src="./logo.png"
+                    alt="Logo"
+                >
+            </div>
+
+            <nav class="header__nav cell">
+                <ul>
+                    <li>Menu 1
+                        <ul>
+                            <li>dropdown 1
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>Menu 2
+                        <ul>
+                            <li>dropdown 2
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Menu 3
+                        <ul>
+                            <li>dropdown 3
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Menu 4
+                        <ul>
+                            <li>dropdown 4
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+    <main class="main row">
+        <div class="article cell">
+            <h2>TITLE</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum tenetur delectus perferendis quo velit!
+                Eveniet, nesciunt unde! Mollitia illum quia, facilis rerum, beatae, tempore quo accusantium odio vel
+                provident officiis?</p>
+            <p>DD-MM-YYYY</p>
+            <p>AUTHOR</p>
+            <img
+                src=""
+                alt="illustration"
+            >
+            <table>
+                <thead>
+                    <tr>
+                        <td>column 1</td>
+                        <td>column 2</td>
+                        <td>column 3</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>column 1</td>
+                        <td>column 2</td>
+                        <td>column 3</t>
+                    </tr>
+                    <tr>
+                        <td>column 1</td>
+                        <td>column 2</td>
+                        <td>column 3</td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+        </div>
+
+        <div class="form cell">
+            <form action="">
+                <div>
+                    <label> Name
+                        <input
+                            type="name"
+                            name="firstName"
+                            placeholder="type your name"
+                        >
+                    </label>
+                </div>
+                <div>
+                    <label> Comment
+                        <textarea
+                            name="Comment"
+                            cols="30"
+                            rows="10"
+                            placeholder="share your opinion"
+                        ></textarea>
+                    </label>
+                </div>
+                <div><input type="submit"></div>
+            </form>
+            <div>
+                <p>amazing website made by total beginner</p>
+                <p>Random User</p>
+                <p>dd-mm-yyyy</p>
+            </div>
+            <div>
+                <p>I'm honestly impressed</p>
+                <p>Random User</p>
+                <p>dd-mm-yyyy</p>
+            </div>
+
+
+        </div>
+    </main>
+    <footer class="footer row">
+        <div>&copy; AlekZy 2023</div>
+
+    </footer>
 </body>
+
 </html>

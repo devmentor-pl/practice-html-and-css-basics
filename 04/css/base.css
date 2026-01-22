@@ -1,0 +1,70 @@
+:root {
+    --color-a: #333333;
+    --color-b: #5DB4E9;
+    --color-c: #F7F7F7;
+    --color-d: #FFFFFF;
+}
+.nav {
+    background-color: var(--color-c);
+    display: flex;
+    font-family: sans-serif;
+    margin: 10px;
+    position: relative;
+}
+.nav__item {
+    color: var(--color-a);
+    background-color: var(--color-d);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.arrow {
+    font-size: 10px;
+    position: absolute;
+    right: 6px;
+    top: 25%;
+    
+}
+.arrow:hover {
+    transform: rotate(0.25turn);
+}
+.nav__dropdown {
+    display: none;
+    width: 200px;
+    padding : 20px;
+    position: absolute;
+    top: 100%;
+}
+.nav__item:hover > .nav__dropdown {
+    display: block;
+}
+.nav__dropdown2{
+    display: none;
+    float: right;
+    width: 200px;
+}
+.dropdown__item:hover> .nav__dropdown2 {
+    display: block;
+}
+.dropdown__item {
+    background-color: var(--color-a);
+    color: var(--color-d);
+    padding: 5px 20px;
+    position: relative;
+    
+}
+.dropdown2__item {
+    background-color: var(--color-a);
+    color: var(--color-d);
+    padding: 5px 20px;
+    position: relative;
+    top: 0;
+    left: 100%;
+}
+
+.nav__item:hover {
+    color: var(--color-b);
+    border-top: 5px solid var(--color-b);
+}

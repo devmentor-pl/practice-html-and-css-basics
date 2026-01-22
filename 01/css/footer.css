@@ -1,0 +1,6 @@
+.footer.row {
+    background-color: black;
+    color: red;
+    display: flex;
+    justify-content: center;
+}
