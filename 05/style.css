@@ -1,0 +1,71 @@
+body{
+    background-color: white;
+}
+
+.green{
+    border: 3px solid green;
+    margin: 5px;
+    padding: 5px 0;
+}
+
+.header--green .blue{
+    display: flex;
+    justify-content: space-between;
+}
+
+.green--main .orange{
+    min-height: 300px;
+
+}
+
+.blue{
+    max-width: 1000px;
+    width: 800PX;
+    border: 3px solid blue;
+    margin: 0 auto;
+    padding: 5px 0;
+}
+
+.orange{
+    background-color: orange;
+    min-height: 50px;
+}
+
+.orange--logo{
+    width: 100px;
+    margin: 0;
+}
+
+.orange--nav{
+    width: 200px;
+}
+
+.green--main .blue{
+    display: flex;
+    justify-content: space-between;
+}
+
+.green--main .orange{
+    width: 48%;
+    min-height: 250px;
+    
+}
+
+.green--section .blue{
+    display: flex;
+    justify-content: space-around;
+}
+
+.green--section .orange{
+    width: 25%;
+}
+
+.green--footer .blue{
+    display: flex;
+     justify-content: center;
+}
+
+.green--footer .orange{
+    width: 20%;
+   
+}
