@@ -40,7 +40,7 @@ PS. Użyteczna może okazać się znajomość funkcji [calc()](https://www.w3sch
 div {
 	font-family: 'Source Sans PRO Bold';
 }
-```
+
 ```css
 ✅
 @font-face {

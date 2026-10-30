@@ -1,0 +1,23 @@
+.row,
+.cell,
+.container {
+  margin: 15px;
+  padding: 5px;
+  outline: 3px solid
+}
+
+.row {
+  outline-color: green;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1200px;
+  outline-color: blue;
+}
+
+.cell {
+  outline-color: orange;
+}

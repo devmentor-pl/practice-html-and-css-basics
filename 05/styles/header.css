@@ -1,0 +1,15 @@
+.header__logo,
+.header__nav {
+  min-height: 50px;
+}
+
+.header__logo {
+  width: 200px;
+  margin-left: 0;
+
+}
+
+.header__nav {
+  min-width: 400px;
+  margin-right: 0;
+}
