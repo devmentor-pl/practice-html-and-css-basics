@@ -1,0 +1,47 @@
+header, section, footer {
+    width: 100%;
+    border: 2px solid green;
+}
+
+img {
+    width: 200px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 1px auto;
+    border: 1px solid blue;
+}
+
+header .container {
+     display: flex;
+    justify-content: space-between;
+}
+
+.section--two-columns .container {
+    display: flex;
+    gap: 20px;
+    flex-direction:row;
+}
+
+.section--two-columns .container p{
+flex: 1;
+min-width: 0;
+}
+
+.section--three-columns .container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.section--three-columns .container p {
+    width: 25%;
+}
+
+footer .container {
+    display: flex;
+    min-height: 100px;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,12 +1,117 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>devmentor.pl - HTML & CSS BASICS - #01</title>
+    <title>Supercars London</title>
 </head>
+
 <body>
-    
+    <header>
+        <img src="logo.png" alt="Super cars London" width="400">
+        <nav>
+            <ul>
+                <li>Samochody
+                    <ul>
+                        <li>Samochody elektryczne</li>
+                        <li>Samochody spalinowe</li>
+                    </ul>
+                </li>
+                <li>Miejsca
+                    <ul>
+                        <li>London</li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#komentarze">Komentarze</a>
+                </li>
+            </ul>
+        </nav>
+        </header>
+        <main>
+            <article>
+                <h1>Wyprawa do Londynu</h1>
+
+                <p>Wyprawa do Londynu to doskonały sposób na poznanie jednego z najciekawszych miast na świecie. Londyn
+                    to
+                    miasto pełne historii, kultury i nowoczesności.
+                    Wraz z moim synem postanowiliśmy odwiedzić kilka znanych miejsc, takich jak Mayfair czy
+                    Knightsbridge
+                    gdzie mieliśmy szansę natknąć się na super samochody. Byliśmy również zachwyceni różnorodnością
+                    samochodów, które mogliśmy zobaczyć na ulicach Londynu, od klasycznych modeli po nowoczesne
+                    samochody
+                    elektryczne.
+                    Nasza wyprawa do Londynu miała na celu uchwycić na zdjęciach niesamowite samochody, którymi się
+                    fascynujemy. Postanowiłem umieścić jeden z nich na mojej stronie internetowej.
+                </p>
+                <time datetime="2026-02-23">23 lutego 2026</time>
+                <p><strong>Autor:</strong> Michał Zagdański</p>
+                <img src="photo.jpeg" alt="Mercedes-Benz Ponton" width="400">
+                <table>
+                    <caption>Parametry samochodów</caption>
+                    <thead>
+                        <tr>
+                            <th>Model</th>
+                            <th>Moc</th>
+                            <th>Przyspieszenie 0-100 km/h</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Mercedes-Benz Ponton C63 AMG V8</td>
+                            <td>457 KM</td>
+                            <td>4,3 s</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+            </article>
+            <section>
+                <h2>Dodaj komentarz</h2>
+                <form>
+
+                    <div>
+                        <label>Twoje imię :
+                            <input name="firstName" type="text" />
+                        </label>
+                    </div>
+                    <div>
+                        <label>Twoje nazwisko :
+                            <input name="secondName" type="text" />
+                        </label>
+                    </div>
+                    <div>
+                        <label>Treść komentarza :
+                            <textarea name="komentarz"></textarea>
+
+                        </label>
+                    </div>
+                    <div>
+                        <input type="submit" value="Dodaj komentarz" />
+                    </div>
+                </form>
+            </section>
+            <hr>
+            <section id="komentarze">
+                <h2>Komentarze</h2>
+                <article>
+                    <p>Super bryka!</p>
+                    <p><strong>Autor:</strong>Monika</p>
+                    <time datetime="2026-02-24">24 lutego 2026</time>
+                </article>
+                <hr>
+                <article>
+                    <p>Nie ma jazdy bez gwiazdy jak to mówią</p>
+                    <p><strong>Autor:</strong>Michał</p>
+                    <time datetime="2026-02-25">25 lutego 2026</time>
+                </article>
+            </section>
+
+        </main>
+        <footer>&copy; 2026 Supercars London. Wszystkie prawa zastrzeżone.</footer>
 </body>
+
 </html>
