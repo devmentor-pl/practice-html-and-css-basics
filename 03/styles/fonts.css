@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url("../source-sans-pro/SourceSansPro-Bold.otf") format('opentype');
+  font-style: normal;
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url("../source-sans-pro/SourceSansPro-Regular.otf") format('opentype');
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("../source-sans-pro/SourceSansPro-It.otf") format('opentype');
+  font-style: italic;
+  font-weight: 500;
+}

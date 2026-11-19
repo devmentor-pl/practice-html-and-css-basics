@@ -7,6 +7,73 @@
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
 </head>
 <body>
-    
+    <header>
+        <!-- Logo -->
+        <img src="#" alt="logo strony" >
+        <nav>
+            <!-- Menu -->
+             <ul>
+                 <li>
+                    <a href="#">Start</a>
+                </li>
+                <li>
+                    <a href="#">Kursy</a>
+                </li>
+                <li>
+                    <a href="#">Kontakt</a>
+                </li>
+             </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2>Tytuł</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt perferendis, 
+                animi suscipit optio delectus atque! Fugit modi consequatur hic ullam.</p>
+            <span>data publikacji</span> <em>autor</em>
+            <!-- figure -->
+            <figure>
+                <img src="#" alt="image figure">
+                <figcaption>Obraz ilustracji <em>autor</em></figcaption>
+            </figure>
+            <!-- table -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Test</td>
+                        <td>Test</td>
+                        <td>Test</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+        <form action="/save-comment" method="POST">
+            <!-- Text your name -->
+            <div>
+                <label for="author">Twój Nick</label><br>
+                <input type="text" id="author" name="author" placeholder="Input your name" required>
+            </div>
+            <br>
+            <!-- write to text comment -->
+             <div>
+                <label for="text-comment">Komentarz:</label><br>
+                <textarea name="comment" id="text-comment" rows="5" cols="40" placeholder="write comment" required></textarea>
+             </div>
+
+             <br>
+
+             <!-- button to send -->
+              <button type="submit">Dodaj komentarz</button>
+        </form>
+    </main>
+    <!-- Footer -->
+    <footer>&copy; Strona HTML & CSS Grzegorz Sumara</footer>
 </body>
 </html>
